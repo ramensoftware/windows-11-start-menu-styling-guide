@@ -1,13 +1,15 @@
 # The Windows 11 start menu styling guide
 
-*This document is a work in progress, contributions are welcome.* \
-***See also**: [The Windows 11 taskbar styling
-guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md).*
-
 ## Table of contents
 
 * [Introduction](#introduction)
-* [Work in progress](#work-in-progress)
+  * [Missing customizations](#missing-customizations)
+  * [Contributing](#contributing)
+* [Remove the search box](#remove-the-search-box)
+* [Move pinned app lists](#move-pinned-app-lists)
+* [Remove the Recommended section](#remove-the-recommended-section)
+* [Remove the user profile button](#remove-the-user-profile-button)
+* [Move the power button](#move-the-power-button)
 
 ## Introduction
 
@@ -27,6 +29,9 @@ to your preferences.
 Some customizations are best to be adjusted with other Windhawk mods. Links to
 those mods are provided where applicable.
 
+**See also**: [The Windows 11 taskbar styling
+guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md).
+
 ### Missing customizations
 
 If you're looking for a customization that is not listed here, please [open an
@@ -37,8 +42,32 @@ issue](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/issu
 If you have a start menu styling customization or theme that you would like to
 share, please submit a pull request.
 
-## Work in progress
+## Remove the search box
 
-*This document is a work in progress, contributions are welcome.* \
-***See also**: [The Windows 11 taskbar styling
-guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md).*
+You need to target `StartDocked.SearchBoxToggleButton` with `Height=0`,
+`Margin=0,0,0,24` styles and then the search box should be gone on your start
+menu.
+
+## Move pinned app lists
+
+You need to target `StartMenu.PinnedList` with `Grid.Row=2` style and then the
+pinned app lists should go up, and for "Pinned" text, target
+`Windows.UI.Xaml.Controls.Grid#TopLevelRoot > Windows.UI.Xaml.Controls.Grid`
+with `Grid.Row=1` style. "All apps" button should have `Grid.Row=1` style. The
+target is: `Windows.UI.Xaml.Controls.Grid#TopLevelRoot >
+Windows.UI.Xaml.Controls.Border`.
+
+## Remove the Recommended section
+
+Target `Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`,
+`Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer`,
+`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader` and set its style
+with `Visibility=Collapsed`.
+
+## Remove the user profile button
+
+Target `StartDocked.UserTileView` with `Visibility=Collapsed`.
+
+## Move the power button
+
+Target `StartDocked.PowerOptionsView` with `Margin=-580,-1330,0,0`.
