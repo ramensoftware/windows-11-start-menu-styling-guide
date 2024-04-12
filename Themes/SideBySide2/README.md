@@ -1,4 +1,4 @@
-# SideBySide theme for Windows 11 Start Menu Styler
+# SideBySide2 theme for Windows 11 Start Menu Styler
 
 **Author**: Pyxisynth
 
@@ -56,7 +56,9 @@ follow these steps:
   "controlStyles[14].target": "Windows.UI.Xaml.Controls.ItemsStackPanel > Windows.UI.Xaml.Controls.ListViewItem",
   "controlStyles[14].styles[0]": "FlowDirection=0",
   "controlStyles[15].target": "StartDocked.SearchBoxToggleButton#StartMenuSearchBox",
-  "controlStyles[15].styles[0]": "Margin=23,1,23,14"
+  "controlStyles[15].styles[0]": "Margin=23,1,23,14",
+  "controlStyles[16].target": "Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink",
+  "controlStyles[16].styles[0]": "Margin=11,0,48,0"
 }
 ```
 </details>
