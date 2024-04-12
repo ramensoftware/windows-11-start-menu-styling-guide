@@ -48,9 +48,10 @@ share, please submit a pull request.
 Themes are collections of styles that can be imported into the Windows 11
 Start Menu Styler mod. The following themes are available:
 
-| Link  | Screenshot
-| ----- | ----------
-| [SideBySide](Themes/SideBySide/README.md)  | <img src="Themes/SideBySide/screenshot.png" alt="SideBySide" height="200" />
+| Link | Screenshot
+| ---- | ----------
+| [SideBySide](Themes/SideBySide/README.md) | <img src="Themes/SideBySide/screenshot.png" alt="SideBySide" height="200" />
+| [SideBySide2](Themes/SideBySide2/README.md) | <img src="Themes/SideBySide2/screenshot.png" alt="SideBySide2" height="200" />
 
 ## Remove the search box
 
