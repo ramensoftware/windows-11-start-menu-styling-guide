@@ -5,6 +5,7 @@
 * [Introduction](#introduction)
   * [Missing customizations](#missing-customizations)
   * [Contributing](#contributing)
+* [Themes](#themes)
 * [Remove the search box](#remove-the-search-box)
 * [Move pinned app lists](#move-pinned-app-lists)
 * [Remove the Recommended section](#remove-the-recommended-section)
@@ -41,6 +42,15 @@ issue](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/issu
 
 If you have a start menu styling customization or theme that you would like to
 share, please submit a pull request.
+
+## Themes
+
+Themes are collections of styles that can be imported into the Windows 11
+Start Menu Styler mod. The following themes are available:
+
+| Link  | Screenshot
+| ----- | ----------
+| [SideBySide](Themes/SideBySide/README.md)  | <img src="Themes/SideBySide/screenshot.png" alt="SideBySide" height="200" />
 
 ## Remove the search box
 
