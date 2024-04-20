@@ -50,6 +50,7 @@ Start Menu Styler mod. The following themes are available:
 
 | Link | Screenshot
 | ---- | ----------
+| [NoRecommendedSection](Themes/NoRecommendedSection/README.md) | <img src="Themes/NoRecommendedSection/screenshot.png" alt="NoRecommendedSection" height="200" />
 | [SideBySide](Themes/SideBySide/README.md) | <img src="Themes/SideBySide/screenshot.png" alt="SideBySide" height="200" />
 | [SideBySide2](Themes/SideBySide2/README.md) | <img src="Themes/SideBySide2/screenshot.png" alt="SideBySide2" height="200" />
 | [SideBySideMinimal](Themes/SideBySideMinimal/README.md) | <img src="Themes/SideBySideMinimal/screenshot.png" alt="SideBySideMinimal" height="200" />
