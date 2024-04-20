@@ -20,8 +20,8 @@ follow these steps:
 {
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
   "controlStyles[0].styles[0]": "Visibility=Visible",
-  "controlStyles[0].styles[1]": "Width=320",
-  "controlStyles[0].styles[2]": "Transform3D:=<CompositeTransform3D TranslateX=\"150\" />",
+  "controlStyles[0].styles[1]": "Width=348",
+  "controlStyles[0].styles[2]": "Transform3D:=<CompositeTransform3D TranslateX=\"178\" />",
   "controlStyles[0].styles[3]": "Margin=-80,-20,0,0",
   "controlStyles[0].styles[4]": "Padding=0,0,0,0",
   "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#AllAppsRoot",
@@ -45,7 +45,9 @@ follow these steps:
   "controlStyles[8].target": "StartDocked.PowerOptionsView",
   "controlStyles[8].styles[0]": "Margin=-575,0,0,0",
   "controlStyles[9].target": "StartDocked.UserTileView",
-  "controlStyles[9].styles[0]": "Visibility=Collapsed"
+  "controlStyles[9].styles[0]": "Visibility=Collapsed",
+  "controlStyles[10].target": "StartMenu.PinnedList",
+  "controlStyles[10].styles[0]": "Height=504"
 }
 ```
 </details>
