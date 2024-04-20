@@ -50,10 +50,10 @@ Start Menu Styler mod. The following themes are available:
 
 | Link | Screenshot
 | ---- | ----------
-| [NoRecommendedSection](Themes/NoRecommendedSection/README.md) | <img src="Themes/NoRecommendedSection/screenshot.png" alt="NoRecommendedSection" height="200" />
-| [SideBySide](Themes/SideBySide/README.md) | <img src="Themes/SideBySide/screenshot.png" alt="SideBySide" height="200" />
-| [SideBySide2](Themes/SideBySide2/README.md) | <img src="Themes/SideBySide2/screenshot.png" alt="SideBySide2" height="200" />
-| [SideBySideMinimal](Themes/SideBySideMinimal/README.md) | <img src="Themes/SideBySideMinimal/screenshot.png" alt="SideBySideMinimal" height="200" />
+| [NoRecommendedSection](Themes/NoRecommendedSection/README.md) | [![NoRecommendedSection](Themes/NoRecommendedSection/screenshot-small.png)](Themes/NoRecommendedSection/screenshot.png)
+| [SideBySide](Themes/SideBySide/README.md) | [![SideBySide](Themes/SideBySide/screenshot-small.png)](Themes/SideBySide/screenshot.png)
+| [SideBySide2](Themes/SideBySide2/README.md) | [![SideBySide2](Themes/SideBySide2/screenshot-small.png)](Themes/SideBySide2/screenshot.png)
+| [SideBySideMinimal](Themes/SideBySideMinimal/README.md) | [![SideBySideMinimal](Themes/SideBySideMinimal/screenshot-small.png)](Themes/SideBySideMinimal/screenshot.png)
 
 ## Remove the search box
 
