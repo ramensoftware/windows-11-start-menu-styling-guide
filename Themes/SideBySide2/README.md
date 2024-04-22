@@ -1,6 +1,6 @@
 # SideBySide2 theme for Windows 11 Start Menu Styler
 
-**Author**: Pyxisynth
+**Author**: Pyxisynth ([dreamsynth](https://github.com/dreamsynth))
 
 ![Screenshot](screenshot.png)
 
