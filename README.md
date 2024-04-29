@@ -73,10 +73,13 @@ Windows.UI.Xaml.Controls.Border`.
 
 ## Remove the Recommended section
 
-Target `Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`,
+To hide the Recommended section, target
+`Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`,
 `Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer`,
-`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader` and set its style
-with `Visibility=Collapsed`.
+`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader` and set the style
+to `Visibility=Collapsed`. In addition, the pinned items can be adjusted to
+occupy the whole height by targeting `StartMenu.PinnedList` and setting
+`Height=504`.
 
 ## Remove the user profile button
 
