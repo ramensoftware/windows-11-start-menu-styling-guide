@@ -6,7 +6,7 @@
 
 ## Installation
 
-The easiest way to install this theme is to import its mod settings. To do that,
+The easiest way to install this theme is to import its styles. To do that,
 follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.

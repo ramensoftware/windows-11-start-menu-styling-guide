@@ -2,10 +2,20 @@
 
 ![Screenshot](screenshot.png)
 
-## Installation
+A simple theme which just removes the "Recommended" section from the start menu.
 
-The easiest way to install this theme is to import its mod settings. To do that,
-follow these steps:
+## Theme selection
+
+The theme is integrated into the mod, and can be simply selected from the mod's
+settings:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Advanced" tab.
