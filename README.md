@@ -6,6 +6,7 @@
   * [Missing customizations](#missing-customizations)
   * [Contributing](#contributing)
 * [Themes](#themes)
+* [Custom Acrylic background](#custom-acrylic-background)
 * [Remove the search box](#remove-the-search-box)
 * [Move pinned app lists](#move-pinned-app-lists)
 * [Remove the Recommended section](#remove-the-recommended-section)
@@ -55,6 +56,19 @@ Start Menu Styler mod. The following themes are available:
 | [SideBySide2](Themes/SideBySide2/README.md) | [![SideBySide2](Themes/SideBySide2/screenshot-small.png)](Themes/SideBySide2/screenshot.png)
 | [SideBySideMinimal](Themes/SideBySideMinimal/README.md) | [![SideBySideMinimal](Themes/SideBySideMinimal/screenshot-small.png)](Themes/SideBySideMinimal/screenshot.png)
 | [Windows10 (WIP)](Themes/Windows10/README.md) | [![Windows10](Themes/Windows10/screenshot-small.png)](Themes/Windows10/screenshot.png)
+
+## Custom Acrylic background
+
+To use a custom Acrylic background, target `Border#AcrylicBorder` and override
+`Background` with a custom `AcrylicBrush` object, for example:
+
+```
+Background:=<AcrylicBrush BackgroundSource="Backdrop" TintColor="Pink" TintOpacity="0.25" />
+```
+
+The [`AcrylicBrush`
+properties](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.acrylicbrush?view=winrt-22621#properties)
+can be adjusted as needed.
 
 ## Remove the search box
 
