@@ -1,12 +1,15 @@
 # TranslucentStartMenu theme for Windows 11 Start Menu Styler
 
-![screenshot](https://github.com/Undisputed00x/windows-11-start-menu-styling-guide/assets/80290008/9fdeb348-2097-487b-adf4-588bc7d2cd75)
+**Author**: [Undisputed00x](https://github.com/Undisputed00x)
+
+![Screenshot](screenshot.png)
 
 A theme with a clear view of start menu acrylic background.
 
-## Manual installation
+## Installation
 
-The theme styles can also be imported manually. To do that, follow these steps:
+The easiest way to install this theme is to import its styles. To do that,
+follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Advanced" tab.
