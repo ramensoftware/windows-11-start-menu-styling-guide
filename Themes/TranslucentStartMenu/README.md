@@ -54,17 +54,18 @@ The theme styles can also be imported manually. To do that, follow these steps:
 </details>
 
 ## TranslucentSearchMenu Support
+
 <details>
-<summary> Expand </summary>
-  
+<summary>Expand</summary>
 
-To add this feature go to Start Menu Styler > `Advanced` > Add to `Custom process inclusion list` process `SearchHost.exe` and click save
+To add this feature go to Start Menu Styler > **Advanced** > **Custom process
+inclusion list**, add `SearchHost.exe` to the process list and click save.
 
-![Recording2024-05-29030406-ezgif com-video-to-gif-converter](https://github.com/Undisputed00x/windows-11-start-menu-styling-guide/assets/80290008/720e7b7c-7997-40b8-9e62-ed117e92b4be)
+![TranslucentSearchMenu gif](TranslucentSearchMenu.gif)
 
+Copy the JSON code to Start Menu Styler > **Advanced** > inside **Mod settings**
+and click save.
 
-
-Copy the json code to Start Menu Styler > `Advanced` > inside `Mod settings` and click save
 ```json
 {
   "controlStyles[0].target": "Border#AcrylicBorder",
@@ -87,7 +88,7 @@ Copy the json code to Start Menu Styler > `Advanced` > inside `Mod settings` and
   "controlStyles[6].styles[0]": "Height=504",
   "controlStyles[7].target": "MenuFlyoutPresenter",
   "controlStyles[7].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\"/>",
-  "controlStyles[7].styles[1]": "BorderThickness=0,0,0,0"
+  "controlStyles[7].styles[1]": "BorderThickness=0,0,0,0",
   "controlStyles[8].target": "Border#AppBorder",
   "controlStyles[8].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\"/>",
   "controlStyles[8].styles[1]": "BorderThickness=0,0,0,0",
@@ -99,6 +100,4 @@ Copy the json code to Start Menu Styler > `Advanced` > inside `Mod settings` and
   "controlStyles[10].styles[2]": "BorderThickness=0,0,0,0"
 }
 ```
-
-
 </details>
