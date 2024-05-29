@@ -57,14 +57,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <details>
 <summary> Expand </summary>
   
-**->First step**:
 
 To add this feature go to Start Menu Styler > `Advanced` > Add to `Custom process inclusion list` process `SearchHost.exe` and click save
 
 ![Recording2024-05-29030406-ezgif com-video-to-gif-converter](https://github.com/Undisputed00x/windows-11-start-menu-styling-guide/assets/80290008/720e7b7c-7997-40b8-9e62-ed117e92b4be)
 
 
-**->Seconds Step**:
 
 Copy the json code to Start Menu Styler > `Advanced` > inside `Mod settings` and click save
 ```json
@@ -99,7 +97,6 @@ Copy the json code to Start Menu Styler > `Advanced` > inside `Mod settings` and
   "controlStyles[10].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0.03\" TintOpacity=\"0\" Opacity=\"1\"/>",
   "controlStyles[10].styles[1]": "CornerRadius=10",
   "controlStyles[10].styles[2]": "BorderThickness=0,0,0,0"
-}
 }
 ```
 
