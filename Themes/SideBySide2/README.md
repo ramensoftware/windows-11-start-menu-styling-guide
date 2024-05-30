@@ -66,7 +66,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[15].target": "StartDocked.SearchBoxToggleButton#StartMenuSearchBox",
   "controlStyles[15].styles[0]": "Margin=23,1,23,14",
   "controlStyles[16].target": "Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink",
-  "controlStyles[16].styles[0]": "Margin=11,0,48,0"
+  "controlStyles[16].styles[0]": "Margin=11,0,48,0",
+  "controlStyles[17].target": "StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
+  "controlStyles[17].styles[0]": "Margin=67,7,0,21"
 }
 ```
 </details>
