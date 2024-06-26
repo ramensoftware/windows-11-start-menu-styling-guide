@@ -47,7 +47,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[6].styles[0]": "MaxWidth=220",
   "controlStyles[6].styles[1]": "MinWidth=220",
   "controlStyles[7].target": "StartDocked.AllAppsGridListView#AppsList",
-  "controlStyles[7].styles[0]": "Padding=48,3,-36,32",
+  "controlStyles[7].styles[0]": "Padding=48,3,-36,16",
   "controlStyles[8].target": "Windows.UI.Xaml.Controls.Grid#AllAppsPaneHeader",
   "controlStyles[8].styles[0]": "Margin=97,0,0,0",
   "controlStyles[9].target": "Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer",
@@ -67,8 +67,27 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[15].styles[0]": "Margin=23,1,23,14",
   "controlStyles[16].target": "Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink",
   "controlStyles[16].styles[0]": "Margin=11,0,48,0",
+  "theme": "",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": "",
   "controlStyles[17].target": "StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
-  "controlStyles[17].styles[0]": "Margin=67,7,0,21"
+  "controlStyles[17].styles[0]": "Margin=67,7,0,21",
+  "controlStyles[18].target": "Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl",
+  "controlStyles[18].styles[0]": "IsZoomOutButtonEnabled=true",
+  "controlStyles[19].target": "Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock",
+  "controlStyles[19].styles[0]": "Text=",
+  "controlStyles[20].target": "Windows.UI.Xaml.Controls.Button#ZoomOutButton",
+  "controlStyles[20].styles[0]": "Width=28",
+  "controlStyles[20].styles[1]": "Height=28",
+  "controlStyles[20].styles[2]": "Margin=0,0,0,0",
+  "controlStyles[20].styles[3]": "FontSize=14",
+  "controlStyles[20].styles[4]": "CornerRadius=4",
+  "controlStyles[21].target": "Windows.UI.Xaml.Controls.ListView#ZoomAppsList",
+  "controlStyles[21].styles[0]": "Padding=86,0,27,0",
+  "controlStyles[20].styles[5]": "VerticalAlignment=0",
+  "controlStyles[20].styles[6]": "Transform3D:=<CompositeTransform3D TranslateX=\"-1\" TranslateY=\"-36\"/>",
+  "controlStyles[20].styles[7]": "Background=Transparent",
+  "controlStyles[20].styles[8]": "BorderBrush=Transparent"
 }
 ```
 </details>
