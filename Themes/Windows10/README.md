@@ -2,7 +2,8 @@
 
 **Author**: BBmaster123 ([bbmaster123](https://github.com/bbmaster123))
 
-![Screenshot](screenshot.png)
+![332170173-00fb77e1-8b87-4d3e-85c3-ac25d2f2c4a6](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/assets/92948468/090c23e9-0375-42dc-83ef-44ee9a798eb5)
+
 
 ## Installation
 
