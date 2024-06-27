@@ -2,7 +2,7 @@
 
 **Author**: BBmaster123 ([bbmaster123](https://github.com/bbmaster123))
 
-![Screenshot](Screenshot.png)
+![Screenshot](screenshot.png)
 
 
 ## Installation
