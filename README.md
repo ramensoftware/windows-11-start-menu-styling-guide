@@ -32,7 +32,9 @@ Some customizations are best to be adjusted with other Windhawk mods. Links to
 those mods are provided where applicable.
 
 **See also**: [The Windows 11 taskbar styling
-guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md).
+guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md),
+[The Windows 11 notification center styling
+guide](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/blob/main/README.md).
 
 ### Missing customizations
 
