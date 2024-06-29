@@ -60,7 +60,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[6].styles[1]": "Background=Transparent",
   "controlStyles[12].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
   "controlStyles[12].styles[0]": "Margin=0,0,40,0",
-  "controlStyles[9].styles[0]": "Margin=-5,0,5,0"
+  "controlStyles[9].styles[0]": "Margin=-5,0,5,0",
+  "controlStyles[13].target": "Windows.UI.Xaml.Controls.Grid#RootGrid",
+  "controlStyles[13].styles[0]": "MinWidth=850",
+  "controlStyles[13].styles[1]": "MaxWidth=850"
 }
 ```
 </details>
