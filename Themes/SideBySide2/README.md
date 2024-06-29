@@ -87,7 +87,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[20].styles[5]": "VerticalAlignment=0",
   "controlStyles[20].styles[6]": "Transform3D:=<CompositeTransform3D TranslateX=\"-1\" TranslateY=\"-36\"/>",
   "controlStyles[20].styles[7]": "Background=Transparent",
-  "controlStyles[20].styles[8]": "BorderBrush=Transparent"
+  "controlStyles[20].styles[8]": "BorderBrush=Transparent",
+  "controlStyles[22].target": "Windows.UI.Xaml.Controls.Grid#RootGrid",
+  "controlStyles[22].styles[0]": "MinWidth=776",
+  "controlStyles[22].styles[1]": "MaxWidth=776",
+  "controlStyles[23].target": "Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
+  "controlStyles[23].styles[0]": "Margin=66,0,0,14"
 }
 ```
 </details>
