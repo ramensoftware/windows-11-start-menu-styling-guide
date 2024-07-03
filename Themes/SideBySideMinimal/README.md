@@ -1,6 +1,6 @@
 # SideBySideMinimal theme for Windows 11 Start Menu Styler
 
-**Author**: Windows XP (6.1.7601)
+**Author**: [Olivia](https://github.com/OliviaIsTyping)
 
 ![Screenshot](screenshot.png)
 
