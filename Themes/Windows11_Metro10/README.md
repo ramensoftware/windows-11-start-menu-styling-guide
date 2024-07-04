@@ -1,8 +1,6 @@
 # Windows11_Metro10 theme for Windows 11 Start Menu Styler
-### Dark
-![explorer_bjr2teUiAK](https://github.com/iandiv/windows-11-start-menu-styling-guide/assets/28383248/3d9351d4-2503-4137-902e-c62f51f3b971)
-### Light
-![explorer_sRZCnPAksq](https://github.com/iandiv/windows-11-start-menu-styling-guide/assets/28383248/1fd0ce3e-e269-4b3f-854a-47d87d4e4a97)
+
+![Screenshot](screenshot.png)
 
 
 A simple theme inspired by the Windows 10 Metro Start menu.
