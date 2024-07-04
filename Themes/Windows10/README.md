@@ -1,9 +1,8 @@
 # Windows 10 theme for Windows 11 Start Menu Styler
 
-**Author**: BBmaster123 ([bbmaster123](https://github.com/bbmaster123))
+**Author**: [BBmaster123](https://github.com/bbmaster123)
 
 ![Screenshot](screenshot.png)
-
 
 ## Installation
 

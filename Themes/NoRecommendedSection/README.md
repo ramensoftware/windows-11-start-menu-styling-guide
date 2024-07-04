@@ -1,8 +1,10 @@
 # NoRecommendedSection theme for Windows 11 Start Menu Styler
 
-![Screenshot](screenshot.png)
-
 A simple theme which just removes the "Recommended" section from the start menu.
+
+**Author**: [m417z](https://github.com/m417z)
+
+![Screenshot](screenshot.png)
 
 ## Theme selection
 

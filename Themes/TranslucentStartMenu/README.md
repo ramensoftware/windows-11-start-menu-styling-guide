@@ -1,10 +1,10 @@
 # TranslucentStartMenu theme for Windows 11 Start Menu Styler
 
+A theme with a clear view of start menu acrylic background.
+
 **Author**: [Undisputed00x](https://github.com/Undisputed00x)
 
 ![Screenshot](screenshot.png)
-
-A theme with a clear view of start menu acrylic background.
 
 ## Theme selection
 

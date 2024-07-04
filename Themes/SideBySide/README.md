@@ -1,6 +1,6 @@
 # SideBySide theme for Windows 11 Start Menu Styler
 
-**Author**: kaoshipaws ([https://k4oshi.top/](https://k4oshi.top/))
+**Author**: [kaoshipaws](https://k4oshi.top/)
 
 ![Screenshot](screenshot.png)
 
