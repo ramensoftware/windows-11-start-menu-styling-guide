@@ -1,22 +1,15 @@
 # Windows11_Metro10 theme for Windows 11 Start Menu Styler
 
-![Screenshot](screenshot.png)
+**Author**: Ian Div ([iandiv](https://github.com/iandiv))
 
+![Screenshot](screenshot.png)
 
 A simple theme inspired by the Windows 10 Metro Start menu.
 
-## Theme selection
+## Installation
 
-The theme is integrated into the mod, and can be simply selected from the mod's
-settings:
-
-* Open the Windows 11 Start Menu Styler mod in Windhawk.
-* Go to the "Settings" tab.
-* Select the theme and save the settings.
-
-## Manual installation
-
-The theme styles can also be imported manually. To do that, follow these steps:
+The easiest way to install this theme is to import its styles. To do that,
+follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Advanced" tab.
