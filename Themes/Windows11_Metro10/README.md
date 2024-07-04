@@ -114,8 +114,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[28].styles[1]": "Margin=2",
   "controlStyles[29].target": "Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText",
   "controlStyles[29].styles[0]": "Visibility=Visible",
-  "controlStyles[6].styles[2]": "Margin=0,0,0,0"
+  "controlStyles[6].styles[2]": "Margin=0,0,0,0",
+  "controlStyles[30].target": "Rectangle[4]",
+  "controlStyles[30].styles[0]": "Margin=0,-20,0,0"
 }
-
 ```
 </details>
