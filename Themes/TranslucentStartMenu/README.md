@@ -92,12 +92,15 @@ and click save.
   "controlStyles[8].target": "Border#AppBorder",
   "controlStyles[8].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#000000\"/>",
   "controlStyles[8].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[9].target": "Border#LayerBorder",
-  "controlStyles[9].styles[0]": "Visibility=Collapsed",
-  "controlStyles[10].target": "Border#TaskbarSearchBackground",
-  "controlStyles[10].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0.03\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#000000\"/>",
-  "controlStyles[10].styles[1]": "CornerRadius=10",
-  "controlStyles[10].styles[2]": "BorderThickness=0,0,0,0"
+  "controlStyles[9].target": "Border#AccentAppBorder",
+  "controlStyles[9].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#000000\"/>",
+  "controlStyles[9].styles[1]": "BorderThickness=0,0,0,0",
+  "controlStyles[10].target": "Border#LayerBorder",
+  "controlStyles[10].styles[0]": "Visibility=Collapsed",
+  "controlStyles[11].target": "Border#TaskbarSearchBackground",
+  "controlStyles[11].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0.03\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#000000\"/>",
+  "controlStyles[11].styles[1]": "CornerRadius=10",
+  "controlStyles[11].styles[2]": "BorderThickness=0,0,0,0"
 }
 ```
 </details>
