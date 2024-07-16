@@ -1,6 +1,6 @@
 # Fluent2Inspired theme for Windows 11 Start Menu Styler
 
-A theme inspired by [Zee-Al-Eid Ahmed's](https://x.com/zeealeid/) concepts.
+A theme inspired by [Zee-Al-Eid Ahmad's](https://x.com/zeealeid/) concepts.
 
 **Author**: [Lockframe](https://github.com/Lockframe)
 
