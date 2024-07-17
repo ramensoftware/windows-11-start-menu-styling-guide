@@ -26,6 +26,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ```json
 {
+  "theme": "",
+  "resourceVariables[0].variableKey": "",
+  "resourceVariables[0].value": "",
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
   "controlStyles[0].styles[0]": "Visibility=Visible",
   "controlStyles[0].styles[1]": "Width=510",
@@ -51,6 +54,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[8].target": "Windows.UI.Xaml.Controls.Grid#AllAppsPaneHeader",
   "controlStyles[8].styles[0]": "Margin=97,0,0,0",
   "controlStyles[9].target": "Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer",
+  "controlStyles[9].styles[0]": "Height=302",
   "controlStyles[10].target": "StartDocked.NavigationPaneView#NavigationPane",
   "controlStyles[10].styles[0]": "FlowDirection=1",
   "controlStyles[10].styles[1]": "Margin=30,0,30,0",
@@ -62,9 +66,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[13].styles[0]": "Margin=23,1,23,14",
   "controlStyles[14].target": "Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink",
   "controlStyles[14].styles[0]": "Margin=11,0,48,0",
-  "theme": "",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "controlStyles[15].target": "StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
   "controlStyles[15].styles[0]": "Margin=67,7,0,21",
   "controlStyles[16].target": "Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl",
@@ -95,8 +96,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[25].styles[0]": "Width=490",
   "controlStyles[26].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton",
   "controlStyles[26].styles[0]": "Margin=0,0,36,2",
+  "controlStyles[26].styles[1]": "Height=24",
   "controlStyles[27].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton",
   "controlStyles[27].styles[0]": "Margin=0,0,36,2",
+  "controlStyles[27].styles[1]": "Height=24",
   "controlStyles[28].target": "Windows.UI.Xaml.Controls.Grid#MoreSuggestionsRoot > Windows.UI.Xaml.Controls.Grid",
   "controlStyles[28].styles[0]": "Margin=31,-3,0,0",
   "controlStyles[29].target": "Windows.UI.Xaml.Controls.Grid#MoreSuggestionsContainer",
@@ -105,18 +108,22 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[30].styles[0]": "MaxWidth=460",
   "controlStyles[30].styles[1]": "MinWidth=460",
   "controlStyles[30].styles[2]": "Margin=0,0,16,0",
+  "controlStyles[30].styles[3]": "Padding=10,0,14,0",
   "controlStyles[31].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
   "controlStyles[31].styles[0]": "Margin=0,0,2,0",
-  "controlStyles[26].styles[1]": "Height=24",
   "controlStyles[32].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon",
   "controlStyles[32].styles[0]": "FontSize=12",
   "controlStyles[33].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
   "controlStyles[33].styles[0]": "Margin=2,0,0,0",
   "controlStyles[34].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon ",
   "controlStyles[34].styles[0]": "FontSize=12",
-  "controlStyles[27].styles[1]": "Height=24",
-  "controlStyles[30].styles[3]": "Padding=10,0,14,0",
-  "controlStyles[9].styles[0]": "Height=302"
+  "controlStyles[35].target": "StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid > Border#BorderElement",
+  "controlStyles[35].styles[0]": "Background=White",
+  "controlStyles[36].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
+  "controlStyles[36].styles[0]": "Transform3D:=<CompositeTransform3D   TranslateX=\"-240\" TranslateY=\"-10\"/>",
+ "controlStyles[36].styles[1]": "Margin=0,-10,0,0",
+  "controlStyles[37].target": "Windows.UI.Xaml.Controls.FlyoutPresenter > Grid",
+  "controlStyles[37].styles[0]": "Margin=-450,0,450,0" 
 }
 ```
 </details>
