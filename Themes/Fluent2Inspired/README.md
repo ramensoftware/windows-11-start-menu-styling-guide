@@ -6,10 +6,18 @@ A theme inspired by [Zee-Al-Eid Ahmad's](https://x.com/zeealeid/status/176430146
 
 ![Screenshot](screenshot.png)
 
-## Installation
+## Theme selection
 
-The easiest way to install this theme is to import its styles. To do that,
-follow these steps:
+The theme is integrated into the mod, and can be simply selected from the mod's
+settings:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Advanced" tab.
@@ -37,7 +45,7 @@ follow these steps:
   "controlStyles[7].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".85\" Opacity=\"1\"/>",
   "controlStyles[7].styles[1]": "CornerRadius=12",
   "controlStyles[8].target": "Grid#MainContent",
-  "controlStyles[8].styles[0]": "CornerRadius=11",
+  "controlStyles[8].styles[0]": "CornerRadius=12",
   "controlStyles[9].target": "StartMenu.PinnedList",
   "controlStyles[9].styles[0]": "Height=690",
   "controlStyles[10].target": "TextBlock#DisplayName",
@@ -54,9 +62,6 @@ follow these steps:
   "controlStyles[13].styles[1]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".25\" Opacity=\"1\"/>",
   "controlStyles[15].target": "Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl",
   "controlStyles[15].styles[0]": "Margin=33,33,33,10",
-  "theme": "",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "controlStyles[16].target": "TextBlock#UserTileNameText",
   "controlStyles[16].styles[0]": "Visibility=1",
   "controlStyles[17].target": "TextBlock#AllAppsHeading",
@@ -66,10 +71,9 @@ follow these steps:
   "controlStyles[4].styles[1]": "Margin=0,0,32,0",
   "controlStyles[19].target": "GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > Border#BackgroundBorder",
   "controlStyles[19].styles[0]": "FocusVisualPrimaryThickness=0",
-  "controlStyles[10].styles[1]": "TextAlignment=0",
   "controlStyles[7].styles[3]": "BorderThickness=1",
   "controlStyles[12].styles[0]": "Visibility=1",
-  "controlStyles[10].styles[2]": "FontSize=13",
+  "controlStyles[10].styles[1]": "FontSize=13",
   "controlStyles[4].styles[2]": "Width=148",
   "controlStyles[0].styles[2]": "Width=74",
   "controlStyles[20].target": "StartDocked.SearchBoxToggleButton > Grid > ContentPresenter > TextBlock#PlaceholderText",
@@ -82,7 +86,7 @@ follow these steps:
   "controlStyles[21].styles[1]": "BorderBrush=transparent",
   "controlStyles[22].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon",
   "controlStyles[22].styles[0]": "Visibility=1",
-  "controlStyles[10].styles[3]": "FontFamily=Aptos",
+  "controlStyles[10].styles[2]": "FontFamily=Aptos",
   "controlStyles[11].styles[1]": "FontFamily=Aptos",
   "controlStyles[4].styles[3]": "Height=26",
   "controlStyles[0].styles[3]": "Height=26",
@@ -120,7 +124,7 @@ follow these steps:
   "controlStyles[33].styles[0]": "FontFamily=Aptos",
   "controlStyles[33].styles[1]": "Opacity=.85",
   "controlStyles[20].styles[4]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
-  "controlStyles[10].styles[4]": "Opacity=.65",
+  "controlStyles[10].styles[3]": "Opacity=.65",
   "controlStyles[27].styles[2]": "Opacity=.85",
   "controlStyles[28].styles[1]": "Opacity=.85",
   "controlStyles[29].styles[1]": "Opacity=.85",
