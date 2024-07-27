@@ -30,14 +30,14 @@ The theme styles can also be imported manually. To do that, follow these steps:
 {
   "controlStyles[0].target": "Border#AcrylicBorder",
   "controlStyles[0].styles[0]": "CornerRadius=15",
-  "controlStyles[0].styles[1]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"{ThemeResource SystemAccentColor}\"/>",
+  "controlStyles[0].styles[1]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#70262626\"/>",
   "controlStyles[0].styles[2]": "BorderThickness=0,0,0,0",
   "controlStyles[1].target": "Border#AcrylicOverlay",
   "controlStyles[1].styles[0]": "Visibility=Collapsed",
   "controlStyles[2].target": "Border#BorderElement",
   "controlStyles[2].styles[0]": "CornerRadius=10",
   "controlStyles[2].styles[1]": "BorderThickness=0,0,0,0",
-  "controlStyles[2].styles[2]": "Background:=<AcrylicBrush TintLuminosityOpacity=\"0.03\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#BBFFFFFF\"/>",
+  "controlStyles[2].styles[2]": "Background:=<AcrylicBrush TintLuminosityOpacity=\"0.03\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#70262626\"/>",
   "controlStyles[3].target": "Grid#ShowMoreSuggestions",
   "controlStyles[3].styles[0]": "Visibility=Collapsed",
   "controlStyles[4].target": "Grid#SuggestionsParentContainer",
@@ -47,8 +47,20 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[6].target": "StartMenu.PinnedList",
   "controlStyles[6].styles[0]": "Height=504",
   "controlStyles[7].target": "MenuFlyoutPresenter",
-  "controlStyles[7].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"{ThemeResource SystemAccentColor}\"/>",
-  "controlStyles[7].styles[1]": "BorderThickness=0,0,0,0"
+  "controlStyles[7].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#70262626\"/>",
+  "controlStyles[7].styles[1]": "BorderThickness=0,0,0,0",
+  "controlStyles[8].target": "Border#AppBorder",
+  "controlStyles[8].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#70262626\"/>",
+  "controlStyles[8].styles[1]": "BorderThickness=0,0,0,0",
+  "controlStyles[9].target": "Border#AccentAppBorder",
+  "controlStyles[9].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#70262626\"/>",
+  "controlStyles[9].styles[1]": "BorderThickness=0,0,0,0",
+  "controlStyles[10].target": "Border#LayerBorder",
+  "controlStyles[10].styles[0]": "Visibility=Collapsed",
+  "controlStyles[11].target": "Border#TaskbarSearchBackground",
+  "controlStyles[11].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0.03\" TintOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#70262626\"/>",
+  "controlStyles[11].styles[1]": "CornerRadius=10",
+  "controlStyles[11].styles[2]": "BorderThickness=0,0,0,0"
 }
 ```
 </details>
