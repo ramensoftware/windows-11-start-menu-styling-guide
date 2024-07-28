@@ -117,13 +117,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[33].styles[0]": "Margin=2,0,0,0",
   "controlStyles[34].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon ",
   "controlStyles[34].styles[0]": "FontSize=12",
-  "controlStyles[35].target": "StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid > Border#BorderElement",
-  "controlStyles[35].styles[0]": "Background=White",
-  "controlStyles[36].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
-  "controlStyles[36].styles[0]": "Transform3D:=<CompositeTransform3D   TranslateX=\"-240\" TranslateY=\"-10\"/>",
- "controlStyles[36].styles[1]": "Margin=0,-10,0,0",
-  "controlStyles[37].target": "Windows.UI.Xaml.Controls.FlyoutPresenter > Grid",
-  "controlStyles[37].styles[0]": "Margin=-450,0,450,0" 
+  "controlStyles[35].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
+  "controlStyles[35].styles[0]": "Transform3D:=<CompositeTransform3D   TranslateX=\"-240\" TranslateY=\"-10\"/>",
+  "controlStyles[35].styles[1]": "Margin=0,-10,0,0",
+  "controlStyles[36].target": "Windows.UI.Xaml.Controls.FlyoutPresenter > Grid",
+  "controlStyles[36].styles[0]": "Margin=-450,0,450,0"
 }
 ```
 </details>
