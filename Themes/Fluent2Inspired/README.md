@@ -94,11 +94,14 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[20].styles[2]": "FontFamily=Aptos",
   "controlStyles[20].styles[3]": "FontSize=24",
   "controlStyles[20].styles[4]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
+  "controlStyles[20].styles[5]": "Margin=-50,0,0,0",
   "controlStyles[21].target": "StartDocked.SearchBoxToggleButton > Grid > Border",
   "controlStyles[21].styles[0]": "Background=transparent",
   "controlStyles[21].styles[1]": "BorderBrush=transparent",
   "controlStyles[22].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon",
-  "controlStyles[22].styles[0]": "Visibility=1",
+  "controlStyles[22].styles[0]": "Transform3D:=<CompositeTransform3D  TranslateX=\"165\" TranslateY=\"-1\"/>",
+  "controlStyles[22].styles[1]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
+  "controlStyles[22].styles[2]": "FontSize=24",
   "controlStyles[23].target": "Grid#TopLevelRoot",
   "controlStyles[23].styles[0]": "Margin=0,-8,0,0",
   "controlStyles[24].target": "GridViewItem",
@@ -186,7 +189,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[52].target": "Border#DropShadowDismissTarget",
   "controlStyles[52].styles[0]": "CornerRadius=12",
   "controlStyles[53].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
-  "controlStyles[53].styles[0]": "Transform3D:=<CompositeTransform3D   TranslateX=\"-250\" TranslateY=\"50\"/>"
+  "controlStyles[53].styles[0]": "Transform3D:=<CompositeTransform3D   TranslateX=\"-250\" TranslateY=\"50\"/>",
+  "controlStyles[54].target": "Rectangle[4]",
+  "controlStyles[54].styles[0]": "Margin=0,0,0,20",
+  "controlStyles[55].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
+  "controlStyles[55].styles[0]": "Margin=-250,0,0,0"
 }
 ```
 </details>
