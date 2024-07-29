@@ -63,7 +63,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[10].styles[2]": "FontFamily=Aptos",
   "controlStyles[10].styles[3]": "Opacity=.65",
   "controlStyles[11].target": "TextBlock#PinnedListHeaderText",
-  "controlStyles[11].styles[0]": "Margin=-32,0,0,0",
+  "controlStyles[11].styles[0]": "Margin=-29,0,0,0",
   "controlStyles[11].styles[1]": "FontFamily=Aptos",
   "controlStyles[11].styles[2]": "Opacity=.85",
   "controlStyles[11].styles[3]": "FontSize=16",
@@ -190,10 +190,13 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[52].styles[0]": "CornerRadius=12",
   "controlStyles[53].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
   "controlStyles[53].styles[0]": "Margin=-250,50,0,0",
-  "controlStyles[54].target": "Rectangle[4]",
-  "controlStyles[54].styles[0]": "Margin=0,0,0,20",
+  "controlStyles[54].target": "Rectangle",
+  "controlStyles[54].styles[0]": "Visibility=Collapsed",
   "controlStyles[55].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
-  "controlStyles[55].styles[0]": "Margin=-250,0,0,0"
+  "controlStyles[55].styles[0]": "Margin=-250,0,0,0",
+  "controlStyles[56].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon#SearchGlyph",
+  "controlStyles[56].styles[0]": "Transform3D:=<CompositeTransform3D  TranslateX=\"150\" />",
+  "controlStyles[56].styles[1]": "FontSize=24"
 }
 ```
 </details>
