@@ -1,3 +1,32 @@
+# Fluent2Inspired theme for Windows 11 Start Menu Styler
+
+A theme inspired by [Zee-Al-Eid Ahmad's](https://x.com/zeealeid/status/1764301467014373774) concepts.
+
+**Author**: [Lockframe](https://github.com/Lockframe)
+
+![Screenshot](screenshot.png)
+
+## Theme selection
+
+The theme is integrated into the mod, and can be simply selected from the mod's
+settings:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Advanced" tab.
+* Copy the content below to the text box under "Mod settings" and click "Save".
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
 {
   "controlStyles[0].target": "Button#CloseAllAppsButton",
   "controlStyles[0].styles[0]": "CornerRadius=14",
@@ -161,7 +190,7 @@
   "controlStyles[52].styles[0]": "CornerRadius=12",
   "controlStyles[53].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
   "controlStyles[53].styles[0]": "Margin=-250,50,0,0",
-  "controlStyles[54].target": "StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
+  "controlStyles[54].target": "StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle",
   "controlStyles[54].styles[0]": "Visibility=Collapsed",
   "controlStyles[55].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
   "controlStyles[55].styles[0]": "Margin=-250,0,0,0",
@@ -170,3 +199,5 @@
   "controlStyles[56].styles[1]": "FontSize=24",
   "controlStyles[56].styles[2]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>"
 }
+```
+</details>
