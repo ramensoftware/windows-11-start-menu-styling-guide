@@ -195,7 +195,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[55].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
   "controlStyles[55].styles[0]": "Margin=-250,0,0,0",
   "controlStyles[56].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon#SearchGlyph",
-  "controlStyles[56].styles[0]": "Transform3D:=<CompositeTransform3D  TranslateX=\"150\" />",
+  "controlStyles[56].styles[0]": "Transform3D:=<CompositeTransform3D  TranslateX=\"160\" />",
   "controlStyles[56].styles[1]": "FontSize=24",
   "controlStyles[56].styles[2]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>"
 }
