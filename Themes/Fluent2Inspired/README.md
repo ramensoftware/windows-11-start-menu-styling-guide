@@ -94,7 +94,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[20].styles[2]": "FontFamily=Aptos",
   "controlStyles[20].styles[3]": "FontSize=24",
   "controlStyles[20].styles[4]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
-  "controlStyles[20].styles[5]": "Margin=-50,0,0,0",
+  "controlStyles[20].styles[5]": "Margin=10,0,0,0",
   "controlStyles[21].target": "StartDocked.SearchBoxToggleButton > Grid > Border",
   "controlStyles[21].styles[0]": "Background=transparent",
   "controlStyles[21].styles[1]": "BorderBrush=transparent",
@@ -195,8 +195,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[55].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
   "controlStyles[55].styles[0]": "Margin=-250,0,0,0",
   "controlStyles[56].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon#SearchGlyph",
-  "controlStyles[56].styles[0]": "Transform3D:=<CompositeTransform3D  TranslateX=\"160\" />",
-  "controlStyles[56].styles[1]": "FontSize=24",
+  "controlStyles[56].styles[0]": "Margin=0,-3,0,0",
+  "controlStyles[56].styles[1]": "FontSize=25",
   "controlStyles[56].styles[2]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>"
 }
 ```
