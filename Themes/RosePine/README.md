@@ -4,7 +4,7 @@ A theme using the [RosePine](https://rosepinetheme.com/) colorscheme while keepi
 
 **Author**: [asev](https://github.com/lunar-os)
 
-![Screenshot](1.png)
+![Screenshot](screenshot.png)
 
 ## Theme selection
 
