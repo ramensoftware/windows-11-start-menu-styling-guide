@@ -142,7 +142,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ```
 </details>
 
-## TranslucentSearchMenu Support
+## Search Menu Support
 
 <details>
 <summary>Expand</summary>
