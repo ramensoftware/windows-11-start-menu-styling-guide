@@ -125,7 +125,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[37].target": "Windows.UI.Xaml.Controls.Grid#TopLevelRoot > Windows.UI.Xaml.Controls.Grid[2]",
   "controlStyles[37].styles[0]": "MinHeight=302",
   "controlStyles[38].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
-  "controlStyles[38].styles[0]": "Margin=-268,0,0,0"
+  "controlStyles[38].styles[0]": "Margin=-245,-12,0,0"
 }
 ```
 </details>
