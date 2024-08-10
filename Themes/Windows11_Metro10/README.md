@@ -51,7 +51,7 @@ follow these steps:
   "controlStyles[10].styles[1]": "Margin=30,0,30,0",
   "controlStyles[11].target": "StartDocked.PowerOptionsView#PowerButton",
   "controlStyles[11].styles[0]": "FlowDirection=0",
-  "controlStyles[12].target": "Windows.UI.Xaml.Controls.ItemsStackPanel",
+  "controlStyles[12].target": "StartDocked.AppListView#NavigationPanePlacesListView",
   "controlStyles[12].styles[0]": "FlowDirection=1",
   "controlStyles[13].target": "Windows.UI.Xaml.Controls.ListViewItem",
   "controlStyles[13].styles[0]": "FlowDirection=0",
@@ -62,8 +62,6 @@ follow these steps:
   "controlStyles[16].target": "Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink",
   "controlStyles[16].styles[0]": "Margin=11,0,48,0",
   "theme": "",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "controlStyles[17].target": "StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
   "controlStyles[17].styles[0]": "Margin=67,7,0,21",
   "controlStyles[18].target": "Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl",
@@ -104,9 +102,12 @@ follow these steps:
   "controlStyles[28].styles[1]": "Margin=2",
   "controlStyles[29].target": "Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText",
   "controlStyles[29].styles[0]": "Visibility=Visible",
-  "controlStyles[6].styles[2]": "Margin=0,0,0,0",
+  "controlStyles[6].styles[2]": "Margin=0",
   "controlStyles[30].target": "Rectangle[4]",
-  "controlStyles[30].styles[0]": "Margin=0,-20,0,0"
+  "controlStyles[30].styles[0]": "Margin=0,-20,0,0",
+  "controlStyles[18].styles[1]": "Margin=0",
+  "controlStyles[31].target": "GridView#RecommendedList",
+  "controlStyles[31].styles[0]": "Margin=-20,0,20,0"
 }
 ```
 </details>
