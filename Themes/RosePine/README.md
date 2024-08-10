@@ -15,6 +15,8 @@ settings:
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
 
+*Note - Please turn off all user shortcuts (Documents, Downloads, Pictures, etc) except for settings
+
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
@@ -47,7 +49,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[7].target": "Windows.UI.Xaml.Controls.Button#CloseAllAppsButton",
   "controlStyles[7].styles[0]": "Visibility=Collapsed",
   "controlStyles[8].target": "StartMenu.PinnedList",
-  "controlStyles[8].styles[0]": "Height=504",
+  "controlStyles[8].styles[0]": "Height=340",
   "controlStyles[9].target": "StartDocked.NavigationPaneView#Margin",
   "controlStyles[9].styles[0]": "Margin=210,0,210,0",
   "controlStyles[10].target": "Windows.UI.Xaml.Controls.Border#AcrylicBorder",
@@ -101,7 +103,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[5].styles[2]": "BorderThickness=0",
   "controlStyles[27].styles[1]": "Foreground=#524f67",
   "controlStyles[27].styles[2]": "FontFamily=JetBrainsMono NF",
-  "controlStyles[29].target": "Windows.UI.Xaml.Controls.TextBlock#UserTileNameText",
+  "controlStyles[29].target": "StartDocked.UserTileView",
   "controlStyles[29].styles[0]": "Visibility=Collapsed",
   "controlStyles[18].styles[0]": "Visibility=Collapsed",
   "controlStyles[30].target": "Windows.UI.Xaml.Controls.Grid#ContentBorder > Windows.UI.Xaml.Controls.Border#BackgroundBorder",
@@ -110,7 +112,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[31].target": "Windows.UI.Xaml.Controls.TextBlock[Text=]",
   "controlStyles[31].styles[0]": "Foreground=#c4a7e7",
   "controlStyles[32].target": "StartDocked.AppListView#NavigationPanePlacesListView",
-  "controlStyles[32].styles[0]": "Margin=0,0,-50,0",
+  "controlStyles[32].styles[0]": "Margin=0,0,-38,0",
   "controlStyles[33].target": "Windows.UI.Xaml.Controls.Border#AppBorder",
   "controlStyles[33].styles[0]": "Background=#191724",
   "controlStyles[34].target": "Windows.UI.Xaml.Controls.Grid#OuterBorderGrid",
