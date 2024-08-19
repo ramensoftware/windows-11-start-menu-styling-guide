@@ -197,7 +197,13 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[56].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon#SearchGlyph",
   "controlStyles[56].styles[0]": "Margin=0,-3,0,0",
   "controlStyles[56].styles[1]": "FontSize=25",
-  "controlStyles[56].styles[2]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>"
+  "controlStyles[56].styles[2]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
+  "controlStyles[57].target": "StartMenu.ExpandedFolderList > Grid#Root > Border",
+  "controlStyles[57].styles[0]": "Height=420",
+  "controlStyles[58].target": "TextBox#ExpandedFolderNameTextBox",
+  "controlStyles[58].styles[0]": "Margin=-15,-15,15,20",
+  "controlStyles[59].target": "Windows.UI.Xaml.Controls.GridView#FolderList > Border",
+  "controlStyles[59].styles[0]": "Margin=0,0,0,-60"
 }
 ```
 </details>
