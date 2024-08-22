@@ -3,6 +3,7 @@
 A minimalist version of Windows11_Metro10.
 
 **Author**: [Y2K4](https://github.com/y2k04)
+
 **Author of base theme**: [Ian Div](https://github.com/iandiv)
 
 ![Screenshot](screenshot.png)
