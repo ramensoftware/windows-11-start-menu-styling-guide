@@ -62,14 +62,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[11].styles[0]": "Margin=0,20,0,-20",
   "controlStyles[12].target": "Grid#MoreSuggestionsRoot",
   "controlStyles[12].styles[0]": "Margin=-1,-26,-4,0",
-  "controlStyles[13].target": "StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid > Border#BorderElement",
-  "controlStyles[13].styles[0]": "Background=White",
-  "controlStyles[14].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
-  "controlStyles[14].styles[0]": "Margin=-10,-10,0,0",
-  "controlStyles[15].target": "Windows.UI.Xaml.Controls.FlyoutPresenter > Grid",
-  "controlStyles[15].styles[0]": "Margin=-400,0,400,0",
-  "controlStyles[16].target": "Windows.UI.Xaml.Controls.TextBlock#MoreSuggestionsListHeaderText",
-  "controlStyles[16].styles[0]": "Margin=-40,0,0,0"
+  "controlStyles[13].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
+  "controlStyles[13].styles[0]": "Margin=-10,-10,0,0",
+  "controlStyles[14].target": "Windows.UI.Xaml.Controls.FlyoutPresenter > Grid",
+  "controlStyles[14].styles[0]": "Margin=-400,0,400,0",
+  "controlStyles[15].target": "Windows.UI.Xaml.Controls.TextBlock#MoreSuggestionsListHeaderText",
+  "controlStyles[15].styles[0]": "Margin=-40,0,0,0"
 }
 ```
 </details>
