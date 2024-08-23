@@ -1,10 +1,16 @@
 # RosePine theme for Windows 11 Start Menu Styler
 
-A theme using the [RosePine](https://rosepinetheme.com/) colorscheme while keeping the Start menu minimal
+A theme using the [RosePine](https://rosepinetheme.com/) color scheme while
+keeping the Start menu minimal.
 
 **Author**: [asev](https://github.com/lunar-os)
 
 ![Screenshot](screenshot.png)
+
+## Note
+
+Please turn off all user shortcuts (Documents, Downloads, Pictures, etc) except
+for settings.
 
 ## Theme selection
 
@@ -14,8 +20,6 @@ settings:
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
-
-*Note - Please turn off all user shortcuts (Documents, Downloads, Pictures, etc) except for settings
 
 ## Manual installation
 
@@ -143,7 +147,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ```
 </details>
 
-## Search Menu Support
+## Search menu support
 
 <details>
 <summary>Expand</summary>
@@ -151,5 +155,5 @@ The theme styles can also be imported manually. To do that, follow these steps:
 To add this feature go to Start Menu Styler > **Advanced** > **Custom process
 inclusion list**, add `SearchHost.exe` to the process list and click save.
 
-![TranslucentSearchMenu gif](2.png)
-
+![Search menu support screenshot](screenshot-search-menu.png)
+</details>
