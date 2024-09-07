@@ -107,7 +107,14 @@ follow these steps:
   "controlStyles[30].styles[0]": "Margin=0,-20,0,0",
   "controlStyles[18].styles[1]": "Margin=0",
   "controlStyles[31].target": "GridView#RecommendedList",
-  "controlStyles[31].styles[0]": "Margin=-20,0,20,0"
+  "controlStyles[31].styles[0]": "Margin=-20,0,20,0",
+  "controlStyles[32].target": "StartMenu.ExpandedFolderList > Grid > Grid",
+  "controlStyles[32].styles[0]": "Margin=0,0,80,0",
+  "controlStyles[33].target": "StartMenu.ExpandedFolderList > Grid > Border",
+  "controlStyles[33].styles[0]": "Width=350",
+  "controlStyles[33].styles[1]": "Margin=0,0,92,0",
+  "controlStyles[34].target": "Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager",
+  "controlStyles[34].styles[0]": "Margin=-40,0,0,0"
 }
 ```
 </details>
