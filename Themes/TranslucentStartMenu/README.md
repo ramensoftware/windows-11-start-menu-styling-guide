@@ -62,9 +62,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[11].styles[1]": "CornerRadius=10",
   "controlStyles[11].styles[2]": "BorderThickness=0,0,0,0",
   "controlStyles[12].target": "Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border",
-  "controlStyles[12].styles[0]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>\t",
+  "controlStyles[12].styles[0]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
   "controlStyles[12].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[13].target": "Button#ShowAllAppsButton  > ContentPresenter@CommonStates",
+  "controlStyles[13].target": "Button#ShowAllAppsButton > ContentPresenter@CommonStates",
   "controlStyles[13].styles[0]": "BorderThickness=1",
   "controlStyles[13].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
   "controlStyles[13].styles[2]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
@@ -86,7 +86,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[17].styles[1]": "BorderThickness=1",
   "controlStyles[17].styles[2]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.30\"/>",
   "controlStyles[17].styles[3]": "Margin=4",
-  "controlStyles[12].styles[2]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>\t",
+  "controlStyles[12].styles[2]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>",
   "controlStyles[12].styles[3]": "Margin=1",
   "controlStyles[18].target": "ToolTip > ContentPresenter#LayoutRoot",
   "controlStyles[18].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintOpacity=\"0\" TintLuminosityOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#A0262626\"/>",
@@ -100,7 +100,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[21].target": "StartDocked.AllAppsZoomListViewItem > Grid@CommonStates > Border",
   "controlStyles[21].styles[0]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
   "controlStyles[21].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.6\"/>",
-  "controlStyles[21].styles[2]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>\t"
+  "controlStyles[21].styles[2]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>"
 }
 ```
 </details>
