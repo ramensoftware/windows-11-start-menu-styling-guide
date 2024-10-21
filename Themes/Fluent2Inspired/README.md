@@ -70,7 +70,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[12].target": "Border#TaskbarSearchBackground",
   "controlStyles[12].styles[0]": "Visibility=1",
   "controlStyles[13].target": "Border#AppBorder",
-  "controlStyles[13].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".85\" Opacity=\"1\"/>",
+  "controlStyles[13].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\"  FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".85\" Opacity=\"1\"/>",
   "controlStyles[13].styles[1]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".25\" Opacity=\"1\"/>",
   "controlStyles[13].styles[2]": "CornerRadius=12",
   "controlStyles[14].target": "Border#dropshadow",
@@ -99,7 +99,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[21].styles[0]": "Background=transparent",
   "controlStyles[21].styles[1]": "BorderBrush=transparent",
   "controlStyles[22].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon",
-  "controlStyles[22].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"165\" TranslateY=\"-1\"/>",
+  "controlStyles[22].styles[0]": "Transform3D:=<CompositeTransform3D  TranslateX=\"165\" TranslateY=\"-1\"/>",
   "controlStyles[22].styles[1]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" FallbackColor=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
   "controlStyles[22].styles[2]": "FontSize=24",
   "controlStyles[23].target": "Grid#TopLevelRoot",
@@ -147,6 +147,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[37].target": "ListViewItem",
   "controlStyles[37].styles[0]": "Margin=1,0,-6,0",
   "controlStyles[37].styles[1]": "CornerRadius=4",
+  "controlStyles[37].styles[2]": "Padding=0,0,6,0",
   "controlStyles[38].target": "Button#Header",
   "controlStyles[38].styles[0]": "Margin=4,0,-3,0",
   "controlStyles[39].target": "StartDocked.AllAppsPane#AllAppsPanel",
@@ -203,7 +204,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[58].target": "TextBox#ExpandedFolderNameTextBox",
   "controlStyles[58].styles[0]": "Margin=-15,-15,15,20",
   "controlStyles[59].target": "Windows.UI.Xaml.Controls.GridView#FolderList > Border",
-  "controlStyles[59].styles[0]": "Margin=0,0,0,-60"
+  "controlStyles[59].styles[0]": "Margin=0,0,0,-60",
+  "controlStyles[60].target": "StartDocked.NavigationPaneView#NavigationPane > Grid > StartDocked.AppListView",
+  "controlStyles[60].styles[0]": "Margin=0,0,-36,0"
 }
 ```
 </details>
