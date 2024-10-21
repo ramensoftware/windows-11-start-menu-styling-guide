@@ -35,8 +35,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#AllAppsRoot",
   "controlStyles[1].styles[0]": "Visibility=Visible",
   "controlStyles[1].styles[1]": "Width=320",
-  "controlStyles[1].styles[2]": "Transform3D:=<CompositeTransform3D TranslateX=\"-800\" />",
-  "controlStyles[1].styles[3]": "Margin=-30,-20,0,0",
+  "controlStyles[1].styles[2]": "Margin=-830,-20,830,0",
   "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
   "controlStyles[2].styles[0]": "Visibility=Collapsed",
   "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer",
@@ -55,7 +54,16 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[9].target": "StartDocked.UserTileView",
   "controlStyles[9].styles[0]": "Visibility=Collapsed",
   "controlStyles[10].target": "StartMenu.PinnedList",
-  "controlStyles[10].styles[0]": "Height=504"
+  "controlStyles[10].styles[0]": "Height=504",
+  "controlStyles[11].target": "StartMenu.ExpandedFolderList > Grid > Border",
+  "controlStyles[11].styles[0]": "Margin=-40,0,40,0",
+  "controlStyles[11].styles[1]": "Width=325",
+  "controlStyles[12].target": "StartMenu.ExpandedFolderList > Grid > Grid",
+  "controlStyles[12].styles[0]": "CornerRadius=8",
+  "controlStyles[12].styles[1]": "Margin=-85,0,0,0",
+  "controlStyles[12].styles[2]": "Width=350",
+  "controlStyles[13].target": "StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager",
+  "controlStyles[13].styles[0]": "Margin=-15,0,0,0"
 }
 ```
 </details>
