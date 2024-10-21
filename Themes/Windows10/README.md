@@ -13,6 +13,10 @@ follow these steps:
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
+#### Notes:
+* Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended. 
+* For centered start menu, please set ```StartDocked.StartSizingFrame``` with ```Margin=-14,24,0,0``` to fix the left side border
+
 #### Manual Installation:
 <details>
 <summary>Content to import (click to expand)</summary>
