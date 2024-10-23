@@ -30,7 +30,7 @@ follow these steps:
   "controlStyles[2].target": "Rectangle[4]",
   "controlStyles[2].styles[0]": "Margin=0,-20,0,0",
   "controlStyles[3].target": "StartDocked.StartSizingFrame",
-  "controlStyles[3].styles[0]": "Margin=-15,24,0,0",
+  "controlStyles[3].styles[0]": "Margin=-14,24,0,0",
   "controlStyles[4].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
   "controlStyles[4].styles[0]": "Margin=305,-30,-305,-30",
   "controlStyles[5].target": "StartDocked.SearchBoxToggleButton",
@@ -124,7 +124,7 @@ follow these steps:
   "controlStyles[31].target": "Border#UninstallFlyoutPresenterBorder",
   "controlStyles[31].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
   "controlStyles[32].target": "Windows.UI.Xaml.Controls.ContentDialog",
-  "controlStyles[32].styles[0]": "Margin=-650,214,0,0",
+  "controlStyles[32].styles[0]": "Margin=-960,214,0,0",
   "controlStyles[32].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
   "controlStyles[33].target": "Windows.UI.Xaml.Controls.Button#ZoomOutButton",
   "controlStyles[33].styles[0]": "Width=38",
@@ -205,7 +205,13 @@ follow these steps:
   "controlStyles[56].target": "Grid#BorderGrid",
   "controlStyles[56].styles[0]": "Background=Transparent",
   "controlStyles[57].target": "Border#TaskbarSearchBackground",
-  "controlStyles[57].styles[0]": "Background=#88FFFFFF"
+  "controlStyles[57].styles[0]": "Background=#88FFFFFF",
+  "controlStyles[58].target": "FlyoutPresenter",
+  "controlStyles[58].styles[0]": "Margin=10,20,140,0",
+  "controlStyles[59].target": "FlyoutPresenter > Border",
+  "controlStyles[59].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
+  "controlStyles[59].styles[1]": "BorderThickness=1",
+  "controlStyles[59].styles[2]": "CornerRadius=8"
 }
 ```
 </details>
