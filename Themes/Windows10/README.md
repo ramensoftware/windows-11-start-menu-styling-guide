@@ -4,28 +4,32 @@
 
 ![Screenshot](screenshot.png)
 
-## Installation
+## Notes:
 
-The easiest way to install this theme is to import its styles. To do that,
-follow these steps:
+* Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended. 
+* For centered start menu, please set the following additional styles:
+  * Target: ```StartDocked.StartSizingFrame``` \
+    Style: ```Margin=-14,24,0,0```
+  * Target: ```Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border``` \
+    Style: ```Margin=[1/2 screen width],0,0,0```
+
+## Theme selection
+
+The theme is integrated into the mod, and can be simply selected from the mod's
+settings:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
-#### Notes:
-* Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended. 
-* For centered start menu, please set the following additional styles:
-
-> Target: ```StartDocked.StartSizingFrame```
->
-> Style: ```Margin=-14,24,0,0``` 
->
-> Target: ```Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border```
->
-> Style: ```Margin=[1/2 screen width],0,0,0``` 
-
-#### Manual Installation:
 <details>
 <summary>Content to import (click to expand)</summary>
 
@@ -76,13 +80,13 @@ follow these steps:
   "controlStyles[14].target": "StartDocked.UserTileView",
   "controlStyles[14].styles[0]": "HorizontalAlignment=2",
   "controlStyles[14].styles[1]": "Margin=0,-2,37,0",
-  "controlStyles[14].styles[2]": "Transform3D:=<CompositeTransform3D  TranslateX=\"50\" />",
+  "controlStyles[14].styles[2]": "Transform3D:=<CompositeTransform3D TranslateX=\"50\" />",
   "controlStyles[14].styles[3]": "Height=42",
   "controlStyles[15].target": "Windows.UI.Xaml.Controls.TextBlock#UserTileNameText",
   "controlStyles[15].styles[0]": "Visibility=Collapsed",
   "controlStyles[16].target": "StartDocked.NavigationPaneButton > Grid@CommonStates > Windows.UI.Xaml.Controls.ContentPresenter > Grid > Grid#UserTileIcon",
   "controlStyles[16].styles[0]": "Margin=-3,0,-3,-62",
-  "controlStyles[16].styles[1]": "Transform3D:=<CompositeTransform3D  RotationZ=\"90\" />",
+  "controlStyles[16].styles[1]": "Transform3D:=<CompositeTransform3D RotationZ=\"90\" />",
   "controlStyles[16].styles[2]": "Width=30",
   "controlStyles[16].styles[3]": "Height=30",
   "controlStyles[17].target": "StartDocked.AppListViewItem > Grid > ContentPresenter",
@@ -158,7 +162,7 @@ follow these steps:
   "controlStyles[39].styles[0]": "Margin=-32,0,32,0",
   "controlStyles[40].target": "Button#CloseAllAppsButton",
   "controlStyles[40].styles[0]": "Visibility=Collapsed",
-  "controlStyles[41].target": "Button#Header > Border#Border@CommonStates ",
+  "controlStyles[41].target": "Button#Header > Border#Border@CommonStates",
   "controlStyles[41].styles[0]": "BorderThickness=1",
   "controlStyles[41].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
   "controlStyles[41].styles[2]": "Background@Pressed:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
@@ -197,7 +201,7 @@ follow these steps:
   "controlStyles[51].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"#22FFFFFF\" TargetTheme=\"1\" Opacity=\"1\"/>",
   "controlStyles[51].styles[2]": "Background@Pressed:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.64\"/>",
   "controlStyles[51].styles[3]": "BorderBrush@Pressed:=<RevealBorderBrush Color=\"#22FFFFFF\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[52].target": " StartDocked.AllAppsZoomListViewItem > Grid@CommonStates > Border",
+  "controlStyles[52].target": "StartDocked.AllAppsZoomListViewItem > Grid@CommonStates > Border",
   "controlStyles[52].styles[0]": "BorderThickness=1",
   "controlStyles[52].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
   "controlStyles[52].styles[2]": "CornerRadius=4",
