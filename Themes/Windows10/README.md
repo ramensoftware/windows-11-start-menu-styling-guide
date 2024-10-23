@@ -15,7 +15,15 @@ follow these steps:
 
 #### Notes:
 * Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended. 
-* For centered start menu, please set ```StartDocked.StartSizingFrame``` with ```Margin=-14,24,0,0``` to fix the left side border
+* For centered start menu, please set the following additional styles:
+
+> Target: ```StartDocked.StartSizingFrame```
+>
+> Style: ```Margin=-14,24,0,0``` 
+>
+> Target: ```Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border```
+>
+> Style: ```Margin=[1/2 screen width],0,0,0``` 
 
 #### Manual Installation:
 <details>
@@ -211,7 +219,9 @@ follow these steps:
   "controlStyles[59].target": "FlyoutPresenter > Border",
   "controlStyles[59].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
   "controlStyles[59].styles[1]": "BorderThickness=1",
-  "controlStyles[59].styles[2]": "CornerRadius=8"
+  "controlStyles[59].styles[2]": "CornerRadius=8",
+  "controlStyles[60].target": "Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border",
+  "controlStyles[60].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>"
 }
 ```
 </details>
