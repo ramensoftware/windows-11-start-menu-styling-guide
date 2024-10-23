@@ -30,7 +30,7 @@ follow these steps:
   "controlStyles[2].target": "Rectangle[4]",
   "controlStyles[2].styles[0]": "Margin=0,-20,0,0",
   "controlStyles[3].target": "StartDocked.StartSizingFrame",
-  "controlStyles[3].styles[0]": "Margin=-14,24,0,0",
+  "controlStyles[3].styles[0]": "Margin=-15,24,0,0",
   "controlStyles[4].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
   "controlStyles[4].styles[0]": "Margin=305,-30,-305,-30",
   "controlStyles[5].target": "StartDocked.SearchBoxToggleButton",
