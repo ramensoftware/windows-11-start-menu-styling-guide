@@ -26,7 +26,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ```json
 {
-  "theme": "",
   "resourceVariables[0].variableKey": "",
   "resourceVariables[0].value": "",
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
