@@ -29,7 +29,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ```json
 {
   "controlStyles[0].target": "Button#CloseAllAppsButton",
-  "controlStyles[0].styles[0]": "CornerRadius=12.5",
+  "controlStyles[0].styles[0]": "CornerRadius=14",
   "controlStyles[0].styles[1]": "Transform3D:=<CompositeTransform3D TranslateX=\"32\" />",
   "controlStyles[1].target": "Grid#ShowMoreSuggestions",
   "controlStyles[1].styles[0]": "Visibility=1",
@@ -38,7 +38,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[3].target": "Grid#TopLevelSuggestionsListHeader",
   "controlStyles[3].styles[0]": "Visibility=1",
   "controlStyles[4].target": "Button#ShowAllAppsButton",
-  "controlStyles[4].styles[0]": "CornerRadius=12.5",
+  "controlStyles[4].styles[0]": "CornerRadius=14",
   "controlStyles[4].styles[1]": "Transform3D:=<CompositeTransform3D TranslateX=\"32\" />",
   "controlStyles[5].target": "StartDocked.SearchBoxToggleButton",
   "controlStyles[5].styles[0]": "Margin=30,0,120,26",
