@@ -218,8 +218,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[61].styles[1]": "Height=38",
   "controlStyles[61].styles[2]": "Width=38",
   "controlStyles[62].target": "Grid#ContentBorder > ContentPresenter > FontIcon",
-  "controlStyles[62].styles[0]": "Margin=6,0,0,0",
-  "controlStyles[62].styles[1]": "Opacity=.85",
+  "controlStyles[62].styles[0]": "Opacity=.85",
   "controlStyles[63].target": "StartDocked.AppListView#NavigationPanePlacesListView",
   "controlStyles[63].styles[0]": "Padding=2,0,6,0",
   "controlStyles[64].target": "StartDocked.AppListView#NavigationPanePlacesListView > Border > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsStackPanel > ListViewItem",
@@ -230,8 +229,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[66].styles[0]": "ItemHeight=84",
   "controlStyles[67].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar",
   "controlStyles[67].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"-40\" />",
-  "controlStyles[67].styles[1]": "Margin=0,5,0,55"
-}
+  "controlStyles[67].styles[1]": "Margin=0,5,0,55",
+  "controlStyles[68].target": "Grid#ContentBorder > Border#BorderBackground",
+  "controlStyles[68].styles[0]": "Margin=1,0,-1,0",
+  "controlStyles[69].target": "StackPanel#RootPanel > Button#Header > Border#Border",
+  "controlStyles[69].styles[0]": "Margin=0,0,-1,0"
 }
 ```
 </details>
