@@ -145,12 +145,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[34].styles[1]": "CornerRadiusProtected=8",
   "controlStyles[34].styles[2]": "BorderThicknessProtected=1",
   "controlStyles[34].styles[3]": "BorderBrushProtected:=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" Opacity=\".35\"/>",
+  "controlStyles[34].styles[4]": "Margin=0,0,0,20",
   "controlStyles[35].target": "ListViewItem",
-  "controlStyles[35].styles[0]": "Margin=1,0,-6,0",
+  "controlStyles[35].styles[0]": "Margin=1,5,-5,-5",
   "controlStyles[35].styles[1]": "CornerRadius=4",
-  "controlStyles[35].styles[2]": "Padding=0,0,6,0",
   "controlStyles[36].target": "Button#Header",
-  "controlStyles[36].styles[0]": "Margin=4,0,-3,0",
+  "controlStyles[36].styles[0]": "Margin=4,0,-3,-5",
   "controlStyles[37].target": "StartDocked.AllAppsPane#AllAppsPanel",
   "controlStyles[37].styles[0]": "Margin=-20,0,-6,0",
   "controlStyles[38].target": "TextBlock#PlaceholderTextContentPresenter",
@@ -228,9 +228,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[65].styles[0]": "Margin=0,0,-46,0",
   "controlStyles[66].target": "Windows.UI.Xaml.Controls.ItemsWrapGrid",
   "controlStyles[66].styles[0]": "ItemHeight=84",
+  "controlStyles[67].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar",
   "controlStyles[67].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"-40\" />",
-  "controlStyles[67].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar > Grid#Root > Grid#VerticalRoot",
-  "controlStyles[67].styles[1]": "Margin=0,5,0,0"
+  "controlStyles[67].styles[1]": "Margin=0,5,0,55"
+}
 }
 ```
 </details>
