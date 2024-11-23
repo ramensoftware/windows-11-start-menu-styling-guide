@@ -212,6 +212,8 @@ Replace `<image>` with your own image, a URL or a local file path.
 > Reveal is a deprecated XAML feature. It may have issues
 > or stop working at any time.
 
+Reveal is the cursor-based illumination effect from Windows 10.
+
 ```
 Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
 ```
@@ -220,6 +222,6 @@ Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" /
 BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
 ```
 
-Reveal is the cursor-based illumination effect from Windows 10.
-
 ONLY `RevealBorderBrush` can be used, `RevealBackgroundBrush` is unavailable.
+
+`Opacity` can be changed to increase or decrease the intensity of the effect.
