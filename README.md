@@ -222,6 +222,6 @@ Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" /
 BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
 ```
 
-ONLY `RevealBorderBrush` can be used, `RevealBackgroundBrush` is unavailable.
+ONLY `RevealBorderBrush` should be used, `RevealBackgroundBrush` does not work correctly in most scenarios.
 
 `Opacity` can be changed to increase or decrease the intensity of the effect.
