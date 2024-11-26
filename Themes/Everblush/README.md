@@ -3,7 +3,7 @@ The starter is based on the [Everblush](https://github.com/everblush) color sche
 
 **Author**: [VIN STAR](https://github.com/vinstartheme) 
 
-![Screenshot](https://github.com/user-attachments/assets/acb4448d-e2a4-4dd7-b978-fdeaf9a4e4c1)
+![Screenshot](screenshot.png)
 
 ## Theme selection
 
