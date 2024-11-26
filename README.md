@@ -105,11 +105,16 @@ Adjust values as needed.
 ## Remove the Recommended section
 
 Target the following elements:
-`Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`,
-`Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer`,
-`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader` 
 
-and set the style of each to `Visibility=Collapsed`. 
+`Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`
+
+`Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer`
+
+`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader`
+
+Set the style of each to:
+
+`Visibility=Collapsed`
 
 In addition, the pinned items can be adjusted to
 occupy the whole height by targeting `StartMenu.PinnedList` and setting
@@ -129,8 +134,10 @@ Adjust values as needed.
 Sets light/dark mode independantly of what is set in Windows.
 
 `RequestedTheme=1`
-1 = Light Mode
-2 = Dark mode
+
+`1` = Light Mode
+
+`2` = Dark mode
 
 ## Semantic Zoom (Navigation)
 
@@ -156,15 +163,15 @@ Text=
 FontSize=28
 ````
 
-You may replace Text= with any other charater. Use Character Map to find, copy, and paste the character into the style box
+You may replace `Text=` with any other charater. Use Character Map to find, copy, and paste the character into the style box.
 
 # Search Menu
-The search menu may also be included in your custom theme, and some of the built in themes support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles, will automatically be inherited and applied to search as well.
+The search menu may also be included in your custom theme, and some of the built in themes support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well.
 
 In order to include search in your theme:
-1. Go to the advanced tab at the top in the start menu styler mod
-2. In the Custom process inclusion list below, enter searchhost.exe if you are on Windows 11 24h2 or higher, otherwise enter searchexperiencehost.exe instead
-3. Click save
+1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
+2. In the custom process inclusion list below, enter `searchhost.exe` if you are on Windows 11 24h2 or higher, otherwise enter `searchexperiencehost.exe` instead.
+3. Click save.
 
 
 # Colors
@@ -196,10 +203,9 @@ Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="
 
 Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette.  
 For example:
-`SystemAccentColorLight2`
 
-or
- `SystemAccentColorDark1`. 
+`SystemAccentColorLight2` or `SystemAccentColorDark1` 
+ 
 The word `Light` or `Dark` is appended at end with
 a number ranging from 1-3. See [the official Microsoft
 docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
@@ -227,11 +233,15 @@ In order to use the acrylic effect (a blurred background) you can use the
 Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
 ```
 
-`TintColor` - required. defines what color to use
-`TintOpacity` - how strong the defined color is
-`TintLuminosityOpacity` - Brightness of acrylic effect
-`BackgroundSource` - what should be considered the background of the acrylic effect. Set to "Backdrop" to use the desktop wallpaper
-`Opacity` - how transparent the brush effect itself is. If set to less than 1, it blends the Acrylicbrush with clear transparency
+`TintColor` - Required. Defines what color to use.
+
+`TintOpacity` - Defines the strength of the chosen color.
+
+`TintLuminosityOpacity` - Defines the brightness of the acrylic effect.
+
+`BackgroundSource` - Defines what should be considered the background of the acrylic effect. Set to "Backdrop" to use the desktop wallpaper.
+
+`Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
 
 You can also set Acrylic to use an accent color for a more dynamic look, that fits current theme.
 
@@ -263,13 +273,17 @@ Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
 
 Replace `<image>` with your own image, a URL or a local file path. 
 If you only see a fully transparent background when using a local file path, you must set a URL instead
-images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico
+images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico.
 
-Stretch can be set to none, fill, uniform, or uniformtofill
-None - Image is rendered at its native resolution and aspect ratio
-Fill - Image is stretched or squished to fill the size of the element
-Uniform - Image is resized to fit the element dimensions, while it preserves its native aspect ratio
-UniformToFill - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
+Stretch can be set to the following values:
+
+`None` - Image is rendered at its native resolution and aspect ratio.
+
+`Fill` - Image is stretched or squished to fill the size of the element.
+
+`Uniform` - Image is resized to fit the element dimensions, while it preserves its native aspect ratio.
+
+`UniformToFill` - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
 
 
 ### Reveal as color
