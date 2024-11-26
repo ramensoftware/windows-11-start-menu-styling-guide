@@ -3,6 +3,7 @@
 ## Table of contents
 
 * [Introduction](#introduction)
+  * [Finding targets](#finding-targets)
   * [Missing customizations](#missing-customizations)
   * [Contributing](#contributing)
 * [Themes](#themes)
@@ -12,6 +13,9 @@
 * [Remove the Recommended section](#remove-the-recommended-section)
 * [Remove the user profile button](#remove-the-user-profile-button)
 * [Move the power button](#move-the-power-button)
+* [Force Light/Dark Mode](#force-light/dark-mode)
+* [Semantic Zoom (Navigation)](#semantic-zoom-(Navigation))
+* [Search Menu](#search-menu)
 * [Colors](#colors)
   * [Solid color](#solid-color)
   * [Accent colors](#accent-colors)
@@ -45,6 +49,10 @@ guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/ma
 [The Windows 11 notification center styling
 guide](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/blob/main/README.md).
 
+### Finding Targets
+
+[How to find targets using UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/uwpspy.md).
+
 ### Missing customizations
 
 If you're looking for a customization that is not listed here, please [open an
@@ -72,42 +80,38 @@ Start Menu Styler mod. The following themes are available:
 | [Fluent2Inspired](Themes/Fluent2Inspired/README.md) | [![Fluent2Inspired](Themes/Fluent2Inspired/screenshot-small.png)](Themes/Fluent2Inspired/screenshot.png)
 | [RosePine](Themes/RosePine/README.md) | [![RosePine](Themes/RosePine/screenshot-small.png)](Themes/RosePine/screenshot.png)
 | [Windows11_Metro10Minimal](Themes/Windows11_Metro10Minimal/README.md) | [![Windows11_Metro10Minimal](Themes/Windows11_Metro10Minimal/screenshot-small.png)](Themes/Windows11_Metro10Minimal/screenshot.png)
+| [Everblush](Themes/Everblush/README.md) | [![Everblush](Themes/Everblush/screenshot-small.png)](Themes/Everblush/screenshot.png)
 
 ## Custom Acrylic background
 
-To use a custom Acrylic background, target `Border#AcrylicBorder` and override
-`Background` with a custom `AcrylicBrush` object, for example:
+Target `Border#AcrylicBorder` and set `Background` with an `AcrylicBrush` object, for example:
 
 ```
 Background:=<AcrylicBrush BackgroundSource="Backdrop" TintColor="Pink" TintOpacity="0.25" />
 ```
 
-The [`AcrylicBrush`
-properties](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.acrylicbrush?view=winrt-22621#properties)
+The [AcrylicBrush properties](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.acrylicbrush?view=winrt-22621#properties)
 can be adjusted as needed.
 
 ## Remove the search box
 
-You need to target `StartDocked.SearchBoxToggleButton` with `Height=0`,
-`Margin=0,0,0,24` styles and then the search box should be gone on your start
-menu.
+Target `StartDocked.SearchBoxToggleButton`with `Height=0`, `Margin=0,0,0,24` 
 
 ## Move pinned app lists
 
-You need to target `StartMenu.PinnedList` with `Grid.Row=2` style and then the
-pinned app lists should go up, and for "Pinned" text, target
-`Windows.UI.Xaml.Controls.Grid#TopLevelRoot > Windows.UI.Xaml.Controls.Grid`
-with `Grid.Row=1` style. "All apps" button should have `Grid.Row=1` style. The
-target is: `Windows.UI.Xaml.Controls.Grid#TopLevelRoot >
-Windows.UI.Xaml.Controls.Border`.
+Target `StartMenu.PinnedList` with `Margin=0,0,0,0`
+Adjust values as needed.
 
 ## Remove the Recommended section
 
-To hide the Recommended section, target
+Target the following elements:
 `Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`,
 `Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer`,
-`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader` and set the style
-to `Visibility=Collapsed`. In addition, the pinned items can be adjusted to
+`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader` 
+
+and set the style of each to `Visibility=Collapsed`. 
+
+In addition, the pinned items can be adjusted to
 occupy the whole height by targeting `StartMenu.PinnedList` and setting
 `Height=504`.
 
@@ -118,11 +122,55 @@ Target `StartDocked.UserTileView` with `Visibility=Collapsed`.
 ## Move the power button
 
 Target `StartDocked.PowerOptionsView` with `Margin=-580,-1330,0,0`.
+Adjust values as needed.
+
+## Force Light/Dark mode
+
+Sets light/dark mode independantly of what is set in Windows.
+
+`RequestedTheme=1`
+1 = Light Mode
+2 = Dark mode
+
+## Semantic Zoom (Navigation)
+
+Semantic zoom is the feature that allows us to navigate the apps list using the alpha-numeric headers in the list. This lets you jump to a particular letter or number in the apps list quickly.
+For themes that have the apps list visible in the main start menu view, this feature does not work. As an optional work around, you may enable the hidden zoom button. This button allows you to access the Alpha-numeric navigation view. This is the zoomed out view, which is why this is called semantic zoom.
+
+````
+Target:
+Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl
+Styles: 
+IsZoomOutButtonEnabled=True
+
+Target:
+Windows.UI.Xaml.Controls.Button#ZoomOutButton
+Styles:
+Width=40
+Height=40
+
+Target:
+Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
+Styles:
+Text=
+FontSize=28
+````
+
+You may replace Text= with any other charater. Use Character Map to find, copy, and paste the character into the style box
+
+# Search Menu
+The search menu may also be included in your custom theme, and some of the built in themes support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles, will automatically be inherited and applied to search as well.
+
+In order to include search in your theme:
+1. Go to the advanced tab at the top in the start menu styler mod
+2. In the Custom process inclusion list below, enter searchhost.exe if you are on Windows 11 24h2 or higher, otherwise enter searchexperiencehost.exe instead
+3. Click save
+
 
 # Colors
 
-In the following examples, we are going to use `Background`, but this
- also works for other properties that accept colors like `Fill`.
+In the following examples, we will use `Background` as our style, but this
+also works for other properties that accept colors, such as `Fill`.
 
 ### Solid color
 
@@ -135,7 +183,7 @@ Replace `<color>` with the desired color.
 A color can be a name (e.g. `Red`) or a hex code (e.g. `#FF0000`).
 
 The color can be semi-transparent (e.g. `#80FF0000`). To have a fully
-transparent background, use `Transparent`.
+transparent background, use `Transparent` or `#00000000`.
 
 ### Accent colors
 
@@ -146,36 +194,46 @@ styles built into Windows.
 Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.8" />
 ```
 
-Accent colors have different lightness available, like `SystemAccentColorLight2`
-or `SystemAccentColorDark1`. The word `Light` or `Dark` is appended at end with
-a number ranging from 1-3. Check out [the official Microsoft
+Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette.  
+For example:
+`SystemAccentColorLight2`
+
+or
+ `SystemAccentColorDark1`. 
+The word `Light` or `Dark` is appended at end with
+a number ranging from 1-3. See [the official Microsoft
 docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
-for all variations.
+for more information.
 
 ```
 Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}" Opacity="0.5" />
 ```
 
-### Transparent color
+### Clear Transparent Background
 
-To have a fully transparent background, use the following style:
+To have a fully transparent background:
 
 ```
-Background=Transparent
+Target: BorderAcrylicBorder
+Style: Background=Transparent
 ```
 
 ### Acrylic effect as color
 
-In order to have an acrylic effect (a blurred background) you can use
-`AcrylicBrush`, this comes with `TintOpacity` which defines how much of the
-color needs to be applied.
+In order to use the acrylic effect (a blurred background) you can use the
+`AcrylicBrush`.
 
 ```
 Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
 ```
 
-You can also mix Acrylic with a variation of an accent color for a more dynamic
-look that fits current theme.
+`TintColor` - required. defines what color to use
+`TintOpacity` - how strong the defined color is
+`TintLuminosityOpacity` - Brightness of acrylic effect
+`BackgroundSource` - what should be considered the background of the acrylic effect. Set to "Backdrop" to use the desktop wallpaper
+`Opacity` - how transparent the brush effect itself is. If set to less than 1, it blends the Acrylicbrush with clear transparency
+
+You can also set Acrylic to use an accent color for a more dynamic look, that fits current theme.
 
 ```
 Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
@@ -184,8 +242,7 @@ Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" Tin
 ### Mica effect as color
 
 > [!NOTE]
-> Unfortunately I haven't figured this out yet. If you have any info please
-> contribute by making a pull request.
+> Unfortunately, it is not possible to set a Mica effect at this time with any of Windhawk's styler mods
 
 ### Gradient as color
 
@@ -204,7 +261,16 @@ The background can also be an image:
 Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
 ```
 
-Replace `<image>` with your own image, a URL or a local file path.
+Replace `<image>` with your own image, a URL or a local file path. 
+If you only see a fully transparent background when using a local file path, you must set a URL instead
+images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico
+
+Stretch can be set to none, fill, uniform, or uniformtofill
+None - Image is rendered at its native resolution and aspect ratio
+Fill - Image is stretched or squished to fill the size of the element
+Uniform - Image is resized to fit the element dimensions, while it preserves its native aspect ratio
+UniformToFill - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
+
 
 ### Reveal as color
 
