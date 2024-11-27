@@ -166,7 +166,7 @@ FontSize=28
 You may replace `Text=` with any other charater. Use Character Map to find, copy, and paste the character into the style box.
 
 # Search Menu
-The search menu may also be included in your custom theme, and some of the built in themes support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well.
+The search menu may also be included in your custom theme, and some of the built-in themes support already this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
 
 In order to include search in your theme:
 1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
@@ -272,7 +272,7 @@ Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
 ```
 
 Replace `<image>` with your own image, a URL or a local file path. 
-If you only see a fully transparent background when using a local file path, you must set a URL instead
+If you only see a fully transparent background when using a local file path, you must set a URL instead.
 images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico.
 
 Stretch can be set to the following values:
