@@ -13,9 +13,9 @@
 * [Remove the Recommended section](#remove-the-recommended-section)
 * [Remove the user profile button](#remove-the-user-profile-button)
 * [Move the power button](#move-the-power-button)
-* [Force Light/Dark Mode](#force-lightdark-mode)
-* [Semantic Zoom (Navigation)](#semantic-zoom-navigation)
-* [Search Menu](#search-menu)
+* [Force light/dark mode](#force-lightdark-mode)
+* [Semantic zoom (navigation)](#semantic-zoom-navigation)
+* [Search menu](#search-menu)
 * [Colors](#colors)
   * [Solid color](#solid-color)
   * [Accent colors](#accent-colors)
@@ -95,11 +95,11 @@ can be adjusted as needed.
 
 ## Remove the search box
 
-Target `StartDocked.SearchBoxToggleButton`with `Height=0`, `Margin=0,0,0,24` 
+Target `StartDocked.SearchBoxToggleButton` with `Height=0`, `Margin=0,0,0,24`.
 
 ## Move pinned app lists
 
-Target `StartMenu.PinnedList` with `Margin=0,0,0,0`
+Target `StartMenu.PinnedList` with `Margin=0,0,0,0`.
 Adjust values as needed.
 
 ## Remove the Recommended section
@@ -129,9 +129,9 @@ Target `StartDocked.UserTileView` with `Visibility=Collapsed`.
 Target `StartDocked.PowerOptionsView` with `Margin=-580,-1330,0,0`.
 Adjust values as needed.
 
-## Force Light/Dark mode
+## Force light/dark mode
 
-Sets light/dark mode independantly of what is set in Windows.
+Sets light/dark mode independently of what is set in Windows.
 
 `RequestedTheme=1`
 
@@ -139,42 +139,51 @@ Sets light/dark mode independantly of what is set in Windows.
 
 `2` = Dark mode
 
-## Semantic Zoom (Navigation)
+## Semantic zoom (navigation)
 
 Semantic zoom is the feature that allows us to navigate the apps list using the alpha-numeric headers in the list. This lets you jump to a particular letter or number in the apps list quickly.
-For themes that have the apps list visible in the main start menu view, this feature does not work. As an optional work around, you may enable the hidden zoom button. This button allows you to access the Alpha-numeric navigation view. This is the zoomed out view, which is why this is called semantic zoom.
+For themes that have the apps list visible in the main start menu view, this feature does not work. As an optional work around, you may enable the hidden zoom button. This button allows you to access the alpha-numeric navigation view. This is the zoomed out view, which is why this is called semantic zoom.
 
-````
 Target:
+```
 Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl
-Styles: 
+```
+Styles:
+```
 IsZoomOutButtonEnabled=True
+```
 
 Target:
+```
 Windows.UI.Xaml.Controls.Button#ZoomOutButton
+```
 Styles:
+```
 Width=40
 Height=40
+```
 
 Target:
+```
 Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
+```
 Styles:
+```
 Text=
 FontSize=28
-````
+```
 
-You may replace `Text=` with any other charater. Use Character Map to find, copy, and paste the character into the style box.
+You may replace `Text=` with any other character. Use Character Map to find, copy, and paste the character into the style box.
 
-# Search Menu
-The search menu may also be included in your custom theme, and some of the built-in themes support already this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
+## Search menu
+The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
 
 In order to include search in your theme:
 1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
 2. In the custom process inclusion list below, enter `searchhost.exe` if you are on Windows 11 24h2 or higher, otherwise enter `searchexperiencehost.exe` instead.
 3. Click save.
 
-
-# Colors
+## Colors
 
 In the following examples, we will use `Background` as our style, but this
 also works for other properties that accept colors, such as `Fill`.
@@ -201,10 +210,7 @@ styles built into Windows.
 Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.8" />
 ```
 
-Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette.  
-For example:
-
-`SystemAccentColorLight2` or `SystemAccentColorDark1` 
+Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette. For example: `SystemAccentColorLight2` or `SystemAccentColorDark1`.
  
 The word `Light` or `Dark` is appended at end with
 a number ranging from 1-3. See [the official Microsoft
@@ -219,9 +225,13 @@ Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}" Opac
 
 To have a fully transparent background:
 
+Target:
 ```
-Target: BorderAcrylicBorder
-Style: Background=Transparent
+BorderAcrylicBorder
+```
+Style:
+```
+Background=Transparent
 ```
 
 ### Acrylic effect as color
@@ -251,8 +261,8 @@ Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" Tin
 
 ### Mica effect as color
 
-> [!NOTE]
-> Unfortunately, it is not possible to set a Mica effect at this time with any of Windhawk's styler mods
+> [!NOTE]  
+> Unfortunately, it is not possible to set a Mica effect at this time with any of Windhawk's styler mods.
 
 ### Gradient as color
 
@@ -271,9 +281,9 @@ The background can also be an image:
 Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
 ```
 
-Replace `<image>` with your own image, a URL or a local file path. 
+Replace `<image>` with your own image, a URL or a local file path.
 If you only see a fully transparent background when using a local file path, you must set a URL instead.
-images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico.
+Images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico.
 
 Stretch can be set to the following values:
 
@@ -284,7 +294,6 @@ Stretch can be set to the following values:
 `Uniform` - Image is resized to fit the element dimensions, while it preserves its native aspect ratio.
 
 `UniformToFill` - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
-
 
 ### Reveal as color
 
@@ -302,6 +311,6 @@ Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" /
 BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
 ```
 
-ONLY `RevealBorderBrush` should be used, `RevealBackgroundBrush` does not work correctly in most scenarios.
+**Only** `RevealBorderBrush` should be used, `RevealBackgroundBrush` does not work correctly in most scenarios.
 
 `Opacity` can be changed to increase or decrease the intensity of the effect.
