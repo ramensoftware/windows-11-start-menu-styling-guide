@@ -176,11 +176,12 @@ FontSize=28
 You may replace `Text=` with any other character. Use Character Map to find, copy, and paste the character into the style box.
 
 ## Search menu
+
 The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
 
 In order to include search in your theme:
 1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
-2. In the custom process inclusion list below, enter `searchhost.exe` if you are on Windows 11 24h2 or higher, otherwise enter `searchexperiencehost.exe` instead.
+2. In the custom process inclusion list below, enter `SearchHost.exe`.
 3. Click save.
 
 ## Colors
