@@ -106,13 +106,10 @@ Adjust values as needed.
 
 Target the following elements:
 
-`Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`
-
-`Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer`
-
-`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader`
-
-`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer`
+* `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader`
+* `Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText`
+* `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer`
+* `Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`
 
 Set the style of each to:
 
