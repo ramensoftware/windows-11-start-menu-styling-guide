@@ -112,6 +112,8 @@ Target the following elements:
 
 `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader`
 
+`Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer`
+
 Set the style of each to:
 
 `Visibility=Collapsed`
