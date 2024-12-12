@@ -149,6 +149,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ## Search menu support
 
+This section is only relevant for older versions of Windows 11 Start Menu
+Styler. Versions 1.2 and newer automatically apply the styles to the search
+menu.
+
 <details>
 <summary>Expand</summary>
 
