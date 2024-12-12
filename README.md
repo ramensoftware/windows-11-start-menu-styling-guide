@@ -16,6 +16,20 @@
 * [Force light/dark mode](#force-lightdark-mode)
 * [Semantic zoom (navigation)](#semantic-zoom-navigation)
 * [Search menu](#search-menu)
+* [Search menu WebView styles](#search-menu-webview-styles)
+  * [Hide the back button](#hide-the-back-button)
+  * [Hide the Copilot button](#hide-the-copilot-button)
+  * [Change the background color of search type headers](#change-the-background-color-of-search-type-headers)
+  * [Hide the search type headers](#hide-the-search-type-headers)
+  * [Hide the search type header scroll buttons](#hide-the-search-type-header-scroll-buttons)
+  * [Hide the quick settings panel](#hide-the-quick-settings-panel)
+  * [Hide the top result title](#hide-the-top-result-title)
+  * [Change the background color of all search results](#change-the-background-color-of-all-search-results)
+  * [Hide left-side pill of the selected search result](#hide-left-side-pill-of-the-selected-search-result)
+  * [Change the width of the preview panel](#change-the-width-of-the-preview-panel)
+  * [Change the background color of the preview panel](#change-the-background-color-of-the-preview-panel)
+  * [Change the text font](#change-the-text-font)
+  * [Change the icons font](#change-the-icons-font)
 * [Colors](#colors)
   * [Solid color](#solid-color)
   * [Accent colors](#accent-colors)
@@ -182,6 +196,153 @@ In order to include search in your theme:
 1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
 2. In the custom process inclusion list below, enter `SearchHost.exe`.
 3. Click save.
+
+## Search menu WebView styles
+
+While the start menu uses WinUI for its user interface, most of the search content (all but the top search bar) is a WebView element. To style the search WebView, CSS targets and styles can be used. For example, to set a red background, the target `body` and the style `background: red !important` can be used.
+
+### Hide the back button
+
+Target:
+```
+.scope-with-background__backButton
+```
+Style:
+```
+display: none !important
+```
+
+### Hide the Copilot button
+
+Target:
+```
+#chatButtonRight
+```
+Style:
+```
+display: none !important
+```
+
+### Change the background color of search type headers
+
+Target:
+```
+.scope-tile > div
+```
+Style:
+```
+background-color: Black !important
+```
+
+### Hide the search type headers
+
+Target:
+```
+#scopesHeader
+```
+Style:
+```
+display: none !important
+```
+
+### Hide the search type header scroll buttons
+
+Target:
+```
+.scope-with-background__rightCaret, .scope-with-background__leftCaret
+```
+Style:
+```
+display: none !important
+```
+
+### Hide the quick settings panel
+
+Target:
+```
+.curatedSettingsGroup
+```
+Style:
+```
+display: none !important
+```
+
+### Hide the top result title
+
+Target:
+```
+#topHitHeader
+```
+Style:
+```
+display: none !important
+```
+
+### Change the background color of all search results
+
+Target:
+```
+.suggContainer
+```
+Style:
+```
+background-color: Black !important
+```
+
+### Hide left-side pill of the selected search result
+
+Target:
+```
+.leftPill::before
+```
+Style:
+```
+display: none !important
+```
+
+### Change the width of the preview panel
+
+Target:
+```
+#qfPreviewPane
+```
+Style:
+```
+min-width: 300px !important
+```
+
+### Change the background color of the preview panel
+
+Target:
+```
+.previewContainer
+```
+Style:
+```
+background-color: Black !important
+```
+
+### Change the text font
+
+Target:
+```
+h4, .suggContainer, .groupTitle, .suggsListContainer, .title, .details, .secondaryText, .scope-tile > div, .menu-item_details
+```
+Style:
+```
+font-family: 'Inter' !important
+```
+
+### Change the icons font
+
+Target:
+```
+.cortanaFontIcon, .iconContent
+```
+Style:
+```
+font-family: 'Segoe MDL2 Assets' !important
+```
 
 ## Colors
 
