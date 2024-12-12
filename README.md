@@ -16,7 +16,7 @@
 * [Force light/dark mode](#force-lightdark-mode)
 * [Semantic zoom (navigation)](#semantic-zoom-navigation)
 * [Search menu](#search-menu)
-  * [Search menu WebView styles](#search-menu-webview-styles)
+* [Search menu WebView styles](#search-menu-webview-styles)
   * [Hide the back button](#hide-the-back-button)
   * [Hide the Copilot button](#hide-the-copilot-button)
   * [Change the background color of search type headers](#change-the-background-color-of-search-type-headers)
@@ -197,7 +197,7 @@ In order to include search in your theme:
 2. In the custom process inclusion list below, enter `SearchHost.exe`.
 3. Click save.
 
-### Search menu WebView styles
+## Search menu WebView styles
 
 While the start menu uses WinUI for its user interface, most of the search content (all but the top search bar) is a WebView element. To style the search WebView, CSS targets and styles can be used. For example, to set a red background, the target `body` and the style `background: red !important` can be used.
 
@@ -209,7 +209,7 @@ Target:
 ```
 Style:
 ```
-display: none !important;
+display: none !important
 ```
 
 ### Hide the Copilot button
@@ -220,7 +220,7 @@ Target:
 ```
 Style:
 ```
-display: none !important;
+display: none !important
 ```
 
 ### Change the background color of search type headers
@@ -231,7 +231,7 @@ Target:
 ```
 Style:
 ```
-background-color: Black !important;
+background-color: Black !important
 ```
 
 ### Hide the search type headers
@@ -242,7 +242,7 @@ Target:
 ```
 Style:
 ```
-display: none !important;
+display: none !important
 ```
 
 ### Hide the search type header scroll buttons
@@ -253,7 +253,7 @@ Target:
 ```
 Style:
 ```
-display: none !important;
+display: none !important
 ```
 
 ### Hide the quick settings panel
@@ -264,7 +264,7 @@ Target:
 ```
 Style:
 ```
-display: none !important;
+display: none !important
 ```
 
 ### Hide the top result title
@@ -275,7 +275,7 @@ Target:
 ```
 Style:
 ```
-display: none !important;
+display: none !important
 ```
 
 ### Change the background color of all search results
@@ -286,7 +286,7 @@ Target:
 ```
 Style:
 ```
-background-color: Black !important;
+background-color: Black !important
 ```
 
 ### Hide left-side pill of the selected search result
@@ -297,7 +297,7 @@ Target:
 ```
 Style:
 ```
-display: none !important;
+display: none !important
 ```
 
 ### Change the width of the preview panel
@@ -308,7 +308,7 @@ Target:
 ```
 Style:
 ```
-min-width: 300px !important;
+min-width: 300px !important
 ```
 
 ### Change the background color of the preview panel
@@ -319,7 +319,7 @@ Target:
 ```
 Style:
 ```
-background-color: Black !important;
+background-color: Black !important
 ```
 
 ### Change the text font
@@ -330,7 +330,7 @@ h4, .suggContainer, .groupTitle, .suggsListContainer, .title, .details, .seconda
 ```
 Style:
 ```
-font-family: 'Inter' !important;
+font-family: 'Inter' !important
 ```
 
 ### Change the icons font
@@ -341,7 +341,7 @@ Target:
 ```
 Style:
 ```
-font-family: 'Segoe MDL2 Assets' !important;
+font-family: 'Segoe MDL2 Assets' !important
 ```
 
 ## Colors
