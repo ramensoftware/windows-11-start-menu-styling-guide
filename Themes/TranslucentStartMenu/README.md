@@ -95,7 +95,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[18].styles[0]": "Background:=<AcrylicBrush TintColor=\"Transparent\" TintOpacity=\"0\" TintLuminosityOpacity=\"0\" Opacity=\"1\" FallbackColor=\"#A0262626\"/>",
   "controlStyles[19].target": "StartDocked.AllAppsGridListViewItem > Grid@CommonStates > Border",
   "controlStyles[19].styles[0]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[19].styles[1]": "BorderThickness=1",
+  "controlStyles[19].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
+  "controlStyles[19].styles[2]": "BorderThickness=1",
   "controlStyles[20].target": "Button#CloseAllAppsButton > ContentPresenter@CommonStates",
   "controlStyles[20].styles[0]": "Background@Normal:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0.05\" TintOpacity=\"1\" Opacity=\"1\" FallbackColor=\"#70262626\"/>",
   "controlStyles[20].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
@@ -109,7 +110,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[22].styles[0]": "CornerRadius=16",
   "controlStyles[22].styles[1]": "Margin=-1",
   "controlStyles[23].target": "Border#DropShadow",
-  "controlStyles[23].styles[0]": "CornerRadius=15"
+  "controlStyles[23].styles[0]": "CornerRadius=15",
+  "controlStyles[24].target": "StartDocked.AllAppsGridListViewItem > Grid#ContentBorder@CommonStates",
+  "controlStyles[24].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"Transparent\" TintLuminosityOpacity=\"0.05\" TintOpacity=\"0\" Opacity=\"1\"/>",
+  "controlStyles[24].styles[1]": "CornerRadius=4"
 }
 ```
 </details>
