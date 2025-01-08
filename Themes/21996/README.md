@@ -1,6 +1,10 @@
 # 21996 Start & Search theme for Windows 11 Start Menu Styler
 
 This theme tries to recreate the design that the Windows 11 start menu and search menu had on early Windows 11 Builds
+which include:
+* Squared search box
+* no search box on the start menu
+* changed 'All' to 'All apps' like it was on older Windows 11 builds
 
 **Author**: [Tails](https://github.com/milesprower2293)
 
