@@ -1,5 +1,7 @@
 # 21996 Start & Search theme for Windows 11 Start Menu Styler
 
+This theme tries to recreate the design that the Windows 11 start menu and search menu had on early Windows 11 Builds
+
 **Author**: [Tails](https://github.com/milesprower2293)
 
 ![Screenshot](Start.png)
