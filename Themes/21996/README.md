@@ -5,6 +5,7 @@ which include:
 * Squared search box
 * no search box on the start menu
 * changed 'All' to 'All apps' like it was on older Windows 11 builds
+* Reverted the search icon back to the one from 22000
 
 **Author**: [Tails](https://github.com/milesprower2293)
 
