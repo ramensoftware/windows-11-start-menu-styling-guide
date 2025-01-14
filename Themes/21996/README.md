@@ -3,14 +3,14 @@
 This theme tries to recreate the design that the Windows 11 start menu and search menu had on early Windows 11 Builds
 which include:
 * Squared search box
-* no search box on the start menu
-* changed 'All' to 'All apps' like it was on older Windows 11 builds
+* No search box on the start menu
+* Changed 'All' to 'All apps' like it was on older Windows 11 builds
 * Reverted the search icon back to the one from 22000
 
 **Author**: [Tails](https://github.com/milesprower2293)
 
-![Screenshot](Start.png)
-![Screenshot](Search.png)
+![Screenshot](screenshot.png) \
+![Screenshot](screenshot-search.png)
 
 ## Theme selection
 
@@ -62,7 +62,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
 "controlStyles[5].styles[6]":"FontSize=17",
 "controlStyles[6].target":"StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid",
 "controlStyles[6].styles[0]":"BorderBrush:=<SolidColorBrush Color=\"{ThemeResource ControlStrokeColorDefault}\"/>",
-"controlStyles[6].styles[1]":"BorderThickness=1,1,1,0","controlStyles[6].styles[2]":"CornerRadius=4",
+"controlStyles[6].styles[1]":"BorderThickness=1,1,1,0",
+"controlStyles[6].styles[2]":"CornerRadius=4",
 "controlStyles[7].target":"Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl > Grid#RootGrid",
 "controlStyles[7].styles[0]":"CornerRadius=4",
 "controlStyles[7].styles[1]":"BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight1}\" />",

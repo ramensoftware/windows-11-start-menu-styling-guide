@@ -95,7 +95,7 @@ Start Menu Styler mod. The following themes are available:
 | [RosePine](Themes/RosePine/README.md) | [![RosePine](Themes/RosePine/screenshot-small.png)](Themes/RosePine/screenshot.png)
 | [Windows11_Metro10Minimal](Themes/Windows11_Metro10Minimal/README.md) | [![Windows11_Metro10Minimal](Themes/Windows11_Metro10Minimal/screenshot-small.png)](Themes/Windows11_Metro10Minimal/screenshot.png)
 | [Everblush](Themes/Everblush/README.md) | [![Everblush](Themes/Everblush/screenshot-small.png)](Themes/Everblush/screenshot.png)
-| [21996](Themes/21996/README.md) | [![21996](Themes/21996/Start_small.png)](Themes/21996/Start.png)
+| [21996](Themes/21996/README.md) | [![21996](Themes/21996/screenshot-small.png)](Themes/21996/screenshot.png)
 
 ## Custom Acrylic background
 
