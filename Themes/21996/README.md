@@ -6,6 +6,8 @@ which include:
 * No search box on the start menu
 * Changed 'All' to 'All apps' like it was on older Windows 11 builds
 * Reverted the search icon back to the one from 22000
+* 21370-22000.9-like Acrylic
+* Accent color & light/dark mode support
 
 **Author**: [Tails](https://github.com/milesprower2293)
 
@@ -62,8 +64,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 "controlStyles[5].styles[6]":"FontSize=17",
 "controlStyles[6].target":"StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid",
 "controlStyles[6].styles[0]":"BorderBrush:=<SolidColorBrush Color=\"{ThemeResource ControlStrokeColorDefault}\"/>",
-"controlStyles[6].styles[1]":"BorderThickness=1,1,1,0",
-"controlStyles[6].styles[2]":"CornerRadius=4",
+"controlStyles[6].styles[1]":"BorderThickness=1,1,1,0","controlStyles[6].styles[2]":"CornerRadius=4",
 "controlStyles[7].target":"Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl > Grid#RootGrid",
 "controlStyles[7].styles[0]":"CornerRadius=4",
 "controlStyles[7].styles[1]":"BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight1}\" />",
@@ -87,15 +88,22 @@ The theme styles can also be imported manually. To do that, follow these steps:
 "controlStyles[14].styles[0]":"Text=All apps",
 "controlStyles[15].target":"StartDocked.SearchBoxToggleButton",
 "controlStyles[15].styles[0]":"Height=0",
-"controlStyles[15].styles[1]":"Margin=0,0,0,24",
+"controlStyles[15].styles[1]":"Margin=0,0,0,32",
 "controlStyles[16].target":"StartDocked.LauncherFrame",
 "controlStyles[16].styles[0]":"Height=670",
 "controlStyles[17].target":"Windows.UI.Xaml.Controls.Grid#InnerContent",
 "controlStyles[17].styles[0]":"Margin=0,0,0,0",
 "controlStyles[18].target":"Cortana.UI.Views.HostedWebViewControl#QueryFormulationHostedWebView",
-"controlStyles[18].styles[0]":"Background:=<SolidColorBrush Color=\"{ThemeResource ControlStrokeColorDefault}\" Opacity=\"100\"  />",
+"controlStyles[18].styles[0]":"Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"1\" TintLuminosityOpacity=\"1\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
 "controlStyles[19].target":"Windows.UI.Xaml.Controls.Grid#QueryFormulationRoot",
-"controlStyles[19].styles[0]":"CornerRadius=10"
+"controlStyles[19].styles[0]":"CornerRadius=10",
+"controlStyles[20].target":"Windows.UI.Xaml.Controls.Border#AcrylicBorder",
+"controlStyles[20].styles[0]":"Opacity=0.5",
+"controlStyles[21].target":"Windows.UI.Xaml.Controls.Grid#MainContent",
+"controlStyles[21].styles[0]":"Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.5\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
+"controlStyles[21].styles[1]":"CornerRadius=7",
+"controlStyles[22].target":"Windows.UI.Xaml.Controls.Border#AppBorder",
+"controlStyles[22].styles[0]":"Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.7\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />"
 }
 ```
 </details>
