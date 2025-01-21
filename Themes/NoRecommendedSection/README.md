@@ -28,14 +28,49 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ```json
 {
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
+  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
   "controlStyles[0].styles[0]": "Visibility=Collapsed",
-  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer",
+  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
   "controlStyles[1].styles[0]": "Visibility=Collapsed",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
+  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
   "controlStyles[2].styles[0]": "Visibility=Collapsed",
-  "controlStyles[3].target": "StartMenu.PinnedList",
-  "controlStyles[3].styles[0]": "Height=504"
+  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
+  "controlStyles[3].styles[0]": "Visibility=Collapsed",
+  "controlStyles[4].target": "StartMenu.PinnedList",
+  "controlStyles[4].styles[0]": "Height=504"
+}
+```
+</details>
+
+## Keep Recommended Button
+
+A modification of NoRecommendedSection that moves the "Recommended" button next
+to the "All" button. This way the "Recommended" list is still accessible without
+taking up space.
+
+**Note**: The button will only appear after a few entries are added to the
+Recommended list, so you may need to open a few files and restart explorer to
+see any difference.
+
+![Screenshot](screenshot-with-button.png)
+
+<details>
+<summary>Content to import (click to expand)</summary>
+  
+```json
+{
+  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
+  "controlStyles[0].styles[0]": "Visibility=Collapsed",
+  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
+  "controlStyles[1].styles[0]": "Height=0",
+  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
+  "controlStyles[2].styles[0]": "Height=0",
+  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
+  "controlStyles[3].styles[0]": "RenderTransform:=<TranslateTransform Y=\"-572\" X=\"-55\" />",
+  "controlStyles[4].target": "StartMenu.PinnedList",
+  "controlStyles[4].styles[0]": "Height=504",
+  "controlStyles[5].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
+  "controlStyles[5].styles[0]": "Text=Recommended"
 }
 ```
 </details>

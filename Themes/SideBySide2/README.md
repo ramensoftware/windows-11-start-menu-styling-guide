@@ -26,7 +26,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ```json
 {
-  "theme": "",
   "resourceVariables[0].variableKey": "",
   "resourceVariables[0].value": "",
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
@@ -85,7 +84,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[18].styles[6]": "Transform3D:=<CompositeTransform3D TranslateX=\"-1\" TranslateY=\"-34\"/>",
   "controlStyles[20].target": "StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root",
   "controlStyles[20].styles[0]": "Padding=0,0,4,0",
-  "controlStyles[21].target": " Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText",
+  "controlStyles[21].target": "Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText",
   "controlStyles[21].styles[0]": "Margin=-32,0,32,0",
   "controlStyles[22].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
   "controlStyles[22].styles[0]": "Margin=31,-3,12,0",
@@ -116,16 +115,14 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[32].styles[0]": "FontSize=12",
   "controlStyles[33].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
   "controlStyles[33].styles[0]": "Margin=2,0,0,0",
-  "controlStyles[34].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon ",
+  "controlStyles[34].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon",
   "controlStyles[34].styles[0]": "FontSize=12",
   "controlStyles[35].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
   "controlStyles[35].styles[0]": "Margin=-268,0,0,0",
   "controlStyles[36].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1] > Grid",
   "controlStyles[36].styles[0]": "Margin=-543,0,543,0",
-  "controlStyles[37].target": "Windows.UI.Xaml.Controls.Grid#TopLevelRoot > Windows.UI.Xaml.Controls.Grid[2]",
-  "controlStyles[37].styles[0]": "MinHeight=302",
-  "controlStyles[38].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
-  "controlStyles[38].styles[0]": "Margin=-245,-12,0,0"
+  "controlStyles[37].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
+  "controlStyles[37].styles[0]": "Margin=-245,-12,0,0"
 }
 ```
 </details>
