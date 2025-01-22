@@ -1,4 +1,4 @@
-# Down Aero Start Menu Styler
+# Down Aero
 
 **Author**: [VIN STAR](https://github.com/vinstartheme)
 
