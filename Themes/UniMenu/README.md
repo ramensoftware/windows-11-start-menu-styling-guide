@@ -1,4 +1,4 @@
-# UniMenu
+# UniMenu theme for Windows 11 Start Menu Styler
 
 **Author**: [VIN STAR](https://github.com/vinstartheme)
 
