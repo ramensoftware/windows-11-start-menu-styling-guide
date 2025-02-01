@@ -97,6 +97,7 @@ Start Menu Styler mod. The following themes are available:
 | [Everblush](Themes/Everblush/README.md) | [![Everblush](Themes/Everblush/screenshot-small.png)](Themes/Everblush/screenshot.png)
 | [21996](Themes/21996/README.md) | [![21996](Themes/21996/screenshot-small.png)](Themes/21996/screenshot.png)
 | [Down Aero](Themes/Down%20Aero/README.md) | [![Down Aero](Themes/Down%20Aero/screenshot-small.png)](Themes/Down%20Aero/screenshot.png)
+| [UniMenu](Themes/UniMenu/README.md) | [![UniMenu](Themes/UniMenu/screenshot-small.png)](Themes/UniMenu/screenshot.png)
 
 ## Custom Acrylic background
 
