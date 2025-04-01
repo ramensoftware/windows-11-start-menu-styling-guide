@@ -29,13 +29,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
   "controlStyles[0].styles[0]": "Visibility=Visible",
   "controlStyles[0].styles[1]": "Width=348",
-  "controlStyles[0].styles[2]": "Transform3D:=<CompositeTransform3D TranslateX=\"178\" />",
-  "controlStyles[0].styles[3]": "Margin=-80,-20,0,0",
-  "controlStyles[0].styles[4]": "Padding=0,0,0,0",
+  "controlStyles[0].styles[2]": "Margin=132,-42,-132,0",
   "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#AllAppsRoot",
   "controlStyles[1].styles[0]": "Visibility=Visible",
   "controlStyles[1].styles[1]": "Width=320",
-  "controlStyles[1].styles[2]": "Margin=-830,-20,830,0",
+  "controlStyles[1].styles[2]": "Margin=-830,-42,830,0",
   "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
   "controlStyles[2].styles[0]": "Visibility=Collapsed",
   "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer",
@@ -63,7 +61,13 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[12].styles[1]": "Margin=-85,0,0,0",
   "controlStyles[12].styles[2]": "Width=350",
   "controlStyles[13].target": "StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager",
-  "controlStyles[13].styles[0]": "Margin=-15,0,0,0"
+  "controlStyles[13].styles[0]": "Margin=-15,0,0,0",
+  "controlStyles[14].target": "Rectangle[4]",
+  "controlStyles[14].styles[0]": "Margin=0,-20,0,0",
+  "controlStyles[15].target": "Grid#TopLevelSuggestionsContainer",
+  "controlStyles[15].styles[0]": "Visibility=Collapsed",
+  "controlStyles[16].target": "StartDocked.AppListView",
+  "controlStyles[16].styles[0]": "Margin=38,0,-38,0"
 }
 ```
 </details>
