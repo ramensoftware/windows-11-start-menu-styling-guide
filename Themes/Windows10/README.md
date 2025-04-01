@@ -15,7 +15,7 @@
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The standard variant of this theme is integrated into the mod, and can be simply selected from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
@@ -30,6 +30,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
+## Standard Variant
 <details>
 <summary>Content to import (click to expand)</summary>
 
@@ -226,6 +227,144 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[59].styles[2]": "CornerRadius=8",
   "controlStyles[60].target": "Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border",
   "controlStyles[60].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>"
+}
+```
+</details>
+
+## Minimal Variant
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
+{
+  "controlStyles[0].target": "Grid#RootContent",
+  "controlStyles[0].styles[0]": "Height=800",
+  "controlStyles[1].target": "Rectangle[4]",
+  "controlStyles[1].styles[0]": "Margin=0,-20,0,0",
+  "controlStyles[2].target": "StartDocked.StartSizingFrame",
+  "controlStyles[2].styles[0]": "Margin=-14,25,12,-12",
+  "controlStyles[3].target": "StartDocked.SearchBoxToggleButton",
+  "controlStyles[3].styles[0]": "Visibility=Collapsed",
+  "controlStyles[3].styles[1]": "Height=0",
+  "controlStyles[4].target": "Windows.UI.Xaml.Controls.Grid#AllAppsRoot",
+  "controlStyles[4].styles[0]": "Width=425",
+  "controlStyles[4].styles[1]": "Height=Auto",
+  "controlStyles[4].styles[2]": "Visibility=Visible",
+  "controlStyles[4].styles[3]": "Margin=-510,-69,510,0",
+  "controlStyles[5].target": "Border#AcrylicBorder",
+  "controlStyles[5].styles[0]": "BorderThickness=1.5",
+  "controlStyles[5].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
+  "controlStyles[5].styles[2]": "Width=400",
+  "controlStyles[5].styles[3]": "HorizontalAlignment=0",
+  "controlStyles[6].target": "Windows.UI.Xaml.Controls.Border#BackgroundBorder",
+  "controlStyles[6].styles[0]": "CornerRadius=0",
+  "controlStyles[6].styles[1]": "BorderThickness=1",
+  "controlStyles[6].styles[2]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
+  "controlStyles[7].target": "Border#BorderBackground",
+  "controlStyles[7].styles[0]": "CornerRadius=0",
+  "controlStyles[7].styles[1]": "BorderThickness=1",
+  "controlStyles[7].styles[2]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.42\"/>",
+  "controlStyles[8].target": "Windows.UI.Xaml.Controls.Border#Border",
+  "controlStyles[8].styles[0]": "CornerRadius=0",
+  "controlStyles[8].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
+  "controlStyles[9].target": "Border#AcrylicOverlay",
+  "controlStyles[9].styles[0]": "Visibility=Collapsed",
+  "controlStyles[10].target": "Grid#ContentBorder@CommonStates",
+  "controlStyles[10].styles[0]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.32\"/>",
+  "controlStyles[10].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
+  "controlStyles[11].target": "StartDocked.NavigationPaneView",
+  "controlStyles[11].styles[0]": "Transform3D:=<CompositeTransform3D RotationZ=\"270\" TranslateY=\"-172\" TranslateX=\"-12\"/>",
+  "controlStyles[11].styles[1]": "Width=745",
+  "controlStyles[11].styles[2]": "CornerRadius=8",
+  "controlStyles[11].styles[3]": "Grid.Row=0",
+  "controlStyles[12].target": "StartDocked.AppListView#NavigationPanePlacesListView",
+  "controlStyles[12].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"141\" CenterX=\"250\" />",
+  "controlStyles[12].styles[1]": "Grid.Column=0",
+  "controlStyles[13].target": "StartDocked.UserTileView",
+  "controlStyles[13].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"85\" />",
+  "controlStyles[14].target": "Windows.UI.Xaml.Controls.TextBlock#UserTileNameText",
+  "controlStyles[14].styles[0]": "Visibility=Collapsed",
+  "controlStyles[15].target": "Grid#UserTileIcon",
+  "controlStyles[15].styles[0]": "Transform3D:=<CompositeTransform3D  RotationZ=\"90\" TranslateY=\"32\"/>",
+  "controlStyles[16].target": "StartDocked.AppListViewItem > Grid > ContentPresenter",
+  "controlStyles[16].styles[0]": "Transform3D:=<CompositeTransform3D RotationZ=\"90\" TranslateY=\"40\"/>",
+  "controlStyles[17].target": "StartDocked.PowerOptionsView",
+  "controlStyles[17].styles[0]": "Transform3D:=<CompositeTransform3D TranslateY=\"-300\" TranslateX=\"475\" RotationZ=\"90\" />",
+  "controlStyles[17].styles[1]": "Margin=-680,340,680,-340",
+  "controlStyles[18].target": "Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText",
+  "controlStyles[18].styles[0]": "Visibility=Collapsed",
+  "controlStyles[19].target": "StartMenu.PinnedList",
+  "controlStyles[19].styles[0]": "Visibility=Collapsed",
+  "controlStyles[20].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
+  "controlStyles[20].styles[0]": "Margin=0,-12,31,12",
+  "controlStyles[20].styles[1]": "Height=690",
+  "controlStyles[21].target": "MenuFlyoutSeparator",
+  "controlStyles[21].styles[0]": "Margin=0,-2,0,-2",
+  "controlStyles[21].styles[1]": "Padding=4",
+  "controlStyles[22].target": "MenuFlyoutItem",
+  "controlStyles[22].styles[0]": "Margin=2,0,0,2",
+  "controlStyles[23].target": "MenuFlyoutPresenter",
+  "controlStyles[23].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
+  "controlStyles[24].target": "MenuFlyoutPresenter > Border > ScrollViewer",
+  "controlStyles[24].styles[0]": "BorderThickness=1",
+  "controlStyles[24].styles[1]": "CornerRadius=8",
+  "controlStyles[24].styles[2]": "Padding=0",
+  "controlStyles[24].styles[3]": "Margin=0",
+  "controlStyles[25].target": "Border#UninstallFlyoutPresenterBorder",
+  "controlStyles[25].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
+  "controlStyles[26].target": "Windows.UI.Xaml.Controls.ContentDialog",
+  "controlStyles[26].styles[0]": "Margin=-650,250,0,0",
+  "controlStyles[27].target": "Windows.UI.Xaml.Controls.Button#CloseAllAppsButton",
+  "controlStyles[27].styles[0]": "Visibility=Collapsed",
+  "controlStyles[28].target": "Windows.UI.Xaml.Controls.Button#ZoomOutButton",
+  "controlStyles[28].styles[0]": "Width=40",
+  "controlStyles[28].styles[1]": "Height=40",
+  "controlStyles[28].styles[2]": "Margin=0,0,379,687.5",
+  "controlStyles[28].styles[3]": "Visibility=Visible",
+  "controlStyles[28].styles[4]": "FontSize=14",
+  "controlStyles[28].styles[5]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
+  "controlStyles[29].target": "Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl",
+  "controlStyles[29].styles[0]": "IsZoomOutButtonEnabled=True",
+  "controlStyles[30].target": "Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock",
+  "controlStyles[30].styles[0]": "Text=",
+  "controlStyles[30].styles[1]": "FontSize=28",
+  "controlStyles[30].styles[2]": "Padding=0,8,0,0",
+  "controlStyles[30].styles[3]": "Margin=0,0,0,10",
+  "controlStyles[30].styles[4]": "Visibility=Visible",
+  "controlStyles[31].target": "Grid#ShowMoreSuggestions",
+  "controlStyles[31].styles[0]": "Visibility=Collapsed",
+  "controlStyles[32].target": "Grid#SuggestionsParentContainer",
+  "controlStyles[32].styles[0]": "Visibility=Collapsed",
+  "controlStyles[33].target": "Grid#MoreSuggestionsRoot",
+  "controlStyles[33].styles[0]": "Visibility=Collapsed",
+  "controlStyles[34].target": "Border#UninstallFlyoutPresenterBorder",
+  "controlStyles[34].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
+  "controlStyles[35].target": "Button#ShowAllAppsButton",
+  "controlStyles[35].styles[0]": "Visibility=Collapsed",
+  "controlStyles[36].target": "Grid#ShowMoreSuggestions",
+  "controlStyles[36].styles[0]": "Visibility=Collapsed",
+  "controlStyles[37].target": "Grid#TopLevelSuggestionsListHeader",
+  "controlStyles[37].styles[0]": "Visibility=Collapsed",
+  "controlStyles[38].styles[0]": "Visibility=Collapsed",
+  "controlStyles[38].target": "Windows.UI.Xaml.Controls.GridView",
+  "controlStyles[39].target": "Border#DropShadow",
+  "controlStyles[39].styles[0]": "Visibility=Collapsed",
+  "controlStyles[40].target": "StartDocked.NavigationPaneButton#UserTileButton > Grid > Border",
+  "controlStyles[40].styles[0]": "CornerRadius=5,0,0,0",
+  "controlStyles[41].target": "Windows.UI.Xaml.Controls.ListView#ZoomAppsList",
+  "controlStyles[41].styles[0]": "Margin=-14,0,14,0",
+  "controlStyles[42].target": "StartDocked.AllAppsZoomListViewItem > Grid ",
+  "controlStyles[42].styles[0]": "CornerRadius=5",
+  "controlStyles[43].target": "StartDocked.AllAppsZoomListViewItem > Grid > Border",
+  "controlStyles[43].styles[0]": "CornerRadius=5",
+  "controlStyles[44].target": "Windows.UI.Xaml.Controls.Frame",
+  "controlStyles[44].styles[0]": "MaxWidth=400",
+  "controlStyles[44].styles[1]": "HorizontalAlignment=0",
+  "controlStyles[45].target": "Border",
+  "controlStyles[45].styles[0]": "FocusVisualMargin=1",
+  "controlStyles[46].target": "Grid",
+  "controlStyles[46].styles[0]": "RequestedTheme=2"
 }
 ```
 </details>
