@@ -15,6 +15,12 @@
 * [Move the power button](#move-the-power-button)
 * [Force light/dark mode](#force-lightdark-mode)
 * [Semantic zoom (navigation)](#semantic-zoom-navigation)
+* [Transforms](#transforms)
+  * [Translate](#translate)
+  * [Rotate](#rotate)
+  * [Scale](#scale)
+  * [Skew](#skew)
+  * [Other Properties](#other-properties)
 * [Search menu](#search-menu)
 * [Search menu WebView styles](#search-menu-webview-styles)
   * [Hide the back button](#hide-the-back-button)
@@ -200,7 +206,7 @@ You can use transformation styles to translate, rotate, scale, or skew elements.
 >
 > For 2D transformations, it is best to stick to `RenderTransform` in most cases. Using `Transform3D` for 2D transformations can cause elements to become blurry. For 3D transformations, you must use `Transform3D`.
 
-- Translate:
+### Translate
 
   `RenderTransform:=<TranslateTransform Y="-15" X="15" />`
 
@@ -208,7 +214,7 @@ You can use transformation styles to translate, rotate, scale, or skew elements.
 
   `Transform3D:=<CompositeTransform3D TranslateY="-15" TranslateX="15" TranslateZ="-15" />`
 
-- Rotate:
+### Rotate
 
   `RenderTransform:=<RotateTransform Angle="15" />`
 
@@ -223,7 +229,7 @@ You can use transformation styles to translate, rotate, scale, or skew elements.
   > Z: 2D rotation.
 
 
-- Scale:
+### Scale
 
   `RenderTransform:=<ScaleTransform ScaleX="1.5" ScaleY="-1.5" />`
 
@@ -231,11 +237,11 @@ You can use transformation styles to translate, rotate, scale, or skew elements.
 
   `Transform3D:=<CompositeTransform3D ScaleX="-1.5" ScaleY="1.5" ScaleZ="-1.5" />`
 
-- Skew:
+### Skew
 
   `RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />`
 
-Other Properties:
+### Other Properties
 - Rotate, Scale and Skew:
   - `CenterX`: Offsets the transform's origin on the X axis.
   - `CenterY`: Offsets the transform's origin on the Y axis.
