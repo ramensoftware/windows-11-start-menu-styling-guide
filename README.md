@@ -207,7 +207,7 @@ You can use transformation styles to translate, rotate, scale, or skew elements.
 > For 2D transformations, it is best to stick to `RenderTransform` in most cases. Using `Transform3D` for 2D transformations can cause elements to become blurry. For 3D transformations, you must use `Transform3D`.
 
 > [!TIP]
-> You can mix and match transformations when using `Transform3D`!
+> You can mix and match transformations when using `Transform3D`! You can also use `RenderTransform` and `Transform3D` together.
 >
 > For example: `Transform3D:=<CompositeTransform3D TranslateY="-15" RotationZ="15" ScaleX="1.5" />`
 
