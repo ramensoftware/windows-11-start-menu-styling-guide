@@ -192,6 +192,55 @@ FontSize=28
 
 You may replace `Text=` with any other character. Use Character Map to find, copy, and paste the character into the style box.
 
+## Transforms
+
+You can use transformation styles to translate, rotate, scale, or skew elements.
+
+> **Should I use `RenderTransform` or `Transform3D`?**
+>
+> For 2D transformations, it is best to stick to `RenderTransform` in most cases. Using `Transform3D` for 2D transformations can cause elements to become blurry. For 3D transformations, you must use `Transform3D`.
+
+- Translate:
+
+  `RenderTransform:=<TranslateTransform Y="-15" X="15" />`
+
+  -- or --
+
+  `Transform3D:=<CompositeTransform3D TranslateY="-15" TranslateX="15" TranslateZ="-15" />`
+
+- Rotate:
+
+  `RenderTransform:=<RotateTransform Angle="15" />`
+
+  -- or --
+
+  `Transform3D:=<CompositeTransform3D RotationX="-15" RotationY="15" RotationZ="-15" />`
+
+  > X: 3D vertical rotation.
+  >
+  > Y: 3D horizontal rotation.
+  >
+  > Z: 2D rotation.
+
+
+- Scale:
+
+  `RenderTransform:=<ScaleTransform ScaleX="1.5" ScaleY="-1.5" />`
+
+  -- or --
+
+  `Transform3D:=<CompositeTransform3D ScaleX="-1.5" ScaleY="1.5" ScaleZ="-1.5" />`
+
+- Skew:
+
+  `RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />`
+
+Other Properties:
+- Rotate, Scale and Skew:
+  - `CenterX`: Offsets the transform's origin on the X axis.
+  - `CenterY`: Offsets the transform's origin on the Y axis.
+  - `CenterZ`: Offsets the transform's origin on the Z axis. (Only for `Transform3D`)
+
 ## Search menu
 
 The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
