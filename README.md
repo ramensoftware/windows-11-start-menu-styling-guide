@@ -20,7 +20,7 @@
   * [Rotate](#rotate)
   * [Scale](#scale)
   * [Skew](#skew)
-  * [Other Properties](#other-properties)
+  * [Other properties](#other-properties)
 * [Search menu](#search-menu)
 * [Search menu WebView styles](#search-menu-webview-styles)
   * [Hide the back button](#hide-the-back-button)
