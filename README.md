@@ -20,7 +20,7 @@
   * [Rotate](#rotate)
   * [Scale](#scale)
   * [Skew](#skew)
-  * [Other Properties](#other-properties)
+  * [Other properties](#other-properties)
 * [Search menu](#search-menu)
 * [Search menu WebView styles](#search-menu-webview-styles)
   * [Hide the back button](#hide-the-back-button)
@@ -202,6 +202,7 @@ You may replace `Text=` with any other character. Use Character Map to find, cop
 
 You can use transformation styles to translate, rotate, scale, or skew elements.
 
+> [!TIP]
 > **Should I use `RenderTransform` or `Transform3D`?**
 >
 > For 2D transformations, it is best to stick to `RenderTransform` in most cases. Using `Transform3D` for 2D transformations can cause elements to become blurry. For 3D transformations, you must use `Transform3D`.
@@ -227,12 +228,9 @@ You can use transformation styles to translate, rotate, scale, or skew elements.
 
   `Transform3D:=<CompositeTransform3D RotationX="-15" RotationY="15" RotationZ="-15" />`
 
-  > X: 3D vertical rotation.
-  >
-  > Y: 3D horizontal rotation.
-  >
-  > Z: 2D rotation.
-
+  - `X`: 3D vertical rotation.
+  - `Y`: 3D horizontal rotation.
+  - `Z`: 2D rotation.
 
 ### Scale
 
@@ -246,7 +244,7 @@ You can use transformation styles to translate, rotate, scale, or skew elements.
 
   `RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />`
 
-### Other Properties
+### Other properties
 - Rotate, Scale and Skew:
   - `CenterX`: Offsets the transform's origin on the X axis.
   - `CenterY`: Offsets the transform's origin on the Y axis.
@@ -450,10 +448,6 @@ Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}" Opac
 
 To have a fully transparent background:
 
-Target:
-```
-BorderAcrylicBorder
-```
 Style:
 ```
 Background=Transparent
