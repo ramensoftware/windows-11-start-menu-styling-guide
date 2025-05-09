@@ -69,7 +69,7 @@ guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/ma
 [The Windows 11 notification center styling
 guide](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/blob/main/README.md).
 
-### Finding Targets
+### Finding targets
 
 [How to find targets using UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/uwpspy.md).
 
