@@ -108,7 +108,9 @@ Start Menu Styler mod. The following themes are available:
 
 ## Custom Acrylic background
 
-Target `Border#AcrylicBorder` and set `Background` with an `AcrylicBrush` object, for example:
+Target `Border#AcrylicBorder` for the start menu or `Border#AppBorder` for the search menu, then set `Background` to an `AcrylicBrush` object. 
+
+For example:
 
 ```
 Background:=<AcrylicBrush BackgroundSource="Backdrop" TintColor="Pink" TintOpacity="0.25" />
