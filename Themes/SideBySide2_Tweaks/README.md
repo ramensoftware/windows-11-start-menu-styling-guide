@@ -70,41 +70,51 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
   "controlStyles[8].target": "StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root",
   "controlStyles[8].styles[0]": "Padding=0,0,0,0",
-  "controlStyles[8].styles[1]": "Margin=0,-80,0,0",
 
   "controlStyles[9].target": "Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText",
   "controlStyles[9].styles[0]": "Margin=-32,0,32,0",
   "controlStyles[9].styles[1]": "Visibility=Collapsed",
 
-  "controlStyles[10].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[10].styles[0]": "Visibility=Collapsed",
+  "controlStyles[10].target": "Windows.UI.Xaml.Controls.GridView#PinnedList",
+  "controlStyles[10].styles[0]": "MinHeight=567",
+  "controlStyles[10].styles[1]": "Margin=0,0,0,0",
 
-  "controlStyles[11].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
-  "controlStyles[11].styles[0]": "Visibility=Collapsed",
+  "controlStyles[11].target": "StartMenu.PinnedList#StartMenuPinnedList",
+  "controlStyles[11].styles[0]": "MinHeight=567",
+  "controlStyles[11].styles[1]": "Margin=0,-40,0,0",
 
-  "controlStyles[12].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[12].styles[0]": "Margin=31,-3,12,0",
-  "controlStyles[12].styles[1]": "Visibility=Collapsed",
+  "controlStyles[12].target": "Windows.UI.Xaml.Controls.GridViewItem",
+  "controlStyles[12].styles[0]": "MaxHeight=81",
 
-  "controlStyles[13].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
-  "controlStyles[13].styles[0]": "Margin=31,0,63,0",
-  "controlStyles[13].styles[1]": "Visibility=Collapsed",
+  "controlStyles[13].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
+  "controlStyles[13].styles[0]": "Visibility=Collapsed",
 
-  "controlStyles[14].target": "StartDocked.NavigationPaneView#NavigationPane",
-  "controlStyles[14].styles[0]": "FlowDirection=1",
-  "controlStyles[14].styles[1]": "Margin=10,0,10,0",
+  "controlStyles[14].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
+  "controlStyles[14].styles[0]": "Visibility=Collapsed",
 
-  "controlStyles[15].target": "StartDocked.PowerOptionsView#PowerButton",
-  "controlStyles[15].styles[0]": "FlowDirection=0",
+  "controlStyles[15].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
+  "controlStyles[15].styles[0]": "Margin=31,-3,12,0",
+  "controlStyles[15].styles[1]": "Visibility=Collapsed",
 
-  "controlStyles[16].target": "Windows.UI.Xaml.Controls.ItemsStackPanel > Windows.UI.Xaml.Controls.ListViewItem",
-  "controlStyles[16].styles[0]": "FlowDirection=0",
+  "controlStyles[16].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
+  "controlStyles[16].styles[0]": "Margin=31,0,63,0",
+  "controlStyles[16].styles[1]": "Visibility=Collapsed",
 
-  "controlStyles[17].target": "StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
-  "controlStyles[17].styles[0]": "Margin=67,7,0,21",
+  "controlStyles[17].target": "StartDocked.NavigationPaneView#NavigationPane",
+  "controlStyles[17].styles[0]": "FlowDirection=1",
+  "controlStyles[17].styles[1]": "Margin=10,0,10,0",
 
-  "controlStyles[18].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
-  "controlStyles[18].styles[0]": "Margin=-265,-12,0,0"
+  "controlStyles[18].target": "StartDocked.PowerOptionsView#PowerButton",
+  "controlStyles[18].styles[0]": "FlowDirection=0",
+
+  "controlStyles[19].target": "Windows.UI.Xaml.Controls.ItemsStackPanel > Windows.UI.Xaml.Controls.ListViewItem",
+  "controlStyles[19].styles[0]": "FlowDirection=0",
+
+  "controlStyles[20].target": "StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
+  "controlStyles[20].styles[0]": "Margin=67,7,0,21",
+
+  "controlStyles[21].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
+  "controlStyles[21].styles[0]": "Margin=-265,-12,0,0"
 }
 ```
 </details>
