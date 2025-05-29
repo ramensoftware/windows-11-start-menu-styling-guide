@@ -20,7 +20,7 @@
   * [Rotate](#rotate)
   * [Scale](#scale)
   * [Skew](#skew)
-  * [Other properties](#other-properties)
+  * [Other properties and attributes](#other-properties-and-attributes)
 * [Search menu](#search-menu)
 * [Search menu WebView styles](#search-menu-webview-styles)
   * [Hide the back button](#hide-the-back-button)
@@ -260,7 +260,7 @@ Transform3D:=<CompositeTransform3D ScaleX="-1.5" ScaleY="1.5" ScaleZ="-1.5" />
 RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
 ```
 
-### Other properties & attributes
+### Other properties and attributes
 - Applies to Rotate, Scale and Skew:
   - `CenterX`: Offsets the transform's origin on the X axis.
   - `CenterY`: Offsets the transform's origin on the Y axis.
