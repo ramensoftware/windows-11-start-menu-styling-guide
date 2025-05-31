@@ -261,6 +261,7 @@ RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
 ```
 
 ### Other properties and attributes
+
 - Applies to Rotate, Scale and Skew:
   - `CenterX`: Offsets the transform's origin on the X axis.
   - `CenterY`: Offsets the transform's origin on the Y axis.
@@ -271,15 +272,16 @@ RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
   RenderTransform:=<RotateTransform Angle="15" CenterX="10" CenterY="20" />
   ```
 - `RenderTransformOrigin`
-  - Applies to `RenderTransform` only, `Transform3D` does not support this attribute. It is a seperate attribute and is not set inside of the `RenderTransform` like `CenterX/Y/Z`.
+  - Applies to `RenderTransform` only, `Transform3D` does not support this attribute. It is a separate attribute and is not set inside of the `RenderTransform` like `CenterX/Y/Z`.
   - Sets the transform origin relative to its target's width and height. Format is `X,Y` and both numbers range from 0-1.
 
   Example:
-  
+
   ```
   RenderTransformOrigin=0.5,0.5
   ```
   This centers the transform's origin.
+
 ## Search menu
 
 The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
