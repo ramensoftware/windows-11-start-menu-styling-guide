@@ -21,6 +21,15 @@
   * [Scale](#scale)
   * [Skew](#skew)
   * [Other properties and attributes](#other-properties-and-attributes)
+* [Colors](#colors)
+  * [Solid color](#solid-color)
+  * [Accent colors](#accent-colors)
+  * [Clear transparent background](#clear-transparent-background)
+  * [Acrylic effect as color](#acrylic-effect-as-color)
+  * [Mica effect as color](#mica-effect-as-color)
+  * [Gradient as color](#gradient-as-color)
+  * [Image as color](#image-as-color)
+  * [Reveal as color](#reveal-as-color)
 * [Search menu](#search-menu)
 * [Search menu WebView styles](#search-menu-webview-styles)
   * [Hide the back button](#hide-the-back-button)
@@ -36,15 +45,6 @@
   * [Change the background color of the preview panel](#change-the-background-color-of-the-preview-panel)
   * [Change the text font](#change-the-text-font)
   * [Change the icons font](#change-the-icons-font)
-* [Colors](#colors)
-  * [Solid color](#solid-color)
-  * [Accent colors](#accent-colors)
-  * [Clear transparent background](#clear-transparent-background)
-  * [Acrylic effect as color](#acrylic-effect-as-color)
-  * [Mica effect as color](#mica-effect-as-color)
-  * [Gradient as color](#gradient-as-color)
-  * [Image as color](#image-as-color)
-  * [Reveal as color](#reveal-as-color)
 
 ## Introduction
 
@@ -282,6 +282,134 @@ RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
   ```
   This centers the transform's origin.
 
+## Colors
+
+In the following examples, we will use `Background` as our style, but this
+also works for other properties that accept colors, such as `Fill`.
+
+### Solid color
+
+```
+Background=<color>
+```
+
+Replace `<color>` with the desired color.
+
+A color can be a name (e.g. `Red`) or a hex code (e.g. `#FF0000`).
+
+The color can be semi-transparent (e.g. `#80FF0000`). To have a fully
+transparent background, use `Transparent` or `#00000000`.
+
+### Accent colors
+
+A Color can also be a `ThemeResource` or `StaticResource`. There are many such
+styles built into Windows.
+
+```
+Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.8" />
+```
+
+Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette. For example: `SystemAccentColorLight2` or `SystemAccentColorDark1`.
+ 
+The word `Light` or `Dark` is appended at end with
+a number ranging from 1-3. See [the official Microsoft
+docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
+for more information.
+
+```
+Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}" Opacity="0.5" />
+```
+
+### Clear Transparent Background
+
+To have a fully transparent background:
+
+Style:
+```
+Background=Transparent
+```
+
+### Acrylic effect as color
+
+In order to use the acrylic effect (a blurred background) you can use the
+`AcrylicBrush`.
+
+```
+Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
+```
+
+`TintColor` - Required. Defines what color to use.
+
+`TintOpacity` - Defines the strength of the chosen color.
+
+`TintLuminosityOpacity` - Defines the brightness of the acrylic effect.
+
+`BackgroundSource` - Defines what should be considered the background of the acrylic effect. Set to "Backdrop" to use the desktop wallpaper.
+
+`Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
+
+You can also set Acrylic to use an accent color for a more dynamic look, that fits current theme.
+
+```
+Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
+```
+
+### Mica effect as color
+
+> [!NOTE]  
+> Unfortunately, it is not possible to set a Mica effect at this time with any of Windhawk's styler mods.
+
+### Gradient as color
+
+The background can also be a gradient. For example, to have a gradient from
+yellow to red to blue to lime green, use the following style:
+
+```
+Background:=<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5"><GradientStop Color="Yellow" Offset="0.0" /><GradientStop Color="Red" Offset="0.25" /><GradientStop Color="Blue" Offset="0.75" /><GradientStop Color="LimeGreen" Offset="1.0" /></LinearGradientBrush>
+```
+
+### Image as color
+
+The background can also be an image:
+
+```
+Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
+```
+
+Replace `<image>` with your own image, a URL or a local file path.
+If you only see a fully transparent background when using a local file path, you must set a URL instead.
+Images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico.
+
+Stretch can be set to the following values:
+
+`None` - Image is rendered at its native resolution and aspect ratio.
+
+`Fill` - Image is stretched or squished to fill the size of the element.
+
+`Uniform` - Image is resized to fit the element dimensions, while it preserves its native aspect ratio.
+
+`UniformToFill` - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
+
+### Reveal as color
+
+> [!NOTE]
+> Reveal is a deprecated XAML feature. It may have issues
+> or stop working at any time.
+
+Reveal is the cursor-based illumination effect from Windows 10.
+
+```
+Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
+```
+
+```
+BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
+```
+
+**Only** `RevealBorderBrush` should be used, `RevealBackgroundBrush` does not work correctly in most scenarios.
+
+`Opacity` can be changed to increase or decrease the intensity of the effect.
+
 ## Search menu
 
 The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
@@ -437,131 +565,3 @@ Style:
 ```
 font-family: 'Segoe MDL2 Assets' !important
 ```
-
-## Colors
-
-In the following examples, we will use `Background` as our style, but this
-also works for other properties that accept colors, such as `Fill`.
-
-### Solid color
-
-```
-Background=<color>
-```
-
-Replace `<color>` with the desired color.
-
-A color can be a name (e.g. `Red`) or a hex code (e.g. `#FF0000`).
-
-The color can be semi-transparent (e.g. `#80FF0000`). To have a fully
-transparent background, use `Transparent` or `#00000000`.
-
-### Accent colors
-
-A Color can also be a `ThemeResource` or `StaticResource`. There are many such
-styles built into Windows.
-
-```
-Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.8" />
-```
-
-Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette. For example: `SystemAccentColorLight2` or `SystemAccentColorDark1`.
- 
-The word `Light` or `Dark` is appended at end with
-a number ranging from 1-3. See [the official Microsoft
-docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
-for more information.
-
-```
-Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}" Opacity="0.5" />
-```
-
-### Clear Transparent Background
-
-To have a fully transparent background:
-
-Style:
-```
-Background=Transparent
-```
-
-### Acrylic effect as color
-
-In order to use the acrylic effect (a blurred background) you can use the
-`AcrylicBrush`.
-
-```
-Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
-```
-
-`TintColor` - Required. Defines what color to use.
-
-`TintOpacity` - Defines the strength of the chosen color.
-
-`TintLuminosityOpacity` - Defines the brightness of the acrylic effect.
-
-`BackgroundSource` - Defines what should be considered the background of the acrylic effect. Set to "Backdrop" to use the desktop wallpaper.
-
-`Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
-
-You can also set Acrylic to use an accent color for a more dynamic look, that fits current theme.
-
-```
-Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
-```
-
-### Mica effect as color
-
-> [!NOTE]  
-> Unfortunately, it is not possible to set a Mica effect at this time with any of Windhawk's styler mods.
-
-### Gradient as color
-
-The background can also be a gradient. For example, to have a gradient from
-yellow to red to blue to lime green, use the following style:
-
-```
-Background:=<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5"><GradientStop Color="Yellow" Offset="0.0" /><GradientStop Color="Red" Offset="0.25" /><GradientStop Color="Blue" Offset="0.75" /><GradientStop Color="LimeGreen" Offset="1.0" /></LinearGradientBrush>
-```
-
-### Image as color
-
-The background can also be an image:
-
-```
-Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
-```
-
-Replace `<image>` with your own image, a URL or a local file path.
-If you only see a fully transparent background when using a local file path, you must set a URL instead.
-Images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico.
-
-Stretch can be set to the following values:
-
-`None` - Image is rendered at its native resolution and aspect ratio.
-
-`Fill` - Image is stretched or squished to fill the size of the element.
-
-`Uniform` - Image is resized to fit the element dimensions, while it preserves its native aspect ratio.
-
-`UniformToFill` - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
-
-### Reveal as color
-
-> [!NOTE]
-> Reveal is a deprecated XAML feature. It may have issues
-> or stop working at any time.
-
-Reveal is the cursor-based illumination effect from Windows 10.
-
-```
-Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
-```
-
-```
-BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
-```
-
-**Only** `RevealBorderBrush` should be used, `RevealBackgroundBrush` does not work correctly in most scenarios.
-
-`Opacity` can be changed to increase or decrease the intensity of the effect.
