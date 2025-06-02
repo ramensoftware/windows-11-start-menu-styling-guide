@@ -282,6 +282,14 @@ RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
   ```
   This centers the transform's origin.
 
+- `TransformGroup`
+  - Applies to `RenderTransform` only, `Transform3D` does not support this attribute. It is a separate attribute and is not set inside of the `RenderTransform` like `CenterX/Y/Z`.
+  - Allows you to combine RenderTransforms together into one style, mimicking Transform3D's functionality.
+
+  Example:
+  ```
+  RenderTransform:=<TransformGroup><RotateTransform Angle="15" /><TranslateTransform X="15" Y="-15" /></TransformGroup>
+  ```
 ## Colors
 
 In the following examples, we will use `Background` as our style, but this
