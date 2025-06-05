@@ -1,11 +1,12 @@
 # OnlySearch theme for Windows 11 Start Menu Styler
 
 **Author**: [jonas-usx](https://github.com/jonas-usx)
-<!-- This theme removes the recommended app section aswell as the newly added ones, including the list. 
-It basically leaves you with a clean look. -->
 
 ![Screenshot](screenshot.png)
 <!--
+This theme removes the recommended app section aswell as the newly added ones, including the list. 
+It basically leaves you with a clean look.
+
 ## Theme selection
 
 The theme is integrated into the mod, and can be simply selected from the mod's
