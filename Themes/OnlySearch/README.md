@@ -1,12 +1,12 @@
 # OnlySearch theme for Windows 11 Start Menu Styler
 
+This theme removes the recommended app section as well as the newly added ones,
+including the list. It basically leaves you with a clean look.
+
 **Author**: [jonas-usx](https://github.com/jonas-usx)
 
 ![Screenshot](screenshot.png)
 <!--
-This theme removes the recommended app section aswell as the newly added ones, including the list. 
-It basically leaves you with a clean look.
-
 ## Theme selection
 
 The theme is integrated into the mod, and can be simply selected from the mod's
@@ -35,7 +35,7 @@ To import the theme manually, follow these steps:
   "controlStyles[1].target": "StartDocked.StartSizingFrame",
   "controlStyles[1].styles[0]": "MinHeight=100",
   "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
-  "controlStyles[2].styles[0]": "Visability=Collapsed",
+  "controlStyles[2].styles[0]": "Visibility=Collapsed"
 }
 ```
 </details>
