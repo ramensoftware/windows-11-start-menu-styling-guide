@@ -126,3 +126,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
 }
 ```
 </details>
+
+## Removing the "Recommended" section
+
+The "Recommended" section can be removed by following these steps:
+
+* Import [the NoRecommendedSection
+  theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob/main/Themes/NoRecommendedSection/README.md)
+  using the **Manual installation** instructions.
+* Select this theme using the **Theme selection** instructions on this page.
