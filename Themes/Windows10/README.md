@@ -6,7 +6,7 @@
 
 ## Notes:
 
-* Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended. 
+* Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended.
 * For centered start menu, please set the following additional styles:
   * Target: `StartDocked.StartSizingFrame` \
     Style: `Margin=-14,24,0,0`
@@ -287,7 +287,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[14].target": "Windows.UI.Xaml.Controls.TextBlock#UserTileNameText",
   "controlStyles[14].styles[0]": "Visibility=Collapsed",
   "controlStyles[15].target": "Grid#UserTileIcon",
-  "controlStyles[15].styles[0]": "Transform3D:=<CompositeTransform3D  RotationZ=\"90\" TranslateY=\"32\"/>",
+  "controlStyles[15].styles[0]": "Transform3D:=<CompositeTransform3D RotationZ=\"90\" TranslateY=\"32\"/>",
   "controlStyles[16].target": "StartDocked.AppListViewItem > Grid > ContentPresenter",
   "controlStyles[16].styles[0]": "Transform3D:=<CompositeTransform3D RotationZ=\"90\" TranslateY=\"40\"/>",
   "controlStyles[17].target": "StartDocked.PowerOptionsView",
@@ -355,7 +355,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[40].styles[0]": "CornerRadius=5,0,0,0",
   "controlStyles[41].target": "Windows.UI.Xaml.Controls.ListView#ZoomAppsList",
   "controlStyles[41].styles[0]": "Margin=-14,0,14,0",
-  "controlStyles[42].target": "StartDocked.AllAppsZoomListViewItem > Grid ",
+  "controlStyles[42].target": "StartDocked.AllAppsZoomListViewItem > Grid",
   "controlStyles[42].styles[0]": "CornerRadius=5",
   "controlStyles[43].target": "StartDocked.AllAppsZoomListViewItem > Grid > Border",
   "controlStyles[43].styles[0]": "CornerRadius=5",

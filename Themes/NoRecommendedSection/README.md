@@ -56,7 +56,7 @@ see any difference.
 
 <details>
 <summary>Content to import (click to expand)</summary>
-  
+
 ```json
 {
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",

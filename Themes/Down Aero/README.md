@@ -33,7 +33,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[2].target": "StartMenu.PinnedList",
   "controlStyles[2].styles[0]": "Height=340",
   "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[3].styles[0]": "RenderTransform:=<TranslateTransform Y=\"-408\"  />",
+  "controlStyles[3].styles[0]": "RenderTransform:=<TranslateTransform Y=\"-408\" />",
   "controlStyles[4].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
   "controlStyles[4].styles[0]": "Height=0",
   "controlStyles[5].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
