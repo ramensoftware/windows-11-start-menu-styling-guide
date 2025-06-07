@@ -3,7 +3,7 @@
 **Author**: [VIN STAR](https://github.com/vinstartheme)
 
 ![Screenshot](screenshot.png)
-<!--
+
 ## Theme selection
 
 The theme is integrated into the mod, and can be simply selected from the mod's
@@ -12,11 +12,10 @@ settings:
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
--->
+
 ## Manual installation
 
-<!-- The theme styles can also be imported manually. To do that, follow these steps: -->
-To import the theme manually, follow these steps:
+The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Advanced" tab.

@@ -1,4 +1,4 @@
-# Windows 10 theme for Windows 11 Start Menu Styler
+# Windows10 theme for Windows 11 Start Menu Styler
 
 **Author**: [BBmaster123](https://github.com/bbmaster123)
 
@@ -8,14 +8,14 @@
 
 * Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended. 
 * For centered start menu, please set the following additional styles:
-  * Target: ```StartDocked.StartSizingFrame``` \
-    Style: ```Margin=-14,24,0,0```
-  * Target: ```Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border``` \
-    Style: ```Margin=[1/2 screen width],0,0,0```
+  * Target: `StartDocked.StartSizingFrame` \
+    Style: `Margin=-14,24,0,0`
+  * Target: `Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border` \
+    Style: `Margin=[1/2 screen width],0,0,0`
 
 ## Theme selection
 
-The standard variant of this theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod, and can be simply selected from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
@@ -31,6 +31,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
 ## Standard Variant
+
 <details>
 <summary>Content to import (click to expand)</summary>
 
