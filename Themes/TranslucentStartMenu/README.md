@@ -46,7 +46,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[5].styles[0]": "Visibility=Collapsed",
   "controlStyles[6].target": "StartMenu.PinnedList",
   "controlStyles[6].styles[0]": "Height=504",
-  "controlStyles[7].target": "MenuFlyoutPresenter",
+  "controlStyles[7].target": "MenuFlyoutPresenter > Border",
   "controlStyles[7].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#00000000\"/>",
   "controlStyles[7].styles[1]": "BorderThickness=0",
   "controlStyles[8].target": "Border#AppBorder",
