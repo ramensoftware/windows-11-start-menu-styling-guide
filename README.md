@@ -26,6 +26,9 @@
   * [Accent colors](#accent-colors)
   * [Clear transparent background](#clear-transparent-background)
   * [Acrylic effect as color](#acrylic-effect-as-color)
+  * [WindhawkBlur effect as color](#windhawkblur-effect-as-color)
+    * [Hex color](#hex-color)
+    * [ThemeResource color](#themeresource-color)
   * [Mica effect as color](#mica-effect-as-color)
   * [Gradient as color](#gradient-as-color)
   * [Image as color](#image-as-color)
@@ -367,6 +370,9 @@ Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" Tin
 
 An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic because it has a customizable blur radius and has fewer bugs (e.g. https://github.com/ramensoftware/windhawk-mods/issues/742).
 
+> [!NOTE]
+> WindhawkBlur does not currently support color names (e.g. `Red`) or the `FallbackColor` property.
+
 - `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
 #### Hex color
 
@@ -379,7 +385,7 @@ Fill:=<WindhawkBlur BlurAmount="10" TintColor="#ff0000" TintOpacity="0.5" />
 _These examples set a blur that is tinted with red at 50% opacity. Both versions have the same effect._
 
 - `TintColor`: Hex color in `#AARRGGBB` or `#RRGGBB` format that is applied to the blur.
-- `TintOpacity`: Opacity of the color that overrides the alpha of `TintColor`
+- `TintOpacity`: Opacity of the color that overrides the alpha of `TintColor`.
 
 > [!NOTE]
 > There is no need to specify a `TintOpacity` value if your `TintColor` has an alpha value.
