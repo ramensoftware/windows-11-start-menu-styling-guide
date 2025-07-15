@@ -26,11 +26,15 @@
   * [Accent colors](#accent-colors)
   * [Clear transparent background](#clear-transparent-background)
   * [Acrylic effect as color](#acrylic-effect-as-color)
+  * [WindhawkBlur effect as color](#windhawkblur-effect-as-color)
+    * [Hex color](#hex-color)
+    * [ThemeResource color](#themeresource-color)
   * [Mica effect as color](#mica-effect-as-color)
   * [Gradient as color](#gradient-as-color)
   * [Image as color](#image-as-color)
   * [Reveal as color](#reveal-as-color)
 * [Search menu](#search-menu)
+* [Search menu remote debugging](#search-menu-remote-debugging)
 * [Search menu WebView styles](#search-menu-webview-styles)
   * [Hide the back button](#hide-the-back-button)
   * [Hide the Copilot button](#hide-the-copilot-button)
@@ -363,6 +367,39 @@ You can also set Acrylic to use an accent color for a more dynamic look, that fi
 Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
 ```
 
+### WindhawkBlur effect as color
+
+An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic because it has a customizable blur radius and has fewer bugs (e.g. https://github.com/ramensoftware/windhawk-mods/issues/742).
+
+> [!NOTE]
+> WindhawkBlur does not currently support color names (e.g. `Red`) or the `FallbackColor` property.
+
+- `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
+#### Hex color
+
+```
+Fill:=<WindhawkBlur BlurAmount="10" TintColor="#80ff0000" />
+```
+```
+Fill:=<WindhawkBlur BlurAmount="10" TintColor="#ff0000" TintOpacity="0.5" />
+```
+_These examples set a blur that is tinted with red at 50% opacity. Both versions have the same effect._
+
+- `TintColor`: Hex color in `#AARRGGBB` or `#RRGGBB` format that is applied to the blur.
+- `TintOpacity`: Opacity of the color that overrides the alpha of `TintColor`.
+
+> [!TIP]
+> There is no need to specify a `TintOpacity` value if your `TintColor` has an alpha value.
+
+#### ThemeResource color
+
+```
+<WindhawkBlur BlurAmount="10" TintColor="{ThemeResource SystemAccentColor}" TintOpacity="0.5"/>
+```
+
+- `TintColor`: ThemeResource color, such as `SystemAccentColor`.
+- `TintOpacity`: Overrides the opacity of the ThemeResource color.
+
 ### Mica effect as color
 
 > [!NOTE]
@@ -427,6 +464,15 @@ Versions 1.2 and newer of Windows 11 Start Menu Styler automatically apply the s
 1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
 2. In the custom process inclusion list below, enter `SearchHost.exe`.
 3. Click save.
+
+## Search menu remote debugging
+
+To make finding targets in the search menu's WebView easier, you can inspect it using Microsoft Edge's remote debugging tools.
+
+1. Install this Windhawk mod: [Search Menu Inspect Helper](https://windhawk.net/mods/search-menu-inspect-helper).
+2. Configure remote debugging by following these steps up to number 11: [Remote debugging desktop WebView2 WinUI 2 (UWP) apps](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/remote-debugging-desktop).
+3. Instead of step 11 (Configure your WebView2 WinUI 2 (UWP) app for remote debugging), install the mod, and terminate the SearchHost.exe process. It will be relaunched automatically with remote debugging enabled.
+4. Continue with the rest of the steps.
 
 ## Search menu WebView styles
 
