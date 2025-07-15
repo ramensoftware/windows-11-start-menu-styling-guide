@@ -110,17 +110,19 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[28].styles[1]": "CornerRadius=8",
   "controlStyles[29].target": "Border#DropShadow",
   "controlStyles[29].styles[0]": "Visibility=Collapsed",
-  "controlStyles[30].target": "Cortana.UI.Views.TaskbarSearchPage",
-  "controlStyles[30].styles[0]": "Margin=5,0,0,8",
-  "controlStyles[31].target": "Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid",
-  "controlStyles[31].styles[0]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".65\" Opacity=\"1\"/>",
-  "controlStyles[31].styles[1]": "BorderThickness=2",
-  "controlStyles[31].styles[2]": "Padding=3,3,3,-8",
-  "controlStyles[31].styles[3]": "CornerRadius=8",
-  "controlStyles[32].target": "Border#dropshadow",
-  "controlStyles[32].styles[0]": "Visibility=Collapsed",
-  "controlStyles[33].target": "Border#LayerBorder",
-  "controlStyles[33].styles[0]": "Visibility=Collapsed"
+  "controlStyles[30].target": "Border#StartDropShadow",
+  "controlStyles[30].styles[0]": "Visibility=Collapsed",
+  "controlStyles[31].target": "Cortana.UI.Views.TaskbarSearchPage",
+  "controlStyles[31].styles[0]": "Margin=5,0,0,8",
+  "controlStyles[32].target": "Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid",
+  "controlStyles[32].styles[0]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".65\" Opacity=\"1\"/>",
+  "controlStyles[32].styles[1]": "BorderThickness=2",
+  "controlStyles[32].styles[2]": "Padding=3,3,3,-8",
+  "controlStyles[32].styles[3]": "CornerRadius=8",
+  "controlStyles[33].target": "Border#dropshadow",
+  "controlStyles[33].styles[0]": "Visibility=Collapsed",
+  "controlStyles[34].target": "Border#LayerBorder",
+  "controlStyles[34].styles[0]": "Visibility=Collapsed"
 }
 ```
 </details>
