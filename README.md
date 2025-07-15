@@ -363,6 +363,36 @@ You can also set Acrylic to use an accent color for a more dynamic look, that fi
 Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
 ```
 
+### WindhawkBlur effect as color
+
+An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic because it has a customizable blur radius and has fewer bugs (e.g. https://github.com/ramensoftware/windhawk-mods/issues/742).
+
+- `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
+#### Hex color
+
+```
+Fill:=<WindhawkBlur BlurAmount="10" TintColor="#80ff0000" />
+```
+```
+Fill:=<WindhawkBlur BlurAmount="10" TintColor="#ff0000" TintOpacity="0.5" />
+```
+_These examples set a blur that is tinted with red at 50% opacity. Both versions have the same effect._
+
+- `TintColor`: Hex color in `#AARRGGBB` or `#RRGGBB` format that is applied to the blur.
+- `TintOpacity`: Opacity of the color that overrides the alpha of `TintColor`
+
+> [!NOTE]
+> There is no need to specify a `TintOpacity` value if your `TintColor` has an alpha value.
+
+#### ThemeResource color
+
+```
+<WindhawkBlur BlurAmount="10" TintColor="{ThemeResource SystemAccentColor}" TintOpacity="0.5"/>
+```
+
+- `TintColor`: ThemeResource color, such as `SystemAccentColor`.
+- `TintOpacity`: Overrides the opacity of the ThemeResource color.
+
 ### Mica effect as color
 
 > [!NOTE]
