@@ -34,6 +34,7 @@
   * [Image as color](#image-as-color)
   * [Reveal as color](#reveal-as-color)
 * [Search menu](#search-menu)
+* [Search menu remote debugging](#search-menu-remote-debugging)
 * [Search menu WebView styles](#search-menu-webview-styles)
   * [Hide the back button](#hide-the-back-button)
   * [Hide the Copilot button](#hide-the-copilot-button)
@@ -463,6 +464,14 @@ Versions 1.2 and newer of Windows 11 Start Menu Styler automatically apply the s
 1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
 2. In the custom process inclusion list below, enter `SearchHost.exe`.
 3. Click save.
+
+## Search menu remote debugging
+
+To make finding targets in the search menu's WebView easier, you can inspect it using Microsoft Edge's remote debugging tools.
+
+1. Install this Windhawk mod: [Search Menu Inspect Helper](https://windhawk.net/mods/search-menu-inspect-helper).
+2. Configure remote debugging by following these steps up to number 11: [Remote debugging desktop WebView2 WinUI 2 (UWP) apps](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/remote-debugging-desktop).
+3. Instead of step 11 (Configure your WebView2 WinUI 2 (UWP) app for remote debugging), install the mod, and terminate the SearchHost.exe process. It will be relaunched automatically with remote debugging enabled.
 
 ## Search menu WebView styles
 
