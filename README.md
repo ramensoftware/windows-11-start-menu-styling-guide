@@ -387,7 +387,7 @@ _These examples set a blur that is tinted with red at 50% opacity. Both versions
 - `TintColor`: Hex color in `#AARRGGBB` or `#RRGGBB` format that is applied to the blur.
 - `TintOpacity`: Opacity of the color that overrides the alpha of `TintColor`.
 
-> [!NOTE]
+> [!TIP]
 > There is no need to specify a `TintOpacity` value if your `TintColor` has an alpha value.
 
 #### ThemeResource color
