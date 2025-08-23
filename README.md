@@ -110,6 +110,7 @@ Start Menu Styler mod. The following themes are available:
 | [UniMenu](Themes/UniMenu/README.md) | [![UniMenu](Themes/UniMenu/screenshot-small.png)](Themes/UniMenu/screenshot.png)
 | [LegacyFluent](Themes/LegacyFluent/README.md) | [![LegacyFluent](Themes/LegacyFluent/screenshot-small.png)](Themes/LegacyFluent/screenshot.png)
 | [OnlySearch](Themes/OnlySearch/README.md) | [![OnlySearch](Themes/OnlySearch/screenshot-small.png)](Themes/OnlySearch/screenshot.png)
+| [ModernStartMenu](Themes/ModernStartMenu/README.md) | [![ModernStartMenu](Themes/ModernStartMenu/screenshot-small.png)](Themes/ModernStartMenu/screenshot.png)
 
 ## Custom Acrylic background
 
