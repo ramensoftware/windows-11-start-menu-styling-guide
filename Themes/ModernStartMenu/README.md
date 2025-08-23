@@ -416,7 +416,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Folder name textbox are not styled.
 * Blank jumplist items right-click menu.
 * Recent items name might go pass the separator line.
-* Copy the content below to the text box under "Mod settings" and click "Save".
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
