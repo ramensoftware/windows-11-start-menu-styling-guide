@@ -417,6 +417,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Folder name textbox are not styled.
 * Blank jumplist items right-click menu.
 * Recent items name might go pass the separator line.
+* Holding the X button in the group name textbox will show a dummy X icon.
+* Reveal effect might appear for a split second.
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
