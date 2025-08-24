@@ -1,4 +1,4 @@
-# ModernStartMenu (FluentStartMenu) theme for Windows 10 Start Menu on Windows 11
+# ModernStartMenu theme for Windows 10 Start Menu on Windows 11
 
 A recreation of the Sun Valley start menu for the Windows 10 Start Menu running on Windows 11
 
@@ -407,7 +407,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[98].styles[1]": "FontFamily=Segoe UI Variable",
     "controlStyles[38].styles[0]": "MinWidth=222",
     "controlStyles[85].styles[4]": "RadiusY=2",
-    "controlStyles[99].styles[1]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />"
+    "controlStyles[99].styles[1]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />",
+    "controlStyles[100].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Viewbox > Border > TextBlock",
+    "controlStyles[100].styles[0]": "FontWeight=SemiBold"
 }
 ```
 </details>
