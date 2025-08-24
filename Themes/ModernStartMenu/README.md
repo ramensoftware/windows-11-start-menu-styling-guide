@@ -422,7 +422,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Blank jumplist items right-click menu.
 * Recent items name might go pass the separator line.
 * Holding the X button in the group name textbox will show a dummy X icon.
-* Reveal effect might appear for a split second.
+* Reveal effect might flicker around the start menu.
+* Items may not be aligned/centered correctly on higher DPIs.
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
