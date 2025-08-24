@@ -4,7 +4,7 @@ A recreation of the Sun Valley start menu for the Windows 10 Start Menu running 
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
-![Screenshot](screenshot.png) \
+![Screenshot](screenshot.png)
 
 ## Windows 10 Start menu on Windows 11 installation
 
@@ -406,13 +406,14 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[99].styles[0]": "Background@SubMenuOpened:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />",
     "controlStyles[98].styles[1]": "FontFamily=Segoe UI Variable",
     "controlStyles[38].styles[0]": "MinWidth=222",
-    "controlStyles[85].styles[4]": "RadiusY=2"
+    "controlStyles[85].styles[4]": "RadiusY=2",
+    "controlStyles[99].styles[1]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />"
 }
 ```
 </details>
 
 ## Bugs
-* Black text on black textbox when editing group names.
+* Group name text will appear as black on a black textbox when editing, causing readability issues.
 * Folder name textbox are not styled.
 * Blank jumplist items right-click menu.
 * Recent items name might go pass the separator line.
