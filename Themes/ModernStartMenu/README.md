@@ -410,10 +410,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[38].styles[0]": "MinWidth=222",
     "controlStyles[85].styles[4]": "RadiusY=2",
     "controlStyles[99].styles[1]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />",
-    "controlStyles[100].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Viewbox > Border > TextBlock",
+    "controlStyles[100].target": "Viewbox > Border > TextBlock",
     "controlStyles[100].styles[0]": "FontWeight=SemiBold",
     "controlStyles[38].styles[1]": "CornerRadius=6",
-    "controlStyles[38].styles[2]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />"
+    "controlStyles[38].styles[2]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />",
+    "controlStyles[101].target": "StartUI.AllAppsZoomListViewItem",
+    "controlStyles[101].styles[0]": "CornerRadius=6"
 }
 ```
 </details>
