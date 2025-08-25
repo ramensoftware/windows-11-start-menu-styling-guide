@@ -426,8 +426,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Blank jumplist items right-click menu.
 * Recent items name might go pass the separator line.
 * Holding the X button in the group name textbox will show a dummy X icon.
-* Reveal effect might flicker around the start menu.
+* Reveal effect might flicker around the start menu, and the 3D push effect is still present.
 * Items may not be aligned/centered correctly on higher DPIs.
+* Having more than 2 users will cause the user list in the user flyout to cutoff.
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
