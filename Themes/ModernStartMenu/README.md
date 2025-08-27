@@ -438,7 +438,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Holding the X button in the group name textbox will show a fake X icon.
 * Reveal effect might flicker around the start menu, and the 3D push effect is still present.
 * Items may not be aligned/centered correctly on higher DPIs.
-* User flyouts can only show 6 users (7 or more will cause clipping).
+* User flyout can only show 6 users (7 or more will cause clipping).
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
