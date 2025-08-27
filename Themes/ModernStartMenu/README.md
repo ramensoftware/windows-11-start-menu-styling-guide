@@ -415,7 +415,17 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[38].styles[1]": "CornerRadius=6",
     "controlStyles[38].styles[2]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />",
     "controlStyles[101].target": "StartUI.AllAppsZoomListViewItem",
-    "controlStyles[101].styles[0]": "CornerRadius=6"
+    "controlStyles[101].styles[0]": "CornerRadius=6",
+    "controlStyles[102].target": "MenuFlyoutItem[6] > Grid",
+    "controlStyles[103].target": "MenuFlyoutItem[7] > Grid",
+    "controlStyles[104].target": "MenuFlyoutItem[8] > Grid",
+    "controlStyles[105].target": "MenuFlyoutItem[9] > Grid",
+    "controlStyles[106].target": "MenuFlyoutItem[10] > Grid",
+    "controlStyles[102].styles[0]": "Height=45",
+    "controlStyles[103].styles[0]": "Height=45",
+    "controlStyles[104].styles[0]": "Height=45",
+    "controlStyles[105].styles[0]": "Height=45",
+    "controlStyles[106].styles[0]": "Height=45"
 }
 ```
 </details>
@@ -425,10 +435,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Folder name textbox are not styled.
 * Blank jumplist items right-click menu.
 * Recent items name might go pass the separator line.
-* Holding the X button in the group name textbox will show a dummy X icon.
+* Holding the X button in the group name textbox will show a fake X icon.
 * Reveal effect might flicker around the start menu, and the 3D push effect is still present.
 * Items may not be aligned/centered correctly on higher DPIs.
-* Having more than 2 users will cause the user list in the user flyout to cutoff.
+* User flyouts can only show 6 users (7 or more will cause clipping).
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
