@@ -5,6 +5,7 @@ A recreation of the Sun Valley start menu for the Windows 10 Start Menu running 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
 ![Screenshot](screenshot.png)
+![Screenshot](screenshot-tiles.png)
 
 ## Windows 10 Start menu on Windows 11 installation
 
