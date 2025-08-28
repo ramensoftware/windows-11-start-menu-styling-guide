@@ -424,7 +424,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[60].styles[2]": "PointerOverBackground:=",
     "controlStyles[60].styles[3]": "PressedBackground:=",
     "controlStyles[8].styles[2]": "CornerRadius=9",
-    "controlStyles[8].styles[3]": "PointerOverBackground:="
+    "controlStyles[8].styles[3]": "PointerOverBackground:=",
+    "controlStyles[8].styles[4]": "PressedBackground:="
 }
 ```
 </details>
