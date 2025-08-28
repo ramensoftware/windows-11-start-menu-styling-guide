@@ -359,7 +359,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[9].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0.4\" TintLuminosityOpacity=\"0.4\" />",
     "controlStyles[9].styles[4]": "BorderThickness=1,1,0,1",
     "controlStyles[84].target": "StartUI.NavigationPaneGrid#RootPanel > StartUI.ExpandCollapseButton",
-    "controlStyles[84].styles[0]": "Margin=4",
+    "controlStyles[84].styles[0]": "Margin=3,4,3,4",
     "controlStyles[84].styles[1]": "Height=36",
     "controlStyles[85].target": "StartUI.NavigationPaneGrid#RootPanel > StartUI.UserTileView > StartUI.NavigationPaneButton#UserTileButton ",
     "controlStyles[85].styles[0]": "Margin=4",
