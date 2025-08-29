@@ -27,7 +27,7 @@ In order for it to work, you'll have to:
 - Theme is designed on Windows 11 - 24H2
 - Compatible with both Light/ Dark mode
 
-## For a complete GlassUI themed UI, download the following mods:
+## For a complete WindowGlass themed UI, download the following mods and use the 'WindowGlass' theme:
 - Windows 11 TaskBar Styler – for styling the Taskbar.
 - Windows 11 Notification Center Styler - for styling the Notification Center and Action Center
 - Windows 11 File Explorer Styler - for styling Windows Explorer windows
