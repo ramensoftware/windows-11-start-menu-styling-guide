@@ -263,7 +263,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "webContentCustomJs": "",
   "styleConstants[2]": "BorderThickness=0.3,1,0.3,0.3",
   "styleConstants[3]": "CornerRadius=20",
-  "styleConstants[4]": "ClockBG=<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0.3\" />",
+  "styleConstants[4]": "ClockBG=<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemAccentColorLight2}\" TintOpacity=\"0.3\" />",
   "styleConstants[5]": "SearchBoxRadius=15",
   "styleConstants[6]": "Background2=Transparent",
   "styleConstants[7]": "Background2=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeAltHighColor}\" TintOpacity=\"0.3\" FallbackColor=\"{ThemeResource SystemChromeAltHighColor}\" />",
