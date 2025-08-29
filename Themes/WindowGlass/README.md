@@ -1,4 +1,4 @@
-# WindowGlass theme for Windows 11 Taskbar Styler
+# WindowGlass theme for Windows 11 Start Menu Styler
 
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
