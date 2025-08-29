@@ -10,7 +10,7 @@
 - This theme best on Windows 11 **25H2** and later.
 - This theme currently works on displays with a resolution **above** 1366x768.
 - This theme places the start menu horizontally centered on the screen, reguardless of whether the taskbar icons are centered or left aligned.
-<details>
+
 
 ## Bonus
 - This theme can style your lock screen as well. 
