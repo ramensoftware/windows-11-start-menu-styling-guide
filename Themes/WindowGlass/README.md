@@ -5,27 +5,29 @@
 ## Left/ Centered Aligned
 ![Left](Start_Menu.png)
 
-
-## Notes
-- This theme best on Windows 11 **25H2** and later.
+<Notes>
+- This theme works best on Windows 11 **25H2** and later.
 - This theme currently works on displays with a resolution **above** 1366x768.
 - This theme places the start menu horizontally centered on the screen, reguardless of whether the taskbar icons are centered or left aligned.
+</Notes>
 
-
-## Bonus
+<Bonus>
 - This theme can style your lock screen as well. 
 
-## Lock Screen
+**Lock Screen**
 ![Lock Screen](Lock_Screen.png) 
 
 In order for it to work, you'll have to:
   - add 'LockApp.exe' to the 'Custom process inclusion list' in 'advanced settings' in the Start Menu Styler Mod.
   - Install Vivo Sans En VF and Vivo Sans Clock Stencil [Links will be shared soon...]
+</Bonus>
 
 
-## More Details about this theme
+<More Details about this Theme>
 - Theme is designed on Windows 11 - 24H2
-- Compatible with both Light/ Dark mode
+- Compatible with both Light/ Dark mode (WIP)
+</More Details about this Theme>
+
 
 ## For a complete GlassUI themed UI, download the following mods:
 - Windows 11 TaskBar Styler – for styling the Taskbar.
