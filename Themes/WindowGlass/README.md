@@ -10,6 +10,7 @@
 - This theme works best on Windows 11 **25H2** and later.
 - This theme currently works on displays with a resolution **above** 1366x768.
 - This theme places the start menu horizontally centered on the screen, reguardless of whether the taskbar icons are centered or left aligned.
+- This theme combines the start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'
 
 
 ## Bonus
