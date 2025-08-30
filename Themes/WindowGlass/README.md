@@ -1,5 +1,7 @@
 # WindowGlass theme for Windows 11 Start Menu Styler
 
+A theme that adds a modern, glassy aesthetic with a compact layout to the windows 11 Start Menu
+
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
 ## Left/ Centered Aligned
