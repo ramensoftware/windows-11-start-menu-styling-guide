@@ -23,7 +23,7 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the window
 
 In order for it to work, you'll have to:
   - add 'LockApp.exe' to the 'Custom process inclusion list' in 'advanced settings' in the Start Menu Styler Mod.
-  - Install Vivo Sans En VF and Vivo Sans Clock Stencil [Links will be shared soon...]
+  - Install [Vivo Sans En VF] and [Vivo Sans Clock Stencil] (https://github.com/Nathaniel4JC/Fonts/releases/download/Fonts/Vivo_Fonts.zip)
 
 
 ## More Details about this theme
