@@ -433,12 +433,13 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ## Bugs
 * Group name text will appear as black on a black textbox when editing, causing readability issues.
 * Folder name textbox are not styled.
-* Blank jumplist items right-click menu.
+* Jumplist items right-click menu is blank.
 * Recent items name might go pass the separator line.
 * Holding the X button in the group name textbox will show a fake X icon.
 * Reveal effect might flicker around the start menu, and the 3D push effect is still present.
 * Items may not be aligned/centered correctly on higher DPIs.
-* User flyout can only show 6 users (7 or more will cause clipping).
+* User flyout can only show 4 users (5 or more will cause clipping).
+* Navigation pane buttons will stick to the pane itself for a split second after the pane is dismissed.
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
