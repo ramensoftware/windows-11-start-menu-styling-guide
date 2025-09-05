@@ -1,4 +1,4 @@
-# Everbrush theme for Windows 11 Start Menu Styler
+# Everblush theme for Windows 11 Start Menu Styler
 
 The starter is based on the [Everblush](https://github.com/everblush) color scheme. There are no new designs in this menu, you can get the Everblush color with the default menu.
 

@@ -9,7 +9,7 @@ keeping the Start menu minimal.
 
 ## Note
 
-Please turn off all user shortcuts (Documents, Downloads, Pictures, etc) except
+Please turn off all user shortcuts (Documents, Downloads, Pictures, etc.) except
 for settings.
 
 ## Theme selection
