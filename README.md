@@ -361,7 +361,7 @@ Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
 
 `Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
 
-You can also set Acrylic to use an accent color for a more dynamic look, that fits the current theme.
+You can also set Acrylic to use an accent color for a more dynamic look that fits the current theme.
 
 ```
 Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
