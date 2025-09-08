@@ -7,7 +7,7 @@
 ## Notes:
 
 * Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended.
-* For centered start menu, please set the following additional styles:
+* For a centered start menu, please set the following additional styles:
   * Target: `StartDocked.StartSizingFrame` \
     Style: `Margin=-14,24,0,0`
   * Target: `Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border` \
@@ -15,7 +15,7 @@
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.

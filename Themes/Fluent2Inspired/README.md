@@ -8,7 +8,7 @@ A theme inspired by [Zee-Al-Eid Ahmad's](https://x.com/zeealeid/status/176430146
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.

@@ -1,6 +1,6 @@
 # TranslucentStartMenu theme for Windows 11 Start Menu Styler
 
-A theme with a clear view of start menu acrylic background.
+A theme with a clear view of the start menu acrylic background.
 
 **Author**: [Undisputed00x](https://github.com/Undisputed00x)
 
@@ -8,7 +8,7 @@ A theme with a clear view of start menu acrylic background.
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.

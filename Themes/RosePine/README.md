@@ -9,12 +9,12 @@ keeping the Start menu minimal.
 
 ## Note
 
-Please turn off all user shortcuts (Documents, Downloads, Pictures, etc) except
+Please turn off all user shortcuts (Documents, Downloads, Pictures, etc.) except
 for settings.
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
