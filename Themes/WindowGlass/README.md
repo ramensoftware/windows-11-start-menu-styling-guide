@@ -1,6 +1,6 @@
 # WindowGlass theme for Windows 11 Start Menu Styler
 
-A theme that adds a modern, glassy aesthetic with a compact layout to the windows 11 Start Menu
+A theme that adds a modern, glassy aesthetic with a compact layout to the Windows 11 Start Menu.
 
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
@@ -22,13 +22,13 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the window
 ![Lock Screen](Lock_Screen.png) 
 
 In order for it to work, you'll have to:
-  - add 'LockApp.exe' to the 'Custom process inclusion list' in 'advanced settings' in the Start Menu Styler Mod.
-  - Install [Vivo Sans En VF] (https://1drv.ms/u/c/67fedd4420ed716d/EXRoW1f5dABJrO2dPj0tbM0Bm1uYiGeoKyAYA7X7er2Zww?e=cLsiJJ) and [Vivo Sans Clock Stencil] (https://1drv.ms/u/c/67fedd4420ed716d/EW6LJO1CAu1Fs-khbTGXWFUB5sXhRxM-I__B1lkKWgizdA?e=J1RJYy)
+  - Add 'LockApp.exe' to the 'Custom process inclusion list' in 'Advanced settings' in the Start Menu Styler Mod.
+  - Install [Vivo Sans En VF](https://1drv.ms/u/c/67fedd4420ed716d/EXRoW1f5dABJrO2dPj0tbM0Bm1uYiGeoKyAYA7X7er2Zww?e=cLsiJJ) and [Vivo Sans Clock Stencil](https://1drv.ms/u/c/67fedd4420ed716d/EW6LJO1CAu1Fs-khbTGXWFUB5sXhRxM-I__B1lkKWgizdA?e=J1RJYy).
 
 
 ## More Details about this theme
 - Theme is designed on Windows 11 - 24H2
-- Compatible with both Light/ Dark mode
+- Compatible with both Light/Dark mode
 
 ## For a complete WindowGlass themed UI, download the following mods and use the 'WindowGlass' theme:
 - Windows 11 TaskBar Styler – for styling the Taskbar.
@@ -274,11 +274,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[53].styles[1]": "BorderBrush:=$ElementBorderBrush",
   "controlStyles[53].styles[2]": "BorderThickness=$ElementBorderThickness",
   "controlStyles[53].styles[3]": "CornerRadius=20",
-  "disableNewStartMenuLayout": 0,
-  "webContentStyles[0].target": "",
-  "webContentStyles[0].styles[0]": "",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "styleConstants[0]": "Background=<WindhawkBlur BlurAmount=\"15\" TintColor=\"#10808080\"/>",
   "styleConstants[1]": "BorderBrush2=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"{ThemeResource SystemChromeHighColor}\" Offset=\"0.0\" /><GradientStop Color=\"{ThemeResource SystemChromeAltHighColor}\" Offset=\"0.25\" /><GradientStop Color=\"{ThemeResource SystemChromeHighColor}\" Offset=\"1\" /></LinearGradientBrush>",
   "webContentCustomJs": "",
@@ -521,11 +516,6 @@ This style also consists of a minimal version of the start menu with the Phone L
   "controlStyles[53].styles[1]": "BorderBrush:=$ElementBorderBrush",
   "controlStyles[53].styles[2]": "BorderThickness=$ElementBorderThickness",
   "controlStyles[53].styles[3]": "CornerRadius=20",
-  "disableNewStartMenuLayout": 0,
-  "webContentStyles[0].target": "",
-  "webContentStyles[0].styles[0]": "",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "styleConstants[0]": "Background=<WindhawkBlur BlurAmount=\"15\" TintColor=\"#10808080\"/>",
   "styleConstants[1]": "BorderBrush2=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"{ThemeResource SystemChromeHighColor}\" Offset=\"0.0\" /><GradientStop Color=\"{ThemeResource SystemChromeAltHighColor}\" Offset=\"0.25\" /><GradientStop Color=\"{ThemeResource SystemChromeHighColor}\" Offset=\"1\" /></LinearGradientBrush>",
   "webContentCustomJs": "",
