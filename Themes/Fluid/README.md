@@ -45,6 +45,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[2].target": "StartMenu.CategoryControl > Grid > Border",
 	"controlStyles[2].styles[0]": "BorderThickness=2",
 	"controlStyles[2].styles[1]": "BorderBrush:=$borderColor",
+	"controlStyles[2].styles[2]": "BackgroundSizing=InnerBorderEdge",
+	"controlStyles[2].styles[3]": "Background:=<SolidColorBrush Color=\"{ThemeResource ControlFillColorDefault}\" />",
+	"controlStyles[2].styles[4]": "Opacity=0.8",
 	"controlStyles[3].target": "Grid#LayoutRoot",
 	"controlStyles[3].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.083\" />",
 	"controlStyles[4].target": "Border#BackgroundBorder",
@@ -113,9 +116,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[15].styles[5]": "Background@Normal:=$backgroundNormal",
 	"controlStyles[15].styles[6]": "BorderBrush@Normal:=$borderColor",
 	"controlStyles[15].styles[7]": "Padding=9,3,7,4",
-	"controlStyles[2].styles[2]": "BackgroundSizing=InnerBorderEdge",
-	"controlStyles[2].styles[3]": "Background:=<SolidColorBrush Color=\"{ThemeResource ControlFillColorDefault}\" />",
-	"controlStyles[2].styles[4]": "Opacity=0.8",
 	"controlStyles[16].target": "Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > ContentControl > Grid#RootGrid > Grid#LogoContainer > Image#AllAppsTileLogo",
 	"controlStyles[16].styles[0]": "RenderTransform@Pressed:=<ScaleTransform ScaleX=\"0.8\" ScaleY=\"0.8\" />",
 	"controlStyles[16].styles[1]": "RenderTransformOrigin=0.5,0.5",
@@ -161,4 +161,5 @@ The theme styles can also be imported manually. To do that, follow these steps:
 }
 ```
 </details>
+
 
