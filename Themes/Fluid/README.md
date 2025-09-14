@@ -9,7 +9,6 @@ This theme intends to take Fluent's design principles more seriously and make th
 
 **Author**: [SandTechStuff](https://github.com/SandTechStuff)
 
-![Screenshot](screenshot.png)
 ![Screenshot](contextMenus.gif)
 
 <!-- ## Theme selection
@@ -162,3 +161,4 @@ The theme styles can also be imported manually. To do that, follow these steps:
 }
 ```
 </details>
+
