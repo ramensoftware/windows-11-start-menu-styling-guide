@@ -1,6 +1,6 @@
 # Fluid theme for Windows 11 Start Menu Styler
 
-This theme intends to take Fluent's design principles more seriously and make them more consistent. Changes include:
+This theme intends to subtly take Fluent's design principles more seriously and make them more consistent. Changes include:
 * 3D-like borders on most elements.
 * Background transitions on elements usually lacking them.
 * Context menu slide-in animations.
@@ -167,5 +167,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 }
 ```
 </details>
+
 
 
