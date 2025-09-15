@@ -20,6 +20,13 @@ settings:
 * Go to the "Settings" tab.
 * Select the theme and save the settings. -->
 
+> [!NOTE]
+> The default configuration is designed for Dark mode. If you want to use Light mode, add this to the "Style constants" section of the Start Menu Styler settings:
+
+```
+borderColor=<LinearGradientBrush x:Key="ShellTaskbarItemGradientStrokeColorSecondaryBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3"><LinearGradientBrush.RelativeTransform><ScaleTransform ScaleY="-1" CenterY="0.5" /></LinearGradientBrush.RelativeTransform><LinearGradientBrush.GradientStops><GradientStop Offset="0.33" Color="#0F000000" /><GradientStop Offset="1" Color="#05000000" /></LinearGradientBrush.GradientStops></LinearGradientBrush>
+```
+
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
@@ -36,11 +43,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[0].target": "Border#ContentBorder@CommonStates > Grid > Border#BackgroundBorder",
 	"controlStyles[0].styles[0]": "BorderThickness=2",
 	"controlStyles[0].styles[1]": "BorderBrush@PointerOver:=$borderColor",
-	"controlStyles[0].styles[2]": "BorderBrush@Pressed:=$borderColorPressed",
+	"controlStyles[0].styles[2]": "BorderBrush@Pressed:=$borderColor",
 	"controlStyles[1].target": "Button > Grid@CommonStates > Border#BackgroundBorder",
 	"controlStyles[1].styles[0]": "BorderThickness=2",
 	"controlStyles[1].styles[1]": "BorderBrush@PointerOver:=$borderColor",
-	"controlStyles[1].styles[2]": "BorderBrush@Pressed:=$borderColorPressed",
+	"controlStyles[1].styles[2]": "BorderBrush@Pressed:=$borderColor",
 	"controlStyles[1].styles[3]": "BackgroundSizing=InnerBorderEdge",
 	"controlStyles[2].target": "StartMenu.CategoryControl > Grid > Border",
 	"controlStyles[2].styles[0]": "BorderThickness=2",
@@ -55,12 +62,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[5].target": "Button#Header > Border@CommonStates",
 	"controlStyles[5].styles[0]": "BorderThickness=2",
 	"controlStyles[5].styles[1]": "BorderBrush@PointerOver:=$borderColor",
-	"controlStyles[5].styles[2]": "BorderBrush@Pressed:=$borderColorPressed",
+	"controlStyles[5].styles[2]": "BorderBrush@Pressed:=$borderColor",
 	"controlStyles[5].styles[3]": "BackgroundSizing=InnerBorderEdge",
 	"controlStyles[6].target": "ListViewItem > Grid@CommonStates > Border#BorderBackground",
 	"controlStyles[6].styles[0]": "BorderThickness=2",
 	"controlStyles[6].styles[1]": "BorderBrush@PointerOver:=$borderColor",
-	"controlStyles[6].styles[2]": "BorderBrush@Pressed:=$borderColorPressed",
+	"controlStyles[6].styles[2]": "BorderBrush@Pressed:=$borderColor",
 	"controlStyles[6].styles[3]": "BackgroundSizing=InnerBorderEdge",
 	"controlStyles[7].target": "StartMenu.SearchBoxToggleButton > Grid@CommonStates > Border#BorderElement",
 	"controlStyles[7].styles[0]": "CornerRadius=4",
@@ -100,12 +107,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"controlStyles[13].target": "StartDocked.NavigationPaneButton > Grid@CommonStates > Border#BackgroundBorder",
 	"controlStyles[13].styles[0]": "BorderThickness=1",
 	"controlStyles[13].styles[1]": "BorderBrush@PointerOver:=$borderColor",
-	"controlStyles[13].styles[2]": "BorderBrush@Pressed:=$borderColorPressed",
+	"controlStyles[13].styles[2]": "BorderBrush@Pressed:=$borderColor",
 	"controlStyles[13].styles[3]": "BackgroundSizing=InnerBorderEdge",
 	"controlStyles[14].target": "StartDocked.AppListViewItem > Grid@CommonStates > Border#BackgroundBorder",
 	"controlStyles[14].styles[0]": "BorderThickness=1",
 	"controlStyles[14].styles[1]": "BorderBrush@PointerOver:=$borderColor",
-	"controlStyles[14].styles[2]": "BorderBrush@Pressed:=$borderColorPressed",
+	"controlStyles[14].styles[2]": "BorderBrush@Pressed:=$borderColor",
 	"controlStyles[14].styles[3]": "BackgroundSizing=InnerBorderEdge",
 	"controlStyles[15].target": "Microsoft.UI.Xaml.Controls.DropDownButton > Grid@CommonStates",
 	"controlStyles[15].styles[0]": "Background@PointerOver:=$backgroundHover",
@@ -154,10 +161,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
 	"webContentStyles[0].target": "*",
 	"webContentStyles[0].styles[0]": "transition: background-color 0.083s ease-in-out !important",
 	"styleConstants[0]": "borderColor=<LinearGradientBrush x:Key=\"ShellTaskbarItemGradientStrokeColorSecondaryBrush\" MappingMode=\"Absolute\" StartPoint=\"0,0\" EndPoint=\"0,3\"><LinearGradientBrush.GradientStops><GradientStop Offset=\"0.33\" Color=\"#1AFFFFFF\" /><GradientStop Offset=\"1\" Color=\"#0FFFFFFF\" /></LinearGradientBrush.GradientStops></LinearGradientBrush>",
-	"styleConstants[1]": "borderColorPressed=<LinearGradientBrush x:Key=\"ShellTaskbarItemGradientStrokeColorSecondaryBrush\" MappingMode=\"Absolute\" StartPoint=\"0,0\" EndPoint=\"0,3\"><LinearGradientBrush.GradientStops><GradientStop Offset=\"0.33\" Color=\"#1AFFFFFF\" /><GradientStop Offset=\"1\" Color=\"#0FFFFFFF\" /></LinearGradientBrush.GradientStops></LinearGradientBrush>",
-	"styleConstants[2]": "backgroundNormal=<SolidColorBrush Color=\"{ThemeResource ControlFillColorDefault}\" />",
-	"styleConstants[3]": "backgroundHover=<SolidColorBrush Color=\"{ThemeResource ControlFillColorSecondary}\" />",
-	"styleConstants[4]": "backgroundPressed=<SolidColorBrush Color=\"{ThemeResource ControlFillColorTertiary}\" />"
+	"styleConstants[1]": "backgroundNormal=<SolidColorBrush Color=\"{ThemeResource ControlFillColorDefault}\" />",
+	"styleConstants[2]": "backgroundHover=<SolidColorBrush Color=\"{ThemeResource ControlFillColorSecondary}\" />",
+	"styleConstants[3]": "backgroundPressed=<SolidColorBrush Color=\"{ThemeResource ControlFillColorTertiary}\" />"
 }
 ```
 </details>
