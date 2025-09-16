@@ -456,7 +456,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Items may not be aligned/centered correctly on higher DPIs.
 * User flyout can only show 4 users (5 or more will cause clipping).
 * Navigation pane buttons will stick to the pane itself for a split second after the pane is dismissed.
-* When downloading an app from the Microsoft Store, the placeholder square of the app downloading is streched.
+* When downloading an app from the Microsoft Store, the placeholder square of the downloading app is streched.
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
