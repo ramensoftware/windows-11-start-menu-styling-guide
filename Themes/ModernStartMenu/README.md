@@ -388,7 +388,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[94].styles[0]": "Fill@FocusState_Hover:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />",
     "controlStyles[94].styles[1]": "Fill@FocusState_None=Transparent",
     "controlStyles[94].styles[2]": "StrokeThickness=0",
-    "controlStyles[51].styles[2]": "Margin=-4,0,0,0",
+    "controlStyles[51].styles[2]": "Margin=-8,0,0,0",
     "controlStyles[95].target": "JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > StackPanel > TextBlock",
     "controlStyles[95].styles[0]": "FontFamily=Segoe UI Variable",
     "controlStyles[96].target": "JumpViewUI.JumpListCategoryHeaderControl > Grid > TextBlock#HeadingTextBlock",
