@@ -11,29 +11,29 @@ A recreation of the Sun Valley start menu for the Windows 10 Start Menu running 
 
 If you're already using the Windows 10 Start menu, you can skip this step.
 
-(You need to set "Corner preference" to "Not rounded" as the theme automatically rounds the start menu and make it float)
+(You need to set *"Corner preference"* to *"Not rounded"* as the theme automatically rounds the start menu and make it float)
 
 Installation:
 * Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher).
-* Open "Properties (ExplorerPatcher)" via the start menu or right-click the taskbar > "Properties".
-* Go to "Start menu" > "Start menu style" > "Windows 10" > "Restart File Explorer".
+* Open *"Properties (ExplorerPatcher)"* via the start menu or right-click the taskbar > *"Properties"*.
+* Go to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
 
 ## Theme selection
 
 The theme is integrated into the mod, and can be simply selected from the mod's
 settings:
 
-* Open the Windows 11 Start Menu Styler mod in Windhawk.
-* Go to the "Settings" tab.
+* Open the *"Windows 11 Start Menu Styler mod"* in Windhawk.
+* Go to the *"Settings"* tab.
 * Select the theme and save the settings.
 
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
-* Open the Windows 11 Start Menu Styler mod in Windhawk.
-* Go to the "Advanced" tab.
-* Copy the content below to the text box under "Mod settings" and click "Save".
+* Open the *"Windows 11 Start Menu Styler"* mod in Windhawk.
+* Go to the *"Advanced"* tab.
+* Copy the content below to the text box under *"Mod settings"* and click *"Save"*.
 
 <details>
 <summary>Content to import (click to expand)</summary>
@@ -460,13 +460,13 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Reveal effect might flicker around the start menu, and the 3D push effect is still present.
 * Items may not be aligned/centered correctly on higher DPIs.
 * User flyout can only show 4 users (5 or more will cause clipping).
-* Pinned tiles and All apps button will stick to the right side of the pane for a split second after the pane is dismissed.
+* *"Pinned tiles"* and *"All apps"* button will stick to the right side of the pane for a split second after the pane is dismissed.
 * When downloading an app from the Microsoft Store, the placeholder square of the downloading app is streched.
 
 ## Unsupported configurations/settings
 * Windows 10 (any versions).
 * Light mode.
-* "Transparency effects" disabled.
-* "Show accent color on Start and taskbar" enabled.
+* *"Transparency effects"* disabled.
+* *"Show accent color on Start and taskbar"* enabled.
 * Fullscreen start menu.
 * Languages other than en-US/UK.
