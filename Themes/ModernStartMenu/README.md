@@ -322,7 +322,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[15].styles[1]": "Fill@InteractionState_Pressed:=",
     "controlStyles[15].styles[2]": "Fill@InteractionState_Drag:=",
     "controlStyles[15].styles[3]": "StrokeThickness=0",
-    "controlStyles[78].target": "MenuFlyoutItem[Text=Rate and review] > Grid",
+    "controlStyles[78].target": "MenuFlyoutItem[AutomationProperties.AutomationId=Review] > Grid",
     "controlStyles[78].styles[0]": "Height=28",
     "controlStyles[79].target": "Rectangle",
     "controlStyles[79].styles[0]": "RadiusX=4",
@@ -392,7 +392,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[97].target": "MenuFlyoutItem[6] > Grid",
     "controlStyles[98].target": "MenuFlyoutItem[7] > Grid",
     "controlStyles[99].target": "MenuFlyoutItem[8] > Grid",
-    "controlStyles[100].target": "MenuFlyoutItem[Text=Disconnect network drive] > Grid",
+    "controlStyles[100].target": "MenuFlyoutItem[AutomationProperties.AutomationId=disconnectNetworkDrive] > Grid",
     "controlStyles[97].styles[0]": "Height=46",
     "controlStyles[98].styles[0]": "Height=46",
     "controlStyles[99].styles[0]": "Height=46",
@@ -444,10 +444,15 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[104].styles[0]": "Margin=3,0,0,0",
     "controlStyles[105].target": "FontIcon#SubItemChevron",
     "controlStyles[105].styles[0]": "Margin=-30,0,0,0",
-    "controlStyles[106].target": "MenuFlyoutItem[Text=Share] > Grid",
+    "controlStyles[106].target": "MenuFlyoutItem[AutomationProperties.AutomationId=Share] > Grid",
     "controlStyles[106].styles[0]": "Height=28",
     "controlStyles[94].styles[4]": "BorderBrush:=",
-    "controlStyles[63].styles[3]": "BorderBrush:="
+    "controlStyles[63].styles[3]": "BorderBrush:=",
+    "controlStyles[8].styles[7]": "CornerRadius@Pressed=6",
+    "controlStyles[107].target": "Border#SmallLogo",
+    "controlStyles[107].styles[0]": "Margin=0,0,0,7",
+    "controlStyles[108].styles[0]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromVerticalOffset=\"50\" /></TransitionCollection>",
+    "controlStyles[108].target": "MenuFlyoutPresenter > Grid > ScrollViewer > Border"
 }
 ```
 </details>
