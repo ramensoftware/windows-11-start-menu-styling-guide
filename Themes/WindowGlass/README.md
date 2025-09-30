@@ -428,7 +428,7 @@ This style also consists of a minimal version of the start menu with the Phone L
   "controlStyles[31].styles[0]": "Visibility=Collapsed",
   "controlStyles[32].target": "StartMenu.PinnedList#StartMenuPinnedList",
   "controlStyles[32].styles[0]": "Visibility=0",
-  "controlStyles[32].styles[1]": "Margin=0,0,0,50",
+  "controlStyles[32].styles[1]": "Margin=0,0,0,65",
   "controlStyles[32].styles[2]": "RenderTransform:=<TranslateTransform X=\"-0\" Y=\"0\" />",
   "controlStyles[32].styles[3]": "Height=Auto",
   "controlStyles[32].styles[4]": "MinHeight:=200",
