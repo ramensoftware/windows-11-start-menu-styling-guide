@@ -380,7 +380,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[94].target": "MenuFlyoutSubItem > Grid@CommonStates",
     "controlStyles[94].styles[0]": "Background@SubMenuOpened:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />",
     "controlStyles[93].styles[1]": "FontFamily=Segoe UI Variable",
-    "controlStyles[37].styles[0]": "MinWidth=222",
+    "controlStyles[37].styles[0]": "MinWidth=192",
     "controlStyles[80].styles[4]": "RadiusY=2",
     "controlStyles[94].styles[1]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" />",
     "controlStyles[95].target": "Viewbox > Border > TextBlock",
@@ -451,7 +451,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[8].styles[7]": "CornerRadius@Pressed=6",
     "controlStyles[107].target": "Border#SmallLogo",
     "controlStyles[107].styles[0]": "Margin=0,0,0,7",
-    "controlStyles[108].styles[0]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromVerticalOffset=\"50\" /></TransitionCollection>",
+    "controlStyles[108].styles[0]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"-37.5\" FromVerticalOffset=\"0\" /></TransitionCollection>",
     "controlStyles[108].target": "MenuFlyoutPresenter > Grid > ScrollViewer > Border"
 }
 ```
