@@ -459,7 +459,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[111].styles[0]": "Height=28",
     "controlStyles[111].target": "MenuFlyoutItem[Text=Restart] > Grid",
     "controlStyles[112].target": "StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=RecentList] > StackPanel > Button > Border > TextBlock",
-    "controlStyles[112].styles[0]": "Margin=15,0,0,0"
+    "controlStyles[112].styles[0]": "Margin=15,0,0,0",
+    "controlStyles[113].target": "MenuFlyoutItem[AutomationProperties.AutomationId=ClearList] > Grid",
+    "controlStyles[113].styles[0]": "Height=28"
 }
 ```
 </details>
