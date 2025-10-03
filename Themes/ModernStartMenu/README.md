@@ -229,7 +229,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[55].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > StartUI.TileViewControl",
     "controlStyles[56].target": "TileGridNestedPanel > StartUI.TileListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter",
     "controlStyles[56].styles[0]": "RevealBackground:=",
-    "controlStyles[57].target": "ToolTip > ContentPresenter#LayoutRoot",
+    "controlStyles[57].target": "ToolTip > ContentPresenter",
     "controlStyles[57].styles[0]": "CornerRadius=4",
     "controlStyles[57].styles[1]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
     "controlStyles[57].styles[2]": "BorderThickness=0",
@@ -448,7 +448,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[7].styles[7]": "CornerRadius@Pressed=6",
     "controlStyles[106].target": "Border#SmallLogo",
     "controlStyles[106].styles[0]": "Margin=0,0,0,7",
-    "controlStyles[107].styles[0]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"-37.5\" FromVerticalOffset=\"0\" /></TransitionCollection>",
+    "controlStyles[107].styles[0]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"-50\" FromVerticalOffset=\"0\" /></TransitionCollection>",
     "controlStyles[107].target": "MenuFlyoutPresenter > Grid > ScrollViewer > Border",
     "controlStyles[108].target": "MenuFlyoutItem[Text=Properties] > Grid",
     "controlStyles[108].styles[0]": "Height=28",
@@ -461,7 +461,21 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[112].target": "StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=RecentList] > StackPanel > Button > Border > TextBlock",
     "controlStyles[112].styles[0]": "Margin=15,0,0,0",
     "controlStyles[113].target": "MenuFlyoutItem[AutomationProperties.AutomationId=ClearList] > Grid",
-    "controlStyles[113].styles[0]": "Height=28"
+    "controlStyles[113].styles[0]": "Height=28",
+    "controlStyles[53].styles[5]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"-50\" FromVerticalOffset=\"0\" /></TransitionCollection>",
+    "controlStyles[57].styles[3]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"12.5\" /></TransitionCollection>",
+    "controlStyles[22].styles[8]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"25\" /></TransitionCollection>",
+    "controlStyles[21].styles[4]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"50\" /></TransitionCollection>",
+    "controlStyles[37].styles[2]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"50\" /></TransitionCollection>",
+    "controlStyles[38].styles[7]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"25\" /></TransitionCollection>",
+    "controlStyles[40].styles[7]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"37.5\" /></TransitionCollection>",
+    "controlStyles[66].styles[2]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"50\" /></TransitionCollection>",
+    "controlStyles[68].styles[5]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"25\" /></TransitionCollection>",
+    "controlStyles[91].styles[1]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"37.5\" /></TransitionCollection>",
+    "controlStyles[114].target": "JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > StackPanel > Grid",
+    "controlStyles[114].styles[0]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"37.5\" /></TransitionCollection>",
+    "controlStyles[1].styles[3]": "Margin=1,0,0,-2",
+    "controlStyles[69].styles[5]": "Transitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"37.5\" /></TransitionCollection>"
 }
 ```
 </details>
