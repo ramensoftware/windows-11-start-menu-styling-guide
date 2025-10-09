@@ -7,8 +7,9 @@ A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unne
 ### ✨ Features
 - Removed unnecessary text and lines
 - Enlarged icons  
-- Enhanced accent color Presence
-- Added subtle, neat border reveal effects  
+- Enhanced Accent Color Presence (Automatically Updates with Windows Accent Color)  
+- Added Subtle, Neat Border Reveal Effects
+- Took Fallback Colors (Colors in Battery Mode) into consideration
 
 **Author:** [OsamaJT](https://github.com/OsamaHJT)
 
