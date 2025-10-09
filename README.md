@@ -1,625 +1,321 @@
-# The Windows 11 start menu styling guide
-
-## Table of contents
-
-* [Introduction](#introduction)
-  * [Finding targets](#finding-targets)
-  * [Missing customizations](#missing-customizations)
-  * [Contributing](#contributing)
-* [Themes](#themes)
-* [Custom Acrylic background](#custom-acrylic-background)
-* [Remove the search box](#remove-the-search-box)
-* [Move pinned app lists](#move-pinned-app-lists)
-* [Remove the Recommended section](#remove-the-recommended-section)
-* [Remove the user profile button](#remove-the-user-profile-button)
-* [Move the power button](#move-the-power-button)
-* [Force light/dark mode](#force-lightdark-mode)
-* [Semantic zoom (navigation)](#semantic-zoom-navigation)
-* [Transforms](#transforms)
-  * [Translate](#translate)
-  * [Rotate](#rotate)
-  * [Scale](#scale)
-  * [Skew](#skew)
-  * [Other properties and attributes](#other-properties-and-attributes)
-* [Colors](#colors)
-  * [Solid color](#solid-color)
-  * [Accent colors](#accent-colors)
-  * [Clear transparent background](#clear-transparent-background)
-  * [Acrylic effect as color](#acrylic-effect-as-color)
-  * [WindhawkBlur effect as color](#windhawkblur-effect-as-color)
-    * [Hex color](#hex-color)
-    * [ThemeResource color](#themeresource-color)
-  * [Mica effect as color](#mica-effect-as-color)
-  * [Gradient as color](#gradient-as-color)
-  * [Image as color](#image-as-color)
-  * [Reveal as color](#reveal-as-color)
-* [Search menu](#search-menu)
-* [Search menu remote debugging](#search-menu-remote-debugging)
-* [Search menu WebView styles](#search-menu-webview-styles)
-  * [Hide the back button](#hide-the-back-button)
-  * [Hide the Copilot button](#hide-the-copilot-button)
-  * [Change the background color of search type headers](#change-the-background-color-of-search-type-headers)
-  * [Hide the search type headers](#hide-the-search-type-headers)
-  * [Hide the search type header scroll buttons](#hide-the-search-type-header-scroll-buttons)
-  * [Hide the quick settings panel](#hide-the-quick-settings-panel)
-  * [Hide the top result title](#hide-the-top-result-title)
-  * [Change the background color of all search results](#change-the-background-color-of-all-search-results)
-  * [Hide left-side pill of the selected search result](#hide-left-side-pill-of-the-selected-search-result)
-  * [Change the width of the preview panel](#change-the-width-of-the-preview-panel)
-  * [Change the background color of the preview panel](#change-the-background-color-of-the-preview-panel)
-  * [Change the text font](#change-the-text-font)
-  * [Change the icons font](#change-the-icons-font)
-
-## Introduction
-
-This is a collection of commonly requested start menu styling customizations for
-Windows 11. It is intended to be used with the [Windows 11 Start Menu
-Styler](https://windhawk.net/mods/windows-11-start-menu-styler) Windhawk mod.
-
-If you're not familiar with Windhawk, here are the steps for installing the mod:
-
-* Download Windhawk from [windhawk.net](https://windhawk.net/) and install it.
-* Go to "Mods" in the upper right menu.
-* Find and install the "Windows 11 Start Menu Styler" mod.
-
-After installing the mod, open its Settings tab and adjust the styles according
-to your preferences.
-
-Some customizations are best adjusted with other Windhawk mods. Links to those
-mods are provided where applicable.
-
-**See also**: [The Windows 11 taskbar styling
-guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md),
-[The Windows 11 notification center styling
-guide](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/blob/main/README.md).
+# "Oversimplified & Accentuated" Theme for "Windows 11 Start Menu Styler"
 
-### Finding targets
+A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unnecessary elements and offering better **Accent Color** integration.
 
-[How to find targets using UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/uwpspy.md).
+> ⚠️ **Note:** This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
 
-### Missing customizations
+### ✨ Features
+- Removed unnecessary text and lines
+- Enlarged icons  
+- Enhanced accent color Presence
+- Added subtle, neat border reveal effects  
 
-If you're looking for a customization that is not listed here, please [open an
-issue](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/issues/new).
+**Author:** [OsamaJT](https://github.com/OsamaHJT)
 
-### Contributing
-
-If you have a start menu styling customization or theme that you would like to
-share, please submit a pull request.
+![Screenshot](Start.png)
 
-## Themes
-
-Themes are collections of styles that can be imported into the Windows 11
-Start Menu Styler mod. The following themes are available:
-
-| Link | Screenshot
-| ---- | ----------
-| [NoRecommendedSection](Themes/NoRecommendedSection/README.md) | [![NoRecommendedSection](Themes/NoRecommendedSection/screenshot-small.png)](Themes/NoRecommendedSection/screenshot.png)
-| [SideBySide](Themes/SideBySide/README.md) | [![SideBySide](Themes/SideBySide/screenshot-small.png)](Themes/SideBySide/screenshot.png)
-| [SideBySide2](Themes/SideBySide2/README.md) | [![SideBySide2](Themes/SideBySide2/screenshot-small.png)](Themes/SideBySide2/screenshot.png)
-| [SideBySideMinimal](Themes/SideBySideMinimal/README.md) | [![SideBySideMinimal](Themes/SideBySideMinimal/screenshot-small.png)](Themes/SideBySideMinimal/screenshot.png)
-| [Windows10](Themes/Windows10/README.md) | [![Windows10](Themes/Windows10/screenshot-small.png)](Themes/Windows10/screenshot.png)
-| [TranslucentStartMenu](Themes/TranslucentStartMenu/README.md) | [![TranslucentStartMenu](Themes/TranslucentStartMenu/screenshot-small.png)](Themes/TranslucentStartMenu/screenshot.png)
-| [Windows11_Metro10](Themes/Windows11_Metro10/README.md) | [![Windows11_Metro10](Themes/Windows11_Metro10/screenshot-small.png)](Themes/Windows11_Metro10/screenshot.png)
-| [Fluent2Inspired](Themes/Fluent2Inspired/README.md) | [![Fluent2Inspired](Themes/Fluent2Inspired/screenshot-small.png)](Themes/Fluent2Inspired/screenshot.png)
-| [RosePine](Themes/RosePine/README.md) | [![RosePine](Themes/RosePine/screenshot-small.png)](Themes/RosePine/screenshot.png)
-| [Windows11_Metro10Minimal](Themes/Windows11_Metro10Minimal/README.md) | [![Windows11_Metro10Minimal](Themes/Windows11_Metro10Minimal/screenshot-small.png)](Themes/Windows11_Metro10Minimal/screenshot.png)
-| [Everblush](Themes/Everblush/README.md) | [![Everblush](Themes/Everblush/screenshot-small.png)](Themes/Everblush/screenshot.png)
-| [21996](Themes/21996/README.md) | [![21996](Themes/21996/screenshot-small.png)](Themes/21996/screenshot.png)
-| [Down Aero](Themes/Down%20Aero/README.md) | [![Down Aero](Themes/Down%20Aero/screenshot-small.png)](Themes/Down%20Aero/screenshot.png)
-| [UniMenu](Themes/UniMenu/README.md) | [![UniMenu](Themes/UniMenu/screenshot-small.png)](Themes/UniMenu/screenshot.png)
-| [LegacyFluent](Themes/LegacyFluent/README.md) | [![LegacyFluent](Themes/LegacyFluent/screenshot-small.png)](Themes/LegacyFluent/screenshot.png)
-| [OnlySearch](Themes/OnlySearch/README.md) | [![OnlySearch](Themes/OnlySearch/screenshot-small.png)](Themes/OnlySearch/screenshot.png)
-| [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
-| [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
+---
 
+## 🎨 Elements Modified
+- Start Menu
+- Search Menu
+- Context Menu
+  
+---
 
-## Custom Acrylic background
-
-Target `Border#AcrylicBorder` for the start menu or `Border#AppBorder` for the search menu, then set `Background` to an `AcrylicBrush` object.
-
-For example:
-
-```
-Background:=<AcrylicBrush BackgroundSource="Backdrop" TintColor="Pink" TintOpacity="0.25" />
-```
-
-The [AcrylicBrush properties](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.acrylicbrush?view=winrt-22621#properties)
-can be adjusted as needed.
-
-## Remove the search box
-
-Target `StartDocked.SearchBoxToggleButton` with `Height=0`, `Margin=0,0,0,24`.
-
-## Move pinned app lists
-
-Target `StartMenu.PinnedList` with `Margin=0,0,0,0`.
-Adjust values as needed.
-
-## Remove the Recommended section
-
-Target the following elements:
-
-* `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader`
-* `Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText`
-* `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer`
-* `Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`
-
-Set the style of each to:
-
-`Visibility=Collapsed`
-
-In addition, the pinned items can be adjusted to
-occupy the whole height by targeting `StartMenu.PinnedList` and setting
-`Height=504`.
-
-## Remove the user profile button
-
-Target `StartDocked.UserTileView` with `Visibility=Collapsed`.
-
-## Move the power button
-
-Target `StartDocked.PowerOptionsView` with `Margin=-580,-1330,0,0`.
-Adjust values as needed.
-
-## Force light/dark mode
-
-Sets light/dark mode independently of what is set in Windows.
-
-`RequestedTheme=1`
-
-`1` = Light Mode
-
-`2` = Dark mode
-
-## Semantic zoom (navigation)
-
-Semantic zoom is the feature that allows us to navigate the apps list using the alphanumeric headers in the list. This lets you jump to a particular letter or number in the apps list quickly.
-For themes that have the apps list visible in the main start menu view, this feature does not work. As an optional workaround, you may enable the hidden zoom button. This button allows you to access the alphanumeric navigation view. This is the zoomed-out view, which is why this is called semantic zoom.
-
-Target:
-```
-Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl
-```
-Styles:
-```
-IsZoomOutButtonEnabled=True
-```
-
-Target:
-```
-Windows.UI.Xaml.Controls.Button#ZoomOutButton
-```
-Styles:
-```
-Width=40
-Height=40
-```
-
-Target:
-```
-Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
-```
-Styles:
-```
-Text=
-FontSize=28
-```
-
-You may replace `Text=` with any other character. Use Character Map to find, copy, and paste the character into the style box.
-
-## Transforms
-
-You can use transformation styles to translate, rotate, scale, or skew elements.
-
-> [!TIP]
-> **Should I use `RenderTransform` or `Transform3D`?**
->
-> For 2D transformations, it is best to stick to `RenderTransform` in most cases. Using `Transform3D` for 2D transformations can cause elements to become blurry. For 3D transformations, you must use `Transform3D`.
-
-> [!TIP]
-> You can mix and match transformations when using `Transform3D`! You can also use `RenderTransform` and `Transform3D` together.
->
-> For example: `Transform3D:=<CompositeTransform3D ScaleX="1.5" TranslateY="-15" RotationZ="15" />`
-
-### Translate
-
-```
-RenderTransform:=<TranslateTransform X="15" Y="-15" />
-```
-
--- or --
-
-```
-Transform3D:=<CompositeTransform3D TranslateX="15" TranslateY="-15" TranslateZ="-15" />
-```
-
-### Rotate
-
-```
-RenderTransform:=<RotateTransform Angle="15" />
-```
-
--- or --
-
-```
-Transform3D:=<CompositeTransform3D RotationX="-15" RotationY="15" RotationZ="-15" />
-```
-
-- `X`: 3D vertical rotation.
-- `Y`: 3D horizontal rotation.
-- `Z`: 2D rotation.
-
-### Scale
-
-```
-RenderTransform:=<ScaleTransform ScaleX="1.5" ScaleY="-1.5" />
-```
-
--- or --
-
-```
-Transform3D:=<CompositeTransform3D ScaleX="-1.5" ScaleY="1.5" ScaleZ="-1.5" />
-```
-
-### Skew
-
-```
-RenderTransform:=<SkewTransform AngleX="-15" AngleY="15" />
-```
-
-### Other properties and attributes
-
-- Applies to Rotate, Scale and Skew:
-  - `CenterX`: Offsets the transform's origin on the X axis.
-  - `CenterY`: Offsets the transform's origin on the Y axis.
-  - `CenterZ`: Offsets the transform's origin on the Z axis. (Only for `Transform3D`)
-
-  Example:
-  ```
-  RenderTransform:=<RotateTransform Angle="15" CenterX="10" CenterY="20" />
-  ```
-- `RenderTransformOrigin`
-  - Applies to `RenderTransform` only, `Transform3D` does not support this attribute. It is a separate attribute and is not set inside of the `RenderTransform` like `CenterX/Y/Z`.
-  - Sets the transform origin relative to its target's width and height. Format is `X,Y` and both numbers range from 0-1.
-
-  Example:
-
-  ```
-  RenderTransformOrigin=0.5,0.5
-  ```
-  This centers the transform's origin.
-
-- `TransformGroup`
-  - Applies to `RenderTransform` only, `Transform3D` does not support this attribute. It is a separate attribute and is not set inside of the `RenderTransform` like `CenterX/Y/Z`.
-  - Allows you to combine RenderTransforms together into one style, mimicking Transform3D's functionality.
-
-  Example:
-  ```
-  RenderTransform:=<TransformGroup><RotateTransform Angle="15" /><TranslateTransform X="15" Y="-15" /></TransformGroup>
-  ```
-## Colors
-
-In the following examples, we will use `Background` as our style, but this
-also works for other properties that accept colors, such as `Fill`.
-
-### Solid color
-
-```
-Background=<color>
-```
-
-Replace `<color>` with the desired color.
-
-A color can be a name (e.g. `Red`) or a hex code (e.g. `#FF0000`).
-
-The color can be semi-transparent (e.g. `#80FF0000`). To have a fully
-transparent background, use `Transparent` or `#00000000`.
-
-### Accent colors
-
-A color can also be a `ThemeResource` or `StaticResource`. There are many such
-styles built into Windows.
-
-```
-Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="0.8" />
-```
-
-Accent colors come as part of an accent color palette. This means that for any color you pick as your system accent color, 3 additional shades are part of that color's palette. For example: `SystemAccentColorLight2` or `SystemAccentColorDark1`.
-
-The word `Light` or `Dark` is appended at the end with a number ranging from 1
-to 3. See [the official Microsoft
-docs](https://learn.microsoft.com/en-us/windows/apps/design/style/color#accent-color-palette)
-for more information.
-
-```
-Background:=<SolidColorBrush Color="{ThemeResource SystemAccentColorDark2}" Opacity="0.5" />
-```
-
-### Clear Transparent Background
-
-To have a fully transparent background:
-
-Style:
-```
-Background=Transparent
-```
-
-### Acrylic effect as color
-
-In order to use the acrylic effect (a blurred background) you can use the
-`AcrylicBrush`.
-
-```
-Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
-```
-
-`TintColor` - Required. Defines what color to use.
-
-`TintOpacity` - Defines the strength of the chosen color.
-
-`TintLuminosityOpacity` - Defines the brightness of the acrylic effect.
-
-`BackgroundSource` - Defines what should be considered the background of the acrylic effect. Set to "Backdrop" to use the desktop wallpaper.
-
-`Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
-
-You can also set Acrylic to use an accent color for a more dynamic look that fits the current theme.
-
-```
-Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" TintOpacity="0.3" />
-```
-
-### WindhawkBlur effect as color
-
-An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic because it has a customizable blur radius and has fewer bugs (e.g. https://github.com/ramensoftware/windhawk-mods/issues/742).
-
-> [!NOTE]
-> WindhawkBlur does not currently support color names (e.g. `Red`) or the `FallbackColor` property.
-
-- `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
-#### Hex color
-
-```
-Fill:=<WindhawkBlur BlurAmount="10" TintColor="#80ff0000" />
-```
-```
-Fill:=<WindhawkBlur BlurAmount="10" TintColor="#ff0000" TintOpacity="0.5" />
-```
-_These examples set a blur that is tinted with red at 50% opacity. Both versions have the same effect._
-
-- `TintColor`: Hex color in `#AARRGGBB` or `#RRGGBB` format that is applied to the blur.
-- `TintOpacity`: Opacity of the color that overrides the alpha of `TintColor`.
-
-> [!TIP]
-> There is no need to specify a `TintOpacity` value if your `TintColor` has an alpha value.
-
-#### ThemeResource color
-
-```
-<WindhawkBlur BlurAmount="10" TintColor="{ThemeResource SystemAccentColor}" TintOpacity="0.5"/>
-```
-
-- `TintColor`: ThemeResource color, such as `SystemAccentColor`.
-- `TintOpacity`: Overrides the opacity of the ThemeResource color.
-
-### Mica effect as color
-
-> [!NOTE]
-> Unfortunately, it is not possible to set a Mica effect at this time with any of Windhawk's styler mods.
-
-### Gradient as color
-
-The background can also be a gradient. For example, to have a gradient from
-yellow to red to blue to lime green, use the following style:
-
-```
-Background:=<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5"><GradientStop Color="Yellow" Offset="0.0" /><GradientStop Color="Red" Offset="0.25" /><GradientStop Color="Blue" Offset="0.75" /><GradientStop Color="LimeGreen" Offset="1.0" /></LinearGradientBrush>
-```
-
-### Image as color
-
-The background can also be an image:
-
-```
-Background:=<ImageBrush Stretch="UniformToFill" ImageSource="<image>" />
-```
-
-Replace `<image>` with your own image, a URL or a local file path.
-If you only see a fully transparent background when using a local file path, you must set a URL instead.
-Images can be jpg, jpg XR, png, bmp, svg, tiff, gif, or ico.
-
-Stretch can be set to the following values:
-
-`None` - Image is rendered at its native resolution and aspect ratio.
-
-`Fill` - Image is stretched or squished to fill the size of the element.
-
-`Uniform` - Image is resized to fit the element dimensions, while it preserves its native aspect ratio.
-
-`UniformToFill` - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
-
-### Reveal as color
-
-> [!NOTE]
-> Reveal is a deprecated XAML feature. It may have issues
-> or stop working at any time.
-
-Reveal is the cursor-based illumination effect from Windows 10.
-
-```
-Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
-```
-
-```
-BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" />
-```
-
-**Only** `RevealBorderBrush` should be used, `RevealBackgroundBrush` does not work correctly in most scenarios.
-
-`Opacity` can be changed to increase or decrease the intensity of the effect.
-
-## Search menu
-
-The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
-
-Versions 1.2 and newer of Windows 11 Start Menu Styler automatically apply the styles to the search menu. In order to include search in your theme in older versions:
-1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
-2. In the custom process inclusion list below, enter `SearchHost.exe`.
-3. Click save.
-
-## Search menu remote debugging
-
-To make finding targets in the search menu's WebView easier, you can inspect it using Microsoft Edge's remote debugging tools.
-
-1. Install this Windhawk mod: [Search Menu Inspect Helper](https://windhawk.net/mods/search-menu-inspect-helper).
-2. Configure remote debugging by following these steps up to number 11: [Remote debugging desktop WebView2 WinUI 2 (UWP) apps](https://learn.microsoft.com/en-us/microsoft-edge/webview2/how-to/remote-debugging-desktop).
-3. Instead of step 11 (Configure your WebView2 WinUI 2 (UWP) app for remote debugging), install the mod, and terminate the SearchHost.exe process. It will be relaunched automatically with remote debugging enabled.
-4. Continue with the rest of the steps.
-
-## Search menu WebView styles
-
-While the start menu uses WinUI for its user interface, most of the search content (all but the top search bar) is a WebView element. To style the search WebView, CSS targets and styles can be used. For example, to set a red background, the target `body` and the style `background: red !important` can be used.
-
-### Hide the back button
-
-Target:
-```
-.scope-with-background__backButton
-```
-Style:
-```
-display: none !important
-```
-
-### Hide the Copilot button
-
-Target:
-```
-#chatButtonRight
-```
-Style:
-```
-display: none !important
-```
-
-### Change the background color of search type headers
-
-Target:
-```
-.scope-tile > div
-```
-Style:
-```
-background-color: Black !important
-```
-
-### Hide the search type headers
-
-Target:
-```
-#scopesHeader
-```
-Style:
-```
-display: none !important
-```
-
-### Hide the search type header scroll buttons
-
-Target:
-```
-.scope-with-background__rightCaret, .scope-with-background__leftCaret
-```
-Style:
-```
-display: none !important
-```
-
-### Hide the quick settings panel
-
-Target:
-```
-.curatedSettingsGroup
-```
-Style:
-```
-display: none !important
-```
-
-### Hide the top result title
-
-Target:
-```
-#topHitHeader
-```
-Style:
-```
-display: none !important
-```
-
-### Change the background color of all search results
-
-Target:
-```
-.suggContainer
-```
-Style:
-```
-background-color: Black !important
-```
-
-### Hide left-side pill of the selected search result
-
-Target:
-```
-.leftPill::before
-```
-Style:
-```
-display: none !important
-```
-
-### Change the width of the preview panel
-
-Target:
-```
-#qfPreviewPane
-```
-Style:
-```
-min-width: 300px !important
-```
-
-### Change the background color of the preview panel
-
-Target:
-```
-.previewContainer
-```
-Style:
-```
-background-color: Black !important
-```
-
-### Change the text font
-
-Target:
-```
-h4, .suggContainer, .groupTitle, .suggsListContainer, .title, .details, .secondaryText, .scope-tile > div, .menu-item_details
-```
-Style:
-```
-font-family: 'Inter' !important
-```
-
-### Change the icons font
-
-Target:
-```
-.cortanaFontIcon, .iconContent
-```
-Style:
-```
-font-family: 'Segoe MDL2 Assets' !important
+## 🧩 Installation
+
+1. Download **[Windhawk](https://windhawk.net/)**.  
+2. Install the **“[Windows 11 Start Menu Styler](https://windhawk.net/mods/windows-11-start-menu-styler)”** plugin.  
+3. Choose the **“Oversimplified & Accentuated”** theme from the integrated themes list.  
+   **OR**  
+   Copy the JSON code below and go to:  
+   **Windows 11 Taskbar Styler → Details → Advanced → Mod Settings**  
+   Paste the code into the "**Mod settings**" box and click **Save**.
+
+
+---
+
+## 🛠️ Modification Notes
+
+I added an extra comment line at the end of each style group to indicate the target object with common language.  
+The aim is to make it easier to modify or debug the theme in the future.
+
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
+{
+"controlStyles[0].target": "MenuFlyoutPresenter",
+"controlStyles[0].styles[0]": "Background:=$DarkAccent",
+"controlStyles[0].styles[1]": "BorderBrush=Transparent",
+"controlStyles[0].styles[2]": "//Target= Context Menu",
+
+"controlStyles[1].target": "Border#AcrylicBorder",
+"controlStyles[1].styles[0]": "Background:=$Alt",
+"controlStyles[1].styles[1]": "BorderBrush=Transparent",
+"controlStyles[1].styles[2]": "CornerRadius=20",
+"controlStyles[1].styles[3]": "//Target= Start Menu's Body",
+
+"controlStyles[2].target": "Border#AcrylicOverlay",
+"controlStyles[2].styles[0]": "Visibility=Collapsed",
+"controlStyles[2].styles[1]": "//Target= Start Menu > Acrylic Overlay Layer",
+
+"controlStyles[3].target": "Border#DropShadow",
+"controlStyles[3].styles[0]": "Visibility=Collapsed",
+"controlStyles[3].styles[1]": "//Target= Start Menu > Drop Shadow (Before 24H2)",
+
+"controlStyles[4].target": "Border#RootGridDropShadow",
+"controlStyles[4].styles[0]": "Visibility=Collapsed",
+"controlStyles[4].styles[1]": "//Target= Start Menu > Drop Shadow",
+
+"controlStyles[5].target": "Border#RightCompanionDropShadow",
+"controlStyles[5].styles[0]": "Visibility=Collapsed",
+"controlStyles[5].styles[1]": "//Target= Start Menu > Drop Shadow of \"Phone Link\" Menu",
+
+"controlStyles[6].target": "Border#BorderElement",
+"controlStyles[6].styles[0]": "Opacity=0",
+"controlStyles[6].styles[1]": "//Target= Start Menu > Search Box Overlay",
+
+"controlStyles[7].target": "StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid",
+"controlStyles[7].styles[0]": "BorderBrush:=$Reveal",
+"controlStyles[7].styles[1]": "BorderThickness=2",
+"controlStyles[7].styles[2]": "CornerRadius=20",
+"controlStyles[7].styles[3]": "Margin=0,0,0,-8",
+"controlStyles[7].styles[4]": "//Target= Start Menu > Seach Box",
+
+"controlStyles[8].target": "Grid > Image#SearchIconOn",
+"controlStyles[8].styles[0]": "Width=20",
+"controlStyles[8].styles[1]": "//Target= Start Menu > Search icon",
+
+"controlStyles[9].target": "TextBlock#PlaceholderText",
+"controlStyles[9].styles[0]": "Text=Search",
+"controlStyles[9].styles[1]": "//Target= Start Menu > Search Box Placerholder Text",
+
+"controlStyles[10].target": "Grid#InnerContent > Rectangle",
+"controlStyles[10].styles[0]": "Fill:=$SolidAccent",
+"controlStyles[10].styles[1]": "MinHeight=22",
+"controlStyles[10].styles[2]": "MinWidth=2",
+"controlStyles[10].styles[3]": "Margin=80,8,0,31",
+"controlStyles[10].styles[4]": "Opacity=1",
+"controlStyles[10].styles[5]": "//Target= Start Menu > Search Box > Fake Carret",
+
+"controlStyles[11].target": "StartMenu.PinnedList#StartMenuPinnedList",
+"controlStyles[11].styles[0]": "Height=421",
+"controlStyles[11].styles[1]": "//Target= Start Menu > Pinned Apps Section Container",
+
+"controlStyles[12].target": "Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager",
+"controlStyles[12].styles[0]": "Visibility=Collapsed",
+"controlStyles[12].styles[1]": "//Target= Start Menu > Page Count Indicator",
+
+"controlStyles[13].target": "TextBlock#PinnedListHeaderText",
+"controlStyles[13].styles[0]": "Visibility=Collapsed",
+"controlStyles[13].styles[1]": "//Target= Start Menu > \"Pinned\" Text",
+
+"controlStyles[14].target": "Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > Border#BackgroundBorder",
+"controlStyles[14].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\" />",
+"controlStyles[14].styles[1]": "BorderBrush:=$Reveal",
+"controlStyles[14].styles[2]": "BorderThickness=2",
+"controlStyles[14].styles[3]": "CornerRadius=12",
+"controlStyles[14].styles[4]": "Height=70",
+"controlStyles[14].styles[5]": "Width=70",
+"controlStyles[14].styles[6]": "//Target= Start Menu > Hover-Over Box For Pinned items (Apps & Folders)",
+
+"controlStyles[15].target": "Grid#LogoContainer",
+"controlStyles[15].styles[0]": "Height=60",
+"controlStyles[15].styles[1]": "Width=60",
+"controlStyles[15].styles[2]": "//Target= Start Menu > Pinned App icon Container",
+
+"controlStyles[16].target": "Image#Logo",
+"controlStyles[16].styles[0]": "Height=40",
+"controlStyles[16].styles[1]": "Width=40",
+"controlStyles[16].styles[2]": "//Target= Start Menu > Pinned App Icon",
+
+"controlStyles[17].target": "Border#FolderPlate",
+"controlStyles[17].styles[0]": "Background=Transparent",
+"controlStyles[17].styles[1]": "BorderBrush=Transparent",
+"controlStyles[17].styles[2]": "Height=56",
+"controlStyles[17].styles[3]": "Width=56",
+"controlStyles[17].styles[4]": "//Target= Start Menu > Folder Container",
+
+"controlStyles[18].target": "Grid#LogosContainer",
+"controlStyles[18].styles[0]": "Height=68",
+"controlStyles[18].styles[1]": "Width=68",
+"controlStyles[18].styles[2]": "//Target= Start Menu > Folder's Content icons",
+
+"controlStyles[19].target": "Grid#Root > Border",
+"controlStyles[19].styles[0]": "Background:=$Alt",
+"controlStyles[19].styles[1]": "BorderBrush:=Transparent",
+"controlStyles[19].styles[2]": "CornerRadius=20",
+"controlStyles[19].styles[3]": "//Target= Start Menu > Folder's Body",
+
+"controlStyles[20].target": "TextBlock#DisplayName",
+"controlStyles[20].styles[0]": "Visibility=Collapsed",
+"controlStyles[20].styles[1]": "//Target= Start Menu > Name of Pinned Apps & Folders",
+
+"controlStyles[21].target": "Grid#SuggestionsParentContainer",
+"controlStyles[21].styles[0]": "Visibility=Collapsed",
+"controlStyles[21].styles[1]": "//Target= Start Menu > Suggestions Section",
+
+"controlStyles[22].target": "Grid#TopLevelSuggestionsListHeader",
+"controlStyles[22].styles[0]": "Visibility=Collapsed",
+"controlStyles[22].styles[1]": "//Target= Start Menu > Suggestions Text \"Recomended\"",
+
+"controlStyles[23].target": "Grid#ShowMoreSuggestions",
+"controlStyles[23].styles[0]": "Visibility=Collapsed",
+"controlStyles[23].styles[1]": "//Target= Start Menu > Show More Suggestions Button",
+
+"controlStyles[24].target": "Grid#TopLevelSuggestionsContainer",
+"controlStyles[24].styles[0]": "Visibility=Collapsed",
+"controlStyles[24].styles[1]": "//Target= Start Menu > Suggestions Entries",
+
+"controlStyles[25].target": "StartDocked.NavigationPaneButton#PowerButton > Grid",
+"controlStyles[25].styles[0]": "BorderBrush:=$Reveal",
+"controlStyles[25].styles[1]": "BorderThickness=2",
+"controlStyles[25].styles[2]": "CornerRadius=12",
+"controlStyles[25].styles[3]": "//Target= Start Menu > Power Button",
+
+"controlStyles[26].target": "StartDocked.NavigationPaneButton#PowerButton > Grid > ContentPresenter > Grid > FontIcon",
+"controlStyles[26].styles[0]": "Foreground:=$SolidAccent",
+"controlStyles[26].styles[1]": "//Target= Start Menu > Power Button icon",
+
+"controlStyles[27].target": "FontIcon#WindowsUpdatePendingReminder",
+"controlStyles[27].styles[0]": "Foreground:=$SolidAccent",
+"controlStyles[27].styles[1]": "//Target= Start Menu > Power Button > Update Reminder (Default:#ff9900)",
+
+"controlStyles[28].target": "FontIcon#IconOverlay",
+"controlStyles[28].styles[0]": "Foreground:=$SolidAccent",
+"controlStyles[28].styles[1]": "//Target= Start Menu > Power Button > Context Menu > Update Reminder (Default:#ff9900)",
+
+"controlStyles[29].target": "Border#BackgroundBorder",
+"controlStyles[29].styles[0]": "CornerRadius=12",
+"controlStyles[29].styles[1]": "//Target= Start Menu > Hover-Over Box For Buttons (Power Button, Libraries & User Button)",
+
+"controlStyles[30].target": "Button#ShowAllAppsButton > ContentPresenter",
+"controlStyles[30].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\" />",
+"controlStyles[30].styles[1]": "BorderBrush=Transparent",
+"controlStyles[30].styles[2]": "Height=25",
+"controlStyles[30].styles[3]": "//Target= Start Menu > \"All >\" Button",
+
+"controlStyles[31].target": "Button#CloseAllAppsButton > ContentPresenter",
+"controlStyles[31].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\" />",
+"controlStyles[31].styles[1]": "BorderBrush=Transparent",
+"controlStyles[31].styles[2]": "Height=25",
+"controlStyles[31].styles[3]": "//Target= Start Menu > All Apps Page > \"< Back\" Button",
+
+"controlStyles[32].target": "Button > ContentPresenter > StackPanel > TextBlock",
+"controlStyles[32].styles[0]": "Visibility=Collapsed",
+"controlStyles[32].styles[1]": "//Target= Start Menu > \"All >\" & \"< Back\" Buttons Text",
+
+"controlStyles[33].target": "StackPanel > FontIcon > Grid > TextBlock",
+"controlStyles[33].styles[0]": "FontSize=14 //(Default=10)",
+"controlStyles[33].styles[1]": "//Target= Start Menu > \"All >\" & \"< Back\" Buttons Arrows Text",
+
+"controlStyles[34].target": "StartDocked.AllAppsZoomListViewItem > Grid#ContentBorder@DisabledStates > Border#BorderBackground",
+"controlStyles[34].styles[0]": "BorderBrush@Enabled:=$Reveal",
+"controlStyles[34].styles[1]": "//Target= Start Menu > All Apps Page > Alphabet Zoomed-Out Buttons",
+
+"controlStyles[35].target": "Border#Border",
+"controlStyles[35].styles[0]": "BorderBrush:=$Reveal",
+"controlStyles[35].styles[1]": "BorderThickness=2",
+"controlStyles[35].styles[2]": "CornerRadius=12",
+"controlStyles[35].styles[3]": "//Target= Start Menu > All Apps Page > Hover-Over Box for Alphabet",
+
+"controlStyles[36].target": "Border#BorderBackground",
+"controlStyles[36].styles[0]": "CornerRadius=12",
+"controlStyles[36].styles[1]": "//Target= Start Menu > All Apps Page > Hover-Over Box for Apps & Folders",
+
+"controlStyles[37].target": "Border#AppBorder",
+"controlStyles[37].styles[0]": "Background:=$Alt",
+"controlStyles[37].styles[1]": "BorderBrush=Transparent",
+"controlStyles[37].styles[2]": "CornerRadius=20",
+"controlStyles[37].styles[3]": "//Target= Search Menu's Body",
+
+"controlStyles[38].target": "Border#LayerBorder",
+"controlStyles[38].styles[0]": "Visibility=Collapsed",
+"controlStyles[38].styles[1]": "//Target= Search Menu > Acrylic Overlay Layer for Search Menu",
+
+"controlStyles[39].target": "Border#dropshadow",
+"controlStyles[39].styles[0]": "Visibility=Collapsed",
+"controlStyles[39].styles[1]": "//Target= Search Menu > Drop Shadow",
+
+"controlStyles[40].target": "Border#TaskbarSearchBackground",
+"controlStyles[40].styles[0]": "Background=Transparent",
+"controlStyles[40].styles[1]": "BorderBrush=Transparent",
+"controlStyles[40].styles[2]": "//Target= Search Menu > Search Box Overlay",
+
+"controlStyles[41].target": "Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl > Grid#RootGrid",
+"controlStyles[41].styles[0]": "BorderBrush:=$Reveal",
+"controlStyles[41].styles[1]": "BorderThickness=2",
+"controlStyles[41].styles[2]": "CornerRadius=20",
+"controlStyles[41].styles[3]": "//Target= Search Menu > Seach Box",
+
+"controlStyles[42].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer",
+"controlStyles[42].styles[0]": "Width=20",
+"controlStyles[42].styles[1]": "//Target= Search Menu > Search icon",
+
+"webContentStyles[0].target": "li.rightHeaderButtons.itemTooltip.MouseHoverTooltip",
+"webContentStyles[0].styles[0]": "display: none",
+"webContentStyles[0].styles[1]": "//Target= Account & Options Buttons",
+
+"webContentStyles[1].target": ".scope-with-background__backButton",
+"webContentStyles[1].styles[0]": "display: none !important",
+"webContentStyles[1].styles[1]": "//Target= Back Button",
+
+"webContentStyles[2].target": ".scope-with-background__rightCaret,.scope-with-background__leftCaret",
+"webContentStyles[2].styles[0]": "display: none !important",
+"webContentStyles[2].styles[1]": "//Target= left and right arrows",
+
+"webContentStyles[3].target": ".previewContainer",
+"webContentStyles[3].styles[0]": "border-radius: 20px !important",
+"webContentStyles[3].styles[1]": "//Target= Preview Container",
+
+"webContentStyles[4].target": ".scopes-list",
+"webContentStyles[4].styles[0]": "justify-content: center",
+"webContentStyles[4].styles[1]": "//Target= Filter Buttons Group",
+
+"webContentStyles[5].target": ".scope-with-background.darkTheme .scope-tile--selected .scope-tile__title,.scope-with-background .scope-tile--selected .scope-tile__title",
+"webContentStyles[5].styles[0]": "Background: var(--accent0) !important",
+"webContentStyles[5].styles[1]": "color: white !important",
+"webContentStyles[5].styles[2]": "//Target= Active Filter Button (Dark&Light)",
+
+"webContentStyles[6].target": ".scope-tile > div",
+"webContentStyles[6].styles[0]": "background-color: Transparent !important",
+"webContentStyles[6].styles[1]": "//Target= Inactive Filter Buttons",
+
+"webContentStyles[7].target": ".darkTheme #menuContainer",
+"webContentStyles[7].styles[0]": "background: black",
+"webContentStyles[7].styles[1]": "border: 1px solid #404040",
+"webContentStyles[7].styles[2]": "border-radius: 20px",
+"webContentStyles[7].styles[3]": "box-shadow: none",
+"webContentStyles[7].styles[4]": "//Target= Dark Theme Context Menu Container",
+
+"webContentStyles[8].target": "#root.darkTheme:not(.fileExplorer) .contextMenu",
+"webContentStyles[8].styles[0]": "background: black !important",
+"webContentStyles[8].styles[1]": "border-radius: 20px !important",
+"webContentStyles[8].styles[2]": "//Target= Dark Theme Context Menu",
+
+"webContentStyles[9].target": ".lightTheme #menuContainer",
+"webContentStyles[9].styles[0]": "background: white !important",
+"webContentStyles[9].styles[1]": "border: 1px solid #404040",
+"webContentStyles[9].styles[2]": "border-radius: 20px !important",
+"webContentStyles[9].styles[3]": "box-shadow: none",
+"webContentStyles[9].styles[4]": "//Target= Light Theme Context Menu Container",
+
+"webContentStyles[10].target": "#root:not(.fileExplorer) .contextMenu",
+"webContentStyles[10].styles[0]": "background: white !important",
+"webContentStyles[10].styles[1]": "border-radius: 20px !important",
+"webContentStyles[10].styles[2]": "//Target= Light Theme Context Menu",
+
+"webContentStyles[11].target": "ul.contextMenu::before",
+"webContentStyles[11].styles[0]": "display: none !important",
+"webContentStyles[11].styles[1]": "//Target= Extra Context Menu Elements (Dark&Light)",
+
+"styleConstants[0]": "Alt=<AcrylicBrush TintColor=\"{ThemeResource SystemAltHighColor}\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.6\" FallbackColor=\"{ThemeResource SystemAltHighColor}\" />",
+"styleConstants[1]": "Accent=<AcrylicBrush TintColor=\"{ThemeResource SystemAccentColor}\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.6\" FallbackColor=\"{ThemeResource SystemAccentColor}\" />",
+"styleConstants[2]": "DarkAccent=<AcrylicBrush TintColor=\"{ThemeResource SystemAccentColorDark1}\" TintOpacity=\"0.6\" TintLuminosityOpacity=\"0.3\" FallbackColor=\"{ThemeResource SystemAccentColorDark1}\" />",
+"styleConstants[3]": "SolidAccent=<SolidColorBrush Color=\"{ThemeResource SystemAccentColor}\" Opacity=\"1\"/>",
+"styleConstants[4]": "Reveal=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\" />"
+}
 ```
