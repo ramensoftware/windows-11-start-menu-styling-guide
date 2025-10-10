@@ -156,7 +156,7 @@ The aim is to make it easier to modify or debug the theme in the future.
 "controlStyles[19].styles[2]": "//Target= Start Menu > Folder's Content icons",
 
 "controlStyles[20].target": "Grid#Root > Border",
-"controlStyles[20].styles[0]": "Background:=$Alt",
+"controlStyles[20].styles[0]": "Background:=$DarkAccent",
 "controlStyles[20].styles[1]": "BorderBrush:=Transparent",
 "controlStyles[20].styles[2]": "CornerRadius=20",
 "controlStyles[20].styles[3]": "//Target= Start Menu > Folder's Body",
