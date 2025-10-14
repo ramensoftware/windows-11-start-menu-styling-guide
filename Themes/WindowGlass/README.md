@@ -24,12 +24,12 @@ To make it work, you'll need to:
 - Add 'LockApp.exe' to the 'Custom process inclusion list' under 'Advanced settings' in the Windows 11 Start Menu Styler mod.
 - Install the [Vivo Sans En VF](https://1drv.ms/u/c/67fedd4420ed716d/EXRoW1f5dABJrO2dPj0tbM0Bm1uYiGeoKyAYA7X7er2Zww?e=cLsiJJ) and [Vivo Sans Clock Stencil](https://1drv.ms/u/c/67fedd4420ed716d/EW6LJO1CAu1Fs-khbTGXWFUB5sXhRxM-I__B1lkKWgizdA?e=J1RJYy) fonts.
 
-## More Details about this theme
-- The theme is designed for Windows 11 24H2.
+## More details about this theme
+- Designed for Windows 11 24H2.
 - Compatible with both light and dark modes.
 
 ## For a complete WindowGlass-themed UI, download the following mods and use the 'WindowGlass' theme:
-- Windows 11 Taskbar Styler - for styling the Taskbar.
+- Windows 11 Taskbar Styler - for styling the taskbar.
 - Windows 11 Notification Center Styler - for styling the Notification Center and Action Center.
 - Windows 11 File Explorer Styler - for styling Windows Explorer windows.
 
