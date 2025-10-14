@@ -1,28 +1,28 @@
-# ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 start menu)
+# ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start menu)
 
-A recreation of the Sun Valley start menu for the Windows 10 Start Menu running on Windows 11.
+A recreation of the Sun Valley Start menu for the Windows 10 Start Menu running on Windows 11.
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
 ![Screenshot](screenshot.png)
 ![Screenshot](screenshot-tiles.png)
 
-## Windows 10 start menu on Windows 11 installation
+## Windows 10 Start menu on Windows 11 installation
 
-If you're already using the Windows 10 start menu, you can skip this step.
+If you're already using the Windows 10 Start menu, you can skip this step.
 
-(You need to set *"Corner preference"* to *"Not rounded"* as the theme automatically rounds the start menu and makes it float)
+(You need to set *"Corner preference"* to *"Not rounded"* as the theme automatically rounds the Start menu and makes it float)
 
 Installation:
 * Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher).
-* Open *"Properties (ExplorerPatcher)"* via the start menu or right-click the taskbar > *"Properties"*.
+* Open *"Properties (ExplorerPatcher)"* via the Start menu or right-click the taskbar > *"Properties"*.
 * Go to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
 
 ## Bugs
 * Group name text will appear as black on a black textbox when editing, causing readability issues.
 * Folder name textbox is not styled.
 * Holding the X button in the group name textbox will show a fake X icon.
-* Reveal effect might flicker around the start menu, and the 3D push effect is still present.
+* Reveal effect might flicker around the Start menu, and the 3D push effect is still present.
 * Items may not be aligned/centered correctly on higher DPIs.
 * User flyout can only show 4 users (5 or more will cause clipping).
 * *"Pinned tiles"* and *"All apps"* buttons will stick to the right side of the pane for a split second after the pane is dismissed.
@@ -32,7 +32,7 @@ Installation:
 * Windows 10 (any versions).
 * Light mode.
 * *"Show accent color on Start and taskbar"* enabled.
-* Fullscreen start menu.
+* Fullscreen Start menu.
 * Languages other than en-US/UK.
 
 ## Manual installation

@@ -1,4 +1,4 @@
-# The Windows 11 start menu styling guide
+# The Windows 11 Start menu styling guide
 
 ## Table of contents
 
@@ -7,7 +7,7 @@
   * [Missing customizations](#missing-customizations)
   * [Contributing](#contributing)
 * [Themes](#themes)
-  * [Windows 10 start menu themes](#windows-10-start-menu-themes)
+  * [Windows 10 Start menu themes](#windows-10-start-menu-themes)
 * [Custom Acrylic background](#custom-acrylic-background)
 * [Remove the search box](#remove-the-search-box)
 * [Move pinned app lists](#move-pinned-app-lists)
@@ -53,7 +53,7 @@
 
 ## Introduction
 
-This is a collection of commonly requested start menu styling customizations for
+This is a collection of commonly requested Start menu styling customizations for
 Windows 11. It is intended to be used with the [Windows 11 Start Menu
 Styler](https://windhawk.net/mods/windows-11-start-menu-styler) Windhawk mod.
 
@@ -85,7 +85,7 @@ issue](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/issu
 
 ### Contributing
 
-If you have a start menu styling customization or theme that you would like to
+If you have a Start menu styling customization or theme that you would like to
 share, please submit a pull request.
 
 ## Themes
@@ -114,9 +114,9 @@ Start Menu Styler mod. The following themes are available:
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 | [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
 
-### Windows 10 start menu themes
+### Windows 10 Start menu themes
 
-The themes below are designed for customizing the Windows 10 start menu. They
+The themes below are designed for customizing the Windows 10 Start menu. They
 aren't integrated into the Windows 11 Start Menu Styler mod, and must be
 imported manually. For details, see their respective README files.
 
@@ -126,7 +126,7 @@ imported manually. For details, see their respective README files.
 
 ## Custom Acrylic background
 
-Target `Border#AcrylicBorder` for the start menu or `Border#AppBorder` for the search menu, then set `Background` to an `AcrylicBrush` object.
+Target `Border#AcrylicBorder` for the Start menu or `Border#AppBorder` for the search menu, then set `Background` to an `AcrylicBrush` object.
 
 For example:
 
@@ -185,7 +185,7 @@ Sets light/dark mode independently of what is set in Windows.
 ## Semantic zoom (navigation)
 
 Semantic zoom is the feature that allows us to navigate the apps list using the alphanumeric headers in the list. This lets you jump to a particular letter or number in the apps list quickly.
-For themes that have the apps list visible in the main start menu view, this feature does not work. As an optional workaround, you may enable the hidden zoom button. This button allows you to access the alphanumeric navigation view. This is the zoomed-out view, which is why this is called semantic zoom.
+For themes that have the apps list visible in the main Start menu view, this feature does not work. As an optional workaround, you may enable the hidden zoom button. This button allows you to access the alphanumeric navigation view. This is the zoomed-out view, which is why this is called semantic zoom.
 
 Target:
 ```
@@ -471,7 +471,7 @@ BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" 
 
 ## Search menu
 
-The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the start menu. This means that some start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
+The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the Start menu. This means that some Start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
 
 Versions 1.2 and newer of Windows 11 Start Menu Styler automatically apply the styles to the search menu. In order to include search in your theme in older versions:
 1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
@@ -489,7 +489,7 @@ To make finding targets in the search menu's WebView easier, you can inspect it 
 
 ## Search menu WebView styles
 
-While the start menu uses WinUI for its user interface, most of the search content (all but the top search bar) is a WebView element. To style the search WebView, CSS targets and styles can be used. For example, to set a red background, the target `body` and the style `background: red !important` can be used.
+While the Start menu uses WinUI for its user interface, most of the search content (all but the top search bar) is a WebView element. To style the search WebView, CSS targets and styles can be used. For example, to set a red background, the target `body` and the style `background: red !important` can be used.
 
 ### Hide the back button
 

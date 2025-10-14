@@ -7,7 +7,7 @@
 ## Notes:
 
 * Please enable all nav buttons on the left in settings. If you use fewer, the new sign out menu will be further to the right than intended.
-* For a centered start menu, please set the following additional styles:
+* For a centered Start menu, please set the following additional styles:
   * Target: `StartDocked.StartSizingFrame` \
     Style: `Margin=-14,24,0,0`
   * Target: `Windows.UI.Xaml.Controls.ContentDialog > Border > Grid > Border` \

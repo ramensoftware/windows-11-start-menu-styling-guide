@@ -1,6 +1,6 @@
 # WindowGlass theme for Windows 11 Start Menu Styler
 
-A theme that adds a modern, glassy aesthetic with a compact layout to the Windows 11 start menu.
+A theme that adds a modern, glassy aesthetic with a compact layout to the Windows 11 Start menu.
 
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
@@ -10,9 +10,9 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the Window
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.
 - This theme currently works on displays with a resolution **above** 1366x768.
-- This theme places the start menu horizontally centered on the screen, regardless of whether the taskbar icons are centered or left aligned.
-- This theme combines the start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'.
-- If the background of the start menu makes text unreadable, you can swap 'Background' to 'Background2', which improves readability and decreases transparency.
+- This theme places the Start menu horizontally centered on the screen, regardless of whether the taskbar icons are centered or left aligned.
+- This theme combines the Start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'.
+- If the background of the Start menu makes text unreadable, you can swap 'Background' to 'Background2', which improves readability and decreases transparency.
 
 ## Bonus
 - This theme can style your lock screen as well. 
@@ -290,7 +290,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 </details>
 
 ## Additional Theme Variant
-This theme also includes a minimal version of the start menu with the Phone Link companion removed.
+This theme also includes a minimal version of the Start menu with the Phone Link companion removed.
 ![Minimal](Start_Menu_Minimal.png)
 
 <details>
