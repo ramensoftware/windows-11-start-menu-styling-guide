@@ -1,6 +1,6 @@
-# ModernStartMenu theme for Windows 10 Start Menu on Windows 11
+# ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start Menu)
 
-A recreation of the Sun Valley start menu for the Windows 10 Start Menu running on Windows 11
+A recreation of the Sun Valley start menu for the Windows 10 Start Menu running on Windows 11.
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
@@ -11,29 +11,37 @@ A recreation of the Sun Valley start menu for the Windows 10 Start Menu running 
 
 If you're already using the Windows 10 Start menu, you can skip this step.
 
-(You need to set *"Corner preference"* to *"Not rounded"* as the theme automatically rounds the start menu and make it float)
+(You need to set *"Corner preference"* to *"Not rounded"* as the theme automatically rounds the start menu and makes it float)
 
 Installation:
 * Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher).
 * Open *"Properties (ExplorerPatcher)"* via the start menu or right-click the taskbar > *"Properties"*.
 * Go to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
 
-## Theme selection
+## Bugs
+* Group name text will appear as black on a black textbox when editing, causing readability issues.
+* Folder name textbox is not styled.
+* Holding the X button in the group name textbox will show a fake X icon.
+* Reveal effect might flicker around the start menu, and the 3D push effect is still present.
+* Items may not be aligned/centered correctly on higher DPIs.
+* User flyout can only show 4 users (5 or more will cause clipping).
+* *"Pinned tiles"* and *"All apps"* buttons will stick to the right side of the pane for a split second after the pane is dismissed.
+* When downloading an app from the Microsoft Store, the placeholder square of the downloading app is stretched.
 
-The theme is integrated into the mod, and can be simply selected from the mod's
-settings:
-
-* Open the *"Windows 11 Start Menu Styler mod"* in Windhawk.
-* Go to the *"Settings"* tab.
-* Select the theme and save the settings.
+## Unsupported configurations/settings
+* Windows 10 (any versions).
+* Light mode.
+* *"Show accent color on Start and taskbar"* enabled.
+* Fullscreen start menu.
+* Languages other than en-US/UK.
 
 ## Manual installation
 
-The theme styles can also be imported manually. To do that, follow these steps:
+The theme styles can be imported manually. To do that, follow these steps:
 
-* Open the *"Windows 11 Start Menu Styler"* mod in Windhawk.
-* Go to the *"Advanced"* tab.
-* Copy the content below to the text box under *"Mod settings"* and click *"Save"*.
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Advanced" tab.
+* Copy the content below to the text box under "Mod settings" and click "Save".
 
 <details>
 <summary>Content to import (click to expand)</summary>
@@ -509,20 +517,3 @@ The theme styles can also be imported manually. To do that, follow these steps:
 }
 ```
 </details>
-
-## Bugs
-* Group name text will appear as black on a black textbox when editing, causing readability issues.
-* Folder name textbox are not styled.
-* Holding the X button in the group name textbox will show a fake X icon.
-* Reveal effect might flicker around the start menu, and the 3D push effect is still present.
-* Items may not be aligned/centered correctly on higher DPIs.
-* User flyout can only show 4 users (5 or more will cause clipping).
-* *"Pinned tiles"* and *"All apps"* button will stick to the right side of the pane for a split second after the pane is dismissed.
-* When downloading an app from the Microsoft Store, the placeholder square of the downloading app is streched.
-
-## Unsupported configurations/settings
-* Windows 10 (any versions).
-* Light mode.
-* *"Show accent color on Start and taskbar"* enabled.
-* Fullscreen start menu.
-* Languages other than en-US/UK.
