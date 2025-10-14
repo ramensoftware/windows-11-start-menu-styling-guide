@@ -7,7 +7,7 @@
   * [Missing customizations](#missing-customizations)
   * [Contributing](#contributing)
 * [Themes](#themes)
-  * [Windows 10 Start Menu themes](#windows-10-start-menu-themes)
+  * [Windows 10 start menu themes](#windows-10-start-menu-themes)
 * [Custom Acrylic background](#custom-acrylic-background)
 * [Remove the search box](#remove-the-search-box)
 * [Move pinned app lists](#move-pinned-app-lists)
@@ -114,7 +114,7 @@ Start Menu Styler mod. The following themes are available:
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 | [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
 
-### Windows 10 Start Menu themes
+### Windows 10 start menu themes
 
 The themes below are designed for customizing the Windows 10 start menu. They
 aren't integrated into the Windows 11 Start Menu Styler mod, and must be

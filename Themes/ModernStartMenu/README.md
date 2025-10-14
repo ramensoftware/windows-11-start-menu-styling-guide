@@ -1,4 +1,4 @@
-# ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start Menu)
+# ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 start menu)
 
 A recreation of the Sun Valley start menu for the Windows 10 Start Menu running on Windows 11.
 
@@ -7,9 +7,9 @@ A recreation of the Sun Valley start menu for the Windows 10 Start Menu running 
 ![Screenshot](screenshot.png)
 ![Screenshot](screenshot-tiles.png)
 
-## Windows 10 Start menu on Windows 11 installation
+## Windows 10 start menu on Windows 11 installation
 
-If you're already using the Windows 10 Start menu, you can skip this step.
+If you're already using the Windows 10 start menu, you can skip this step.
 
 (You need to set *"Corner preference"* to *"Not rounded"* as the theme automatically rounds the start menu and makes it float)
 
