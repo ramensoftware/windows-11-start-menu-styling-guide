@@ -204,7 +204,7 @@ The aim is to make it easier to modify or debug the theme in the future.
     "controlStyles[28].styles[1]": "//Target= Start Menu > Power Button icon",
 
     "controlStyles[29].target": "FontIcon#WindowsUpdatePendingReminder",
-    "controlStyles[29].styles[0]": "Foreground:=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" Opacity="1"/>",
+    "controlStyles[29].styles[0]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight2}\" Opacity=\"1\" />",
     "controlStyles[29].styles[1]": "//Target= Start Menu > Power Button > Update Reminder (Default:#ff9900)",
 
     "controlStyles[30].target": "FontIcon#IconOverlay",
