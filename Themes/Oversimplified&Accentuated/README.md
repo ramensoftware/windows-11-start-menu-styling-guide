@@ -128,9 +128,9 @@ The aim is to make it easier to modify or debug the theme in the future.
     "controlStyles[14].styles[1]": "//Target= Start Menu > \"Pinned\" Text",
 
     "controlStyles[15].target": "Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border#BackgroundBorder",
-    "controlStyles[15].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\" />",
-    "controlStyles[15].styles[1]": "Background@Normal:=<SolidColorBrush Color=\"Transparent\" Opacity=\"0.8\"/>",
-    "controlStyles[15].styles[2]": "Background@PointerOver:=<SolidColorBrush Color=\"{ThemeResource ControlFillColorSecondary}\" Opacity=\"0.8\"/>",
+    "controlStyles[15].styles[0]": "Background@Normal:=<SolidColorBrush Color=\"Transparent\" Opacity=\"0.8\"/>",
+    "controlStyles[15].styles[1]": "Background@PointerOver:=<SolidColorBrush Color=\"{ThemeResource ControlFillColorSecondary}\" Opacity=\"0.8\"/>",
+    "controlStyles[15].styles[2]": "Background@Pressed:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\" />",
     "controlStyles[15].styles[3]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.2\" />",
     "controlStyles[15].styles[4]": "BorderBrush:=$Reveal",
     "controlStyles[15].styles[5]": "BorderThickness=2",
