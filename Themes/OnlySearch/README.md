@@ -24,6 +24,26 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
+### Redesigned Start menu
+
+A variant for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
+{
+  "controlStyles[0].target": "Grid#FrameRoot",
+  "controlStyles[0].styles[0]": "MaxHeight=160",
+  "controlStyles[0].styles[1]": "MinHeight=100",
+  "controlStyles[1].target": "Border#AcrylicOverlay",
+  "controlStyles[1].styles[0]": "Height=3"
+}
+```
+</details>
+
+### Classic start menu
+
 <details>
 <summary>Content to import (click to expand)</summary>
 
