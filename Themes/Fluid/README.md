@@ -21,7 +21,7 @@ settings:
 * Select the theme and save the settings. -->
 
 > [!IMPORTANT]
-> This theme is made for the [redesigned Windows 11 Start Menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
+> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
 
 > [!NOTE]
 > The default configuration is designed for Dark mode. If you want to use Light mode, add this to the "Style constants" section of the Start Menu Styler settings:

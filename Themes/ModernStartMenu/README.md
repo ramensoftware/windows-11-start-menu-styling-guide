@@ -1,6 +1,6 @@
 # ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start menu)
 
-A recreation of the Sun Valley Start menu for the Windows 10 Start Menu running on Windows 11.
+A recreation of the Sun Valley Start menu for the Windows 10 Start menu running on Windows 11.
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 

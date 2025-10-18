@@ -42,7 +42,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ```
 </details>
 
-## Keep Recommended Button
+## Keep Recommended button
 
 A modification of NoRecommendedSection that moves the "Recommended" button next
 to the "All" button. This way the "Recommended" list is still accessible without
@@ -89,7 +89,7 @@ A variant for the [redesigned Windows 11 Start menu](https://microsoft.design/ar
 ```
 </details>
 
-### Classic start menu
+### Classic Start menu
 
 <details>
 <summary>Content to import (click to expand)</summary>

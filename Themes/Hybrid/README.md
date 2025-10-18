@@ -5,7 +5,7 @@
 ![Screenshot](screenshot.png)
 
 > [!WARNING]
-> Right clicking empty space of the navigation pane (eg. between the Settings and All Apps buttons in the above screenshot) will cause the Start Menu to crash. So don't do that.
+> Right clicking empty space of the navigation pane (eg. between the Settings and All Apps buttons in the above screenshot) will cause the Start menu to crash. So don't do that.
 
 ## Windows 10 Start menu on Windows 11 installation
 

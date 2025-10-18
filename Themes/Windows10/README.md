@@ -305,7 +305,7 @@ A variant for the [redesigned Windows 11 Start menu](https://microsoft.design/ar
 ```
 </details>
 
-### Classic start menu
+### Classic Start menu
 
 <details>
 <summary>Content to import (click to expand)</summary>
@@ -780,7 +780,7 @@ A variant for the [redesigned Windows 11 Start menu](https://microsoft.design/ar
 ```
 </details>
 
-### Classic start menu
+### Classic Start menu
 
 <details>
 <summary>Content to import (click to expand)</summary>

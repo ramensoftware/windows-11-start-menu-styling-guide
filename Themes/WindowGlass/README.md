@@ -8,13 +8,13 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the Window
 ![Left](Start_Menu.png)
 
 > [!IMPORTANT]
-> This theme is made for the [redesigned Windows 11 Start Menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
+> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
 
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.
 - This theme currently works on displays with a resolution **above** 1366x768.
 - This theme places the Start menu horizontally centered on the screen, regardless of whether the taskbar icons are centered or left aligned.
-- This theme combines the Start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'.
+- This theme combines the Start menu with the Phone Link panel and will only work on the 'New Windows 11 Start menu'.
 - If the background of the Start menu makes text unreadable, you can swap 'Background' to 'Background2', which improves readability and decreases transparency.
 
 ## Bonus
