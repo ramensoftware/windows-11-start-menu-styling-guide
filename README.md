@@ -472,12 +472,7 @@ BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" 
 
 ## Search menu
 
-The search menu may also be included in your custom theme, and some of the built-in themes already support this as well. The search menu has some of its own unique targets, but does share some targets with the Start menu. This means that some Start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
-
-Versions 1.2 and newer of Windows 11 Start Menu Styler automatically apply the styles to the search menu. In order to include search in your theme in older versions:
-1. Go to the `Advanced` tab at the top in the Start Menu Styler mod.
-2. In the custom process inclusion list below, enter `SearchHost.exe`.
-3. Click save.
+The search menu has some of its own unique targets, but does share some targets with the Start menu. This means that some Start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
 
 ## Search menu remote debugging
 

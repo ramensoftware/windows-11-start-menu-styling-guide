@@ -5,7 +5,8 @@ keeping the Start menu minimal.
 
 **Author**: [asev](https://github.com/lunar-os)
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.png) \
+![Search menu support screenshot](screenshot-search-menu.png)
 
 ## Note
 
@@ -254,19 +255,4 @@ A variant for the [redesigned Windows 11 Start menu](https://microsoft.design/ar
   "controlStyles[40].styles[0]": "Margin=-50,0,-50,0"
 }
 ```
-</details>
-
-## Search menu support
-
-This section is only relevant for older versions of Windows 11 Start Menu
-Styler. Versions 1.2 and newer automatically apply the styles to the search
-menu.
-
-<details>
-<summary>Expand</summary>
-
-To add this feature go to Start Menu Styler > **Advanced** > **Custom process
-inclusion list**, add `SearchHost.exe` to the process list and click save.
-
-![Search menu support screenshot](screenshot-search-menu.png)
 </details>

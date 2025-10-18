@@ -230,18 +230,3 @@ A variant for the [redesigned Windows 11 Start menu](https://microsoft.design/ar
 }
 ```
 </details>
-
-## TranslucentSearchMenu Support
-
-This section is only relevant for older versions of Windows 11 Start Menu
-Styler. Versions 1.2 and newer automatically apply the styles to the search
-menu.
-
-<details>
-<summary>Expand</summary>
-
-To add this feature go to Start Menu Styler > **Advanced** > **Custom process
-inclusion list**, add `SearchHost.exe` to the process list and click save.
-
-![TranslucentSearchMenu gif](TranslucentSearchMenu.gif)
-</details>
