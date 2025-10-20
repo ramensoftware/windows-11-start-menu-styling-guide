@@ -13,7 +13,11 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the window
 - This theme currently works on displays with a resolution **above** 1366x768.
 - This theme places the start menu horizontally centered on the screen, regardless of whether the taskbar icons are centered or left aligned.
 - This theme combines the start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'
-- If the background of the start menu makes text unreadable, you change swap 'Background' to 'Background2' which improves readability and decreases transparency.
+- This theme consists of **three** backgrounds:
+    - Glass
+    - Frosted
+    - Acrylic
+  In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
 
 ## Bonus
 - This theme can style your lock screen as well. 
