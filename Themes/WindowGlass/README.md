@@ -18,7 +18,7 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the window
     - Glass
     - Frosted
     - Acrylic
-  In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
+  - In order to switch between these backgrounds, replace the value for "Background" with "$Glass", "$Frosted" or "$Acrylic".
 
 ## Bonus
 - This theme can style your lock screen as well. 
