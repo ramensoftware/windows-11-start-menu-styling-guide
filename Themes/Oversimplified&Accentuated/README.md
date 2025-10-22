@@ -1,6 +1,6 @@
-# "Oversimplified & Accentuated" Theme for "Windows 11 Start Menu Styler"
+# "Oversimplified & Accentuated" Theme for Windows 11 Start menu Styler
 
-A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unnecessary elements and offering better **Accent Color** integration.
+A cleaner, more refined Windows Start menu (& search menu) theme - removing unnecessary elements and offering better **accent color** integration.
 
 > ⚠️ **Note:** This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
 
@@ -8,11 +8,11 @@ A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unne
 
 ### ✨ Features
 - Removed unnecessary text and lines
-- Enlarged icons  
-- Enhanced Accent Color Presence (Automatically Updates with Windows Accent Color)  
-- Improved Transparency Effects
-- Added Subtle, Neat Border Reveal Effects
-- Took Fallback Colors (Colors in Battery Mode) into consideration
+- Enlarged icons
+- Enhanced accent color presence (automatically updates with Windows accent color)
+- Improved transparency effects
+- Added subtle, neat border reveal effects
+- Took fallback colors (colors in battery mode) into consideration
 
 **Author:** [OsamaJT](https://github.com/OsamaHJT)
 
@@ -21,14 +21,14 @@ A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unne
 ---
 
 ## 🎨 Elements Modified
-- Start Menu
-  - Folder Window
-  - Pinned Apps & Folders
-  - All Apps Page
-- Search Menu
-- Context Menu
-- ToolTip Popup
-  
+- Start menu
+  - Folder window
+  - Pinned apps & folders
+  - All Apps page
+- Search menu
+- Context menu
+- Tooltip popup
+
 ---
 
 ## 🧩 Installation
@@ -38,9 +38,8 @@ A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unne
 3. Choose the **“Oversimplified & Accentuated”** theme from the integrated themes list.  
    **OR**  
    Copy the JSON code below and go to:  
-   **Windows 11 Taskbar Styler → Details → Advanced → Mod Settings**  
+   **Windows 11 Start Menu Styler → Details → Advanced → Mod Settings**  
    Paste the code into the "**Mod settings**" box and click **Save**.
-
 
 ---
 
@@ -48,7 +47,6 @@ A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unne
 
 I added an extra comment line at the end of each style group to indicate the target object with common language.  
 The aim is to make it easier to modify or debug the theme in the future.
-
 
 <details>
 <summary>Content to import (click to expand)</summary>
@@ -351,3 +349,4 @@ The aim is to make it easier to modify or debug the theme in the future.
   "styleConstants[4]": "Reveal=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\" />"
 }
 ```
+</details>
