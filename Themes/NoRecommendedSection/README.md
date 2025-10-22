@@ -23,6 +23,22 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
+### Redesigned Start menu
+
+A variant for the [redesigned Windows 11 Start
+menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/)
+that is slowly rolling out in the 25H2 update.
+
+*This variant is missing for the redesigned Start menu, but you can find a
+variant that keeps the Recommended button below.*
+
+> [!NOTE]
+> The redesigned Start menu [provides an
+> option](https://www.windowslatest.com/2025/06/15/remove-turn-off-windows-11-start-menu-recommended-section-version-24h2/)
+> to disable the Recommended section natively.
+
+### Classic Start menu
+
 <details>
 <summary>Content to import (click to expand)</summary>
 
