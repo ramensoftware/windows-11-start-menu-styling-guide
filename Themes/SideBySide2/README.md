@@ -91,7 +91,7 @@ A variant for the [redesigned Windows 11 Start menu](https://microsoft.design/ar
   "controlStyles[21].styles[0]": "RenderTransform:=<TranslateTransform X=\"220\" Y=\"581\" />",
   "controlStyles[22].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid ",
   "controlStyles[22].styles[0]": "RenderTransform:=<TranslateTransform X=\"-40\" />",
-  "controlStyles[22].styles[1]": "Margin=0,420,0,0"
+  "controlStyles[22].styles[1]": "Margin=0,420,0,0",
   "controlStyles[23].target": "ScrollViewer",
   "controlStyles[23].styles[0]": "ScrollViewer.VerticalScrollMode=2",
   "controlStyles[24].target": "Windows.UI.Xaml.Controls.ItemsWrapGrid",
