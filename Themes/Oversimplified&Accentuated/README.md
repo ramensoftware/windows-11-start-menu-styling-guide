@@ -4,7 +4,7 @@ A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unne
 
 > ⚠️ **Note:** This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
 
-> ⚠️ **Note:** This theme was created and tested with **Windows 11 24H2**, compatability with **Windows 11 25H2** is not guranteed.
+> ⚠️ **Note:** This theme was created and tested with **Windows 11 24H2**, compatibility with **Windows 11 25H2** is not guaranteed.
 
 ### ✨ Features
 - Removed unnecessary text and lines
@@ -22,7 +22,7 @@ A cleaner, more refined Windows Start Menu (& Search Menu) theme - removing unne
 
 ## 🎨 Elements Modified
 - Start Menu
-  - Folder Widnow
+  - Folder Window
   - Pinned Apps & Folders
   - All Apps Page
 - Search Menu
@@ -98,7 +98,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[8].styles[1]": "BorderThickness=2",
   "controlStyles[8].styles[2]": "CornerRadius=20",
   "controlStyles[8].styles[3]": "Margin=0,0,0,-8",
-  "controlStyles[8].styles[4]": "//Target= Start Menu > Seach Box",
+  "controlStyles[8].styles[4]": "//Target= Start Menu > Search Box",
   
   "controlStyles[9].target": "Grid > Image#SearchIconOn",
   "controlStyles[9].styles[0]": "Width=20",
@@ -106,7 +106,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   
   "controlStyles[10].target": "TextBlock#PlaceholderText",
   "controlStyles[10].styles[0]": "Text=Search",
-  "controlStyles[10].styles[1]": "//Target= Start Menu > Search Box Placerholder Text",
+  "controlStyles[10].styles[1]": "//Target= Start Menu > Search Box Placeholder Text",
   
   "controlStyles[11].target": "Grid#InnerContent > Rectangle",
   "controlStyles[11].styles[0]": "Fill:=$SolidAccent",
@@ -114,7 +114,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[11].styles[2]": "MinWidth=2",
   "controlStyles[11].styles[3]": "Margin=80,8,0,31",
   "controlStyles[11].styles[4]": "Opacity=1",
-  "controlStyles[11].styles[5]": "//Target= Start Menu > Search Box > Fake Carret",
+  "controlStyles[11].styles[5]": "//Target= Start Menu > Search Box > Fake Caret",
   
   "controlStyles[12].target": "StartMenu.PinnedList#StartMenuPinnedList",
   "controlStyles[12].styles[0]": "Height=421",
@@ -184,7 +184,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   
   "controlStyles[24].target": "Grid#TopLevelSuggestionsListHeader",
   "controlStyles[24].styles[0]": "Visibility=Collapsed",
-  "controlStyles[24].styles[1]": "//Target= Start Menu > Suggestions Text \"Recomended\"",
+  "controlStyles[24].styles[1]": "//Target= Start Menu > Suggestions Text \"Recommended\"",
   
   "controlStyles[25].target": "Grid#ShowMoreSuggestions",
   "controlStyles[25].styles[0]": "Visibility=Collapsed",
@@ -214,7 +214,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   
   "controlStyles[31].target": "Grid#AccountBadgePlaceholder > StartDocked.IconBadgeView > Grid#IconBadgeRoot > Grid > Windows.UI.Xaml.Shapes.Ellipse",
   "controlStyles[31].styles[0]": "Fill:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight2}\" Opacity=\"1\" />",
-  "controlStyles[31].styles[1]": "//Target= Start Menu > Account Buton > Account Notification Reminder",
+  "controlStyles[31].styles[1]": "//Target= Start Menu > Account Button > Account Notification Reminder",
   
   "controlStyles[32].target": "Border#BackgroundBorder",
   "controlStyles[32].styles[0]": "CornerRadius=12",
@@ -281,7 +281,7 @@ The aim is to make it easier to modify or debug the theme in the future.
   "controlStyles[45].styles[0]": "BorderBrush:=$Reveal",
   "controlStyles[45].styles[1]": "BorderThickness=2",
   "controlStyles[45].styles[2]": "CornerRadius=20",
-  "controlStyles[45].styles[3]": "//Target= Search Menu > Seach Box",
+  "controlStyles[45].styles[3]": "//Target= Search Menu > Search Box",
   
   "controlStyles[46].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer",
   "controlStyles[46].styles[0]": "Width=20",
