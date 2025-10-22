@@ -27,7 +27,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ### Redesigned Start menu
 
-A variant for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
+A variant for the [redesigned Windows 11 Start
+menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/)
+that is slowly rolling out in the 25H2 update.
 
 <details>
 <summary>Content to import (click to expand)</summary>
