@@ -38,7 +38,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```json
-{"controlStyles[0].target":"Border#TaskbarSearchBackground",
+{
+"controlStyles[0].target":"Border#TaskbarSearchBackground",
 "controlStyles[0].styles[0]":"CornerRadius=4",
 "controlStyles[0].styles[1]":"BorderThickness=1",
 "controlStyles[0].styles[2]":"BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" />",
