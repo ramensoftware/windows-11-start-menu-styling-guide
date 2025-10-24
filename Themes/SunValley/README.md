@@ -150,7 +150,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 "controlStyles[34].target":"Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter > FontIcon > Grid > TextBlock",
 "controlStyles[34].styles[0]":"FontSize=20",
 "controlStyles[35].target":"Cortana.UI.Views.HostedWebView2Control#QueryFormulationHostedWebView2 > Grid",
-"controlStyles[35].styles[0]":"Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.46\" TintLuminosityOpacity=\"0.46\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />"
+"controlStyles[35].styles[0]":"Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.46\" TintLuminosityOpacity=\"0.46\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
 "controlStyles[36].target": "Grid#TopLevelHeader > Grid > Button > Grid@CommonStates > Border#BackgroundBorder",
 "controlStyles[36].styles[0]": "Background@Normal:=<SolidColorBrush Color=\"{ThemeResource ControlFillColorDefault}\" />",
 "controlStyles[36].styles[1]": "Background@PointerOver:=<SolidColorBrush Color=\"{ThemeResource ControlFillColorSecondary}\" />",
