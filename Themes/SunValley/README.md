@@ -11,9 +11,9 @@ which included:
 **Author**: [Tails](https://github.com/milestprower92)
 
 ## Old Windows 11 Start Menu:
-![Screenshot](screenshot.png) \
+![Screenshot](screenshot.png)
 ## New Windows 11 Start Menu
-![Screenshot](screenshot2.png) \
+![Screenshot](screenshot2.png)
 ## Search Menu
 ![Screenshot](screenshot-search.png)
 
