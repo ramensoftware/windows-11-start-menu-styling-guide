@@ -1,6 +1,6 @@
-# "Oversimplified & Accentuated" Theme for Windows 11 Start menu Styler
+# Oversimplified&Accentuated Theme for Windows 11 Start Menu Styler
 
-A cleaner, more refined Windows Start menu (& search menu) theme - removing unnecessary elements and offering better **accent color** integration.
+A cleaner, more refined Windows Start menu (and search menu) theme - removing unnecessary elements and offering better **accent color** integration.
 
 > ⚠️ **Note:** This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
 
@@ -20,7 +20,7 @@ A cleaner, more refined Windows Start menu (& search menu) theme - removing unne
 
 ---
 
-## 🎨 Elements Modified
+## 🎨 Elements modified
 - Start menu
   - Folder window
   - Pinned apps & folders

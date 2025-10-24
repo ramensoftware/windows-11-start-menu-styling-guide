@@ -37,7 +37,7 @@ Installation:
 
 ## Manual installation
 
-The theme styles can be imported manually. To do that, follow these steps:
+The theme styles have to be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Advanced" tab.
