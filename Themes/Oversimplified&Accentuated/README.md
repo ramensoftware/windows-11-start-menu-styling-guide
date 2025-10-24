@@ -31,22 +31,22 @@ A cleaner, more refined Windows Start menu (& search menu) theme - removing unne
 
 ---
 
-## 🧩 Installation
+## Theme selection
 
-1. Download **[Windhawk](https://windhawk.net/)**.  
-2. Install the **“[Windows 11 Start Menu Styler](https://windhawk.net/mods/windows-11-start-menu-styler)”** plugin.  
-3. Choose the **“Oversimplified & Accentuated”** theme from the integrated themes list.  
-   **OR**  
-   Copy the JSON code below and go to:  
-   **Windows 11 Start Menu Styler → Details → Advanced → Mod Settings**  
-   Paste the code into the "**Mod settings**" box and click **Save**.
+The theme is integrated into the mod and can simply be selected from the mod's
+settings:
 
----
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
 
-## 🛠️ Modification Notes
+## Manual installation
 
-I added an extra comment line at the end of each style group to indicate the target object with common language.  
-The aim is to make it easier to modify or debug the theme in the future.
+The theme styles can also be imported manually. To do that, follow these steps:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Advanced" tab.
+* Copy the content below to the text box under "Mod settings" and click "Save".
 
 <details>
 <summary>Content to import (click to expand)</summary>
@@ -350,3 +350,8 @@ The aim is to make it easier to modify or debug the theme in the future.
 }
 ```
 </details>
+
+### Modification notes
+
+I added an extra comment line at the end of each style group to indicate the target object with common language.  
+The aim is to make it easier to modify or debug the theme in the future.
