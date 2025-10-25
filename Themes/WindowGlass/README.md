@@ -425,7 +425,7 @@ This style also consists of a minimal version of the start menu with the Phone L
   "controlStyles[29].styles[0]": "CornerRadius=$CornerRadius",
   "controlStyles[30].target": "Windows.UI.Xaml.Controls.ContentPresenter#ZoomedInPresenter > Windows.UI.Xaml.Controls.GridView#AllAppsGrid > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid",
   "controlStyles[30].styles[0]": "MaximumRowsOrColumns=2",
-  "controlStyles[30].styles[1]": "Margin=5,-100,5,0",
+  "controlStyles[30].styles[1]": "Margin=5,-95,5,0",
   "controlStyles[30].styles[2]": "Width=Auto",
   "controlStyles[30].styles[3]": "MinWidth:=100",
   "controlStyles[30].styles[4]": "MaxWidth:=350",

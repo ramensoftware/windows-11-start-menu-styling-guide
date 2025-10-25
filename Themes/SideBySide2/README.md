@@ -21,6 +21,103 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
+### Redesigned Start menu
+
+A variant for the [redesigned Windows 11 Start
+menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/)
+that is slowly rolling out in the 25H2 update.
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
+{
+  "controlStyles[0].target": "StartDocked.PowerOptionsView",
+  "controlStyles[0].styles[0]": "Margin=-740,0,0,0",
+  "controlStyles[1].target": "StartDocked.UserTileView",
+  "controlStyles[1].styles[0]": "Visibility=Collapsed",
+  "controlStyles[2].target": "//StartMenu.PinnedList",
+  "controlStyles[3].target": "StartMenu.ExpandedFolderList > Grid > Border",
+  "controlStyles[3].styles[0]": "Margin=-40,0,40,0",
+  "controlStyles[3].styles[1]": "Width=325",
+  "controlStyles[4].target": "StartMenu.ExpandedFolderList > Grid > Grid",
+  "controlStyles[4].styles[0]": "CornerRadius=8",
+  "controlStyles[4].styles[1]": "Margin=-85,0,0,0",
+  "controlStyles[4].styles[2]": "Width=350",
+  "controlStyles[5].target": "StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager",
+  "controlStyles[5].styles[0]": "Margin=-15,0,0,0",
+  "controlStyles[6].target": "Grid#MainMenu",
+  "controlStyles[6].styles[0]": "Width=825",
+  "controlStyles[7].target": "Grid#FrameRoot",
+  "controlStyles[7].styles[0]": "Height=825",
+  "controlStyles[8].target": "Border#AcrylicOverlay",
+  "controlStyles[8].styles[0]": "Margin=0,-70,0,0",
+  "controlStyles[9].target": "GridView#PinnedList",
+  "controlStyles[9].styles[0]": "MaxWidth=480",
+  "controlStyles[9].styles[1]": "RenderTransform:=<TranslateTransform X=\"345\" Y=\"790\"/>",
+  "controlStyles[10].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid",
+  "controlStyles[10].styles[0]": "Width=280",
+  "controlStyles[10].styles[1]": "Margin=-55,12,55,0",
+  "controlStyles[10].styles[2]": "//RenderTransform:=<TranslateTransform X=\"0\" Y=\"740\"/>",
+  "controlStyles[11].styles[0]": "RenderTransform:=<TranslateTransform X=\"-200\" Y=\"-760\"/>",
+  "controlStyles[11].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter",
+  "controlStyles[12].target": "Microsoft.UI.Xaml.Controls.DropDownButton",
+  "controlStyles[12].styles[0]": "Margin=-440,400,400,-440",
+  "controlStyles[12].styles[1]": "FontWeight=SemiBold",
+  "controlStyles[12].styles[2]": "Height=32",
+  "controlStyles[12].styles[3]": "Width=200",
+  "controlStyles[13].target": "Windows.UI.Xaml.Controls.ListView#ZoomedOutListView",
+  "controlStyles[13].styles[0]": "Margin=0,-35,0,35",
+  "controlStyles[14].target": "TextBlock#PinnedListHeaderText",
+  "controlStyles[14].styles[0]": "Visibility=Visible",
+  "controlStyles[14].styles[1]": "RenderTransform:=<TranslateTransform X=\"485\" Y=\"788.5\"/>",
+  "controlStyles[14].styles[2]": "FontWeight=SemiBold",
+  "controlStyles[15].target": "StartMenu.StartHome",
+  "controlStyles[15].styles[0]": "RenderTransform:=<TranslateTransform Y=\"-1\"/>",
+  "controlStyles[16].target": "Windows.UI.Xaml.Controls.Frame > Windows.UI.Xaml.Controls.ContentPresenter",
+  "controlStyles[16].styles[0]": "Margin=0,-15,0,0",
+  "controlStyles[17].target": "DropDownButton > Grid > ContentPresenter > TextBlock",
+  "controlStyles[17].styles[0]": "MaxLines=2",
+  "controlStyles[17].styles[1]": "TextLineBounds=0",
+  "controlStyles[17].styles[2]": "HorizontalAlignment=1",
+  "controlStyles[18].target": "Grid#TopLevelSuggestionsRoot",
+  "controlStyles[18].styles[0]": "RenderTransform:=<TranslateTransform X=\"360\" Y=\"880\"/>",
+  "controlStyles[18].styles[1]": "Width=450",
+  "controlStyles[18].styles[2]": "BorderThickness=0,1,0,0",
+  "controlStyles[18].styles[3]": "BorderBrush=#22BBBBBB",
+  "controlStyles[19].target": "TextBlock#TopLevelSuggestionsListHeaderText",
+  "controlStyles[19].styles[0]": "RenderTransform:=<TranslateTransform X=\"-50\" />",
+  "controlStyles[20].target": "Button#ShowMoreSuggestionsButton",
+  "controlStyles[20].styles[0]": "RenderTransform:=<TranslateTransform X=\"50\" />",
+  "controlStyles[21].target": "//Grid#TopLevelHeader > Grid[2]",
+  "controlStyles[21].styles[0]": "RenderTransform:=<TranslateTransform X=\"220\" Y=\"581\" />",
+  "controlStyles[22].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid ",
+  "controlStyles[22].styles[0]": "RenderTransform:=<TranslateTransform X=\"-40\" />",
+  "controlStyles[22].styles[1]": "Margin=0,420,0,0",
+  "controlStyles[23].target": "ScrollViewer",
+  "controlStyles[23].styles[0]": "ScrollViewer.VerticalScrollMode=2",
+  "controlStyles[24].target": "Windows.UI.Xaml.Controls.ItemsWrapGrid",
+  "controlStyles[24].styles[0]": "MaximumRowsOrColumns=5",
+  "controlStyles[25].target": "GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border",
+  "controlStyles[25].styles[0]": "MaxWidth=185",
+  "controlStyles[25].styles[1]": "HorizontalAlignment=2",
+  "controlStyles[26].target": "Grid#TopLevelSuggestionsContainer",
+  "controlStyles[26].styles[0]": "Width=630",
+  "controlStyles[26].styles[1]": "Margin=-50,0,0,0",
+  "controlStyles[27].target": "GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem",
+  "controlStyles[27].styles[0]": "Margin=-25,0,-25,0",
+  "controlStyles[28].target": "StartDocked.AppListView",
+  "controlStyles[28].styles[0]": "Margin=15,0,-15,0",
+  "controlStyles[2].styles[0]": "//MaxHeight=504",
+  "controlStyles[29].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
+  "controlStyles[29].styles[0]": "Height=650",
+  "controlStyles[29].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />"
+}
+```
+</details>
+
+### Classic Start menu
+
 <details>
 <summary>Content to import (click to expand)</summary>
 

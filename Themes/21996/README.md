@@ -1,9 +1,9 @@
 # 21996 Start & Search theme for Windows 11 Start Menu Styler
 
-This theme tries to recreate the design that the Windows 11 start menu and search menu had on early Windows 11 builds,
+This theme tries to recreate the design that the Windows 11 Start menu and search menu had on early Windows 11 builds,
 which included:
 * Squared search box
-* No search box on the start menu
+* No search box on the Start menu
 * Changed 'All' to 'All apps' as it was on older Windows 11 builds
 * Reverted the search icon back to the one from 22000
 * 21370-22000.9-like Acrylic
@@ -30,6 +30,110 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Advanced" tab.
 * Copy the content below to the text box under "Mod settings" and click "Save".
+
+### Redesigned Start menu
+
+A variant for the [redesigned Windows 11 Start
+menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/)
+that is slowly rolling out in the 25H2 update.
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
+{
+  "controlStyles[0].target": "Border#TaskbarSearchBackground",
+  "controlStyles[0].styles[0]": "CornerRadius=4",
+  "controlStyles[0].styles[1]": "BorderThickness=0",
+  "controlStyles[0].styles[2]": "Height=33",
+  "controlStyles[0].styles[3]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource ControlStrokeColorDefault}\"/>",
+  "controlStyles[1].target": "StartMenu.SearchBoxToggleButton > Grid > ContentPresenter > TextBlock#PlaceholderText",
+  "controlStyles[1].styles[0]": "Margin=0,0,0,2",
+  "controlStyles[2].target": "StartMenu.SearchBoxToggleButton#StartMenuSearchBox > Grid > Border#BorderElement",
+  "controlStyles[2].styles[0]": "BorderThickness=0,0,0,2",
+  "controlStyles[2].styles[1]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight1}\"/>",
+  "controlStyles[3].target": "StartMenu.SearchBoxToggleButton > Grid > FontIcon > Grid > TextBlock",
+  "controlStyles[3].styles[0]": "Foreground:=<SolidColorBrush Color=\"gray\" />",
+  "controlStyles[3].styles[1]": "Margin=0,0,0,1",
+  "controlStyles[3].styles[2]": "Transform3D:=<CompositeTransform3D RotationY=\"180\" TranslateX=\"16\" />",
+  "controlStyles[4].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer",
+  "controlStyles[4].styles[0]": "Visibility=1",
+  "controlStyles[4].styles[1]": "FlowDirection=1",
+  "controlStyles[4].styles[2]": "Transform3D:=<CompositeTransform3D RotationY=\"180\" TranslateX=\"16\" />",
+  "controlStyles[5].target": "FontIcon#SearchBoxOnTaskbarSearchGlyph",
+  "controlStyles[5].styles[0]": "Visibility=0",
+  "controlStyles[5].styles[1]": "Foreground:=<SolidColorBrush Color=\"gray\" />",
+  "controlStyles[5].styles[2]": "FlowDirection=1",
+  "controlStyles[5].styles[3]": "FontFamily=Segoe Fluent Icons",
+  "controlStyles[5].styles[4]": "RequestedTheme=1",
+  "controlStyles[5].styles[5]": "Transform3D:=<CompositeTransform3D RotationY=\"180\" TranslateX=\"23\" TranslateY=\"0.5\" />",
+  "controlStyles[5].styles[6]": "FontSize=17",
+  "controlStyles[6].target": "StartMenu.SearchBoxToggleButton#StartMenuSearchBox > Grid",
+  "controlStyles[6].styles[0]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource ControlStrokeColorDefault}\"/>",
+  "controlStyles[6].styles[1]": "BorderThickness=1,1,1,0",
+  "controlStyles[6].styles[2]": "CornerRadius=4",
+  "controlStyles[7].target": "Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl > Grid#RootGrid",
+  "controlStyles[7].styles[0]": "CornerRadius=4",
+  "controlStyles[7].styles[1]": "BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight1}\" />",
+  "controlStyles[7].styles[2]": "BorderThickness=2,2,2,2",
+  "controlStyles[7].styles[3]": "Margin=-2,-0,0,-2",
+  "controlStyles[8].target": "StartMenu.SearchBoxToggleButton",
+  "controlStyles[8].styles[0]": "CornerRadius=4",
+  "controlStyles[8].styles[1]": "Height=40",
+  "controlStyles[9].target": "Windows.UI.Xaml.Controls.Grid#SearchBoxOnTaskbarGleamContainer",
+  "controlStyles[9].styles[0]": "CornerRadius=4",
+  "controlStyles[10].target": "Windows.UI.Xaml.Controls.Grid#SearchBoxOnTaskbarGleamImageContainer",
+  "controlStyles[10].styles[0]": "CornerRadius=4",
+  "controlStyles[10].styles[1]": "Transform3D:=<CompositeTransform3D TranslateX=\"1.8\" />",
+  "controlStyles[11].target": "Windows.UI.Xaml.Controls.Image#SearchIconOff",
+  "controlStyles[11].styles[0]": "Transform3D:=<CompositeTransform3D RotationY=\"180\" TranslateX=\"16\" TranslateY=\"-1\" />",
+  "controlStyles[12].target": "Windows.UI.Xaml.Controls.Image#SearchIconOn",
+  "controlStyles[12].styles[0]": "Transform3D:=<CompositeTransform3D RotationY=\"180\" TranslateX=\"16\" TranslateY=\"-1\" />",
+  "controlStyles[13].target": "Windows.UI.Xaml.Controls.TextBlock#AllListHeadingText",
+  "controlStyles[13].styles[0]": "Text=All apps",
+  "controlStyles[14].target": "Grid#FrameRoot",
+  "controlStyles[14].styles[0]": "MaxHeight=650",
+  "controlStyles[15].target": "Cortana.UI.Views.HostedWebViewControl#QueryFormulationHostedWebView",
+  "controlStyles[15].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"1\" TintLuminosityOpacity=\"1\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
+  "controlStyles[16].target": "Windows.UI.Xaml.Controls.Grid#QueryFormulationRoot",
+  "controlStyles[16].styles[0]": "CornerRadius=10",
+  "controlStyles[17].target": "Windows.UI.Xaml.Controls.Border#AcrylicBorder",
+  "controlStyles[17].styles[0]": "Opacity=0.5",
+  "controlStyles[18].target": "Windows.UI.Xaml.Controls.Grid#MainContent",
+  "controlStyles[18].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.5\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
+  "controlStyles[18].styles[1]": "CornerRadius=7",
+  "controlStyles[19].target": "Windows.UI.Xaml.Controls.Border#AppBorder",
+  "controlStyles[19].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.7\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
+  "controlStyles[20].target": "Grid#MainMenu",
+  "controlStyles[20].styles[0]": "Width=650",
+  "controlStyles[21].target": "Windows.UI.Xaml.Controls.Frame",
+  "controlStyles[21].styles[0]": "Margin=0,-70,0,0",
+  "controlStyles[22].target": "Border#AcrylicOverlay",
+  "controlStyles[22].styles[0]": "Margin=0,-70,0,0",
+  "controlStyles[23].target": "Grid#MainContent > Grid > StartMenu.SearchBoxToggleButton",
+  "controlStyles[23].styles[0]": "Visibility=Collapsed",
+  "controlStyles[24].styles[0]": "Margin=0,10,0,0",
+  "controlStyles[24].target": "GridView#AllAppsGrid",
+  "controlStyles[25].target": "Grid#MainMenu > Grid#MainContent > Grid",
+  "controlStyles[25].styles[0]": "Canvas.ZIndex=1",
+  "controlStyles[26].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton",
+  "controlStyles[26].styles[0]": "Margin=5,10,-5,-10",
+  "controlStyles[26].styles[1]": "Style:=",
+  "controlStyles[26].styles[2]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15000000\"/>",
+  "controlStyles[26].styles[3]": "Width=32",
+  "controlStyles[26].styles[4]": "Height=32",
+  "controlStyles[26].styles[5]": "Padding=0",
+  "controlStyles[26].styles[6]": "Margin=0,1,-12,0",
+  "controlStyles[27].target": "StartMenu.StartHome",
+  "controlStyles[27].styles[0]": "Margin=0,-10,0,0",
+  "controlStyles[28].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
+  "controlStyles[28].styles[0]": "Height=550",
+  "controlStyles[28].styles[1]": "Margin=0,2,0,-2"
+}
+```
+</details>
+
+### Classic Start menu
 
 <details>
 <summary>Content to import (click to expand)</summary>
