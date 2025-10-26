@@ -2,9 +2,11 @@
 
 A cleaner, more refined Windows Start menu (and search menu) theme - removing unnecessary elements and offering better **accent color** integration.
 
-> ⚠️ **Note:** This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
+> [!NOTE]
+> This theme does not have a variant for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
 
-> ⚠️ **Note:** This theme was created and tested with **Windows 11 24H2**, compatibility with **Windows 11 25H2** is not guaranteed.
+> [!NOTE]
+> This theme is optimized for Windows in **Dark Mode** and may not display correctly in **Light Mode**.
 
 ### ✨ Features
 - Removed unnecessary text and lines
