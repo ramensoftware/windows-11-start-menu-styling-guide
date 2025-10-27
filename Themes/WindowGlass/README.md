@@ -1,12 +1,14 @@
 # WindowGlass theme for Windows 11 Start Menu Styler
 
-A theme that adds a modern, glassy aesthetic with a compact layout to the windows 11 Start Menu
+A theme that adds a modern, glassy aesthetic with a compact layout to the Windows 11 Start menu.
 
 **Author**: [Nathaniel4JC](https://github.com/Nathaniel4JC)
 
-## Left/ Centered Aligned
+## Left/center-aligned
 ![Left](Start_Menu.png)
 
+> [!IMPORTANT]
+> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
 
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.
@@ -26,30 +28,29 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the window
 ## Lock Screen
 ![Lock Screen](Lock_Screen.png) 
 
-In order for it to work, you'll have to:
-  - add 'LockApp.exe' to the 'Custom process inclusion list' in 'advanced settings' in the Start Menu Styler Mod.
-  - Install [Vivo Sans En VF] (https://1drv.ms/u/c/67fedd4420ed716d/EXRoW1f5dABJrO2dPj0tbM0Bm1uYiGeoKyAYA7X7er2Zww?e=cLsiJJ) and [Vivo Sans Clock Stencil] (https://1drv.ms/u/c/67fedd4420ed716d/EW6LJO1CAu1Fs-khbTGXWFUB5sXhRxM-I__B1lkKWgizdA?e=J1RJYy)
+To make it work, you'll need to:
+- Add 'LockApp.exe' to the 'Custom process inclusion list' under 'Advanced settings' in the Windows 11 Start Menu Styler mod.
+- Install the [Vivo Sans En VF](https://1drv.ms/u/c/67fedd4420ed716d/EXRoW1f5dABJrO2dPj0tbM0Bm1uYiGeoKyAYA7X7er2Zww?e=cLsiJJ) and [Vivo Sans Clock Stencil](https://1drv.ms/u/c/67fedd4420ed716d/EW6LJO1CAu1Fs-khbTGXWFUB5sXhRxM-I__B1lkKWgizdA?e=J1RJYy) fonts.
 
+## More details about this theme
+- Designed for Windows 11 24H2.
+- Compatible with both light and dark modes.
 
-## More Details about this theme
-- Theme is designed on Windows 11 - 24H2
-- Compatible with both Light/ Dark mode
-
-## For a complete WindowGlass themed UI, download the following mods and use the 'WindowGlass' theme:
-- Windows 11 TaskBar Styler – for styling the Taskbar.
-- Windows 11 Notification Center Styler - for styling the Notification Center and Action Center
-- Windows 11 File Explorer Styler - for styling Windows Explorer windows
+## For a complete WindowGlass-themed UI, download the following mods and use the 'WindowGlass' theme:
+- Windows 11 Taskbar Styler - for styling the taskbar.
+- Windows 11 Notification Center Styler - for styling the Notification Center and Action Center.
+- Windows 11 File Explorer Styler - for styling Windows Explorer windows.
 
 ---
 
 ## Theme selection
 
-The theme is integrated into the mod, and can be simply selected from the mod's
+The theme is integrated into the mod and can simply be selected from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Settings" tab.
-* Select the 'WindowGlass' theme and save the settings.
+* Select the theme and save the settings.
 
 ## Manual installation
 
@@ -63,7 +64,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```json
-
 {
   "controlStyles[0].target": "Border#AcrylicOverlay",
   "controlStyles[0].styles[0]": "Margin=0",
@@ -301,14 +301,13 @@ The theme styles can also be imported manually. To do that, follow these steps:
 </details>
 
 ## Additional Theme Variant
-This style also consists of a minimal version of the start menu with the Phone Link companion removed.
+This theme also includes a minimal version of the Start menu with the Phone Link companion removed.
 ![Minimal](Start_Menu_Minimal.png)
 
 <details>
 <summary>Content to import (click to expand)</summary>
 
 ```json
-
 {
   "controlStyles[0].target": "Border#AcrylicOverlay",
   "controlStyles[0].styles[0]": "Margin=0",
@@ -420,7 +419,7 @@ This style also consists of a minimal version of the start menu with the Phone L
   "controlStyles[27].target": "Windows.UI.Xaml.Controls.Grid#OuterBorderGrid",
   "controlStyles[27].styles[0]": "CornerRadius=$CornerRadius",
   "controlStyles[28].target": "Windows.UI.Xaml.Controls.Grid#MainMenu",
-  "controlStyles[28].styles[0]": "",
+  "controlStyles[28].styles[0]": "// Unused",
   "controlStyles[29].target": "Windows.UI.Xaml.PopupRoot",
   "controlStyles[29].styles[0]": "CornerRadius=$CornerRadius",
   "controlStyles[30].target": "Windows.UI.Xaml.Controls.ContentPresenter#ZoomedInPresenter > Windows.UI.Xaml.Controls.GridView#AllAppsGrid > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid",
