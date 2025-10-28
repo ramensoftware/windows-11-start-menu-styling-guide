@@ -17,20 +17,20 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Go to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
 
 > [!IMPORTANT]
-> You must set *"Corner preference"* to *"Not rounded"* in the *"Start menu"* page, as the theme rounds the Start menu and makes it float.
+> You must set *"Corner preference"* to *"Not rounded"* in the *"Start menu"* page, as the theme rounds the Start menu and makes it float instead of ExplorerPatcher.
 
 ## Bugs
 * Group name textbox and text are both black in edit mode, causing readability issues.
 * Folder name textbox isn't styled.
 * Holding the Delete button in the group name textbox will show a fake Delete icon.
-* Legacy Windows 10 effects (Reveal, and 3D push) are still present in some places.
+* Legacy Windows 10 effects (Reveal, and 3D push) are still present.
 * Items may not align/center correctly on higher DPIs.
 * User flyout can only show 4 users.
 * *"Pinned tiles"* and *"All apps"* buttons will stick to the navigation pane for a split second after the pane dismisses.
 * The placeholder square when downloading an app from the Microsoft Store is stretched.
 
 ## Unsupported configurations/settings
-* Windows 10.
+* All versions of Windows 10.
 * Light mode.
 * *"Show accent color on Start and taskbar"* enabled.
 * Fullscreen Start menu.
@@ -40,9 +40,9 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 
 The theme styles have to be imported manually. To do that, follow these steps:
 
-* Open the Windows 11 Start Menu Styler mod in Windhawk.
-* Go to the "Advanced" tab.
-* Copy the content below to the text box under "Mod settings" and click "Save".
+* Open the *"Windows 11 Start Menu Styler"* mod in Windhawk.
+* Go to the *"Advanced"* tab.
+* Copy the content below to the text box under *"Mod settings"* and click *"Save"*.
 
 <details>
 <summary>Content to import (click to expand)</summary>
