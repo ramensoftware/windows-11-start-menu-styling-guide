@@ -300,7 +300,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ```
 </details>
 
-## Additional Theme Variant
+## Additional theme variant
 This theme also includes a minimal version of the Start menu with the Phone Link companion removed.
 ![Minimal](Start_Menu_Minimal.png)
 
