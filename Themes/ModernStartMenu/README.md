@@ -40,9 +40,9 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 
 The theme styles have to be imported manually. To do that, follow these steps:
 
-* Open the *"Windows 11 Start Menu Styler"* mod in Windhawk.
-* Go to the *"Advanced"* tab.
-* Copy the content below to the text box under *"Mod settings"* and click *"Save"*.
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Advanced" tab.
+* Copy the content below to the text box under "Mod settings" and click "Save".
 
 <details>
 <summary>Content to import (click to expand)</summary>
