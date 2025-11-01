@@ -193,9 +193,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
       ```json
       { 
         "controlStyles[23].target":"Windows.UI.Xaml.Controls.Grid#FrameRoot",
-          "controlStyles[23].styles[0]":"Height=auto",
-          "controlStyles[23].styles[1]":"MinHeight=520",
-          "controlStyles[23].styles[2]":"MaxHeight=720",
+        "controlStyles[23].styles[0]":"Height=auto",
+        "controlStyles[23].styles[1]":"MinHeight=520",
+        "controlStyles[23].styles[2]":"MaxHeight=720",
       }
       ```
     
