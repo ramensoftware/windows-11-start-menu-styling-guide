@@ -8,10 +8,11 @@ This theme is designed for the [redesigned Windows 11 Start menu](https://micros
 
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.
-- Works on devices with a screen resolution of 1280x720 and above.
-- This theme works well with displays having aspect ratio 16:9 at 125% scale
+- Works on devices with a screen resolution of 1280⨯720 and above.
+- Ideal resolution and scale: 1920⨯1080 at 125%
+- This theme works well with displays having an aspect ratio of **16:9** at 125% scale
 - This theme places the start menu wherever the taskbar is aligned.
-- This theme combines the start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'
+- This theme combines the start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'.
 - Compatible with both light and dark modes.
 
 ---
@@ -117,7 +118,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[22].styles[0]":"Visibility=1",
     "controlStyles[23].target":"Windows.UI.Xaml.Controls.Grid#FrameRoot",
     "controlStyles[23].styles[0]":"Height=auto",
-    "controlStyles[23].styles[1]":"MinHeight=648",
+    "controlStyles[23].styles[1]":"MinHeight=520",
     "controlStyles[23].styles[2]":"MaxHeight=720",
     "controlStyles[24].target":"Windows.UI.Xaml.Controls.Border#RightCompanionDropShadow",
     "controlStyles[24].styles[0]":"Visibility=1",
@@ -132,7 +133,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[27].target":"Windows.UI.Xaml.Controls.Border#StartDropShadow",
     "controlStyles[27].styles[0]":"Width=655",
     "controlStyles[28].target":"Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText",
-    "controlStyles[28].styles[0]":"Margin=63,-6,12,7",
+    "controlStyles[28].styles[0]":"Margin=56,-6,0,10",
     "controlStyles[29].target":"Windows.UI.Xaml.Controls.Grid#TopLevelHeader > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Button",
     "controlStyles[29].styles[0]":"Visibility=1",
     "controlStyles[30].target":"Windows.UI.Xaml.Controls.ContentPresenter#ZoomedOutPresenter > Windows.UI.Xaml.Controls.ListView#ZoomedOutListView",
@@ -152,21 +153,46 @@ The theme styles can also be imported manually. To do that, follow these steps:
 </details>
 
 ## Common Issues and Fixes
--**Elements of the Start Menu may not appear as intended with certain display settings.** 
+
+Some elements of the Start Menu may not appear as intended with certain display settings.
+
   
-- *Issue-1:* The user tile and power button may be displaced vertically, based on display properties.
--  *Fix:* Modify the margin values for the elements below.
+- **Issue-1:** The user tile and power button may be displaced vertically.
+-  **Fix:** Modify the margin values for the elements below.
+
+Note: *This also applies to cases where these tiles might not be visible in the menu.*
 
    <details>
-   <summary>Change these values (Click to Expand)</summary>
+   <summary> Styles to Modify (click to expand)</summary>
 
     ```json
     { 
       "controlStyles[2].target":"StartDocked.PowerOptionsView",
       "controlStyles[2].styles[0]":"Margin=0,-1255,-35,0",
+    
       "controlStyles[10].target":"StartDocked.UserTileView",
       "controlStyles[10].styles[0]":"Margin=390,-1255,-30,0",
     }
     ```
-    
+     
+  </details>
+
+
+- **Issue-2:** The Start Menu appears too tall on larger displays.
+- **Fix:** Modify the value of `"Height=.."` for a custom setting.
+- 
+  Note: *To mitigate this issue to an extent, MaxHeight has been included in the theme.*
+  
+   <details>
+   <summary> Styles to Modify (click to expand)</summary>
+
+    ```json
+    { 
+    "controlStyles[23].target":"Windows.UI.Xaml.Controls.Grid#FrameRoot",
+      "controlStyles[23].styles[0]":"Height=auto",
+      "controlStyles[23].styles[1]":"MinHeight=520",
+      "controlStyles[23].styles[2]":"MaxHeight=720",
+    }
+    ```
+     
   </details>
