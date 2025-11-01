@@ -158,6 +158,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 *Causes:* Some elements of the Start Menu may not appear as intended with certain display settings.
 
+
 - **Issue-1:** The user tile and power button may be displaced vertically.
 -  **Fix:** Modify the margin values for the elements below.
 
@@ -177,6 +178,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     ```
      
    </details>
+
 
 - **Issue-2:** The Start Menu appears too tall on larger displays.
 - **Fix:** Modify the value of `"Height=.."` for a custom setting.
