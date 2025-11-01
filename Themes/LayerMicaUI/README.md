@@ -154,6 +154,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
 ```
 </details>
 
+---
+
 ## Common Issues and Fixes
 
 *Causes:* Some elements of the Start Menu may not appear as intended with certain display settings.
