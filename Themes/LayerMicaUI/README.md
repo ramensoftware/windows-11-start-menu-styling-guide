@@ -179,7 +179,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
       }
       ```
 
-    </details>
+   </details>
 
 
 - **Issue-2:** The Start Menu appears too tall on larger displays.
