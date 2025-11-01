@@ -74,7 +74,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[9].target":"StartDocked.PowerOptionsView > StartDocked.NavigationPaneButton > Grid > Border",
     "controlStyles[9].styles[0]":"CornerRadius=2,8,8,2",
     "controlStyles[9].styles[1]":"Margin=-1",
-    "controlStyles[9].styles[2]":"BorderThickness=1.5",
+    "controlStyles[9].styles[2]":"BorderThickness=1",
     "controlStyles[9].styles[3]":"Background:=<SolidColorBrush Color=\"{ThemeResource ControlFillColorSecondary}\" Opacity=\"0.6\"/>",
     "controlStyles[9].styles[4]":"BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
     "controlStyles[10].target":"StartDocked.UserTileView",
