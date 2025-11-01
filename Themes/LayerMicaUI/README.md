@@ -4,7 +4,7 @@
 ![Left](screenshot-preview.png)
 
 > [!IMPORTANT]
-> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
+This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
 
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.
@@ -34,7 +34,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
 <details>
-<summary>Content to import (click to expand)</summary>
+<summary> Content to import (click to expand)</summary>
 
 ```json
 {
