@@ -171,14 +171,14 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
       ```json
       { 
-        "controlStyles[2].target":"StartDocked.PowerOptionsView",
-        "controlStyles[2].styles[0]":"Margin=0,-1255,-35,0",
+          "controlStyles[2].target":"StartDocked.PowerOptionsView",
+          "controlStyles[2].styles[0]":"Margin=0,-1255,-35,0",
 
-        "controlStyles[10].target":"StartDocked.UserTileView",
-        "controlStyles[10].styles[0]":"Margin=390,-1255,-30,0",
+          "controlStyles[10].target":"StartDocked.UserTileView",
+          "controlStyles[10].styles[0]":"Margin=390,-1255,-30,0",
       }
       ```
-     
+
     </details>
 
 
@@ -186,17 +186,17 @@ The theme styles can also be imported manually. To do that, follow these steps:
 - **Fix:** Modify the value of `"Height=.."` for a custom setting.
 
    **Note:** *To mitigate this issue to an extent, MaxHeight has been included in the theme.*
-  
+
     <details>
     <summary> Styles to Modify (click to expand)</summary>
 
       ```json
       { 
-        "controlStyles[23].target":"Windows.UI.Xaml.Controls.Grid#FrameRoot",
-        "controlStyles[23].styles[0]":"Height=auto",
-        "controlStyles[23].styles[1]":"MinHeight=520",
-        "controlStyles[23].styles[2]":"MaxHeight=720",
+          "controlStyles[23].target":"Windows.UI.Xaml.Controls.Grid#FrameRoot",
+          "controlStyles[23].styles[0]":"Height=auto",
+          "controlStyles[23].styles[1]":"MinHeight=520",
+          "controlStyles[23].styles[2]":"MaxHeight=720",
       }
       ```
-    
+
     </details>
