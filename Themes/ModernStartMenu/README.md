@@ -340,7 +340,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[84].target": "StartUI.NavigationPaneItemPanel > FontIcon",
     "controlStyles[84].styles[0]": "Margin=-12,0,0,0",
     "controlStyles[85].target": "StartUI.NavigationPaneItemPanel > Grid > FontIcon",
-    "controlStyles[85].styles[0]": "Margin=-14,0,0,0",
+    "controlStyles[85].styles[0]": "Margin=-12,0,0,0",
     "controlStyles[86].target": "StartUI.NavigationPaneButton#UserTileButton > ContentPresenter > StartUI.NavigationPaneItemPanel > Grid",
     "controlStyles[86].styles[0]": "Margin=-12,0,0,0",
     "controlStyles[83].styles[2]": "CornerRadius=6",
