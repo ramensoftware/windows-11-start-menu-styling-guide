@@ -1,7 +1,6 @@
 # LayerMicaUI theme for Windows 11 Start Menu Styler
 **Author**: [Nimai-HK](https://github.com/Nimai-HK)
 
-## Left/center-aligned
 ![Left](screenshot-preview.png)
 
 > [!IMPORTANT]
