@@ -163,40 +163,33 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 - **Issue-1:** The user tile and power button may be displaced vertically.
 -  **Fix:** Modify the margin values for the elements below.
+  **Note:** *This also applies to cases where these tiles might not be visible in the menu.*
+  <details>
+  <summary> Styles to Modify (click to expand)</summary>
 
-   **Note:** *This also applies to cases where these tiles might not be visible in the menu.*
-
-    <details>
-    <summary> Styles to Modify (click to expand)</summary>
-
-      ```json
-      { 
-          "controlStyles[2].target":"StartDocked.PowerOptionsView",
-          "controlStyles[2].styles[0]":"Margin=0,-1255,-35,0",
-
-          "controlStyles[10].target":"StartDocked.UserTileView",
-          "controlStyles[10].styles[0]":"Margin=390,-1255,-30,0",
-      }
-      ```
-
-   </details>
+  ```json
+  { 
+      "controlStyles[2].target":"StartDocked.PowerOptionsView",
+      "controlStyles[2].styles[0]":"Margin=0,-1255,-35,0",
+      "controlStyles[10].target":"StartDocked.UserTileView",
+      "controlStyles[10].styles[0]":"Margin=390,-1255,-30,0",
+  }
+  ```
+  </details>
 
 
 - **Issue-2:** The Start Menu appears too tall on larger displays.
 - **Fix:** Modify the value of `"Height=.."` for a custom setting.
+  **Note:** *To mitigate this issue to an extent, MaxHeight has been included in the theme.*
+  <details>
+  <summary> Styles to Modify (click to expand)</summary>
 
-   **Note:** *To mitigate this issue to an extent, MaxHeight has been included in the theme.*
-
-    <details>
-    <summary> Styles to Modify (click to expand)</summary>
-
-      ```json
-      { 
-          "controlStyles[23].target":"Windows.UI.Xaml.Controls.Grid#FrameRoot",
-          "controlStyles[23].styles[0]":"Height=auto",
-          "controlStyles[23].styles[1]":"MinHeight=520",
-          "controlStyles[23].styles[2]":"MaxHeight=720",
-      }
-      ```
-
-    </details>
+  ```json
+  { 
+      "controlStyles[23].target":"Windows.UI.Xaml.Controls.Grid#FrameRoot",
+      "controlStyles[23].styles[0]":"Height=auto",
+      "controlStyles[23].styles[1]":"MinHeight=520",
+      "controlStyles[23].styles[2]":"MaxHeight=720",
+  }
+  ```
+  </details>
