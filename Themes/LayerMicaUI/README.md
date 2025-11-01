@@ -16,6 +16,8 @@ This theme is designed for the [redesigned Windows 11 Start menu](https://micros
 - This theme places the start menu wherever the taskbar is aligned.
 - This theme combines the start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'.
 - Compatible with both light and dark modes.
+- Recommended sections and suggestions removed.
+- Recommended Usage: Phone Link Panel enabled, Start Menu folders disabled.
 
 ---
 
