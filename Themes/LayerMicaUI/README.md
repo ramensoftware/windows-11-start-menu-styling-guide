@@ -1,5 +1,7 @@
 # LayerMicaUI theme for Windows 11 Start Menu Styler
-**Author**: [Nimai-HK](https://github.com/Nimai-HK)
+**Author** :  [Nimai-HK](https://github.com/Nimai-HK)
+
+LayerMicaUI is a theme with reimagined layouts for the new Windows 11 25H2 Start Menu.
 
 ![Left](screenshot-preview.png)
 
@@ -8,8 +10,8 @@ This theme is designed for the [redesigned Windows 11 Start menu](https://micros
 
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.
-- Works on devices with a screen resolution of 1280⨯720 and above.
-- Ideal resolution and scale: 1920⨯1080 at 125%
+- Works on devices with a screen resolution of 1280x720 and above.
+- Ideal resolution and scale: 1920x1080 at 125%
 - This theme works well with displays having an aspect ratio of **16:9** at 125% scale
 - This theme places the start menu wherever the taskbar is aligned.
 - This theme combines the start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'.
@@ -154,13 +156,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ## Common Issues and Fixes
 
-Some elements of the Start Menu may not appear as intended with certain display settings.
+*Causes:* Some elements of the Start Menu may not appear as intended with certain display settings.
 
-  
 - **Issue-1:** The user tile and power button may be displaced vertically.
 -  **Fix:** Modify the margin values for the elements below.
 
-Note: *This also applies to cases where these tiles might not be visible in the menu.*
+   **Note:** *This also applies to cases where these tiles might not be visible in the menu.*
 
    <details>
    <summary> Styles to Modify (click to expand)</summary>
@@ -175,13 +176,12 @@ Note: *This also applies to cases where these tiles might not be visible in the 
     }
     ```
      
-  </details>
-
+   </details>
 
 - **Issue-2:** The Start Menu appears too tall on larger displays.
 - **Fix:** Modify the value of `"Height=.."` for a custom setting.
-- 
-  Note: *To mitigate this issue to an extent, MaxHeight has been included in the theme.*
+
+   **Note:** *To mitigate this issue to an extent, MaxHeight has been included in the theme.*
   
    <details>
    <summary> Styles to Modify (click to expand)</summary>
@@ -195,4 +195,4 @@ Note: *This also applies to cases where these tiles might not be visible in the 
     }
     ```
      
-  </details>
+   </details>
