@@ -5,7 +5,7 @@
 ![Left](screenshot-preview.png)
 
 > [!IMPORTANT]
-> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
+> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out in the 25H2 update.
 
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.
