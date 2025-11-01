@@ -5,7 +5,7 @@
 ![Left](screenshot-preview.png)
 
 > [!IMPORTANT]
-> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out in the 25H2 update.
+> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
 
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.
@@ -145,17 +145,18 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[31].styles[3]":"Padding=0,0,0,20",
     "controlStyles[32].target":"Microsoft.UI.Xaml.Controls.PipsPager#PipsPager",
     "controlStyles[32].styles[0]":"Margin=-30,-10,0,10",
+    "controlStyles[33].target":"StartMenu.FolderModal#StartFolderModal > Grid",
+    "controlStyles[33].styles[0]":"Margin=20,0,0,0",
     "webContentCustomJs": ""
 }
 ```
 </details>
 
-## Simple Fixes
-
-- **Elements of the Start Menu may not appear as intended with certain display settings.** 
+## Common Issues and Fixes
+-**Elements of the Start Menu may not appear as intended with certain display settings.** 
   
-  - *Issue-1:* The user tile and power button may be displaced vertically, based on display properties.
-  -  *Fix:* Modify the margin values for the elements below.
+- *Issue-1:* The user tile and power button may be displaced vertically, based on display properties.
+-  *Fix:* Modify the margin values for the elements below.
 
    <details>
    <summary>Change these values (Click to Expand)</summary>
