@@ -244,8 +244,8 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[53].styles[2]": "BorderBrush:=$borderBrush",
     "controlStyles[53].styles[3]": "BorderThickness=0.5,0,0,0",
     "controlStyles[53].styles[4]": "CornerRadius=0",
-    "controlStyles[61].target": "Border#LogoBackgroundPlate",
-    "controlStyles[61].styles[0]": "Margin=12,6,0,6",
+    "controlStyles[61].target": "Image#AppListItemLogo",
+    "controlStyles[61].styles[0]": "Margin=8,0,0,0",
     "controlStyles[55].styles[0]": "CornerRadius=8",
     "controlStyles[62].target": "MenuFlyoutItem > Grid@CommonStates",
     "controlStyles[62].styles[0]": "Padding=12,0,0,0",
@@ -355,7 +355,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[88].styles[0]": "Margin=-5,0,0,0",
     "controlStyles[87].styles[2]": "Padding=0,0,0,2",
     "controlStyles[89].target": "Grid#MainGrid@FocusStates > Rectangle#BackgroundElement",
-    "controlStyles[89].styles[0]": "Fill@FocusState_Hover:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
+    "controlStyles[89].styles[0]": "Fill@FocusState_Hover:=$buttonNormal",
     "controlStyles[89].styles[1]": "Fill@FocusState_None=Transparent",
     "controlStyles[89].styles[2]": "StrokeThickness=0",
     "controlStyles[49].styles[2]": "Margin=-8,0,0,0",
@@ -550,7 +550,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[127].target": "StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=FrequentList] > StackPanel > Button > Border > TextBlock",
     "controlStyles[127].styles[0]": "Margin=15,0,0,0",
     "controlStyles[128].target": "TextBlock#FolderGlyph",
-    "controlStyles[128].styles[0]": "FontSize=11",
+    "controlStyles[128].styles[0]": "FontSize=9",
     "controlStyles[128].styles[1]": "FontWeight=Light",
     "styleConstants[11]": "fontIconFamily=Segoe Fluent Icons",
     "controlStyles[103].styles[1]": "FontFamily=$fontIconFamily",
@@ -565,7 +565,8 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[84].styles[1]": "FontFamily=$fontIconFamily",
     "controlStyles[132].target": "StartUI.NavigationPaneItemPanel > FontIcon > Grid > TextBlock",
     "controlStyles[132].styles[0]": "Foreground=White",
-    "controlStyles[88].styles[2]": "Foreground=White"
+    "controlStyles[88].styles[2]": "Foreground=White",
+    "controlStyles[100].styles[2]": "BorderBrush:="
 }
 ```
 </details>
