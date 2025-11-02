@@ -27,7 +27,7 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Items may not align/center correctly on higher DPIs.
 * User flyout can only show 4 users.
 * *"Pinned tiles"* and *"All apps"* buttons will stick to the navigation pane for a split second after the pane dismisses.
-* The placeholder square when downloading an app from the Microsoft Store is stretched.
+* Dragging tiles from the applist shows a broken background.
 
 ## Unsupported configurations/settings
 * All versions of Windows 10.
@@ -244,8 +244,8 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[53].styles[2]": "BorderBrush:=$borderBrush",
     "controlStyles[53].styles[3]": "BorderThickness=0.5,0,0,0",
     "controlStyles[53].styles[4]": "CornerRadius=0",
-    "controlStyles[61].target": "Image#AppListItemLogo",
-    "controlStyles[61].styles[0]": "Margin=8,0,0,0",
+    "controlStyles[61].target": "Border#LogoBackgroundPlate",
+    "controlStyles[61].styles[0]": "Margin=12,6,0,6",
     "controlStyles[55].styles[0]": "CornerRadius=8",
     "controlStyles[62].target": "MenuFlyoutItem > Grid@CommonStates",
     "controlStyles[62].styles[0]": "Padding=12,0,0,0",
