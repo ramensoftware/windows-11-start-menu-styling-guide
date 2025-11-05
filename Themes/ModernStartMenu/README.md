@@ -105,7 +105,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[19].styles[1]": "FontFamily=$fontFamily",
     "controlStyles[19].styles[2]": "Text=This app and its related information will be removed.",
     "controlStyles[19].styles[3]": "Margin=9,8,0,0",
-    "controlStyles[20].target": "Button#UninstallButton > Grid@CommonStates",
+    "controlStyles[20].target": "Button#UninstallButton > Grid@CommonStates > ContentPresenter",
     "controlStyles[20].styles[0]": "Background@Normal:=$accentButtonNormal",
     "controlStyles[21].target": "Button#UninstallButton > Grid@CommonStates > ContentPresenter > TextBlock",
     "controlStyles[21].styles[0]": "FontFamily=$fontFamily",
@@ -295,7 +295,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[73].styles[1]": "RadiusY=4",
     "controlStyles[49].styles[0]": "Background@Selected:=$buttonNormal",
     "controlStyles[74].target": "Grid#RootPanel@CommonStates > Rectangle",
-    "controlStyles[74].styles[0]": "Fill@Selected:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight2}\" />",
+    "controlStyles[74].styles[0]": "Fill@Selected:=$accentButtonNormal",
     "controlStyles[74].styles[1]": "Height=16",
     "controlStyles[74].styles[2]": "Width=3",
     "controlStyles[74].styles[3]": "RadiusX=2",
@@ -571,7 +571,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[27].styles[5]": "CornerRadius=6",
     "controlStyles[27].styles[6]": "BorderThickness=0",
     "controlStyles[74].styles[5]": "Canvas.ZIndex=3",
-    "controlStyles[74].styles[6]": "Fill@PointerOverSelected:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight2}\" />"
+    "controlStyles[74].styles[6]": "Fill@PointerOverSelected:=$accentButtonNormal"
 }
 ```
 </details>
