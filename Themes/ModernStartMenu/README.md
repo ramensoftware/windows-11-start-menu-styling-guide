@@ -571,7 +571,9 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[27].styles[5]": "CornerRadius=6",
     "controlStyles[27].styles[6]": "BorderThickness=0",
     "controlStyles[74].styles[5]": "Canvas.ZIndex=3",
-    "controlStyles[74].styles[6]": "Fill@PointerOverSelected:=$accentButtonNormal"
+    "controlStyles[74].styles[6]": "Fill@PointerOverSelected:=$accentButtonNormal",
+    "controlStyles[132].target": "MenuFlyoutItem[Text=Don't show in this list] > Grid",
+    "controlStyles[132].styles[0]": "Height=28"
 }
 ```
 </details>
