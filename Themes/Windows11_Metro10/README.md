@@ -171,7 +171,9 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[46].styles[0]": "Width=57",
   "controlStyles[46].styles[1]": "Height=57",
   "controlStyles[46].styles[2]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[46].styles[3]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>"
+  "controlStyles[46].styles[3]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
+  "controlStyles[48].target": "Grid#MainMenu > Grid#MainContent > Grid",
+  "controlStyles[48].styles[0]": "Canvas.ZIndex=1"
 }
 ```
 </details>
