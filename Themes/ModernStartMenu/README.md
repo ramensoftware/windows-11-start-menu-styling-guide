@@ -27,7 +27,7 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Items may not align/center correctly on higher DPIs.
 * User flyout can only show 4 users.
 * *"Pinned tiles"* and *"All apps"* buttons will stick to the navigation pane for a split second after the pane dismisses.
-* Dragging tiles from the applist shows a broken background.
+* Tiles dragged from the applist will have sharp corners.
 
 ## Unsupported configurations/settings
 * All versions of Windows 10.
@@ -113,7 +113,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[22].target": "TextBlock#StatusMessage",
     "controlStyles[22].styles[0]": "Margin=20,0,0,0",
     "controlStyles[22].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[2].styles[2]": "Width=253",
+    "controlStyles[2].styles[2]": "MinWidth=253",
     "controlStyles[23].target": "Rectangle#SelectionRectangle",
     "controlStyles[23].styles[0]": "RadiusX=2",
     "controlStyles[23].styles[1]": "RadiusY=2",
@@ -236,7 +236,6 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[50].styles[4]": "CornerRadius=0",
     "controlStyles[58].target": "Border#LogoBackgroundPlate",
     "controlStyles[58].styles[0]": "Margin=12,6,0,6",
-    "controlStyles[52].styles[0]": "CornerRadius=8",
     "controlStyles[59].target": "MenuFlyoutItem > Grid@CommonStates",
     "controlStyles[59].styles[0]": "Padding=12,0,0,0",
     "controlStyles[60].target": "ToggleMenuFlyoutItem > Grid@CommonStates",
@@ -268,11 +267,10 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[66].target": "Border#NameTextBoxHost > TextBox",
     "controlStyles[66].styles[0]": "FontWeight=Semibold",
     "controlStyles[66].styles[1]": "FontSize=14",
-    "controlStyles[53].styles[1]": "CornerRadius=8",
-    "controlStyles[52].styles[1]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[52].styles[2]": "Background@Normal:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
-    "controlStyles[52].styles[3]": "BorderBrush:=$borderBrush",
-    "controlStyles[52].styles[4]": "BorderThickness=0,1.5,0,0",
+    "controlStyles[52].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
+    "controlStyles[52].styles[1]": "Background@Normal:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
+    "controlStyles[52].styles[2]": "BorderBrush:=$borderBrush",
+    "controlStyles[52].styles[3]": "BorderThickness=0,1.5,0,0",
     "controlStyles[56].styles[2]": "Margin=9,0,0,0",
     "controlStyles[67].target": "Grid#InnerRoot",
     "controlStyles[67].styles[0]": "Height=46",
@@ -359,8 +357,8 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[91].styles[0]": "Height=46",
     "controlStyles[92].styles[0]": "Height=46",
     "controlStyles[93].styles[0]": "Height=28",
-    "controlStyles[53].styles[2]": "PointerOverBackground:=",
-    "controlStyles[53].styles[3]": "PressedBackground:=",
+    "controlStyles[53].styles[1]": "PointerOverBackground:=",
+    "controlStyles[53].styles[2]": "PressedBackground:=",
     "controlStyles[7].styles[2]": "CornerRadius=9",
     "controlStyles[7].styles[3]": "PointerOverBackground:=",
     "controlStyles[7].styles[4]": "PressedBackground:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
@@ -556,24 +554,26 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[130].target": "Border#NameTextBoxHost > TextBox > Grid > Border#BorderElement",
     "controlStyles[130].styles[0]": "BorderThickness=0,0,0,1.5",
     "controlStyles[130].styles[1]": "CornerRadius=4",
-    "controlStyles[130].styles[2]": "Width=256",
+    "controlStyles[130].styles[2]": "MinWidth=256",
     "controlStyles[130].styles[3]": "Height=28",
     "controlStyles[130].styles[4]": "BorderBrush:=$accentButtonNormal",
     "controlStyles[131].target": "Grid#MainGrid@FocusStates > Rectangle#BackgroundElement",
     "controlStyles[131].styles[0]": "Fill@FocusState_Hover:=$buttonNormal",
     "controlStyles[131].styles[1]": "Fill@FocusState_None=Transparent",
     "controlStyles[131].styles[2]": "StrokeThickness=0",
-    "controlStyles[131].styles[3]": "Width=256",
+    "controlStyles[131].styles[3]": "MinWidth=256",
     "controlStyles[131].styles[4]": "Height=28",
     "controlStyles[131].styles[5]": "Margin=0,0,48,0",
     "controlStyles[129].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.4\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
     "controlStyles[131].styles[6]": "Fill@FocusState_HoverPlaceholder:=$buttonNormal",
     "controlStyles[27].styles[5]": "CornerRadius=6",
     "controlStyles[27].styles[6]": "BorderThickness=0",
-    "controlStyles[74].styles[5]": "Canvas.ZIndex=3",
+    "controlStyles[74].styles[5]": "Canvas.ZIndex=1",
     "controlStyles[74].styles[6]": "Fill@PointerOverSelected:=$accentButtonNormal",
     "controlStyles[132].target": "MenuFlyoutItem[Text=Don't show in this list] > Grid",
-    "controlStyles[132].styles[0]": "Height=28"
+    "controlStyles[132].styles[0]": "Height=28",
+    "controlStyles[130].styles[5]": "MaxWidth=360",
+    "controlStyles[53].styles[3]": "CornerRadius=8"
 }
 ```
 </details>
