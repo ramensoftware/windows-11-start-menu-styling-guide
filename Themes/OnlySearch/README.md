@@ -1,6 +1,6 @@
 # OnlySearch theme for Windows 11 Start Menu Styler
 
-This theme removes all buttons and sections except the search bar, and navitigation buttons. It basically leaves you with a clean look.
+This theme removes all buttons and sections except the search bar, and navigation buttons. It basically leaves you with a clean look.
 
 **Author**: [jonas-usx](https://github.com/jonas-usx)
 
