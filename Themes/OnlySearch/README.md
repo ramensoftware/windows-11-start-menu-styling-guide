@@ -1,7 +1,6 @@
 # OnlySearch theme for Windows 11 Start Menu Styler
 
-This theme removes the recommended app section as well as the newly added ones,
-including the list. It basically leaves you with a clean look.
+This theme removes all buttons and sections except the search bar, and navigation buttons. It basically leaves you with a clean look.
 
 **Author**: [jonas-usx](https://github.com/jonas-usx)
 
@@ -39,7 +38,11 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[0].styles[0]": "MaxHeight=160",
   "controlStyles[0].styles[1]": "MinHeight=100",
   "controlStyles[1].target": "Border#AcrylicOverlay",
-  "controlStyles[1].styles[0]": "Height=3"
+  "controlStyles[1].styles[0]": "Height=3",
+  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion",
+  "controlStyles[2].styles[0]": "Visibility=Collapsed",
+  "controlStyles[3].target": "Grid#RightCompanionContainerGrid",
+  "controlStyles[3].styles[0]": "Visibility=Collapsed"
 }
 ```
 </details>
