@@ -14,7 +14,13 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 **Installation:**
 * Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher).
 * Open *"Properties (ExplorerPatcher)"* via the Start menu or right-click the taskbar > *"Properties"*.
+<img width="375" height="300" alt="Windows 11-2025-11-13-22-22-34" src="https://github.com/user-attachments/assets/8ff2d59c-882a-4862-9274-56192b891916" />
+<img width="360" height="300" alt="Untitledsffdsdd" src="https://github.com/user-attachments/assets/1a6d173e-fa7a-4948-a972-93da86b0cd51" />
+
+
 * Go to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
+<img width="682" height="450" alt="FGG" src="https://github.com/user-attachments/assets/a6209e0d-8285-4d52-bd97-fd1d6c279b3b" />
+
 
 > [!IMPORTANT]
 > You must set *"Corner preference"* to *"Not rounded"* in the *"Start menu"* page, as the theme rounds the Start menu and makes it float instead of ExplorerPatcher.
@@ -27,12 +33,13 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Items may not align/center correctly on higher DPIs.
 * User flyout can only show 4 users.
 * *"Pinned tiles"* and *"All apps"* buttons will stick to the navigation pane for a split second after the pane dismisses.
-* Tiles dragged from the applist will have sharp corners.
+* Tiles dragged from the pinned/applist section will have sharp corners and broken background.
 
 ## Unsupported configurations/settings
 * All versions of Windows 10.
 * Light mode.
 * *"Show accent color on Start and taskbar"* enabled.
+* *"Show more tiles on Start"* enabled.
 * Fullscreen Start menu.
 * Languages other than en-US/UK.
 
@@ -113,7 +120,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[22].target": "TextBlock#StatusMessage",
     "controlStyles[22].styles[0]": "Margin=20,0,0,0",
     "controlStyles[22].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[2].styles[2]": "MinWidth=253",
+    "controlStyles[2].styles[2]": "Width=253",
     "controlStyles[23].target": "Rectangle#SelectionRectangle",
     "controlStyles[23].styles[0]": "RadiusX=2",
     "controlStyles[23].styles[1]": "RadiusY=2",
@@ -425,7 +432,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[107].target": "MenuFlyoutItem[AutomationProperties.AutomationId=ClearList] > Grid",
     "controlStyles[107].styles[0]": "Height=28",
     "controlStyles[50].styles[5]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"37.5\" /></TransitionCollection>",
-    "controlStyles[1].styles[3]": "Margin=3,0,0,-2",
+    "controlStyles[1].styles[3]": "Margin=3,0,0,-6",
     "controlStyles[95].styles[1]": "Background@Pressed:=$buttonNormal",
     "controlStyles[60].styles[3]": "Background@Pressed:=$buttonNormal",
     "controlStyles[59].styles[4]": "BorderBrush:=",
@@ -554,9 +561,8 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[130].target": "Border#NameTextBoxHost > TextBox > Grid > Border#BorderElement",
     "controlStyles[130].styles[0]": "BorderThickness=0,0,0,1.5",
     "controlStyles[130].styles[1]": "CornerRadius=4",
-    "controlStyles[130].styles[2]": "MinWidth=256",
-    "controlStyles[130].styles[3]": "Height=28",
-    "controlStyles[130].styles[4]": "BorderBrush:=$accentButtonNormal",
+    "controlStyles[130].styles[2]": "Height=28",
+    "controlStyles[130].styles[3]": "BorderBrush:=$accentButtonNormal",
     "controlStyles[131].target": "Grid#MainGrid@FocusStates > Rectangle#BackgroundElement",
     "controlStyles[131].styles[0]": "Fill@FocusState_Hover:=$buttonNormal",
     "controlStyles[131].styles[1]": "Fill@FocusState_None=Transparent",
@@ -572,8 +578,15 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[74].styles[6]": "Fill@PointerOverSelected:=$accentButtonNormal",
     "controlStyles[132].target": "MenuFlyoutItem[Text=Don't show in this list] > Grid",
     "controlStyles[132].styles[0]": "Height=28",
-    "controlStyles[130].styles[5]": "MaxWidth=360",
-    "controlStyles[53].styles[3]": "CornerRadius=8"
+    "controlStyles[53].styles[3]": "CornerRadius=8",
+    "controlStyles[130].styles[4]": "Width=256",
+    "controlStyles[52].styles[4]": "CornerRadius=8",
+    "controlStyles[133].target": "Grid#MainGrid@FocusStates > Grid > Border#NameTextBlockHost",
+    "controlStyles[133].styles[0]": "BorderThickness=0,0,0,1.5",
+    "controlStyles[133].styles[1]": "BorderBrush@FocusState_Hover:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0.96\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeHighColor}\" />",
+    "controlStyles[133].styles[2]": "CornerRadius=4",
+    "controlStyles[133].styles[3]": "Height=28",
+    "controlStyles[133].styles[4]": "BorderBrush@FocusState_HoverPlaceholder:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0.96\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeHighColor}\" />"
 }
 ```
 </details>
