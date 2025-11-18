@@ -34,6 +34,7 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * User flyout can only show 4 users.
 * *"Pinned tiles"* and *"All apps"* buttons will stick to the navigation pane for a split second after the pane dismisses.
 * Tiles dragged from the pinned/applist section will have sharp corners and broken background.
+* Right-clicking the group name textbox in edit mode shows a Metro context menu, which cannot be styled (yet).
 
 ## Unsupported configurations/settings
 * All versions of Windows 10.
@@ -178,7 +179,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[36].styles[0]": "FontFamily=$fontFamily",
     "controlStyles[36].styles[1]": "FontSize=14",
     "controlStyles[34].styles[1]": "FontSize=15",
-    "controlStyles[37].target": "Button#CancelButton > Grid#RootGrid@CommonStates",
+    "controlStyles[37].target": "Button#CancelButton > Grid@CommonStates > ContentPresenter",
     "controlStyles[37].styles[0]": "Background@Normal:=$accentButtonNormal",
     "controlStyles[37].styles[1]": "Background@PointerOver:=$accentButtonPointerOver",
     "controlStyles[37].styles[2]": "Background@Pressed:=$accentButtonPressed",
@@ -586,7 +587,9 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[133].styles[1]": "BorderBrush@FocusState_Hover:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0.96\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeHighColor}\" />",
     "controlStyles[133].styles[2]": "CornerRadius=4",
     "controlStyles[133].styles[3]": "Height=28",
-    "controlStyles[133].styles[4]": "BorderBrush@FocusState_HoverPlaceholder:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0.96\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeHighColor}\" />"
+    "controlStyles[133].styles[4]": "BorderBrush@FocusState_HoverPlaceholder:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0.96\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeHighColor}\" />",
+    "controlStyles[134].target": "StackPanel > Button#DeleteButton > Grid > ContentPresenter",
+    "controlStyles[134].styles[0]": "BorderBrush:="
 }
 ```
 </details>
