@@ -1,6 +1,6 @@
 # ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start menu)
 
-A recreation of the Sun Valley Start menu for the Windows 10 Start menu running on Windows 11.
+A recreation of the Sun Valley Start Menu for Windows 11.
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
@@ -34,14 +34,14 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * User flyout can only show 4 users.
 * *"Pinned tiles"* and *"All apps"* buttons will stick to the navigation pane for a split second after the pane dismisses.
 * Tiles dragged from the pinned/applist section will have sharp corners and broken background.
-* Right-clicking the group name textbox in edit mode shows a Metro context menu, which cannot be styled (yet).
+* Right-clicking the group name textbox in edit mode shows a Metro-styled context menu, which cannot be styled (yet).
 
 ## Unsupported configurations/settings
 * All versions of Windows 10.
 * Light mode.
 * *"Show accent color on Start and taskbar"* enabled.
-* *"Show more tiles on Start"* enabled.
-* Fullscreen Start menu.
+* *"Show more tiles on Start"* enabled (ExplorerPatcher).
+* Fullscreen Start menu (ExplorerPatcher).
 * Languages other than en-US/UK.
 
 ## Manual installation
