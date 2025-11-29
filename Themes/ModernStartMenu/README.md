@@ -34,7 +34,7 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * User flyout can only show 4 users.
 * *"Pinned tiles"* and *"All apps"* buttons will stick to the navigation pane for a split second after the pane dismisses.
 * Tiles dragged from the pinned/applist section will have sharp corners and broken background.
-* Right-clicking the group name textbox in edit mode shows a Metro-styled context menu, which cannot be styled (yet).
+* On 21H2, right-clicking the group name textbox in edit mode shows a Metro-styled context menu, which cannot be styled (yet).
 
 ## Unsupported configurations/settings
 * All versions of Windows 10.
