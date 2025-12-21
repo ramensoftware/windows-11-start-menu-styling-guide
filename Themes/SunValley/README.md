@@ -19,7 +19,7 @@ which included:
 ### Search Menu
 ![Screenshot](screenshot-search.png)
 ### Copilot Search Menu
-![Screenshot](screenshot-cortana.png)
+![Screenshot](screenshot-search2.png)
 
 ## Theme selection
 
