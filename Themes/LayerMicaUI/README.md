@@ -301,11 +301,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
   <details>
   <summary> Styles to Modify (click to expand)</summary>
 
-  ```md
-  **Target:** Windows.UI.Xaml.Controls.Grid#FrameRoot
-  **Style[0]:** Height=auto
-  **Styles[1]:** MinHeight=520
-  **Styles[2]:** MaxHeight=720
-  ```
+```md
+ Target: Windows.UI.Xaml.Controls.Grid#FrameRoot
+ Style[0]: Height=auto
+ Styles[1]: MinHeight=520
+ Styles[2]: MaxHeight=720
+```
 
   </details>
