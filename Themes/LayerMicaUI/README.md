@@ -295,17 +295,17 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 
 - **Issue-2:** The Start Menu appears too tall on larger displays.
-- **Fix:** Modify the value of `Height=..` for a custom setting.
+-  **Fix:** Modify the value of `Height=..` for a custom setting.
   **Note:** *To mitigate this issue to an extent, MaxHeight has been included in the theme. If you want the start menu to look taller, adjust only the `MaxHeight=..` values.*
   
   <details>
   <summary> Styles to Modify (click to expand)</summary>
 
-```md
- Target: Windows.UI.Xaml.Controls.Grid#FrameRoot
- Style[0]: Height=auto
- Styles[1]: MinHeight=520
- Styles[2]: MaxHeight=720
-```
+  ```md
+  Target: Windows.UI.Xaml.Controls.Grid#FrameRoot
+  Style[0]: Height=auto
+  Styles[1]: MinHeight=520
+  Styles[2]: MaxHeight=720
+  ```
 
   </details>
