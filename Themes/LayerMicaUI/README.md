@@ -282,6 +282,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
   <details>
   <summary> Styles to Modify (click to expand)</summary>
+  
   ```
   Target: StartDocked.PowerOptionsView
   Styles: Margin=0,-1255,-35,0
@@ -289,6 +290,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   Target: StartDocked.UserTileView
   Styles: Margin=390,-1255,-30,0
   ```
+
   </details>
 
 
@@ -298,10 +300,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
   
 <details>
 <summary> Styles to Modify (click to expand)</summary>
-```
-Target: Windows.UI.Xaml.Controls.Grid#FrameRoot
-Style[0]: Height=auto
-Styles[1]: MinHeight=520
-Styles[2]: MaxHeight=720
-```
+    
+ ```
+ Target: Windows.UI.Xaml.Controls.Grid#FrameRoot
+ Style[0]: Height=auto
+ Styles[1]: MinHeight=520
+ Styles[2]: MaxHeight=720
+ ```
+
 </details>
