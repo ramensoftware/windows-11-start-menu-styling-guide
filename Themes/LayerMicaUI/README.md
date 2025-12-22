@@ -283,10 +283,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   <details>
   <summary> Styles to Modify (click to expand)</summary>
   
-  ```
+  ```md
   Target: StartDocked.PowerOptionsView
   Styles: Margin=0,-1255,-35,0
-  
+
   Target: StartDocked.UserTileView
   Styles: Margin=390,-1255,-30,0
   ```
@@ -298,14 +298,14 @@ The theme styles can also be imported manually. To do that, follow these steps:
 - **Fix:** Modify the value of `Height=..` for a custom setting.
   **Note:** *To mitigate this issue to an extent, MaxHeight has been included in the theme. If you want the start menu to look taller, adjust only the `MaxHeight=..` values.*
   
-<details>
-<summary> Styles to Modify (click to expand)</summary>
-    
- ```
- Target: Windows.UI.Xaml.Controls.Grid#FrameRoot
- Style[0]: Height=auto
- Styles[1]: MinHeight=520
- Styles[2]: MaxHeight=720
- ```
+  <details>
+  <summary> Styles to Modify (click to expand)</summary>
 
-</details>
+  ```md
+  **Target:** Windows.UI.Xaml.Controls.Grid#FrameRoot
+  **Style[0]:** Height=auto
+  **Styles[1]:** MinHeight=520
+  **Styles[2]:** MaxHeight=720
+  ```
+
+  </details>
