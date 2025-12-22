@@ -282,19 +282,19 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
   <details>
   <summary> Styles to Modify (click to expand)</summary>
-
-  Target: `StartDocked.PowerOptionsView`
+  ```
+  Target: StartDocked.PowerOptionsView`
   Styles: `Margin=0,-1255,-35,0`
   
   Target: `StartDocked.UserTileView`
   Styles: `Margin=390,-1255,-30,0`
-  
+  ```
   </details>
 
 
 - **Issue-2:** The Start Menu appears too tall on larger displays.
 - **Fix:** Modify the value of `Height=..` for a custom setting.
-  **Note:** *To mitigate this issue to an extent, MaxHeight has been included in the theme. If you want the start menu to look taller, adjust just the `MaxHeight=..` values.*
+  **Note:** *To mitigate this issue to an extent, MaxHeight has been included in the theme. If you want the start menu to look taller, adjust only the `MaxHeight=..` values.*
   
 <details>
 <summary> Styles to Modify (click to expand)</summary>
