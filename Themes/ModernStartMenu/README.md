@@ -568,8 +568,9 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[121].target": "Grid#ContentRoot",
     "controlStyles[121].styles[0]": "BorderThickness=1,0,0,0",
     "controlStyles[121].styles[1]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SystemColorButtonTextColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.4\" FallbackColor=\"#141414\" />",
-    "controlStyles[121].styles[2]": "Height=638",
-    "controlStyles[59].styles[5]": "MinWidth=208"
+    "controlStyles[121].styles[2]": "Height:=",
+    "controlStyles[59].styles[5]": "MinWidth=208",
+    "controlStyles[121].styles[3]": "Margin=0,1,0,1"
 }
 ```
 </details>
