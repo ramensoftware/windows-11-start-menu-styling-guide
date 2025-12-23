@@ -109,9 +109,11 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[28].target": "StartDocked.AppListView",
   "controlStyles[28].styles[0]": "Margin=15,0,-15,0",
   "controlStyles[2].styles[0]": "//MaxHeight=504",
-  "controlStyles[29].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
-  "controlStyles[29].styles[0]": "Height=650",
-  "controlStyles[29].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />"
+  "controlStyles[29].target": "Grid#MainMenu > Grid#MainContent > Grid",
+  "controlStyles[29].styles[0]": "Canvas.ZIndex=1",
+  "controlStyles[30].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
+  "controlStyles[30].styles[0]": "Height=650",
+  "controlStyles[30].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />"
 }
 ```
 </details>

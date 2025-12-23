@@ -104,9 +104,11 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[26].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
   "controlStyles[26].styles[0]": "Height=650",
   "controlStyles[26].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />",
-  "controlStyles[27].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer",
-  "controlStyles[27].styles[0]": " MaxHeight=260",
-  "controlStyles[27].styles[1]": "ScrollViewer.VerticalScrollMode=2",
+  "controlStyles[27].target": "Grid#MainMenu > Grid#MainContent > Grid",
+  "controlStyles[27].styles[0]": "Canvas.ZIndex=1",
+  "controlStyles[28].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer",
+  "controlStyles[28].styles[0]": " MaxHeight=260",
+  "controlStyles[28].styles[1]": "ScrollViewer.VerticalScrollMode=2",
   "controlStyles[12].styles[4]": "Style:="
 }
 ```

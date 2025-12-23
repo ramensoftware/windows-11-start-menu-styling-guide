@@ -99,7 +99,9 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[25].styles[1]": "Margin=0,15,0,-15",
   "controlStyles[26].target": "StartMenu.CategoryControl",
   "controlStyles[26].styles[0]": "Margin=-15,0-15,0",
-  "controlStyles[26].styles[1]": "RenderTransform:=<TranslateTransform X=\"24\" />"
+  "controlStyles[26].styles[1]": "RenderTransform:=<TranslateTransform X=\"24\" />",
+  "controlStyles[27].target": "Grid#MainMenu > Grid#MainContent > Grid",
+  "controlStyles[27].styles[0]": "Canvas.ZIndex=1"
 }
 ```
 </details>

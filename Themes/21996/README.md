@@ -1,4 +1,7 @@
-# 21996 Start & Search theme for Windows 11 Start Menu Styler
+# 21996 theme for Windows 11 Start Menu Styler
+
+> [!NOTE]
+> This theme was superseded by the [SunValley](/Themes/SunValley/README.md) theme.
 
 This theme tries to recreate the design that the Windows 11 Start menu and search menu had on early Windows 11 builds,
 which included:

@@ -95,6 +95,8 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[23].target": "Grid#TopLevelSuggestionsRoot",
   "controlStyles[23].styles[0]": "Visibility=Collapsed",
   "controlStyles[17].styles[4]": "Style:=",
+  "controlStyles[25].target": "Grid#MainMenu > Grid#MainContent > Grid",
+  "controlStyles[25].styles[0]": "Canvas.ZIndex=1",
   "controlStyles[24].target": "StartMenu.CategoryControl",
   "controlStyles[24].styles[0]": "Margin=20,20,-20,-20"
 }
