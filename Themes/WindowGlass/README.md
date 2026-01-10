@@ -277,6 +277,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[53].styles[0]": "Width=700",
   "controlStyles[53].styles[1]": "Height=700",
   "controlStyles[53].styles[2]": "Margin=10",
+  "controlStyles[54].target": "Windows.UI.Xaml.Controls.MenuFlyoutItem",
+  "controlStyles[54].styles[0]": "CornerRadius=10",
+  "controlStyles[54].styles[1]": "Margin=2,2,2,2",
   "disableNewStartMenuLayout": 0,
   "webContentStyles[0].target": "",
   "webContentStyles[0].styles[0]": "",
@@ -304,6 +307,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ## Additional theme variant
 This theme also includes a minimal version of the Start menu with the Phone Link companion removed.
+
 ![Minimal](Start_Menu_Minimal.png)
 
 <details>
@@ -534,6 +538,9 @@ This theme also includes a minimal version of the Start menu with the Phone Link
   "controlStyles[58].target": "Windows.UI.Xaml.Controls.GridView#RecommendedList > Border > Windows.UI.Xaml.Controls.ScrollViewer > Border > Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem",
   "controlStyles[58].styles[0]": "MaxWidth=310",
   "controlStyles[58].styles[1]": "Width=310",
+  "controlStyles[59].target": "Windows.UI.Xaml.Controls.MenuFlyoutItem",
+  "controlStyles[59].styles[0]": "CornerRadius=10",
+  "controlStyles[59].styles[1]": "Margin=2,2,2,2",
   "styleConstants[0]": "Glass=<WindhawkBlur BlurAmount=\"3\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.7\" />",
   "styleConstants[1]": "Frosted=<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.7\" />",
   "styleConstants[2]": "Acrylic=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" />",
