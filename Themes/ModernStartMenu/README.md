@@ -1,6 +1,6 @@
 # ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start menu)
 
-A recreation of the Sun Valley Start Menu for Windows 11.
+A Fluent Start Menu theme for Windows 10 Start menu on Windows 11.
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
@@ -23,7 +23,7 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 
 
 > [!IMPORTANT]
-> You must set *"Corner preference"* to *"Not rounded"* in the *"Start menu"* page, as the theme rounds the Start menu and makes it float instead of ExplorerPatcher.
+> You may see *"Corner preference"* on the same page. Do not change it, ModernStartMenu will handle the corners instead.
 
 ## Bugs
 * Group name textbox and text are both black in edit mode, causing readability issues.
@@ -31,9 +31,9 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Holding the Delete button in the group name textbox will show a fake Delete icon.
 * Legacy Windows 10 effects (Reveal, and 3D push) are still present.
 * Items may not align/center correctly on higher DPIs.
-* *"Pinned tiles"* and *"All apps"* buttons will stick to the navigation pane for a split second after the pane dismisses.
 * Tiles dragged from the applist section will have a broken background.
 * Right-clicking the group name textbox in edit mode shows a Metro-styled context menu, which cannot be styled (yet).
+
 
 ## Unsupported configurations/settings
 * All versions of Windows 10.
