@@ -568,7 +568,10 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[123].target": "TextBlock#GlyphElement",
     "controlStyles[123].styles[0]": "Foreground=White",
     "controlStyles[124].target": "ScrollViewer#ContentElement",
-    "controlStyles[124].styles[0]": "Foreground=White"
+    "controlStyles[124].styles[0]": "Foreground=White",
+    "controlStyles[122].styles[1]": "Margin=-1,-2,0,-2",
+    "controlStyles[125].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > Grid > Border",
+    "controlStyles[125].styles[0]": "BorderThickness=1"
 }
 ```
 </details>
