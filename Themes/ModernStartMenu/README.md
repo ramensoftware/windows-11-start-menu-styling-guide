@@ -570,7 +570,9 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[124].styles[0]": "Foreground=White",
     "controlStyles[122].styles[1]": "Margin=-1,-2,0,-2",
     "controlStyles[125].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > Grid > Border",
-    "controlStyles[125].styles[0]": "BorderThickness=1"
+    "controlStyles[125].styles[0]": "BorderThickness=1",
+    "controlStyles[126].target": "TextBlock#Badge",
+    "controlStyles[126].styles[0]": "FontFamily=$fontFamily"
 }
 ```
 </details>
