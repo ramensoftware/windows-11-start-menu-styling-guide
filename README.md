@@ -76,7 +76,7 @@ guide](https://github.com/ramensoftware/windows-11-notification-center-styling-g
 
 ### Finding targets
 
-[How to find targets using UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/uwpspy.md).
+[How to find targets using UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/Guides/uwpspy.md).
 
 ### Missing customizations
 
