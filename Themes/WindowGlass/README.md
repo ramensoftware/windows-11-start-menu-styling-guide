@@ -123,6 +123,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[11].styles[1]": "BorderBrush:=$BorderBrush",
   "controlStyles[11].styles[2]": "BorderThickness=$BorderThickness",
   "controlStyles[11].styles[3]": "CornerRadius=$CornerRadius",
+  "controlStyles[11].styles[4]": "Margin=5",
   "controlStyles[12].target": "Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Border#AcrylicBorder",
   "controlStyles[12].styles[0]": "Background:=$ElementBG",
   "controlStyles[12].styles[1]": "BorderBrush:=$ElementBorderBrush",
