@@ -114,7 +114,7 @@ Start Menu Styler mod. The following themes are available:
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 | [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
 | [Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/README.md) | [![Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/screenshot-small.png)](Themes/Oversimplified&Accentuated/screenshot.png)
-| [Liquid Glass](Themes/LiquidGlass/README.md) | [![LiquidGlass](Themes/LuquidGlass/preview-small.png)](Themes/LuquidGlass/Preview-1.png)
+| [Liquid Glass](Themes/LiquidGlass/README.md) | [![Liquid Glass](Themes/LiquidGlass/preview-small.png)](Themes/LiquidGlass/Preview-1.png)
 
 ### Windows 10 Start menu themes
 
