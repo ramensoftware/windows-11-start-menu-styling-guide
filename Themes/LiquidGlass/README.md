@@ -9,8 +9,8 @@ Follow the instructions listed below to install and setup the Windows Glass Star
   * [Windows 11 Start Menu Styler](https://windhawk.net/mods/windows-11-start-menu-styler)
 
 * **Fonts**: 
-  * [vivo Sans Clock Stencil Regular](/vivoSansClockStencil.ttf)
-  * [vivo Sans EN VF](/vivoSansENVF.ttf)
+  * [vivo Sans Clock Stencil Regular](vivoSansClockStencil.ttf)
+  * [vivo Sans EN VF](vivoSansENVF.ttf)
 
 ---
 
