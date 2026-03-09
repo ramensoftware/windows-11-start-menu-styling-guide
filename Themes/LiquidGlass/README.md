@@ -16,7 +16,7 @@ Follow the instructions listed below to install and setup the Windows Glass Star
 </div>
 
 > [!NOTE]
-> This theme supports both the new and old start menu layouts and features a clean glass UI with the Phone Link widget disabled to improve appearance and privacy.
+> This theme is built for the new start menu layout.
 
 ## Theme selection
 
