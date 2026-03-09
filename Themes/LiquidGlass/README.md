@@ -1,7 +1,4 @@
-# Start Menu
-
-## Installation
-Follow the instructions listed below to install and setup the Windows Glass Start Menu theme on your system.
+# Liquid Glass
 
 ### Requirements
 
@@ -10,10 +7,10 @@ Follow the instructions listed below to install and setup the Windows Glass Star
 
 ---
 
-<img src="Preview-1.png" width="100%" height="auto" />
+<img src="Preview.png" width="100%" height="auto" />
 
 > [!NOTE]
-> This theme is built for the new start menu layout.
+> This theme is built for the new redesigned Windows 11 start menu
 
 ## Theme selection
 
