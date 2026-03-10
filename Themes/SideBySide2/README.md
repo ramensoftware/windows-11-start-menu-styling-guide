@@ -125,8 +125,6 @@ that is slowly rolling out in the 25H2 update.
 
 ```json
 {
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
   "controlStyles[0].styles[0]": "Visibility=Visible",
   "controlStyles[0].styles[1]": "Width=510",
