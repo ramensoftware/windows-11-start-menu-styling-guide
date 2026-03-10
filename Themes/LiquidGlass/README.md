@@ -1,16 +1,11 @@
-# Liquid Glass
+# LiquidGlass theme for Windows 11 Start Menu Styler
 
-### Requirements
+**Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
-* **Windhawk Mods**:  
-  * [Windows 11 Start Menu Styler](https://windhawk.net/mods/windows-11-start-menu-styler)
+![Screenshot](screenshot.png)
 
----
-
-<img src="Preview.png" width="100%" height="auto" />
-
-> [!NOTE]
-> This theme is built for the new redesigned Windows 11 start menu
+> [!IMPORTANT]
+> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
 
 ## Theme selection
 
@@ -34,8 +29,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ```json
 {
-  "theme": "",
-  "disableNewStartMenuLayout": 0,
   "controlStyles[0].target": "Border#AcrylicOverlay",
   "controlStyles[0].styles[0]": "Visibility=1",
   "controlStyles[1].target": "Border#AcrylicBorder",
@@ -166,14 +159,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[27].styles[1]": "RenderTransformOrigin=0.5,0.5",
   "webContentStyles[0].target": "*",
   "webContentStyles[0].styles[0]": "transition: background-color 0.083s ease-in-out !important",
-  "webContentCustomJs": "",
   "styleConstants[0]": "borderColor=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#50808080\" Offset=\"1\" /></LinearGradientBrush>\"",
   "styleConstants[1]": "borderColor2=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>",
   "styleConstants[2]": "background=<WindhawkBlur BlurAmount=\"10\" TintColor=\"#25323232\" TintOpacity=\"0.2\" />",
   "styleConstants[3]": "borderThickness=0.3,1,0.3,0.3",
   "styleConstants[4]": "borderThickness2=0.3,0.3,0.3,1",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": "",
   "styleConstants[5]": "cornerRadius=6",
   "styleConstants[6]": "cornerRadius2=4",
   "controlStyles[1].styles[3]": "CornerRadius=$cornerRadius",
@@ -201,5 +191,4 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[18].styles[11]": "BorderThickness@Pressed=$borderThickness2"
 }
 ```
-
 </details>
