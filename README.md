@@ -76,7 +76,7 @@ guide](https://github.com/ramensoftware/windows-11-notification-center-styling-g
 
 ### Finding targets
 
-[How to find targets using UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/uwpspy.md).
+[How to find targets using UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/Guides/uwpspy.md).
 
 ### Missing customizations
 
@@ -108,12 +108,14 @@ Start Menu Styler mod. The following themes are available:
 | [Windows11_Metro10Minimal](Themes/Windows11_Metro10Minimal/README.md) | [![Windows11_Metro10Minimal](Themes/Windows11_Metro10Minimal/screenshot-small.png)](Themes/Windows11_Metro10Minimal/screenshot.png)
 | [Everblush](Themes/Everblush/README.md) | [![Everblush](Themes/Everblush/screenshot-small.png)](Themes/Everblush/screenshot.png)
 | [SunValley](Themes/SunValley/README.md) | [![SunValley](Themes/SunValley/screenshot-small.png)](Themes/SunValley/screenshot.png)
+| [SunValley (Legacy)](Themes/21996/README.md) | [![SunValley (Legacy)](Themes/21996/screenshot-small.png)](Themes/21996/screenshot.png)
 | [UniMenu](Themes/UniMenu/README.md) | [![UniMenu](Themes/UniMenu/screenshot-small.png)](Themes/UniMenu/screenshot.png)
 | [LegacyFluent](Themes/LegacyFluent/README.md) | [![LegacyFluent](Themes/LegacyFluent/screenshot-small.png)](Themes/LegacyFluent/screenshot.png)
 | [OnlySearch](Themes/OnlySearch/README.md) | [![OnlySearch](Themes/OnlySearch/screenshot-small.png)](Themes/OnlySearch/screenshot.png)
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 | [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
 | [Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/README.md) | [![Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/screenshot-small.png)](Themes/Oversimplified&Accentuated/screenshot.png)
+| [Liquid Glass](Themes/LiquidGlass/README.md) | [![Liquid Glass](Themes/LiquidGlass/screenshot-small.png)](Themes/LiquidGlass/screenshot.png)
 | [Windows10X](Themes/Windows10X/README.md) | [![Window10X](Themes/Windows10X/screenshot-small.png)](Themes/Windows10X/screenshot.png)
 
 ### Windows 10 Start menu themes
