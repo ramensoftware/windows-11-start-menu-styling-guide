@@ -1,4 +1,4 @@
-# Sun Valley Start & Search theme for Windows 11 Start Menu Styler
+# SunValley theme for Windows 11 Start Menu Styler
 
 This theme tries to recreate the design that the Windows 11 Start menu and search menu had on early Windows 11 builds,
 which included:
@@ -13,9 +13,9 @@ which included:
 
 ## Screenshots
 ### Old Windows 11 Start Menu:
-![Screenshot](screenshot.png)
+![Screenshot](screenshot-classic.png)
 ### New Windows 11 Start Menu
-![Screenshot](screenshot2.png)
+![Screenshot](screenshot.png)
 ### Search Menu
 ![Screenshot](screenshot-search.png)
 ### Copilot Search Menu
@@ -67,9 +67,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
 "controlStyles[5].target":"Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl > Grid@SearchBoxStates", 
 "controlStyles[5].styles[0]":"Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" />", 
 "controlStyles[5].styles[1]":"BorderThickness=1", 
-"controlStyles[5].styles[2]":"BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.2\" />", "controlStyles[6].target":"Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer", 
+"controlStyles[5].styles[2]":"BorderBrush:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.2\" />",
+"controlStyles[6].target":"Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer", 
 "controlStyles[5].styles[3]":"CornerRadius=4", 
-"controlStyles[6].styles[0]":"Visibility=Collapsed", "controlStyles[7].target":"Button#SearchGlyphContainer", 
+"controlStyles[6].styles[0]":"Visibility=Collapsed",
+"controlStyles[7].target":"Button#SearchGlyphContainer", 
 "controlStyles[7].styles[0]":"Visibility=Visible", 
 "controlStyles[7].styles[1]":"Width=35", 
 "controlStyles[7].styles[2]":"Margin=2,0,-11,0", 
