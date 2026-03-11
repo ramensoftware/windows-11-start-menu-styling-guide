@@ -37,7 +37,7 @@ that is slowly rolling out in the 25H2 update.
 
 ```json
 {
-"theme": "",
+  "theme": "",
   "disableNewStartMenuLayout": 0,
   "webContentCustomJs": "",
   "controlStyles[0].target": "Grid#ShowMoreSuggestions",
