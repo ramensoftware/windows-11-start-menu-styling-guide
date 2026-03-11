@@ -126,7 +126,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[12].styles[2]": "BorderThickness=$BorderThickness",
   "controlStyles[12].styles[3]": "CornerRadius=$CornerRadius",
   "controlStyles[12].styles[4]": "Margin=2",
-  "controlStyles[12].styles[5]": "Padding=200,0,0,0",
+  "controlStyles[12].styles[5]": "Padding=0",
   "controlStyles[13].target": "Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Border#AcrylicBorder",
   "controlStyles[13].styles[0]": "Background:=$ElementBG",
   "controlStyles[13].styles[1]": "BorderBrush:=$ElementBorderBrush",
@@ -290,7 +290,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[54].target": "StartMenu.PinnedList#StartMenuPinnedList",
   "controlStyles[54].styles[0]": "Width=400",
   "controlStyles[54].styles[1]": "Height=450",
-  "controlStyles[54].styles[2]": "Margin=-0,0,0,80",
+  "controlStyles[54].styles[2]": "Margin=0,0,0,30",
   "controlStyles[55].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer",
   "controlStyles[55].styles[0]": "ScrollViewer.VerticalScrollMode=2",
   "controlStyles[55].styles[1]": "MaxHeight:=330",
@@ -309,7 +309,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[57].styles[3]": "CornerRadius=$ElementCornerRadius",
   "// All Apps Section//": "",
   "controlStyles[58].target": "Windows.UI.Xaml.Controls.GridView#AllAppsGrid > Windows.UI.Xaml.Controls.ItemsWrapGrid",
-  "controlStyles[58].styles[0]": "Visibility=0"
+  "controlStyles[58].styles[0]": "Visibility=0",
+  "controlStyles[59].target": "Windows.UI.Xaml.Controls.GridView#AllAppsGrid",
+  "controlStyles[59].styles[0]": "Margin=0,15,0,0",
+  "controlStyles[60].target": "Windows.UI.Xaml.Controls.Grid#TopLevelHeader > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Button",
+  "controlStyles[60].styles[0]": "Visibility=1"
 }
 ```
 </details>
