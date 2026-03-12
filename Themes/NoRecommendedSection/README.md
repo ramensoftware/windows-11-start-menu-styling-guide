@@ -49,11 +49,13 @@ variant that keeps the Recommended button below.*
   "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
   "controlStyles[1].styles[0]": "Visibility=Collapsed",
   "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
-  "controlStyles[2].styles[0]": "Visibility=Collapsed",
-  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
+  "controlStyles[2].styles[0]": "Height=0",
+  "controlStyles[3].target": "Windows.UI.Xaml.Controls.GridView#RecommendedList",
   "controlStyles[3].styles[0]": "Visibility=Collapsed",
-  "controlStyles[4].target": "StartMenu.PinnedList",
-  "controlStyles[4].styles[0]": "Height=504"
+  "controlStyles[4].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
+  "controlStyles[4].styles[0]": "Visibility=Collapsed",
+  "controlStyles[5].target": "StartMenu.PinnedList",
+  "controlStyles[5].styles[0]": "Height=504"
 }
 ```
 </details>
