@@ -293,7 +293,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[54].styles[2]": "Margin=0,0,0,30",
   "controlStyles[55].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer",
   "controlStyles[55].styles[0]": "ScrollViewer.VerticalScrollMode=2",
-  "controlStyles[55].styles[1]": "MaxHeight:=330",
+  "controlStyles[55].styles[1]": "MaxHeight:=348",
   "controlStyles[55].styles[2]": "MinHeight:=100",
   "controlStyles[55].styles[3]": "Width=300",
   "controlStyles[55].styles[4]": "Margin=0,0,60,0",
