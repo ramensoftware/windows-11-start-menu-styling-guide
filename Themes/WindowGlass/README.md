@@ -313,7 +313,15 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[59].target": "Windows.UI.Xaml.Controls.GridView#AllAppsGrid",
   "controlStyles[59].styles[0]": "Margin=0,15,0,0",
   "controlStyles[60].target": "Windows.UI.Xaml.Controls.Grid#TopLevelHeader > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Button",
-  "controlStyles[60].styles[0]": "Visibility=1"
+  "controlStyles[60].styles[0]": "Visibility=1",
+  "// Flyouts//": "",
+  "controlStyles[61].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
+  "controlStyles[61].styles[0]": "Background:=$Frosted",
+  "controlStyles[61].styles[1]": "BorderBrush:=$BorderBrush",
+  "controlStyles[61].styles[2]": "BorderThickness:=$BorderThickness",
+  "controlStyles[61].styles[3]": "CornerRadius:=$ElementCornerRadius",
+  "controlStyles[62].target": "Windows.UI.Xaml.Controls.MenuFlyoutPresenter",
+  "controlStyles[62].styles[0]": "CornerRadius:=$ElementCornerRadius"
 }
 ```
 </details>
