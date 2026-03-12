@@ -194,7 +194,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[48].styles[2]": "Background@Pressed:=$buttonPress",
   "controlStyles[48].styles[3]": "Background@Checked:=$button",
   "controlStyles[48].styles[4]": "Background@CheckedPointerOver:=$buttonHover",
-  "controlStyles[48].styles[5]": "Background@CheckePressed:=$buttonPress",
+  "controlStyles[48].styles[5]": "Background@CheckedPressed:=$buttonPress",
   "controlStyles[48].styles[6]": "BorderThickness=0",
   "controlStyles[49].target": "StartMenu.SearchBoxToggleButton#SearchBoxToggleButton > Grid",
   "controlStyles[49].styles[0]": "BorderThickness=0,0,0,4",
