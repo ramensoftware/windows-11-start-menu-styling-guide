@@ -586,7 +586,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[76].target": "GridView#RecommendedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem",
   "controlStyles[76].styles[0]": "Margin=0",
   "controlStyles[77].target": "GridView#PinnedList > Border > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter",
-  "controlStyles[77].styles[0]": "Height=340",
+  "controlStyles[77].styles[0]": "MinHeight=340",
   "webContentStyles[0].target": "#qfPreviewPane, #qfPreviewPane *, .leftPill::before, #temporaryMessages, .scope-with-background__backButton, #gr11, #pp_Share, #pp_Review, #chatButtonRight, .curatedSettingsGroup, .scope-with-background__rightCaret, #topHitHeader, .userProfileMenuIcon, .scope-tile__button, .additionalInfoText.annotation, #root:not(.zeroInput19H1):not(.fileExplorer) .topResults .openPreviewPaneBtn .iconContent, .openPreviewIcon .iconContent.cortanaFontIcon, #scopesHeader, #scopesHeader *, #gr36, div[data-region=\"TopApps\"], #gr43, .openPreviewPaneBtn, .suggContainer.largerSearchIcon14 .secondaryText",
   "webContentStyles[0].styles[0]": "display: none !important",
   "webContentStyles[0].styles[1]": "visibility: hidden !important",
