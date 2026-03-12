@@ -1,4 +1,4 @@
-# Sun Valley Start & Search theme for Windows 11 Start Menu Styler
+# Windows10X theme for Windows 11 Start Menu Styler
 
 This theme tries to recreate the design from the scrapped Windows 10X OS.
 
@@ -37,9 +37,6 @@ that is slowly rolling out in the 25H2 update.
 
 ```json
 {
-  "theme": "",
-  "disableNewStartMenuLayout": 0,
-  "webContentCustomJs": "",
   "controlStyles[0].target": "Grid#ShowMoreSuggestions",
   "controlStyles[0].styles[0]": "Visibility=1",
   "controlStyles[1].target": "Grid#TopLevelSuggestionsListHeader",
@@ -330,9 +327,7 @@ that is slowly rolling out in the 25H2 update.
   "styleConstants[14]": "textInverse=<SolidColorBrush Color=\"{ThemeResource TextFillColorInverse}\"/>",
   "styleConstants[15]": "acrylic=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\".0\" TintLuminosityOpacity=\".86\"/>",
   "styleConstants[16]": "fakeShadow=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#10000000\" Offset=\"0.84\" /><GradientStop Color=\"#26000000\" Offset=\"0.85\" /><GradientStop Color=\"#00000000\" Offset=\"1.0\" /></LinearGradientBrush>",
-  "styleConstants[17]": "acrylicMenu=<AcrylicBrush TintColor=\"{ThemeResource LayerOnMicaBaseAltFillColorTertiary}\" FallbackColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\".0\" TintLuminosityOpacity=\".75\"/>",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": ""
+  "styleConstants[17]": "acrylicMenu=<AcrylicBrush TintColor=\"{ThemeResource LayerOnMicaBaseAltFillColorTertiary}\" FallbackColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\".0\" TintLuminosityOpacity=\".75\"/>"
 }
 ```
 </details>
@@ -344,8 +339,6 @@ that is slowly rolling out in the 25H2 update.
 
 ```json
 {
-  "theme": "",
-  "disableNewStartMenuLayout": 1,
   "controlStyles[0].target": "Button#CloseAllAppsButton",
   "controlStyles[0].styles[0]": "Margin=0,0,16,0",
   "controlStyles[0].styles[1]": "Padding=16,3,16,3.5",
@@ -627,7 +620,6 @@ that is slowly rolling out in the 25H2 update.
   "webContentStyles[14].styles[0]": "background: transparent !important",
   "webContentStyles[15].target": ".topResults .suggDetailsContainer .primaryText",
   "webContentStyles[15].styles[0]": "margin-bottom: -2px !important",
-  "webContentCustomJs": "",
   "styleConstants[0]": "accent=<SolidColorBrush Color=\"{ThemeResource SystemAccentColor}\"/>",
   "styleConstants[1]": "accentHover=<SolidColorBrush Color=\"{ThemeResource SystemAccentColor}\" Opacity=\".9\"/>",
   "styleConstants[2]": "accentPress=<SolidColorBrush Color=\"{ThemeResource SystemAccentColor}\" Opacity=\".8\"/>",
@@ -643,9 +635,7 @@ that is slowly rolling out in the 25H2 update.
   "styleConstants[12]": "acrylic=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\"/>",
   "styleConstants[13]": "fakeShadow=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#10000000\" Offset=\"0.84\" /><GradientStop Color=\"#26000000\" Offset=\"0.85\" /><GradientStop Color=\"#00000000\" Offset=\"1.0\" /></LinearGradientBrush>",
   "styleConstants[14]": "inputActive=<SolidColorBrush Color=\"{ThemeResource ControlFillColorInputActive}\"/>",
-  "styleConstants[15]": "separator=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" Opacity=\".5\"/>",
-  "resourceVariables[0].variableKey": "",
-  "resourceVariables[0].value": ""
+  "styleConstants[15]": "separator=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" Opacity=\".5\"/>"
 }
 ```
 </details>
