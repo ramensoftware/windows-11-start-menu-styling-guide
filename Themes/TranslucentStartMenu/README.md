@@ -224,10 +224,16 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[22].styles[0]": "CornerRadius=16",
   "controlStyles[22].styles[1]": "Margin=-1",
   "controlStyles[23].target": "Border#DropShadow",
-  "controlStyles[23].styles[0]": "CornerRadius=15",
-  "controlStyles[24].target": "StartDocked.AllAppsGridListViewItem > Grid#ContentBorder@CommonStates",
-  "controlStyles[24].styles[0]": "Background@PointerOver:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15C0C0C0\"/>",
-  "controlStyles[24].styles[1]": "CornerRadius=4",
+  "controlStyles[23].styles[0]": "Visibility=Collapsed",
+  "controlStyles[24].target": "Border#StartDropShadow",
+  "controlStyles[24].styles[0]": "Visibility=Collapsed",
+  "controlStyles[25].target": "Border#RootGridDropShadow",
+  "controlStyles[25].styles[0]": "Visibility=Collapsed",
+  "controlStyles[26].target": "Border#RightCompanionDropShadow",
+  "controlStyles[26].styles[0]": "Visibility=Collapsed",
+  "controlStyles[27].target": "StartDocked.AllAppsGridListViewItem > Grid#ContentBorder@CommonStates",
+  "controlStyles[27].styles[0]": "Background@PointerOver:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15C0C0C0\"/>",
+  "controlStyles[27].styles[1]": "CornerRadius=4",
   "styleConstants[0]": "CommonBgBrush=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#25323232\"/>"
 }
 ```
