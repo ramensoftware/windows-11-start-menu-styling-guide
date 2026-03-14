@@ -153,9 +153,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[36].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton",
   "controlStyles[36].styles[0]": "Margin=12,7,-12,-7",
   "controlStyles[37].target": "Grid#MainMenu > Grid#MainContent > Grid",
-  "controlStyles[37].styles[0]": "Canvas.ZIndex=1",
-  "controlStyles[38].target": "StartDocked.StartMenuCompanion#RightCompanion > Grid#CompanionRoot > Grid#MainContent > Grid#AdaptiveCardContent",
-  "controlStyles[38].styles[0]": "MaxHeight=350"
+  "controlStyles[37].styles[0]": "Canvas.ZIndex=1"
 }
 ```
 </details>
@@ -247,7 +245,9 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[25].styles[0]": "Background:=<SolidColorBrush Color=\"{ThemeResource SystemChromeMediumLowColor}\" Opacity=\"1\"/>",
   "controlStyles[25].styles[1]": "Padding=10,6",
   "controlStyles[25].styles[2]": "Margin=0,0,-35,0",
-  "controlStyles[25].styles[3]": "CornerRadius=15"
+  "controlStyles[25].styles[3]": "CornerRadius=15",
+  "controlStyles[26].target": "StartDocked.StartMenuCompanion#RightCompanion > Grid#CompanionRoot > Grid#MainContent > Grid#AdaptiveCardContent",
+  "controlStyles[26].styles[0]": "MaxHeight=350"
 }
 ```
 </details>
