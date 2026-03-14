@@ -65,7 +65,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "styleConstants[2]": "Acrylic=<WindhawkBlur BlurAmount=\"30\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.8\" />",
   "styleConstants[3]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#60808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#40808080\" Offset=\"1\" /></LinearGradientBrush>",
   "styleConstants[4]": "BorderBrush2=<WindhawkBlur BlurAmount=\"10\" TintColor=\"#909090\" TintOpacity=\"0.3\"/>",
-  "styleConstants[5]": "ClockBG=<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemAccentColorDark2}\" TintOpacity=\"0.8\"/>",
+  "styleConstants[5]": "ClockBG=<SolidColorBrush Color=\"{ThemeResource SystemAccentColor}\" Opacity=\"1\"/>",
   "styleConstants[6]": "BorderThickness=0.3,1,0.3,1",
   "styleConstants[7]": "CornerRadius=35",
   "styleConstants[8]": "SearchBoxRadius=20",
@@ -74,6 +74,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "styleConstants[11]": "ElementCornerRadius=25",
   "styleConstants[12]": "ElementBorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>",
   "styleConstants[13]": "ElementBorderBrush2=<WindhawkBlur BlurAmount=\"30\" TintColor=\"#909090\" TintOpacity=\"0.3\"/>",
+  "styleConstants[14]": "HoverCornerRadius=15",
   "disableNewStartMenuLayout": 0,
   "theme": "",
   "// Lock Screen //": "",
@@ -293,7 +294,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[54].styles[2]": "Margin=0,0,0,30",
   "controlStyles[55].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer",
   "controlStyles[55].styles[0]": "ScrollViewer.VerticalScrollMode=2",
-  "controlStyles[55].styles[1]": "MaxHeight:=348",
+  "controlStyles[55].styles[1]": "MaxHeight:=336",
   "controlStyles[55].styles[2]": "MinHeight:=100",
   "controlStyles[55].styles[3]": "Width=300",
   "controlStyles[55].styles[4]": "Margin=0,0,60,0",
@@ -321,7 +322,15 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[61].styles[2]": "BorderThickness:=$BorderThickness",
   "controlStyles[61].styles[3]": "CornerRadius:=$ElementCornerRadius",
   "controlStyles[62].target": "Windows.UI.Xaml.Controls.MenuFlyoutPresenter",
-  "controlStyles[62].styles[0]": "CornerRadius:=$ElementCornerRadius"
+  "controlStyles[62].styles[0]": "CornerRadius:=$ElementCornerRadius",
+  "controlStyles[63].target": "Windows.UI.Xaml.Controls.Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Grid#RootGrid",
+  "controlStyles[63].styles[0]": "CornerRadius=10",
+  "controlStyles[64].target": "MenuFlyoutItem",
+  "controlStyles[64].styles[0]": "CornerRadius:=$HoverCornerRadius",
+  "controlStyles[64].styles[1]": "Margin=4,0,4,0",
+  "controlStyles[65].target": "ToggleMenuFlyoutItem",
+  "controlStyles[65].styles[0]": "CornerRadius:=$HoverCornerRadius",
+  "controlStyles[65].styles[1]": "Margin=4,0,4,0"
 }
 ```
 </details>
