@@ -52,7 +52,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[6].styles[0]": "Margin=0,-70,0,0",
   "controlStyles[7].target": "GridView#PinnedList",
   "controlStyles[7].styles[0]": "MaxWidth=480",
-  "controlStyles[7].styles[1]": "RenderTransform:=<TranslateTransform X=\"-145\" Y=\"710\"/>",
+  "controlStyles[7].styles[1]": "RenderTransform:=<TranslateTransform X=\"-145\" Y=\"790\"/>",
   "controlStyles[7].styles[2]": "MinHeight=420",
   "controlStyles[7].styles[3]": "MaxHeight=420",
   "controlStyles[8].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid",
@@ -108,8 +108,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[25].target": "Grid#MainMenu > Grid#MainContent > Grid",
   "controlStyles[25].styles[0]": "Canvas.ZIndex=1",
   "controlStyles[26].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer",
-  "controlStyles[26].styles[0]": "MaxHeight=260",
-  "controlStyles[26].styles[1]": "ScrollViewer.VerticalScrollMode=2"
+  "controlStyles[26].styles[0]": "ScrollViewer.VerticalScrollMode=2"
 }
 ```
 </details>
