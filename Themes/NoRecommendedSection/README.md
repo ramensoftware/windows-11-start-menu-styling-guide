@@ -91,7 +91,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[2].styles[0]": "RenderTransform:=<TranslateTransform Y=\"8\"/>",
   "controlStyles[3].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Grid > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
   "controlStyles[3].styles[0]": "Text=Recommended",
-  "controlStyles[4].target": "Grid#TopLevelSuggestionsRoot > Grid[2] ",
+  "controlStyles[4].target": "Grid#TopLevelSuggestionsRoot > Grid[2]",
   "controlStyles[4].styles[0]": "MinHeight=0",
   "controlStyles[5].target": "Grid#TopLevelSuggestionsRoot",
   "controlStyles[5].styles[0]": "Grid.Row=0",

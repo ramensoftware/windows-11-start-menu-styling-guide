@@ -202,7 +202,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[57].styles[0]": "Margin=0,0,-1,0",
   "controlStyles[58].styles[0]": "Visibility=Collapsed",
   "controlStyles[58].target": "Rectangle#TextCaret",
-  "controlStyles[59].target": "Grid#RootGrid@SearchBoxLocationStates ",
+  "controlStyles[59].target": "Grid#RootGrid@SearchBoxLocationStates",
   "controlStyles[59].styles[0]": "Margin@SearchBoxOnBottomWithoutQFMargin=-32,10,32,-10",
   "controlStyles[60].styles[0]": "FontSize=16",
   "controlStyles[60].target": "Grid#RootGrid@SearchBoxLocationStates > Cortana.UI.Views.CortanaRichSearchBox > Grid > TextBlock#PlaceholderTextContentPresenter",

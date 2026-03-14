@@ -246,7 +246,7 @@ that is slowly rolling out in the 25H2 update.
   "webContentStyles[2].styles[0]": "font-family: Segoe UI !important",
   "webContentStyles[3].target": ".cortanaFontIcon, .iconContent",
   "webContentStyles[3].styles[0]": "font-family: Segoe MDL2 Assets !important",
-  "controlStyles[60].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton ",
+  "controlStyles[60].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton",
   "controlStyles[60].styles[0]": "Style:=<Style x:Key=\"RevealButtonStyle\" TargetType=\"Button\" />",
   "controlStyles[61].target": "Button#CloseStartAccessibleButton",
   "controlStyles[61].styles[0]": "Visibility=Collapsed",

@@ -275,7 +275,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[58].styles[0]": "Margin=0,-10,0,0",
   "controlStyles[59].target": "Windows.UI.Xaml.Controls.Grid#AllListHeading > Windows.UI.Xaml.Controls.TextBlock#AllListHeadingText",
   "controlStyles[59].styles[0]": "Visibility=1",
-  "controlStyles[60].target": "StartMenu.CategoryControl > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Border ",
+  "controlStyles[60].target": "StartMenu.CategoryControl > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Border",
   "controlStyles[60].styles[0]": "Background:=$ElementBG",
   "controlStyles[60].styles[1]": "BorderBrush:=$ElementBorderBrush",
   "controlStyles[60].styles[2]": "BorderThickness=$ElementBorderThickness",

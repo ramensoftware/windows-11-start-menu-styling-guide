@@ -213,7 +213,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 "controlStyles[46].styles[5]":"CornerRadius=4", 
 "controlStyles[47].target":"Grid#SearchBoxOnTaskbarGleamContainer > Grid > Image", 
 "controlStyles[47].styles[0]":"Height=40", 
-"controlStyles[48].target":"Cortana.UI.Views.RichComposerBoxControl ", 
+"controlStyles[48].target":"Cortana.UI.Views.RichComposerBoxControl", 
 "controlStyles[48].styles[0]":"Margin=-4,22,-4,0", 
 "controlStyles[49].target":"Cortana.UI.Views.RichComposerBoxControl > Grid > Grid#ComposerBoxOnTaskbarGleamContainer", 
 "controlStyles[49].styles[0]":"Padding=12,6,6,6", 

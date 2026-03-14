@@ -147,7 +147,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[35].styles[2]": "Background=Transparent",
   "controlStyles[35].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".65\" Opacity=\"1\"/>",
   "controlStyles[35].styles[4]": "Padding=-1.5,-1.5,-1.5,-6",
-  "controlStyles[36].target": "StartMenu.StartMenuCompanion#RightCompanion > Grid ",
+  "controlStyles[36].target": "StartMenu.StartMenuCompanion#RightCompanion > Grid",
   "controlStyles[36].styles[0]": "Margin=0",
   "controlStyles[37].target": "Grid#CompanionRoot > Grid#MainContent > Border#AcrylicOverlay",
   "controlStyles[37].styles[0]": "Margin=0,-64,0,-58",
