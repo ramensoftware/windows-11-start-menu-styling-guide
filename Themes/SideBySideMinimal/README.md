@@ -47,6 +47,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[5].styles[0]": "Visibility=Collapsed",
   "controlStyles[6].target": "StartMenu.PinnedList",
   "controlStyles[6].styles[0]": "MinHeight=504",
+  "controlStyles[6].styles[1]": "MaxHeight=504",
   "controlStyles[7].target": "StartMenu.ExpandedFolderList > Grid > Border",
   "controlStyles[7].styles[0]": "Margin=-40,0,40,0",
   "controlStyles[7].styles[1]": "Width=325",
