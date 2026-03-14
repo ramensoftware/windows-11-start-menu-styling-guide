@@ -4,8 +4,11 @@
 
 ![Screenshot](screenshot.png)
 
+## Notes
+* This taskbar theme is designed to be used in dark mode.
+
 ## Suggested Windhawk mods for full theme continuity
-To achieve the full look, install and configure the following Windhawk mods in addition to Taskbar Styler:
+To achieve the full look, install and configure the following Windhawk mods in addition to Windows 11 Start Menu Styler:
 
 - Windows 11 Taskbar Styler
 
