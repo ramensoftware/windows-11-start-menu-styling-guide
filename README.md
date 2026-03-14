@@ -394,6 +394,11 @@ An alternative to Acrylic is the mod's own blur implementation called `WindhawkB
 > WindhawkBlur does not currently support color names (e.g. `Red`) or the `FallbackColor` property.
 
 - `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
+- `TintLuminosityOpacity`: Shifts pixel luminance towards the tint color's luminance. Range: 0.0 to 1.0.
+- `TintSaturation`: Controls the saturation of the blurred content. 1.0 is unchanged, 0.0 is fully desaturated (grayscale).
+- `NoiseOpacity`: Adds a procedural noise texture overlay. Controls how visible the noise is (0.0 to 1.0).
+- `NoiseDensity`: Controls the granularity of the noise texture (defaults to 1.0).
+
 #### Hex color
 
 ```
