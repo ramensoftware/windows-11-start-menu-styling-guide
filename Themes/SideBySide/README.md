@@ -33,8 +33,8 @@ that is slowly rolling out in the 25H2 update.
 ```json
 {
   "controlStyles[0].target": "StartMenu.PinnedList",
-  "controlStyles[0].styles[0]": "MaxHeight=420",
-  "controlStyles[0].styles[1]": "MinHeight=420",
+  "controlStyles[0].styles[0]": "MinHeight=420",
+  "controlStyles[0].styles[1]": "MaxHeight=420",
   "controlStyles[1].target": "StartMenu.ExpandedFolderList > Grid > Border",
   "controlStyles[1].styles[0]": "Margin=-40,0,40,0",
   "controlStyles[1].styles[1]": "Width=325",
@@ -52,8 +52,9 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[6].styles[0]": "Margin=0,-70,0,0",
   "controlStyles[7].target": "GridView#PinnedList",
   "controlStyles[7].styles[0]": "MaxWidth=480",
-  "controlStyles[7].styles[1]": "RenderTransform:=<TranslateTransform X=\"-145\" Y=\"800\"/>",
-  "controlStyles[7].styles[2]": "VerticalAlignment=Top",
+  "controlStyles[7].styles[1]": "RenderTransform:=<TranslateTransform X=\"-145\" Y=\"710\"/>",
+  "controlStyles[7].styles[2]": "MinHeight=420",
+  "controlStyles[7].styles[3]": "MaxHeight=420",
   "controlStyles[8].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid",
   "controlStyles[8].styles[0]": "Width=280",
   "controlStyles[8].styles[1]": "Margin=55,12,-55,0",
