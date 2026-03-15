@@ -155,9 +155,9 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[30].styles[3]": "BorderBrush@Pressed:=<RevealBorderBrush Color=\"#22FFFFFF\" TargetTheme=\"1\" Opacity=\"1\"/>",
   "controlStyles[30].styles[4]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0\"/>",
   "controlStyles[31].target": "Cortana.UI.Views.TaskbarSearchPage > Grid > Grid",
-  "controlStyles[31].styles[0]": "Margin=0,0,0,-12",
-  "controlStyles[31].styles[1]": "Width=750",
-  "controlStyles[31].styles[2]": "Height=750",
+  "controlStyles[31].styles[0]": "Width=880",
+  "controlStyles[31].styles[1]": "Height=886",
+  "controlStyles[31].styles[2]": "Margin=-60,-10,0,-28",
   "controlStyles[32].target": "Border#AppBorder",
   "controlStyles[32].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
   "controlStyles[32].styles[1]": "Width=750",
@@ -642,9 +642,9 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[31].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
   "controlStyles[31].styles[2]": "CornerRadius=4",
   "controlStyles[32].target": "Cortana.UI.Views.TaskbarSearchPage > Grid > Grid",
-  "controlStyles[32].styles[0]": "Width=650",
-  "controlStyles[32].styles[1]": "Height=750",
-  "controlStyles[32].styles[2]": "Margin=0,8,0,0",
+  "controlStyles[32].styles[0]": "Width=690",
+  "controlStyles[32].styles[1]": "Height=886",
+  "controlStyles[32].styles[2]": "Margin=-20,-10,0,-24",
   "controlStyles[33].target": "Border#AppBorder",
   "controlStyles[33].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
   "controlStyles[34].target": "Grid#QueryFormulationRoot",
@@ -774,8 +774,8 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[75].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
   "controlStyles[75].styles[2]": "CornerRadius=5",
   "controlStyles[75].styles[3]": "BorderThickness=1",
-  "controlStyles[76].target": "Windows.UI.Xaml.Shapes.Ellipse",
-  "controlStyles[76].styles[0]": "Width=40"
+  "controlStyles[76].target": "Border#dropshadow",
+  "controlStyles[76].styles[0]": "Visibility=Collapsed"
 }
 ```
 </details>

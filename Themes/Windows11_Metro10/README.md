@@ -37,7 +37,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[0].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid",
   "controlStyles[0].styles[0]": "Visibility=Visible",
   "controlStyles[0].styles[1]": "Width=300",
-  "controlStyles[0].styles[2]": "Margin=-150,-470,150,0",
+  "controlStyles[0].styles[2]": "Margin=-150,-600,150,0",
   "controlStyles[1].target": "Windows.UI.Xaml.Controls.Button#CloseAllAppsButton",
   "controlStyles[1].styles[0]": "Visibility=Collapsed",
   "controlStyles[2].target": "Grid#MainMenu",
@@ -107,7 +107,7 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[27].styles[0]": "Margin=165,0,-165,0",
   "controlStyles[27].styles[1]": "Width=300",
   "controlStyles[28].target": "Grid#AllListHeading",
-  "controlStyles[28].styles[0]": "RenderTransform:=<TranslateTransform X=\"-334\" Y=\"-475\"/>",
+  "controlStyles[28].styles[0]": "RenderTransform:=<TranslateTransform X=\"-334\" Y=\"-604\"/>",
   "controlStyles[29].target": "Grid#TopLevelSuggestionsListHeader",
   "controlStyles[29].styles[0]": "RenderTransform:=<TranslateTransform X=\"252\" Y=\"-58\" />",
   "controlStyles[30].target": "Grid#TopLevelHeader > Grid > TextBlock",
@@ -173,7 +173,9 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[47].target": "Button#FolderPlate",
   "controlStyles[47].styles[0]": "Margin=4,-1,-4,0",
   "controlStyles[48].target": "Grid#MainMenu > Grid#MainContent > Grid",
-  "controlStyles[48].styles[0]": "Canvas.ZIndex=1"
+  "controlStyles[48].styles[0]": "Canvas.ZIndex=1",
+  "controlStyles[49].target": "Grid#TopLevelSuggestionsRoot",
+  "controlStyles[49].styles[0]": "MinHeight=129"
 }
 ```
 </details>
