@@ -15,11 +15,12 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the Window
 - This theme currently works on displays with a resolution **above** 1366x768.
 - This theme combines the start menu with the Phone Link panel and will only work on the 'New Windows 11 Start Menu'
 - This theme consists of the following backgrounds:
-    - Glass
-    - Frosted
-    - Acrylic
+  - Translucent
+  - Glass
+  - Frosted
+  - Acrylic
 
-  In order to switch between these backgrounds, set the value `Background=$Glass`, `Background=$Frosted` or `Background=$Acrylic` in the "Style constants" section of the mod's settings.
+  In order to switch between these backgrounds, set the value `Background=$Translucent`, `Background=$Glass`, `Background=$Frosted` or `Background=$Acrylic` in the "Style constants" section of the mod's settings.
 
 ## Bonus
 - This theme can style your lock screen as well. 
@@ -60,22 +61,23 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ```json
 {
-  "styleConstants[0]": "Glass=<WindhawkBlur BlurAmount=\"5\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.7\" />",
-  "styleConstants[1]": "Frosted=<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.7\" />",
-  "styleConstants[2]": "Acrylic=<WindhawkBlur BlurAmount=\"30\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.8\" />",
-  "styleConstants[3]": "Background=$Frosted",
-  "styleConstants[4]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#60808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#40808080\" Offset=\"1\" /></LinearGradientBrush>",
-  "styleConstants[5]": "BorderBrush2=<WindhawkBlur BlurAmount=\"10\" TintColor=\"#909090\" TintOpacity=\"0.3\"/>",
-  "styleConstants[6]": "ClockBG=<SolidColorBrush Color=\"{ThemeResource SystemAccentColor}\" Opacity=\"1\"/>",
-  "styleConstants[7]": "BorderThickness=0.3,1,0.3,1",
-  "styleConstants[8]": "CornerRadius=35",
-  "styleConstants[9]": "SearchBoxRadius=20",
-  "styleConstants[10]": "ElementBG=<SolidColorBrush Color=\"{ThemeResource SystemChromeAltHighColor}\" Opacity=\"0.3\" />",
-  "styleConstants[11]": "ElementBorderThickness=0.3,0.3,0.3,1",
-  "styleConstants[12]": "ElementCornerRadius=25",
-  "styleConstants[13]": "ElementBorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>",
-  "styleConstants[14]": "ElementBorderBrush2=<WindhawkBlur BlurAmount=\"30\" TintColor=\"#909090\" TintOpacity=\"0.3\"/>",
-  "styleConstants[15]": "HoverCornerRadius=15",
+  "styleConstants[0]": "Translucent=<WindhawkBlur BlurAmount=\"15\" TintColor=\"#10808080\"/>",
+  "styleConstants[1]": "Glass=<WindhawkBlur BlurAmount=\"5\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.7\" />",
+  "styleConstants[2]": "Frosted=<WindhawkBlur BlurAmount=\"20\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.7\" />",
+  "styleConstants[3]": "Acrylic=<WindhawkBlur BlurAmount=\"30\" TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.8\" />",
+  "styleConstants[4]": "Background=$Translucent",
+  "styleConstants[5]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#60808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#40808080\" Offset=\"1\" /></LinearGradientBrush>",
+  "styleConstants[6]": "BorderBrush2=<WindhawkBlur BlurAmount=\"10\" TintColor=\"#909090\" TintOpacity=\"0.3\"/>",
+  "styleConstants[7]": "ClockBG=<SolidColorBrush Color=\"{ThemeResource SystemAccentColor}\" Opacity=\"1\"/>",
+  "styleConstants[8]": "BorderThickness=0.3,1,0.3,1",
+  "styleConstants[9]": "CornerRadius=35",
+  "styleConstants[10]": "SearchBoxRadius=20",
+  "styleConstants[11]": "ElementBG=<SolidColorBrush Color=\"{ThemeResource SystemChromeAltHighColor}\" Opacity=\"0.3\" />",
+  "styleConstants[12]": "ElementBorderThickness=0.3,0.3,0.3,1",
+  "styleConstants[13]": "ElementCornerRadius=25",
+  "styleConstants[14]": "ElementBorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>",
+  "styleConstants[15]": "ElementBorderBrush2=<WindhawkBlur BlurAmount=\"30\" TintColor=\"#909090\" TintOpacity=\"0.3\"/>",
+  "styleConstants[16]": "HoverCornerRadius=15",
   "controlStyles[0].target": "// Lock Screen",
   "controlStyles[1].target": "StackPanel#TimeAndDatePanel",
   "controlStyles[1].styles[0]": "VerticalAlignment=Top",
