@@ -376,7 +376,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[55].styles[1]":"// Start Menu > Zoomed Out list > Heading Text",
  
   "controlStyles[56].target":"TextBlock#DisplayName",
-    "controlStyles[56].styles[0]":"Margin=8,0,8,0",
+    "controlStyles[56].styles[0]":"Margin=8,3,8,0",
     "controlStyles[56].styles[1]":"FontFamily=$ThFnt",
     "controlStyles[56].styles[2]":"FontWeight=$ThFntWt",
     "controlStyles[56].styles[3]":"// Pinned List Apps > Name Textblock",
@@ -526,10 +526,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[83].styles[0]":"Margin=286,0,-23,0",
     "controlStyles[83].styles[1]":"// User Profile Root Alignment",
  
-  "controlStyles[86].target":"TextBlock#SubFolderNameTextBlock",
-    "controlStyles[86].styles[0]":"FontFamily=$ThFnt",
-    "controlStyles[86].styles[1]":"FontWeight=$ThHdnWt",
-    "controlStyles[86].styles[2]":"// App List > Category View > Folder > Sub folder Heading TextBlock"
+  "controlStyles[84].target":"TextBlock#SubFolderNameTextBlock",
+    "controlStyles[84].styles[0]":"FontFamily=$ThFnt",
+    "controlStyles[84].styles[1]":"FontWeight=$ThHdnWt",
+    "controlStyles[84].styles[2]":"// App List > Category View > Folder > Sub folder Heading TextBlock"
 }
 ```
 </details>
