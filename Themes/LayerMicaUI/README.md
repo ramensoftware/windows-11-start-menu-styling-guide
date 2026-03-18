@@ -542,6 +542,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 - Font to be installed: [Nunito](https://fonts.google.com/specimen/Nunito)
 - Add these items to the `Style Constants` section of the settings page of the Windows 11 Start Menu Styler Mod
+
   ```
   ThFntWt=Semibold
   ThHdnWt=Bold
