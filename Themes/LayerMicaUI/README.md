@@ -15,7 +15,7 @@ LayerMicaUI is a theme with adaptive layouts for the new Windows 11 25H2 Start m
 </table>
 
 > [!IMPORTANT]
-This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
+> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
 
 ## Notes
 - Optimized for Windows 11 **25H2** and later with the new Start menu.
@@ -24,7 +24,7 @@ This theme is designed for the [redesigned Windows 11 Start menu](https://micros
 - Start menu aligns with the taskbar position.
 - Fully compatible with both light and dark modes.
 - Suggestions and recommended sections are hidden.
-- Recommended to disable start menu folders.
+- Recommended to disable Start menu folders.
 
 ---
 
@@ -33,7 +33,7 @@ This theme is designed for the [redesigned Windows 11 Start menu](https://micros
   <summary>Font Customization (Click to expand)</summary>
 
 - Font to be installed: [Nunito](https://fonts.google.com/specimen/Nunito)
-- Add these items to the `Style Constants` section of the settings page of the Windows 11 Start Menu Styler Mod
+- Add these items to the "Style constants" section of the settings page of the Windows 11 Start Menu Styler Mod
 
   ```
   ThFntWt=Semibold
@@ -78,7 +78,7 @@ This theme is designed for the [redesigned Windows 11 Start menu](https://micros
 ---
 ## Some More Information
 - Start menu and Phone Link panel use separate surfaces, and on certain backgrounds the seam between them may be visible.
-- Start Menu and Search window have fixed heights to prevent element displacement.
+- Start menu and Search window have fixed heights to prevent element displacement.
 
 ## Other LayerMicaUI Themes
 - [LayerMicaUI Taskbar Theme](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/LayerMicaUI)
@@ -240,11 +240,11 @@ The theme styles can also be imported manually. To do that, follow these steps:
  
   "controlStyles[13].target":"ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsStackPanel > ListViewItem > Grid#ContentBorder > Border#BorderBackground",
     "controlStyles[13].styles[0]":"CornerRadius=$InnerRadius",
-    "controlStyles[13].styles[1]":"// Adds a rounded corner to someother list view items",
+    "controlStyles[13].styles[1]":"// Adds a rounded corner to some other list view items",
  
   "controlStyles[14].target":"GridViewHeaderItem > Border > ContentPresenter#ContentPresenter > Button#Header > Border#Border",
     "controlStyles[14].styles[0]":"CornerRadius=$InnerRadius",
-    "controlStyles[14].styles[1]":"// Adds a rounded corner to someother list view items",
+    "controlStyles[14].styles[1]":"// Adds a rounded corner to some other list view items",
  
   "controlStyles[15].target":"ScrollContentPresenter > Border",
     "controlStyles[15].styles[0]":"MaxHeight=665",
@@ -269,12 +269,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
  
   "controlStyles[19].target":"Button#ZoomInButton > Grid > Border#BackgroundBorder",
     "controlStyles[19].styles[0]":"CornerRadius=$InnerRadius",
-    "controlStyles[19].styles[1]":"// Zoom into list view button ",
+    "controlStyles[19].styles[1]":"// Zoom into list view button",
  
   "controlStyles[20].target":"ListView#ZoomedOutListView > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > ListViewItem > Grid#ContentBorder > Border#BorderBackground",
     "controlStyles[20].styles[0]":"CornerRadius=$InnerRadius",
     "controlStyles[20].styles[1]":"BorderBrush:=$ThemeControlBorder",
-    "controlStyles[20].styles[2]":"// Adds a rounded corner to someother list view items",
+    "controlStyles[20].styles[2]":"// Adds a rounded corner to some other list view items",
  
   "controlStyles[21].target":"Border#RightCompanionDropShadowDismissTarget",
     "controlStyles[21].styles[0]":"Visibility=1",
@@ -347,7 +347,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[36].target":"Grid#MainMenu",
     "controlStyles[36].styles[0]":"Width=445",
     "controlStyles[36].styles[1]":"CornerRadius=$OuterRadius",
-    "controlStyles[36].styles[2]":"// Start Menu Main List ( Pinned + All Apps ) ",
+    "controlStyles[36].styles[2]":"// Start Menu Main List ( Pinned + All Apps )",
  
   "controlStyles[37].target":"ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot",
     "controlStyles[37].styles[0]":"Margin=0",
@@ -592,7 +592,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
   "controlStyles[85].target":"Grid#TopLevelHeader > Grid > Button",
     "controlStyles[85].styles[0]":"RenderTransform:=<TranslateTransform X=\"5\" />",
-    "controlStyles[85].styles[1]":"// Pinned List Heading grid > Show All Pinned Apps button "
+    "controlStyles[85].styles[1]":"// Pinned List Heading grid > Show All Pinned Apps button"
 }
 ```
 </details>
