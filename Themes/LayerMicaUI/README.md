@@ -535,7 +535,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[73].styles[3]":"RenderTransform:=<TranslateTransform X=\"1\" Y=\"0.5\" />",
     "controlStyles[73].styles[4]":"// Right Click Menu items > TextBlock",
 
-  "controlStyles[74].target":"Button#ZoomInButton > Grid > ContentPresenter#ContentPresenter > Stackpanel > TextBlock",
+  "controlStyles[74].target":"Button#ZoomInButton > Grid > ContentPresenter#ContentPresenter > StackPanel > TextBlock",
     "controlStyles[74].styles[0]":"FontFamily=$ThFnt",
     "controlStyles[74].styles[1]":"// Back button on the Zoomed Out View ( Alphabet Grid )",
 
