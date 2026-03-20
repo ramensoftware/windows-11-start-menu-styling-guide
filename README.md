@@ -118,6 +118,7 @@ Start Menu Styler mod. The following themes are available:
 | [LiquidGlass](Themes/LiquidGlass/README.md) | [![LiquidGlass](Themes/LiquidGlass/screenshot-small.png)](Themes/LiquidGlass/screenshot.png)
 | [Windows10X](Themes/Windows10X/README.md) | [![Windows10X](Themes/Windows10X/screenshot-small.png)](Themes/Windows10X/screenshot.png)
 | [TintedGlass](Themes/TintedGlass/README.md) | [![TintedGlass](Themes/TintedGlass/screenshot-small.png)](Themes/TintedGlass/screenshot.png)
+| [LayerMicaUI](Themes/LayerMicaUI/README.md) | [![LayerMicaUI](Themes/LayerMicaUI/screenshot-small.png)](Themes/LayerMicaUI/screenshot.png)
 
 ### Windows 10 Start menu themes
 
