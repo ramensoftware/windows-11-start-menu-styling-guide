@@ -12,7 +12,7 @@ This theme intends to subtly take Fluent's design principles more seriously and 
 ![Screenshot](contextMenus.gif)
 
 > [!IMPORTANT]
-> This theme is made for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is slowly rolling out in the 25H2 update.
+> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
 
 > [!NOTE]
 > The default configuration is designed for Dark mode. If you want to use Light mode, add this to the "Style constants" section of the Start Menu Styler settings:
@@ -23,7 +23,7 @@ borderColor=<LinearGradientBrush x:Key="ShellTaskbarItemGradientStrokeColorSecon
 
 ## Theme selection
 
-The theme is integrated into the mod and can simply be selected from the mod's
+The theme is integrated into the mod and can be selected directly from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.

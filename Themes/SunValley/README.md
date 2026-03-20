@@ -23,7 +23,7 @@ which included:
 
 ## Theme selection
 
-The theme is integrated into the mod and can simply be selected from the mod's
+The theme is integrated into the mod and can be selected directly from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
