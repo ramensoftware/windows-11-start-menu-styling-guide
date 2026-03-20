@@ -1,7 +1,8 @@
 # LayerMicaUI theme for Windows 11 Start Menu Styler
-**Author** :  [Nimai-HK](https://github.com/Nimai-HK)
 
-LayerMicaUI is a theme with adaptive layouts for the new Windows 11 25H2 Start Menu.
+**Author**: [Nimai-HK](https://github.com/Nimai-HK)
+
+LayerMicaUI is a theme with adaptive layouts for the new Windows 11 25H2 Start menu.
 
 ![GIF](theme-preview.gif)
 
@@ -17,25 +18,84 @@ LayerMicaUI is a theme with adaptive layouts for the new Windows 11 25H2 Start M
 This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
 
 ## Notes
-- Optimized for Windows 11 **25H2** and later with the new Start Menu.
-- Integrates the Start Menu with the Phone Link panel.
+- Optimized for Windows 11 **25H2** and later with the new Start menu.
+- Integrates the Start menu with the Phone Link panel.
 - Supports screen resolutions of **1280×720** and above.
-- Start Menu aligns with the taskbar position.
+- Start menu aligns with the taskbar position.
 - Fully compatible with both light and dark modes.
 - Suggestions and recommended sections are hidden.
 - Recommended to disable start menu folders.
+
 ---
 
-## Theme Selection
+## Additional customization
+<details>
+  <summary>Font Customization (Click to expand)</summary>
 
-The themes are integrated into the mod and can be selected directly from the mod's
+- Font to be installed: [Nunito](https://fonts.google.com/specimen/Nunito)
+- Add these items to the `Style Constants` section of the settings page of the Windows 11 Start Menu Styler Mod
+
+  ```
+  ThFntWt=Semibold
+  ThHdnWt=Bold
+  ```
+</details>
+
+<details>
+  <summary>Taskbar Search Bar (Click to expand)</summary>
+
+- The taskbar search bar in clicked/active state is styled by this theme.
+- *If you use the [LayerMicaUI Taskbar Styler Theme](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/LayerMicaUI), this change is recommended.*
+
+    ```yaml
+    - target: Border#TaskbarSearchBackground
+      styles:
+        - CornerRadius=$InnerRadius
+        - Background:=$ThemeOverlay
+        - BorderThickness=0
+        - Height=32
+        - Transform3D:=<CompositeTransform3D TranslateY="-2" TranslateX="1"/>
+
+    - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl > Grid#RootGrid
+      styles:
+        - CornerRadius=$InnerRadius
+        - Transform3D:=<CompositeTransform3D TranslateY="-2" TranslateX="1"/>
+    ```
+</details>
+  
+<details>
+  <summary>Hide Phone Link Companion Button (Click to expand)</summary>
+
+- To hide the Phone Link Companion button:
+   
+  ```yaml
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
+    styles:
+      - Visibility=1
+  ```
+</details>
+
+---
+## Some More Information
+- Start menu and Phone Link panel use separate surfaces, and on certain backgrounds the seam between them may be visible.
+- Start Menu and Search window have fixed heights to prevent element displacement.
+
+## Other LayerMicaUI Themes
+- [LayerMicaUI Taskbar Theme](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/LayerMicaUI)
+<!--
+- [LayerMicaUI Notification And Control Center Theme](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/tree/main/Themes/LayerMicaUI)
+-->
+
+## Theme selection
+
+The theme is integrated into the mod and can be selected directly from the mod's
 settings:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Settings" tab.
 * Select the theme and save the settings.
 
-## Manual Installation
+## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
@@ -44,14 +104,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
 * Copy the content below to the text box under "Mod settings" and click "Save".
 
 <details>
-<summary> Content to import (click to expand)</summary>
+<summary>Content to import (click to expand)</summary>
 
 ```json
 {
-  "disableNewStartMenuLayout":"0",
-  "webContentCustomJs":"",
-  "theme":"",
-
   "styleConstants[0]":"ThemeBorder=<SolidColorBrush Color=\"{ThemeResource Border}\" />",
   "styleConstants[1]":"OuterRadius=10",
   "styleConstants[2]":"InnerRadius=8",
@@ -73,18 +129,18 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "themeResourceVariables[6]":"Btn@Light=#90FFFFFF",
   "themeResourceVariables[7]":"Btn@Dark=#20FFFFFF",
 
- "webContentStyles[0].target":".curatedSettingsGroup, #scopesHeader",
+  "webContentStyles[0].target":".curatedSettingsGroup, #scopesHeader",
     "webContentStyles[0].styles[0]":"display: none !important",
 
- "webContentStyles[1].target":"#qfPreviewPane",
+  "webContentStyles[1].target":"#qfPreviewPane",
     "webContentStyles[1].styles[0]":"margin-right: -10px !important",
     "webContentStyles[1].styles[1]":"border-radius: 8px !important",
 
- "webContentStyles[2].target":".suggsList, .suggContainer",
+  "webContentStyles[2].target":".suggsList, .suggContainer",
     "webContentStyles[2].styles[0]":"margin-right: 5px !important",
     "webContentStyles[2].styles[1]":"margin-left: 0px !important",
 
- "controlStyles[0].target":"Border#AcrylicBorder",
+  "controlStyles[0].target":"Border#AcrylicBorder",
     "controlStyles[0].styles[0]":"CornerRadius=$OuterRadius",
     "controlStyles[0].styles[1]":"BorderThickness=1",
     "controlStyles[0].styles[2]":"Width=445",
@@ -534,70 +590,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[84].styles[1]":"FontWeight=$ThHdnWt",
     "controlStyles[84].styles[2]":"// App List > Category View > Folder > Sub folder Heading TextBlock",
 
- "controlStyles[85].target":"Grid#TopLevelHeader > Grid > Button",
+  "controlStyles[85].target":"Grid#TopLevelHeader > Grid > Button",
     "controlStyles[85].styles[0]":"RenderTransform:=<TranslateTransform X=\"5\" />",
     "controlStyles[85].styles[1]":"// Pinned List Heading grid > Show All Pinned Apps button "
 }
 ```
 </details>
-
----
-
-## Additional Customisation
-<details>
-  <summary> Font Customisation (Click to expand)</summary>
-
-- Font to be installed: [Nunito](https://fonts.google.com/specimen/Nunito)
-- Add these items to the `Style Constants` section of the settings page of the Windows 11 Start Menu Styler Mod
-
-  ```
-  ThFntWt=Semibold
-  ThHdnWt=Bold
-  ```
-</details>
-
-<details>
-  <summary> Taskbar Search Bar (Click to expand)</summary>
-
-- The taskbar search bar in clicked/active state is styled by this theme.
-- *If you use the [LayerMicaUI Taskbar Styler Theme](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/LayerMicaUI), this change is recommended.*
-
-
-    ```yaml
-    - target: Border#TaskbarSearchBackground
-      styles:
-        - CornerRadius=$InnerRadius
-        - Background:=$ThemeOverlay
-        - BorderThickness=0
-        - Height=32
-        - Transform3D:=<CompositeTransform3D TranslateY="-2" TranslateX="1"/>
-
-    - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl > Grid#RootGrid
-      styles:
-        - CornerRadius=$InnerRadius
-        - Transform3D:=<CompositeTransform3D TranslateY="-2" TranslateX="1"/>
-    ```
-</details>
-  
-<details>
-  <summary> Hide Phone Link Companion Button (Click to expand)</summary>
-
-- To hide the Phone Link Companion button:
-   
-  ```yaml
-  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
-    styles:
-      - Visibility=1
-  ```
-</details>
-
----
-## Some More Information
-- Start menu and Phone Link panel use separate surfaces, and on certain backgrounds the seam between them may be visible.
-- Start Menu and Search window have fixed heights to prevent element displacement.
-
-## Other LayerMicaUI Themes
-- [LayerMicaUI Taskbar Theme](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/LayerMicaUI)
-<!--
-- [LayerMicaUI Notification And Control Center Theme](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/tree/main/Themes/LayerMicaUI)
--->
