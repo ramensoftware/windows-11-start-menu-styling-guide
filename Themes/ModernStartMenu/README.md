@@ -27,9 +27,10 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 
 ## Unsupported configurations/settings
 * Windows 10 (Partially supported).
-* Light mode.
+* Light mode (Support coming soon).
 * *"Show accent color on Start and taskbar"* enabled.
-* Fullscreen Start menu.
+* *"Show more tiles on Start"* enabled (ExplorerPatcher).
+* Fullscreen Start menu (ExplorerPatcher).
 
 ## Manual installation
 
