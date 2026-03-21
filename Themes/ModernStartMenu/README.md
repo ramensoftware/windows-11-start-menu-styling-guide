@@ -16,8 +16,8 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Once installed, open *"Properties (ExplorerPatcher)"* via the Start menu or right-click the taskbar > *"Properties"*.
 * Enable Windows 10 start menu by going to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
 
-<img width="600" height="600" alt="open_ep" src="https://github.com/user-attachments/assets/3244b912-7758-43f4-b98d-85f462f37bb1" />
-<img width="906" height="646" alt="ep_configure" src="https://github.com/user-attachments/assets/89f0d1ad-4556-473a-b538-b994e69cd12c" />
+![Screenshot](open_ep.png)
+![Screenshot](ep_configure.png)
 
 > [!IMPORTANT]
 > You may see *"Corner preference"* on the same page, keep it as *"Not rounded"*, as ModernStartMenu rounds the Start menu and makes it float instead of ExplorerPatcher.
@@ -29,7 +29,7 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Right-click menus in textbox are not styled correctly.
 
 ## Unsupported configurations/settings
-* Windows 10 (Partially supported) (Segoe Fluent Icons required).
+* Windows 10 (Partially supported) ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
 * Light mode (Support coming soon).
 * *"Show accent color on Start and taskbar"* enabled.
 * *"Show more tiles on Start"* enabled (ExplorerPatcher).
@@ -142,7 +142,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[5].styles[2]": "FontFamily=$fontFamily",
     "controlStyles[24].styles[2]": "CornerRadius=6",
     "controlStyles[24].styles[3]": "BorderBrush=Transparent",
-    "controlStyles[21].styles[2]": "RequestedTheme=1",
+    "controlStyles[21].styles[2]": "Foreground=Black",
     "controlStyles[20].styles[1]": "Background@PointerOver:=$accentButtonPointerOver",
     "controlStyles[31].target": "Button#PinButton > Grid@CommonStates",
     "controlStyles[27].styles[0]": "BorderBrush:=",
@@ -171,7 +171,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[37].target": "Button#CancelButton > Grid@CommonStates > ContentPresenter > TextBlock",
     "controlStyles[37].styles[0]": "FontFamily=$fontFamily",
     "controlStyles[37].styles[1]": "FontSize=14",
-    "controlStyles[37].styles[2]": "RequestedTheme=1",
+    "controlStyles[37].styles[2]": "Foreground=Black",
     "controlStyles[18].styles[4]": "CornerRadius=8",
     "controlStyles[20].styles[3]": "BorderThickness=0,0,0,1",
     "controlStyles[20].styles[4]": "BorderBrush:=$accentButtonBorderBrush",
@@ -200,7 +200,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[46].target": "StartUI.NavigationPaneBadgeView > Grid > Rectangle",
     "controlStyles[46].styles[0]": "Opacity=0",
     "controlStyles[47].target": "StartUI.NavigationPaneBadgeView#Badge > Grid > TextBlock",
-    "controlStyles[47].styles[0]": "RequestedTheme=1",
+    "controlStyles[47].styles[0]": "Foreground=Black",
     "controlStyles[48].target": "ItemsStackPanel > StartUI.ViewSelectionListViewItem > Grid@CommonStates",
     "controlStyles[49].target": "Button#PinButton > Grid@CommonStates > Border",
     "controlStyles[49].styles[0]": "Background=Transparent",
@@ -454,26 +454,26 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[102].styles[1]": "FontSize=14",
     "controlStyles[102].styles[2]": "Opacity@Normal=1",
     "controlStyles[102].styles[3]": "Opacity@Pressed=0.84",
-    "controlStyles[102].styles[4]": "RequestedTheme=2",
+    "controlStyles[102].styles[4]": "Foreground=White",
     "controlStyles[97].styles[7]": "BorderBrush:=",
     "controlStyles[103].target": "Button#ShutdownReasonButton > ContentPresenter@CommonStates > TextBlock",
     "controlStyles[103].styles[0]": "FontFamily=$fontFamily",
     "controlStyles[103].styles[1]": "FontSize=14",
     "controlStyles[103].styles[2]": "Opacity@Normal=1",
     "controlStyles[103].styles[3]": "Opacity@Pressed=0.84",
-    "controlStyles[103].styles[4]": "RequestedTheme=2",
+    "controlStyles[103].styles[4]": "Foreground=White",
     "controlStyles[104].target": "ComboBox > Grid@CommonStates > ContentPresenter > TextBlock",
     "controlStyles[104].styles[0]": "FontFamily=$fontFamily",
     "controlStyles[104].styles[1]": "FontSize=14",
     "controlStyles[104].styles[2]": "Opacity@Normal=1",
     "controlStyles[104].styles[3]": "Opacity@Pressed=0.84",
-    "controlStyles[104].styles[4]": "RequestedTheme=2",
+    "controlStyles[104].styles[4]": "Foreground=White",
     "controlStyles[105].target": "ComboBoxItem > Grid@CommonStates > ContentPresenter > TextBlock",
     "controlStyles[105].styles[0]": "FontFamily=$fontFamily",
     "controlStyles[105].styles[1]": "FontSize=14",
     "controlStyles[105].styles[2]": "Opacity@Normal=1",
     "controlStyles[105].styles[3]": "Opacity@Pressed=0.84",
-    "controlStyles[105].styles[4]": "RequestedTheme=2",
+    "controlStyles[105].styles[4]": "Foreground=White",
     "controlStyles[106].target": "StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=FrequentList] > StackPanel > Button > Border > TextBlock",
     "controlStyles[106].styles[0]": "Margin=7,0,0,2",
     "controlStyles[107].target": "TextBlock#FolderGlyph",
