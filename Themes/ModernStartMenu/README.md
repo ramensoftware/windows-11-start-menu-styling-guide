@@ -1,6 +1,6 @@
 # ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start menu)
 
-A fluent start menu theme for Windows 10 Start menu running on Windows 11.
+A Fluent start menu theme for Windows 10 Start menu running on Windows 11.
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
@@ -10,6 +10,8 @@ A fluent start menu theme for Windows 10 Start menu running on Windows 11.
 ## Windows 10 Start menu on Windows 11 installation
 
 If you're already using the Windows 10 Start menu, you can skip this step.
+
+<img width="906" height="646" alt="ep_install" src="https://github.com/user-attachments/assets/99255cdb-fc6f-4fac-a83c-15e0877e5824" />
 
 **Installation:**
 * Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher).
@@ -22,8 +24,8 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 ## Bugs
 * Legacy Windows 10 effects (Reveal, and 3D push) are still present.
 * Items may not align/center correctly on higher DPIs.
-* Tiles background are broken when dragged from applist
-* Right-click menus in textbox are not styled correctly
+* Tiles background are broken when dragged from applist.
+* Right-click menus in textbox are not styled correctly.
 
 ## Unsupported configurations/settings
 * Windows 10 (Partially supported).
@@ -637,7 +639,24 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[139].styles[2]": "Opacity@PointerOver=1",
     "controlStyles[139].styles[3]": "Opacity@Focused=0",
     "controlStyles[140].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar > Grid > Grid > Rectangle",
-    "controlStyles[140].styles[0]": "Fill:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.8\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />"
+    "controlStyles[140].styles[0]": "Fill:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.8\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
+    "controlStyles[141].target": "StartUI.FolderAppSpaceVisual#FolderAppSpaceVisual > Grid#TilesGrid > Border > Image[Width=24]",
+    "controlStyles[141].styles[0]": "MinWidth=32",
+    "controlStyles[141].styles[1]": "MinHeight=32",
+    "controlStyles[141].styles[2]": "Margin=-6,-4,0,0",
+    "controlStyles[142].target": "Rectangle#Overlay",
+    "controlStyles[142].styles[0]": "Opacity=0.5",
+    "controlStyles[143].target": "Border#OverlayBorder",
+    "controlStyles[143].styles[0]": "Opacity=0.5",
+    "controlStyles[144].target": "StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar",
+    "controlStyles[144].styles[0]": "CornerRadius=2",
+    "controlStyles[145].target": "StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > Grid > Border > Rectangle",
+    "controlStyles[145].styles[0]": "Margin=-1,-2,0,-2",
+    "controlStyles[145].styles[1]": "Fill:=$accentButtonNormal",
+    "controlStyles[146].target": "StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > Grid > Border",
+    "controlStyles[146].styles[0]": "BorderThickness=1",
+    "controlStyles[146].styles[1]": "Background:=<SolidColorBrush Color=\"{ThemeResource SystemChromeHighColor}\" Opacity=\"0.5\" />",
+    "controlStyles[144].styles[1]": "Margin=4"
 }
 ```
 </details>
