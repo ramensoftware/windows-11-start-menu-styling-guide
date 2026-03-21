@@ -1,6 +1,6 @@
 # ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start menu)
 
-A Fluent start menu theme for Windows 10 Start menu running on Windows 11.
+A Fluent start menu theme for Windows 10 Start menu on Windows 11.
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
@@ -11,12 +11,13 @@ A Fluent start menu theme for Windows 10 Start menu running on Windows 11.
 
 If you're already using the Windows 10 Start menu, you can skip this step.
 
-<img width="906" height="646" alt="ep_install" src="https://github.com/user-attachments/assets/99255cdb-fc6f-4fac-a83c-15e0877e5824" />
-
 **Installation:**
-* Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher).
-* Open *"Properties (ExplorerPatcher)"* via the Start menu or right-click the taskbar > *"Properties"*.
-* Go to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
+* Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher). (Under the *"Releases"* page)
+* Once installed, open *"Properties (ExplorerPatcher)"* via the Start menu or right-click the taskbar > *"Properties"*.
+* Enable Windows 10 start menu by going to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
+
+<img width="600" height="600" alt="open_ep" src="https://github.com/user-attachments/assets/3244b912-7758-43f4-b98d-85f462f37bb1" />
+<img width="906" height="646" alt="ep_configure" src="https://github.com/user-attachments/assets/89f0d1ad-4556-473a-b538-b994e69cd12c" />
 
 > [!IMPORTANT]
 > You may see *"Corner preference"* on the same page, keep it as *"Not rounded"*, as ModernStartMenu rounds the Start menu and makes it float instead of ExplorerPatcher.
@@ -587,9 +588,7 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[86].styles[2]": "Opacity@Pressed=0.84",
     "controlStyles[15].styles[2]": "Opacity@Normal=1",
     "controlStyles[15].styles[3]": "Opacity@Pressed=0.84",
-    "controlStyles[131].target": "StartUI.FolderAppSpaceVisual#FolderAppSpaceVisual > Grid#TilesGrid > Border > Image",
-    "controlStyles[131].styles[0]": "MinHeight=16",
-    "controlStyles[131].styles[1]": "MinWidth=16",
+    "controlStyles[131].target": "StartUI.FolderAppSpaceVisual#FolderAppSpaceVisual > Grid#TilesGrid > Border > Image[Width=12]",
     "controlStyles[125].styles[1]": "Background:=<SolidColorBrush Color=\"{ThemeResource SystemChromeHighColor}\" Opacity=\"0.5\" />",
     "controlStyles[132].target": "StartUI.TileFolderNameTextBox > Grid@CommonStates > Border#BorderElement",
     "controlStyles[132].styles[0]": "Background@PointerOver:=$buttonNormal",
@@ -641,9 +640,8 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[140].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar > Grid > Grid > Rectangle",
     "controlStyles[140].styles[0]": "Fill:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.8\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
     "controlStyles[141].target": "StartUI.FolderAppSpaceVisual#FolderAppSpaceVisual > Grid#TilesGrid > Border > Image[Width=24]",
-    "controlStyles[141].styles[0]": "MinWidth=32",
-    "controlStyles[141].styles[1]": "MinHeight=32",
-    "controlStyles[141].styles[2]": "Margin=-6,-4,0,0",
+    "controlStyles[141].styles[0]": "RenderTransform:=<ScaleTransform ScaleX=\"1.4\" ScaleY=\"1.4\" />",
+    "controlStyles[141].styles[1]": "Margin=-6,-4,0,0",
     "controlStyles[142].target": "Rectangle#Overlay",
     "controlStyles[142].styles[0]": "Opacity=0.5",
     "controlStyles[143].target": "Border#OverlayBorder",
@@ -656,7 +654,9 @@ The theme styles have to be imported manually. To do that, follow these steps:
     "controlStyles[146].target": "StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > Grid > Border",
     "controlStyles[146].styles[0]": "BorderThickness=1",
     "controlStyles[146].styles[1]": "Background:=<SolidColorBrush Color=\"{ThemeResource SystemChromeHighColor}\" Opacity=\"0.5\" />",
-    "controlStyles[144].styles[1]": "Margin=4"
+    "controlStyles[144].styles[1]": "Margin=4",
+    "controlStyles[131].styles[0]": "RenderTransform:=<ScaleTransform ScaleX=\"1.4\" ScaleY=\"1.4\" />",
+    "controlStyles[131].styles[1]": "Margin=-3,-2,0,0"
 }
 ```
 </details>
