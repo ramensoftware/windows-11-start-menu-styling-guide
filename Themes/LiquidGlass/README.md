@@ -35,7 +35,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[1].styles[0]": "Background:=$background",
   "controlStyles[1].styles[1]": "BorderBrush:=$borderColor",
   "controlStyles[1].styles[2]": "BorderThickness=$borderThickness",
-  "controlStyles[2].target": "Border#AccentAppBorder",
+  "controlStyles[2].target": "Border#AppBorder",
   "controlStyles[2].styles[0]": "Background:=$background",
   "controlStyles[2].styles[1]": "BorderBrush:=$borderColor",
   "controlStyles[2].styles[2]": "BorderThickness=$borderThickness",
