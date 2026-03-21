@@ -12,7 +12,7 @@ A Fluent start menu theme for Windows 10 Start menu on Windows 11.
 If you're already using the Windows 10 Start menu, you can skip this step.
 
 **Installation:**
-* Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher). (Under the *"Releases"* page)
+* Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher) (Under the *"Releases"* page).
 * Once installed, open *"Properties (ExplorerPatcher)"* via the Start menu or right-click the taskbar > *"Properties"*.
 * Enable Windows 10 start menu by going to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
 
@@ -29,7 +29,7 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Right-click menus in textbox are not styled correctly.
 
 ## Unsupported configurations/settings
-* Windows 10 (Partially supported).
+* Windows 10 (Partially supported) (Segoe Fluent Icons required).
 * Light mode (Support coming soon).
 * *"Show accent color on Start and taskbar"* enabled.
 * *"Show more tiles on Start"* enabled (ExplorerPatcher).
