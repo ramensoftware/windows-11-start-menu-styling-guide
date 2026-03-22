@@ -6,6 +6,9 @@ I couldn't figure out how to remove the Search Bar Container for the New Layout 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be6a021a-3f20-4d49-87f1-ae64c3e12aae" />
 
+<details>
+<summary>Content to import (click to expand)</summary>
+  
 ```json
 {"controlStyles[0].target":"Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
 "controlStyles[0].styles[0]":"Visibility=Collapsed",
@@ -74,3 +77,4 @@ I couldn't figure out how to remove the Search Bar Container for the New Layout 
   "controlStyles[26].styles[0]":"Visibility=Collapsed"
 }
 ```
+</details>
