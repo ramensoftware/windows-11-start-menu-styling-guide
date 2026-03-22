@@ -2,6 +2,10 @@
 Theme For Start Menu which removed Drop Shadow and Borders, and even the greyish tint with Dark Mode, and also removal of Search Bar and Suggestions Menu (on the Old Start Menu)
 I couldn't figure out how to remove the Search Bar Container for the New Layout Though,
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/75a11799-503e-40b1-80b3-a8dba871623f" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be6a021a-3f20-4d49-87f1-ae64c3e12aae" />
+
 ```json
 {"controlStyles[0].target":"Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
 "controlStyles[0].styles[0]":"Visibility=Collapsed",
