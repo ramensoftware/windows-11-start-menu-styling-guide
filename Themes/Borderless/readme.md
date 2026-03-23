@@ -18,7 +18,8 @@ The theme styles can be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
   
 ```json
-{"controlStyles[0].target":"Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
+{
+"controlStyles[0].target":"Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
 "controlStyles[0].styles[0]":"Visibility=Collapsed",
 "controlStyles[1].target":"Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
 "controlStyles[1].styles[0]":"Visibility=Collapsed",
