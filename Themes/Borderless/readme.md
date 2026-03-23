@@ -6,11 +6,18 @@ I couldn't figure out how to remove the Search Bar Container for the New Layout 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be6a021a-3f20-4d49-87f1-ae64c3e12aae" />
 
+# Manual Installation :
+The theme styles can be imported manually. To do that, follow these steps:
+- Open the Windows 11 Taskbar Styler mod in Windhawk.
+- Go to the "Advanced" tab.
+- Copy the content below to the text box under "Mod settings" and click "Save".
+
 <details>
 <summary>Content to import (click to expand)</summary>
   
 ```json
-{"controlStyles[0].target":"Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
+{
+"controlStyles[0].target":"Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
 "controlStyles[0].styles[0]":"Visibility=Collapsed",
 "controlStyles[1].target":"Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
   "controlStyles[1].styles[0]":"Visibility=Collapsed",
