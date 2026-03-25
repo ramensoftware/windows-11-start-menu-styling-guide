@@ -48,10 +48,6 @@ The theme styles have to be imported manually. To do that, follow these steps:
 
 ```json
 {
-    "theme": "",
-    "resourceVariables[0].variableKey": "",
-    "resourceVariables[0].value": "",
-    "disableNewStartMenuLayout": 1,
     "controlStyles[0].target": "Border#AcrylicBorder",
     "controlStyles[0].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.24\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" />",
     "controlStyles[0].styles[1]": "BorderBrush:=$borderBrush",
