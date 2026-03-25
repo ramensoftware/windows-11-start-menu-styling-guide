@@ -373,7 +373,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[41].styles[2]":"// All Apps Heading Grid > View type button",
 
   "controlStyles[42].target":"Grid#NavPanePlaceholder",
-    "controlStyles[42].styles[0]":"Margin=310,-576,-17,576",
+    "controlStyles[42].styles[0]":"Margin=310,-577,-17,576",
     "controlStyles[42].styles[1]":"Width=96",
     "controlStyles[42].styles[2]":"// Navigation Pane of Start Menu ( Userprofile, Powerbutton, Folder Lists )",
 
@@ -591,9 +591,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[84].styles[1]":"FontWeight=$ThHdnWt",
     "controlStyles[84].styles[2]":"// App List > Category View > Folder > Sub folder Heading TextBlock",
 
-  "controlStyles[85].target":"Grid#TopLevelHeader > Grid > Button",
+  "controlStyles[85].target":"Grid#TopLevelHeader > Grid > Button > Grid",
     "controlStyles[85].styles[0]":"RenderTransform:=<TranslateTransform X=\"5\" />",
-    "controlStyles[85].styles[1]":"// Pinned List Heading grid > Show All Pinned Apps button"
+    "controlStyles[85].styles[1]":"CornerRadius=$InnerRadius",
+    "controlStyles[85].styles[2]":"// Pinned List Heading grid > Show All Pinned Apps button"
 }
 ```
 </details>
