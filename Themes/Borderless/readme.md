@@ -5,10 +5,10 @@ Theme For Start Menu which removes drop shadow and borders (thus the name), and 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
 New layout :
-![Screenshot](NewLayoutEnabled.png)
+![Screenshot](screenshot.png)
 
 Old layout :
-![Screenshot](NewLayoutDisabled.png)
+![Screenshot](screenshot-old-layout.png)
 
 # Manual Installation :
 The theme styles can be imported manually. To do that, follow these steps:
