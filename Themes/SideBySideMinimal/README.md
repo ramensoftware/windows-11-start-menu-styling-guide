@@ -99,7 +99,9 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[25].target": "Grid#MainMenu > Grid#MainContent > Grid",
   "controlStyles[25].styles[0]": "Canvas.ZIndex=1",
   "controlStyles[24].target": "StartMenu.CategoryControl",
-  "controlStyles[24].styles[0]": "Margin=20,20,-20,-20"
+  "controlStyles[24].styles[0]": "Margin=20,20,-20,-20",
+  "controlStyles[26].target": "StartDocked.AppListView",
+  "controlStyles[26].styles[0]": "Margin=25,0,-25,0"
 }
 ```
 </details>

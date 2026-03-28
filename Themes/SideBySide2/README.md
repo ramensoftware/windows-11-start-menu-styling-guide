@@ -109,13 +109,11 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[25].styles[1]": "Margin=-50,0,0,0",
   "controlStyles[26].target": "GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem",
   "controlStyles[26].styles[0]": "Margin=-25,0,-25,0",
-  "controlStyles[27].target": "StartDocked.AppListView",
-  "controlStyles[27].styles[0]": "Margin=15,0,-15,0",
-  "controlStyles[28].target": "Grid#MainMenu > Grid#MainContent > Grid",
-  "controlStyles[28].styles[0]": "Canvas.ZIndex=1",
-  "controlStyles[29].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
-  "controlStyles[29].styles[0]": "Height=650",
-  "controlStyles[29].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />"
+  "controlStyles[27].target": "Grid#MainMenu > Grid#MainContent > Grid",
+  "controlStyles[27].styles[0]": "Canvas.ZIndex=1",
+  "controlStyles[28].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
+  "controlStyles[28].styles[0]": "Height=650",
+  "controlStyles[28].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />"
 }
 ```
 </details>

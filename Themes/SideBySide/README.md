@@ -100,15 +100,13 @@ that is slowly rolling out in the 25H2 update.
   "controlStyles[21].styles[1]": "Margin=-50,0,0,0",
   "controlStyles[22].target": "GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem",
   "controlStyles[22].styles[0]": "Margin=-25,0,-25,0",
-  "controlStyles[23].target": "StartDocked.AppListView",
-  "controlStyles[23].styles[0]": "Margin=15,0,-15,0",
-  "controlStyles[24].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
-  "controlStyles[24].styles[0]": "Height=650",
-  "controlStyles[24].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />",
-  "controlStyles[25].target": "Grid#MainMenu > Grid#MainContent > Grid",
-  "controlStyles[25].styles[0]": "Canvas.ZIndex=1",
-  "controlStyles[26].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer",
-  "controlStyles[26].styles[0]": "ScrollViewer.VerticalScrollMode=2"
+  "controlStyles[23].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
+  "controlStyles[23].styles[0]": "Height=650",
+  "controlStyles[23].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />",
+  "controlStyles[24].target": "Grid#MainMenu > Grid#MainContent > Grid",
+  "controlStyles[24].styles[0]": "Canvas.ZIndex=1",
+  "controlStyles[25].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer",
+  "controlStyles[25].styles[0]": "ScrollViewer.VerticalScrollMode=2"
 }
 ```
 </details>
