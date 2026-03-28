@@ -1,12 +1,14 @@
-# Borderless Theme for Start Menu for Windhawk
-Theme For Start Menu which removed Drop Shadow and Borders, and even the greyish tint with Dark Mode, and also removal of Search Bar and Suggestions Menu (on the Old Start Menu)
-I couldn't figure out how to remove the Search Bar Container for the New Layout Though,
+# Borderless theme for Windows 11 Start Menu Styler
 
-New Layout Enabled :
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e7d9d6f3-170d-489a-b50b-4bb77f697957" />
+Theme For Start Menu which removes drop shadow and borders (thus the name), and even the greyish tint with Dark Mode, and also removal of search bar and suggestions (on the Old Start Menu).
 
-New Layout Disabled :
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/be6a021a-3f20-4d49-87f1-ae64c3e12aae" />
+**Author**: [Ali Cool](https://github.com/AliCool412)
+
+New layout :
+![Screenshot](NewLayoutEnabled.png)
+
+Old layout :
+![Screenshot](NewLayoutDisabled.png)
 
 # Manual Installation :
 The theme styles can be imported manually. To do that, follow these steps:
@@ -53,7 +55,8 @@ The theme styles can be imported manually. To do that, follow these steps:
 "controlStyles[14].styles[0]":"Text=All Apps",
 "controlStyles[14].styles[1]":"FontSize=20",
 "controlStyles[15].target":"StartDocked.NavigationPaneButton#UserTileButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ContentPresenter",
-"controlStyles[15].styles[0]":"Padding=3,0,3,0","controlStyles[16].target":"Windows.UI.Xaml.Controls.Button#ShowAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon",
+"controlStyles[15].styles[0]":"Padding=3,0,3,0",
+"controlStyles[16].target":"Windows.UI.Xaml.Controls.Button#ShowAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon",
 "controlStyles[16].styles[0]":"Glyph=",
 "controlStyles[16].styles[1]":"FontSize=16",
 "controlStyles[17].target":"Windows.UI.Xaml.Controls.Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon",
