@@ -373,8 +373,9 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[41].styles[2]":"// All Apps Heading Grid > View type button",
 
   "controlStyles[42].target":"Grid#NavPanePlaceholder",
-    "controlStyles[42].styles[0]":"Margin=52,-577,52,576",
-    "controlStyles[42].styles[1]":"// Navigation Pane of Start Menu ( Userprofile, Powerbutton, Folder Lists )",
+    "controlStyles[42].styles[0]":"Margin=310,-577,-17,576",
+    "controlStyles[42].styles[1]":"Width=96",
+    "controlStyles[42].styles[2]":"// Navigation Pane of Start Menu ( Userprofile, Powerbutton, Folder Lists )",
 
   "controlStyles[43].target":"Grid#AllListHeading",
     "controlStyles[43].styles[0]":"Margin=0,80,-5,0",
@@ -413,7 +414,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[50].styles[1]":"// Folder Open > Scrolling Dots",
 
   "controlStyles[51].target":"StartDocked.PowerOptionsView",
-    "controlStyles[51].styles[0]":"Margin=0,0,-44,0",
+    "controlStyles[51].styles[0]":"Margin=-3,0,3,0",
     "controlStyles[51].styles[1]":"// Power Button Root",
 
   "controlStyles[52].target":"Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#QueryFormulationRoot",
@@ -459,7 +460,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[60].styles[0]":"FontFamily=$ThFnt",
     "controlStyles[60].styles[1]":"FontSize=14",
     "controlStyles[60].styles[2]":"FontWeight=$ThFntWt",
-    "controlStyles[60].styles[3]":"RenderTransform:=<TranslateTransform Y=\"1.5\" />",
+    "controlStyles[60].styles[3]":"RenderTransform:=<TranslateTransform Y=\"1\" />",
     "controlStyles[60].styles[4]":"// Start Menu > Search Box Inactive Placeholder Text",
 
   "controlStyles[61].target":"TextBlock#AppDisplayName",
@@ -582,7 +583,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[82].styles[3]":"// Mouse Hover Flyouts > Adjusting Background",
 
   "controlStyles[83].target":"StartDocked.UserTileView",
-    "controlStyles[83].styles[0]":"Margin=286,0,-23,0",
+    "controlStyles[83].styles[0]":"Margin=0,0,-23,0",
     "controlStyles[83].styles[1]":"// User Profile Root Alignment",
 
   "controlStyles[84].target":"TextBlock#SubFolderNameTextBlock",
@@ -590,9 +591,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
     "controlStyles[84].styles[1]":"FontWeight=$ThHdnWt",
     "controlStyles[84].styles[2]":"// App List > Category View > Folder > Sub folder Heading TextBlock",
 
-  "controlStyles[85].target":"Grid#TopLevelHeader > Grid > Button",
+  "controlStyles[85].target":"Grid#TopLevelHeader > Grid > Button > Grid",
     "controlStyles[85].styles[0]":"RenderTransform:=<TranslateTransform X=\"5\" />",
-    "controlStyles[85].styles[1]":"// Pinned List Heading grid > Show All Pinned Apps button"
+    "controlStyles[85].styles[1]":"CornerRadius=$InnerRadius",
+    "controlStyles[85].styles[2]":"// Pinned List Heading grid > Show All Pinned Apps button"
 }
 ```
 </details>
