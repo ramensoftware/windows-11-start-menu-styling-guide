@@ -188,7 +188,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[24].styles[6]": "CornerRadius=$ElementCornerRadius",
   "controlStyles[18].styles[9]": "BorderThickness@Normal=$ElementBorderThickness",
   "controlStyles[18].styles[10]": "BorderThickness@PointerOver=$ElementBorderThickness",
-  "controlStyles[18].styles[11]": "BorderThickness@Pressed=$ElementBorderThickness"
+  "controlStyles[18].styles[11]": "BorderThickness@Pressed=$ElementBorderThickness",
+  "disableNewStartMenuLayout": "forceNewLayout"
 }
 ```
 </details>
