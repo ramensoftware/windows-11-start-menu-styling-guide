@@ -317,7 +317,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[73].styles[0]": "Visibility=1",
   "controlStyles[74].target": "// Flyouts",
   "controlStyles[75].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
-  "controlStyles[75].styles[0]": "Background:=$Background",
+  "controlStyles[75].styles[0]": "//Background:=$Background",
   "controlStyles[75].styles[1]": "BorderBrush:=$BorderBrush",
   "controlStyles[75].styles[2]": "BorderThickness:=$BorderThickness",
   "controlStyles[75].styles[3]": "CornerRadius:=$ElementCornerRadius",
