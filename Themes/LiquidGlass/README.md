@@ -80,7 +80,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[11].styles[0]": "Background@Normal:=$ElementBackground",
   "controlStyles[11].styles[1]": "BorderBrush@Normal:=$ElementBorderBrush",
   "controlStyles[11].styles[2]": "BorderBrush@PointerOver:=$ElementBorderBrush",
-  "controlStyles[11].styles[3]": "BorderBrush@Pressed:=$ElementBorderColor",
+  "controlStyles[11].styles[3]": "BorderBrush@Pressed:=$ElementBorderBrush",
   "controlStyles[11].styles[4]": "Background@PointerOver:=$AccentBackground",
   "controlStyles[11].styles[5]": "Background@Pressed:=$ElementBackground2",
   "controlStyles[11].styles[6]": "BorderThickness=$ElementBorderThickness",
@@ -159,6 +159,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[27].styles[1]": "RenderTransformOrigin=0.5,0.5",
   "webContentStyles[0].target": "*",
   "webContentStyles[0].styles[0]": "transition: background-color 0.083s ease-in-out !important",
+  "styleConstants[0]": "BorderThickness=0.3,1,0.3,0.3",
+  "styleConstants[1]": "ElementBorderThickness=0.3,0.3,0.3,1",
+  "styleConstants[2]": "CornerRadius=12",
+  "styleConstants[3]": "ElementCornerRadius=8",
   "controlStyles[1].styles[3]": "CornerRadius=$CornerRadius",
   "controlStyles[2].styles[3]": "CornerRadius=$CornerRadius",
   "controlStyles[3].styles[3]": "CornerRadius=$ElementCornerRadius",
@@ -183,16 +187,12 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[18].styles[10]": "BorderThickness@PointerOver=$ElementBorderThickness",
   "controlStyles[18].styles[11]": "BorderThickness@Pressed=$ElementBorderThickness",
   "disableNewStartMenuLayout": "forceNewLayout",
-  "styleConstants[0]": "Background=<WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemChromeAltHighColor}\" TintOpacity=\"0.4\" />",
-  "styleConstants[1]": "ElementBackground=<WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemChromeAltHighColor}\" TintOpacity=\"0.4\" />",
-  "styleConstants[2]": "ElementBackground2 = <WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAltLowColor}\" TintOpacity=\"0.2\"  />",
-  "styleConstants[3]": "AccentBackground=<WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAccentColorLight1}\" TintOpacity=\"0.2\"  />",
-  "styleConstants[4]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#50808080\" Offset=\"1\" /></LinearGradientBrush>\"",
-  "styleConstants[5]": "ElementBorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>",
-  "styleConstants[6]": "BorderThickness=0.3,1,0.3,0.3",
-  "styleConstants[7]": "ElementBorderThickness=0.3,0.3,0.3,1",
-  "styleConstants[8]": "CornerRadius=12",
-  "styleConstants[9]": "ElementCornerRadius=8"
+  "styleConstants[4]": "Background=<WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemChromeAltHighColor}\" TintOpacity=\"0.4\" />",
+  "styleConstants[5]": "ElementBackground=<WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemChromeAltHighColor}\" TintOpacity=\"0.4\" />",
+  "styleConstants[6]": "ElementBackground2 = <WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAltLowColor}\" TintOpacity=\"0.2\"  />",
+  "styleConstants[7]": "AccentBackground=<WindhawkBlur BlurAmount=\"15\" TintColor=\"{ThemeResource SystemAccentColorLight1}\" TintOpacity=\"0.2\"  />",
+  "styleConstants[8]": "BorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"0.0\" /><GradientStop Color=\"#50404040\" Offset=\"0.25\" /><GradientStop Color=\"#50808080\" Offset=\"1\" /></LinearGradientBrush>\"",
+  "styleConstants[9]": "ElementBorderBrush=<LinearGradientBrush StartPoint=\"0,0\" EndPoint=\"0,1\"><GradientStop Color=\"#50808080\" Offset=\"1\" /><GradientStop Color=\"#50606060\" Offset=\"0.15\" /></LinearGradientBrush>"
 }
 ```
 
