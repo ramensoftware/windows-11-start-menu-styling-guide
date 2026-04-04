@@ -5,16 +5,31 @@ Theme For Start Menu which removes drop shadow and borders (thus the name), and 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
 ![Screenshot](screenshot.png)
+<!--
+## Theme selection
 
-# Manual Installation :
+The theme is integrated into the mod and can be selected directly from the mod's
+settings:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
+-->
+## Manual installation
+
 The theme styles can be imported manually. To do that, follow these steps:
-- Open the Windows 11 Taskbar Styler mod in Windhawk.
-- Go to the "Advanced" tab.
-- Copy the content below to the text box under "Mod settings" and click "Save".
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Advanced" tab.
+* Copy the content below to the text box under "Mod settings" and click "Save".
 
 <details>
 <summary>Content to import (click to expand)</summary>
-  
+
 ```json
 {
 "controlStyles[0].target":"Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
@@ -22,7 +37,8 @@ The theme styles can be imported manually. To do that, follow these steps:
 "controlStyles[1].target":"Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
 "controlStyles[1].styles[0]":"Visibility=Collapsed",
 "controlStyles[2].target":"Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
-"controlStyles[2].styles[0]":"Visibility=Collapsed","controlStyles[3].target":"Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
+"controlStyles[2].styles[0]":"Visibility=Collapsed",
+"controlStyles[3].target":"Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
 "controlStyles[3].styles[0]":"Visibility=Collapsed",
 "controlStyles[4].target":"Border#DropShadow",
 "controlStyles[4].styles[0]":"Opacity=0",
@@ -84,7 +100,8 @@ The theme styles can be imported manually. To do that, follow these steps:
 "controlStyles[27].target":"Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter#ContentPresenter > FontIcon > Grid > TextBlock",
 "controlStyles[27].styles[0]":"FontSize=16",
 "controlStyles[28].target":"Frame#StartFrame",
-"controlStyles[28].styles[0]":"Margin=0,-64,0,0","controlStyles[29].target":"Grid#MainMenu > Grid#MainContent > Grid",
+"controlStyles[28].styles[0]":"Margin=0,-64,0,0",
+"controlStyles[29].target":"Grid#MainMenu > Grid#MainContent > Grid",
 "controlStyles[29].styles[0]":"Grid.Row=3",
 "controlStyles[30].target":"Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter",
 "controlStyles[30].styles[0]":"Height=40",
