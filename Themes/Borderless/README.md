@@ -1,6 +1,6 @@
 # Borderless theme for Windows 11 Start Menu Styler
 
-Theme For Start Menu which removes drop shadow and borders (thus the name), and even the greyish tint with Dark Mode, and also removal of search bar and suggestions (on the Old Start Menu).
+A theme for the Start menu that removes the drop shadow and borders (thus the name), the greyish tint in Dark Mode, and the search bar and suggestions (on the old Start Menu).
 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
