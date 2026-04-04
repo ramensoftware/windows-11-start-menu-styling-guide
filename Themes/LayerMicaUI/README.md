@@ -82,9 +82,8 @@ LayerMicaUI is a theme with adaptive layouts for the new Windows 11 25H2 Start m
 
 ## Other LayerMicaUI Themes
 - [LayerMicaUI Taskbar Theme](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/LayerMicaUI)
-<!--
+
 - [LayerMicaUI Notification And Control Center Theme](https://github.com/ramensoftware/windows-11-notification-center-styling-guide/tree/main/Themes/LayerMicaUI)
--->
 
 ## Theme selection
 
