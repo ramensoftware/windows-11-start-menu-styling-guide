@@ -115,7 +115,7 @@ The theme styles can be imported manually. To do that, follow these steps:
 "controlStyles[32].target":"Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion",
 "controlStyles[32].styles[0]":"Height=40",
 "controlStyles[32].styles[1]":"Width=40",
-"controlStyles[32].styles[2]":"Margin=16,0,-16,0"
+"controlStyles[32].styles[2]":"Margin=16,0,-16,0",
 "controlStyles[33].target":"Windows.UI.Xaml.Controls.Border#dropshadow",
 "controlStyles[33].styles[0]":"Opacity=0",
 "controlStyles[34].target":"Windows.UI.Xaml.Controls.Border#LayerBorder",
