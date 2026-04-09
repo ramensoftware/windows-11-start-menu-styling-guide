@@ -1,6 +1,7 @@
 # Borderless theme for Windows 11 Start Menu Styler
 
 A theme for the Start menu that removes the drop shadow and borders (thus the name), the greyish tint in Dark Mode, and the search bar and suggestions (on the old Start Menu).
+Updated to include Search Popout as well (Search Bar still perserved).
 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
@@ -99,6 +100,7 @@ The theme styles can be imported manually. To do that, follow these steps:
 "controlStyles[26].styles[0]":"CornerRadius=2",
 "controlStyles[27].target":"Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter#ContentPresenter > FontIcon > Grid > TextBlock",
 "controlStyles[27].styles[0]":"FontSize=16",
+"controlStyles[27].styles[1]":"Text=",
 "controlStyles[28].target":"Frame#StartFrame",
 "controlStyles[28].styles[0]":"Margin=0,-64,0,0",
 "controlStyles[29].target":"Grid#MainMenu > Grid#MainContent > Grid",
@@ -106,15 +108,20 @@ The theme styles can be imported manually. To do that, follow these steps:
 "controlStyles[30].target":"Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter",
 "controlStyles[30].styles[0]":"Height=40",
 "controlStyles[30].styles[1]":"Width=40",
+"controlStyles[30].styles[2]":"CornerRadius=4",
 "controlStyles[31].target":"Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border",
 "controlStyles[31].styles[0]":"Height=40",
 "controlStyles[31].styles[1]":"Width=40",
 "controlStyles[32].target":"Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion",
 "controlStyles[32].styles[0]":"Height=40",
 "controlStyles[32].styles[1]":"Width=40",
-"controlStyles[30].styles[2]":"CornerRadius=4",
-"controlStyles[27].styles[1]":"Text=",
-"controlStyles[32].styles[2]":"Margin=16,0,-16,0"
+"controlStyles[32].styles[2]":"Margin=16,0,-16,0",
+"controlStyles[33].target":"Windows.UI.Xaml.Controls.Border#dropshadow",
+"controlStyles[33].styles[0]":"Opacity=0",
+"controlStyles[34].target":"Windows.UI.Xaml.Controls.Border#LayerBorder",
+"controlStyles[34].styles[0]":"Opacity=0",
+"controlStyles[35].target":"Windows.UI.Xaml.Controls.Border#AppBorder",
+"controlStyles[35].styles[0]":"BorderThickness=0"
 }
 ```
 </details>
