@@ -30,177 +30,228 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
-  "controlStyles[0].styles[0]": "Visibility=Collapsed",
-  "controlStyles[1].target": "Grid#MoreSuggestionsRoot > Grid",
-  "controlStyles[1].styles[0]": "RenderTransform:=<TranslateTransform Y=\"24\" />",
-  "controlStyles[2].target": "StartDocked.UserTileView",
-  "controlStyles[2].styles[0]": "Visibility=Collapsed",
-  "controlStyles[3].target": "StartDocked.AppListView",
-  "controlStyles[3].styles[0]": "Visibility=Collapsed",
-  "controlStyles[4].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
-  "controlStyles[4].styles[0]": "Visibility=Collapsed",
-  "controlStyles[5].target": "Grid#FrameRoot",
-  "controlStyles[5].styles[0]": "MaxHeight=520",
-  "controlStyles[5].styles[1]": "Margin=-8,10,0,0",
-  "controlStyles[6].target": "StartMenu.PinnedList",
-  "controlStyles[6].styles[0]": "Margin=42,25,42,0",
-  "controlStyles[6].styles[1]": "MaxHeight=380",
-  "controlStyles[7].target": "StartMenu.SearchBoxToggleButton",
-  "controlStyles[7].styles[0]": "Width=430",
-  "controlStyles[7].styles[1]": "Height=40",
-  "controlStyles[7].styles[2]": "Margin=-50,0,0,0",
-  "controlStyles[7].styles[3]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[7].styles[4]": "RenderTransform:=<TranslateTransform Y=\"11\" />",
-  "controlStyles[8].target": "StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement",
-  "controlStyles[8].styles[0]": "CornerRadius=5",
-  "controlStyles[8].styles[1]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[9].target": "StartDocked.PowerOptionsView",
-  "controlStyles[9].styles[0]": "Margin=-135,-950,0,0",
-  "controlStyles[9].styles[1]": "Canvas.ZIndex=99",
-  "controlStyles[10].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem",
-  "controlStyles[10].styles[0]": "Margin=5,0,0,0",
-  "controlStyles[10].styles[1]": "Padding=-1,0",
-  "controlStyles[11].target": "StartMenu.PinnedList > Grid#Root",
-  "controlStyles[11].styles[0]": "Padding=0",
-  "controlStyles[12].target": "TextBlock#PinnedListHeaderText",
-  "controlStyles[12].styles[0]": "Visibility=Collapsed",
-  "controlStyles[13].target": "Windows.UI.Xaml.Controls.TextBlock[Text=]",
-  "controlStyles[13].styles[0]": "Text=",
-  "controlStyles[13].styles[1]": "FontSize=16",
-  "controlStyles[14].target": "Grid#TopLevelHeader > Grid > Button > Grid@CommonStates > Border",
-  "controlStyles[14].styles[0]": "Width=40",
-  "controlStyles[14].styles[1]": "Height=40",
-  "controlStyles[14].styles[2]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[14].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
-  "controlStyles[14].styles[4]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[15].target": "StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border#BackgroundBorder",
-  "controlStyles[15].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[15].styles[1]": "BorderThickness=1",
-  "controlStyles[15].styles[2]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
-  "controlStyles[15].styles[3]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[16].target": "Windows.UI.Xaml.Controls.TextBlock[Text=]",
-  "controlStyles[16].styles[0]": "Text=",
-  "controlStyles[16].styles[1]": "FontSize=16",
-  "controlStyles[17].target": "Grid#AllAppsRoot",
-  "controlStyles[17].styles[0]": "Margin=0,-20,0,-40",
-  "controlStyles[18].target": "Border#AcrylicOverlay",
-  "controlStyles[18].styles[0]": "Margin=0,-64,0,-58",
-  "controlStyles[18].styles[1]": "BorderThickness=0",
-  "controlStyles[18].styles[2]": "Background=Transparent",
-  "controlStyles[18].styles[3]": "CornerRadius=8",
-  "controlStyles[19].target": "Border#AcrylicBorder",
-  "controlStyles[19].styles[0]": "Margin=6,6,6,12",
-  "controlStyles[19].styles[1]": "CornerRadius=8",
-  "controlStyles[20].target": "Cortana.UI.Views.TaskbarSearchPage",
-  "controlStyles[20].styles[0]": "Margin=5,0,0,8",
-  "controlStyles[21].target": "Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid",
-  "controlStyles[21].styles[0]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".65\" Opacity=\"1\"/>",
-  "controlStyles[21].styles[1]": "BorderThickness=2",
-  "controlStyles[21].styles[2]": "Padding=3,3,3,-8",
-  "controlStyles[21].styles[3]": "CornerRadius=8",
-  "controlStyles[22].target": "Border#StartDropShadow",
-  "controlStyles[22].styles[0]": "Visibility=Collapsed",
-  "controlStyles[23].target": "Border#LayerBorder",
-  "controlStyles[23].styles[0]": "Visibility=Collapsed",
-  "controlStyles[24].target": "Grid#MainMenu",
-  "controlStyles[24].styles[0]": "MaxWidth=650",
-  "controlStyles[25].target": "Grid#TopLevelHeader > Grid[2] > Button",
-  "controlStyles[25].styles[0]": "Width=40",
-  "controlStyles[25].styles[1]": "Height=40",
-  "controlStyles[25].styles[2]": "Margin=-73,-6,73,6",
-  "controlStyles[26].target": "TextBlock#ShowMorePinnedButtonText",
-  "controlStyles[26].styles[0]": "Visibility=Collapsed",
-  "controlStyles[27].target": "Windows.UI.Xaml.Controls.FontIcon[Glyph=]",
-  "controlStyles[27].styles[0]": "Glyph=",
-  "controlStyles[27].styles[1]": "FontSize=16",
-  "controlStyles[27].styles[2]": "Margin=0",
-  "controlStyles[28].target": "Grid#FrameRoot",
-  "controlStyles[28].styles[0]": "Margin=0,-58,0,0",
-  "controlStyles[29].target": "StartMenu.StartHome",
-  "controlStyles[29].styles[0]": "Margin=0,-17,0,-52",
-  "controlStyles[30].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton",
-  "controlStyles[30].styles[0]": "Height=40",
-  "controlStyles[30].styles[1]": "Width=40",
-  "controlStyles[31].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton > Border@CommonStates > ContentPresenter",
-  "controlStyles[31].styles[0]": "Width=40",
-  "controlStyles[31].styles[1]": "Height=40",
-  "controlStyles[31].styles[2]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[31].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
-  "controlStyles[31].styles[4]": "BorderThickness=1",
-  "controlStyles[31].styles[5]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[31].styles[6]": "CornerRadius=5",
-  "controlStyles[31].styles[7]": "RenderTransform:=<TranslateTransform Y=\"11\" X=\"-4\" />",
-  "controlStyles[31].styles[8]": "Background@CheckedPointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[32].target": "Grid#MainMenu > Grid#MainContent > Grid",
-  "controlStyles[32].styles[0]": "Canvas.ZIndex=1",
-  "controlStyles[33].target": "Grid#AnimationRoot",
-  "controlStyles[33].styles[0]": "CornerRadius=8",
-  "controlStyles[33].styles[1]": "BorderThickness=2,2,2,3",
-  "controlStyles[33].styles[2]": "Background=Transparent",
-  "controlStyles[33].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".65\" Opacity=\"1\"/>",
-  "controlStyles[33].styles[4]": "Padding=-1.5,-1.5,-1.5,-6",
-  "controlStyles[34].target": "StartMenu.StartMenuCompanion#RightCompanion > Grid",
-  "controlStyles[34].styles[0]": "Margin=0",
-  "controlStyles[35].target": "Grid#CompanionRoot > Grid#MainContent > Border#AcrylicOverlay",
-  "controlStyles[35].styles[0]": "Margin=0,-64,0,-58",
-  "controlStyles[35].styles[1]": "BorderThickness=0",
-  "controlStyles[36].target": "Border#Root > Grid > ScrollContentPresenter > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Grid > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > TextBlock",
-  "controlStyles[36].styles[0]": "Margin=6.5,5,0,-4",
-  "controlStyles[37].target": "AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Windows.UI.Xaml.Controls.TextBlock[Text=View your recent calls, messages, photos, and more.]",
-  "controlStyles[37].styles[0]": "Margin=5.5,0,0,0",
-  "controlStyles[38].target": "Border#RightCompanionDropShadow",
-  "controlStyles[38].styles[0]": "Visibility=Collapsed",
-  "controlStyles[39].target": "Grid#CompanionRoot@CloseCompanionButtonStates",
-  "controlStyles[39].styles[0]": "Margin=-6,0,6,0",
-  "controlStyles[39].styles[1]": "Padding=-2,0",
-  "controlStyles[40].target": "Grid#FrameRoot@CompanionStates > Grid > Grid#RightCompanionContainerGrid",
-  "controlStyles[40].styles[0]": "OpacityTransition:=<ScalarTransition Duration=\"0:0:0.014\" />",
-  "controlStyles[40].styles[1]": "Opacity@CloseCompanion=0",
-  "controlStyles[40].styles[2]": "Opacity@OpeningCompanion_Large=0.14",
-  "controlStyles[40].styles[3]": "Opacity@OpenCompanion=1",
-  "controlStyles[40].styles[4]": "Opacity@OpeningOverlapCompanion=0.64",
-  "controlStyles[40].styles[5]": "Opacity@ClosingOverlapCompanion=0.64",
-  "controlStyles[40].styles[6]": "Opacity@ClosingCompanion_Large=0.24",
-  "controlStyles[41].target": "Button#ShowMoreSuggestionsButton",
-  "controlStyles[41].styles[0]": "Margin=-67,-22,67,0",
-  "controlStyles[42].target": "Button#ShowMoreSuggestionsButton > Grid > ContentPresenter > StackPanel > TextBlock",
-  "controlStyles[42].styles[0]": "Text=",
-  "controlStyles[42].styles[1]": "Margin=0",
-  "controlStyles[43].target": "Button#ShowMoreSuggestionsButton > Grid@CommonStates > ContentPresenter",
-  "controlStyles[43].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[43].styles[1]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
-  "controlStyles[43].styles[2]": "Width=40",
-  "controlStyles[43].styles[3]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[43].styles[4]": "CornerRadius=5",
-  "controlStyles[43].styles[5]": "Height=40",
-  "controlStyles[44].target": "Grid#MainContent",
-  "controlStyles[44].styles[0]": "Margin=0,-50,0,0",
-  "controlStyles[45].target": "Grid#MainContent > Grid",
-  "controlStyles[45].styles[0]": "Margin=-19,2,18,-80",
-  "controlStyles[46].target": "Windows.UI.Xaml.Controls.ContentPresenter#PrimaryCardContainer",
-  "controlStyles[46].styles[0]": "Margin=0,40,0,0",
-  "controlStyles[47].target": "Windows.UI.Xaml.Controls.ListView#ZoomedOutListView",
-  "controlStyles[47].styles[0]": "Margin=0,40,0,0",
-  "controlStyles[48].target": "Button#HideMoreSuggestionsButton",
-  "controlStyles[48].styles[0]": "Margin=-67,-14,67,0",
-  "controlStyles[48].styles[1]": "Height=40",
-  "controlStyles[49].target": "Button#HideMoreSuggestionsButton > Grid@CommonStates > ContentPresenter",
-  "controlStyles[49].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[49].styles[1]": "Width=40",
-  "controlStyles[49].styles[2]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
-  "controlStyles[49].styles[3]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[49].styles[4]": "CornerRadius=5",
-  "controlStyles[50].target": "Button#HideMoreSuggestionsButton > Grid > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > TextBlock",
-  "controlStyles[50].styles[0]": "Text=",
-  "controlStyles[50].styles[1]": "FontFamily=Segoe Fluent Icons",
-  "controlStyles[50].styles[2]": "Margin=0",
-  "controlStyles[50].styles[3]": "FontSize=16",
-  "controlStyles[51].target": "Button#HideMoreSuggestionsButton > Grid > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon > Grid > TextBlock",
-  "controlStyles[51].styles[0]": "Visibility=Collapsed"
-}
+```yaml
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#MoreSuggestionsRoot > Grid
+    styles:
+      - RenderTransform:=<TranslateTransform Y="24" />
+  - target: StartDocked.UserTileView
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.AppListView
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#FrameRoot
+    styles:
+      - MaxHeight=520
+      - Margin=-8,10,0,0
+  - target: StartMenu.PinnedList
+    styles:
+      - Margin=42,25,42,0
+      - MaxHeight=380
+  - target: StartMenu.SearchBoxToggleButton
+    styles:
+      - Width=430
+      - Height=40
+      - Margin=-50,0,0,0
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - RenderTransform:=<TranslateTransform Y="11" />
+  - target: StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement
+    styles:
+      - CornerRadius=5
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+  - target: StartDocked.PowerOptionsView
+    styles:
+      - Margin=-135,-950,0,0
+      - Canvas.ZIndex=99
+  - target: Windows.UI.Xaml.Controls.GridView#PinnedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem
+    styles:
+      - Margin=5,0,0,0
+      - Padding=-1,0
+  - target: StartMenu.PinnedList > Grid#Root
+    styles:
+      - Padding=0
+  - target: TextBlock#PinnedListHeaderText
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.TextBlock[Text=]
+    styles:
+      - Text=
+      - FontSize=16
+  - target: Grid#TopLevelHeader > Grid > Button > Grid@CommonStates > Border
+    styles:
+      - Width=40
+      - Height=40
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity=".2" TintLuminosityOpacity=".3" Opacity="1"/>
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+  - target: StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border#BackgroundBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - BorderThickness=1
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity=".2" TintLuminosityOpacity=".3" Opacity="1"/>
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+  - target: Windows.UI.Xaml.Controls.TextBlock[Text=]
+    styles:
+      - Text=
+      - FontSize=16
+  - target: Grid#AllAppsRoot
+    styles:
+      - Margin=0,-20,0,-40
+  - target: Border#AcrylicOverlay
+    styles:
+      - Margin=0,-64,0,-58
+      - BorderThickness=0
+      - Background=Transparent
+      - CornerRadius=8
+  - target: Border#AcrylicBorder
+    styles:
+      - Margin=6,6,6,12
+      - CornerRadius=8
+  - target: Cortana.UI.Views.TaskbarSearchPage
+    styles:
+      - Margin=5,0,0,8
+  - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid
+    styles:
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity=".65" Opacity="1"/>
+      - BorderThickness=2
+      - Padding=3,3,3,-8
+      - CornerRadius=8
+  - target: Border#StartDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#MainMenu
+    styles:
+      - MaxWidth=650
+  - target: Grid#TopLevelHeader > Grid[2] > Button
+    styles:
+      - Width=40
+      - Height=40
+      - Margin=-73,-6,73,6
+  - target: TextBlock#ShowMorePinnedButtonText
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.FontIcon[Glyph=]
+    styles:
+      - Glyph=
+      - FontSize=16
+      - Margin=0
+  - target: Grid#FrameRoot
+    styles:
+      - Margin=0,-58,0,0
+  - target: StartMenu.StartHome
+    styles:
+      - Margin=0,-17,0,-52
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton
+    styles:
+      - Height=40
+      - Width=40
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton > Border@CommonStates > ContentPresenter
+    styles:
+      - Width=40
+      - Height=40
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity=".2" TintLuminosityOpacity=".3" Opacity="1"/>
+      - BorderThickness=1
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - CornerRadius=5
+      - RenderTransform:=<TranslateTransform Y="11" X="-4" />
+      - Background@CheckedPointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+  - target: Grid#MainMenu > Grid#MainContent > Grid
+    styles:
+      - Canvas.ZIndex=1
+  - target: Grid#AnimationRoot
+    styles:
+      - CornerRadius=8
+      - BorderThickness=2,2,2,3
+      - Background=Transparent
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity=".65" Opacity="1"/>
+      - Padding=-1.5,-1.5,-1.5,-6
+  - target: StartMenu.StartMenuCompanion#RightCompanion > Grid
+    styles:
+      - Margin=0
+  - target: Grid#CompanionRoot > Grid#MainContent > Border#AcrylicOverlay
+    styles:
+      - Margin=0,-64,0,-58
+      - BorderThickness=0
+  - target: Border#Root > Grid > ScrollContentPresenter > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Grid > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > TextBlock
+    styles:
+      - Margin=6.5,5,0,-4
+  - target: AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Windows.UI.Xaml.Controls.TextBlock[Text=View your recent calls, messages, photos, and more.]
+    styles:
+      - Margin=5.5,0,0,0
+  - target: Border#RightCompanionDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#CompanionRoot@CloseCompanionButtonStates
+    styles:
+      - Margin=-6,0,6,0
+      - Padding=-2,0
+  - target: Grid#FrameRoot@CompanionStates > Grid > Grid#RightCompanionContainerGrid
+    styles:
+      - OpacityTransition:=<ScalarTransition Duration="0:0:0.014" />
+      - Opacity@CloseCompanion=0
+      - Opacity@OpeningCompanion_Large=0.14
+      - Opacity@OpenCompanion=1
+      - Opacity@OpeningOverlapCompanion=0.64
+      - Opacity@ClosingOverlapCompanion=0.64
+      - Opacity@ClosingCompanion_Large=0.24
+  - target: Button#ShowMoreSuggestionsButton
+    styles:
+      - Margin=-67,-22,67,0
+  - target: Button#ShowMoreSuggestionsButton > Grid > ContentPresenter > StackPanel > TextBlock
+    styles:
+      - Text=
+      - Margin=0
+  - target: Button#ShowMoreSuggestionsButton > Grid@CommonStates > ContentPresenter
+    styles:
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity=".2" TintLuminosityOpacity=".3" Opacity="1"/>
+      - Width=40
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - CornerRadius=5
+      - Height=40
+  - target: Grid#MainContent
+    styles:
+      - Margin=0,-50,0,0
+  - target: Grid#MainContent > Grid
+    styles:
+      - Margin=-19,2,18,-80
+  - target: Windows.UI.Xaml.Controls.ContentPresenter#PrimaryCardContainer
+    styles:
+      - Margin=0,40,0,0
+  - target: Windows.UI.Xaml.Controls.ListView#ZoomedOutListView
+    styles:
+      - Margin=0,40,0,0
+  - target: Button#HideMoreSuggestionsButton
+    styles:
+      - Margin=-67,-14,67,0
+      - Height=40
+  - target: Button#HideMoreSuggestionsButton > Grid@CommonStates > ContentPresenter
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - Width=40
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity=".2" TintLuminosityOpacity=".3" Opacity="1"/>
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+      - CornerRadius=5
+  - target: Button#HideMoreSuggestionsButton > Grid > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > TextBlock
+    styles:
+      - Text=
+      - FontFamily=Segoe Fluent Icons
+      - Margin=0
+      - FontSize=16
+  - target: Button#HideMoreSuggestionsButton > Grid > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon > Grid > TextBlock
+    styles:
+      - Visibility=Collapsed
 ```
 </details>
 
@@ -209,109 +260,145 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
-  "controlStyles[0].styles[0]": "Visibility=Collapsed",
-  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
-  "controlStyles[1].styles[0]": "Visibility=Collapsed",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[2].styles[0]": "Visibility=Collapsed",
-  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[3].styles[0]": "Visibility=Collapsed",
-  "controlStyles[4].target": "StartDocked.UserTileView",
-  "controlStyles[4].styles[0]": "Visibility=Collapsed",
-  "controlStyles[5].target": "StartDocked.AppListView",
-  "controlStyles[5].styles[0]": "Visibility=Collapsed",
-  "controlStyles[6].target": "Microsoft.UI.Xaml.Controls.PipsPager",
-  "controlStyles[6].styles[0]": "Visibility=Collapsed",
-  "controlStyles[7].target": "StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle",
-  "controlStyles[7].styles[0]": "Visibility=Collapsed",
-  "controlStyles[8].target": "StartDocked.StartSizingFrame",
-  "controlStyles[8].styles[0]": "MaxHeight=520",
-  "controlStyles[8].styles[1]": "Margin=-8,10,0,0",
-  "controlStyles[9].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
-  "controlStyles[9].styles[0]": "Margin=0,-70,0,-90",
-  "controlStyles[10].target": "StartMenu.PinnedList",
-  "controlStyles[10].styles[0]": "Height=375",
-  "controlStyles[10].styles[1]": "Margin=13,30,-13,0",
-  "controlStyles[11].target": "StartDocked.SearchBoxToggleButton",
-  "controlStyles[11].styles[0]": "Width=480",
-  "controlStyles[11].styles[1]": "Height=40",
-  "controlStyles[11].styles[2]": "Margin=-100,0,0,30",
-  "controlStyles[11].styles[3]": "Canvas.ZIndex=1",
-  "controlStyles[12].target": "StartDocked.SearchBoxToggleButton > Grid > Windows.UI.Xaml.Controls.Border",
-  "controlStyles[12].styles[0]": "CornerRadius=5",
-  "controlStyles[12].styles[1]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[13].target": "StartDocked.PowerOptionsView",
-  "controlStyles[13].styles[0]": "Margin=-68,-870,0,0",
-  "controlStyles[14].target": "Windows.UI.Xaml.Controls.GridView#PinnedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem",
-  "controlStyles[14].styles[0]": "Margin=5,10,0,0",
-  "controlStyles[15].target": "StartMenu.PinnedList > Grid#Root",
-  "controlStyles[15].styles[0]": "Padding=0",
-  "controlStyles[16].target": "TextBlock#PinnedListHeaderText",
-  "controlStyles[16].styles[0]": "Visibility=Collapsed",
-  "controlStyles[17].target": "TextBlock#ShowAllAppsButtonText",
-  "controlStyles[17].styles[0]": "Visibility=Collapsed",
-  "controlStyles[18].target": "Button#ShowAllAppsButton",
-  "controlStyles[18].styles[0]": "Margin=0,-2,30,0",
-  "controlStyles[19].target": "Windows.UI.Xaml.Controls.TextBlock[Text=]",
-  "controlStyles[19].styles[0]": "Text=",
-  "controlStyles[19].styles[1]": "FontSize=16",
-  "controlStyles[20].target": "Button#ShowAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates",
-  "controlStyles[20].styles[0]": "Width=40",
-  "controlStyles[20].styles[1]": "Height=40",
-  "controlStyles[20].styles[2]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[20].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
-  "controlStyles[20].styles[4]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[21].target": "StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border#BackgroundBorder",
-  "controlStyles[21].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[21].styles[1]": "BorderThickness=1",
-  "controlStyles[21].styles[2]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
-  "controlStyles[21].styles[3]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[22].target": "Windows.UI.Xaml.Controls.TextBlock[Text=Back]",
-  "controlStyles[22].styles[0]": "Visibility=Collapsed",
-  "controlStyles[23].target": "Windows.UI.Xaml.Controls.TextBlock[Text=]",
-  "controlStyles[23].styles[0]": "Text=",
-  "controlStyles[23].styles[1]": "FontSize=16",
-  "controlStyles[24].target": "Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates",
-  "controlStyles[24].styles[0]": "Width=40",
-  "controlStyles[24].styles[1]": "Height=40",
-  "controlStyles[24].styles[2]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\".3\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
-  "controlStyles[24].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\".2\" TintLuminosityOpacity=\".3\" Opacity=\"1\"/>",
-  "controlStyles[24].styles[4]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".2\" Opacity=\"1\"/>",
-  "controlStyles[25].target": "Button#CloseAllAppsButton",
-  "controlStyles[25].styles[0]": "Margin=0,-102,-33,0",
-  "controlStyles[26].target": "Grid#AllAppsRoot",
-  "controlStyles[26].styles[0]": "Margin=0,-20,0,-40",
-  "controlStyles[27].target": "Border#AcrylicOverlay",
-  "controlStyles[27].styles[0]": "Margin=0,0,0,-58",
-  "controlStyles[27].styles[1]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".65\" Opacity=\"1\"/>",
-  "controlStyles[27].styles[2]": "BorderThickness=2",
-  "controlStyles[27].styles[3]": "Background=Transparent",
-  "controlStyles[27].styles[4]": "CornerRadius=8",
-  "controlStyles[28].target": "Border#AcrylicBorder",
-  "controlStyles[28].styles[0]": "Margin=6,6,6,12",
-  "controlStyles[28].styles[1]": "CornerRadius=8",
-  "controlStyles[29].target": "Border#DropShadow",
-  "controlStyles[29].styles[0]": "Visibility=Collapsed",
-  "controlStyles[30].target": "Border#StartDropShadow",
-  "controlStyles[30].styles[0]": "Visibility=Collapsed",
-  "controlStyles[31].target": "Border#RootGridDropShadow",
-  "controlStyles[31].styles[0]": "Visibility=Collapsed",
-  "controlStyles[32].target": "Border#RightCompanionDropShadow",
-  "controlStyles[32].styles[0]": "Visibility=Collapsed",
-  "controlStyles[33].target": "Cortana.UI.Views.TaskbarSearchPage",
-  "controlStyles[33].styles[0]": "Margin=5,0,0,8",
-  "controlStyles[34].target": "Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid",
-  "controlStyles[34].styles[0]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".65\" Opacity=\"1\"/>",
-  "controlStyles[34].styles[1]": "BorderThickness=2",
-  "controlStyles[34].styles[2]": "Padding=3,3,3,-8",
-  "controlStyles[34].styles[3]": "CornerRadius=8",
-  "controlStyles[35].target": "Border#dropshadow",
-  "controlStyles[35].styles[0]": "Visibility=Collapsed",
-  "controlStyles[36].target": "Border#LayerBorder",
-  "controlStyles[36].styles[0]": "Visibility=Collapsed"
-}
+```yaml
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.UserTileView
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.AppListView
+    styles:
+      - Visibility=Collapsed
+  - target: Microsoft.UI.Xaml.Controls.PipsPager
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MaxHeight=520
+      - Margin=-8,10,0,0
+  - target: Windows.UI.Xaml.Controls.Grid#UndockedRoot
+    styles:
+      - Margin=0,-70,0,-90
+  - target: StartMenu.PinnedList
+    styles:
+      - Height=375
+      - Margin=13,30,-13,0
+  - target: StartDocked.SearchBoxToggleButton
+    styles:
+      - Width=480
+      - Height=40
+      - Margin=-100,0,0,30
+      - Canvas.ZIndex=1
+  - target: StartDocked.SearchBoxToggleButton > Grid > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=5
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+  - target: StartDocked.PowerOptionsView
+    styles:
+      - Margin=-68,-870,0,0
+  - target: Windows.UI.Xaml.Controls.GridView#PinnedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem
+    styles:
+      - Margin=5,10,0,0
+  - target: StartMenu.PinnedList > Grid#Root
+    styles:
+      - Padding=0
+  - target: TextBlock#PinnedListHeaderText
+    styles:
+      - Visibility=Collapsed
+  - target: TextBlock#ShowAllAppsButtonText
+    styles:
+      - Visibility=Collapsed
+  - target: Button#ShowAllAppsButton
+    styles:
+      - Margin=0,-2,30,0
+  - target: Windows.UI.Xaml.Controls.TextBlock[Text=]
+    styles:
+      - Text=
+      - FontSize=16
+  - target: Button#ShowAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Width=40
+      - Height=40
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity=".2" TintLuminosityOpacity=".3" Opacity="1"/>
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+  - target: StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border#BackgroundBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - BorderThickness=1
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity=".2" TintLuminosityOpacity=".3" Opacity="1"/>
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+  - target: Windows.UI.Xaml.Controls.TextBlock[Text=Back]
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.TextBlock[Text=]
+    styles:
+      - Text=
+      - FontSize=16
+  - target: Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Width=40
+      - Height=40
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity=".2" TintLuminosityOpacity=".3" Opacity="1"/>
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
+  - target: Button#CloseAllAppsButton
+    styles:
+      - Margin=0,-102,-33,0
+  - target: Grid#AllAppsRoot
+    styles:
+      - Margin=0,-20,0,-40
+  - target: Border#AcrylicOverlay
+    styles:
+      - Margin=0,0,0,-58
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity=".65" Opacity="1"/>
+      - BorderThickness=2
+      - Background=Transparent
+      - CornerRadius=8
+  - target: Border#AcrylicBorder
+    styles:
+      - Margin=6,6,6,12
+      - CornerRadius=8
+  - target: Border#DropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Border#StartDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Border#RootGridDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Border#RightCompanionDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Cortana.UI.Views.TaskbarSearchPage
+    styles:
+      - Margin=5,0,0,8
+  - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid
+    styles:
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity=".65" Opacity="1"/>
+      - BorderThickness=2
+      - Padding=3,3,3,-8
+      - CornerRadius=8
+  - target: Border#dropshadow
+    styles:
+      - Visibility=Collapsed
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=Collapsed
 ```
 </details>

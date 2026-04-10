@@ -44,80 +44,108 @@ The theme styles have to be imported manually. To do that, follow these steps:
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-	"controlStyles[0].target": "Grid#PaneRoot",
-	"controlStyles[0].styles[0]": "Clip:=",
-	"controlStyles[0].styles[1]": "FlowDirection=0",
-	"controlStyles[0].styles[2]": "RenderTransform:=<TranslateTransform X=\"105\" />",
-	"controlStyles[1].target": "Grid#ContentRoot",
-	"controlStyles[1].styles[0]": "FlowDirection=0",
-	"controlStyles[2].target": "SplitView#RootContent",
-	"controlStyles[2].styles[0]": "IsPaneOpen=False",
-	"controlStyles[3].target": "SplitView#RootContent > Grid",
-	"controlStyles[3].styles[0]": "FlowDirection=1",
-	"controlStyles[4].target": "StartUI.NavigationPaneGrid",
-	"controlStyles[4].styles[0]": "Width=165",
-	"controlStyles[4].styles[1]": "Background:=<SolidColorBrush Color=\"{ThemeResource SystemListLowColor}\" />",
-	"controlStyles[5].target": "Windows.UI.Xaml.Shapes.Rectangle#BackgroundElement",
-	"controlStyles[5].styles[0]": "Visibility=Collapsed",
-	"controlStyles[6].target": "StartUI.StartSizingFrame",
-	"controlStyles[6].styles[0]": "MinWidth=501",
-	"controlStyles[6].styles[1]": "MaxWidth=501",
-	"controlStyles[7].target": "StartUI.ExpandCollapseButton",
-	"controlStyles[7].styles[0]": "Visibility=Collapsed",
-	"controlStyles[8].target": "StartUI.UserTileView",
-	"controlStyles[8].styles[0]": "Grid.Row=1",
-	"controlStyles[8].styles[1]": "Margin=0,50,0,0",
-	"controlStyles[9].target": "StartUI.AppListView",
-	"controlStyles[9].styles[0]": "Grid.Row=2",
-	"controlStyles[10].target": "StartUI.NavigationPaneButton#UserTileButton",
-	"controlStyles[10].styles[0]": "Height=50",
-	"controlStyles[11].target": "TextBlock#UserTileNameText",
-	"controlStyles[11].styles[0]": "HorizontalAlignment=Center",
-	"controlStyles[11].styles[1]": "RenderTransform:=<TranslateTransform X=\"-25\" />",
-	"controlStyles[12].target": "StartUI.NavigationPaneButton#UserTileButton > ContentPresenter > StartUI.NavigationPaneItemPanel > Grid",
-	"controlStyles[12].styles[0]": "Width=48",
-	"controlStyles[12].styles[1]": "Height=48",
-	"controlStyles[12].styles[2]": "IsHitTestVisible=False",
-	"controlStyles[12].styles[3]": "RenderTransform:=<TransformGroup><ScaleTransform ScaleX=\"1.5\" ScaleY=\"1.5\" /><TranslateTransform X=\"45\" Y=\"-87\" /></TransformGroup>",
-	"controlStyles[13].target": "StartUI.ResizeThumb#HorizontalThumb",
-	"controlStyles[13].styles[0]": "Visibility=Collapsed",
-	"controlStyles[14].target": "StartUI.NavigationPaneButton#UserTileButton > ContentPresenter > StartUI.NavigationPaneItemPanel > Grid > Windows.UI.Xaml.Shapes.Ellipse",
-	"controlStyles[14].styles[0]": "Fill:=<ImageBrush ImageSource=\"$userPicture\" />",
-	"controlStyles[15].target": "StartUI.StartSizingFramePanel",
-	"controlStyles[15].styles[0]": "Margin=0,50,0,0",
-	"controlStyles[16].target": "Image#DropShadow",
-	"controlStyles[16].styles[0]": "Canvas.ZIndex=-1",
-	"controlStyles[17].target": "StartUI.ViewSelectionListView",
-	"controlStyles[17].styles[0]": "Grid.Row=4",
-	"controlStyles[18].target": "StartUI.NavigationPaneGrid > Image#DropShadow",
-	"controlStyles[18].styles[0]": "Visibility=Collapsed",
-	"controlStyles[19].target": "StartUI.AllAppsGridListView",
-	"controlStyles[19].styles[0]": "HorizontalAlignment=Left",
-	"controlStyles[20].target": "StartUI.AllAppsPane",
-	"controlStyles[20].styles[0]": "Width=324",
-	"controlStyles[20].styles[1]": "Margin=5,0,0,0",
-	"controlStyles[20].styles[2]": "HorizontalAlignment=Left",
-	"controlStyles[21].target": "Border#GridPane",
-	"controlStyles[21].styles[0]": "Width=334",
-	"controlStyles[21].styles[1]": "RenderTransform:=<TranslateTransform X=\"-84\" />",
-	"controlStyles[22].target": "Grid#ContentPaneGrid",
-	"controlStyles[22].styles[0]": "Width=500",
-	"controlStyles[23].target": "StartUI.ViewSelectionListView",
-	"controlStyles[23].styles[0]": "Height=48",
-	"controlStyles[24].target": "StartUI.ViewSelectionListViewItem > Grid@CommonStates",
-	"controlStyles[24].styles[0]": "Visibility@Selected=Collapsed",
-	"controlStyles[24].styles[1]": "Visibility@PointerOverSelected=Collapsed",
-	"controlStyles[24].styles[2]": "Visibility@PressedOverSelected=Collapsed",
-	"controlStyles[25].target": "StartUI.ViewSelectionListViewItem[2]",
-	"controlStyles[25].styles[0]": "Margin=0,-48,0,0",
-	"controlStyles[26].target": "TextBlock#StatusMessage[Text=System]",
-	"controlStyles[26].styles[0]": "Visibility=Collapsed",
-	"controlStyles[27].target": "StartUI.TileViewControl > Grid#MainGrid > Rectangle#Background",
-	"controlStyles[27].styles[0]": "Fill:=<SolidColorBrush Color=\"{ThemeResource SystemListLowColor}\" />",
-	"styleConstants[0]": "userPicture=REPLACE ME"
-}
+```yaml
+styleConstants:
+  - userPicture=REPLACE ME
+controlStyles:
+  - target: Grid#PaneRoot
+    styles:
+      - Clip:=
+      - FlowDirection=0
+      - RenderTransform:=<TranslateTransform X="105" />
+  - target: Grid#ContentRoot
+    styles:
+      - FlowDirection=0
+  - target: SplitView#RootContent
+    styles:
+      - IsPaneOpen=False
+  - target: SplitView#RootContent > Grid
+    styles:
+      - FlowDirection=1
+  - target: StartUI.NavigationPaneGrid
+    styles:
+      - Width=165
+      - Background:=<SolidColorBrush Color="{ThemeResource SystemListLowColor}" />
+  - target: Windows.UI.Xaml.Shapes.Rectangle#BackgroundElement
+    styles:
+      - Visibility=Collapsed
+  - target: StartUI.StartSizingFrame
+    styles:
+      - MinWidth=501
+      - MaxWidth=501
+  - target: StartUI.ExpandCollapseButton
+    styles:
+      - Visibility=Collapsed
+  - target: StartUI.UserTileView
+    styles:
+      - Grid.Row=1
+      - Margin=0,50,0,0
+  - target: StartUI.AppListView
+    styles:
+      - Grid.Row=2
+  - target: StartUI.NavigationPaneButton#UserTileButton
+    styles:
+      - Height=50
+  - target: TextBlock#UserTileNameText
+    styles:
+      - HorizontalAlignment=Center
+      - RenderTransform:=<TranslateTransform X="-25" />
+  - target: StartUI.NavigationPaneButton#UserTileButton > ContentPresenter > StartUI.NavigationPaneItemPanel > Grid
+    styles:
+      - Width=48
+      - Height=48
+      - IsHitTestVisible=False
+      - RenderTransform:=<TransformGroup><ScaleTransform ScaleX="1.5" ScaleY="1.5" /><TranslateTransform X="45" Y="-87" /></TransformGroup>
+  - target: StartUI.ResizeThumb#HorizontalThumb
+    styles:
+      - Visibility=Collapsed
+  - target: StartUI.NavigationPaneButton#UserTileButton > ContentPresenter > StartUI.NavigationPaneItemPanel > Grid > Windows.UI.Xaml.Shapes.Ellipse
+    styles:
+      - Fill:=<ImageBrush ImageSource="$userPicture" />
+  - target: StartUI.StartSizingFramePanel
+    styles:
+      - Margin=0,50,0,0
+  - target: Image#DropShadow
+    styles:
+      - Canvas.ZIndex=-1
+  - target: StartUI.ViewSelectionListView
+    styles:
+      - Grid.Row=4
+  - target: StartUI.NavigationPaneGrid > Image#DropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: StartUI.AllAppsGridListView
+    styles:
+      - HorizontalAlignment=Left
+  - target: StartUI.AllAppsPane
+    styles:
+      - Width=324
+      - Margin=5,0,0,0
+      - HorizontalAlignment=Left
+  - target: Border#GridPane
+    styles:
+      - Width=334
+      - RenderTransform:=<TranslateTransform X="-84" />
+  - target: Grid#ContentPaneGrid
+    styles:
+      - Width=500
+  - target: StartUI.ViewSelectionListView
+    styles:
+      - Height=48
+  - target: StartUI.ViewSelectionListViewItem > Grid@CommonStates
+    styles:
+      - Visibility@Selected=Collapsed
+      - Visibility@PointerOverSelected=Collapsed
+      - Visibility@PressedOverSelected=Collapsed
+  - target: StartUI.ViewSelectionListViewItem[2]
+    styles:
+      - Margin=0,-48,0,0
+  - target: TextBlock#StatusMessage[Text=System]
+    styles:
+      - Visibility=Collapsed
+  - target: StartUI.TileViewControl > Grid#MainGrid > Rectangle#Background
+    styles:
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemListLowColor}" />
 ```
 </details>
 

@@ -32,206 +32,275 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Grid#ShowMoreSuggestions",
-  "controlStyles[0].styles[0]": "Visibility=1",
-  "controlStyles[1].target": "Grid#SuggestionsParentContainer",
-  "controlStyles[1].styles[0]": "Visibility=1",
-  "controlStyles[2].target": "Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[2].styles[0]": "Visibility=1",
-  "controlStyles[3].target": "StartMenu.SearchBoxToggleButton",
-  "controlStyles[3].styles[0]": "Margin=5,2,-5,-2",
-  "controlStyles[4].target": "Border#AcrylicBorder",
-  "controlStyles[4].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0.45\" TintLuminosityOpacity=\".96\" Opacity=\"1\"/>",
-  "controlStyles[4].styles[1]": "CornerRadius=12",
-  "controlStyles[4].styles[2]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".25\" Opacity=\"1\"/>",
-  "controlStyles[5].target": "Grid#MainContent",
-  "controlStyles[5].styles[0]": "CornerRadius=12",
-  "controlStyles[6].target": "StartMenu.PinnedList",
-  "controlStyles[6].styles[0]": "MaxWidth=650",
-  "controlStyles[6].styles[1]": "Margin=-14,14,4,0",
-  "controlStyles[7].target": "TextBlock#DisplayName",
-  "controlStyles[7].styles[0]": "Margin=0,8,0,-8",
-  "controlStyles[7].styles[1]": "FontSize=13",
-  "controlStyles[7].styles[2]": "FontFamily=Aptos",
-  "controlStyles[7].styles[3]": "Opacity=.75",
-  "controlStyles[7].styles[4]": "FontWeight=500",
-  "controlStyles[7].styles[5]": "Padding=14,0,14,0",
-  "controlStyles[8].target": "TextBlock#PinnedListHeaderText",
-  "controlStyles[8].styles[0]": "FontFamily=Aptos",
-  "controlStyles[8].styles[1]": "Opacity=.85",
-  "controlStyles[8].styles[2]": "FontSize=16",
-  "controlStyles[8].styles[3]": "Margin=40,0,-40,0",
-  "controlStyles[9].target": "Border#TaskbarSearchBackground",
-  "controlStyles[9].styles[0]": "Visibility=1",
-  "controlStyles[10].target": "Border#AppBorder",
-  "controlStyles[10].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0.25\" TintLuminosityOpacity=\".96\" Opacity=\"1\"/>",
-  "controlStyles[10].styles[1]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".25\" Opacity=\"1\"/>",
-  "controlStyles[10].styles[2]": "CornerRadius=12",
-  "controlStyles[11].target": "Border#StartDropShadow",
-  "controlStyles[11].styles[0]": "CornerRadius=12",
-  "controlStyles[11].styles[1]": "Margin=-1",
-  "controlStyles[12].target": "Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl",
-  "controlStyles[12].styles[0]": "Margin=33,33,33,10",
-  "controlStyles[13].target": "TextBlock#UserTileNameText",
-  "controlStyles[13].styles[0]": "Visibility=1",
-  "controlStyles[14].target": "TextBlock#AllListHeadingText",
-  "controlStyles[14].styles[0]": "FontFamily=Aptos",
-  "controlStyles[14].styles[1]": "Margin=50,5,0,0",
-  "controlStyles[14].styles[2]": "FontSize=16",
-  "controlStyles[14].styles[3]": "Opacity=.85",
-  "controlStyles[15].target": "Border#ContentBorder",
-  "controlStyles[15].styles[0]": "CornerRadius=6",
-  "controlStyles[16].target": "StartMenu.SearchBoxToggleButton > Grid > ContentPresenter > TextBlock#PlaceholderText",
-  "controlStyles[16].styles[0]": "Text=Where to next?",
-  "controlStyles[16].styles[1]": "FontWeight=700",
-  "controlStyles[16].styles[2]": "FontFamily=Aptos",
-  "controlStyles[16].styles[3]": "FontSize=24",
-  "controlStyles[16].styles[4]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
-  "controlStyles[16].styles[5]": "Margin=2,0,0,0",
-  "controlStyles[17].target": "StartMenu.SearchBoxToggleButton > Grid > Border",
-  "controlStyles[17].styles[0]": "Background=Transparent",
-  "controlStyles[17].styles[1]": "BorderBrush=Transparent",
-  "controlStyles[18].target": "StartMenu.SearchBoxToggleButton > Grid > FontIcon",
-  "controlStyles[18].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"165\" TranslateY=\"-1\"/>",
-  "controlStyles[18].styles[1]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" FallbackColor=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
-  "controlStyles[18].styles[2]": "FontSize=24",
-  "controlStyles[19].target": "Grid#TopLevelRoot",
-  "controlStyles[19].styles[0]": "Margin=0,-8,0,0",
-  "controlStyles[20].target": "StartDocked.UserTileView",
-  "controlStyles[21].target": "StartDocked.UserTileView > StartDocked.NavigationPaneButton > Grid > Border",
-  "controlStyles[21].styles[0]": "CornerRadius=99",
-  "controlStyles[21].styles[1]": "Margin=7,0,8,1",
-  "controlStyles[22].styles[0]": "RenderTransform:=<TranslateTransform X=\"-14\" Y=\"-685\" />",
-  "controlStyles[22].target": "StartDocked.PowerOptionsView",
-  "controlStyles[22].styles[1]": "CornerRadius=99",
-  "controlStyles[22].styles[2]": "Opacity=.85",
-  "controlStyles[23].target": "Border#AcrylicOverlay",
-  "controlStyles[23].styles[0]": "Visibility=1",
-  "controlStyles[24].target": "TextBlock#AppDisplayName",
-  "controlStyles[24].styles[0]": "FontFamily=Aptos",
-  "controlStyles[24].styles[1]": "Opacity=.85",
-  "controlStyles[24].styles[2]": "Margin=4,0,0,4",
-  "controlStyles[24].styles[3]": "FontWeight=500",
-  "controlStyles[25].target": "Button#Header > Border > TextBlock",
-  "controlStyles[25].styles[0]": "FontFamily=Aptos",
-  "controlStyles[25].styles[1]": "FontWeight=600",
-  "controlStyles[25].styles[2]": "Opacity=.85",
-  "controlStyles[26].target": "StartDocked.PowerOptionsView > StartDocked.NavigationPaneButton > Grid > Border",
-  "controlStyles[26].styles[0]": "CornerRadius=99",
-  "controlStyles[26].styles[1]": "Margin=1",
-  "controlStyles[27].target": "ListViewItem",
-  "controlStyles[27].styles[0]": "Margin=1,5,-5,-5",
-  "controlStyles[27].styles[1]": "CornerRadius=4",
-  "controlStyles[28].target": "Button#Header",
-  "controlStyles[28].styles[0]": "Margin=4,0,-3,-5",
-  "controlStyles[29].target": "TextBlock#PlaceholderTextContentPresenter",
-  "controlStyles[29].styles[0]": "FontFamily=Aptos",
-  "controlStyles[29].styles[1]": "FontSize=24",
-  "controlStyles[29].styles[2]": "FontWeight=700",
-  "controlStyles[29].styles[3]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".7\"/>",
-  "controlStyles[30].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer",
-  "controlStyles[30].styles[0]": "Visibility=1",
-  "controlStyles[31].target": "Button#SearchGlyphContainer",
-  "controlStyles[31].styles[0]": "FontSize=32",
-  "controlStyles[31].styles[1]": "Visibility=1",
-  "controlStyles[32].target": "Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox",
-  "controlStyles[32].styles[0]": "FontSize=24",
-  "controlStyles[32].styles[1]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource TextFillColorPrimary}\" Opacity=\".85\"/>",
-  "controlStyles[32].styles[2]": "FontFamily=Aptos",
-  "controlStyles[32].styles[3]": "Opacity=.85",
-  "controlStyles[32].styles[4]": "FontWeight=ExtraBold",
-  "controlStyles[33].target": "Border#LayerBorder",
-  "controlStyles[33].styles[0]": "Visibility=1",
-  "controlStyles[34].target": "Windows.UI.Xaml.Controls.FontIcon#SearchBoxOnTaskbarSearchGlyph",
-  "controlStyles[34].styles[0]": "Visibility=0",
-  "controlStyles[34].styles[1]": "Margin=0",
-  "controlStyles[34].styles[2]": "FontSize=32",
-  "controlStyles[34].styles[3]": "Opacity=.85",
-  "controlStyles[35].target": "Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl",
-  "controlStyles[35].styles[0]": "Margin=31,31,17,17",
-  "controlStyles[36].target": "Grid#WebViewGrid",
-  "controlStyles[36].styles[0]": "Margin=-13,0,-10,15",
-  "controlStyles[37].target": "TextBlock#StatusMessage",
-  "controlStyles[37].styles[0]": "Visibility=1",
-  "controlStyles[38].target": "Border#StartDropShadow",
-  "controlStyles[38].styles[0]": "CornerRadius=12",
-  "controlStyles[38].styles[1]": "Margin=-1",
-  "controlStyles[39].target": "Border#StartDropShadowDismissTarget",
-  "controlStyles[39].styles[0]": "CornerRadius=12",
-  "controlStyles[40].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
-  "controlStyles[40].styles[0]": "Margin=-250,50,0,0",
-  "controlStyles[41].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
-  "controlStyles[41].styles[0]": "Margin=-250,0,0,0",
-  "controlStyles[42].target": "StartMenu.SearchBoxToggleButton > Grid > FontIcon#SearchGlyph",
-  "controlStyles[42].styles[0]": "Margin=0,-3,0,0",
-  "controlStyles[42].styles[1]": "FontSize=25",
-  "controlStyles[42].styles[2]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
-  "controlStyles[43].target": "StartMenu.ExpandedFolderList > Grid#Root > Border",
-  "controlStyles[43].styles[0]": "Height=420",
-  "controlStyles[44].target": "TextBox#ExpandedFolderNameTextBox",
-  "controlStyles[44].styles[0]": "Margin=-15,-15,15,20",
-  "controlStyles[45].target": "Windows.UI.Xaml.Controls.GridView#FolderList > Border",
-  "controlStyles[45].styles[0]": "Margin=0,0,0,-60",
-  "controlStyles[46].target": "StartDocked.NavigationPaneView#NavigationPane > Grid > StartDocked.AppListView",
-  "controlStyles[46].styles[0]": "Margin=0,0,-36,0",
-  "controlStyles[47].target": "Image#SearchIconOn",
-  "controlStyles[47].styles[0]": "Visibility=1",
-  "controlStyles[48].target": "Grid#TopLevelSuggestionsContainer",
-  "controlStyles[48].styles[0]": "Visibility=1",
-  "controlStyles[49].target": "Image#SearchIconOff",
-  "controlStyles[49].styles[0]": "Visibility=1",
-  "controlStyles[50].target": "Grid#ContentBorder > Border#BackgroundBorder",
-  "controlStyles[50].styles[0]": "CornerRadius=99",
-  "controlStyles[50].styles[1]": "Height=38",
-  "controlStyles[50].styles[2]": "Width=38",
-  "controlStyles[51].target": "Grid#ContentBorder > ContentPresenter > FontIcon",
-  "controlStyles[51].styles[0]": "Opacity=.85",
-  "controlStyles[52].target": "StartDocked.AppListView#NavigationPanePlacesListView",
-  "controlStyles[52].styles[0]": "Padding=2,0,6,0",
-  "controlStyles[53].target": "StartDocked.AppListView#NavigationPanePlacesListView > Border > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsStackPanel > ListViewItem",
-  "controlStyles[53].styles[0]": "Margin=-2,0,0,0",
-  "controlStyles[54].target": "StartDocked.AppListView#NavigationPanePlacesListView",
-  "controlStyles[54].styles[0]": "Margin=0,0,-46,0",
-  "controlStyles[55].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
-  "controlStyles[55].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"-10\" TranslateY=\"3\"/>",
-  "controlStyles[56].target": "Grid#ContentBorder > Border#BorderBackground",
-  "controlStyles[56].styles[0]": "Margin=1,0,-1,0",
-  "controlStyles[57].target": "StackPanel#RootPanel > Button#Header > Border#Border",
-  "controlStyles[57].styles[0]": "Margin=0,0,-1,0",
-  "controlStyles[58].styles[0]": "Visibility=Collapsed",
-  "controlStyles[58].target": "Rectangle#TextCaret",
-  "controlStyles[59].target": "Grid#RootGrid@SearchBoxLocationStates",
-  "controlStyles[59].styles[0]": "Margin@SearchBoxOnBottomWithoutQFMargin=-32,10,32,-10",
-  "controlStyles[60].styles[0]": "FontSize=16",
-  "controlStyles[60].target": "Grid#RootGrid@SearchBoxLocationStates > Cortana.UI.Views.CortanaRichSearchBox > Grid > TextBlock#PlaceholderTextContentPresenter",
-  "controlStyles[20].styles[0]": "RenderTransform:=<TranslateTransform X=\"512\" Y=\"-685\" />",
-  "controlStyles[55].styles[1]": "Height=615",
-  "controlStyles[61].target": "Grid#MainMenu",
-  "controlStyles[61].styles[0]": "Width=630",
-  "controlStyles[62].target": "Grid#FrameRoot",
-  "controlStyles[62].styles[0]": "MaxHeight=775",
-  "controlStyles[63].target": "ListView#ZoomedOutListView",
-  "controlStyles[63].styles[0]": "Margin=0,-150,0,0",
-  "controlStyles[64].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid",
-  "controlStyles[64].styles[0]": "RenderTransform:=<TranslateTransform X=\"-8\" />",
-  "controlStyles[64].styles[1]": "Margin=0",
-  "controlStyles[64].styles[2]": "Width=540",
-  "controlStyles[65].target": "StartMenu.CategoryControl",
-  "controlStyles[65].styles[0]": "Margin=0,0,-8,-8",
-  "controlStyles[65].styles[1]": "RenderTransform:=<TranslateTransform X=\"14\" />",
-  "controlStyles[66].target": "Microsoft.UI.Xaml.Controls.DropDownButton > Grid > ContentPresenter > TextBlock",
-  "controlStyles[66].styles[0]": "FontFamily=Aptos",
-  "controlStyles[66].styles[1]": "FontSize=16",
-  "controlStyles[67].target": "TextBlock#ShowMorePinnedButtonText",
-  "controlStyles[67].styles[0]": "FontFamily=Aptos",
-  "controlStyles[67].styles[1]": "FontSize=16",
-  "controlStyles[68].styles[0]": "Visibility=Collapsed",
-  "controlStyles[68].target": "Grid#TopLevelSuggestionsRoot",
-  "controlStyles[69].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton",
-  "controlStyles[69].styles[0]": "Margin=-80,0,80,0"
-}
+```yaml
+controlStyles:
+  - target: Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=1
+  - target: Grid#SuggestionsParentContainer
+    styles:
+      - Visibility=1
+  - target: Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=1
+  - target: StartMenu.SearchBoxToggleButton
+    styles:
+      - Margin=5,2,-5,-2
+  - target: Border#AcrylicBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.45" TintLuminosityOpacity=".96" Opacity="1"/>
+      - CornerRadius=12
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
+  - target: Grid#MainContent
+    styles:
+      - CornerRadius=12
+  - target: StartMenu.PinnedList
+    styles:
+      - MaxWidth=650
+      - Margin=-14,14,4,0
+  - target: TextBlock#DisplayName
+    styles:
+      - Margin=0,8,0,-8
+      - FontSize=13
+      - FontFamily=Aptos
+      - Opacity=.75
+      - FontWeight=500
+      - Padding=14,0,14,0
+  - target: TextBlock#PinnedListHeaderText
+    styles:
+      - FontFamily=Aptos
+      - Opacity=.85
+      - FontSize=16
+      - Margin=40,0,-40,0
+  - target: Border#TaskbarSearchBackground
+    styles:
+      - Visibility=1
+  - target: Border#AppBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.25" TintLuminosityOpacity=".96" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
+      - CornerRadius=12
+  - target: Border#StartDropShadow
+    styles:
+      - CornerRadius=12
+      - Margin=-1
+  - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl
+    styles:
+      - Margin=33,33,33,10
+  - target: TextBlock#UserTileNameText
+    styles:
+      - Visibility=1
+  - target: TextBlock#AllListHeadingText
+    styles:
+      - FontFamily=Aptos
+      - Margin=50,5,0,0
+      - FontSize=16
+      - Opacity=.85
+  - target: Border#ContentBorder
+    styles:
+      - CornerRadius=6
+  - target: StartMenu.SearchBoxToggleButton > Grid > ContentPresenter > TextBlock#PlaceholderText
+    styles:
+      - Text=Where to next?
+      - FontWeight=700
+      - FontFamily=Aptos
+      - FontSize=24
+      - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}" Opacity=".85"/>
+      - Margin=2,0,0,0
+  - target: StartMenu.SearchBoxToggleButton > Grid > Border
+    styles:
+      - Background=Transparent
+      - BorderBrush=Transparent
+  - target: StartMenu.SearchBoxToggleButton > Grid > FontIcon
+    styles:
+      - Transform3D:=<CompositeTransform3D TranslateX="165" TranslateY="-1"/>
+      - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}" FallbackColor="{ThemeResource FocusStrokeColorOuter}" Opacity=".85"/>
+      - FontSize=24
+  - target: Grid#TopLevelRoot
+    styles:
+      - Margin=0,-8,0,0
+  - target: StartDocked.UserTileView
+    styles:
+      - RenderTransform:=<TranslateTransform X="512" Y="-685" />
+  - target: StartDocked.UserTileView > StartDocked.NavigationPaneButton > Grid > Border
+    styles:
+      - CornerRadius=99
+      - Margin=7,0,8,1
+  - target: StartDocked.PowerOptionsView
+    styles:
+      - RenderTransform:=<TranslateTransform X="-14" Y="-685" />
+      - CornerRadius=99
+      - Opacity=.85
+  - target: Border#AcrylicOverlay
+    styles:
+      - Visibility=1
+  - target: TextBlock#AppDisplayName
+    styles:
+      - FontFamily=Aptos
+      - Opacity=.85
+      - Margin=4,0,0,4
+      - FontWeight=500
+  - target: Button#Header > Border > TextBlock
+    styles:
+      - FontFamily=Aptos
+      - FontWeight=600
+      - Opacity=.85
+  - target: StartDocked.PowerOptionsView > StartDocked.NavigationPaneButton > Grid > Border
+    styles:
+      - CornerRadius=99
+      - Margin=1
+  - target: ListViewItem
+    styles:
+      - Margin=1,5,-5,-5
+      - CornerRadius=4
+  - target: Button#Header
+    styles:
+      - Margin=4,0,-3,-5
+  - target: TextBlock#PlaceholderTextContentPresenter
+    styles:
+      - FontFamily=Aptos
+      - FontSize=24
+      - FontWeight=700
+      - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}" Opacity=".7"/>
+  - target: Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer
+    styles:
+      - Visibility=1
+  - target: Button#SearchGlyphContainer
+    styles:
+      - FontSize=32
+      - Visibility=1
+  - target: Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox
+    styles:
+      - FontSize=24
+      - Foreground:=<SolidColorBrush Color="{ThemeResource TextFillColorPrimary}" Opacity=".85"/>
+      - FontFamily=Aptos
+      - Opacity=.85
+      - FontWeight=ExtraBold
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=1
+  - target: Windows.UI.Xaml.Controls.FontIcon#SearchBoxOnTaskbarSearchGlyph
+    styles:
+      - Visibility=0
+      - Margin=0
+      - FontSize=32
+      - Opacity=.85
+  - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl
+    styles:
+      - Margin=31,31,17,17
+  - target: Grid#WebViewGrid
+    styles:
+      - Margin=-13,0,-10,15
+  - target: TextBlock#StatusMessage
+    styles:
+      - Visibility=1
+  - target: Border#StartDropShadow
+    styles:
+      - CornerRadius=12
+      - Margin=-1
+  - target: Border#StartDropShadowDismissTarget
+    styles:
+      - CornerRadius=12
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter[1]
+    styles:
+      - Margin=-250,50,0,0
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter
+    styles:
+      - Margin=-250,0,0,0
+  - target: StartMenu.SearchBoxToggleButton > Grid > FontIcon#SearchGlyph
+    styles:
+      - Margin=0,-3,0,0
+      - FontSize=25
+      - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}" Opacity=".85"/>
+  - target: StartMenu.ExpandedFolderList > Grid#Root > Border
+    styles:
+      - Height=420
+  - target: TextBox#ExpandedFolderNameTextBox
+    styles:
+      - Margin=-15,-15,15,20
+  - target: Windows.UI.Xaml.Controls.GridView#FolderList > Border
+    styles:
+      - Margin=0,0,0,-60
+  - target: StartDocked.NavigationPaneView#NavigationPane > Grid > StartDocked.AppListView
+    styles:
+      - Margin=0,0,-36,0
+  - target: Image#SearchIconOn
+    styles:
+      - Visibility=1
+  - target: Grid#TopLevelSuggestionsContainer
+    styles:
+      - Visibility=1
+  - target: Image#SearchIconOff
+    styles:
+      - Visibility=1
+  - target: Grid#ContentBorder > Border#BackgroundBorder
+    styles:
+      - CornerRadius=99
+      - Height=38
+      - Width=38
+  - target: Grid#ContentBorder > ContentPresenter > FontIcon
+    styles:
+      - Opacity=.85
+  - target: StartDocked.AppListView#NavigationPanePlacesListView
+    styles:
+      - Padding=2,0,6,0
+  - target: StartDocked.AppListView#NavigationPanePlacesListView > Border > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsStackPanel > ListViewItem
+    styles:
+      - Margin=-2,0,0,0
+  - target: StartDocked.AppListView#NavigationPanePlacesListView
+    styles:
+      - Margin=0,0,-46,0
+  - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar
+    styles:
+      - Transform3D:=<CompositeTransform3D TranslateX="-10" TranslateY="3"/>
+      - Height=615
+  - target: Grid#ContentBorder > Border#BorderBackground
+    styles:
+      - Margin=1,0,-1,0
+  - target: StackPanel#RootPanel > Button#Header > Border#Border
+    styles:
+      - Margin=0,0,-1,0
+  - target: Rectangle#TextCaret
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#RootGrid@SearchBoxLocationStates
+    styles:
+      - Margin@SearchBoxOnBottomWithoutQFMargin=-32,10,32,-10
+  - target: Grid#RootGrid@SearchBoxLocationStates > Cortana.UI.Views.CortanaRichSearchBox > Grid > TextBlock#PlaceholderTextContentPresenter
+    styles:
+      - FontSize=16
+  - target: Grid#MainMenu
+    styles:
+      - Width=630
+  - target: Grid#FrameRoot
+    styles:
+      - MaxHeight=775
+  - target: ListView#ZoomedOutListView
+    styles:
+      - Margin=0,-150,0,0
+  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
+    styles:
+      - RenderTransform:=<TranslateTransform X="-8" />
+      - Margin=0
+      - Width=540
+  - target: StartMenu.CategoryControl
+    styles:
+      - Margin=0,0,-8,-8
+      - RenderTransform:=<TranslateTransform X="14" />
+  - target: Microsoft.UI.Xaml.Controls.DropDownButton > Grid > ContentPresenter > TextBlock
+    styles:
+      - FontFamily=Aptos
+      - FontSize=16
+  - target: TextBlock#ShowMorePinnedButtonText
+    styles:
+      - FontFamily=Aptos
+      - FontSize=16
+  - target: Grid#TopLevelSuggestionsRoot
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton
+    styles:
+      - Margin=-80,0,80,0
 ```
 </details>
 
@@ -240,208 +309,274 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Button#CloseAllAppsButton",
-  "controlStyles[0].styles[0]": "CornerRadius=14",
-  "controlStyles[0].styles[1]": "Margin=0,0,-32,0",
-  "controlStyles[0].styles[2]": "Padding=10,4,12,5",
-  "controlStyles[1].target": "Grid#ShowMoreSuggestions",
-  "controlStyles[1].styles[0]": "Visibility=1",
-  "controlStyles[2].target": "Grid#SuggestionsParentContainer",
-  "controlStyles[2].styles[0]": "Visibility=1",
-  "controlStyles[3].target": "Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[3].styles[0]": "Visibility=1",
-  "controlStyles[4].target": "Button#ShowAllAppsButton",
-  "controlStyles[4].styles[0]": "CornerRadius=14",
-  "controlStyles[4].styles[1]": "Margin=0,0,32,0",
-  "controlStyles[4].styles[2]": "Padding=12,4,10,5",
-  "controlStyles[5].target": "StartDocked.SearchBoxToggleButton",
-  "controlStyles[5].styles[0]": "Margin=30,0,120,26",
-  "controlStyles[6].target": "PipsPager#PinnedListPipsPager",
-  "controlStyles[6].styles[0]": "Visibility=1",
-  "controlStyles[7].target": "Border#AcrylicBorder",
-  "controlStyles[7].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0.45\" TintLuminosityOpacity=\".96\" Opacity=\"1\"/>",
-  "controlStyles[7].styles[1]": "CornerRadius=12",
-  "controlStyles[7].styles[2]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".25\" Opacity=\"1\"/>",
-  "controlStyles[8].target": "Grid#MainContent",
-  "controlStyles[8].styles[0]": "CornerRadius=12",
-  "controlStyles[9].target": "StartMenu.PinnedList",
-  "controlStyles[9].styles[0]": "MaxWidth=650",
-  "controlStyles[9].styles[1]": "Height=504",
-  "controlStyles[9].styles[2]": "Margin=-8,14,8,-14",
-  "controlStyles[10].target": "TextBlock#DisplayName",
-  "controlStyles[10].styles[0]": "Margin=0,8,0,-8",
-  "controlStyles[10].styles[1]": "FontSize=13",
-  "controlStyles[10].styles[2]": "FontFamily=Aptos",
-  "controlStyles[10].styles[3]": "Opacity=.75",
-  "controlStyles[10].styles[4]": "FontWeight=500",
-  "controlStyles[10].styles[5]": "Padding=14,0,14,0",
-  "controlStyles[11].target": "TextBlock#PinnedListHeaderText",
-  "controlStyles[11].styles[0]": "Margin=-14,0,0,0",
-  "controlStyles[11].styles[1]": "FontFamily=Aptos",
-  "controlStyles[11].styles[2]": "Opacity=.85",
-  "controlStyles[11].styles[3]": "FontSize=16",
-  "controlStyles[11].styles[4]": "Margin=-32,0,0,0",
-  "controlStyles[12].target": "Border#TaskbarSearchBackground",
-  "controlStyles[12].styles[0]": "Visibility=1",
-  "controlStyles[13].target": "Border#AppBorder",
-  "controlStyles[13].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0.25\" TintLuminosityOpacity=\".96\" Opacity=\"1\"/>",
-  "controlStyles[13].styles[1]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".25\" Opacity=\"1\"/>",
-  "controlStyles[13].styles[2]": "CornerRadius=12",
-  "controlStyles[14].target": "Border#dropshadow",
-  "controlStyles[14].styles[0]": "CornerRadius=12",
-  "controlStyles[14].styles[1]": "Margin=-1",
-  "controlStyles[15].target": "Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl",
-  "controlStyles[15].styles[0]": "Margin=33,33,33,10",
-  "controlStyles[16].target": "TextBlock#UserTileNameText",
-  "controlStyles[16].styles[0]": "Visibility=1",
-  "controlStyles[17].target": "TextBlock#AllAppsHeading",
-  "controlStyles[17].styles[0]": "FontFamily=Aptos",
-  "controlStyles[17].styles[1]": "Margin=-32,0,0,0",
-  "controlStyles[17].styles[2]": "FontSize=16",
-  "controlStyles[17].styles[3]": "Opacity=.85",
-  "controlStyles[18].target": "Border#ContentBorder",
-  "controlStyles[18].styles[0]": "CornerRadius=6",
-  "controlStyles[19].target": "StartDocked.SearchBoxToggleButton > Grid > ContentPresenter > TextBlock#PlaceholderText",
-  "controlStyles[19].styles[0]": "Text=Where to next?",
-  "controlStyles[19].styles[1]": "FontWeight=700",
-  "controlStyles[19].styles[2]": "FontFamily=Aptos",
-  "controlStyles[19].styles[3]": "FontSize=24",
-  "controlStyles[19].styles[4]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
-  "controlStyles[19].styles[5]": "Margin=2,0,0,0",
-  "controlStyles[20].target": "StartDocked.SearchBoxToggleButton > Grid > Border",
-  "controlStyles[20].styles[0]": "Background=transparent",
-  "controlStyles[20].styles[1]": "BorderBrush=transparent",
-  "controlStyles[21].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon",
-  "controlStyles[21].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"165\" TranslateY=\"-1\"/>",
-  "controlStyles[21].styles[1]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" FallbackColor=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
-  "controlStyles[21].styles[2]": "FontSize=24",
-  "controlStyles[22].target": "Grid#TopLevelRoot",
-  "controlStyles[22].styles[0]": "Margin=0,-8,0,0",
-  "controlStyles[23].target": "StartDocked.UserTileView",
-  "controlStyles[23].styles[0]": "Margin=512,-1290,-2000,0",
-  "controlStyles[24].target": "StartDocked.UserTileView > StartDocked.NavigationPaneButton > Grid > Border",
-  "controlStyles[24].styles[0]": "CornerRadius=99",
-  "controlStyles[24].styles[1]": "Margin=8,0,8,0",
-  "controlStyles[25].styles[0]": "Margin=-64,-1290,-2000,0",
-  "controlStyles[25].target": "StartDocked.PowerOptionsView",
-  "controlStyles[25].styles[1]": "CornerRadius=99",
-  "controlStyles[25].styles[2]": "Opacity=.85",
-  "controlStyles[26].target": "TextBlock#ShowAllAppsButtonText",
-  "controlStyles[26].styles[0]": "FontFamily=Aptos",
-  "controlStyles[26].styles[1]": "Opacity=.85",
-  "controlStyles[26].styles[2]": "FontWeight=500",
-  "controlStyles[27].target": "Button#CloseAllAppsButton > ContentPresenter > StackPanel > TextBlock",
-  "controlStyles[27].styles[0]": "FontFamily=Aptos",
-  "controlStyles[27].styles[1]": "Opacity=.85",
-  "controlStyles[27].styles[2]": "FontWeight=500",
-  "controlStyles[28].target": "Border#AcrylicOverlay",
-  "controlStyles[28].styles[0]": "Visibility=1",
-  "controlStyles[29].target": "Grid#AllAppsPaneHeader",
-  "controlStyles[29].styles[0]": "Margin=64,-8,64,5",
-  "controlStyles[30].target": "Grid#InnerContent",
-  "controlStyles[30].styles[0]": "Margin=0,31,0,-64",
-  "controlStyles[31].target": "TextBlock#AppDisplayName",
-  "controlStyles[31].styles[0]": "FontFamily=Aptos",
-  "controlStyles[31].styles[1]": "Opacity=.85",
-  "controlStyles[31].styles[2]": "Margin=4,0,0,4",
-  "controlStyles[31].styles[3]": "FontWeight=500",
-  "controlStyles[32].target": "Button#Header > Border > TextBlock",
-  "controlStyles[32].styles[0]": "FontFamily=Aptos",
-  "controlStyles[32].styles[1]": "FontWeight=600",
-  "controlStyles[32].styles[2]": "Opacity=.85",
-  "controlStyles[33].target": "StartDocked.PowerOptionsView > StartDocked.NavigationPaneButton > Grid > Border",
-  "controlStyles[33].styles[0]": "CornerRadius=99",
-  "controlStyles[33].styles[1]": "Margin=1",
-  "controlStyles[34].target": "TileGrid",
-  "controlStyles[34].styles[0]": "Background:=<SolidColorBrush Color=\"{ThemeResource TextFillColorInverse}\" Opacity=\".2\"/>",
-  "controlStyles[34].styles[1]": "CornerRadiusProtected=8",
-  "controlStyles[34].styles[2]": "BorderThicknessProtected=1",
-  "controlStyles[34].styles[3]": "BorderBrushProtected:=<SolidColorBrush Color=\"{ThemeResource SurfaceStrokeColorDefault}\" Opacity=\".35\"/>",
-  "controlStyles[35].target": "ListViewItem",
-  "controlStyles[35].styles[0]": "Margin=1,0,-6,0",
-  "controlStyles[35].styles[1]": "CornerRadius=4",
-  "controlStyles[35].styles[2]": "Padding=0,0,6,0",
-  "controlStyles[36].target": "Button#Header",
-  "controlStyles[36].styles[0]": "Margin=4,0,-3,0",
-  "controlStyles[37].target": "StartDocked.AllAppsPane#AllAppsPanel",
-  "controlStyles[37].styles[0]": "Margin=-20,0,-6,0",
-  "controlStyles[38].target": "TextBlock#PlaceholderTextContentPresenter",
-  "controlStyles[38].styles[0]": "FontFamily=Aptos",
-  "controlStyles[38].styles[1]": "FontSize=24",
-  "controlStyles[38].styles[2]": "FontWeight=700",
-  "controlStyles[38].styles[3]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".7\"/>",
-  "controlStyles[39].target": "Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer",
-  "controlStyles[39].styles[0]": "Visibility=1",
-  "controlStyles[40].target": "Button#SearchGlyphContainer",
-  "controlStyles[40].styles[0]": "FontSize=32",
-  "controlStyles[40].styles[1]": "Visibility=1",
-  "controlStyles[41].target": "Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox",
-  "controlStyles[41].styles[0]": "FontSize=24",
-  "controlStyles[41].styles[1]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource TextFillColorPrimary}\" Opacity=\".85\"/>",
-  "controlStyles[41].styles[2]": "FontFamily=Aptos",
-  "controlStyles[41].styles[3]": "Opacity=.85",
-  "controlStyles[41].styles[4]": "FontWeight=ExtraBold",
-  "controlStyles[42].target": "Border#LayerBorder",
-  "controlStyles[42].styles[0]": "Visibility=1",
-  "controlStyles[43].target": "Windows.UI.Xaml.Controls.FontIcon#SearchBoxOnTaskbarSearchGlyph",
-  "controlStyles[43].styles[0]": "Visibility=0",
-  "controlStyles[43].styles[1]": "Margin=0",
-  "controlStyles[43].styles[2]": "FontSize=32",
-  "controlStyles[43].styles[3]": "Opacity=.85",
-  "controlStyles[44].target": "Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl",
-  "controlStyles[44].styles[0]": "Margin=31,31,17,17",
-  "controlStyles[45].target": "Grid#WebViewGrid",
-  "controlStyles[45].styles[0]": "Margin=-13,0,-10,15",
-  "controlStyles[46].target": "TextBlock#StatusMessage",
-  "controlStyles[46].styles[0]": "Visibility=1",
-  "controlStyles[47].target": "Border#LogoBackgroundPlate",
-  "controlStyles[47].styles[0]": "Margin=12,0,0,0",
-  "controlStyles[48].target": "Border#DropShadow",
-  "controlStyles[48].styles[0]": "CornerRadius=12",
-  "controlStyles[48].styles[1]": "Margin=-1",
-  "controlStyles[49].target": "Border#DropShadowDismissTarget",
-  "controlStyles[49].styles[0]": "CornerRadius=12",
-  "controlStyles[50].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
-  "controlStyles[50].styles[0]": "Margin=-250,50,0,0",
-  "controlStyles[51].target": "StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle",
-  "controlStyles[51].styles[0]": "Visibility=1",
-  "controlStyles[52].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
-  "controlStyles[52].styles[0]": "Margin=-250,0,0,0",
-  "controlStyles[53].target": "StartDocked.SearchBoxToggleButton > Grid > FontIcon#SearchGlyph",
-  "controlStyles[53].styles[0]": "Margin=0,-3,0,0",
-  "controlStyles[53].styles[1]": "FontSize=25",
-  "controlStyles[53].styles[2]": "Foreground:=<SolidColorBrush Color=\"{ThemeResource FocusStrokeColorOuter}\" Opacity=\".85\"/>",
-  "controlStyles[54].target": "StartMenu.ExpandedFolderList > Grid#Root > Border",
-  "controlStyles[54].styles[0]": "Height=420",
-  "controlStyles[55].target": "TextBox#ExpandedFolderNameTextBox",
-  "controlStyles[55].styles[0]": "Margin=-15,-15,15,20",
-  "controlStyles[56].target": "Windows.UI.Xaml.Controls.GridView#FolderList > Border",
-  "controlStyles[56].styles[0]": "Margin=0,0,0,-60",
-  "controlStyles[57].target": "StartDocked.NavigationPaneView#NavigationPane > Grid > StartDocked.AppListView",
-  "controlStyles[57].styles[0]": "Margin=0,0,-36,0",
-  "controlStyles[58].target": "Image#SearchIconOn",
-  "controlStyles[58].styles[0]": "Visibility=1",
-  "controlStyles[59].target": "Grid#TopLevelSuggestionsContainer",
-  "controlStyles[59].styles[0]": "Visibility=1",
-  "controlStyles[60].target": "Image#SearchIconOff",
-  "controlStyles[60].styles[0]": "Visibility=1",
-  "controlStyles[61].target": "Grid#ContentBorder > Border#BackgroundBorder",
-  "controlStyles[61].styles[0]": "CornerRadius=99",
-  "controlStyles[61].styles[1]": "Height=38",
-  "controlStyles[61].styles[2]": "Width=38",
-  "controlStyles[62].target": "Grid#ContentBorder > ContentPresenter > FontIcon",
-  "controlStyles[62].styles[0]": "Margin=6,0,0,0",
-  "controlStyles[62].styles[1]": "Opacity=.85",
-  "controlStyles[63].target": "StartDocked.AppListView#NavigationPanePlacesListView",
-  "controlStyles[63].styles[0]": "Padding=2,0,6,0",
-  "controlStyles[64].target": "StartDocked.AppListView#NavigationPanePlacesListView > Border > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsStackPanel > ListViewItem",
-  "controlStyles[64].styles[0]": "Margin=-2,0,0,0",
-  "controlStyles[65].target": "StartDocked.AppListView#NavigationPanePlacesListView",
-  "controlStyles[65].styles[0]": "Margin=0,0,-46,0",
-  "controlStyles[66].target": "Windows.UI.Xaml.Controls.GridViewItem",
-  "controlStyles[66].styles[0]": "Height=84"
-}
+```yaml
+controlStyles:
+  - target: Button#CloseAllAppsButton
+    styles:
+      - CornerRadius=14
+      - Margin=0,0,-32,0
+      - Padding=10,4,12,5
+  - target: Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=1
+  - target: Grid#SuggestionsParentContainer
+    styles:
+      - Visibility=1
+  - target: Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=1
+  - target: Button#ShowAllAppsButton
+    styles:
+      - CornerRadius=14
+      - Margin=0,0,32,0
+      - Padding=12,4,10,5
+  - target: StartDocked.SearchBoxToggleButton
+    styles:
+      - Margin=30,0,120,26
+  - target: PipsPager#PinnedListPipsPager
+    styles:
+      - Visibility=1
+  - target: Border#AcrylicBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.45" TintLuminosityOpacity=".96" Opacity="1"/>
+      - CornerRadius=12
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
+  - target: Grid#MainContent
+    styles:
+      - CornerRadius=12
+  - target: StartMenu.PinnedList
+    styles:
+      - MaxWidth=650
+      - Height=504
+      - Margin=-8,14,8,-14
+  - target: TextBlock#DisplayName
+    styles:
+      - Margin=0,8,0,-8
+      - FontSize=13
+      - FontFamily=Aptos
+      - Opacity=.75
+      - FontWeight=500
+      - Padding=14,0,14,0
+  - target: TextBlock#PinnedListHeaderText
+    styles:
+      - Margin=-14,0,0,0
+      - FontFamily=Aptos
+      - Opacity=.85
+      - FontSize=16
+      - Margin=-32,0,0,0
+  - target: Border#TaskbarSearchBackground
+    styles:
+      - Visibility=1
+  - target: Border#AppBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.25" TintLuminosityOpacity=".96" Opacity="1"/>
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
+      - CornerRadius=12
+  - target: Border#dropshadow
+    styles:
+      - CornerRadius=12
+      - Margin=-1
+  - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl
+    styles:
+      - Margin=33,33,33,10
+  - target: TextBlock#UserTileNameText
+    styles:
+      - Visibility=1
+  - target: TextBlock#AllAppsHeading
+    styles:
+      - FontFamily=Aptos
+      - Margin=-32,0,0,0
+      - FontSize=16
+      - Opacity=.85
+  - target: Border#ContentBorder
+    styles:
+      - CornerRadius=6
+  - target: StartDocked.SearchBoxToggleButton > Grid > ContentPresenter > TextBlock#PlaceholderText
+    styles:
+      - Text=Where to next?
+      - FontWeight=700
+      - FontFamily=Aptos
+      - FontSize=24
+      - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}" Opacity=".85"/>
+      - Margin=2,0,0,0
+  - target: StartDocked.SearchBoxToggleButton > Grid > Border
+    styles:
+      - Background=transparent
+      - BorderBrush=transparent
+  - target: StartDocked.SearchBoxToggleButton > Grid > FontIcon
+    styles:
+      - Transform3D:=<CompositeTransform3D TranslateX="165" TranslateY="-1"/>
+      - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}" FallbackColor="{ThemeResource FocusStrokeColorOuter}" Opacity=".85"/>
+      - FontSize=24
+  - target: Grid#TopLevelRoot
+    styles:
+      - Margin=0,-8,0,0
+  - target: StartDocked.UserTileView
+    styles:
+      - Margin=512,-1290,-2000,0
+  - target: StartDocked.UserTileView > StartDocked.NavigationPaneButton > Grid > Border
+    styles:
+      - CornerRadius=99
+      - Margin=8,0,8,0
+  - target: StartDocked.PowerOptionsView
+    styles:
+      - Margin=-64,-1290,-2000,0
+      - CornerRadius=99
+      - Opacity=.85
+  - target: TextBlock#ShowAllAppsButtonText
+    styles:
+      - FontFamily=Aptos
+      - Opacity=.85
+      - FontWeight=500
+  - target: Button#CloseAllAppsButton > ContentPresenter > StackPanel > TextBlock
+    styles:
+      - FontFamily=Aptos
+      - Opacity=.85
+      - FontWeight=500
+  - target: Border#AcrylicOverlay
+    styles:
+      - Visibility=1
+  - target: Grid#AllAppsPaneHeader
+    styles:
+      - Margin=64,-8,64,5
+  - target: Grid#InnerContent
+    styles:
+      - Margin=0,31,0,-64
+  - target: TextBlock#AppDisplayName
+    styles:
+      - FontFamily=Aptos
+      - Opacity=.85
+      - Margin=4,0,0,4
+      - FontWeight=500
+  - target: Button#Header > Border > TextBlock
+    styles:
+      - FontFamily=Aptos
+      - FontWeight=600
+      - Opacity=.85
+  - target: StartDocked.PowerOptionsView > StartDocked.NavigationPaneButton > Grid > Border
+    styles:
+      - CornerRadius=99
+      - Margin=1
+  - target: TileGrid
+    styles:
+      - Background:=<SolidColorBrush Color="{ThemeResource TextFillColorInverse}" Opacity=".2"/>
+      - CornerRadiusProtected=8
+      - BorderThicknessProtected=1
+      - BorderBrushProtected:=<SolidColorBrush Color="{ThemeResource SurfaceStrokeColorDefault}" Opacity=".35"/>
+  - target: ListViewItem
+    styles:
+      - Margin=1,0,-6,0
+      - CornerRadius=4
+      - Padding=0,0,6,0
+  - target: Button#Header
+    styles:
+      - Margin=4,0,-3,0
+  - target: StartDocked.AllAppsPane#AllAppsPanel
+    styles:
+      - Margin=-20,0,-6,0
+  - target: TextBlock#PlaceholderTextContentPresenter
+    styles:
+      - FontFamily=Aptos
+      - FontSize=24
+      - FontWeight=700
+      - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}" Opacity=".7"/>
+  - target: Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer
+    styles:
+      - Visibility=1
+  - target: Button#SearchGlyphContainer
+    styles:
+      - FontSize=32
+      - Visibility=1
+  - target: Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox
+    styles:
+      - FontSize=24
+      - Foreground:=<SolidColorBrush Color="{ThemeResource TextFillColorPrimary}" Opacity=".85"/>
+      - FontFamily=Aptos
+      - Opacity=.85
+      - FontWeight=ExtraBold
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=1
+  - target: Windows.UI.Xaml.Controls.FontIcon#SearchBoxOnTaskbarSearchGlyph
+    styles:
+      - Visibility=0
+      - Margin=0
+      - FontSize=32
+      - Opacity=.85
+  - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl
+    styles:
+      - Margin=31,31,17,17
+  - target: Grid#WebViewGrid
+    styles:
+      - Margin=-13,0,-10,15
+  - target: TextBlock#StatusMessage
+    styles:
+      - Visibility=1
+  - target: Border#LogoBackgroundPlate
+    styles:
+      - Margin=12,0,0,0
+  - target: Border#DropShadow
+    styles:
+      - CornerRadius=12
+      - Margin=-1
+  - target: Border#DropShadowDismissTarget
+    styles:
+      - CornerRadius=12
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter[1]
+    styles:
+      - Margin=-250,50,0,0
+  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle
+    styles:
+      - Visibility=1
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter
+    styles:
+      - Margin=-250,0,0,0
+  - target: StartDocked.SearchBoxToggleButton > Grid > FontIcon#SearchGlyph
+    styles:
+      - Margin=0,-3,0,0
+      - FontSize=25
+      - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}" Opacity=".85"/>
+  - target: StartMenu.ExpandedFolderList > Grid#Root > Border
+    styles:
+      - Height=420
+  - target: TextBox#ExpandedFolderNameTextBox
+    styles:
+      - Margin=-15,-15,15,20
+  - target: Windows.UI.Xaml.Controls.GridView#FolderList > Border
+    styles:
+      - Margin=0,0,0,-60
+  - target: StartDocked.NavigationPaneView#NavigationPane > Grid > StartDocked.AppListView
+    styles:
+      - Margin=0,0,-36,0
+  - target: Image#SearchIconOn
+    styles:
+      - Visibility=1
+  - target: Grid#TopLevelSuggestionsContainer
+    styles:
+      - Visibility=1
+  - target: Image#SearchIconOff
+    styles:
+      - Visibility=1
+  - target: Grid#ContentBorder > Border#BackgroundBorder
+    styles:
+      - CornerRadius=99
+      - Height=38
+      - Width=38
+  - target: Grid#ContentBorder > ContentPresenter > FontIcon
+    styles:
+      - Margin=6,0,0,0
+      - Opacity=.85
+  - target: StartDocked.AppListView#NavigationPanePlacesListView
+    styles:
+      - Padding=2,0,6,0
+  - target: StartDocked.AppListView#NavigationPanePlacesListView > Border > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsStackPanel > ListViewItem
+    styles:
+      - Margin=-2,0,0,0
+  - target: StartDocked.AppListView#NavigationPanePlacesListView
+    styles:
+      - Margin=0,0,-46,0
+  - target: Windows.UI.Xaml.Controls.GridViewItem
+    styles:
+      - Height=84
 ```
 </details>

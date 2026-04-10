@@ -42,21 +42,26 @@ variant that keeps the Recommended button below.*
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[0].styles[0]": "Visibility=Collapsed",
-  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
-  "controlStyles[1].styles[0]": "Visibility=Collapsed",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
-  "controlStyles[2].styles[0]": "Height=0",
-  "controlStyles[3].target": "Windows.UI.Xaml.Controls.GridView#RecommendedList",
-  "controlStyles[3].styles[0]": "Visibility=Collapsed",
-  "controlStyles[4].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[4].styles[0]": "Visibility=Collapsed",
-  "controlStyles[5].target": "StartMenu.PinnedList",
-  "controlStyles[5].styles[0]": "Height=504"
-}
+```yaml
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer
+    styles:
+      - Height=0
+  - target: Windows.UI.Xaml.Controls.GridView#RecommendedList
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=Collapsed
+  - target: StartMenu.PinnedList
+    styles:
+      - Height=504
 ```
 </details>
 
@@ -81,31 +86,41 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[0].styles[0]": "Visibility=Collapsed",
-  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
-  "controlStyles[1].styles[0]": "Height=0",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[2].styles[0]": "RenderTransform:=<TranslateTransform Y=\"8\"/>",
-  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Grid > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
-  "controlStyles[3].styles[0]": "Text=Recommended",
-  "controlStyles[4].target": "Grid#TopLevelSuggestionsRoot > Grid[2]",
-  "controlStyles[4].styles[0]": "MinHeight=0",
-  "controlStyles[5].target": "Grid#TopLevelSuggestionsRoot",
-  "controlStyles[5].styles[0]": "Grid.Row=0",
-  "controlStyles[6].target": "Windows.UI.Xaml.Controls.GridView#RecommendedList",
-  "controlStyles[6].styles[0]": "Visibility=Collapsed",
-  "controlStyles[7].target": "TextBlock#PinnedListHeaderText",
-  "controlStyles[7].styles[0]": "RenderTransform:=<TranslateTransform Y=\"8\"/>",
-  "controlStyles[8].target": "GridView",
-  "controlStyles[8].styles[0]": "Margin=0,-8,0,0",
-  "controlStyles[9].target": "Microsoft.UI.Xaml.Controls.DropDownButton",
-  "controlStyles[9].styles[0]": "RenderTransform:=<TranslateTransform Y=\"-5\" />",
-  "controlStyles[10].target": "Grid#TopLevelHeader > Grid[2] > Button",
-  "controlStyles[10].styles[0]": "RenderTransform:=<TranslateTransform X=\"-135\" />"
-}
+```yaml
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText
+    styles:
+      - Height=0
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
+    styles:
+      - RenderTransform:=<TranslateTransform Y="8"/>
+  - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Grid > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Text=Recommended
+  - target: Grid#TopLevelSuggestionsRoot > Grid[2]
+    styles:
+      - MinHeight=0
+  - target: Grid#TopLevelSuggestionsRoot
+    styles:
+      - Grid.Row=0
+  - target: Windows.UI.Xaml.Controls.GridView#RecommendedList
+    styles:
+      - Visibility=Collapsed
+  - target: TextBlock#PinnedListHeaderText
+    styles:
+      - RenderTransform:=<TranslateTransform Y="8"/>
+  - target: GridView
+    styles:
+      - Margin=0,-8,0,0
+  - target: Microsoft.UI.Xaml.Controls.DropDownButton
+    styles:
+      - RenderTransform:=<TranslateTransform Y="-5" />
+  - target: Grid#TopLevelHeader > Grid[2] > Button
+    styles:
+      - RenderTransform:=<TranslateTransform X="-135" />
 ```
 </details>
 
@@ -114,20 +129,25 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[0].styles[0]": "Visibility=Collapsed",
-  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
-  "controlStyles[1].styles[0]": "Height=0",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
-  "controlStyles[2].styles[0]": "Height=0",
-  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[3].styles[0]": "RenderTransform:=<TranslateTransform Y=\"-572\" X=\"-55\" />",
-  "controlStyles[4].target": "StartMenu.PinnedList",
-  "controlStyles[4].styles[0]": "Height=504",
-  "controlStyles[5].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
-  "controlStyles[5].styles[0]": "Text=Recommended"
-}
+```yaml
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText
+    styles:
+      - Height=0
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer
+    styles:
+      - Height=0
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
+    styles:
+      - RenderTransform:=<TranslateTransform Y="-572" X="-55" />
+  - target: StartMenu.PinnedList
+    styles:
+      - Height=504
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Text=Recommended
 ```
 </details>

@@ -46,606 +46,750 @@ The theme styles have to be imported manually. To do that, follow these steps:
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-    "controlStyles[0].target": "Border#AcrylicBorder",
-    "controlStyles[0].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0.24\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" />",
-    "controlStyles[0].styles[1]": "BorderBrush:=$borderBrush",
-    "controlStyles[0].styles[2]": "BorderThickness=1",
-    "controlStyles[0].styles[3]": "CornerRadius=8",
-    "controlStyles[1].target": "Border#NameTextBlockHost > TextBlock",
-    "controlStyles[1].styles[0]": "FontWeight=SemiBold",
-    "controlStyles[1].styles[1]": "FontSize=14",
-    "controlStyles[1].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[1].styles[3]": "Margin=3,0,0,-6",
-    "controlStyles[2].target": "StartUI.AllAppsPane",
-    "controlStyles[2].styles[0]": "Margin=12,0,0,0",
-    "controlStyles[2].styles[1]": "FontWeight=Semibold",
-    "controlStyles[2].styles[2]": "Width=253",
-    "controlStyles[3].target": "Button#Header > Border > TextBlock",
-    "controlStyles[3].styles[0]": "FontSize=14",
-    "controlStyles[3].styles[1]": "FontWeight=SemiBold",
-    "controlStyles[3].styles[2]": "Margin=0,0,-16,2",
-    "controlStyles[3].styles[3]": "FontFamily=$fontFamily",
-    "controlStyles[4].target": "Grid#ContentPaneGrid",
-    "controlStyles[4].styles[0]": "Margin=0,24,0,0",
-    "controlStyles[5].target": "TextBlock#AppDisplayName",
-    "controlStyles[5].styles[0]": "FontSize=12",
-    "controlStyles[5].styles[1]": "Margin=20,0,0,0",
-    "controlStyles[5].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[6].target": "TextBlock#DisplayName",
-    "controlStyles[6].styles[0]": "FontSize=12",
-    "controlStyles[6].styles[1]": "Margin=0,0,0,5",
-    "controlStyles[6].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[7].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root@CommonStates",
-    "controlStyles[7].styles[0]": "RevealBackground@PointerOver:=$buttonNormal",
-    "controlStyles[7].styles[1]": "RevealBackground@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "controlStyles[7].styles[2]": "CornerRadius=9",
-    "controlStyles[7].styles[3]": "PointerOverBackground:=",
-    "controlStyles[7].styles[4]": "PressedBackground:=",
-    "controlStyles[7].styles[5]": "SelectedBackground:=",
-    "controlStyles[7].styles[6]": "RevealBorderBrush:=",
-    "controlStyles[7].styles[7]": "RevealBackground@Normal:=",
-    "controlStyles[8].target": "StartUI.NavigationPaneGrid",
-    "controlStyles[8].styles[0]": "CornerRadius=8,0,0,8",
-    "controlStyles[8].styles[1]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0.16\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
-    "controlStyles[8].styles[2]": "BorderBrush:=$borderBrush",
-    "controlStyles[8].styles[3]": "BorderThickness=1,1,0,1",
-    "controlStyles[9].target": "Grid#VerticalRoot",
-    "controlStyles[9].styles[0]": "CornerRadius=6",
-    "controlStyles[10].target": "Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallDecrease > Grid@CommonStates > FontIcon > Grid > TextBlock",
-    "controlStyles[10].styles[0]": "Text=",
-    "controlStyles[10].styles[1]": "Foreground@Normal:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.5\" />",
-    "controlStyles[10].styles[2]": "Foreground@PointerOver:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.75\" />",
-    "controlStyles[10].styles[3]": "Foreground@Pressed:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.75\" />",
-    "controlStyles[10].styles[4]": "FontSize@Pressed=6",
-    "controlStyles[11].target": "Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallIncrease > Grid@CommonStates > FontIcon > Grid > TextBlock",
-    "controlStyles[11].styles[0]": "Text=",
-    "controlStyles[11].styles[1]": "Foreground@Normal:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.5\" />",
-    "controlStyles[11].styles[2]": "Foreground@PointerOver:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.75\" />",
-    "controlStyles[11].styles[3]": "Foreground@Pressed:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.75\" />",
-    "controlStyles[11].styles[4]": "FontSize@Pressed=6",
-    "controlStyles[12].target": "StartUI.GroupHeaderControl",
-    "controlStyles[12].styles[0]": "CornerRadius=6",
-    "controlStyles[13].target": "Rectangle#ThumbVisual",
-    "controlStyles[13].styles[0]": "Width=6",
-    "controlStyles[13].styles[1]": "Fill:=<SolidColorBrush Color=\"{ThemeResource SystemBaseHighColor}\" Opacity=\"0.5\" />",
-    "controlStyles[13].styles[2]": "RadiusX=4",
-    "controlStyles[13].styles[3]": "RadiusY=4",
-    "controlStyles[14].target": "MenuFlyoutItem > Grid > TextBlock",
-    "controlStyles[14].styles[0]": "FontSize=14",
-    "controlStyles[14].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[15].target": "Grid#GridForContextMenuInvoke_MustHave_No_Columns_Or_Rows > Grid > TextBlock",
-    "controlStyles[15].styles[0]": "FontSize=14",
-    "controlStyles[15].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[16].target": "StartUI.TileFolderNameTextBox",
-    "controlStyles[16].styles[0]": "FontSize=14",
-    "controlStyles[16].styles[1]": "FontWeight=SemiBold",
-    "controlStyles[16].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[17].target": "ToggleMenuFlyoutItem > Grid > Grid > FontIcon",
-    "controlStyles[17].styles[0]": "Glyph:=&#xE73E;",
-    "controlStyles[18].target": "Border#UninstallFlyoutPresenterBorder",
-    "controlStyles[18].styles[0]": "Width=376",
-    "controlStyles[18].styles[1]": "Height=149",
-    "controlStyles[18].styles[2]": "Background:=$background",
-    "controlStyles[18].styles[3]": "BorderBrush:=$borderBrush",
-    "controlStyles[18].styles[4]": "CornerRadius=8",
-    "controlStyles[19].target": "StartUI.UninstallFlyoutControl > StackPanel > TextBlock",
-    "controlStyles[19].styles[0]": "FontSize=14",
-    "controlStyles[19].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[19].styles[2]": "Text=This app and its related information will be removed.",
-    "controlStyles[19].styles[3]": "Margin=9,8,0,0",
-    "controlStyles[20].target": "Button#UninstallButton > Grid@CommonStates > ContentPresenter",
-    "controlStyles[20].styles[0]": "Background@Normal:=$accentButtonNormal",
-    "controlStyles[20].styles[1]": "Background@PointerOver:=$accentButtonPointerOver",
-    "controlStyles[20].styles[2]": "Background@Pressed:=$accentButtonPressed",
-    "controlStyles[20].styles[3]": "BorderThickness=0,0,0,1",
-    "controlStyles[20].styles[4]": "BorderBrush:=$accentButtonBorderBrush",
-    "controlStyles[21].target": "Button#UninstallButton > Grid@CommonStates > ContentPresenter > TextBlock",
-    "controlStyles[21].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[21].styles[1]": "FontWeight=Normal",
-    "controlStyles[21].styles[2]": "Foreground=Black",
-    "controlStyles[21].styles[3]": "Opacity@Pressed=0.64",
-    "controlStyles[22].target": "TextBlock#StatusMessage",
-    "controlStyles[22].styles[0]": "Margin=20,0,0,0",
-    "controlStyles[22].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[23].target": "Rectangle#SelectionRectangle",
-    "controlStyles[23].styles[0]": "RadiusX=2",
-    "controlStyles[23].styles[1]": "RadiusY=2",
-    "controlStyles[23].styles[2]": "Height=32",
-    "controlStyles[24].target": "Border#Border@CommonStates",
-    "controlStyles[24].styles[0]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[24].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "controlStyles[24].styles[2]": "CornerRadius=6",
-    "controlStyles[24].styles[3]": "BorderBrush=Transparent",
-    "controlStyles[25].target": "StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates",
-    "controlStyles[25].styles[0]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[25].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[25].styles[2]": "BorderBrush:=",
-    "controlStyles[25].styles[3]": "CornerRadius=6",
-    "controlStyles[25].styles[4]": "Margin=-1,0,-1,0",
-    "controlStyles[26].target": "StartUI.NavigationPaneButton#UserTileButton > ContentPresenter@CommonStates",
-    "controlStyles[26].styles[0]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[26].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[26].styles[2]": "BorderBrush:=",
-    "controlStyles[26].styles[3]": "CornerRadius=6",
-    "controlStyles[26].styles[4]": "Margin=-1,0,-1,0",
-    "controlStyles[27].target": "Grid#RootPanel@CommonStates > ContentPresenter",
-    "controlStyles[27].styles[0]": "BorderBrush:=",
-    "controlStyles[27].styles[1]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[27].styles[2]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[27].styles[3]": "Background@PressedSelected:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[27].styles[4]": "Background@PointerOverSelected:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.48\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[27].styles[5]": "CornerRadius=6",
-    "controlStyles[27].styles[6]": "BorderThickness=0",
-    "controlStyles[28].target": "StartUI.AllAppsGridListViewItem",
-    "controlStyles[28].styles[0]": "CornerRadius=6",
-    "controlStyles[29].target": "Button#Header",
-    "controlStyles[29].styles[0]": "CornerRadius=6",
-    "controlStyles[30].target": "Grid#RootPanel",
-    "controlStyles[30].styles[0]": "CornerRadius=6",
-    "controlStyles[31].target": "Button#PinButton > Grid@CommonStates",
-    "controlStyles[31].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.25\" FallbackColor=\"#424242\" />",
-    "controlStyles[31].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[31].styles[2]": "CornerRadius=0,4,4,0",
-    "controlStyles[32].target": "MenuFlyoutPresenter",
-    "controlStyles[32].styles[0]": "MinWidth=165",
-    "controlStyles[32].styles[1]": "CornerRadius=8",
-    "controlStyles[32].styles[2]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" />",
-    "controlStyles[33].target": "JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > TextBlock",
-    "controlStyles[33].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[33].styles[1]": "FontSize=15",
-    "controlStyles[34].target": "StackPanel > Button#DeleteButton > Grid@CommonStates",
-    "controlStyles[34].styles[0]": "Background@Normal:=$buttonNormal",
-    "controlStyles[34].styles[1]": "Background@PointerOver:=$buttonPointerOver",
-    "controlStyles[34].styles[2]": "Background@Pressed:=$buttonPressed",
-    "controlStyles[34].styles[3]": "BorderThickness=1",
-    "controlStyles[34].styles[4]": "BorderBrush:=$buttonBorderBrush",
-    "controlStyles[35].target": "StackPanel > Button#DeleteButton > Grid@CommonStates > ContentPresenter > TextBlock",
-    "controlStyles[35].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[35].styles[1]": "FontSize=14",
-    "controlStyles[35].styles[2]": "Opacity@Pressed=0.84",
-    "controlStyles[35].styles[3]": "Margin=0,-1,0,0",
-    "controlStyles[36].target": "Button#CancelButton > Grid@CommonStates > ContentPresenter",
-    "controlStyles[36].styles[0]": "Background@Normal:=$accentButtonNormal",
-    "controlStyles[36].styles[1]": "Background@PointerOver:=$accentButtonPointerOver",
-    "controlStyles[36].styles[2]": "Background@Pressed:=$accentButtonPressed",
-    "controlStyles[36].styles[3]": "BorderThickness=0,0,0,1",
-    "controlStyles[36].styles[4]": "BorderBrush:=$accentButtonBorderBrush",
-    "controlStyles[37].target": "Button#CancelButton > Grid@CommonStates > ContentPresenter > TextBlock",
-    "controlStyles[37].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[37].styles[1]": "FontSize=14",
-    "controlStyles[37].styles[2]": "Foreground=Black",
-    "controlStyles[37].styles[3]": "Opacity@Pressed=0.64",
-    "controlStyles[38].target": "MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > Ellipse",
-    "controlStyles[38].styles[0]": "Width=32",
-    "controlStyles[38].styles[1]": "Height=32",
-    "controlStyles[38].styles[2]": "Margin=1,0,0,2",
-    "controlStyles[39].target": "MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > StackPanel > TextBlock#TextBlock",
-    "controlStyles[39].styles[0]": "FontSize=14",
-    "controlStyles[39].styles[1]": "Margin=8,-1,0,1",
-    "controlStyles[39].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[40].target": "MenuFlyoutItem",
-    "controlStyles[40].styles[0]": "CornerRadius=4",
-    "controlStyles[40].styles[1]": "Margin=3,-1,3,0",
-    "controlStyles[41].target": "MenuFlyoutSubItem",
-    "controlStyles[41].styles[0]": "CornerRadius=4",
-    "controlStyles[41].styles[1]": "FontSize=14",
-    "controlStyles[41].styles[2]": "Margin=3,0,3,0",
-    "controlStyles[41].styles[3]": "FontFamily=$fontFamily",
-    "controlStyles[41].styles[4]": "MinHeight=30",
-    "controlStyles[42].target": "ToggleMenuFlyoutItem",
-    "controlStyles[42].styles[0]": "CornerRadius=4",
-    "controlStyles[42].styles[1]": "FontSize=14",
-    "controlStyles[42].styles[2]": "Margin=3,0,3,0",
-    "controlStyles[42].styles[3]": "FontFamily=$fontFamily",
-    "controlStyles[42].styles[4]": "MinHeight=30",
-    "controlStyles[43].target": "StackPanel > Button#DeleteButton",
-    "controlStyles[43].styles[0]": "CornerRadius=4",
-    "controlStyles[43].styles[1]": "MinWidth=150",
-    "controlStyles[43].styles[2]": "Height=32",
-    "controlStyles[44].target": "Button#CancelButton",
-    "controlStyles[44].styles[0]": "CornerRadius=4",
-    "controlStyles[44].styles[1]": "MinWidth=150",
-    "controlStyles[44].styles[2]": "Height=32",
-    "controlStyles[45].target": "StartUI.NavigationPaneBadgeView > Grid",
-    "controlStyles[45].styles[0]": "Margin=-16,-23,0,7",
-    "controlStyles[46].target": "StartUI.NavigationPaneBadgeView > Grid > Windows.UI.Xaml.Shapes.Rectangle",
-    "controlStyles[46].styles[0]": "Fill:=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight2}\" />",
-    "controlStyles[47].target": "StartUI.NavigationPaneBadgeView#Badge > Grid > TextBlock",
-    "controlStyles[47].styles[0]": "Foreground=Black",
-    "controlStyles[47].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[48].target": "ItemsStackPanel > StartUI.ViewSelectionListViewItem > Grid@CommonStates",
-    "controlStyles[48].styles[0]": "Background@Selected:=$buttonNormal",
-    "controlStyles[49].target": "Button#PinButton > Grid@CommonStates > Border",
-    "controlStyles[49].styles[0]": "Background=Transparent",
-    "controlStyles[49].styles[1]": "Height=16",
-    "controlStyles[49].styles[2]": "BorderBrush:=$borderBrush",
-    "controlStyles[49].styles[3]": "BorderThickness=0.5,0,0,0",
-    "controlStyles[49].styles[4]": "CornerRadius=0",
-    "controlStyles[49].styles[5]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"0\" FromVerticalOffset=\"37.5\" /></TransitionCollection>",
-    "controlStyles[50].target": "JumpViewUI.JumpListListViewItem",
-    "controlStyles[50].styles[0]": "CornerRadius=4",
-    "controlStyles[50].styles[1]": "Height=30",
-    "controlStyles[51].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > StartUI.TileViewControl > Grid > Border#Background",
-    "controlStyles[51].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.24\" FallbackColor=\"#424242\" />",
-    "controlStyles[51].styles[1]": "Background@Normal:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.72\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "controlStyles[51].styles[2]": "BorderThickness=0,1.5,0,0",
-    "controlStyles[51].styles[3]": "CornerRadius=8",
-    "controlStyles[51].styles[4]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.48\" FallbackColor=\"#5B5B5B\" />",
-    "controlStyles[52].target": "TileGridNestedPanel > StartUI.TileListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter",
-    "controlStyles[52].styles[0]": "RevealBackground:=",
-    "controlStyles[52].styles[1]": "PointerOverBackground:=",
-    "controlStyles[52].styles[2]": "PressedBackground:=",
-    "controlStyles[52].styles[3]": "CornerRadius=8",
-    "controlStyles[53].target": "ToolTip > ContentPresenter",
-    "controlStyles[53].styles[0]": "CornerRadius=4",
-    "controlStyles[53].styles[1]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "controlStyles[53].styles[2]": "BorderThickness=0",
-    "controlStyles[54].target": "Button#UninstallButton",
-    "controlStyles[54].styles[0]": "Margin=0,15,9,0",
-    "controlStyles[54].styles[1]": "MinWidth=159",
-    "controlStyles[54].styles[2]": "Height=32",
-    "controlStyles[54].styles[3]": "CornerRadius=4",
-    "controlStyles[55].target": "StartUI.StartSizingFramePanel",
-    "controlStyles[55].styles[0]": "Margin=13",
-    "controlStyles[55].styles[1]": "CornerRadius=8",
-    "controlStyles[56].target": "Border#LogoBackgroundPlate",
-    "controlStyles[56].styles[0]": "Margin=12,6,0,6",
-    "controlStyles[57].target": "MenuFlyoutItem > Grid@CommonStates",
-    "controlStyles[57].styles[0]": "Padding=12,0,0,0",
-    "controlStyles[57].styles[1]": "MinHeight=30",
-    "controlStyles[57].styles[2]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[57].styles[3]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[57].styles[4]": "BorderBrush:=",
-    "controlStyles[57].styles[5]": "MinWidth=208",
-    "controlStyles[58].target": "ToggleMenuFlyoutItem > Grid@CommonStates",
-    "controlStyles[58].styles[0]": "Padding=12,0,0,0",
-    "controlStyles[58].styles[1]": "Height=28",
-    "controlStyles[58].styles[2]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[58].styles[3]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[58].styles[4]": "BorderBrush:=",
-    "controlStyles[59].target": "TextBlock#ShutdownConfirmationTextBlock",
-    "controlStyles[59].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[60].target": "Button#ShutdownConfirmationButton",
-    "controlStyles[60].styles[0]": "Margin=0,17,0,0",
-    "controlStyles[60].styles[1]": "MinWidth=150",
-    "controlStyles[60].styles[2]": "Height=32",
-    "controlStyles[60].styles[3]": "CornerRadius=4",
-    "controlStyles[61].target": "Button#ShutdownConfirmationButton > ContentPresenter@CommonStates",
-    "controlStyles[61].styles[0]": "Background@Normal:=$buttonNormal",
-    "controlStyles[61].styles[1]": "Background@PointerOver:=$buttonPointerOver",
-    "controlStyles[61].styles[2]": "Background@Pressed:=$buttonPressed",
-    "controlStyles[61].styles[3]": "BorderThickness=1",
-    "controlStyles[61].styles[4]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[62].target": "Border#NameTextBoxHost > TextBox > Grid > Button#DeleteButton > Grid@CommonStates",
-    "controlStyles[62].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.25\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[62].styles[1]": "CornerRadius=4",
-    "controlStyles[62].styles[2]": "Height=20",
-    "controlStyles[62].styles[3]": "Width=28",
-    "controlStyles[62].styles[4]": "Margin=-12,0,0,0",
-    "controlStyles[62].styles[5]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.48\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" />",
-    "controlStyles[63].target": "Border#NameTextBoxHost > TextBox",
-    "controlStyles[63].styles[0]": "FontWeight=Semibold",
-    "controlStyles[63].styles[1]": "FontSize=14",
-    "controlStyles[63].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[64].target": "Grid#InnerRoot",
-    "controlStyles[64].styles[0]": "Height=46",
-    "controlStyles[65].target": "TextBlock#SignedInStatus",
-    "controlStyles[65].styles[0]": "FontSize=12",
-    "controlStyles[65].styles[1]": "Margin=8,-1,0,3",
-    "controlStyles[65].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[66].target": "MenuFlyoutSeparator > Rectangle",
-    "controlStyles[66].styles[0]": "Fill:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\"/>",
-    "controlStyles[66].styles[1]": "Margin=0,4,0,3",
-    "controlStyles[67].target": "TextBlock#ExpandCollapseButtonText",
-    "controlStyles[67].styles[0]": "Margin=12,0,0,0",
-    "controlStyles[67].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[68].target": "Grid#RootPanel@CommonStates > Rectangle",
-    "controlStyles[68].styles[0]": "Fill@Selected:=$accentButtonNormal",
-    "controlStyles[68].styles[1]": "Height=16",
-    "controlStyles[68].styles[2]": "Width=3",
-    "controlStyles[68].styles[3]": "RadiusX=2",
-    "controlStyles[68].styles[4]": "RadiusY=2",
-    "controlStyles[68].styles[5]": "Canvas.ZIndex=1",
-    "controlStyles[68].styles[6]": "Fill@PointerOverSelected:=$accentButtonNormal",
-    "controlStyles[69].target": "StartUI.NavigationPaneGrid > StartUI.UserTileView > StartUI.NavigationPaneButton#UserTileButton ",
-    "controlStyles[69].styles[0]": "Margin=6",
-    "controlStyles[69].styles[1]": "Height=36",
-    "controlStyles[69].styles[2]": "CornerRadius=6",
-    "controlStyles[70].target": "StartUI.NavigationPaneGrid > StartUI.PowerOptionsView > StartUI.NavigationPaneButton#PowerButton ",
-    "controlStyles[70].styles[0]": "Margin=6",
-    "controlStyles[70].styles[1]": "Height=36",
-    "controlStyles[70].styles[2]": "CornerRadius=6",
-    "controlStyles[71].target": "StartUI.ViewSelectionListViewItem",
-    "controlStyles[71].styles[0]": "Margin=6",
-    "controlStyles[71].styles[1]": "Height=36",
-    "controlStyles[71].styles[2]": "CornerRadius=6",
-    "controlStyles[72].target": "StartUI.AppListViewItem",
-    "controlStyles[72].styles[0]": "Margin=6",
-    "controlStyles[72].styles[1]": "Height=36",
-    "controlStyles[72].styles[2]": "CornerRadius=6",
-    "controlStyles[73].target": "StartUI.AppListViewItem > Grid#RootPanel@CommonStates > ContentPresenter > StartUI.NavigationPaneItemPanel > FontIcon",
-    "controlStyles[73].styles[0]": "Margin=-12,0,0,0",
-    "controlStyles[73].styles[1]": "Opacity@Pressed=0.84",
-    "controlStyles[74].target": "StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates > StartUI.NavigationPaneItemPanel > Grid > FontIcon",
-    "controlStyles[74].styles[0]": "Margin=-12,0,0,0",
-    "controlStyles[74].styles[1]": "Opacity@Pressed=0.84",
-    "controlStyles[75].target": "StartUI.NavigationPaneButton#UserTileButton > ContentPresenter@CommonStates > StartUI.NavigationPaneItemPanel > Grid",
-    "controlStyles[75].styles[0]": "Margin=-12,0,0,0",
-    "controlStyles[75].styles[1]": "Opacity@Pressed=0.84",
-    "controlStyles[76].target": "JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > StackPanel > TextBlock",
-    "controlStyles[76].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[77].target": "JumpViewUI.JumpListCategoryHeaderControl > Grid > TextBlock#HeadingTextBlock",
-    "controlStyles[77].styles[0]": "Margin=15,9,0,5",
-    "controlStyles[77].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[78].target": "MenuFlyoutSubItem > Grid@CommonStates",
-    "controlStyles[78].styles[0]": "Background@SubMenuOpened:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "controlStyles[78].styles[1]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "controlStyles[78].styles[2]": "Padding=12,0,0,0",
-    "controlStyles[78].styles[3]": "BorderBrush:=",
-    "controlStyles[79].target": "Viewbox > Border > TextBlock",
-    "controlStyles[79].styles[0]": "FontWeight=SemiBold",
-    "controlStyles[79].styles[1]": "Margin=0,0,0,4",
-    "controlStyles[79].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[80].target": "StartUI.AllAppsZoomListViewItem",
-    "controlStyles[80].styles[0]": "CornerRadius=6",
-    "controlStyles[81].target": "TextBlock#FolderDisplayName",
-    "controlStyles[81].styles[0]": "Margin=9,0,0,5",
-    "controlStyles[81].styles[1]": "FontFamily=$fontFamily",
-    "controlStyles[82].target": "JumpViewUI.JumpListListViewItem > Grid@CommonStates",
-    "controlStyles[82].styles[0]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[82].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.64\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[82].styles[2]": "BorderBrush:=",
-    "controlStyles[83].target": "Button#PinButton",
-    "controlStyles[83].styles[0]": "MinWidth=44",
-    "controlStyles[84].target": "Button#PinButton > Grid@CommonStates > Border > ContentPresenter > TextBlock",
-    "controlStyles[84].styles[0]": "Margin=3,0,0,0",
-    "controlStyles[84].styles[1]": "Opacity@Pressed=0.84",
-    "controlStyles[85].target": "FontIcon#SubItemChevron",
-    "controlStyles[85].styles[0]": "Margin=-30,0,0,0",
-    "controlStyles[85].styles[1]": "Glyph:=&#xE76C;",
-    "controlStyles[86].target": "Border#SmallLogo",
-    "controlStyles[86].styles[0]": "Margin=0,0,0,4",
-    "controlStyles[87].target": "MenuFlyoutPresenter > Grid > ScrollViewer > Border",
-    "controlStyles[87].styles[0]": "ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"-37.5\" FromVerticalOffset=\"0\" /></TransitionCollection>",
-    "controlStyles[88].target": "ToolTip > ContentPresenter#LayoutRoot > TextBlock",
-    "controlStyles[88].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[89].target": "StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=RecentList] > StackPanel > Button > Border > TextBlock",
-    "controlStyles[89].styles[0]": "Margin=7,0,0,2",
-    "controlStyles[90].target": "Button#ShutdownReasonButton",
-    "controlStyles[90].styles[0]": "MinWidth=150",
-    "controlStyles[90].styles[1]": "Height=32",
-    "controlStyles[90].styles[2]": "CornerRadius=4",
-    "controlStyles[91].target": "Button#ShutdownReasonButton > ContentPresenter@CommonStates",
-    "controlStyles[91].styles[0]": "Background@Normal:=$buttonNormal",
-    "controlStyles[91].styles[1]": "Background@PointerOver:=$buttonPointerOver",
-    "controlStyles[91].styles[2]": "Background@Pressed:=$buttonPressed",
-    "controlStyles[91].styles[3]": "BorderThickness=1",
-    "controlStyles[91].styles[4]": "BorderBrush:=$buttonBorderBrush",
-    "controlStyles[92].target": "ComboBox#ShutdownReasonComboBox",
-    "controlStyles[92].styles[0]": "CornerRadius=4",
-    "controlStyles[92].styles[1]": "MinWidth=166",
-    "controlStyles[92].styles[2]": "FontFamily=$fontFamily",
-    "controlStyles[93].target": "ComboBox > Grid@CommonStates > Border#Background",
-    "controlStyles[93].styles[0]": "Background@Normal:=$buttonNormal",
-    "controlStyles[93].styles[1]": "CornerRadius=4",
-    "controlStyles[93].styles[2]": "BorderThickness=1",
-    "controlStyles[93].styles[3]": "BorderBrush:=$buttonBorderBrush",
-    "controlStyles[93].styles[4]": "Background@PointerOver:=$buttonPointerOver",
-    "controlStyles[93].styles[5]": "Background@Pressed:=$buttonPressed",
-    "controlStyles[93].styles[6]": "Background@Selected=Red",
-    "controlStyles[93].styles[7]": "Background@SelectedPointerOver=Yellow",
-    "controlStyles[94].target": "ComboBoxItem",
-    "controlStyles[94].styles[0]": "CornerRadius=4",
-    "controlStyles[94].styles[1]": "Margin=3,0,3,0",
-    "controlStyles[95].target": "ComboBoxItem > Grid@CommonStates",
-    "controlStyles[95].styles[0]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[95].styles[1]": "Background@Pressed:=$buttonNormal",
-    "controlStyles[95].styles[2]": "Background@Selected:=$buttonNormal",
-    "controlStyles[95].styles[3]": "Background@SelectedPressed:=$buttonNormal",
-    "controlStyles[95].styles[4]": "Background@SelectedUnfocused:=$buttonNormal",
-    "controlStyles[95].styles[5]": "Background@SelectedDisabled:=$buttonNormal",
-    "controlStyles[95].styles[6]": "Background@SelectedPointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.48\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "controlStyles[95].styles[7]": "BorderBrush:=",
-    "controlStyles[96].target": "Border#PopupBorder",
-    "controlStyles[96].styles[0]": "Background:=$background",
-    "controlStyles[96].styles[1]": "CornerRadius=8",
-    "controlStyles[97].target": "FlyoutPresenter",
-    "controlStyles[97].styles[0]": "CornerRadius=8",
-    "controlStyles[97].styles[1]": "Background:=$background",
-    "controlStyles[97].styles[2]": "BorderBrush:=$borderBrush",
-    "controlStyles[97].styles[3]": "Padding=16",
-    "controlStyles[98].target": "StackPanel#ShutdownConfirmationFlyoutPanel",
-    "controlStyles[98].styles[0]": "Margin=0,-1.5,0,0",
-    "controlStyles[99].target": "StackPanel#ShutdownReasonFlyoutPanel",
-    "controlStyles[99].styles[0]": "Margin=0,-3,0,0",
-    "controlStyles[100].target": "Button#ShutdownConfirmationButton > ContentPresenter@CommonStates > TextBlock",
-    "controlStyles[100].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[100].styles[1]": "FontSize=14",
-    "controlStyles[100].styles[2]": "Opacity@Pressed=0.84",
-    "controlStyles[100].styles[3]": "Foreground=White",
-    "controlStyles[101].target": "Button#ShutdownReasonButton > ContentPresenter@CommonStates > TextBlock",
-    "controlStyles[101].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[101].styles[1]": "FontSize=14",
-    "controlStyles[101].styles[2]": "Opacity@Pressed=0.84",
-    "controlStyles[101].styles[3]": "Foreground=White",
-    "controlStyles[102].target": "ComboBox > Grid@CommonStates > ContentPresenter > TextBlock",
-    "controlStyles[102].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[102].styles[1]": "FontSize=14",
-    "controlStyles[102].styles[2]": "Opacity@Pressed=0.84",
-    "controlStyles[102].styles[3]": "Foreground=White",
-    "controlStyles[103].target": "ComboBoxItem > Grid@CommonStates > ContentPresenter > TextBlock",
-    "controlStyles[103].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[103].styles[1]": "FontSize=14",
-    "controlStyles[103].styles[2]": "Opacity@Pressed=0.84",
-    "controlStyles[103].styles[3]": "Foreground=White",
-    "controlStyles[103].styles[4]": "Margin=0,1,0,-1",
-    "controlStyles[104].target": "StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=FrequentList] > StackPanel > Button > Border > TextBlock",
-    "controlStyles[104].styles[0]": "Margin=7,0,0,2",
-    "controlStyles[105].target": "TextBlock#FolderGlyph",
-    "controlStyles[105].styles[0]": "FontSize=9",
-    "controlStyles[105].styles[1]": "FontWeight=Light",
-    "controlStyles[106].target": "ItemsWrapGrid > StartUI.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border > TextBlock",
-    "controlStyles[106].styles[0]": "FontWeight=Light",
-    "controlStyles[106].styles[1]": "FontFamily=Segoe Fluent Icons",
-    "controlStyles[107].target": "Grid#MainGrid@InteractionStates > Rectangle#BackgroundElement",
-    "controlStyles[107].styles[0]": "Fill@InteractionState_Edit:=",
-    "controlStyles[107].styles[1]": "Fill@InteractionState_Rest:=",
-    "controlStyles[107].styles[2]": "Fill@InteractionState_Pressed:=",
-    "controlStyles[107].styles[3]": "Fill@InteractionState_Drag:=",
-    "controlStyles[107].styles[4]": "StrokeThickness=0",
-    "controlStyles[107].styles[5]": "RadiusX=4",
-    "controlStyles[107].styles[6]": "RadiusY=4",
-    "controlStyles[108].target": "Border#NameTextBoxHost > TextBox > Grid > Border#BackgroundElement",
-    "controlStyles[108].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0.72\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
-    "controlStyles[108].styles[1]": "CornerRadius=4",
-    "controlStyles[108].styles[2]": "BorderThickness=0.5,0.5,0.5,0",
-    "controlStyles[108].styles[3]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.4\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[109].target": "Border#NameTextBoxHost > TextBox > Grid > Border#BorderElement",
-    "controlStyles[109].styles[0]": "BorderThickness=0,0,0,1.5",
-    "controlStyles[109].styles[1]": "CornerRadius=4",
-    "controlStyles[109].styles[2]": "Height=28",
-    "controlStyles[109].styles[3]": "BorderBrush:=$accentButtonNormal",
-    "controlStyles[109].styles[4]": "Width=258",
-    "controlStyles[110].target": "Grid#MainGrid@FocusStates > Rectangle#BackgroundElement",
-    "controlStyles[110].styles[0]": "Fill@FocusState_Hover:=$buttonNormal",
-    "controlStyles[110].styles[1]": "Fill@FocusState_None=Transparent",
-    "controlStyles[110].styles[2]": "Fill@FocusState_HoverPlaceholder:=$buttonNormal",
-    "controlStyles[110].styles[3]": "StrokeThickness=0",
-    "controlStyles[110].styles[4]": "Margin=0,0,50,0",
-    "controlStyles[110].styles[5]": "Width=258",
-    "controlStyles[110].styles[6]": "Height=28",
-    "controlStyles[110].styles[7]": "RadiusX=4",
-    "controlStyles[110].styles[8]": "RadiusY=4",
-    "controlStyles[111].target": "Grid#MainGrid@FocusStates > Grid > Border#NameTextBlockHost",
-    "controlStyles[111].styles[0]": "BorderThickness=0,0,0,1.5",
-    "controlStyles[111].styles[1]": "BorderBrush@FocusState_Hover:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"#5B5B5B\" />",
-    "controlStyles[111].styles[2]": "CornerRadius=4",
-    "controlStyles[111].styles[3]": "Height=28",
-    "controlStyles[111].styles[4]": "BorderBrush@FocusState_HoverPlaceholder:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"#5B5B5B\" />",
-    "controlStyles[111].styles[5]": "Width=258",
-    "controlStyles[111].styles[6]": "Margin=0,0,2,0",
-    "controlStyles[112].target": "StackPanel > Button#DeleteButton > Grid > ContentPresenter",
-    "controlStyles[112].styles[0]": "BorderBrush:=",
-    "controlStyles[113].target": "FontIcon",
-    "controlStyles[113].styles[0]": "FontFamily=Segoe Fluent Icons",
-    "controlStyles[113].styles[1]": "Foreground=White",
-    "controlStyles[114].target": "Grid#ContentRoot",
-    "controlStyles[114].styles[0]": "BorderThickness=1,0,0,0",
-    "controlStyles[114].styles[1]": "BorderBrush:=<AcrylicBrush TintColor=\"{ThemeResource SystemColorButtonTextColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.4\" FallbackColor=\"#141414\" />",
-    "controlStyles[114].styles[2]": "Margin=0,1,0,1",
-    "controlStyles[115].target": "Border#NameTextBoxHost > TextBox",
-    "controlStyles[115].styles[0]": "Margin=-2,0,0,0",
-    "controlStyles[116].target": "SplitView#RootContent",
-    "controlStyles[116].styles[0]": "IsPaneOpen=False",
-    "controlStyles[116].styles[1]": "OpenPaneLength=48",
-    "controlStyles[117].target": "StartUI.NavigationPaneGrid > Border",
-    "controlStyles[117].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0.25\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
-    "controlStyles[117].styles[1]": "Width=48",
-    "controlStyles[118].target": "StartUI.ExpandCollapseButton",
-    "controlStyles[118].styles[0]": "Visibility=Collapsed",
-    "controlStyles[119].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar",
-    "controlStyles[119].styles[0]": "CornerRadius=2",
-    "controlStyles[119].styles[1]": "Margin=20,0,4,4",
-    "controlStyles[120].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > Grid > Border > Rectangle",
-    "controlStyles[120].styles[0]": "Fill:=$accentButtonNormal",
-    "controlStyles[120].styles[1]": "Margin=-1,-2,0,-2",
-    "controlStyles[120].styles[2]": "RadiusX=4",
-    "controlStyles[120].styles[3]": "RadiusY=4",
-    "controlStyles[121].target": "Border#NameTextBoxHost > TextBox > Grid > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement",
-    "controlStyles[121].styles[0]": "Foreground=White",
-    "controlStyles[121].styles[1]": "Opacity@Pressed=0.84",
-    "controlStyles[122].target": "ScrollViewer#ContentElement",
-    "controlStyles[122].styles[0]": "Foreground=White",
-    "controlStyles[122].styles[1]": "Margin=5,0,0,1",
-    "controlStyles[122].styles[2]": "FontFamily=Segoe UI Variable Small",
-    "controlStyles[123].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > Grid > Border",
-    "controlStyles[123].styles[0]": "BorderThickness=1",
-    "controlStyles[123].styles[1]": "Background:=<SolidColorBrush Color=\"{ThemeResource SystemChromeHighColor}\" Opacity=\"0.5\" />",
-    "controlStyles[124].target": "TextBlock#Badge",
-    "controlStyles[124].styles[0]": "FontFamily=$fontFamily",
-    "controlStyles[125].target": "StartUI.UserTileView",
-    "controlStyles[125].styles[0]": "Grid.Row=1",
-    "controlStyles[126].target": "StartUI.ViewSelectionListView",
-    "controlStyles[126].styles[0]": "Grid.Row=0",
-    "controlStyles[127].target": "Border#HighlightBackground",
-    "controlStyles[127].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.14\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[127].styles[1]": "Margin=-2",
-    "controlStyles[127].styles[2]": "CornerRadius=6",
-    "controlStyles[127].styles[3]": "BorderBrush=White",
-    "controlStyles[128].target": "Button#DeleteButton > Grid > Border",
-    "controlStyles[128].styles[0]": "Background=Transparent",
-    "controlStyles[129].target": "StartUI.TileFolderNameTextBox > Grid@CommonStates > Border#BorderElement",
-    "controlStyles[129].styles[0]": "Background@PointerOver:=$buttonNormal",
-    "controlStyles[129].styles[1]": "Background@Focused:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeLowColor}\" TintOpacity=\"0.72\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeLowColor}\" />",
-    "controlStyles[129].styles[2]": "CornerRadius=4",
-    "controlStyles[129].styles[3]": " BorderThickness=0.5,0.5,0.5,0",
-    "controlStyles[129].styles[4]": "BorderBrush@Focused:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.4\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[129].styles[5]": "Height=28",
-    "controlStyles[129].styles[6]": "Margin@PointerOver=-1",
-    "controlStyles[129].styles[7]": "Margin@Focused=0",
-    "controlStyles[130].target": "StartUI.TileFolderNameTextBox > Grid@CommonStates",
-    "controlStyles[130].styles[0]": "BorderThickness=0,0,0,1.5",
-    "controlStyles[130].styles[1]": "BorderBrush@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"#5B5B5B\" />",
-    "controlStyles[130].styles[2]": "BorderBrush@Focused:=$accentButtonNormal",
-    "controlStyles[130].styles[3]": "CornerRadius=4",
-    "controlStyles[130].styles[4]": "Height=28",
-    "controlStyles[131].target": "StartUI.TileFolderNameTextBox > Grid@CommonStates > Border > ScrollViewer",
-    "controlStyles[131].styles[0]": "Margin=3,-4,0,0",
-    "controlStyles[132].target": "Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates",
-    "controlStyles[132].styles[0]": "Background@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.25\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "controlStyles[132].styles[1]": "Background@Pressed:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.48\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" />",
-    "controlStyles[132].styles[2]": "CornerRadius=4",
-    "controlStyles[132].styles[3]": "Width=28",
-    "controlStyles[132].styles[4]": "Height=20",
-    "controlStyles[132].styles[5]": "Margin=-10,1,0,0",
-    "controlStyles[133].target": "Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement",
-    "controlStyles[133].styles[0]": "Foreground=White",
-    "controlStyles[133].styles[1]": "Opacity@Pressed=0.84",
-    "controlStyles[134].target": "Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallIncrease > Grid",
-    "controlStyles[134].styles[0]": "Background=Transparent",
-    "controlStyles[135].target": "Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallDecrease > Grid",
-    "controlStyles[135].styles[0]": "Background=Transparent",
-    "controlStyles[136].target": "StartUI.TileFolderNameTextBox > Grid@CommonStates > Border > TextBlock#PlaceholderTextContentPresenter",
-    "controlStyles[136].styles[0]": "Margin=2,-4,0,0",
-    "controlStyles[136].styles[1]": "Opacity@Normal=0",
-    "controlStyles[136].styles[2]": "Opacity@PointerOver=1",
-    "controlStyles[136].styles[3]": "Opacity@Focused=0",
-    "controlStyles[137].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar > Grid > Grid > Rectangle",
-    "controlStyles[137].styles[0]": "Fill:=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.8\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "controlStyles[137].styles[1]": "RadiusX=4",
-    "controlStyles[137].styles[2]": "RadiusY=4",
-    "controlStyles[138].target": "Rectangle#Overlay",
-    "controlStyles[138].styles[0]": "Opacity=0.5",
-    "controlStyles[139].target": "Border#OverlayBorder",
-    "controlStyles[139].styles[0]": "Opacity=0.5",
-    "controlStyles[140].target": "StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar",
-    "controlStyles[140].styles[0]": "CornerRadius=2",
-    "controlStyles[140].styles[1]": "Margin=4",
-    "controlStyles[141].target": "StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > Grid > Border > Rectangle",
-    "controlStyles[141].styles[0]": "Margin=-1,-2,0,-2",
-    "controlStyles[141].styles[1]": "Fill:=$accentButtonNormal",
-    "controlStyles[141].styles[2]": "RadiusX=4",
-    "controlStyles[141].styles[3]": "RadiusY=4",
-    "controlStyles[142].target": "StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > Grid > Border",
-    "controlStyles[142].styles[0]": "BorderThickness=1",
-    "controlStyles[142].styles[1]": "Background:=<SolidColorBrush Color=\"{ThemeResource SystemChromeHighColor}\" Opacity=\"0.5\" />",
-    "controlStyles[143].target": "StartUI.ViewSelectionListViewItem > Grid#RootPanel@CommonStates > ContentPresenter > StartUI.NavigationPaneItemPanel > FontIcon",
-    "controlStyles[143].styles[0]": "Margin=-12,0,0,0",
-    "controlStyles[143].styles[1]": "Opacity@Pressed=0.84",
-    "controlStyles[143].styles[2]": "Opacity@PressedSelected=0.84",
-    "styleConstants[0]": "accentButtonNormal=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight2}\" />",
-    "styleConstants[1]": "accentButtonPointerOver=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight2}\" Opacity=\"0.9\"/>",
-    "styleConstants[2]": "accentButtonPressed=<SolidColorBrush Color=\"{ThemeResource SystemAccentColorLight2}\" Opacity=\"0.8\"/>",
-    "styleConstants[3]": "buttonNormal=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumLowColor}\" />",
-    "styleConstants[4]": "buttonPointerOver=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.25\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "styleConstants[5]": "buttonPressed=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumLowColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.12\" FallbackColor=\"#272727\" />",
-    "styleConstants[6]": "background=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumColor}\" />",
-    "styleConstants[7]": "borderBrush=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.48\" FallbackColor=\"#424242\" />",
-    "styleConstants[8]": "fontFamily=Segoe UI Variable",
-    "styleConstants[9]": "buttonBorderBrush=<AcrylicBrush TintColor=\"{ThemeResource SystemChromeMediumHighColor}\" TintOpacity=\"0\" TintLuminosityOpacity=\"0.96\" FallbackColor=\"{ThemeResource SystemChromeMediumHighColor}\" />",
-    "styleConstants[10]": "accentButtonBorderBrush=<AcrylicBrush TintColor=\"{ThemeResource SystemAccentColorLight1}\" TintOpacity=\"0.25\" TintLuminosityOpacity=\"0.25\" FallbackColor=\"{ThemeResource SystemAccentColorLight1}\"/>"
-}
+```yaml
+styleConstants:
+  - accentButtonNormal=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" />
+  - accentButtonPointerOver=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" Opacity="0.9"/>
+  - accentButtonPressed=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" Opacity="0.8"/>
+  - buttonNormal=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+  - buttonPointerOver=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.25" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+  - buttonPressed=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.12" FallbackColor="#272727" />
+  - background=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+  - borderBrush=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="#424242" />
+  - fontFamily=Segoe UI Variable
+  - buttonBorderBrush=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+  - accentButtonBorderBrush=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorLight1}" TintOpacity="0.25" TintLuminosityOpacity="0.25" FallbackColor="{ThemeResource SystemAccentColorLight1}"/>
+controlStyles:
+  - target: Border#AcrylicBorder
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.24" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+      - BorderBrush:=$borderBrush
+      - BorderThickness=1
+      - CornerRadius=8
+  - target: Border#NameTextBlockHost > TextBlock
+    styles:
+      - FontWeight=SemiBold
+      - FontSize=14
+      - FontFamily=$fontFamily
+      - Margin=3,0,0,-6
+  - target: StartUI.AllAppsPane
+    styles:
+      - Margin=12,0,0,0
+      - FontWeight=Semibold
+      - Width=253
+  - target: Button#Header > Border > TextBlock
+    styles:
+      - FontSize=14
+      - FontWeight=SemiBold
+      - Margin=0,0,-16,2
+      - FontFamily=$fontFamily
+  - target: Grid#ContentPaneGrid
+    styles:
+      - Margin=0,24,0,0
+  - target: TextBlock#AppDisplayName
+    styles:
+      - FontSize=12
+      - Margin=20,0,0,0
+      - FontFamily=$fontFamily
+  - target: TextBlock#DisplayName
+    styles:
+      - FontSize=12
+      - Margin=0,0,0,5
+      - FontFamily=$fontFamily
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root@CommonStates
+    styles:
+      - RevealBackground@PointerOver:=$buttonNormal
+      - RevealBackground@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - CornerRadius=9
+      - PointerOverBackground:=
+      - PressedBackground:=
+      - SelectedBackground:=
+      - RevealBorderBrush:=
+      - RevealBackground@Normal:=
+  - target: StartUI.NavigationPaneGrid
+    styles:
+      - CornerRadius=8,0,0,8
+      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.16" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
+      - BorderBrush:=$borderBrush
+      - BorderThickness=1,1,0,1
+  - target: Grid#VerticalRoot
+    styles:
+      - CornerRadius=6
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallDecrease > Grid@CommonStates > FontIcon > Grid > TextBlock
+    styles:
+      - Text=
+      - Foreground@Normal:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.5" />
+      - Foreground@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.75" />
+      - Foreground@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.75" />
+      - FontSize@Pressed=6
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallIncrease > Grid@CommonStates > FontIcon > Grid > TextBlock
+    styles:
+      - Text=
+      - Foreground@Normal:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.5" />
+      - Foreground@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.75" />
+      - Foreground@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.75" />
+      - FontSize@Pressed=6
+  - target: StartUI.GroupHeaderControl
+    styles:
+      - CornerRadius=6
+  - target: Rectangle#ThumbVisual
+    styles:
+      - Width=6
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.5" />
+      - RadiusX=4
+      - RadiusY=4
+  - target: MenuFlyoutItem > Grid > TextBlock
+    styles:
+      - FontSize=14
+      - FontFamily=$fontFamily
+  - target: Grid#GridForContextMenuInvoke_MustHave_No_Columns_Or_Rows > Grid > TextBlock
+    styles:
+      - FontSize=14
+      - FontFamily=$fontFamily
+  - target: StartUI.TileFolderNameTextBox
+    styles:
+      - FontSize=14
+      - FontWeight=SemiBold
+      - FontFamily=$fontFamily
+  - target: ToggleMenuFlyoutItem > Grid > Grid > FontIcon
+    styles:
+      - Glyph:=&#xE73E;
+  - target: Border#UninstallFlyoutPresenterBorder
+    styles:
+      - Width=376
+      - Height=149
+      - Background:=$background
+      - BorderBrush:=$borderBrush
+      - CornerRadius=8
+  - target: StartUI.UninstallFlyoutControl > StackPanel > TextBlock
+    styles:
+      - FontSize=14
+      - FontFamily=$fontFamily
+      - Text=This app and its related information will be removed.
+      - Margin=9,8,0,0
+  - target: Button#UninstallButton > Grid@CommonStates > ContentPresenter
+    styles:
+      - Background@Normal:=$accentButtonNormal
+      - Background@PointerOver:=$accentButtonPointerOver
+      - Background@Pressed:=$accentButtonPressed
+      - BorderThickness=0,0,0,1
+      - BorderBrush:=$accentButtonBorderBrush
+  - target: Button#UninstallButton > Grid@CommonStates > ContentPresenter > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+      - FontWeight=Normal
+      - Foreground=Black
+      - Opacity@Pressed=0.64
+  - target: TextBlock#StatusMessage
+    styles:
+      - Margin=20,0,0,0
+      - FontFamily=$fontFamily
+  - target: Rectangle#SelectionRectangle
+    styles:
+      - RadiusX=2
+      - RadiusY=2
+      - Height=32
+  - target: Border#Border@CommonStates
+    styles:
+      - Background@PointerOver:=$buttonNormal
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - CornerRadius=6
+      - BorderBrush=Transparent
+  - target: StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates
+    styles:
+      - Background@PointerOver:=$buttonNormal
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - BorderBrush:=
+      - CornerRadius=6
+      - Margin=-1,0,-1,0
+  - target: StartUI.NavigationPaneButton#UserTileButton > ContentPresenter@CommonStates
+    styles:
+      - Background@PointerOver:=$buttonNormal
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - BorderBrush:=
+      - CornerRadius=6
+      - Margin=-1,0,-1,0
+  - target: Grid#RootPanel@CommonStates > ContentPresenter
+    styles:
+      - BorderBrush:=
+      - Background@PointerOver:=$buttonNormal
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Background@PressedSelected:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Background@PointerOverSelected:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - CornerRadius=6
+      - BorderThickness=0
+  - target: StartUI.AllAppsGridListViewItem
+    styles:
+      - CornerRadius=6
+  - target: Button#Header
+    styles:
+      - CornerRadius=6
+  - target: Grid#RootPanel
+    styles:
+      - CornerRadius=6
+  - target: Button#PinButton > Grid@CommonStates
+    styles:
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.25" FallbackColor="#424242" />
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - CornerRadius=0,4,4,0
+  - target: MenuFlyoutPresenter
+    styles:
+      - MinWidth=165
+      - CornerRadius=8
+      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+  - target: JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+      - FontSize=15
+  - target: StackPanel > Button#DeleteButton > Grid@CommonStates
+    styles:
+      - Background@Normal:=$buttonNormal
+      - Background@PointerOver:=$buttonPointerOver
+      - Background@Pressed:=$buttonPressed
+      - BorderThickness=1
+      - BorderBrush:=$buttonBorderBrush
+  - target: StackPanel > Button#DeleteButton > Grid@CommonStates > ContentPresenter > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+      - FontSize=14
+      - Opacity@Pressed=0.84
+      - Margin=0,-1,0,0
+  - target: Button#CancelButton > Grid@CommonStates > ContentPresenter
+    styles:
+      - Background@Normal:=$accentButtonNormal
+      - Background@PointerOver:=$accentButtonPointerOver
+      - Background@Pressed:=$accentButtonPressed
+      - BorderThickness=0,0,0,1
+      - BorderBrush:=$accentButtonBorderBrush
+  - target: Button#CancelButton > Grid@CommonStates > ContentPresenter > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+      - FontSize=14
+      - Foreground=Black
+      - Opacity@Pressed=0.64
+  - target: MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > Ellipse
+    styles:
+      - Width=32
+      - Height=32
+      - Margin=1,0,0,2
+  - target: MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > StackPanel > TextBlock#TextBlock
+    styles:
+      - FontSize=14
+      - Margin=8,-1,0,1
+      - FontFamily=$fontFamily
+  - target: MenuFlyoutItem
+    styles:
+      - CornerRadius=4
+      - Margin=3,-1,3,0
+  - target: MenuFlyoutSubItem
+    styles:
+      - CornerRadius=4
+      - FontSize=14
+      - Margin=3,0,3,0
+      - FontFamily=$fontFamily
+      - MinHeight=30
+  - target: ToggleMenuFlyoutItem
+    styles:
+      - CornerRadius=4
+      - FontSize=14
+      - Margin=3,0,3,0
+      - FontFamily=$fontFamily
+      - MinHeight=30
+  - target: StackPanel > Button#DeleteButton
+    styles:
+      - CornerRadius=4
+      - MinWidth=150
+      - Height=32
+  - target: Button#CancelButton
+    styles:
+      - CornerRadius=4
+      - MinWidth=150
+      - Height=32
+  - target: StartUI.NavigationPaneBadgeView > Grid
+    styles:
+      - Margin=-16,-23,0,7
+  - target: StartUI.NavigationPaneBadgeView > Grid > Windows.UI.Xaml.Shapes.Rectangle
+    styles:
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" />
+  - target: StartUI.NavigationPaneBadgeView#Badge > Grid > TextBlock
+    styles:
+      - Foreground=Black
+      - FontFamily=$fontFamily
+  - target: ItemsStackPanel > StartUI.ViewSelectionListViewItem > Grid@CommonStates
+    styles:
+      - Background@Selected:=$buttonNormal
+  - target: Button#PinButton > Grid@CommonStates > Border
+    styles:
+      - Background=Transparent
+      - Height=16
+      - BorderBrush:=$borderBrush
+      - BorderThickness=0.5,0,0,0
+      - CornerRadius=0
+      - ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="0" FromVerticalOffset="37.5" /></TransitionCollection>
+  - target: JumpViewUI.JumpListListViewItem
+    styles:
+      - CornerRadius=4
+      - Height=30
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > StartUI.TileViewControl > Grid > Border#Background
+    styles:
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.24" FallbackColor="#424242" />
+      - Background@Normal:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.72" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - BorderThickness=0,1.5,0,0
+      - CornerRadius=8
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="#5B5B5B" />
+  - target: TileGridNestedPanel > StartUI.TileListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
+    styles:
+      - RevealBackground:=
+      - PointerOverBackground:=
+      - PressedBackground:=
+      - CornerRadius=8
+  - target: ToolTip > ContentPresenter
+    styles:
+      - CornerRadius=4
+      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - BorderThickness=0
+  - target: Button#UninstallButton
+    styles:
+      - Margin=0,15,9,0
+      - MinWidth=159
+      - Height=32
+      - CornerRadius=4
+  - target: StartUI.StartSizingFramePanel
+    styles:
+      - Margin=13
+      - CornerRadius=8
+  - target: Border#LogoBackgroundPlate
+    styles:
+      - Margin=12,6,0,6
+  - target: MenuFlyoutItem > Grid@CommonStates
+    styles:
+      - Padding=12,0,0,0
+      - MinHeight=30
+      - Background@PointerOver:=$buttonNormal
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - BorderBrush:=
+      - MinWidth=208
+  - target: ToggleMenuFlyoutItem > Grid@CommonStates
+    styles:
+      - Padding=12,0,0,0
+      - Height=28
+      - Background@PointerOver:=$buttonNormal
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - BorderBrush:=
+  - target: TextBlock#ShutdownConfirmationTextBlock
+    styles:
+      - FontFamily=$fontFamily
+  - target: Button#ShutdownConfirmationButton
+    styles:
+      - Margin=0,17,0,0
+      - MinWidth=150
+      - Height=32
+      - CornerRadius=4
+  - target: Button#ShutdownConfirmationButton > ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=$buttonNormal
+      - Background@PointerOver:=$buttonPointerOver
+      - Background@Pressed:=$buttonPressed
+      - BorderThickness=1
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+  - target: Border#NameTextBoxHost > TextBox > Grid > Button#DeleteButton > Grid@CommonStates
+    styles:
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.25" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - CornerRadius=4
+      - Height=20
+      - Width=28
+      - Margin=-12,0,0,0
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+  - target: Border#NameTextBoxHost > TextBox
+    styles:
+      - FontWeight=Semibold
+      - FontSize=14
+      - FontFamily=$fontFamily
+  - target: Grid#InnerRoot
+    styles:
+      - Height=46
+  - target: TextBlock#SignedInStatus
+    styles:
+      - FontSize=12
+      - Margin=8,-1,0,3
+      - FontFamily=$fontFamily
+  - target: MenuFlyoutSeparator > Rectangle
+    styles:
+      - Fill:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumHighColor}"/>
+      - Margin=0,4,0,3
+  - target: TextBlock#ExpandCollapseButtonText
+    styles:
+      - Margin=12,0,0,0
+      - FontFamily=$fontFamily
+  - target: Grid#RootPanel@CommonStates > Rectangle
+    styles:
+      - Fill@Selected:=$accentButtonNormal
+      - Height=16
+      - Width=3
+      - RadiusX=2
+      - RadiusY=2
+      - Canvas.ZIndex=1
+      - Fill@PointerOverSelected:=$accentButtonNormal
+  - target: 'StartUI.NavigationPaneGrid > StartUI.UserTileView > StartUI.NavigationPaneButton#UserTileButton '
+    styles:
+      - Margin=6
+      - Height=36
+      - CornerRadius=6
+  - target: 'StartUI.NavigationPaneGrid > StartUI.PowerOptionsView > StartUI.NavigationPaneButton#PowerButton '
+    styles:
+      - Margin=6
+      - Height=36
+      - CornerRadius=6
+  - target: StartUI.ViewSelectionListViewItem
+    styles:
+      - Margin=6
+      - Height=36
+      - CornerRadius=6
+  - target: StartUI.AppListViewItem
+    styles:
+      - Margin=6
+      - Height=36
+      - CornerRadius=6
+  - target: StartUI.AppListViewItem > Grid#RootPanel@CommonStates > ContentPresenter > StartUI.NavigationPaneItemPanel > FontIcon
+    styles:
+      - Margin=-12,0,0,0
+      - Opacity@Pressed=0.84
+  - target: StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates > StartUI.NavigationPaneItemPanel > Grid > FontIcon
+    styles:
+      - Margin=-12,0,0,0
+      - Opacity@Pressed=0.84
+  - target: StartUI.NavigationPaneButton#UserTileButton > ContentPresenter@CommonStates > StartUI.NavigationPaneItemPanel > Grid
+    styles:
+      - Margin=-12,0,0,0
+      - Opacity@Pressed=0.84
+  - target: JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > StackPanel > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+  - target: JumpViewUI.JumpListCategoryHeaderControl > Grid > TextBlock#HeadingTextBlock
+    styles:
+      - Margin=15,9,0,5
+      - FontFamily=$fontFamily
+  - target: MenuFlyoutSubItem > Grid@CommonStates
+    styles:
+      - Background@SubMenuOpened:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - Padding=12,0,0,0
+      - BorderBrush:=
+  - target: Viewbox > Border > TextBlock
+    styles:
+      - FontWeight=SemiBold
+      - Margin=0,0,0,4
+      - FontFamily=$fontFamily
+  - target: StartUI.AllAppsZoomListViewItem
+    styles:
+      - CornerRadius=6
+  - target: TextBlock#FolderDisplayName
+    styles:
+      - Margin=9,0,0,5
+      - FontFamily=$fontFamily
+  - target: JumpViewUI.JumpListListViewItem > Grid@CommonStates
+    styles:
+      - Background@PointerOver:=$buttonNormal
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - BorderBrush:=
+  - target: Button#PinButton
+    styles:
+      - MinWidth=44
+  - target: Button#PinButton > Grid@CommonStates > Border > ContentPresenter > TextBlock
+    styles:
+      - Margin=3,0,0,0
+      - Opacity@Pressed=0.84
+  - target: FontIcon#SubItemChevron
+    styles:
+      - Margin=-30,0,0,0
+      - Glyph:=&#xE76C;
+  - target: Border#SmallLogo
+    styles:
+      - Margin=0,0,0,4
+  - target: MenuFlyoutPresenter > Grid > ScrollViewer > Border
+    styles:
+      - ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="-37.5" FromVerticalOffset="0" /></TransitionCollection>
+  - target: ToolTip > ContentPresenter#LayoutRoot > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+  - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=RecentList] > StackPanel > Button > Border > TextBlock
+    styles:
+      - Margin=7,0,0,2
+  - target: Button#ShutdownReasonButton
+    styles:
+      - MinWidth=150
+      - Height=32
+      - CornerRadius=4
+  - target: Button#ShutdownReasonButton > ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=$buttonNormal
+      - Background@PointerOver:=$buttonPointerOver
+      - Background@Pressed:=$buttonPressed
+      - BorderThickness=1
+      - BorderBrush:=$buttonBorderBrush
+  - target: ComboBox#ShutdownReasonComboBox
+    styles:
+      - CornerRadius=4
+      - MinWidth=166
+      - FontFamily=$fontFamily
+  - target: ComboBox > Grid@CommonStates > Border#Background
+    styles:
+      - Background@Normal:=$buttonNormal
+      - CornerRadius=4
+      - BorderThickness=1
+      - BorderBrush:=$buttonBorderBrush
+      - Background@PointerOver:=$buttonPointerOver
+      - Background@Pressed:=$buttonPressed
+      - Background@Selected=Red
+      - Background@SelectedPointerOver=Yellow
+  - target: ComboBoxItem
+    styles:
+      - CornerRadius=4
+      - Margin=3,0,3,0
+  - target: ComboBoxItem > Grid@CommonStates
+    styles:
+      - Background@PointerOver:=$buttonNormal
+      - Background@Pressed:=$buttonNormal
+      - Background@Selected:=$buttonNormal
+      - Background@SelectedPressed:=$buttonNormal
+      - Background@SelectedUnfocused:=$buttonNormal
+      - Background@SelectedDisabled:=$buttonNormal
+      - Background@SelectedPointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - BorderBrush:=
+  - target: Border#PopupBorder
+    styles:
+      - Background:=$background
+      - CornerRadius=8
+  - target: FlyoutPresenter
+    styles:
+      - CornerRadius=8
+      - Background:=$background
+      - BorderBrush:=$borderBrush
+      - Padding=16
+  - target: StackPanel#ShutdownConfirmationFlyoutPanel
+    styles:
+      - Margin=0,-1.5,0,0
+  - target: StackPanel#ShutdownReasonFlyoutPanel
+    styles:
+      - Margin=0,-3,0,0
+  - target: Button#ShutdownConfirmationButton > ContentPresenter@CommonStates > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+      - FontSize=14
+      - Opacity@Pressed=0.84
+      - Foreground=White
+  - target: Button#ShutdownReasonButton > ContentPresenter@CommonStates > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+      - FontSize=14
+      - Opacity@Pressed=0.84
+      - Foreground=White
+  - target: ComboBox > Grid@CommonStates > ContentPresenter > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+      - FontSize=14
+      - Opacity@Pressed=0.84
+      - Foreground=White
+  - target: ComboBoxItem > Grid@CommonStates > ContentPresenter > TextBlock
+    styles:
+      - FontFamily=$fontFamily
+      - FontSize=14
+      - Opacity@Pressed=0.84
+      - Foreground=White
+      - Margin=0,1,0,-1
+  - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=FrequentList] > StackPanel > Button > Border > TextBlock
+    styles:
+      - Margin=7,0,0,2
+  - target: TextBlock#FolderGlyph
+    styles:
+      - FontSize=9
+      - FontWeight=Light
+  - target: ItemsWrapGrid > StartUI.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border > TextBlock
+    styles:
+      - FontWeight=Light
+      - FontFamily=Segoe Fluent Icons
+  - target: Grid#MainGrid@InteractionStates > Rectangle#BackgroundElement
+    styles:
+      - Fill@InteractionState_Edit:=
+      - Fill@InteractionState_Rest:=
+      - Fill@InteractionState_Pressed:=
+      - Fill@InteractionState_Drag:=
+      - StrokeThickness=0
+      - RadiusX=4
+      - RadiusY=4
+  - target: Border#NameTextBoxHost > TextBox > Grid > Border#BackgroundElement
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.72" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
+      - CornerRadius=4
+      - BorderThickness=0.5,0.5,0.5,0
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+  - target: Border#NameTextBoxHost > TextBox > Grid > Border#BorderElement
+    styles:
+      - BorderThickness=0,0,0,1.5
+      - CornerRadius=4
+      - Height=28
+      - BorderBrush:=$accentButtonNormal
+      - Width=258
+  - target: Grid#MainGrid@FocusStates > Rectangle#BackgroundElement
+    styles:
+      - Fill@FocusState_Hover:=$buttonNormal
+      - Fill@FocusState_None=Transparent
+      - Fill@FocusState_HoverPlaceholder:=$buttonNormal
+      - StrokeThickness=0
+      - Margin=0,0,50,0
+      - Width=258
+      - Height=28
+      - RadiusX=4
+      - RadiusY=4
+  - target: Grid#MainGrid@FocusStates > Grid > Border#NameTextBlockHost
+    styles:
+      - BorderThickness=0,0,0,1.5
+      - BorderBrush@FocusState_Hover:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="#5B5B5B" />
+      - CornerRadius=4
+      - Height=28
+      - BorderBrush@FocusState_HoverPlaceholder:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="#5B5B5B" />
+      - Width=258
+      - Margin=0,0,2,0
+  - target: StackPanel > Button#DeleteButton > Grid > ContentPresenter
+    styles:
+      - BorderBrush:=
+  - target: FontIcon
+    styles:
+      - FontFamily=Segoe Fluent Icons
+      - Foreground=White
+  - target: Grid#ContentRoot
+    styles:
+      - BorderThickness=1,0,0,0
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemColorButtonTextColor}" TintOpacity="0" TintLuminosityOpacity="0.4" FallbackColor="#141414" />
+      - Margin=0,1,0,1
+  - target: Border#NameTextBoxHost > TextBox
+    styles:
+      - Margin=-2,0,0,0
+  - target: SplitView#RootContent
+    styles:
+      - IsPaneOpen=False
+      - OpenPaneLength=48
+  - target: StartUI.NavigationPaneGrid > Border
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.25" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
+      - Width=48
+  - target: StartUI.ExpandCollapseButton
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar
+    styles:
+      - CornerRadius=2
+      - Margin=20,0,4,4
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > Grid > Border > Rectangle
+    styles:
+      - Fill:=$accentButtonNormal
+      - Margin=-1,-2,0,-2
+      - RadiusX=4
+      - RadiusY=4
+  - target: Border#NameTextBoxHost > TextBox > Grid > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement
+    styles:
+      - Foreground=White
+      - Opacity@Pressed=0.84
+  - target: ScrollViewer#ContentElement
+    styles:
+      - Foreground=White
+      - Margin=5,0,0,1
+      - FontFamily=Segoe UI Variable Small
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > Grid > Border
+    styles:
+      - BorderThickness=1
+      - Background:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.5" />
+  - target: TextBlock#Badge
+    styles:
+      - FontFamily=$fontFamily
+  - target: StartUI.UserTileView
+    styles:
+      - Grid.Row=1
+  - target: StartUI.ViewSelectionListView
+    styles:
+      - Grid.Row=0
+  - target: Border#HighlightBackground
+    styles:
+      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.14" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Margin=-2
+      - CornerRadius=6
+      - BorderBrush=White
+  - target: Button#DeleteButton > Grid > Border
+    styles:
+      - Background=Transparent
+  - target: StartUI.TileFolderNameTextBox > Grid@CommonStates > Border#BorderElement
+    styles:
+      - Background@PointerOver:=$buttonNormal
+      - Background@Focused:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.72" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
+      - CornerRadius=4
+      - ' BorderThickness=0.5,0.5,0.5,0'
+      - BorderBrush@Focused:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Height=28
+      - Margin@PointerOver=-1
+      - Margin@Focused=0
+  - target: StartUI.TileFolderNameTextBox > Grid@CommonStates
+    styles:
+      - BorderThickness=0,0,0,1.5
+      - BorderBrush@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="#5B5B5B" />
+      - BorderBrush@Focused:=$accentButtonNormal
+      - CornerRadius=4
+      - Height=28
+  - target: StartUI.TileFolderNameTextBox > Grid@CommonStates > Border > ScrollViewer
+    styles:
+      - Margin=3,-4,0,0
+  - target: Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates
+    styles:
+      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.25" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+      - CornerRadius=4
+      - Width=28
+      - Height=20
+      - Margin=-10,1,0,0
+  - target: Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement
+    styles:
+      - Foreground=White
+      - Opacity@Pressed=0.84
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallIncrease > Grid
+    styles:
+      - Background=Transparent
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallDecrease > Grid
+    styles:
+      - Background=Transparent
+  - target: StartUI.TileFolderNameTextBox > Grid@CommonStates > Border > TextBlock#PlaceholderTextContentPresenter
+    styles:
+      - Margin=2,-4,0,0
+      - Opacity@Normal=0
+      - Opacity@PointerOver=1
+      - Opacity@Focused=0
+  - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar > Grid > Grid > Rectangle
+    styles:
+      - Fill:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.8" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - RadiusX=4
+      - RadiusY=4
+  - target: Rectangle#Overlay
+    styles:
+      - Opacity=0.5
+  - target: Border#OverlayBorder
+    styles:
+      - Opacity=0.5
+  - target: StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar
+    styles:
+      - CornerRadius=2
+      - Margin=4
+  - target: StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > Grid > Border > Rectangle
+    styles:
+      - Margin=-1,-2,0,-2
+      - Fill:=$accentButtonNormal
+      - RadiusX=4
+      - RadiusY=4
+  - target: StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > Grid > Border
+    styles:
+      - BorderThickness=1
+      - Background:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.5" />
+  - target: StartUI.ViewSelectionListViewItem > Grid#RootPanel@CommonStates > ContentPresenter > StartUI.NavigationPaneItemPanel > FontIcon
+    styles:
+      - Margin=-12,0,0,0
+      - Opacity@Pressed=0.84
+      - Opacity@PressedSelected=0.84
 ```
 </details>

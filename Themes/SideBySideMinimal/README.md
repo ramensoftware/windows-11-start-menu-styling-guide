@@ -30,79 +30,105 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[0].styles[0]": "Visibility=Collapsed",
-  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer",
-  "controlStyles[1].styles[0]": "Visibility=Collapsed",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[2].styles[0]": "Visibility=Collapsed",
-  "controlStyles[3].target": "StartMenu.SearchBoxToggleButton",
-  "controlStyles[3].styles[0]": "Height=0",
-  "controlStyles[3].styles[1]": "Width=0",
-  "controlStyles[4].target": "StartDocked.PowerOptionsView",
-  "controlStyles[4].styles[0]": "Margin=-528,2,0,0",
-  "controlStyles[5].target": "StartDocked.UserTileView",
-  "controlStyles[5].styles[0]": "Visibility=Collapsed",
-  "controlStyles[6].target": "StartMenu.PinnedList",
-  "controlStyles[6].styles[0]": "MinHeight=504",
-  "controlStyles[6].styles[1]": "MaxHeight=504",
-  "controlStyles[7].target": "StartMenu.ExpandedFolderList > Grid > Border",
-  "controlStyles[7].styles[0]": "Margin=-40,0,40,0",
-  "controlStyles[7].styles[1]": "Width=325",
-  "controlStyles[8].target": "StartMenu.ExpandedFolderList > Grid > Grid",
-  "controlStyles[8].styles[0]": "CornerRadius=8",
-  "controlStyles[8].styles[1]": "Margin=-85,0,0,0",
-  "controlStyles[8].styles[2]": "Width=350",
-  "controlStyles[9].target": "StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager",
-  "controlStyles[9].styles[0]": "Margin=-15,0,0,0",
-  "controlStyles[10].target": "Grid#TopLevelSuggestionsContainer",
-  "controlStyles[10].styles[0]": "Visibility=Collapsed",
-  "controlStyles[11].target": "Grid#MainMenu",
-  "controlStyles[11].styles[0]": "Width=600",
-  "controlStyles[12].target": "Grid#FrameRoot",
-  "controlStyles[12].styles[0]": "Height=710",
-  "controlStyles[13].target": "Border#AcrylicOverlay",
-  "controlStyles[13].styles[0]": "Margin=0,-70,0,0",
-  "controlStyles[14].target": "GridView#PinnedList",
-  "controlStyles[14].styles[0]": "Margin=16,0,-16,0",
-  "controlStyles[14].styles[1]": "Width=300",
-  "controlStyles[14].styles[2]": "MinHeight=504",
-  "controlStyles[15].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid",
-  "controlStyles[14].styles[3]": "RenderTransform:=<TranslateTransform X=\"270\" Y=\"585\"/>",
-  "controlStyles[15].styles[0]": "Width=250",
-  "controlStyles[16].styles[0]": "RenderTransform:=<TranslateTransform X=\"-150\" Y=\"-600\"/>",
-  "controlStyles[16].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter",
-  "controlStyles[17].target": "Microsoft.UI.Xaml.Controls.DropDownButton",
-  "controlStyles[17].styles[0]": "Margin=-174,4,174,0",
-  "controlStyles[17].styles[1]": "FontWeight=SemiBold",
-  "controlStyles[17].styles[2]": "Height=32",
-  "controlStyles[17].styles[3]": "Width=250",
-  "controlStyles[18].target": "Windows.UI.Xaml.Controls.ListView#ZoomedOutListView",
-  "controlStyles[18].styles[0]": "Margin=0,-50,0,50",
-  "controlStyles[19].target": "TextBlock#PinnedListHeaderText",
-  "controlStyles[19].styles[0]": "Visibility=Visible",
-  "controlStyles[19].styles[1]": "RenderTransform:=<TranslateTransform X=\"400\" Y=\"580.5\"/>",
-  "controlStyles[19].styles[2]": "FontWeight=SemiBold",
-  "controlStyles[20].target": "StartMenu.StartHome",
-  "controlStyles[20].styles[0]": "RenderTransform:=<TranslateTransform Y=\"-1\"/>",
-  "controlStyles[21].target": "Windows.UI.Xaml.Controls.Frame > Windows.UI.Xaml.Controls.ContentPresenter",
-  "controlStyles[21].styles[0]": "Margin=0,-35,0,0",
-  "controlStyles[22].target": "DropDownButton > Grid > ContentPresenter > TextBlock",
-  "controlStyles[22].styles[0]": "MaxLines=2",
-  "controlStyles[22].styles[1]": "TextLineBounds=0",
-  "controlStyles[22].styles[2]": "HorizontalAlignment=1",
-  "controlStyles[23].target": "Grid#TopLevelSuggestionsRoot",
-  "controlStyles[23].styles[0]": "Visibility=Collapsed",
-  "controlStyles[17].styles[4]": "Style:=",
-  "controlStyles[25].target": "Grid#MainMenu > Grid#MainContent > Grid",
-  "controlStyles[25].styles[0]": "Canvas.ZIndex=1",
-  "controlStyles[24].target": "StartMenu.CategoryControl",
-  "controlStyles[24].styles[0]": "Margin=20,20,-20,-20",
-  "controlStyles[26].target": "StartDocked.AppListView",
-  "controlStyles[26].styles[0]": "Margin=25,0,-25,0"
-}
+```yaml
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=Collapsed
+  - target: StartMenu.SearchBoxToggleButton
+    styles:
+      - Height=0
+      - Width=0
+  - target: StartDocked.PowerOptionsView
+    styles:
+      - Margin=-528,2,0,0
+  - target: StartDocked.UserTileView
+    styles:
+      - Visibility=Collapsed
+  - target: StartMenu.PinnedList
+    styles:
+      - MinHeight=504
+      - MaxHeight=504
+  - target: StartMenu.ExpandedFolderList > Grid > Border
+    styles:
+      - Margin=-40,0,40,0
+      - Width=325
+  - target: StartMenu.ExpandedFolderList > Grid > Grid
+    styles:
+      - CornerRadius=8
+      - Margin=-85,0,0,0
+      - Width=350
+  - target: StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager
+    styles:
+      - Margin=-15,0,0,0
+  - target: Grid#TopLevelSuggestionsContainer
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#MainMenu
+    styles:
+      - Width=600
+  - target: Grid#FrameRoot
+    styles:
+      - Height=710
+  - target: Border#AcrylicOverlay
+    styles:
+      - Margin=0,-70,0,0
+  - target: GridView#PinnedList
+    styles:
+      - Margin=16,0,-16,0
+      - Width=300
+      - MinHeight=504
+      - RenderTransform:=<TranslateTransform X="270" Y="585"/>
+  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
+    styles:
+      - Width=250
+  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter
+    styles:
+      - RenderTransform:=<TranslateTransform X="-150" Y="-600"/>
+  - target: Microsoft.UI.Xaml.Controls.DropDownButton
+    styles:
+      - Margin=-174,4,174,0
+      - FontWeight=SemiBold
+      - Height=32
+      - Width=250
+      - Style:=
+  - target: Windows.UI.Xaml.Controls.ListView#ZoomedOutListView
+    styles:
+      - Margin=0,-50,0,50
+  - target: TextBlock#PinnedListHeaderText
+    styles:
+      - Visibility=Visible
+      - RenderTransform:=<TranslateTransform X="400" Y="580.5"/>
+      - FontWeight=SemiBold
+  - target: StartMenu.StartHome
+    styles:
+      - RenderTransform:=<TranslateTransform Y="-1"/>
+  - target: Windows.UI.Xaml.Controls.Frame > Windows.UI.Xaml.Controls.ContentPresenter
+    styles:
+      - Margin=0,-35,0,0
+  - target: DropDownButton > Grid > ContentPresenter > TextBlock
+    styles:
+      - MaxLines=2
+      - TextLineBounds=0
+      - HorizontalAlignment=1
+  - target: Grid#TopLevelSuggestionsRoot
+    styles:
+      - Visibility=Collapsed
+  - target: StartMenu.CategoryControl
+    styles:
+      - Margin=20,20,-20,-20
+  - target: Grid#MainMenu > Grid#MainContent > Grid
+    styles:
+      - Canvas.ZIndex=1
+  - target: StartDocked.AppListView
+    styles:
+      - Margin=25,0,-25,0
 ```
 </details>
 
@@ -111,52 +137,69 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
-  "controlStyles[0].styles[0]": "Visibility=Visible",
-  "controlStyles[0].styles[1]": "Width=348",
-  "controlStyles[0].styles[2]": "Margin=132,-42,-132,0",
-  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#AllAppsRoot",
-  "controlStyles[1].styles[0]": "Visibility=Visible",
-  "controlStyles[1].styles[1]": "Width=320",
-  "controlStyles[1].styles[2]": "Margin=-830,-42,830,0",
-  "controlStyles[2].target": "StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#AllAppsRoot",
-  "controlStyles[2].styles[0]": "Margin=-1046,-42,1046,0",
-  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[3].styles[0]": "Visibility=Collapsed",
-  "controlStyles[4].target": "Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer",
-  "controlStyles[4].styles[0]": "Visibility=Collapsed",
-  "controlStyles[5].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[5].styles[0]": "Visibility=Collapsed",
-  "controlStyles[6].target": "StartDocked.SearchBoxToggleButton",
-  "controlStyles[6].styles[0]": "Height=0",
-  "controlStyles[6].styles[1]": "Width=0",
-  "controlStyles[7].target": "Windows.UI.Xaml.Controls.Grid#TopLevelRoot > Windows.UI.Xaml.Controls.Border",
-  "controlStyles[7].styles[0]": "Visibility=Collapsed",
-  "controlStyles[8].target": "Windows.UI.Xaml.Controls.Button#CloseAllAppsButton",
-  "controlStyles[8].styles[0]": "Visibility=Collapsed",
-  "controlStyles[9].target": "StartDocked.PowerOptionsView",
-  "controlStyles[9].styles[0]": "Margin=-575,0,0,0",
-  "controlStyles[10].target": "StartDocked.UserTileView",
-  "controlStyles[10].styles[0]": "Visibility=Collapsed",
-  "controlStyles[11].target": "StartMenu.PinnedList",
-  "controlStyles[11].styles[0]": "Height=504",
-  "controlStyles[12].target": "StartMenu.ExpandedFolderList > Grid > Border",
-  "controlStyles[12].styles[0]": "Margin=-40,0,40,0",
-  "controlStyles[12].styles[1]": "Width=325",
-  "controlStyles[13].target": "StartMenu.ExpandedFolderList > Grid > Grid",
-  "controlStyles[13].styles[0]": "CornerRadius=8",
-  "controlStyles[13].styles[1]": "Margin=-85,0,0,0",
-  "controlStyles[13].styles[2]": "Width=350",
-  "controlStyles[14].target": "StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager",
-  "controlStyles[14].styles[0]": "Margin=-15,0,0,0",
-  "controlStyles[15].target": "Rectangle[4]",
-  "controlStyles[15].styles[0]": "Margin=0,-20,0,0",
-  "controlStyles[16].target": "Grid#TopLevelSuggestionsContainer",
-  "controlStyles[16].styles[0]": "Visibility=Collapsed",
-  "controlStyles[17].target": "StartDocked.AppListView",
-  "controlStyles[17].styles[0]": "Margin=38,0,-38,0"
-}
+```yaml
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#UndockedRoot
+    styles:
+      - Visibility=Visible
+      - Width=348
+      - Margin=132,-42,-132,0
+  - target: Windows.UI.Xaml.Controls.Grid#AllAppsRoot
+    styles:
+      - Visibility=Visible
+      - Width=320
+      - Margin=-830,-42,830,0
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#AllAppsRoot
+    styles:
+      - Margin=-1046,-42,1046,0
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.SearchBoxToggleButton
+    styles:
+      - Height=0
+      - Width=0
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelRoot > Windows.UI.Xaml.Controls.Border
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.PowerOptionsView
+    styles:
+      - Margin=-575,0,0,0
+  - target: StartDocked.UserTileView
+    styles:
+      - Visibility=Collapsed
+  - target: StartMenu.PinnedList
+    styles:
+      - Height=504
+  - target: StartMenu.ExpandedFolderList > Grid > Border
+    styles:
+      - Margin=-40,0,40,0
+      - Width=325
+  - target: StartMenu.ExpandedFolderList > Grid > Grid
+    styles:
+      - CornerRadius=8
+      - Margin=-85,0,0,0
+      - Width=350
+  - target: StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager
+    styles:
+      - Margin=-15,0,0,0
+  - target: Rectangle[4]
+    styles:
+      - Margin=0,-20,0,0
+  - target: Grid#TopLevelSuggestionsContainer
+    styles:
+      - Visibility=Collapsed
+  - target: StartDocked.AppListView
+    styles:
+      - Margin=38,0,-38,0
 ```
 </details>

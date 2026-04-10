@@ -32,18 +32,21 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Grid#FrameRoot",
-  "controlStyles[0].styles[0]": "MaxHeight=160",
-  "controlStyles[0].styles[1]": "MinHeight=100",
-  "controlStyles[1].target": "Border#AcrylicOverlay",
-  "controlStyles[1].styles[0]": "Height=3",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion",
-  "controlStyles[2].styles[0]": "Visibility=Collapsed",
-  "controlStyles[3].target": "Grid#RightCompanionContainerGrid",
-  "controlStyles[3].styles[0]": "Visibility=Collapsed"
-}
+```yaml
+controlStyles:
+  - target: Grid#FrameRoot
+    styles:
+      - MaxHeight=160
+      - MinHeight=100
+  - target: Border#AcrylicOverlay
+    styles:
+      - Height=3
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#RightCompanionContainerGrid
+    styles:
+      - Visibility=Collapsed
 ```
 </details>
 
@@ -52,14 +55,16 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "StartDocked.StartSizingFrame",
-  "controlStyles[0].styles[0]": "MaxHeight=160",
-  "controlStyles[1].target": "StartDocked.StartSizingFrame",
-  "controlStyles[1].styles[0]": "MinHeight=100",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
-  "controlStyles[2].styles[0]": "Visibility=Collapsed"
-}
+```yaml
+controlStyles:
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MaxHeight=160
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MinHeight=100
+  - target: Windows.UI.Xaml.Controls.Grid#UndockedRoot
+    styles:
+      - Visibility=Collapsed
 ```
 </details>

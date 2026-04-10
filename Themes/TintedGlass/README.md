@@ -21,54 +21,72 @@ To achieve the full look, install and configure the following Windhawk mods in a
 <details>
 <summary>Click to expand JSON content</summary>
 
-```json
-{
-  "ShowSeconds": 1,
-  "TimeFormat": "HH':'mm':'ss",
-  "DateFormat": "ddd',' dd MMM yyyy",
-  "WeekdayFormat": "custom",
-  "WeekdayFormatCustom": "Mon, Tue, Wed, Thu, Fri, Sat, Sun",
-  "TopLine": "%time%",
-  "BottomLine": "%date%",
-  "MiddleLine": "%weekday%",
-  "TooltipLine": "%weather%",
-  "Width": 180,
-  "Height": 60,
-  "MaxWidth": 0,
-  "TextSpacing": -4,
-  "WebContentsUpdateInterval": 10,
-  "TimeStyle.Hidden": 0,
-  "TimeStyle.TextColor": "",
-  "TimeStyle.TextAlignment": "Right",
-  "TimeStyle.FontSize": 16,
-  "TimeStyle.FontFamily": "",
-  "TimeStyle.FontWeight": "Medium",
-  "TimeStyle.FontStyle": "",
-  "TimeStyle.FontStretch": "",
-  "TimeStyle.CharacterSpacing": 70,
-  "DateStyle.Hidden": 0,
-  "DateStyle.TextColor": "",
-  "DateStyle.TextAlignment": "Right",
-  "DateStyle.FontSize": 12,
-  "DateStyle.FontFamily": "",
-  "DateStyle.FontWeight": "",
-  "DateStyle.FontStyle": "",
-  "DateStyle.FontStretch": "",
-  "DateStyle.CharacterSpacing": 0,
-  "oldTaskbarOnWin11": 0,
-  "DataCollectionUpdateInterval": 1,
-  "WebContentsItems[0].Url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
-  "WebContentsItems[0].BlockStart": "<item>",
-  "WebContentsItems[0].Start": "<title>",
-  "WebContentsItems[0].End": "</title>",
-  "WebContentsItems[0].ContentMode": "xmlHtml",
-  "WebContentsItems[0].SearchReplace[0].Search": "",
-  "WebContentsItems[0].SearchReplace[0].Replace": "",
-  "WebContentsItems[0].MaxLength": 28,
-  "WebContentWeatherLocation": "",
-  "WebContentWeatherFormat": "%c 🌡️%t 🌬️%w",
-  "TimeZones[0]": "GMT Standard Time"
-}
+```yaml
+ShowSeconds: 1
+TimeFormat: HH':'mm':'ss
+DateFormat: ddd',' dd MMM yyyy
+WeekdayFormat: custom
+WeekdayFormatCustom: Mon, Tue, Wed, Thu, Fri, Sat, Sun
+TopLine: '%time%'
+BottomLine: '%date%'
+MiddleLine: '%weekday%'
+TooltipLine: '%weather%'
+TooltipLineMode: append
+Width: 180
+Height: 60
+MaxWidth: 0
+TextSpacing: -4
+DataCollection:
+  NetworkMetricsFormat: mbs
+  NetworkMetricsFixedDecimals: -1
+  PercentageFormat: spacePaddingAndSymbol
+  UpdateInterval: 1
+  NetworkAdapterName: ''
+  GpuAdapterName: ''
+MediaPlayer:
+  IgnoredPlayers:
+    - ''
+  MaxLength: 28
+  NoMediaText: No media
+  RemoveBrackets: 0
+WebContentWeatherLocation: ''
+WebContentWeatherFormat: '%c 🌡️%t 🌬️%w'
+WebContentWeatherUnits: autoDetect
+WebContentsItems:
+  - Url: https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+    BlockStart: <item>
+    Start: <title>
+    End: </title>
+    ContentMode: xmlHtml
+    SearchReplace:
+      - Search: ''
+        Replace: ''
+    MaxLength: 28
+WebContentsUpdateInterval: 10
+TimeZones:
+  - GMT Standard Time
+TimeStyle:
+  Hidden: 0
+  TextColor: ''
+  TextAlignment: Right
+  FontSize: 16
+  FontFamily: ''
+  FontWeight: Medium
+  FontStyle: ''
+  FontStretch: ''
+  CharacterSpacing: 70
+DateStyle:
+  Hidden: 0
+  TextColor: ''
+  TextAlignment: Right
+  FontSize: 12
+  FontFamily: ''
+  FontWeight: ''
+  FontStyle: ''
+  FontStretch: ''
+  CharacterSpacing: 0
+oldTaskbarOnWin11: 0
+DataCollectionUpdateInterval: 1
 ```
 </details>
 
@@ -79,14 +97,12 @@ To achieve the full look, install and configure the following Windhawk mods in a
 <details>
 <summary>Click to expand JSON content</summary>
 
-```json
-{
-  "IconSize": 32,
-  "TaskbarHeight": 40,
-  "TaskbarButtonWidth": 40,
-  "IconSizeSmall": 16,
-  "TaskbarButtonWidthSmall": 32
-}
+```yaml
+TaskbarHeight: 40
+IconSize: 32
+TaskbarButtonWidth: 40
+IconSizeSmall: 16
+TaskbarButtonWidthSmall: 32
 ```
 </details>
 
@@ -97,26 +113,25 @@ To achieve the full look, install and configure the following Windhawk mods in a
 <details>
 <summary>Click to expand JSON content</summary>
 
-```json
-{
-  "mode": "labelsWithoutCombining",
-  "taskbarItemWidth": 0,
-  "runningIndicatorStyle": "centerFixed",
-  "progressIndicatorStyle": "sameAsRunningIndicatorStyle",
-  "excludedPrograms[0]": "excluded1.exe",
-  "minimumTaskbarItemWidth": 43,
-  "maximumTaskbarItemWidth": 300,
-  "fontSize": 13,
-  "fontFamily": "",
-  "textTrimming": "clip",
-  "leftAndRightPaddingSize": 6,
-  "spaceBetweenIconAndLabel": 6,
-  "runningIndicatorHeight": 0,
-  "runningIndicatorVerticalOffset": 0,
-  "alwaysShowThumbnailLabels": 0,
-  "labelForSingleItem": "%name%",
-  "labelForMultipleItems": "[%amount%] %name%"
-}
+```yaml
+mode: labelsWithoutCombining
+taskbarItemWidth: 0
+runningIndicatorStyle: centerFixed
+progressIndicatorStyle: sameAsRunningIndicatorStyle
+excludedPrograms:
+  - excluded1.exe
+minimumTaskbarItemWidth: 43
+maximumTaskbarItemWidth: 300
+fontSize: 13
+fontFamily: ''
+textTrimming: clip
+leftAndRightPaddingSize: 6
+spaceBetweenIconAndLabel: 6
+runningIndicatorHeight: 0
+runningIndicatorVerticalOffset: 0
+alwaysShowThumbnailLabels: 0
+labelForSingleItem: '%name%'
+labelForMultipleItems: '[%amount%] %name%'
 ```
 </details>
 
@@ -139,55 +154,86 @@ To achieve the full look, install and configure the following Windhawk mods in a
 <details>
 <summary>Click to expand JSON content</summary>
 
-```json
-{
-  "RenderingMod.ThemeBackground": 1,
-  "RenderingMod.AccentColorControls": 1,
-  "type": "acrylicblur",
-  "AccentBlurBehind": "80000000",
-  "ImmersiveDarkTitle": 1,
-  "ExtendFrame": 1,
-  "CornerOption": "smallround",
-  "RainbowSpeed": 1,
-  "TitlebarColor.ColorTitlebar": 0,
-  "TitlebarColor.RainbowTitlebar": 0,
-  "TitlebarColor.titlerbarstyles_active": "0",
-  "TitlebarColor.titlerbarstyles_inactive": "0",
-  "TitlebarTextColor.ColorTitlebarText": 0,
-  "TitlebarTextColor.RainbowTextColor": 0,
-  "TitlebarTextColor.titlerbarcolorstyles_active": "FFFFFF",
-  "TitlebarTextColor.titlerbarcolorstyles_inactive": "FFFFFF",
-  "BorderColor.ColorBorder": 1,
-  "BorderColor.RainbowBorder": 0,
-  "BorderColor.borderstyles_active": "0",
-  "BorderColor.borderstyles_inactive": "0",
-  "BorderColor.MenuBorderColor": 1,
-  "RenderingMod.TextAlphaBlend": 1,
-  "RuledPrograms[0].target": "notepad.exe",
-  "RuledPrograms[0].type": "acrylicsystem",
-  "RuledPrograms[0].ImmersiveDarkTitle": 1,
-  "RuledPrograms[0].ExtendFrame": 0,
-  "RuledPrograms[0].BorderColor.ColorBorder": 1,
-  "RuledPrograms[0].BorderColor.borderstyles_active": "0",
-  "RuledPrograms[0].BorderColor.borderstyles_inactive": "0",
-  "RuledPrograms[0].TitlebarTextColor.ColorTitlebarText": 0,
-  "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_active": "FFFFFF",
-  "RuledPrograms[0].TitlebarTextColor.titlerbarcolorstyles_inactive": "FFFFFF",
-  "RuledPrograms[0].AccentBlurBehind": "80000000",
-  "RuledPrograms[0].CornerOption": "smallround",
-  "RuledPrograms[1].target": "notepad++.exe",
-  "RuledPrograms[1].type": "acrylicsystem",
-  "RuledPrograms[1].ImmersiveDarkTitle": 1,
-  "RuledPrograms[1].ExtendFrame": 0,
-  "RuledPrograms[1].BorderColor.ColorBorder": 1,
-  "RuledPrograms[1].BorderColor.borderstyles_active": "0",
-  "RuledPrograms[1].BorderColor.borderstyles_inactive": "0",
-  "RuledPrograms[1].TitlebarTextColor.ColorTitlebarText": 0,
-  "RuledPrograms[1].TitlebarTextColor.titlerbarcolorstyles_active": "FFFFFF",
-  "RuledPrograms[1].TitlebarTextColor.titlerbarcolorstyles_inactive": "FFFFFF",
-  "RuledPrograms[1].AccentBlurBehind": "80000000",
-  "RuledPrograms[1].CornerOption": "smallround"
-}
+```yaml
+RenderingMod:
+  ThemeBackground: 1
+  SysColors: 1
+  AccentColorControls: 1
+  TextAlphaBlend: 1
+type: acrylicblur
+AccentBlurBehind: '80000000'
+FlyoutsEffects: 1
+ImmersiveDarkTitle: 1
+ExtendFrame: 1
+CornerOption: smallround
+RainbowSpeed: 1
+TitlebarColor:
+  ColorTitlebar: 0
+  RainbowTitlebar: 0
+  titlerbarstyles_active: '0'
+  titlerbarstyles_inactive: '0'
+TitlebarTextColor:
+  ColorTitlebarText: 0
+  RainbowTextColor: 0
+  titlerbarcolorstyles_active: FFFFFF
+  titlerbarcolorstyles_inactive: FFFFFF
+BorderColor:
+  ColorBorder: 1
+  RainbowBorder: 0
+  borderstyles_active: '0'
+  borderstyles_inactive: '0'
+  MenuBorderColor: 1
+RuledPrograms:
+  - target: notepad.exe
+    RenderingMod:
+      ThemeBackground: 0
+      AccentColorControls: 0
+    type: acrylicsystem
+    AccentBlurBehind: '80000000'
+    ImmersiveDarkTitle: 1
+    ExtendFrame: 0
+    CornerOption: smallround
+    RainbowSpeed: 1
+    TitlebarColor:
+      ColorTitlebar: 0
+      RainbowTitlebar: 0
+      titlerbarstyles_active: FF0000
+      titlerbarstyles_inactive: 00FFFF
+    TitlebarTextColor:
+      ColorTitlebarText: 0
+      RainbowTextColor: 0
+      titlerbarcolorstyles_active: FFFFFF
+      titlerbarcolorstyles_inactive: FFFFFF
+    BorderColor:
+      ColorBorder: 1
+      RainbowBorder: 0
+      borderstyles_active: '0'
+      borderstyles_inactive: '0'
+  - target: notepad++.exe
+    RenderingMod:
+      ThemeBackground: 0
+      AccentColorControls: 0
+    type: acrylicsystem
+    AccentBlurBehind: '80000000'
+    ImmersiveDarkTitle: 1
+    ExtendFrame: 0
+    CornerOption: smallround
+    RainbowSpeed: 1
+    TitlebarColor:
+      ColorTitlebar: 0
+      RainbowTitlebar: 0
+      titlerbarstyles_active: FF0000
+      titlerbarstyles_inactive: 00FFFF
+    TitlebarTextColor:
+      ColorTitlebarText: 0
+      RainbowTextColor: 0
+      titlerbarcolorstyles_active: FFFFFF
+      titlerbarcolorstyles_inactive: FFFFFF
+    BorderColor:
+      ColorBorder: 1
+      RainbowBorder: 0
+      borderstyles_active: '0'
+      borderstyles_inactive: '0'
 ```
 </details>
 
@@ -198,24 +244,26 @@ To achieve the full look, install and configure the following Windhawk mods in a
 <details>
 <summary>Click to expand JSON content</summary>
 
-```json
-{
-  "backgroundStyle": "blur",
-  "color.red": 255,
-  "color.green": 127,
-  "color.blue": 39,
-  "color.accentColor": 0,
-  "color.transparency": 128,
-  "onlyWhenMaximized": 1,
-  "excludedPrograms[0]": "",
-  "styleForDarkMode.use": 0,
-  "styleForDarkMode.backgroundStyle": "blur",
-  "styleForDarkMode.color.red": 255,
-  "styleForDarkMode.color.green": 127,
-  "styleForDarkMode.color.blue": 39,
-  "styleForDarkMode.color.accentColor": 0,
-  "styleForDarkMode.color.transparency": 128
-}
+```yaml
+backgroundStyle: blur
+color:
+  red: 255
+  green: 127
+  blue: 39
+  accentColor: 0
+  transparency: 128
+onlyWhenMaximized: 1
+excludedPrograms:
+  - ''
+styleForDarkMode:
+  use: 0
+  backgroundStyle: blur
+  color:
+    red: 255
+    green: 127
+    blue: 39
+    accentColor: 0
+    transparency: 128
 ```
 </details>
 
@@ -247,104 +295,129 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Border#AcrylicBorder",
-  "controlStyles[0].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[0].styles[1]": "BorderThickness=0",
-  "controlStyles[0].styles[2]": "CornerRadius=14",
-  "controlStyles[1].target": "Border#AcrylicOverlay",
-  "controlStyles[1].styles[0]": "Visibility=Collapsed",
-  "controlStyles[2].target": "Border#BorderElement",
-  "controlStyles[2].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"18\" TintColor=\"#1AFFFFFF\"/>",
-  "controlStyles[2].styles[1]": "BorderThickness=0",
-  "controlStyles[2].styles[2]": "CornerRadius=14",
-  "controlStyles[3].target": "MenuFlyoutPresenter > Border",
-  "controlStyles[3].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#22000000\"/>",
-  "controlStyles[3].styles[1]": "BorderThickness=1",
-  "controlStyles[4].target": "Border#AppBorder",
-  "controlStyles[4].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[4].styles[1]": "BorderThickness=0",
-  "controlStyles[4].styles[2]": "CornerRadius=14",
-  "controlStyles[5].target": "Border#AccentAppBorder",
-  "controlStyles[5].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[5].styles[1]": "BorderThickness=0",
-  "controlStyles[5].styles[2]": "CornerRadius=14",
-  "controlStyles[6].target": "Border#LayerBorder",
-  "controlStyles[6].styles[0]": "Visibility=Collapsed",
-  "controlStyles[7].target": "Border#TaskbarSearchBackground",
-  "controlStyles[7].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15000000\"/>",
-  "controlStyles[7].styles[1]": "BorderThickness=0",
-  "controlStyles[7].styles[2]": "CornerRadius=14",
-  "controlStyles[8].target": "Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border",
-  "controlStyles[8].styles[0]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.2\"/>",
-  "controlStyles[8].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
-  "controlStyles[8].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[8].styles[3]": "Background@Pressed:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
-  "controlStyles[8].styles[4]": "BorderBrush@Pressed:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[9].target": "Button#ShowAllAppsButton > ContentPresenter@CommonStates",
-  "controlStyles[9].styles[0]": "Background@Normal:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15C0C0C0\"/>",
-  "controlStyles[9].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
-  "controlStyles[9].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[9].styles[3]": "BorderThickness=1",
-  "controlStyles[10].target": "StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement",
-  "controlStyles[10].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[10].styles[1]": "BorderThickness=1",
-  "controlStyles[11].target": "StartDocked.NavigationPaneButton#UserTileButton > Grid@CommonStates > Border",
-  "controlStyles[11].styles[0]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.2\"/>",
-  "controlStyles[11].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
-  "controlStyles[11].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
-  "controlStyles[11].styles[3]": "BorderThickness=1",
-  "controlStyles[12].target": "StartDocked.AppListViewItem > Grid@CommonStates > Border",
-  "controlStyles[12].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.45\"/>",
-  "controlStyles[12].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
-  "controlStyles[12].styles[2]": "BorderThickness=1",
-  "controlStyles[12].styles[3]": "Margin@Normal=4",
-  "controlStyles[13].target": "StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border",
-  "controlStyles[13].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.45\"/>",
-  "controlStyles[13].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
-  "controlStyles[13].styles[2]": "BorderThickness=1",
-  "controlStyles[13].styles[3]": "Margin@Normal=4",
-  "controlStyles[14].target": "ToolTip > ContentPresenter#LayoutRoot",
-  "controlStyles[14].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#22000000\"/>",
-  "controlStyles[15].target": "Border#dropshadow",
-  "controlStyles[15].styles[0]": "CornerRadius=14",
-  "controlStyles[15].styles[1]": "Margin=-1",
-  "controlStyles[16].target": "Border#StartDropShadow",
-  "controlStyles[16].styles[0]": "CornerRadius=14",
-  "controlStyles[16].styles[1]": "Margin=-1",
-  "controlStyles[17].target": "Grid#TopLevelSuggestionsRoot",
-  "controlStyles[17].styles[0]": "Visibility=Collapsed",
-  "controlStyles[18].target": "TextBlock#Text",
-  "controlStyles[18].styles[0]": "Foreground=White",
-  "controlStyles[19].target": "Microsoft.UI.Xaml.Controls.DropDownButton > Grid#RootGrid",
-  "controlStyles[19].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
-  "controlStyles[19].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.6\"/>",
-  "controlStyles[19].styles[2]": "BorderThickness=1",
-  "controlStyles[20].target": "Button > Grid@CommonStates > Border",
-  "controlStyles[20].styles[0]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.2\"/>",
-  "controlStyles[20].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
-  "controlStyles[20].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.6\"/>",
-  "controlStyles[20].styles[3]": "BorderThickness=1",
-  "controlStyles[21].target": "DropDownButton",
-  "controlStyles[21].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.2\"/>",  
-  "controlStyles[22].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0\"/>",
-  "controlStyles[22].target": "Button#Header > Border#Border@CommonStates",
-  "controlStyles[22].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.6\"/>",
-  "controlStyles[22].styles[2]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
-  "controlStyles[23].target": "StartMenu.FolderModal > Grid > Border",
-  "controlStyles[23].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[23].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
-  "controlStyles[23].styles[2]": "BorderThickness=1",
-  "controlStyles[24].target": "ListViewItem > Grid#ContentBorder@CommonStates",
-  "controlStyles[24].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
-  "controlStyles[24].styles[1]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[24].styles[2]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0\"/>",
-  "controlStyles[24].styles[3]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.9\"/>",
-  "controlStyles[24].styles[4]": "BorderThickness=1",
-  "controlStyles[24].styles[5]": "CornerRadius=5",
-  "styleConstants[0]": "CommonBgBrush=<WindhawkBlur BlurAmount=\"18\" TintColor=\"#80000000\"/>"
-}
+```yaml
+styleConstants:
+  - CommonBgBrush=<WindhawkBlur BlurAmount="18" TintColor="#80000000"/>
+controlStyles:
+  - target: Border#AcrylicBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Border#AcrylicOverlay
+    styles:
+      - Visibility=Collapsed
+  - target: Border#BorderElement
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="18" TintColor="#1AFFFFFF"/>
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: MenuFlyoutPresenter > Border
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="25" TintColor="#22000000"/>
+      - BorderThickness=1
+  - target: Border#AppBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Border#AccentAppBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=Collapsed
+  - target: Border#TaskbarSearchBackground
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="25" TintColor="#15000000"/>
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border
+    styles:
+      - Background@Normal:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.2"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.3"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+      - Background@Pressed:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.3"/>
+      - BorderBrush@Pressed:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+  - target: Button#ShowAllAppsButton > ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=<WindhawkBlur BlurAmount="25" TintColor="#15C0C0C0"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.5"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+      - BorderThickness=1
+  - target: StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement
+    styles:
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+      - BorderThickness=1
+  - target: StartDocked.NavigationPaneButton#UserTileButton > Grid@CommonStates > Border
+    styles:
+      - Background@Normal:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.2"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.5"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.8"/>
+      - BorderThickness=1
+  - target: StartDocked.AppListViewItem > Grid@CommonStates > Border
+    styles:
+      - Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.45"/>
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.7"/>
+      - BorderThickness=1
+      - Margin@Normal=4
+  - target: StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border
+    styles:
+      - Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.45"/>
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.7"/>
+      - BorderThickness=1
+      - Margin@Normal=4
+  - target: ToolTip > ContentPresenter#LayoutRoot
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="25" TintColor="#22000000"/>
+  - target: Border#dropshadow
+    styles:
+      - CornerRadius=14
+      - Margin=-1
+  - target: Border#StartDropShadow
+    styles:
+      - CornerRadius=14
+      - Margin=-1
+  - target: Grid#TopLevelSuggestionsRoot
+    styles:
+      - Visibility=Collapsed
+  - target: TextBlock#Text
+    styles:
+      - Foreground=White
+  - target: Microsoft.UI.Xaml.Controls.DropDownButton > Grid#RootGrid
+    styles:
+      - Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.3"/>
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.6"/>
+      - BorderThickness=1
+  - target: Button > Grid@CommonStates > Border
+    styles:
+      - Background@Normal:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.2"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.3"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.6"/>
+      - BorderThickness=1
+  - target: DropDownButton
+    styles:
+      - Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.2"/>
+  - target: Button#Header > Border#Border@CommonStates
+    styles:
+      - Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.6"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.8"/>
+  - target: StartMenu.FolderModal > Grid > Border
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.8"/>
+      - BorderThickness=1
+  - target: ListViewItem > Grid#ContentBorder@CommonStates
+    styles:
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.8"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+      - Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.9"/>
+      - BorderThickness=1
+      - CornerRadius=5
 ```
 </details>
 
@@ -353,101 +426,128 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Border#AcrylicBorder",
-  "controlStyles[0].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[0].styles[1]": "BorderThickness=0",
-  "controlStyles[0].styles[2]": "CornerRadius=14",
-  "controlStyles[1].target": "Border#AcrylicOverlay",
-  "controlStyles[1].styles[0]": "Visibility=Collapsed",
-  "controlStyles[2].target": "Border#BorderElement",
-  "controlStyles[2].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"18\" TintColor=\"#1AFFFFFF\"/>",
-  "controlStyles[2].styles[1]": "BorderThickness=0",
-  "controlStyles[2].styles[2]": "CornerRadius=14",
-  "controlStyles[3].target": "Grid#ShowMoreSuggestions",
-  "controlStyles[3].styles[0]": "Visibility=Collapsed",
-  "controlStyles[4].target": "Grid#SuggestionsParentContainer",
-  "controlStyles[4].styles[0]": "Visibility=Collapsed",
-  "controlStyles[5].target": "Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[5].styles[0]": "Visibility=Collapsed",
-  "controlStyles[6].target": "StartMenu.PinnedList",
-  "controlStyles[6].styles[0]": "Height=504",
-  "controlStyles[7].target": "MenuFlyoutPresenter > Border",
-  "controlStyles[7].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#00000000\"/>",
-  "controlStyles[7].styles[1]": "BorderThickness=0",
-  "controlStyles[8].target": "Border#AppBorder",
-  "controlStyles[8].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[8].styles[1]": "BorderThickness=0",
-  "controlStyles[8].styles[2]": "CornerRadius=14",
-  "controlStyles[9].target": "Border#AccentAppBorder",
-  "controlStyles[9].styles[0]": "Background:=$CommonBgBrush",
-  "controlStyles[9].styles[1]": "BorderThickness=0",
-  "controlStyles[9].styles[2]": "CornerRadius=14",
-  "controlStyles[10].target": "Border#TaskbarSearchBackground",
-  "controlStyles[10].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15000000\"/>",
-  "controlStyles[10].styles[1]": "BorderThickness=0",
-  "controlStyles[10].styles[2]": "CornerRadius=14",
-  "controlStyles[11].target": "Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border",
-  "controlStyles[11].styles[0]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>",
-  "controlStyles[11].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
-  "controlStyles[11].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[11].styles[3]": "Margin=1",
-  "controlStyles[11].styles[4]": "Background@Pressed:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
-  "controlStyles[11].styles[5]": "BorderBrush@Pressed:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[12].target": "Button#ShowAllAppsButton > ContentPresenter@CommonStates",
-  "controlStyles[12].styles[0]": "Background@Normal:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15000000\"/>",
-  "controlStyles[12].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
-  "controlStyles[12].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[12].styles[3]": "BorderThickness=1",
-  "controlStyles[13].target": "StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid > Border#BorderElement",
-  "controlStyles[13].styles[0]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[13].styles[1]": "BorderThickness=1",
-  "controlStyles[14].target": "StartDocked.NavigationPaneButton#UserTileButton > Grid@CommonStates > Border",
-  "controlStyles[14].styles[0]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>",
-  "controlStyles[14].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
-  "controlStyles[14].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
-  "controlStyles[14].styles[3]": "BorderThickness=1",
-  "controlStyles[15].target": "StartDocked.AppListViewItem > Grid@CommonStates > Border",
-  "controlStyles[15].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.45\"/>",
-  "controlStyles[15].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
-  "controlStyles[15].styles[2]": "BorderThickness=1",
-  "controlStyles[15].styles[3]": "Margin@Normal=4",
-  "controlStyles[16].target": "StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border",
-  "controlStyles[16].styles[0]": "Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.45\"/>",
-  "controlStyles[16].styles[1]": "BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.7\"/>",
-  "controlStyles[16].styles[2]": "BorderThickness=1",
-  "controlStyles[16].styles[3]": "Margin@Normal=4",
-  "controlStyles[17].target": "ToolTip > ContentPresenter#LayoutRoot",
-  "controlStyles[17].styles[0]": "Background:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15000000\"/>",
-  "controlStyles[18].target": "StartDocked.AllAppsGridListViewItem > Grid@CommonStates > Border",
-  "controlStyles[18].styles[0]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>",
-  "controlStyles[18].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.55\"/>",
-  "controlStyles[18].styles[2]": "BorderThickness=1",
-  "controlStyles[19].target": "Button#CloseAllAppsButton > ContentPresenter@CommonStates",
-  "controlStyles[19].styles[0]": "Background@Normal:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15000000\"/>",
-  "controlStyles[19].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.5\"/>",
-  "controlStyles[19].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>",
-  "controlStyles[19].styles[3]": "BorderThickness=1",
-  "controlStyles[20].target": "StartDocked.AllAppsZoomListViewItem > Grid@CommonStates > Border",
-  "controlStyles[20].styles[0]": "Background@Normal:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"0\" Opacity=\"0.2\"/>",
-  "controlStyles[20].styles[1]": "Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.3\"/>",
-  "controlStyles[20].styles[2]": "BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.6\"/>",
-  "controlStyles[21].target": "Border#dropshadow",
-  "controlStyles[21].styles[0]": "CornerRadius=14",
-  "controlStyles[21].styles[1]": "Margin=-1",
-  "controlStyles[22].target": "Border#DropShadow",
-  "controlStyles[22].styles[0]": "CornerRadius=14",
-  "controlStyles[23].target": "Border#StartDropShadow",
-  "controlStyles[23].styles[0]": "CornerRadius=14",
-  "controlStyles[24].target": "Border#RootGridDropShadow",
-  "controlStyles[24].styles[0]": "CornerRadius=14",
-  "controlStyles[25].target": "Border#RightCompanionDropShadow",
-  "controlStyles[25].styles[0]": "CornerRadius=14",
-  "controlStyles[26].target": "StartDocked.AllAppsGridListViewItem > Grid#ContentBorder@CommonStates",
-  "controlStyles[26].styles[0]": "Background@PointerOver:=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#15C0C0C0\"/>",
-  "controlStyles[26].styles[1]": "CornerRadius=14",
-  "styleConstants[0]": "CommonBgBrush=<WindhawkBlur BlurAmount=\"18\" TintColor=\"#80000000\"/>"
-}
+```yaml
+styleConstants:
+  - CommonBgBrush=<WindhawkBlur BlurAmount="18" TintColor="#80000000"/>
+controlStyles:
+  - target: Border#AcrylicBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Border#AcrylicOverlay
+    styles:
+      - Visibility=Collapsed
+  - target: Border#BorderElement
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="18" TintColor="#1AFFFFFF"/>
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#SuggestionsParentContainer
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Visibility=Collapsed
+  - target: StartMenu.PinnedList
+    styles:
+      - Height=504
+  - target: MenuFlyoutPresenter > Border
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="25" TintColor="#00000000"/>
+      - BorderThickness=0
+  - target: Border#AppBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Border#AccentAppBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Border#TaskbarSearchBackground
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="25" TintColor="#15000000"/>
+      - BorderThickness=0
+      - CornerRadius=14
+  - target: Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border
+    styles:
+      - Background@Normal:=<RevealBorderBrush Color="Transparent" TargetTheme="0" Opacity="0.2"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.3"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+      - Margin=1
+      - Background@Pressed:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.3"/>
+      - BorderBrush@Pressed:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+  - target: Button#ShowAllAppsButton > ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=<WindhawkBlur BlurAmount="25" TintColor="#15000000"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.5"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+      - BorderThickness=1
+  - target: StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid > Border#BorderElement
+    styles:
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+      - BorderThickness=1
+  - target: StartDocked.NavigationPaneButton#UserTileButton > Grid@CommonStates > Border
+    styles:
+      - Background@Normal:=<RevealBorderBrush Color="Transparent" TargetTheme="0" Opacity="0.2"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.5"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.8"/>
+      - BorderThickness=1
+  - target: StartDocked.AppListViewItem > Grid@CommonStates > Border
+    styles:
+      - Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.45"/>
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.7"/>
+      - BorderThickness=1
+      - Margin@Normal=4
+  - target: StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border
+    styles:
+      - Background:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.45"/>
+      - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.7"/>
+      - BorderThickness=1
+      - Margin@Normal=4
+  - target: ToolTip > ContentPresenter#LayoutRoot
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="25" TintColor="#15000000"/>
+  - target: StartDocked.AllAppsGridListViewItem > Grid@CommonStates > Border
+    styles:
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.8"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.55"/>
+      - BorderThickness=1
+  - target: Button#CloseAllAppsButton > ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=<WindhawkBlur BlurAmount="25" TintColor="#15000000"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.5"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
+      - BorderThickness=1
+  - target: StartDocked.AllAppsZoomListViewItem > Grid@CommonStates > Border
+    styles:
+      - Background@Normal:=<RevealBorderBrush Color="Transparent" TargetTheme="0" Opacity="0.2"/>
+      - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.3"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.6"/>
+  - target: Border#dropshadow
+    styles:
+      - CornerRadius=14
+      - Margin=-1
+  - target: Border#DropShadow
+    styles:
+      - CornerRadius=14
+  - target: Border#StartDropShadow
+    styles:
+      - CornerRadius=14
+  - target: Border#RootGridDropShadow
+    styles:
+      - CornerRadius=14
+  - target: Border#RightCompanionDropShadow
+    styles:
+      - CornerRadius=14
+  - target: StartDocked.AllAppsGridListViewItem > Grid#ContentBorder@CommonStates
+    styles:
+      - Background@PointerOver:=<WindhawkBlur BlurAmount="25" TintColor="#15C0C0C0"/>
+      - CornerRadius=14
 ```
 </details>

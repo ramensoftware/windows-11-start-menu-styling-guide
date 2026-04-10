@@ -30,91 +30,119 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "StartDocked.NavigationPaneView#UserControl > Grid#RootPanel",
-  "controlStyles[0].styles[0]": "FlowDirection=1",
-  "controlStyles[1].target": "StartMenu.PinnedList",
-  "controlStyles[1].styles[0]": "MinHeight=420",
-  "controlStyles[1].styles[1]": "MaxHeight=420",
-  "controlStyles[2].target": "StartMenu.ExpandedFolderList > Grid > Border",
-  "controlStyles[2].styles[0]": "Margin=-40,0,40,0",
-  "controlStyles[2].styles[1]": "Width=325",
-  "controlStyles[3].target": "StartMenu.ExpandedFolderList > Grid > Grid",
-  "controlStyles[3].styles[0]": "CornerRadius=8",
-  "controlStyles[3].styles[1]": "Margin=-85,0,0,0",
-  "controlStyles[3].styles[2]": "Width=350",
-  "controlStyles[4].target": "StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager",
-  "controlStyles[4].styles[0]": "Margin=-15,0,0,0",
-  "controlStyles[5].target": "Grid#MainMenu",
-  "controlStyles[5].styles[0]": "Width=825",
-  "controlStyles[6].target": "Grid#FrameRoot",
-  "controlStyles[6].styles[0]": "Height=825",
-  "controlStyles[7].target": "Border#AcrylicOverlay",
-  "controlStyles[7].styles[0]": "Margin=0,-70,0,0",
-  "controlStyles[8].target": "GridView#PinnedList",
-  "controlStyles[8].styles[0]": "MaxWidth=480",
-  "controlStyles[8].styles[1]": "RenderTransform:=<TranslateTransform X=\"345\" Y=\"752\"/>",
-  "controlStyles[8].styles[2]": "MinHeight=420",
-  "controlStyles[8].styles[3]": "MaxHeight=420",
-  "controlStyles[9].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid",
-  "controlStyles[9].styles[0]": "Width=280",
-  "controlStyles[9].styles[1]": "Margin=-55,12,55,0",
-  "controlStyles[9].styles[2]": "//RenderTransform:=<TranslateTransform X=\"0\" Y=\"740\"/>",
-  "controlStyles[10].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter",
-  "controlStyles[10].styles[0]": "RenderTransform:=<TranslateTransform X=\"-200\" Y=\"-760\"/>",
-  "controlStyles[11].target": "Microsoft.UI.Xaml.Controls.DropDownButton",
-  "controlStyles[11].styles[0]": "Margin=-390,132,390,-132",
-  "controlStyles[11].styles[1]": "FontWeight=SemiBold",
-  "controlStyles[11].styles[2]": "Height=32",
-  "controlStyles[11].styles[3]": "Width=200",
-  "controlStyles[12].target": "Windows.UI.Xaml.Controls.ListView#ZoomedOutListView",
-  "controlStyles[12].styles[0]": "Margin=0,-35,0,35",
-  "controlStyles[13].target": "TextBlock#PinnedListHeaderText",
-  "controlStyles[13].styles[0]": "Visibility=Visible",
-  "controlStyles[13].styles[1]": "RenderTransform:=<TranslateTransform X=\"485\" Y=\"753\"/>",
-  "controlStyles[13].styles[2]": "FontWeight=SemiBold",
-  "controlStyles[14].target": "StartMenu.StartHome",
-  "controlStyles[14].styles[0]": "RenderTransform:=<TranslateTransform Y=\"-1\"/>",
-  "controlStyles[15].target": "Windows.UI.Xaml.Controls.Frame > Windows.UI.Xaml.Controls.ContentPresenter",
-  "controlStyles[15].styles[0]": "Margin=0,-15,0,0",
-  "controlStyles[16].target": "DropDownButton > Grid > ContentPresenter > TextBlock",
-  "controlStyles[16].styles[0]": "MaxLines=2",
-  "controlStyles[16].styles[1]": "TextLineBounds=0",
-  "controlStyles[16].styles[2]": "HorizontalAlignment=1",
-  "controlStyles[17].target": "Grid#TopLevelSuggestionsRoot",
-  "controlStyles[17].styles[0]": "RenderTransform:=<TranslateTransform X=\"360\" Y=\"784\"/>",
-  "controlStyles[17].styles[1]": "Width=450",
-  "controlStyles[17].styles[2]": "MinHeight=129",
-  "controlStyles[17].styles[3]": "BorderThickness=0,1,0,0",
-  "controlStyles[17].styles[4]": "BorderBrush=#22BBBBBB",
-  "controlStyles[18].target": "TextBlock#TopLevelSuggestionsListHeaderText",
-  "controlStyles[18].styles[0]": "RenderTransform:=<TranslateTransform X=\"-50\" />",
-  "controlStyles[19].target": "Button#ShowMoreSuggestionsButton",
-  "controlStyles[19].styles[0]": "RenderTransform:=<TranslateTransform X=\"50\" />",
-  "controlStyles[20].target": "//Grid#TopLevelHeader > Grid[2]",
-  "controlStyles[20].styles[0]": "RenderTransform:=<TranslateTransform X=\"220\" Y=\"581\" />",
-  "controlStyles[21].target": "GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid",
-  "controlStyles[21].styles[0]": "RenderTransform:=<TranslateTransform X=\"-40\" />",
-  "controlStyles[21].styles[1]": "Margin=0,134,0,0",
-  "controlStyles[22].target": "ScrollViewer",
-  "controlStyles[22].styles[0]": "ScrollViewer.VerticalScrollMode=2",
-  "controlStyles[23].target": "Windows.UI.Xaml.Controls.ItemsWrapGrid",
-  "controlStyles[23].styles[0]": "MaximumRowsOrColumns=5",
-  "controlStyles[24].target": "GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border",
-  "controlStyles[24].styles[0]": "MaxWidth=185",
-  "controlStyles[24].styles[1]": "HorizontalAlignment=2",
-  "controlStyles[25].target": "Grid#TopLevelSuggestionsContainer",
-  "controlStyles[25].styles[0]": "Width=630",
-  "controlStyles[25].styles[1]": "Margin=-50,0,0,0",
-  "controlStyles[26].target": "GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem",
-  "controlStyles[26].styles[0]": "Margin=-25,0,-25,0",
-  "controlStyles[27].target": "Grid#MainMenu > Grid#MainContent > Grid",
-  "controlStyles[27].styles[0]": "Canvas.ZIndex=1",
-  "controlStyles[28].target": "Windows.UI.Xaml.Controls.Primitives.ScrollBar",
-  "controlStyles[28].styles[0]": "Height=650",
-  "controlStyles[28].styles[1]": "RenderTransform:=<TranslateTransform Y=\"-50\" />"
-}
+```yaml
+controlStyles:
+  - target: StartDocked.NavigationPaneView#UserControl > Grid#RootPanel
+    styles:
+      - FlowDirection=1
+  - target: StartMenu.PinnedList
+    styles:
+      - MinHeight=420
+      - MaxHeight=420
+  - target: StartMenu.ExpandedFolderList > Grid > Border
+    styles:
+      - Margin=-40,0,40,0
+      - Width=325
+  - target: StartMenu.ExpandedFolderList > Grid > Grid
+    styles:
+      - CornerRadius=8
+      - Margin=-85,0,0,0
+      - Width=350
+  - target: StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager
+    styles:
+      - Margin=-15,0,0,0
+  - target: Grid#MainMenu
+    styles:
+      - Width=825
+  - target: Grid#FrameRoot
+    styles:
+      - Height=825
+  - target: Border#AcrylicOverlay
+    styles:
+      - Margin=0,-70,0,0
+  - target: GridView#PinnedList
+    styles:
+      - MaxWidth=480
+      - RenderTransform:=<TranslateTransform X="345" Y="752"/>
+      - MinHeight=420
+      - MaxHeight=420
+  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
+    styles:
+      - Width=280
+      - Margin=-55,12,55,0
+      - //RenderTransform:=<TranslateTransform X="0" Y="740"/>
+  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter
+    styles:
+      - RenderTransform:=<TranslateTransform X="-200" Y="-760"/>
+  - target: Microsoft.UI.Xaml.Controls.DropDownButton
+    styles:
+      - Margin=-390,132,390,-132
+      - FontWeight=SemiBold
+      - Height=32
+      - Width=200
+  - target: Windows.UI.Xaml.Controls.ListView#ZoomedOutListView
+    styles:
+      - Margin=0,-35,0,35
+  - target: TextBlock#PinnedListHeaderText
+    styles:
+      - Visibility=Visible
+      - RenderTransform:=<TranslateTransform X="485" Y="753"/>
+      - FontWeight=SemiBold
+  - target: StartMenu.StartHome
+    styles:
+      - RenderTransform:=<TranslateTransform Y="-1"/>
+  - target: Windows.UI.Xaml.Controls.Frame > Windows.UI.Xaml.Controls.ContentPresenter
+    styles:
+      - Margin=0,-15,0,0
+  - target: DropDownButton > Grid > ContentPresenter > TextBlock
+    styles:
+      - MaxLines=2
+      - TextLineBounds=0
+      - HorizontalAlignment=1
+  - target: Grid#TopLevelSuggestionsRoot
+    styles:
+      - RenderTransform:=<TranslateTransform X="360" Y="784"/>
+      - Width=450
+      - MinHeight=129
+      - BorderThickness=0,1,0,0
+      - BorderBrush=#22BBBBBB
+  - target: TextBlock#TopLevelSuggestionsListHeaderText
+    styles:
+      - RenderTransform:=<TranslateTransform X="-50" />
+  - target: Button#ShowMoreSuggestionsButton
+    styles:
+      - RenderTransform:=<TranslateTransform X="50" />
+  - target: //Grid#TopLevelHeader > Grid[2]
+    styles:
+      - RenderTransform:=<TranslateTransform X="220" Y="581" />
+  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
+    styles:
+      - RenderTransform:=<TranslateTransform X="-40" />
+      - Margin=0,134,0,0
+  - target: ScrollViewer
+    styles:
+      - ScrollViewer.VerticalScrollMode=2
+  - target: Windows.UI.Xaml.Controls.ItemsWrapGrid
+    styles:
+      - MaximumRowsOrColumns=5
+  - target: GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border
+    styles:
+      - MaxWidth=185
+      - HorizontalAlignment=2
+  - target: Grid#TopLevelSuggestionsContainer
+    styles:
+      - Width=630
+      - Margin=-50,0,0,0
+  - target: GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem
+    styles:
+      - Margin=-25,0,-25,0
+  - target: Grid#MainMenu > Grid#MainContent > Grid
+    styles:
+      - Canvas.ZIndex=1
+  - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar
+    styles:
+      - Height=650
+      - RenderTransform:=<TranslateTransform Y="-50" />
 ```
 </details>
 
@@ -123,113 +151,154 @@ that is slowly rolling out in the 25H2 update.
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{
-  "controlStyles[0].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
-  "controlStyles[0].styles[0]": "Visibility=Visible",
-  "controlStyles[0].styles[1]": "Width=510",
-  "controlStyles[0].styles[2]": "MinHeight=585",
-  "controlStyles[0].styles[3]": "Margin=264,0,0,0",
-  "controlStyles[1].target": "StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#UndockedRoot",
-  "controlStyles[1].styles[0]": "Width=320",
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#AllAppsRoot",
-  "controlStyles[2].styles[0]": "Visibility=Visible",
-  "controlStyles[2].styles[1]": "Width=320",
-  "controlStyles[2].styles[2]": "Transform3D:=<CompositeTransform3D TranslateX=\"-1060\" />",
-  "controlStyles[3].target": "StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#AllAppsRoot",
-  "controlStyles[3].styles[0]": "Transform3D:=<CompositeTransform3D TranslateX=\"-833\" />",
-  "controlStyles[3].styles[1]": "HorizontalAlignment=Left",
-  "controlStyles[4].target": "Windows.UI.Xaml.Controls.Button#CloseAllAppsButton",
-  "controlStyles[4].styles[0]": "Visibility=1",
-  "controlStyles[5].target": "StartDocked.StartSizingFrame",
-  "controlStyles[5].styles[0]": "MinWidth=776",
-  "controlStyles[5].styles[1]": "MaxWidth=776",
-  "controlStyles[6].target": "StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid",
-  "controlStyles[6].styles[0]": "Width=560",
-  "controlStyles[7].target": "StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent",
-  "controlStyles[7].styles[0]": "MinWidth=560",
-  "controlStyles[8].target": "Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions",
-  "controlStyles[8].styles[0]": "Visibility=0",
-  "controlStyles[9].target": "Windows.UI.Xaml.Controls.Button#ShowAllAppsButton",
-  "controlStyles[9].styles[0]": "Visibility=1",
-  "controlStyles[10].target": "Windows.UI.Xaml.Controls.GridView#RecommendedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem",
-  "controlStyles[10].styles[0]": "MaxWidth=220",
-  "controlStyles[10].styles[1]": "MinWidth=220",
-  "controlStyles[11].target": "StartDocked.AllAppsGridListView#AppsList",
-  "controlStyles[11].styles[0]": "Padding=48,3,-36,16",
-  "controlStyles[12].target": "Windows.UI.Xaml.Controls.Grid#AllAppsPaneHeader",
-  "controlStyles[12].styles[0]": "Margin=97,0,0,0",
-  "controlStyles[13].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
-  "controlStyles[13].styles[0]": "Height=302",
-  "controlStyles[14].target": "StartDocked.NavigationPaneView#NavigationPane",
-  "controlStyles[14].styles[0]": "FlowDirection=1",
-  "controlStyles[14].styles[1]": "Margin=30,0,30,0",
-  "controlStyles[15].target": "StartDocked.PowerOptionsView#PowerButton",
-  "controlStyles[15].styles[0]": "FlowDirection=0",
-  "controlStyles[16].target": "Windows.UI.Xaml.Controls.ItemsStackPanel > Windows.UI.Xaml.Controls.ListViewItem",
-  "controlStyles[16].styles[0]": "FlowDirection=0",
-  "controlStyles[17].target": "StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > StartDocked.SearchBoxToggleButton#StartMenuSearchBox",
-  "controlStyles[17].styles[0]": "Margin=23,1,23,14",
-  "controlStyles[18].target": "Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink",
-  "controlStyles[18].styles[0]": "Margin=11,0,48,0",
-  "controlStyles[19].target": "StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle",
-  "controlStyles[19].styles[0]": "Margin=67,7,0,21",
-  "controlStyles[20].target": "Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl",
-  "controlStyles[20].styles[0]": "IsZoomOutButtonEnabled=true",
-  "controlStyles[21].target": "Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock",
-  "controlStyles[21].styles[0]": "Text=",
-  "controlStyles[22].target": "Windows.UI.Xaml.Controls.Button#ZoomOutButton",
-  "controlStyles[22].styles[0]": "Width=24",
-  "controlStyles[22].styles[1]": "Height=24",
-  "controlStyles[22].styles[2]": "Margin=0,0,0,0",
-  "controlStyles[22].styles[3]": "FontSize=14",
-  "controlStyles[22].styles[4]": "CornerRadius=4",
-  "controlStyles[22].styles[5]": "VerticalAlignment=0",
-  "controlStyles[22].styles[6]": "Transform3D:=<CompositeTransform3D TranslateX=\"-1\" TranslateY=\"-34\"/>",
-  "controlStyles[23].target": "Windows.UI.Xaml.Controls.ListView#ZoomAppsList",
-  "controlStyles[23].styles[0]": "Padding=86,0,25,0",
-  "controlStyles[24].target": "StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root",
-  "controlStyles[24].styles[0]": "Padding=0,0,4,0",
-  "controlStyles[25].target": "Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText",
-  "controlStyles[25].styles[0]": "Margin=-32,0,32,0",
-  "controlStyles[26].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
-  "controlStyles[26].styles[0]": "Margin=31,-3,12,0",
-  "controlStyles[27].target": "Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText",
-  "controlStyles[27].styles[0]": "Margin=31,0,63,0",
-  "controlStyles[28].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer",
-  "controlStyles[28].styles[0]": "Margin=20,0,0,0",
-  "controlStyles[29].target": "Windows.UI.Xaml.Controls.ListView#RecommendedList",
-  "controlStyles[29].styles[0]": "Width=490",
-  "controlStyles[30].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton",
-  "controlStyles[30].styles[0]": "Margin=0,0,36,2",
-  "controlStyles[30].styles[1]": "Height=24",
-  "controlStyles[31].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton",
-  "controlStyles[31].styles[0]": "Margin=0,0,36,2",
-  "controlStyles[31].styles[1]": "Height=24",
-  "controlStyles[32].target": "Windows.UI.Xaml.Controls.Grid#MoreSuggestionsRoot > Windows.UI.Xaml.Controls.Grid",
-  "controlStyles[32].styles[0]": "Margin=31,-3,0,0",
-  "controlStyles[33].target": "Windows.UI.Xaml.Controls.Grid#MoreSuggestionsContainer",
-  "controlStyles[33].styles[0]": "Margin=20,0,0,0",
-  "controlStyles[34].target": "Windows.UI.Xaml.Controls.ItemsStackPanel > Windows.UI.Xaml.Controls.ListViewItem[MaxHeight=5000]",
-  "controlStyles[34].styles[0]": "MaxWidth=460",
-  "controlStyles[34].styles[1]": "MinWidth=460",
-  "controlStyles[34].styles[2]": "Margin=0,0,16,0",
-  "controlStyles[34].styles[3]": "Padding=10,0,14,0",
-  "controlStyles[35].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
-  "controlStyles[35].styles[0]": "Margin=0,0,2,0",
-  "controlStyles[36].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon",
-  "controlStyles[36].styles[0]": "FontSize=12",
-  "controlStyles[37].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock",
-  "controlStyles[37].styles[0]": "Margin=2,0,0,0",
-  "controlStyles[38].target": "Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon",
-  "controlStyles[38].styles[0]": "FontSize=12",
-  "controlStyles[39].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1]",
-  "controlStyles[39].styles[0]": "Margin=-268,0,0,0",
-  "controlStyles[40].target": "Windows.UI.Xaml.Controls.FlyoutPresenter[1] > Grid",
-  "controlStyles[40].styles[0]": "Margin=-543,0,543,0",
-  "controlStyles[41].target": "Windows.UI.Xaml.Controls.FlyoutPresenter",
-  "controlStyles[41].styles[0]": "Margin=-245,-12,0,0"
-}
+```yaml
+controlStyles:
+  - target: Windows.UI.Xaml.Controls.Grid#UndockedRoot
+    styles:
+      - Visibility=Visible
+      - Width=510
+      - MinHeight=585
+      - Margin=264,0,0,0
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#UndockedRoot
+    styles:
+      - Width=320
+  - target: Windows.UI.Xaml.Controls.Grid#AllAppsRoot
+    styles:
+      - Visibility=Visible
+      - Width=320
+      - Transform3D:=<CompositeTransform3D TranslateX="-1060" />
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#AllAppsRoot
+    styles:
+      - Transform3D:=<CompositeTransform3D TranslateX="-833" />
+      - HorizontalAlignment=Left
+  - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
+    styles:
+      - Visibility=1
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MinWidth=776
+      - MaxWidth=776
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
+    styles:
+      - Width=560
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent
+    styles:
+      - MinWidth=560
+  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
+    styles:
+      - Visibility=0
+  - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton
+    styles:
+      - Visibility=1
+  - target: Windows.UI.Xaml.Controls.GridView#RecommendedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem
+    styles:
+      - MaxWidth=220
+      - MinWidth=220
+  - target: StartDocked.AllAppsGridListView#AppsList
+    styles:
+      - Padding=48,3,-36,16
+  - target: Windows.UI.Xaml.Controls.Grid#AllAppsPaneHeader
+    styles:
+      - Margin=97,0,0,0
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer
+    styles:
+      - Height=302
+  - target: StartDocked.NavigationPaneView#NavigationPane
+    styles:
+      - FlowDirection=1
+      - Margin=30,0,30,0
+  - target: StartDocked.PowerOptionsView#PowerButton
+    styles:
+      - FlowDirection=0
+  - target: Windows.UI.Xaml.Controls.ItemsStackPanel > Windows.UI.Xaml.Controls.ListViewItem
+    styles:
+      - FlowDirection=0
+  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > StartDocked.SearchBoxToggleButton#StartMenuSearchBox
+    styles:
+      - Margin=23,1,23,14
+  - target: Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink
+    styles:
+      - Margin=11,0,48,0
+  - target: StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle
+    styles:
+      - Margin=67,7,0,21
+  - target: Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl
+    styles:
+      - IsZoomOutButtonEnabled=true
+  - target: Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Text=
+  - target: Windows.UI.Xaml.Controls.Button#ZoomOutButton
+    styles:
+      - Width=24
+      - Height=24
+      - Margin=0,0,0,0
+      - FontSize=14
+      - CornerRadius=4
+      - VerticalAlignment=0
+      - Transform3D:=<CompositeTransform3D TranslateX="-1" TranslateY="-34"/>
+  - target: Windows.UI.Xaml.Controls.ListView#ZoomAppsList
+    styles:
+      - Padding=86,0,25,0
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root
+    styles:
+      - Padding=0,0,4,0
+  - target: Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText
+    styles:
+      - Margin=-32,0,32,0
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
+    styles:
+      - Margin=31,-3,12,0
+  - target: Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText
+    styles:
+      - Margin=31,0,63,0
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer
+    styles:
+      - Margin=20,0,0,0
+  - target: Windows.UI.Xaml.Controls.ListView#RecommendedList
+    styles:
+      - Width=490
+  - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton
+    styles:
+      - Margin=0,0,36,2
+      - Height=24
+  - target: Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton
+    styles:
+      - Margin=0,0,36,2
+      - Height=24
+  - target: Windows.UI.Xaml.Controls.Grid#MoreSuggestionsRoot > Windows.UI.Xaml.Controls.Grid
+    styles:
+      - Margin=31,-3,0,0
+  - target: Windows.UI.Xaml.Controls.Grid#MoreSuggestionsContainer
+    styles:
+      - Margin=20,0,0,0
+  - target: Windows.UI.Xaml.Controls.ItemsStackPanel > Windows.UI.Xaml.Controls.ListViewItem[MaxHeight=5000]
+    styles:
+      - MaxWidth=460
+      - MinWidth=460
+      - Margin=0,0,16,0
+      - Padding=10,0,14,0
+  - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Margin=0,0,2,0
+  - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon
+    styles:
+      - FontSize=12
+  - target: Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Margin=2,0,0,0
+  - target: Windows.UI.Xaml.Controls.Button#HideMoreSuggestionsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon
+    styles:
+      - FontSize=12
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter[1]
+    styles:
+      - Margin=-268,0,0,0
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter[1] > Grid
+    styles:
+      - Margin=-543,0,543,0
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter
+    styles:
+      - Margin=-245,-12,0,0
 ```
 </details>
 
