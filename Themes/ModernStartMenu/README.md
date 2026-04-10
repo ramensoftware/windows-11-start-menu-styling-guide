@@ -430,12 +430,12 @@ controlStyles:
       - RadiusY=2
       - Canvas.ZIndex=1
       - Fill@PointerOverSelected:=$accentButtonNormal
-  - target: 'StartUI.NavigationPaneGrid > StartUI.UserTileView > StartUI.NavigationPaneButton#UserTileButton '
+  - target: StartUI.NavigationPaneGrid > StartUI.UserTileView > StartUI.NavigationPaneButton#UserTileButton
     styles:
       - Margin=6
       - Height=36
       - CornerRadius=6
-  - target: 'StartUI.NavigationPaneGrid > StartUI.PowerOptionsView > StartUI.NavigationPaneButton#PowerButton '
+  - target: StartUI.NavigationPaneGrid > StartUI.PowerOptionsView > StartUI.NavigationPaneButton#PowerButton
     styles:
       - Margin=6
       - Height=36
