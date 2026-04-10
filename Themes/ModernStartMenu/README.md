@@ -1,6 +1,6 @@
 # ModernStartMenu theme for Windows 11 Start Menu Styler (Windows 10 Start menu)
 
-A Fluent start menu theme for Windows 10 Start menu on Windows 11.
+ModernStartMenu is a Fluent start menu theme designed for Windows 10 Start menu on Windows 11.
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
@@ -32,7 +32,6 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Windows 10 (Partially supported) ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
 * Light mode (Support coming soon).
 * *"Show accent color on Start and taskbar"* enabled.
-* *"Show more tiles on Start"* enabled (ExplorerPatcher).
 * Fullscreen Start menu (ExplorerPatcher).
 
 ## Manual installation
@@ -47,6 +46,8 @@ The theme styles have to be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+theme: ''
+disableNewStartMenuLayout: '1'
 styleConstants:
   - accentButtonNormal=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" />
   - accentButtonPointerOver=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" Opacity="0.9"/>
@@ -72,11 +73,11 @@ controlStyles:
       - FontSize=14
       - FontFamily=$fontFamily
       - Margin=3,0,0,-6
-  - target: StartUI.AllAppsPane
+  - target: Grid#RootGrid@ContentPaneStates > SplitView > Grid > Grid > Border > Grid > StartUI.AllAppsPane
     styles:
-      - Margin=12,0,0,0
+      - Margin@Apps=12,0,27,0
+      - Margin@Classic=12,0,0,0
       - FontWeight=Semibold
-      - Width=253
   - target: Button#Header > Border > TextBlock
     styles:
       - FontSize=14
@@ -236,7 +237,7 @@ controlStyles:
     styles:
       - MinWidth=165
       - CornerRadius=8
-      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.48" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
   - target: JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > TextBlock
     styles:
       - FontFamily=$fontFamily
@@ -275,7 +276,7 @@ controlStyles:
   - target: MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > StackPanel > TextBlock#TextBlock
     styles:
       - FontSize=14
-      - Margin=8,-1,0,1
+      - Margin=8,0,0,-2
       - FontFamily=$fontFamily
   - target: MenuFlyoutItem
     styles:
@@ -336,7 +337,10 @@ controlStyles:
       - Background@Normal:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.72" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
       - BorderThickness=0,1.5,0,0
       - CornerRadius=8
-      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="#5B5B5B" />
+      - BorderBrush@Normal:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.48" />
+      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - BorderBrush@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
+      - BorderBrush@Pressed:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.36" />
   - target: TileGridNestedPanel > StartUI.TileListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
     styles:
       - RevealBackground:=
@@ -411,16 +415,12 @@ controlStyles:
   - target: TextBlock#SignedInStatus
     styles:
       - FontSize=12
-      - Margin=8,-1,0,3
+      - Margin=8,4,0,0
       - FontFamily=$fontFamily
   - target: MenuFlyoutSeparator > Rectangle
     styles:
-      - Fill:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumHighColor}"/>
-      - Margin=0,4,0,3
-  - target: TextBlock#ExpandCollapseButtonText
-    styles:
-      - Margin=12,0,0,0
-      - FontFamily=$fontFamily
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemChromeMediumHighColor}" Opacity="0.72" />
+      - Margin=1,4,1,4
   - target: Grid#RootPanel@CommonStates > Rectangle
     styles:
       - Fill@Selected:=$accentButtonNormal
@@ -462,6 +462,8 @@ controlStyles:
     styles:
       - Margin=-12,0,0,0
       - Opacity@Pressed=0.84
+      - Width=24
+      - Height=24
   - target: JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > StackPanel > TextBlock
     styles:
       - FontFamily=$fontFamily
@@ -540,8 +542,6 @@ controlStyles:
       - BorderBrush:=$buttonBorderBrush
       - Background@PointerOver:=$buttonPointerOver
       - Background@Pressed:=$buttonPressed
-      - Background@Selected=Red
-      - Background@SelectedPointerOver=Yellow
   - target: ComboBoxItem
     styles:
       - CornerRadius=4
@@ -602,8 +602,9 @@ controlStyles:
       - Margin=7,0,0,2
   - target: TextBlock#FolderGlyph
     styles:
-      - FontSize=9
+      - FontSize=11
       - FontWeight=Light
+      - FontFamily=Segoe Fluent Icons
   - target: ItemsWrapGrid > StartUI.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Border > TextBlock
     styles:
       - FontWeight=Light
@@ -617,39 +618,37 @@ controlStyles:
       - StrokeThickness=0
       - RadiusX=4
       - RadiusY=4
-  - target: Border#NameTextBoxHost > TextBox > Grid > Border#BackgroundElement
+  - target: TextBox > Grid > Border#BackgroundElement
     styles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.72" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
       - CornerRadius=4
-      - BorderThickness=0.5,0.5,0.5,0
-      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-  - target: Border#NameTextBoxHost > TextBox > Grid > Border#BorderElement
-    styles:
-      - BorderThickness=0,0,0,1.5
-      - CornerRadius=4
-      - Height=28
+      - BorderThickness=0,0,0,2
       - BorderBrush:=$accentButtonNormal
-      - Width=258
+  - target: TextBox > Grid > Border#BorderElement
+    styles:
+      - BorderThickness=1,1,1,0
+      - CornerRadius=4
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Margin=2
   - target: Grid#MainGrid@FocusStates > Rectangle#BackgroundElement
     styles:
       - Fill@FocusState_Hover:=$buttonNormal
       - Fill@FocusState_None=Transparent
       - Fill@FocusState_HoverPlaceholder:=$buttonNormal
       - StrokeThickness=0
-      - Margin=0,0,50,0
-      - Width=258
-      - Height=28
+      - Fill@FocusState_Keyboard:=$buttonNormal
       - RadiusX=4
       - RadiusY=4
+      - Height=28
+      - Margin=0,3,0,0
   - target: Grid#MainGrid@FocusStates > Grid > Border#NameTextBlockHost
     styles:
-      - BorderThickness=0,0,0,1.5
-      - BorderBrush@FocusState_Hover:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="#5B5B5B" />
+      - BorderThickness=0,0,0,2
+      - BorderBrush@FocusState_Hover:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
       - CornerRadius=4
-      - Height=28
-      - BorderBrush@FocusState_HoverPlaceholder:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="#5B5B5B" />
-      - Width=258
-      - Margin=0,0,2,0
+      - BorderBrush@FocusState_HoverPlaceholder:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
+      - Margin=0,0,-48,0
+      - BorderBrush@FocusState_Keyboard:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
   - target: StackPanel > Button#DeleteButton > Grid > ContentPresenter
     styles:
       - BorderBrush:=
@@ -660,11 +659,11 @@ controlStyles:
   - target: Grid#ContentRoot
     styles:
       - BorderThickness=1,0,0,0
-      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemColorButtonTextColor}" TintOpacity="0" TintLuminosityOpacity="0.4" FallbackColor="#141414" />
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource SystemColorButtonTextColor}" Opacity="0.36" />
       - Margin=0,1,0,1
   - target: Border#NameTextBoxHost > TextBox
     styles:
-      - Margin=-2,0,0,0
+      - Margin=-2,2,-50,0
   - target: SplitView#RootContent
     styles:
       - IsPaneOpen=False
@@ -730,7 +729,7 @@ controlStyles:
   - target: StartUI.TileFolderNameTextBox > Grid@CommonStates
     styles:
       - BorderThickness=0,0,0,1.5
-      - BorderBrush@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="#5B5B5B" />
+      - BorderBrush@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
       - BorderBrush@Focused:=$accentButtonNormal
       - CornerRadius=4
       - Height=28
@@ -791,5 +790,41 @@ controlStyles:
       - Margin=-12,0,0,0
       - Opacity@Pressed=0.84
       - Opacity@PressedSelected=0.84
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > StartUI.TileViewControl > Grid > Border#GlideAnimationContainer
+    styles:
+      - CornerRadius=8
+      - BorderThickness=0,1.5,0,0
+      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.16" FallbackColor="#5B5B5B" />
+  - target: StartUI.TileViewControl > Grid
+    styles:
+      - CornerRadius=8
+  - target: StartUI.GroupHeaderControl > Grid > Rectangle
+    styles:
+      - RadiusX=6
+      - RadiusY=6
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > TextBlock#StatusMessage[Text=System]
+    styles:
+      - Visibility=Collapsed
+  - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=ExpandCollapseButton] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > StackPanel
+    styles:
+      - Margin=9,0,0,0
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > StackPanel > TextBlock#FolderGlyph
+    styles:
+      - Margin=9,0,0,0
+  - target: FontIcon#Gripper
+    styles:
+      - Visibility=Collapsed
+  - target: ComboBox > Grid@CommonStates > FontIcon#DropDownGlyph
+    styles:
+      - FontFamily=Segoe Fluent Icons
+      - Opacity@Pressed=0.84
+      - Foreground=White
+themeResourceVariables:
+  - ''
+webContentStyles:
+  - target: ''
+    styles:
+      - ''
+webContentCustomJs: ''
 ```
 </details>
