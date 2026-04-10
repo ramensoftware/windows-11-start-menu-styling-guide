@@ -1,4 +1,5 @@
 # Command Center theme for Windows 11 Start Menu Styler
+
 Command Center theme inspired by the command centers from various mobile operating systems. It features a completely transparent background to allow for a floating widget styled appearance.
 
 **Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
@@ -30,8 +31,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ```json
 {
-  "theme": "",
-  "disableNewStartMenuLayout": "",
   "styleConstants[0]": "CornerRadius=20",
   "styleConstants[1]": "Background=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
   "styleConstants[2]": "BorderThickness=0.3,1,0.3,1",
@@ -308,11 +307,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
   "controlStyles[78].styles[2]": "BorderThickness=$BorderThickness",
   "controlStyles[78].styles[3]": "CornerRadius=12",
   "controlStyles[78].styles[4]": "Margin=18,4",
-  "themeResourceVariables[0]": "",
   "webContentStyles[0].target": "*",
-  "webContentStyles[0].styles[0]": "transition: background-color 0.083s ease-in-out !important",
-  "webContentCustomJs": ""
+  "webContentStyles[0].styles[0]": "transition: background-color 0.083s ease-in-out !important"
 }
 ```
-
 </details>
