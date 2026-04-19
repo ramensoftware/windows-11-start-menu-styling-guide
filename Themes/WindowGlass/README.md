@@ -412,6 +412,7 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
       - CornerRadius:=$ElementCornerRadius
+      - Padding=-1
   - target: Windows.UI.Xaml.Controls.MenuFlyoutPresenter
     styles:
       - CornerRadius:=$ElementCornerRadius
