@@ -4,7 +4,7 @@ ModernStartMenu is a Fluent start menu theme designed for Windows 10 Start menu 
 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
-![Screenshot](screenshot.png)
+![Screenshot](ModernStartMenu.gif)
 ![Screenshot](screenshot-tiles.png)
 
 ## Windows 10 Start menu on Windows 11 installation
