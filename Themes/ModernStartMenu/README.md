@@ -30,7 +30,6 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 
 ## Unsupported configurations/settings
 * Windows 10 (Partially supported) ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
-* Light mode (Support coming soon).
 * *"Show accent color on Start and taskbar"* enabled.
 * Fullscreen Start menu (ExplorerPatcher).
 
@@ -49,21 +48,32 @@ The theme styles have to be imported manually. To do that, follow these steps:
 theme: ''
 disableNewStartMenuLayout: '1'
 styleConstants:
-  - accentButtonNormal=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" />
-  - accentButtonPointerOver=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" Opacity="0.9"/>
-  - accentButtonPressed=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" Opacity="0.8"/>
-  - buttonNormal=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
-  - buttonPointerOver=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.25" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-  - buttonPressed=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.12" FallbackColor="#272727" />
-  - background=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
-  - borderBrush=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="#424242" />
+  - background=<AcrylicBrush TintColor="{ThemeResource AcrylicBG}" TintOpacity="0.25" TintLuminosityOpacity="1" FallbackColor="{ThemeResource AcrylicBG}" />
+  - borderBrush=<SolidColorBrush Color="{ThemeResource Border}" />
+  - accentButtonNormal=<SolidColorBrush Color="{ThemeResource AccentColor}" />
+  - accentButtonPointerOver=<SolidColorBrush Color="{ThemeResource AccentColor}" Opacity="0.9" />
+  - accentButtonPressed=<SolidColorBrush Color="{ThemeResource AccentColor}" Opacity="0.8" />
+  - accentbuttonBorderBrush=<SolidColorBrush Color="{ThemeResource AccentButtonBorder}" />
+  - buttonNormal=<SolidColorBrush Color="{ThemeResource ButtonFillNormal}" />
+  - buttonPointerOver=<SolidColorBrush Color="{ThemeResource ButtonFillPointerOver}" />
+  - buttonPressed=<SolidColorBrush Color="{ThemeResource ButtonFillPressed}" />
+  - buttonBorderBrush=<LinearGradientBrush StartPoint="0.5,0.9" EndPoint="0.5,1"><GradientStop Color="{ThemeResource ButtonBorderBrushTopGradient}" Offset="0.0" /><GradientStop Color="{ThemeResource ButtonBorderBrushBottomGradient}" Offset="1" /></LinearGradientBrush>
+  - menuPointerOver=<SolidColorBrush Color="{ThemeResource MenuFillPointerOver}" />
+  - menuPressed=<SolidColorBrush Color="{ThemeResource MenuFillPressed}" />
+  - listPointerOver=<SolidColorBrush Color="{ThemeResource ListFillPointerOver}" />
+  - listPressed=<SolidColorBrush Color="{ThemeResource ListFillPressed}" />
+  - tilesNormal=<SolidColorBrush Color="{ThemeResource TilesFillNormal}" />
+  - tilesPointerOver=<SolidColorBrush Color="{ThemeResource TilesFillPointerOver}" />
+  - tilesPressed=<SolidColorBrush Color="{ThemeResource TilesFillPressed}" />
+  - tilesBorderBrushNormal=<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientNormal}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientNormal}" Offset="1" /></LinearGradientBrush>
+  - tilesBorderBrushPointerOver=<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientPointerOver}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientPointerOver}" Offset="1" /></LinearGradientBrush>
+  - tilesBorderBrushPressed=<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientPressed}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientPressed}" Offset="1" /></LinearGradientBrush>
+  - textboxBorder=<SolidColorBrush Color="{ThemeResource TextBoxBorderBrush}" />
   - fontFamily=Segoe UI Variable
-  - buttonBorderBrush=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-  - accentButtonBorderBrush=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorLight1}" TintOpacity="0.25" TintLuminosityOpacity="0.25" FallbackColor="{ThemeResource SystemAccentColorLight1}"/>
 controlStyles:
   - target: Border#AcrylicBorder
     styles:
-      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.24" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+      - Background:=$background
       - BorderBrush:=$borderBrush
       - BorderThickness=1
       - CornerRadius=8
@@ -75,8 +85,8 @@ controlStyles:
       - Margin=3,0,0,-6
   - target: Grid#RootGrid@ContentPaneStates > SplitView > Grid > Grid > Border > Grid > StartUI.AllAppsPane
     styles:
-      - Margin@Apps=12,0,27,0
-      - Margin@Classic=12,0,0,0
+      - Margin@Apps=12,24,27,0
+      - Margin@Classic=12,24,0,0
       - FontWeight=Semibold
   - target: Button#Header > Border > TextBlock
     styles:
@@ -84,9 +94,9 @@ controlStyles:
       - FontWeight=SemiBold
       - Margin=0,0,-16,2
       - FontFamily=$fontFamily
-  - target: Grid#ContentPaneGrid
+  - target: Border#GridPane
     styles:
-      - Margin=0,24,0,0
+      - Margin=8,24,0,0
   - target: TextBlock#AppDisplayName
     styles:
       - FontSize=12
@@ -99,8 +109,8 @@ controlStyles:
       - FontFamily=$fontFamily
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root@CommonStates
     styles:
-      - RevealBackground@PointerOver:=$buttonNormal
-      - RevealBackground@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - RevealBackground@PointerOver:=$listPointerOver
+      - RevealBackground@Pressed:=$listPressed
       - CornerRadius=9
       - PointerOverBackground:=
       - PressedBackground:=
@@ -110,8 +120,7 @@ controlStyles:
   - target: StartUI.NavigationPaneGrid
     styles:
       - CornerRadius=8,0,0,8
-      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.16" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
-      - BorderBrush:=$borderBrush
+      - Background:=<SolidColorBrush Color="{ThemeResource NavPane}" />
       - BorderThickness=1,1,0,1
   - target: Grid#VerticalRoot
     styles:
@@ -157,8 +166,8 @@ controlStyles:
       - Glyph:=&#xE73E;
   - target: Border#UninstallFlyoutPresenterBorder
     styles:
-      - Width=376
-      - Height=149
+      - MinWidth=376
+      - MinHeight=149
       - Background:=$background
       - BorderBrush:=$borderBrush
       - CornerRadius=8
@@ -174,13 +183,13 @@ controlStyles:
       - Background@PointerOver:=$accentButtonPointerOver
       - Background@Pressed:=$accentButtonPressed
       - BorderThickness=0,0,0,1
-      - BorderBrush:=$accentButtonBorderBrush
+      - BorderBrush:=$accentbuttonBorderBrush
   - target: Button#UninstallButton > Grid@CommonStates > ContentPresenter > TextBlock
     styles:
       - FontFamily=$fontFamily
       - FontWeight=Normal
-      - Foreground=Black
-      - Opacity@Pressed=0.64
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemAltHighColor}" />
+      - Opacity@Pressed=0.8
   - target: TextBlock#StatusMessage
     styles:
       - Margin=20,0,0,0
@@ -192,31 +201,31 @@ controlStyles:
       - Height=32
   - target: Border#Border@CommonStates
     styles:
-      - Background@PointerOver:=$buttonNormal
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - Background@PointerOver:=$listPointerOver
+      - Background@Pressed:=$listPressed
       - CornerRadius=6
       - BorderBrush=Transparent
   - target: StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates
     styles:
-      - Background@PointerOver:=$buttonNormal
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-      - BorderBrush:=
+      - Background@PointerOver:=$listPointerOver
+      - Background@Pressed:=$listPressed
+      - BorderBrush=Transparent
       - CornerRadius=6
       - Margin=-1,0,-1,0
   - target: StartUI.NavigationPaneButton#UserTileButton > ContentPresenter@CommonStates
     styles:
-      - Background@PointerOver:=$buttonNormal
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-      - BorderBrush:=
+      - Background@PointerOver:=$listPointerOver
+      - Background@Pressed:=$listPressed
+      - BorderBrush=Transparent
       - CornerRadius=6
       - Margin=-1,0,-1,0
   - target: Grid#RootPanel@CommonStates > ContentPresenter
     styles:
-      - BorderBrush:=
-      - Background@PointerOver:=$buttonNormal
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-      - Background@PressedSelected:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-      - Background@PointerOverSelected:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - BorderBrush=Transparent
+      - Background@PointerOver:=$listPointerOver
+      - Background@Pressed:=$listPressed
+      - Background@PressedSelected:=$listPressed
+      - Background@PointerOverSelected:=$listPointerOver
       - CornerRadius=6
       - BorderThickness=0
   - target: StartUI.AllAppsGridListViewItem
@@ -230,14 +239,14 @@ controlStyles:
       - CornerRadius=6
   - target: Button#PinButton > Grid@CommonStates
     styles:
-      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.25" FallbackColor="#424242" />
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Background@PointerOver:=$menuPointerOver
+      - Background@Pressed:=$menuPressed
       - CornerRadius=0,4,4,0
   - target: MenuFlyoutPresenter
     styles:
       - MinWidth=165
       - CornerRadius=8
-      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.48" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+      - Background:=$background
   - target: JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > TextBlock
     styles:
       - FontFamily=$fontFamily
@@ -253,7 +262,7 @@ controlStyles:
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.84
+      - Opacity@Pressed=0.8
       - Margin=0,-1,0,0
   - target: Button#CancelButton > Grid@CommonStates > ContentPresenter
     styles:
@@ -261,13 +270,13 @@ controlStyles:
       - Background@PointerOver:=$accentButtonPointerOver
       - Background@Pressed:=$accentButtonPressed
       - BorderThickness=0,0,0,1
-      - BorderBrush:=$accentButtonBorderBrush
+      - BorderBrush:=$accentbuttonBorderBrush
   - target: Button#CancelButton > Grid@CommonStates > ContentPresenter > TextBlock
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Foreground=Black
-      - Opacity@Pressed=0.64
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemAltHighColor}" />
+      - Opacity@Pressed=0.8
   - target: MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > Ellipse
     styles:
       - Width=32
@@ -276,7 +285,7 @@ controlStyles:
   - target: MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > StackPanel > TextBlock#TextBlock
     styles:
       - FontSize=14
-      - Margin=8,0,0,-2
+      - Margin=8,0,0,1
       - FontFamily=$fontFamily
   - target: MenuFlyoutItem
     styles:
@@ -311,20 +320,22 @@ controlStyles:
       - Margin=-16,-23,0,7
   - target: StartUI.NavigationPaneBadgeView > Grid > Windows.UI.Xaml.Shapes.Rectangle
     styles:
-      - Fill:=<SolidColorBrush Color="{ThemeResource SystemAccentColorLight2}" />
+      - Fill:=$accentButtonNormal
+      - Stroke:=$accentButtonNormal
   - target: StartUI.NavigationPaneBadgeView#Badge > Grid > TextBlock
     styles:
-      - Foreground=Black
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemAltHighColor}" />
       - FontFamily=$fontFamily
   - target: ItemsStackPanel > StartUI.ViewSelectionListViewItem > Grid@CommonStates
     styles:
       - Background@Selected:=$buttonNormal
-  - target: Button#PinButton > Grid@CommonStates > Border
+      - CornerRadius=6
+  - target: Button#PinButton > Grid > Border
     styles:
       - Background=Transparent
       - Height=16
-      - BorderBrush:=$borderBrush
-      - BorderThickness=0.5,0,0,0
+      - BorderBrush:=$buttonBorderBrush
+      - BorderThickness=1,0,0,0
       - CornerRadius=0
       - ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="0" FromVerticalOffset="37.5" /></TransitionCollection>
   - target: JumpViewUI.JumpListListViewItem
@@ -333,14 +344,14 @@ controlStyles:
       - Height=30
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > StartUI.TileViewControl > Grid > Border#Background
     styles:
-      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.24" FallbackColor="#424242" />
-      - Background@Normal:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.72" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
-      - BorderThickness=0,1.5,0,0
+      - Background@Normal:=$tilesNormal
+      - Background@PointerOver:=$tilesPointerOver
+      - Background@Pressed:=$tilesPressed
+      - BorderBrush@Normal:=$tilesBorderBrushNormal
+      - BorderBrush@PointerOver:=$tilesBorderBrushPointerOver
+      - BorderBrush@Pressed:=$tilesBorderBrushPressed
+      - BorderThickness=0,2,0,2
       - CornerRadius=8
-      - BorderBrush@Normal:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.48" />
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
-      - BorderBrush@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
-      - BorderBrush@Pressed:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.36" />
   - target: TileGridNestedPanel > StartUI.TileListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
     styles:
       - RevealBackground:=
@@ -350,7 +361,7 @@ controlStyles:
   - target: ToolTip > ContentPresenter
     styles:
       - CornerRadius=4
-      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - Background:=$background
       - BorderThickness=0
   - target: Button#UninstallButton
     styles:
@@ -369,17 +380,17 @@ controlStyles:
     styles:
       - Padding=12,0,0,0
       - MinHeight=30
-      - Background@PointerOver:=$buttonNormal
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-      - BorderBrush:=
+      - Background@PointerOver:=$menuPointerOver
+      - Background@Pressed:=$menuPressed
+      - BorderBrush=Transparent
       - MinWidth=208
   - target: ToggleMenuFlyoutItem > Grid@CommonStates
     styles:
       - Padding=12,0,0,0
       - Height=28
-      - Background@PointerOver:=$buttonNormal
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-      - BorderBrush:=
+      - Background@PointerOver:=$menuPointerOver
+      - Background@Pressed:=$menuPressed
+      - BorderBrush=Transparent
   - target: TextBlock#ShutdownConfirmationTextBlock
     styles:
       - FontFamily=$fontFamily
@@ -395,16 +406,16 @@ controlStyles:
       - Background@PointerOver:=$buttonPointerOver
       - Background@Pressed:=$buttonPressed
       - BorderThickness=1
-      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-  - target: Border#NameTextBoxHost > TextBox > Grid > Button#DeleteButton > Grid@CommonStates
+      - BorderBrush@Normal:=$buttonBorderBrush
+  - target: TextBox > Grid > Button#DeleteButton > Grid@CommonStates
     styles:
-      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.25" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Background@PointerOver:=$listPointerOver
       - CornerRadius=4
       - Height=20
       - Width=28
       - Margin=-12,0,0,0
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
-  - target: Border#NameTextBoxHost > TextBox
+      - Background@Pressed:=$listPressed
+  - target: TextBox
     styles:
       - FontWeight=Semibold
       - FontSize=14
@@ -415,12 +426,12 @@ controlStyles:
   - target: TextBlock#SignedInStatus
     styles:
       - FontSize=12
-      - Margin=8,4,0,0
+      - Margin=8,0,0,2
       - FontFamily=$fontFamily
-  - target: MenuFlyoutSeparator > Rectangle
+  - target: MenuFlyoutSeparator
     styles:
-      - Fill:=<SolidColorBrush Color="{ThemeResource SystemChromeMediumHighColor}" Opacity="0.72" />
-      - Margin=1,4,1,4
+      - Background:=$buttonBorderBrush
+      - Padding=1,4,1,4
   - target: Grid#RootPanel@CommonStates > Rectangle
     styles:
       - Fill@Selected:=$accentButtonNormal
@@ -428,14 +439,14 @@ controlStyles:
       - Width=3
       - RadiusX=2
       - RadiusY=2
-      - Canvas.ZIndex=1
+      - Canvas.ZIndex=5
       - Fill@PointerOverSelected:=$accentButtonNormal
-  - target: StartUI.NavigationPaneGrid > StartUI.UserTileView > StartUI.NavigationPaneButton#UserTileButton
+  - target: 'StartUI.NavigationPaneGrid > StartUI.UserTileView > StartUI.NavigationPaneButton#UserTileButton '
     styles:
       - Margin=6
       - Height=36
       - CornerRadius=6
-  - target: StartUI.NavigationPaneGrid > StartUI.PowerOptionsView > StartUI.NavigationPaneButton#PowerButton
+  - target: 'StartUI.NavigationPaneGrid > StartUI.PowerOptionsView > StartUI.NavigationPaneButton#PowerButton '
     styles:
       - Margin=6
       - Height=36
@@ -453,15 +464,15 @@ controlStyles:
   - target: StartUI.AppListViewItem > Grid#RootPanel@CommonStates > ContentPresenter > StartUI.NavigationPaneItemPanel > FontIcon
     styles:
       - Margin=-12,0,0,0
-      - Opacity@Pressed=0.84
+      - Opacity@Pressed=0.8
   - target: StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates > StartUI.NavigationPaneItemPanel > Grid > FontIcon
     styles:
       - Margin=-12,0,0,0
-      - Opacity@Pressed=0.84
+      - Opacity@Pressed=0.8
   - target: StartUI.NavigationPaneButton#UserTileButton > ContentPresenter@CommonStates > StartUI.NavigationPaneItemPanel > Grid
     styles:
       - Margin=-12,0,0,0
-      - Opacity@Pressed=0.84
+      - Opacity@Pressed=0.8
       - Width=24
       - Height=24
   - target: JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > StackPanel > TextBlock
@@ -473,10 +484,10 @@ controlStyles:
       - FontFamily=$fontFamily
   - target: MenuFlyoutSubItem > Grid@CommonStates
     styles:
-      - Background@SubMenuOpened:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
-      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - Background@SubMenuOpened:=$menuPointerOver
+      - Background@PointerOver:=$menuPointerOver
       - Padding=12,0,0,0
-      - BorderBrush:=
+      - BorderBrush=Transparent
   - target: Viewbox > Border > TextBlock
     styles:
       - FontWeight=SemiBold
@@ -491,16 +502,16 @@ controlStyles:
       - FontFamily=$fontFamily
   - target: JumpViewUI.JumpListListViewItem > Grid@CommonStates
     styles:
-      - Background@PointerOver:=$buttonNormal
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.64" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-      - BorderBrush:=
+      - Background@PointerOver:=$menuPointerOver
+      - Background@Pressed:=$menuPressed
+      - BorderBrush=Transparent
   - target: Button#PinButton
     styles:
       - MinWidth=44
   - target: Button#PinButton > Grid@CommonStates > Border > ContentPresenter > TextBlock
     styles:
       - Margin=3,0,0,0
-      - Opacity@Pressed=0.84
+      - Opacity@Pressed=0.8
   - target: FontIcon#SubItemChevron
     styles:
       - Margin=-30,0,0,0
@@ -537,25 +548,23 @@ controlStyles:
   - target: ComboBox > Grid@CommonStates > Border#Background
     styles:
       - Background@Normal:=$buttonNormal
+      - Background@PointerOver:=$buttonPointerOver
+      - Background@Pressed:=$buttonPressed
       - CornerRadius=4
       - BorderThickness=1
       - BorderBrush:=$buttonBorderBrush
-      - Background@PointerOver:=$buttonPointerOver
-      - Background@Pressed:=$buttonPressed
   - target: ComboBoxItem
     styles:
       - CornerRadius=4
       - Margin=3,0,3,0
   - target: ComboBoxItem > Grid@CommonStates
     styles:
-      - Background@PointerOver:=$buttonNormal
-      - Background@Pressed:=$buttonNormal
-      - Background@Selected:=$buttonNormal
-      - Background@SelectedPressed:=$buttonNormal
-      - Background@SelectedUnfocused:=$buttonNormal
-      - Background@SelectedDisabled:=$buttonNormal
-      - Background@SelectedPointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumLowColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
-      - BorderBrush:=
+      - Background@PointerOver:=$menuPointerOver
+      - Background@Pressed:=$menuPressed
+      - Background@Selected:=$menuPointerOver
+      - Background@SelectedPressed:=$menuPressed
+      - Background@SelectedPointerOver:=$menuPointerOver
+      - BorderBrush=Transparent
   - target: Border#PopupBorder
     styles:
       - Background:=$background
@@ -576,26 +585,26 @@ controlStyles:
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.84
-      - Foreground=White
+      - Opacity@Pressed=0.8
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: Button#ShutdownReasonButton > ContentPresenter@CommonStates > TextBlock
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.84
-      - Foreground=White
+      - Opacity@Pressed=0.8
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: ComboBox > Grid@CommonStates > ContentPresenter > TextBlock
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.84
-      - Foreground=White
+      - Opacity@Pressed=0.8
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: ComboBoxItem > Grid@CommonStates > ContentPresenter > TextBlock
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.84
-      - Foreground=White
+      - Opacity@Pressed=0.8
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
       - Margin=0,1,0,-1
   - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=FrequentList] > StackPanel > Button > Border > TextBlock
     styles:
@@ -620,7 +629,7 @@ controlStyles:
       - RadiusY=4
   - target: TextBox > Grid > Border#BackgroundElement
     styles:
-      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.72" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
+      - Background:=<SolidColorBrush Color="{ThemeResource TextBoxBG}" />
       - CornerRadius=4
       - BorderThickness=0,0,0,2
       - BorderBrush:=$accentButtonNormal
@@ -628,15 +637,15 @@ controlStyles:
     styles:
       - BorderThickness=1,1,1,0
       - CornerRadius=4
-      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.5" />
       - Margin=2
   - target: Grid#MainGrid@FocusStates > Rectangle#BackgroundElement
     styles:
-      - Fill@FocusState_Hover:=$buttonNormal
+      - Fill@FocusState_Hover:=$tilesNormal
       - Fill@FocusState_None=Transparent
-      - Fill@FocusState_HoverPlaceholder:=$buttonNormal
+      - Fill@FocusState_HoverPlaceholder:=$tilesNormal
       - StrokeThickness=0
-      - Fill@FocusState_Keyboard:=$buttonNormal
+      - Fill@FocusState_Keyboard:=$tilesNormal
       - RadiusX=4
       - RadiusY=4
       - Height=28
@@ -644,22 +653,22 @@ controlStyles:
   - target: Grid#MainGrid@FocusStates > Grid > Border#NameTextBlockHost
     styles:
       - BorderThickness=0,0,0,2
-      - BorderBrush@FocusState_Hover:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
+      - BorderBrush@FocusState_Hover:=$textboxBorder
       - CornerRadius=4
-      - BorderBrush@FocusState_HoverPlaceholder:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
+      - BorderBrush@FocusState_HoverPlaceholder:=$textboxBorder
       - Margin=0,0,-48,0
-      - BorderBrush@FocusState_Keyboard:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
+      - BorderBrush@FocusState_Keyboard:=$textboxBorder
   - target: StackPanel > Button#DeleteButton > Grid > ContentPresenter
     styles:
-      - BorderBrush:=
+      - BorderBrush=Transparent
   - target: FontIcon
     styles:
       - FontFamily=Segoe Fluent Icons
-      - Foreground=White
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: Grid#ContentRoot
     styles:
       - BorderThickness=1,0,0,0
-      - BorderBrush:=<SolidColorBrush Color="{ThemeResource SystemColorButtonTextColor}" Opacity="0.36" />
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource NavPaneBorder}" />
       - Margin=0,1,0,1
   - target: Border#NameTextBoxHost > TextBox
     styles:
@@ -670,7 +679,7 @@ controlStyles:
       - OpenPaneLength=48
   - target: StartUI.NavigationPaneGrid > Border
     styles:
-      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.25" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
+      - Background:=<SolidColorBrush Color="{ThemeResource NavPane}" />
       - Width=48
   - target: StartUI.ExpandCollapseButton
     styles:
@@ -685,13 +694,13 @@ controlStyles:
       - Margin=-1,-2,0,-2
       - RadiusX=4
       - RadiusY=4
-  - target: Border#NameTextBoxHost > TextBox > Grid > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement
+  - target: TextBox > Grid > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement
     styles:
-      - Foreground=White
-      - Opacity@Pressed=0.84
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Opacity@Pressed=0.8
   - target: ScrollViewer#ContentElement
     styles:
-      - Foreground=White
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
       - Margin=5,0,0,1
       - FontFamily=Segoe UI Variable Small
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > Grid > Border
@@ -709,27 +718,27 @@ controlStyles:
       - Grid.Row=0
   - target: Border#HighlightBackground
     styles:
-      - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.14" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - Background:=$menuPointerOver
       - Margin=-2
       - CornerRadius=6
-      - BorderBrush=White
+      - BorderBrush:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: Button#DeleteButton > Grid > Border
     styles:
       - Background=Transparent
   - target: StartUI.TileFolderNameTextBox > Grid@CommonStates > Border#BorderElement
     styles:
-      - Background@PointerOver:=$buttonNormal
-      - Background@Focused:=<AcrylicBrush TintColor="{ThemeResource SystemChromeLowColor}" TintOpacity="0.72" TintLuminosityOpacity="0.96" FallbackColor="{ThemeResource SystemChromeLowColor}" />
+      - Background@PointerOver:=$tilesNormal
+      - Background@Focused:=<SolidColorBrush Color="{ThemeResource TextBoxBG}" />
       - CornerRadius=4
-      - ' BorderThickness=0.5,0.5,0.5,0'
-      - BorderBrush@Focused:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
+      - BorderThickness=1,1,1,0
+      - BorderBrush@Focused:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.5" />
       - Height=28
       - Margin@PointerOver=-1
       - Margin@Focused=0
   - target: StartUI.TileFolderNameTextBox > Grid@CommonStates
     styles:
-      - BorderThickness=0,0,0,1.5
-      - BorderBrush@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.96" />
+      - BorderThickness=0,0,0,2
+      - BorderBrush@PointerOver:=$textboxBorder
       - BorderBrush@Focused:=$accentButtonNormal
       - CornerRadius=4
       - Height=28
@@ -738,16 +747,16 @@ controlStyles:
       - Margin=3,-4,0,0
   - target: Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates
     styles:
-      - Background@PointerOver:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.25" FallbackColor="{ThemeResource SystemChromeMediumHighColor}" />
-      - Background@Pressed:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.48" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+      - Background@PointerOver:=$listPointerOver
+      - Background@Pressed:=$listPressed
       - CornerRadius=4
       - Width=28
       - Height=20
       - Margin=-10,1,0,0
   - target: Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement
     styles:
-      - Foreground=White
-      - Opacity@Pressed=0.84
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+      - Opacity@Pressed=0.8
   - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallIncrease > Grid
     styles:
       - Background=Transparent
@@ -762,7 +771,7 @@ controlStyles:
       - Opacity@Focused=0
   - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar > Grid > Grid > Rectangle
     styles:
-      - Fill:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumHighColor}" TintOpacity="0" TintLuminosityOpacity="0.8" FallbackColor="{ThemeResource SystemChromeMediumLowColor}" />
+      - Fill:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.2" />
       - RadiusX=4
       - RadiusY=4
   - target: Rectangle#Overlay
@@ -788,13 +797,8 @@ controlStyles:
   - target: StartUI.ViewSelectionListViewItem > Grid#RootPanel@CommonStates > ContentPresenter > StartUI.NavigationPaneItemPanel > FontIcon
     styles:
       - Margin=-12,0,0,0
-      - Opacity@Pressed=0.84
-      - Opacity@PressedSelected=0.84
-  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > StartUI.TileViewControl > Grid > Border#GlideAnimationContainer
-    styles:
-      - CornerRadius=8
-      - BorderThickness=0,1.5,0,0
-      - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0" TintLuminosityOpacity="0.16" FallbackColor="#5B5B5B" />
+      - Opacity@Pressed=0.8
+      - Opacity@PressedSelected=0.8
   - target: StartUI.TileViewControl > Grid
     styles:
       - CornerRadius=8
@@ -817,14 +821,69 @@ controlStyles:
   - target: ComboBox > Grid@CommonStates > FontIcon#DropDownGlyph
     styles:
       - FontFamily=Segoe Fluent Icons
-      - Opacity@Pressed=0.84
-      - Foreground=White
+      - Opacity@Pressed=0.8
+      - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
+  - target: JumpViewUI.ControlHostMenuFlyoutPresenter
+    styles:
+      - Background:=$background
 themeResourceVariables:
-  - ''
+  - AccentColor@Dark={ThemeResource SystemAccentColorLight2}
+  - AccentColor@Light={ThemeResource SystemAccentColorDark1}
+  - AccentButtonBorder@Dark={ThemeResource SystemAccentColorLight1}
+  - AccentButtonBorder@Light={ThemeResource SystemAccentColorDark2}
+  - ButtonFillNormal@Dark=#0FFFFFFF
+  - ButtonFillNormal@Light=#B3FFFFFF
+  - ButtonFillPointerOver@Dark=#15FFFFFF
+  - ButtonFillPointerOver@Light=#80F9F9F9
+  - ButtonFillPressed@Dark=#0BFFFFFF
+  - ButtonFillPressed@Light=#4DF9F9F9
+  - ButtonBorderBrushTopGradient@Dark=#12FFFFFF
+  - ButtonBorderBrushTopGradient@Light=#0F000000
+  - ButtonBorderBrushBottomGradient@Dark=#18FFFFFF
+  - ButtonBorderBrushBottomGradient@Light=#26000000
+  - NavPane@Dark=#40000000
+  - NavPane@Light=#80FFFFFF
+  - NavPaneBorder@Dark=#66000000
+  - NavPaneBorder@Light=#05000000
+  - Border@Dark=#CC424242
+  - Border@Light=#FFCCCCCC
+  - AcrylicBG@Dark=#1F1F1F
+  - AcrylicBG@Light=#F2F2F2
+  - ListFillPointerOver@Dark=#15FFFFFF
+  - ListFillPointerOver@Light=#FAFFFFFF
+  - ListFillPressed@Dark=#0BFFFFFF
+  - ListFillPressed@Light=#80FFFFFF
+  - MenuFillPointerOver@Dark=#15FFFFFF
+  - MenuFillPointerOver@Light=#09000000
+  - MenuFillPressed@Dark=#0BFFFFFF
+  - MenuFillPressed@Light=#06000000
+  - TilesFillNormal@Dark=#0FFFFFFF
+  - TilesFillNormal@Light=#80FFFFFF
+  - TilesFillPointerOver@Dark=#26FFFFFF
+  - TilesFillPointerOver@Light=#FAFFFFFF
+  - TilesFillPressed@Dark=#0BFFFFFF
+  - TilesFillPressed@Light=#80FFFFFF
+  - TilesBorderBrushBottomGradientNormal@Dark=Transparent
+  - TilesBorderBrushBottomGradientNormal@Light=#1A000000
+  - TilesBorderBrushBottomGradientPointerOver@Dark=Transparent
+  - TilesBorderBrushBottomGradientPointerOver@Light=#26000000
+  - TilesBorderBrushBottomGradientPressed@Dark=Transparent
+  - TilesBorderBrushBottomGradientPressed@Light=#1A000000
+  - TilesBorderBrushTopGradientNormal@Dark=#33FFFFFF
+  - TilesBorderBrushTopGradientNormal@Light=Transparent
+  - TilesBorderBrushTopGradientPointerOver@Dark=#4DFFFFFF
+  - TilesBorderBrushTopGradientPointerOver@Light=Transparent
+  - TilesBorderBrushTopGradientPressed@Dark=#26FFFFFF
+  - TilesBorderBrushTopGradientPressed@Light=Transparent
+  - TextBoxBorderBrush@Dark=#33FFFFFF
+  - TextBoxBorderBrush@Light=#1A000000
+  - TextBoxBG@Dark={ThemeResource SystemChromeLowColor}
+  - TextBoxBG@Light=White
 webContentStyles:
   - target: ''
     styles:
       - ''
 webContentCustomJs: ''
+
 ```
 </details>
