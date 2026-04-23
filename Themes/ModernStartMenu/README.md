@@ -5,31 +5,31 @@ ModernStartMenu is a Fluent start menu theme designed for Windows 10 Start menu 
 **Author**: [ndrew6075](https://github.com/ndrew6075)
 
 ![Screenshot](ModernStartMenu.gif)
+
 ![Screenshot](screenshot-tiles.png)
 
-## Windows 10 Start menu on Windows 11 installation
+## Enabling Windows 10 Start menu on Windows 11
 
 If you're already using the Windows 10 Start menu, you can skip this step.
 
-**Installation:**
-* Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher) (Under the *"Releases"* page).
-* Once installed, open *"Properties (ExplorerPatcher)"* via the Start menu or right-click the taskbar > *"Properties"*.
-* Enable Windows 10 start menu by going to *"Start menu"* > *"Start menu style"* > *"Windows 10"* > *"Restart File Explorer"*.
+* Install [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher).
+* Once installed, open **Properties (ExplorerPatcher)** via the Start menu or right-click the taskbar > **Properties**.
+* Go to **Start menu** > **Start menu style** > **Windows 10** > **Restart File Explorer**.
 
 ![Screenshot](open_ep.png)
 ![Screenshot](ep_configure.png)
 
 > [!IMPORTANT]
-> You may see *"Corner preference"* on the same page, keep it as *"Not rounded"*, as ModernStartMenu rounds the Start menu and makes it float instead of ExplorerPatcher.
+> Set **Corner preference** to **Not rounded**, as ModernStartMenu rounds the Start menu instead of ExplorerPatcher.
 
 ## Bugs
 * Legacy Windows 10 effects (Reveal, and 3D push) are still present.
 * Items may not align/center correctly on higher DPIs.
-* Tiles background are broken when dragged from applist.
+* Tiles have a broken background when dragged from applist.
 * Right-click menus in textbox are not styled correctly.
 
 ## Unsupported configurations/settings
-* Windows 10 (Partially supported) ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
+* Windows 10 version **1703** and lower ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
 * *"Show accent color on Start and taskbar"* enabled.
 * Fullscreen Start menu (ExplorerPatcher).
 
