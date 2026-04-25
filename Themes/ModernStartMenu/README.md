@@ -29,7 +29,7 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 * Right-click menus in textbox are not styled correctly.
 
 ## Unsupported configurations/settings
-* Windows 10 version **1703** and lower ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
+* Windows 10 version **1607** and lower ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
 * *"Show accent color on Start and taskbar"* enabled.
 * Fullscreen Start menu (ExplorerPatcher).
 
