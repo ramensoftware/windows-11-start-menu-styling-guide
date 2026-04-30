@@ -682,7 +682,7 @@ controlStyles:
       - Width=48
   - target: StartUI.ExpandCollapseButton
     styles:
-      - Visibility=Collapsed
+      - Visibility=1
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar
     styles:
       - CornerRadius=2
@@ -807,7 +807,7 @@ controlStyles:
       - RadiusY=6
   - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > TextBlock#StatusMessage[Text=System]
     styles:
-      - Visibility=Collapsed
+      - Visibility=1
   - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=ExpandCollapseButton] > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > StackPanel
     styles:
       - Margin=9,0,0,0
@@ -816,7 +816,7 @@ controlStyles:
       - Margin=9,0,0,0
   - target: FontIcon#Gripper
     styles:
-      - Visibility=Collapsed
+      - Visibility=1
   - target: ComboBox > Grid@CommonStates > FontIcon#DropDownGlyph
     styles:
       - FontFamily=Segoe Fluent Icons
@@ -842,7 +842,7 @@ themeResourceVariables:
   - ButtonBorderBrushBottomGradient@Light=#26000000
   - NavPane@Dark=#40000000
   - NavPane@Light=#80FFFFFF
-  - NavPaneBorder@Dark=#66000000
+  - NavPaneBorder@Dark=#4D000000
   - NavPaneBorder@Light=#05000000
   - Border@Dark=#CC424242
   - Border@Light=#FFCCCCCC
@@ -883,6 +883,5 @@ webContentStyles:
     styles:
       - ''
 webContentCustomJs: ''
-
 ```
 </details>
