@@ -321,11 +321,6 @@ controlStyles:
       - MaxWidth=500
       - Width=500
       - MinWidth=500
-  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
-    styles:
-      - MaxWidth=500
-      - Width=500
-      - MinWidth=500
   - target: StartDocked.StartSizingFrame
     styles:
       - MinWidth=500
