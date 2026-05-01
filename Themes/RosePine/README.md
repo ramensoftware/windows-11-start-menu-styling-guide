@@ -311,20 +311,21 @@ controlStyles:
     styles:
       - BorderThickness=1.5
       - BorderBrush=#ebbcba
-  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
-    styles:
-      - MaxWidth=500
-      - Width=500
-      - MinWidth=500
-  - target: StartDocked.StartSizingFramePanel
-    styles:
-      - MaxWidth=500
-      - Width=500
-      - MinWidth=500
   - target: StartDocked.StartSizingFrame
     styles:
       - MinWidth=500
-      - Width=500
+      - MaxWidth=500
+  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
+    styles:
+      - MinWidth=500
+      - MaxWidth=500
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
+    styles:
+      - MinWidth=500
+      - MaxWidth=500
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent
+    styles:
+      - MinWidth=500
       - MaxWidth=500
   - target: StartMenu:ExpandedFolderList
     styles:
