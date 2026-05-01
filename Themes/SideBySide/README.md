@@ -154,19 +154,17 @@ controlStyles:
       - Padding=-40,0,110,0
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity="1" Opacity="1"/>
       - Margin=-300,0,745,1
-  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#AllAppsRoot
-    styles:
-      - Margin=-516,0,745,1
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
     styles:
       - Visibility=Collapsed
   - target: StartDocked.StartSizingFrame
     styles:
+      - MinWidth=860
       - MaxWidth=860
-      - Width=860
   - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
     styles:
-      - Width=644
+      - MinWidth=860
+      - MaxWidth=860
   - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton
     styles:
       - Visibility=Collapsed

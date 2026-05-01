@@ -149,9 +149,6 @@ controlStyles:
       - Visibility=Visible
       - Width=320
       - Margin=-830,-42,830,0
-  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#AllAppsRoot
-    styles:
-      - Margin=-1046,-42,1046,0
   - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
     styles:
       - Visibility=Collapsed
