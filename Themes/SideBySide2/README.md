@@ -163,14 +163,10 @@ controlStyles:
     styles:
       - Visibility=Visible
       - Width=320
-      - Transform3D:=<CompositeTransform3D TranslateX="-1060" />
+      - RenderTransform:=<TranslateTransform X="-284"/>
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
     styles:
       - Visibility=1
-  - target: StartDocked.StartSizingFrame
-    styles:
-      - MinWidth=776
-      - MaxWidth=776
   - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
     styles:
       - MinWidth=776

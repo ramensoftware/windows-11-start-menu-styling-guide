@@ -225,9 +225,18 @@ controlStyles:
       - CornerRadius=25
       - BorderBrush=#ebbcba
       - Background=#191724
-  - target: StartDocked.StartSizingFramePanel
+  - target: Windows.UI.Xaml.Controls.Border#DropShadow
     styles:
-      - CornerRadius=25
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Border#StartDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Border#RootGridDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Border#RightCompanionDropShadow
+    styles:
+      - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.FontIcon > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.TextBlock
     styles:
       - Foreground=#eb6f92
@@ -311,10 +320,6 @@ controlStyles:
     styles:
       - BorderThickness=1.5
       - BorderBrush=#ebbcba
-  - target: StartDocked.StartSizingFrame
-    styles:
-      - MinWidth=500
-      - MaxWidth=500
   - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
     styles:
       - MinWidth=500

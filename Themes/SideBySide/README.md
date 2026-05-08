@@ -150,17 +150,12 @@ controlStyles:
   - target: Grid#AllAppsRoot
     styles:
       - Visibility=Visible
-      - MinWidth=390
-      - Padding=-40,0,110,0
+      - Width=320
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity="1" Opacity="1"/>
-      - Margin=-300,0,745,1
+      - RenderTransform:=<TranslateTransform X="269"/>
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
     styles:
       - Visibility=Collapsed
-  - target: StartDocked.StartSizingFrame
-    styles:
-      - MinWidth=860
-      - MaxWidth=860
   - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
     styles:
       - MinWidth=860

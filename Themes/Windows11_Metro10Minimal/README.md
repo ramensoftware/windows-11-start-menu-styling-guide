@@ -139,9 +139,6 @@ controlStyles:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-theme: ''
-disableNewStartMenuLayout: '1'
-# disableNewStartMenuLayout: disableNewLayoutKeepPhoneLink
 controlStyles:
   - target: Windows.UI.Xaml.Controls.Grid#UndockedRoot
     styles:
@@ -151,7 +148,7 @@ controlStyles:
     styles:
       - Visibility=Visible
       - Width=540
-      - Margin=-1000,0,0,0
+      - RenderTransform:=<TranslateTransform X="-81"/>
   - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
     styles:
       - Visibility=Collapsed
@@ -187,8 +184,6 @@ controlStyles:
       - Visibility=Collapsed
   - target: StartDocked.StartSizingFrame
     styles:
-      - MinWidth=460
-      - MaxWidth=460
       - MaxHeight=670
   - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
     styles:
