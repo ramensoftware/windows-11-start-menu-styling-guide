@@ -45,7 +45,6 @@ The theme styles have to be imported manually. To do that, follow these steps:
 
 ```yaml
 theme: ''
-disableNewStartMenuLayout: legacyClassicLayout
 styleConstants:
   - background=<WindhawkBlur TintColor="{ThemeResource AcrylicBG}" TintOpacity="0.5" TintLuminosityOpacity="1" FallbackColor="{ThemeResource AcrylicBG}" BlurAmount="30" />
   - borderBrush=<SolidColorBrush Color="{ThemeResource Border}" />
@@ -878,11 +877,5 @@ themeResourceVariables:
   - TextBoxBorderBrush@Light=#1A000000
   - TextBoxBG@Dark={ThemeResource SystemChromeLowColor}
   - TextBoxBG@Light=White
-webContentStyles:
-  - target: ''
-    styles:
-      - ''
-webContentCustomJs: ''
-'
 ```
 </details>
