@@ -28,8 +28,6 @@
   * [Clear transparent background](#clear-transparent-background)
   * [Acrylic effect as color](#acrylic-effect-as-color)
   * [WindhawkBlur effect as color](#windhawkblur-effect-as-color)
-    * [Hex color](#hex-color)
-    * [ThemeResource color](#themeresource-color)
   * [Mica effect as color](#mica-effect-as-color)
   * [Gradient as color](#gradient-as-color)
   * [Image as color](#image-as-color)
@@ -391,41 +389,43 @@ Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" Tin
 
 ### WindhawkBlur effect as color
 
-An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic because it has a customizable blur radius and has fewer bugs (e.g. https://github.com/ramensoftware/windhawk-mods/issues/742).
-
-> [!NOTE]
-> WindhawkBlur does not currently support color names (e.g. `Red`) or the `FallbackColor` property.
-
-- `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
-- `TintLuminosityOpacity`: Shifts pixel luminance towards the tint color's luminance. Range: 0.0 to 1.0.
-- `TintSaturation`: Controls the saturation of the blurred content. 1.0 is unchanged, 0.0 is fully desaturated (grayscale).
-- `NoiseOpacity`: Adds a procedural noise texture overlay. Controls how visible the noise is (0.0 to 1.0).
-- `NoiseDensity`: Controls the granularity of the noise texture (defaults to 1.0).
-
-#### Hex color
+An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic in that it has a customizable blur radius and has fewer bugs (e.g. https://github.com/ramensoftware/windhawk-mods/issues/742).
 
 ```
 Fill:=<WindhawkBlur BlurAmount="10" TintColor="#80ff0000" />
 ```
+
+`BlurAmount` - Radius of the blur effect. Set to 30 to roughly mimic Acrylic. Defaults to 0 (no blur).
+
+`TintColor` - Color applied to the blur. Accepts a hex color in `#AARRGGBB` or `#RRGGBB` format, or a `ThemeResource` such as `{ThemeResource SystemAccentColor}`. Color names like `Red` are not supported. Defaults to transparent (no visible tint).
+
+`TintOpacity` - Opacity of the tint, between 0.0 and 1.0. Overrides the alpha component of `TintColor` when set. If omitted, the alpha component of `TintColor` is used (255 for `#RRGGBB`).
+
+`TintLuminosityOpacity` - Shifts pixel luminance towards the tint color's luminance. Range: 0.0 to 1.0. Defaults to 0.0 (no luminosity blend).
+
+`TintSaturation` - Saturation of the blurred content. 1.0 is unchanged, 0.0 is fully desaturated (grayscale). Defaults to 1.0.
+
+`NoiseOpacity` - Visibility of an added procedural noise texture overlay. Range: 0.0 to 1.0. Defaults to 0.0 (no noise).
+
+`NoiseDensity` - Granularity of the noise texture. Defaults to 1.0.
+
+`FallbackColor` - Color used in place of the blur effect when battery saver is on or when transparency effects are disabled in the system settings. Accepts a hex color or a `ThemeResource`. If omitted, the blur effect is used regardless of those settings.
+
+The following two examples produce the same effect, a red tint at 50% opacity:
+
 ```
+Fill:=<WindhawkBlur BlurAmount="10" TintColor="#80ff0000" />
 Fill:=<WindhawkBlur BlurAmount="10" TintColor="#ff0000" TintOpacity="0.5" />
 ```
-_These examples set a blur that is tinted with red at 50% opacity. Both versions have the same effect._
-
-- `TintColor`: Hex color in `#AARRGGBB` or `#RRGGBB` format that is applied to the blur.
-- `TintOpacity`: Opacity of the color that overrides the alpha of `TintColor`.
 
 > [!TIP]
-> There is no need to specify a `TintOpacity` value if your `TintColor` has an alpha value.
+> There is no need to specify a `TintOpacity` value if your `TintColor` already has an alpha component.
 
-#### ThemeResource color
+You can use a `ThemeResource` for a dynamic look that fits the current theme, optionally paired with a `FallbackColor`:
 
 ```
-<WindhawkBlur BlurAmount="10" TintColor="{ThemeResource SystemAccentColor}" TintOpacity="0.5"/>
+Fill:=<WindhawkBlur BlurAmount="10" TintColor="{ThemeResource SystemAccentColor}" TintOpacity="0.5" FallbackColor="{ThemeResource SystemAccentColorDark1}" />
 ```
-
-- `TintColor`: ThemeResource color, such as `SystemAccentColor`.
-- `TintOpacity`: Overrides the opacity of the ThemeResource color.
 
 ### Mica effect as color
 

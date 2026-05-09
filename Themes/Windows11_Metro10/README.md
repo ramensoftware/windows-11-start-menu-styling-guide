@@ -245,16 +245,16 @@ controlStyles:
     styles:
       - Visibility=Visible
       - Width=360
-      - Transform3D:=<CompositeTransform3D TranslateX="-1059" />
-      - Margin=180,0,-220,0
+      - RenderTransform:=<TranslateTransform X="-217"/>
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
     styles:
       - Visibility=Collapsed
   - target: StartDocked.StartSizingFrame
     styles:
+      - MaxHeight=670
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
       - MinWidth=650
       - MaxWidth=650
-      - MaxHeight=670
   - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
     styles:
       - Visibility=Collapsed

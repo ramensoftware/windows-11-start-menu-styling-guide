@@ -148,12 +148,7 @@ controlStyles:
     styles:
       - Visibility=Visible
       - Width=540
-      - Margin=-1000,0,0,0
-  - target: StartDocked.StartSizingFrame
-    styles:
-      - MinWidth=460
-      - MaxWidth=460
-      - MaxHeight=670
+      - RenderTransform:=<TranslateTransform X="-81"/>
   - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
     styles:
       - Visibility=Collapsed
@@ -187,9 +182,21 @@ controlStyles:
   - target: StartMenu.StartInnerFrame
     styles:
       - Visibility=Collapsed
-  - target: Grid#RootContent
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MaxHeight=670
+  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
     styles:
       - MinWidth=460
+      - MaxWidth=460
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
+    styles:
+      - MinWidth=460
+      - MaxWidth=460
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent
+    styles:
+      - MinWidth=460
+      - MaxWidth=460
   - target: Grid#InnerContent
     styles:
       - Margin=0,12,0,0

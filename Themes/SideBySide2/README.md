@@ -159,31 +159,18 @@ controlStyles:
       - Width=510
       - MinHeight=585
       - Margin=264,0,0,0
-  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#UndockedRoot
-    styles:
-      - Width=320
   - target: Windows.UI.Xaml.Controls.Grid#AllAppsRoot
     styles:
       - Visibility=Visible
       - Width=320
-      - Transform3D:=<CompositeTransform3D TranslateX="-1060" />
-  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Grid#AllAppsRoot
-    styles:
-      - Transform3D:=<CompositeTransform3D TranslateX="-833" />
-      - HorizontalAlignment=Left
+      - RenderTransform:=<TranslateTransform X="-284"/>
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
     styles:
       - Visibility=1
-  - target: StartDocked.StartSizingFrame
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
     styles:
       - MinWidth=776
       - MaxWidth=776
-  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
-    styles:
-      - Width=560
-  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent
-    styles:
-      - MinWidth=560
   - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
     styles:
       - Visibility=0

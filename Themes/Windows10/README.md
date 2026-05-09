@@ -414,7 +414,8 @@ controlStyles:
     styles:
       - Width=360
       - Visibility=Visible
-      - Margin=-785,-18,785,0
+      - Margin=0,-18,0,0
+      - RenderTransform:=<TranslateTransform X="-143"/>
   - target: Border#AcrylicBorder
     styles:
       - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
@@ -1014,8 +1015,10 @@ controlStyles:
   - target: StartDocked.StartSizingFrame
     styles:
       - Margin=-15,24,450,0
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
+    styles:
       - MinWidth=400
-      - Width=400
+      - MaxWidth=400
   - target: StartDocked.SearchBoxToggleButton
     styles:
       - Visibility=Collapsed
@@ -1023,8 +1026,9 @@ controlStyles:
     styles:
       - Width=425
       - Visibility=Visible
-      - Margin=-750,-18,750,0
-  - target: Border#AcrylicBorder
+      - Margin=0,-18,0,0
+      - RenderTransform:=<TranslateTransform X="-108"/>
+  - target: Grid#RootContent > Border#AcrylicBorder
     styles:
       - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
       - BorderThickness=2.5,1,1.5,1

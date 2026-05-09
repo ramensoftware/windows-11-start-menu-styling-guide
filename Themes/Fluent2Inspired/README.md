@@ -528,6 +528,9 @@ controlStyles:
   - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle
     styles:
       - Visibility=1
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle
+    styles:
+      - Visibility=1
   - target: Windows.UI.Xaml.Controls.FlyoutPresenter
     styles:
       - Margin=-250,0,0,0

@@ -225,9 +225,18 @@ controlStyles:
       - CornerRadius=25
       - BorderBrush=#ebbcba
       - Background=#191724
-  - target: StartDocked.StartSizingFramePanel
+  - target: Windows.UI.Xaml.Controls.Border#DropShadow
     styles:
-      - CornerRadius=25
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Border#StartDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Border#RootGridDropShadow
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Border#RightCompanionDropShadow
+    styles:
+      - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.FontIcon > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.TextBlock
     styles:
       - Foreground=#eb6f92
@@ -313,23 +322,15 @@ controlStyles:
       - BorderBrush=#ebbcba
   - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
     styles:
-      - MaxWidth=500
-      - Width=500
       - MinWidth=500
-  - target: StartDocked.StartSizingFramePanel
-    styles:
       - MaxWidth=500
-      - Width=500
-      - MinWidth=500
-  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
-    styles:
-      - MaxWidth=500
-      - Width=500
-      - MinWidth=500
-  - target: StartDocked.StartSizingFrame
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
     styles:
       - MinWidth=500
-      - Width=500
+      - MaxWidth=500
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent
+    styles:
+      - MinWidth=500
       - MaxWidth=500
   - target: StartMenu:ExpandedFolderList
     styles:
