@@ -6,7 +6,7 @@ Updated to include Search Popout as well (Search Bar still preserved).
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
 ![Screenshot](screenshot.png)
-<!--
+
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
@@ -19,10 +19,6 @@ settings:
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
--->
-## Manual installation
-
-The theme styles can be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Settings" tab and select "Textual mode".
