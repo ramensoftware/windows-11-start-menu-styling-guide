@@ -45,9 +45,9 @@ The theme styles have to be imported manually. To do that, follow these steps:
 
 ```yaml
 theme: ''
-disableNewStartMenuLayout: '1'
+disableNewStartMenuLayout: legacyClassicLayout
 styleConstants:
-  - background=<AcrylicBrush TintColor="{ThemeResource AcrylicBG}" TintOpacity="0.25" TintLuminosityOpacity="1" FallbackColor="{ThemeResource AcrylicBG}" />
+  - background=<WindhawkBlur TintColor="{ThemeResource AcrylicBG}" TintOpacity="0.5" TintLuminosityOpacity="1" FallbackColor="{ThemeResource AcrylicBG}" BlurAmount="30" />
   - borderBrush=<SolidColorBrush Color="{ThemeResource Border}" />
   - accentButtonNormal=<SolidColorBrush Color="{ThemeResource AccentColor}" />
   - accentButtonPointerOver=<SolidColorBrush Color="{ThemeResource AccentColor}" Opacity="0.9" />
@@ -82,7 +82,7 @@ controlStyles:
       - FontSize=14
       - FontFamily=$fontFamily
       - Margin=3,0,0,-6
-  - target: Grid#RootGrid@ContentPaneStates > SplitView > Grid > Grid > Border > Grid > StartUI.AllAppsPane
+  - target: Grid#RootGrid@ContentPaneStates > * > StartUI.AllAppsPane
     styles:
       - Margin@Apps=12,24,27,0
       - Margin@Classic=12,24,0,0
@@ -124,14 +124,14 @@ controlStyles:
   - target: Grid#VerticalRoot
     styles:
       - CornerRadius=6
-  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallDecrease > Grid@CommonStates > FontIcon > Grid > TextBlock
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallDecrease > Grid@CommonStates > * > TextBlock
     styles:
       - Text=
       - Foreground@Normal:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.5" />
       - Foreground@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.75" />
       - Foreground@Pressed:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.75" />
       - FontSize@Pressed=6
-  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallIncrease > Grid@CommonStates > FontIcon > Grid > TextBlock
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallIncrease > Grid@CommonStates > * > TextBlock
     styles:
       - Text=
       - Foreground@Normal:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" Opacity="0.5" />
@@ -276,12 +276,12 @@ controlStyles:
       - FontSize=14
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemAltHighColor}" />
       - Opacity@Pressed=0.8
-  - target: MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > Ellipse
+  - target: MenuFlyoutItem > * > Grid > Ellipse
     styles:
       - Width=32
       - Height=32
       - Margin=1,0,0,2
-  - target: MenuFlyoutItem > Grid#LayoutRoot > Grid#InnerRoot > StackPanel > TextBlock#TextBlock
+  - target: MenuFlyoutItem > * > Grid > StackPanel > TextBlock#TextBlock
     styles:
       - FontSize=14
       - Margin=8,0,0,1
@@ -341,7 +341,7 @@ controlStyles:
     styles:
       - CornerRadius=4
       - Height=30
-  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > StartUI.TileViewControl > Grid > Border#Background
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > * > Border#Background
     styles:
       - Background@Normal:=$tilesNormal
       - Background@PointerOver:=$tilesPointerOver
@@ -460,11 +460,11 @@ controlStyles:
       - Margin=6
       - Height=36
       - CornerRadius=6
-  - target: StartUI.AppListViewItem > Grid#RootPanel@CommonStates > ContentPresenter > StartUI.NavigationPaneItemPanel > FontIcon
+  - target: StartUI.AppListViewItem > Grid#RootPanel@CommonStates > * > FontIcon
     styles:
       - Margin=-12,0,0,0
       - Opacity@Pressed=0.8
-  - target: StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates > StartUI.NavigationPaneItemPanel > Grid > FontIcon
+  - target: StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates > * > FontIcon
     styles:
       - Margin=-12,0,0,0
       - Opacity@Pressed=0.8
@@ -474,7 +474,7 @@ controlStyles:
       - Opacity@Pressed=0.8
       - Width=24
       - Height=24
-  - target: JumpViewUI.ItemNotFoundFlyoutControl > StackPanel > StackPanel > TextBlock
+  - target: JumpViewUI.ItemNotFoundFlyoutControl > * > TextBlock
     styles:
       - FontFamily=$fontFamily
   - target: JumpViewUI.JumpListCategoryHeaderControl > Grid > TextBlock#HeadingTextBlock
@@ -507,7 +507,7 @@ controlStyles:
   - target: Button#PinButton
     styles:
       - MinWidth=44
-  - target: Button#PinButton > Grid@CommonStates > Border > ContentPresenter > TextBlock
+  - target: Button#PinButton > Grid@CommonStates > * > TextBlock
     styles:
       - Margin=3,0,0,0
       - Opacity@Pressed=0.8
@@ -518,9 +518,9 @@ controlStyles:
   - target: Border#SmallLogo
     styles:
       - Margin=0,0,0,4
-  - target: MenuFlyoutPresenter > Grid > ScrollViewer > Border
+  - target: MenuFlyoutPresenter > * > Border
     styles:
-      - ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="-37.5" FromVerticalOffset="0" /></TransitionCollection>
+      - ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="-25" FromVerticalOffset="0" /></TransitionCollection>
   - target: ToolTip > ContentPresenter#LayoutRoot > TextBlock
     styles:
       - FontFamily=$fontFamily
@@ -687,7 +687,7 @@ controlStyles:
     styles:
       - CornerRadius=2
       - Margin=20,0,4,4
-  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > Grid > Border > Rectangle
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter > Grid > ProgressBar > * > Rectangle
     styles:
       - Fill:=$accentButtonNormal
       - Margin=-1,-2,0,-2
@@ -783,7 +783,7 @@ controlStyles:
     styles:
       - CornerRadius=2
       - Margin=4
-  - target: StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > Grid > Border > Rectangle
+  - target: StartUI.TileViewControl > Grid#MainGrid > Grid > ProgressBar > * > Rectangle
     styles:
       - Margin=-1,-2,0,-2
       - Fill:=$accentButtonNormal
@@ -883,5 +883,6 @@ webContentStyles:
     styles:
       - ''
 webContentCustomJs: ''
+'
 ```
 </details>
