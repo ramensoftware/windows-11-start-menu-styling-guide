@@ -66,6 +66,10 @@ controlStyles:
       - RenderTransform:=<TranslateTransform X="345" Y="752"/>
       - MinHeight=420
       - MaxHeight=420
+  - target: GridView#AllAppsGrid > ItemsWrapGrid
+    styles:
+      - Width=280
+      - Margin=-40,134,40,0
   - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
     styles:
       - Width=280
