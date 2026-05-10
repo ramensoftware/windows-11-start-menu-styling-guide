@@ -252,7 +252,17 @@ controlStyles:
   - target: StartDocked.StartSizingFrame
     styles:
       - MaxHeight=670
+      - MaxWidth=1874
+  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
+    styles:
+      - MinWidth=650
+      - MaxWidth=650
   - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
+    styles:
+      - MinWidth=650
+      - MaxWidth=650
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent
+    styles:
       - MinWidth=650
       - MaxWidth=650
   - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
@@ -297,7 +307,10 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink
     styles:
       - Margin=11,0,48,0
-  - target: StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle
+  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle
+    styles:
+      - Margin=67,7,0,21
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle
     styles:
       - Margin=67,7,0,21
   - target: Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl

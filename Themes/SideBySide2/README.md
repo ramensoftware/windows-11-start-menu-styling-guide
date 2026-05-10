@@ -167,6 +167,13 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
     styles:
       - Visibility=1
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MaxWidth=1874
+  - target: StartDocked.LauncherFrame > Grid#RootGrid
+    styles:
+      - MinWidth=776
+      - MaxWidth=776
   - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
     styles:
       - MinWidth=776
@@ -203,10 +210,16 @@ controlStyles:
   - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > StartDocked.SearchBoxToggleButton#StartMenuSearchBox
     styles:
       - Margin=23,1,23,14
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > StartDocked.SearchBoxToggleButton#StartMenuSearchBox
+    styles:
+      - Margin=23,1,23,14
   - target: Windows.UI.Xaml.Controls.TextBlock#NoSuggestionsWithoutSettingsLink
     styles:
       - Margin=11,0,48,0
-  - target: StartDocked.LauncherFrame > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Grid#RootContent > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle
+  - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle
+    styles:
+      - Margin=67,7,0,21
+  - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle
     styles:
       - Margin=67,7,0,21
   - target: Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl

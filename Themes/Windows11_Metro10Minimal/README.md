@@ -184,7 +184,7 @@ controlStyles:
       - Visibility=Collapsed
   - target: StartDocked.StartSizingFrame
     styles:
-      - MaxHeight=670
+      - MinWidth=460
   - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
     styles:
       - MinWidth=460

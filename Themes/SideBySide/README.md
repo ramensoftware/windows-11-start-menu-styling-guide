@@ -156,6 +156,13 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
     styles:
       - Visibility=Collapsed
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MaxWidth=1874
+  - target: StartDocked.LauncherFrame > Grid#RootGrid
+    styles:
+      - MinWidth=860
+      - MaxWidth=860
   - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
     styles:
       - MinWidth=860

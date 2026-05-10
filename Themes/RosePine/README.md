@@ -252,9 +252,6 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.TextBlock#AllAppsHeading
     styles:
       - Visibility=Collapsed
-  - target: StartDocked.StartSizingFrame
-    styles:
-      - MaxHeight=580
   - target: Windows.UI.Xaml.Controls.Grid#UserTileIcon
     styles:
       - Visibility=Collapsed
@@ -320,6 +317,10 @@ controlStyles:
     styles:
       - BorderThickness=1.5
       - BorderBrush=#ebbcba
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - MaxHeight=580
+      - MinWidth=500
   - target: StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent
     styles:
       - MinWidth=500

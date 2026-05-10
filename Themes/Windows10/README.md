@@ -1015,6 +1015,11 @@ controlStyles:
   - target: StartDocked.StartSizingFrame
     styles:
       - Margin=-15,24,450,0
+      - MinWidth=400
+  - target: StartDocked.LauncherFrame > Grid#RootGrid
+    styles:
+      - MinWidth=400
+      - MaxWidth=400
   - target: StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid
     styles:
       - MinWidth=400
