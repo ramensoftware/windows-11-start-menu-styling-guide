@@ -59,10 +59,8 @@ controlStyles:
 controlStyles:
   - target: StartDocked.StartSizingFrame
     styles:
-      - MaxHeight=160
-  - target: StartDocked.StartSizingFrame
-    styles:
       - MinHeight=100
+      - MaxHeight=160
   - target: Windows.UI.Xaml.Controls.Grid#UndockedRoot
     styles:
       - Visibility=Collapsed
