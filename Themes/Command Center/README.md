@@ -65,7 +65,6 @@ styleConstants:
   - ElementCornerRadius=10
   - HoverCornerRadius=15
 controlStyles:
-# Lock Screen
   - target: StackPanel#TimeAndDatePanel
     styles:
       - VerticalAlignment=Top
@@ -105,7 +104,6 @@ controlStyles:
       - RenderTransform:=<TranslateTransform X="0" Y="-250" />
       - Margin=0,0,0,0
       - CornerRadius=$CornerRadius
-# Flyouts and Menus
   - target: FlyoutPresenter
     styles:
       - Background:=$Background
@@ -146,7 +144,6 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CornerRadius
-# Folder
   - target: StartMenu.FolderModal#StartFolderModal > Grid#Root
     styles:
       - MaxHeight:=420
@@ -166,7 +163,6 @@ controlStyles:
   - target: StartMenu.ExpandedFolderList
     styles:
       - Margin=0,30,0,-120
-# Search Menu
   - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid
     styles:
       - Background:=$Background
@@ -185,14 +181,12 @@ controlStyles:
   - target: Border#AppBorder
     styles:
       - Visibility=1
-# ToolTip
   - target: ToolTip > ContentPresenter#LayoutRoot
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
-# Start Menu
   - target: Grid#MainMenu > Border#AcrylicBorder
     styles:
       - Visibility=1
@@ -252,7 +246,7 @@ controlStyles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
-      - CornerRadius=$CornerRadius
+      - CornerRadius=$ElementCornerRadius
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
       - Height=50
@@ -281,7 +275,7 @@ controlStyles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
-      - CornerRadius=$CornerRadius
+      - CornerRadius=$ElementCornerRadius
   - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar
     styles:
       - Visibility=1
@@ -308,7 +302,7 @@ controlStyles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
-      - CornerRadius=$CornerRadius
+      - CornerRadius=$ElementCornerRadius
   - target: GridView#AllAppsGrid > ItemsWrapGrid
     styles:
       - Visibility=0
@@ -328,11 +322,9 @@ controlStyles:
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
       - Margin=18,4
-# Start Menu Width
   - target: Grid#MainMenu
     styles:
       - Width=460
-# Pinned Apps
   - target: StartMenu.PinnedList#StartMenuPinnedList
     styles:
       - Width=400
@@ -348,12 +340,10 @@ controlStyles:
   - target: TextBlock#PinnedListHeaderText
     styles:
       - Visibility=1
-# Phone Link Panel Dimensions
   - target: StartMenu.StartMenuCompanion#RightCompanion
     styles:
       - Height=810
       - Margin=15,0,30,0
-# Phone Link Panel
   - target: Grid#CompanionRoot > Border#AcrylicBorder
     styles:
       - Background:=$Background
@@ -371,7 +361,6 @@ controlStyles:
       - Height=730
       - Margin=0,-10,0,-10
       - Padding=10,0,-2,0
-# Transitions
   - target: Border@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter > Grid > Grid#LogoContainer > Image
     styles:
       - RenderTransform@Pressed:=<ScaleTransform ScaleX="0.8" ScaleY="0.8" />
@@ -408,16 +397,18 @@ controlStyles:
   - target: StartMenu.CategoryControl > Grid > Border
     styles:
       - BackgroundSizing=InnerBorderEdge
-# Buttons
   - target: Button#ZoomOutButton
     styles:
       - Visibility=1
   - target: Button#ZoomInButton
     styles:
       - Visibility=1
+themeResourceVariables:
+  - ''
 webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
+webContentCustomJs: ''
 ```
 </details>
