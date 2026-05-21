@@ -86,6 +86,28 @@ controlStyles:
       - Margin=0,0,0,0
       - CornerRadius=$CornerRadius
 # Flyouts and Menus
+  - target: FlyoutPresenter
+    styles:
+      - Background:=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness:=$BorderThickness
+      - CornerRadius=$ElementCornerRadius
+      - Padding=-1
+  - target: MenuFlyoutPresenter
+    styles:
+      - CornerRadius=$ElementCornerRadius
+  - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Grid#RootGrid
+    styles:
+      - CornerRadius=$ElementCornerRadius
+      - Margin=-12,0,12,0
+  - target: MenuFlyoutItem
+    styles:
+      - CornerRadius=$ElementCornerRadius
+      - Margin=4,0,4,0
+  - target: ToggleMenuFlyoutItem
+    styles:
+      - CornerRadius=$ElementCornerRadius
+      - Margin=4,0,4,0
   - target: Border#OverflowFlyoutBackgroundBorder
     styles:
       - Background:=$Background
@@ -329,29 +351,6 @@ controlStyles:
       - Height=730
       - Margin=0,-10,0,-10
       - Padding=10,0,-2,0
-# Flyouts
-  - target: FlyoutPresenter
-    styles:
-      - Background:=$Background
-      - BorderBrush:=$BorderBrush
-      - BorderThickness:=$BorderThickness
-      - CornerRadius=$ElementCornerRadius
-      - Padding=-1
-  - target: MenuFlyoutPresenter
-    styles:
-      - CornerRadius=$ElementCornerRadius
-  - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Grid#RootGrid
-    styles:
-      - CornerRadius=$ElementCornerRadius
-      - Margin=-12,0,12,0
-  - target: MenuFlyoutItem
-    styles:
-      - CornerRadius=$ElementCornerRadius
-      - Margin=4,0,4,0
-  - target: ToggleMenuFlyoutItem
-    styles:
-      - CornerRadius=$ElementCornerRadius
-      - Margin=4,0,4,0
 # Transitions
   - target: Border@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter > Grid > Grid#LogoContainer > Image
     styles:
