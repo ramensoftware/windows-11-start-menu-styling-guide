@@ -21,7 +21,7 @@ Command Center theme inspired by the command centers from various mobile operati
 - This theme can style your lock screen as well. 
 
 ## Lock Screen
-![Lock Screen](Lock_Screen.jpg) 
+![Lock Screen](lock-screen.jpg) 
 
 To make it work, you'll need to:
 - Add 'LockApp.exe' to the 'Custom process inclusion list' under 'Advanced settings' in the Windows 11 Start Menu Styler mod.
