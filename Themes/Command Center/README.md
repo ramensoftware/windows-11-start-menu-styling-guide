@@ -165,6 +165,27 @@ controlStyles:
   - target: StartMenu.ExpandedFolderList
     styles:
       - Margin=0,30,0,-120
+  - target: ListViewItem > Grid@CommonStates > Border#BorderBackground
+    styles:
+      - BorderThickness=$BorderThickness
+      - BorderBrush@PointerOver:=$BorderBrush
+      - BorderBrush@Pressed:=$BorderBrush
+      - CornerRadius=$ElementCornerRadius
+      - BackgroundSizing=InnerBorderEdge
+  - target: Border#ContentBorder@CommonStates > Grid > Border#BackgroundBorder
+    styles:
+      - BorderThickness=$BorderThickness
+      - BorderBrush@PointerOver:=$BorderBrush
+      - BorderBrush@Pressed:=$BorderBrush
+      - CornerRadius=$ElementCornerRadius
+      - BackgroundSizing=InnerBorderEdge
+  - target: Button > Grid@CommonStates > Border#BackgroundBorder
+    styles:
+      - BorderThickness=$BorderThickness
+      - BorderBrush@PointerOver:=$BorderBrush
+      - BorderBrush@Pressed:=$BorderBrush
+      - CornerRadius=$ElementCornerRadius
+      - BackgroundSizing=InnerBorderEdge
   - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid
     styles:
       - Background:=$Background
@@ -363,6 +384,13 @@ controlStyles:
       - Height=730
       - Margin=0,-10,0,-10
       - Padding=10,0,-2,0
+  - target: Windows.UI.Xaml.Controls.Grid#ActionsBar > Windows.UI.Xaml.Controls.Button#ActionBarOverflowButton
+    styles:
+      - Background:=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=$ElementCornerRadius
+      - Height=40
   - target: Border@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter > Grid > Grid#LogoContainer > Image
     styles:
       - RenderTransform@Pressed:=<ScaleTransform ScaleX="0.8" ScaleY="0.8" />
@@ -409,6 +437,5 @@ webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
-
 ```
 </details>
