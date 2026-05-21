@@ -64,6 +64,7 @@ styleConstants:
   - CornerRadius=35
   - SearchBoxRadius=25
   - ElementCornerRadius=10
+  - FlyoutCornerRadius=6
   - HoverCornerRadius=15
 controlStyles:
   - target: StackPanel#TimeAndDatePanel
@@ -101,7 +102,7 @@ controlStyles:
       - CornerRadius=$CornerRadius
   - target: Grid#MediaControlsContainer
     styles:
-      - Visibility=Visible
+      - Visibility=0
       - RenderTransform:=<TranslateTransform X="0" Y="-250" />
       - Margin=0,0,0,0
       - CornerRadius=$CornerRadius
@@ -110,41 +111,41 @@ controlStyles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
-      - CornerRadius=$ElementCornerRadius
+      - CornerRadius=$FlyoutCornerRadius
       - Padding=-1
   - target: MenuFlyoutPresenter
     styles:
-      - CornerRadius=$ElementCornerRadius
+      - CornerRadius=$FlyoutCornerRadius
   - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Grid#RootGrid
     styles:
       - CornerRadius=$ElementCornerRadius
       - Margin=-12,0,12,0
   - target: MenuFlyoutItem
     styles:
-      - CornerRadius=$ElementCornerRadius
+      - CornerRadius=$FlyoutCornerRadius
       - Margin=4,0,4,0
   - target: ToggleMenuFlyoutItem
     styles:
-      - CornerRadius=$ElementCornerRadius
+      - CornerRadius=$FlyoutCornerRadius
       - Margin=4,0,4,0
   - target: Border#OverflowFlyoutBackgroundBorder
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
-      - CornerRadius=$CornerRadius
+      - CornerRadius=$FlyoutCornerRadius
   - target: MenuFlyoutPresenter > Border
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
-      - CornerRadius=$CornerRadius
+      - CornerRadius=$FlyoutCornerRadius
   - target: Grid#HoverFlyoutGrid > Border#HoverFlyoutBackground
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
-      - CornerRadius=$CornerRadius
+      - CornerRadius=$FlyoutCornerRadius
   - target: StartMenu.FolderModal#StartFolderModal > Grid#Root
     styles:
       - MaxHeight:=420
@@ -404,12 +405,10 @@ controlStyles:
   - target: Button#ZoomInButton
     styles:
       - Visibility=1
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
-webContentCustomJs: ''
+
 ```
 </details>
