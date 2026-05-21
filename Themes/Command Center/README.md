@@ -18,9 +18,6 @@ Command Center theme inspired by the command centers from various mobile operati
 
   In order to switch between these backgrounds, set the value `Background=$Translucent`, `Background=$Glass`, `Background=$Frosted` or `Background=$Acrylic` in the "Style constants" section of the mod's settings.
 
-  Credits for this feature go to [Nathaniel4JC](https://github.com/Nathaniel4JC). It was something introduced in their [WindowsGlass](https://github.com/PhantomNimbi/windows-11-start-menu-styling-guide/tree/patch-1/Themes/WindowGlass) theme and I figured would go nice with this one as well.
-
-## Bonus
 - This theme can style your lock screen as well. 
 
 ## Lock Screen
@@ -30,6 +27,7 @@ To make it work, you'll need to:
 - Add 'LockApp.exe' to the 'Custom process inclusion list' under 'Advanced settings' in the Windows 11 Start Menu Styler mod.
 - Install the [Vivo Sans En VF](https://1drv.ms/u/c/67fedd4420ed716d/EXRoW1f5dABJrO2dPj0tbM0Bm1uYiGeoKyAYA7X7er2Zww?e=cLsiJJ) and [Morganite SemiBold](https://1drv.ms/u/c/67fedd4420ed716d/IQCHLlxP7GPITp4p-uPMw9O5AY3s2NJCHLKC-tYZZVWAGiY?e=yQrKQb) fonts.
 
+Credits for this feature go to [Nathaniel4JC](https://github.com/Nathaniel4JC). It was something introduced in their [WindowsGlass](https://github.com/PhantomNimbi/windows-11-start-menu-styling-guide/tree/patch-1/Themes/WindowGlass) theme and I figured would go nice with this one as well.
 
 ## Theme selection
 
