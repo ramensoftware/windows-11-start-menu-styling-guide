@@ -51,6 +51,8 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+theme: ''
+disableNewStartMenuLayout: ''
 styleConstants:
   - Translucent=<WindhawkBlur BlurAmount="15" TintColor="#10808080"/>
   - Glass=<WindhawkBlur BlurAmount="5" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" />
@@ -108,7 +110,7 @@ controlStyles:
       - CornerRadius=$CornerRadius
   - target: FlyoutPresenter
     styles:
-      - Background:=$Background
+      - // Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
       - CornerRadius=$FlyoutCornerRadius
@@ -436,5 +438,6 @@ webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
+
 ```
 </details>
