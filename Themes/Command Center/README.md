@@ -75,7 +75,7 @@ controlStyles:
   - target: StackPanel#TimePanel > TextBlock#Time
     styles:
       - HorizontalAlignment:=Center
-      - RenderTransform:=<TransformGroup><TranslateTransform X="-30" Y="-10" /><ScaleTransform ScaleX="3.3" ScaleY="6" /></TransformGroup>
+      - RenderTransform:=<TransformGroup><TranslateTransform X="-50" Y="20" /><ScaleTransform ScaleX="2.3" ScaleY="4" /></TransformGroup>
       - FontFamily=Morganite SemiBold
       - Foreground:=$ClockBG
   - target: StackPanel#TimeAndDatePanel > TextBlock#Date
@@ -436,6 +436,5 @@ webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
-
 ```
 </details>
