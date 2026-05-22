@@ -51,8 +51,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-theme: ''
-disableNewStartMenuLayout: ''
 styleConstants:
   - Translucent=<WindhawkBlur BlurAmount="15" TintColor="#10808080"/>
   - Glass=<WindhawkBlur BlurAmount="5" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.7" />
