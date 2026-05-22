@@ -260,10 +260,6 @@ controlStyles:
   - target: Grid#TopLevelSuggestionsRoot
     styles:
       - Visibility=1
-  - target: StartMenu.PinnedList#StartMenuPinnedList
-    styles:
-      - Margin=0
-      - Height=280
   - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root
     styles:
       - Background:=$Background
@@ -351,7 +347,9 @@ controlStyles:
   - target: StartMenu.PinnedList#StartMenuPinnedList
     styles:
       - Width=400
-      - Height=350
+      - MaxHeight=400
+      - MinHeight=200
+      - Height=Auto
       - Margin=0,0,0,30
   - target: GridView#PinnedList > Border > ScrollViewer
     styles:
@@ -360,6 +358,7 @@ controlStyles:
       - MinHeight:=100
       - Width=300
       - Margin=0,0,60,0
+      - Padding=0,14
   - target: TextBlock#PinnedListHeaderText
     styles:
       - Visibility=1
