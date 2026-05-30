@@ -37,10 +37,11 @@ controlStyles:
       - MaxHeight=520
   - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
     styles:
-      - Visibility=Collapsed
+      - Height=0
+      - Visibility=>showMoreSuggestionsVisible
   - target: Grid#ShowMoreSuggestions
     styles:
-      - Visibility=Visible
+      - Visibility={{showMoreSuggestionsVisible}}
   - target: Button#ShowMoreSuggestionsButton
     styles:
       - Margin=0,-77,147,0
@@ -140,20 +141,21 @@ controlStyles:
     styles:
       - BorderBrush:=<SolidColorBrush Color="{ThemeResource SystemChromeAltHighColor}" Opacity=".8"/>
       - Background:=<SolidColorBrush Color="{ThemeResource SystemAltMediumLowColor}" Opacity="1" />
-      - BorderThickness=0,2,2,2
-      - CornerRadius=0,15,15,0
+      - BorderThickness={{showMoreSuggestionsVisible*2}},2,2,2
+      - CornerRadius={{showMoreSuggestionsVisible*15}},15,15,{{showMoreSuggestionsVisible*15}}
       - Height=32
       - BorderBrush@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseLowColor}" Opacity="1"/>
       - Background@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseLowColor}" Opacity=".7" />
   - target: StartMenu.PinnedList
     styles:
       - Margin=0,20,-40,180
+      - ActualHeight=>pinnedListHeight
   - target: Grid#TopLevelSuggestionsRoot
     styles:
       - Grid.Row=1
   - target: Microsoft.UI.Xaml.Controls.DropDownButton
     styles:
-      - Margin=-57,-422.5,57,422
+      - RenderTransform:=<TranslateTransform X="-5" Y="{{-254 - pinnedListHeight}}" />
       - MaxWidth=100
   - target: Microsoft.UI.Xaml.Controls.DropDownButton > Grid > ContentPresenter > TextBlock
     styles:
