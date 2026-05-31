@@ -7,7 +7,7 @@ This theme intends to subtly take Fluent's design principles more seriously and 
 * Scaling effect on buttons containing images, as seen in the Pinned list.
 * Search box restyle.
 
-**Author**: [SandTechStuff](https://github.com/SandTechStuff)
+**Author**: [Sand216](https://github.com/Sand216)
 
 ![Screenshot](contextMenus.gif)
 
