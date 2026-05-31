@@ -1,6 +1,6 @@
 # Hybrid theme for Windows 11 Start Menu Styler (Windows 10 Start menu)
 
-**Author**: [SandTechStuff](https://github.com/SandTechStuff)
+**Author**: [Sand216](https://github.com/Sand216)
 
 ![Screenshot](screenshot.png)
 
@@ -31,7 +31,7 @@ This theme requires you to supply your own user picture image, separate from the
 
 Once you have imported the theme into the Start Menu Styler, go to the mod's settings and scroll all the way down. You should see a style constant with the content `userPicture=REPLACE ME`, after the "=" put the link to whatever image you want to use as your user picture.
 
-For example: `userPicture=https://raw.githubusercontent.com/SandTechStuff/Stuff/refs/heads/main/Nintendo-3DS-AquaOpen-White.png`
+For example: `userPicture=https://raw.githubusercontent.com/Sand216/Stuff/refs/heads/main/Nintendo-3DS-AquaOpen-White.png`
 
 ## Manual installation
 
