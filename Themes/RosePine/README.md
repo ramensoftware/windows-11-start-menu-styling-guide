@@ -215,7 +215,7 @@ controlStyles:
       - Visibility=Collapsed
   - target: StartMenu.PinnedList
     styles:
-      - Height=Auto
+      - Height=340
   - target: StartDocked.NavigationPaneView#Margin
     styles:
       - Margin=210,0,210,0
