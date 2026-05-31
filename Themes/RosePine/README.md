@@ -53,7 +53,7 @@ controlStyles:
       - BorderThickness=0
   - target: StartMenu.PinnedList
     styles:
-      - Height=340
+      - Height=Auto
       - Width=342
   - target: StartDocked.NavigationPaneView#Margin
     styles:
