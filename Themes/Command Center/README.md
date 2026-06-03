@@ -4,7 +4,7 @@ Command Center theme inspired by the command centers from various mobile operati
 
 **Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
-<img width="100%" src="preview.gif" alt="Preview" />
+<img width="100%" src="preview.png" alt="Preview" />
 
 > [!IMPORTANT]
 > This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update. It is meant to use the categories view and is not built for any other view mode.
@@ -218,10 +218,10 @@ controlStyles:
       - Visibility=1
   - target: Grid#RootPanel > Grid#RootGrid > Grid#RootContent
     styles:
-      - Margin=-20,-20,-20,0
+      - // Margin=-20,-20,-20,0
   - target: StartDocked.StartSizingFrame
     styles:
-      - Width=860
+      - Width=750
   - target: Border#RootGridDropShadow
     styles:
       - Visibility=1
@@ -269,8 +269,8 @@ controlStyles:
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
       - Height=50
-      - Margin=-20,20,-20,-20
-      - Width=400
+      - Margin=0,20,0,-20
+      - Width=360
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton > Grid > Border#BorderElement
     styles:
       - Background:=$Background
@@ -279,13 +279,13 @@ controlStyles:
       - CornerRadius=$SearchBoxRadius
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
-      - Margin=-50,40,0,0
+      - Margin=-70,40,0,0
   - target: TextBlock#PinnedListHeaderText
     styles:
       - Visibility=1
   - target: Grid#AllListHeading
     styles:
-      - Margin=0,-10,0,0
+      - Visibility=1
   - target: Grid#AllListHeading > TextBlock#AllListHeadingText
     styles:
       - Visibility=1
@@ -325,13 +325,7 @@ controlStyles:
   - target: GridView#AllAppsGrid > ItemsWrapGrid
     styles:
       - Visibility=0
-  - target: GridView#AllAppsGrid
-    styles:
-      - Margin=0,15,0,0
   - target: Grid#TopLevelHeader > Grid > Button
-    styles:
-      - Visibility=1
-  - target: Grid#AllListHeading
     styles:
       - Visibility=1
   - target: Button#SeeAllButton > Grid > Border#BackgroundBorder
@@ -343,29 +337,28 @@ controlStyles:
       - Margin=18,4
   - target: Grid#MainMenu
     styles:
-      - Width=460
+      - Width=470
+      - Height=740
   - target: StartMenu.PinnedList#StartMenuPinnedList
     styles:
-      - Width=400
+      - Width=360
       - MaxHeight=400
       - MinHeight=200
       - Height=Auto
-      - Margin=0,0,0,30
   - target: GridView#PinnedList > Border > ScrollViewer
     styles:
       - ScrollViewer.VerticalScrollMode=2
       - MaxHeight:=336
       - MinHeight:=100
       - Width=300
-      - Margin=0,0,60,0
-      - Padding=0,14
+      - Padding=0,15
+      - Margin=-25,0,25,0
   - target: TextBlock#PinnedListHeaderText
     styles:
       - Visibility=1
   - target: StartMenu.StartMenuCompanion#RightCompanion
     styles:
-      - Height=810
-      - Margin=15,0,30,0
+      - Height=700
   - target: Grid#CompanionRoot > Border#AcrylicBorder
     styles:
       - Background:=$Background
@@ -380,8 +373,7 @@ controlStyles:
       - Visibility=1
   - target: StartDocked.StartMenuCompanion#RightCompanion > Grid#CompanionRoot
     styles:
-      - Height=730
-      - Margin=0,-10,0,-10
+      - Height=700
       - Padding=10,0,-2,0
   - target: Windows.UI.Xaml.Controls.Grid#ActionsBar > Windows.UI.Xaml.Controls.Button#ActionBarOverflowButton
     styles:
