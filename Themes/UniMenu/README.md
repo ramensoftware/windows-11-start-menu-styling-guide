@@ -78,7 +78,8 @@ controlStyles:
       - Padding=0
   - target: TextBlock#PinnedListHeaderText
     styles:
-      - Visibility=Collapsed
+      - Height=27
+      - Text=
   - target: Windows.UI.Xaml.Controls.TextBlock[Text=]
     styles:
       - Text=
