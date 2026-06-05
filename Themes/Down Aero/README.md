@@ -55,9 +55,6 @@ controlStyles:
   - target: Border#StartDropShadow
     styles:
       - CornerRadius=30
-  - target: Rectangle
-    styles:
-      - Visibility=Collapsed
   - target: StartMenu.SearchBoxToggleButton
     styles:
       - Visibility=Collapsed
@@ -148,7 +145,7 @@ controlStyles:
       - Background@PointerOver:=<SolidColorBrush Color="{ThemeResource SystemBaseLowColor}" Opacity=".7" />
   - target: StartMenu.PinnedList
     styles:
-      - Margin=0,20,-40,180
+      - Margin=0,20,12,180
       - ActualHeight=>pinnedListHeight
   - target: Grid#TopLevelSuggestionsRoot
     styles:
@@ -170,10 +167,6 @@ controlStyles:
       - Height=32
       - CornerRadius=15
       - BorderThickness=0,2,2,2
-  - target: GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer
-    styles:
-      - ScrollViewer.VerticalScrollMode=2
-      - Height=280
   - target: Border#RightCompanionDropShadow
     styles:
       - CornerRadius=30
