@@ -119,6 +119,7 @@ Start Menu Styler mod. The following themes are available:
 | [LayerMicaUI](Themes/LayerMicaUI/README.md) | [![LayerMicaUI](Themes/LayerMicaUI/screenshot-small.png)](Themes/LayerMicaUI/screenshot.png)
 | [Borderless](Themes/Borderless/README.md) | [![Borderless](Themes/Borderless/screenshot-small.png)](Themes/Borderless/screenshot.png)
 | [Command Center](Themes/Command%20Center/README.md) | [![Command Center](Themes/Command%20Center/screenshot-small.png)](Themes/Command%20Center/screenshot.png)
+| [FullScreen](Themes/FullScreen/README.md) | [![FullScreen](Themes/FullScreen/screenshot-small.png)](Themes/FullScreen/screenshot.png)
 
 ### Windows 10 Start menu themes
 
