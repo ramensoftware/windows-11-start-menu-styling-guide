@@ -104,7 +104,7 @@ controlStyles:
   - target: Button#ShowMoreSuggestionsButton > Grid > ContentPresenter > StackPanel > TextBlock
     styles:
       - Text=Recommended
-  - target: Grid#TopLevelHeader > Grid#ShowMorePinnedGrid > Button
+  - target: Grid#TopLevelHeader > Grid[2] > Button
     styles:
       - RenderTransform:=<TranslateTransform X="{{(1-showMoreSuggestionsVisible)*-135}}"/>
 ```
