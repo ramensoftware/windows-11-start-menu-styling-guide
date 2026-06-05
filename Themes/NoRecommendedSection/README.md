@@ -88,39 +88,25 @@ that is slowly rolling out in the 25H2 update.
 
 ```yaml
 controlStyles:
-  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
-    styles:
-      - Visibility=Collapsed
-  - target: Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText
+  - target: Grid#TopLevelSuggestionsListHeader
     styles:
       - Height=0
-  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
-    styles:
-      - RenderTransform:=<TranslateTransform Y="8"/>
-  - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Grid > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
-    styles:
-      - Text=Recommended
-  - target: Grid#TopLevelSuggestionsRoot > Grid[2]
-    styles:
-      - MinHeight=0
+      - Visibility=>showMoreSuggestionsVisible
   - target: Grid#TopLevelSuggestionsRoot
     styles:
       - Grid.Row=0
-  - target: Windows.UI.Xaml.Controls.GridView#RecommendedList
+      - MaxHeight=54
+      - RenderTransform:=<TranslateTransform Y="22"/>
+  - target: Grid#ShowMoreSuggestions
     styles:
-      - Visibility=Collapsed
-  - target: TextBlock#PinnedListHeaderText
+      - Visibility={{showMoreSuggestionsVisible}}
+      - Margin=0
+  - target: Button#ShowMoreSuggestionsButton > Grid > ContentPresenter > StackPanel > TextBlock
     styles:
-      - RenderTransform:=<TranslateTransform Y="8"/>
-  - target: GridView
+      - Text=Recommended
+  - target: Grid#TopLevelHeader > Grid#ShowMorePinnedGrid > Button
     styles:
-      - Margin=0,-8,0,0
-  - target: Microsoft.UI.Xaml.Controls.DropDownButton
-    styles:
-      - RenderTransform:=<TranslateTransform Y="-5" />
-  - target: Grid#TopLevelHeader > Grid[2] > Button
-    styles:
-      - RenderTransform:=<TranslateTransform X="-135" />
+      - RenderTransform:=<TranslateTransform X="{{(1-showMoreSuggestionsVisible)*-135}}"/>
 ```
 </details>
 
