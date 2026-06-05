@@ -53,8 +53,7 @@ controlStyles:
       - Margin=-8,10,0,0
   - target: StartMenu.PinnedList
     styles:
-      - Margin=42,25,42,0
-      - MaxHeight=380
+      - Margin=32,25,0,0
   - target: StartMenu.SearchBoxToggleButton
     styles:
       - Width=430
