@@ -54,6 +54,7 @@ controlStyles:
   - target: StartMenu.PinnedList
     styles:
       - Height=Auto
+      - MinHeight=340
       - Width=342
   - target: StartDocked.NavigationPaneView#Margin
     styles:
