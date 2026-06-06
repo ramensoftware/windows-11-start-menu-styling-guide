@@ -31,118 +31,38 @@ that is slowly rolling out in the 25H2 update.
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+disableNewStartMenuLayout: newLayoutSideBySide
 controlStyles:
+  - target: Grid#SideBySidePinnedWrapper
+    styles:
+      - ColumnDefinitions:=<ColumnDefinitionCollection><ColumnDefinition Width="292*"/><ColumnDefinition Width="540*"/></ColumnDefinitionCollection>
+  - target: GridView#AllAppsGrid > Border > Grid#SideBySidePinnedWrapper > ScrollViewer#ScrollViewer
+    styles:
+      - Grid.Column=0
+  - target: ScrollViewer#SideBySidePinnedScrollViewer
+    styles:
+      - Grid.Column=1
+  - target: Grid#SideBySidePinnedWrapper > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
+    styles:
+      - Margin=32,0,32,14
+  - target: Grid#AllListHeading > TextBlock#AllListHeadingText
+    styles:
+      - Margin=43,6,12,7
+  - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton
+    styles:
+      - Margin=0,0,32,0
+  - target: Grid#NavPanePlaceholder
+    styles:
+      - Margin=32,0,32,0
   - target: StartDocked.NavigationPaneView#UserControl > Grid#RootPanel
     styles:
       - FlowDirection=1
-  - target: StartMenu.PinnedList
+  - target: StartDocked.PowerOptionsView#PowerButton
     styles:
-      - MinHeight=420
-      - MaxHeight=420
-  - target: StartMenu.ExpandedFolderList > Grid > Border
+      - FlowDirection=0
+  - target: ItemsStackPanel > ListViewItem
     styles:
-      - Margin=-40,0,40,0
-      - Width=325
-  - target: StartMenu.ExpandedFolderList > Grid > Grid
-    styles:
-      - CornerRadius=8
-      - Margin=-85,0,0,0
-      - Width=350
-  - target: StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager
-    styles:
-      - Margin=-15,0,0,0
-  - target: Grid#MainMenu
-    styles:
-      - Width=825
-  - target: Grid#FrameRoot
-    styles:
-      - Height=825
-  - target: Border#AcrylicOverlay
-    styles:
-      - Margin=0,-70,0,0
-  - target: GridView#PinnedList
-    styles:
-      - MaxWidth=480
-      - RenderTransform:=<TranslateTransform X="345" Y="752"/>
-      - MinHeight=420
-      - MaxHeight=420
-  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
-    styles:
-      - Width=280
-      - Margin=-55,12,55,0
-      - //RenderTransform:=<TranslateTransform X="0" Y="740"/>
-  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter
-    styles:
-      - RenderTransform:=<TranslateTransform X="-200" Y="-760"/>
-  - target: Microsoft.UI.Xaml.Controls.DropDownButton
-    styles:
-      - Margin=-390,132,390,-132
-      - FontWeight=SemiBold
-      - Height=32
-      - Width=200
-  - target: Windows.UI.Xaml.Controls.ListView#ZoomedOutListView
-    styles:
-      - Margin=0,-35,0,35
-  - target: TextBlock#PinnedListHeaderText
-    styles:
-      - Visibility=Visible
-      - RenderTransform:=<TranslateTransform X="485" Y="753"/>
-      - FontWeight=SemiBold
-  - target: StartMenu.StartHome
-    styles:
-      - RenderTransform:=<TranslateTransform Y="-1"/>
-  - target: Windows.UI.Xaml.Controls.Frame > Windows.UI.Xaml.Controls.ContentPresenter
-    styles:
-      - Margin=0,-15,0,0
-  - target: DropDownButton > Grid > ContentPresenter > TextBlock
-    styles:
-      - MaxLines=2
-      - TextLineBounds=0
-      - HorizontalAlignment=1
-  - target: Grid#TopLevelSuggestionsRoot
-    styles:
-      - RenderTransform:=<TranslateTransform X="360" Y="784"/>
-      - Width=450
-      - MinHeight=129
-      - BorderThickness=0,1,0,0
-      - BorderBrush=#22BBBBBB
-  - target: TextBlock#TopLevelSuggestionsListHeaderText
-    styles:
-      - RenderTransform:=<TranslateTransform X="-50" />
-  - target: Button#ShowMoreSuggestionsButton
-    styles:
-      - RenderTransform:=<TranslateTransform X="50" />
-  - target: //Grid#TopLevelHeader > Grid[2]
-    styles:
-      - RenderTransform:=<TranslateTransform X="220" Y="581" />
-  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
-    styles:
-      - RenderTransform:=<TranslateTransform X="-40" />
-      - Margin=0,134,0,0
-  - target: ScrollViewer
-    styles:
-      - ScrollViewer.VerticalScrollMode=2
-  - target: Windows.UI.Xaml.Controls.ItemsWrapGrid
-    styles:
-      - MaximumRowsOrColumns=5
-  - target: GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border
-    styles:
-      - MaxWidth=185
-      - HorizontalAlignment=2
-  - target: Grid#TopLevelSuggestionsContainer
-    styles:
-      - Width=630
-      - Margin=-50,0,0,0
-  - target: GridView#RecommendedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem
-    styles:
-      - Margin=-25,0,-25,0
-  - target: Grid#MainMenu > Grid#MainContent > Grid
-    styles:
-      - Canvas.ZIndex=1
-  - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar
-    styles:
-      - Height=650
-      - RenderTransform:=<TranslateTransform Y="-50" />
+      - FlowDirection=0
 ```
 </details>
 

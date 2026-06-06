@@ -31,104 +31,56 @@ that is slowly rolling out in the 25H2 update.
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+disableNewStartMenuLayout: newLayoutSideBySide
 controlStyles:
-  - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
-    styles:
-      - Visibility=Collapsed
-  - target: Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer
-    styles:
-      - Visibility=Collapsed
-  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
-    styles:
-      - Visibility=Collapsed
-  - target: StartMenu.SearchBoxToggleButton
-    styles:
-      - Height=0
-      - Width=0
-  - target: StartDocked.PowerOptionsView
-    styles:
-      - Margin=-528,2,0,0
-  - target: StartDocked.UserTileView
-    styles:
-      - Visibility=Collapsed
-  - target: StartMenu.PinnedList
-    styles:
-      - MinHeight=504
-      - MaxHeight=504
-  - target: StartMenu.ExpandedFolderList > Grid > Border
-    styles:
-      - Margin=-40,0,40,0
-      - Width=325
-  - target: StartMenu.ExpandedFolderList > Grid > Grid
-    styles:
-      - CornerRadius=8
-      - Margin=-85,0,0,0
-      - Width=350
-  - target: StartMenu.ExpandedFolderList > Grid > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager
-    styles:
-      - Margin=-15,0,0,0
-  - target: Grid#TopLevelSuggestionsContainer
-    styles:
-      - Visibility=Collapsed
   - target: Grid#MainMenu
     styles:
       - Width=600
   - target: Grid#FrameRoot
     styles:
       - Height=710
+  - target: StartMenu.SearchBoxToggleButton
+    styles:
+      - Height=0
   - target: Border#AcrylicOverlay
     styles:
-      - Margin=0,-70,0,0
-  - target: GridView#PinnedList
+      - Margin=0,-64,0,0
+  - target: Frame#StartFrame
     styles:
-      - Margin=16,0,-16,0
-      - Width=300
-      - MinHeight=504
-      - RenderTransform:=<TranslateTransform X="270" Y="585"/>
-  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
+      - Margin=0,-64,0,0
+  - target: Grid#SideBySidePinnedWrapper
     styles:
-      - Width=250
-  - target: GridView#AllAppsGrid > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter
+      - ColumnDefinitions:=<ColumnDefinitionCollection><ColumnDefinition Width="250*"/><ColumnDefinition Width="348*"/></ColumnDefinitionCollection>
+  - target: GridView#AllAppsGrid > Border > Grid#SideBySidePinnedWrapper > ScrollViewer#ScrollViewer
     styles:
-      - RenderTransform:=<TranslateTransform X="-150" Y="-600"/>
-  - target: Microsoft.UI.Xaml.Controls.DropDownButton
+      - Grid.Column=0
+  - target: ScrollViewer#SideBySidePinnedScrollViewer
     styles:
-      - Margin=-174,4,174,0
-      - FontWeight=SemiBold
-      - Height=32
-      - Width=250
-      - Style:=
-  - target: Windows.UI.Xaml.Controls.ListView#ZoomedOutListView
+      - Grid.Column=1
+  - target: Grid#SideBySidePinnedWrapper > ScrollViewer > Border#Root > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
     styles:
-      - Margin=0,-50,0,50
-  - target: TextBlock#PinnedListHeaderText
+      - Margin=32,0,32,14
+  - target: Grid#AllListHeading > TextBlock#AllListHeadingText
     styles:
-      - Visibility=Visible
-      - RenderTransform:=<TranslateTransform X="400" Y="580.5"/>
-      - FontWeight=SemiBold
-  - target: StartMenu.StartHome
+      - Margin=43,6,12,7
+  - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton
     styles:
-      - RenderTransform:=<TranslateTransform Y="-1"/>
-  - target: Windows.UI.Xaml.Controls.Frame > Windows.UI.Xaml.Controls.ContentPresenter
+      - Margin=0,0,32,0
+  - target: Grid#NavPanePlaceholder
     styles:
-      - Margin=0,-35,0,0
-  - target: DropDownButton > Grid > ContentPresenter > TextBlock
+      - Margin=32,0,32,0
+  - target: StartDocked.NavigationPaneView#UserControl > Grid#RootPanel
     styles:
-      - MaxLines=2
-      - TextLineBounds=0
-      - HorizontalAlignment=1
-  - target: Grid#TopLevelSuggestionsRoot
+      - FlowDirection=1
+  - target: StartDocked.PowerOptionsView#PowerButton
+    styles:
+      - FlowDirection=0
+  - target: ItemsStackPanel > ListViewItem
+    styles:
+      - FlowDirection=0
+  - target: StartDocked.UserTileView
     styles:
       - Visibility=Collapsed
-  - target: StartMenu.CategoryControl
-    styles:
-      - Margin=20,20,-20,-20
-  - target: Grid#MainMenu > Grid#MainContent > Grid
-    styles:
-      - Canvas.ZIndex=1
-  - target: StartDocked.AppListView
-    styles:
-      - Margin=25,0,-25,0
 ```
 </details>
 
