@@ -95,6 +95,10 @@ controlStyles:
     styles:
       - Visibility=Collapsed
       - //Target= Start Menu > Drop Shadow of "Phone Link" Menu
+  - target: Border#StartDropShadow
+    styles:
+      - Visibility=Collapsed
+      - //Target= Start Menu > Drop Shadow (redesigned Start menu)
   - target: Border#BorderElement
     styles:
       - Opacity=0
