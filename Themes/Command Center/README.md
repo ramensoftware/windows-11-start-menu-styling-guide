@@ -210,6 +210,18 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
+  - target: Border#AccentAppBorder
+    styles:
+      - Visibility=1
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=1
+  - target: Border#AppBorder
+    styles:
+      - Background:=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=$CornerRadius
   - target: Grid#MainMenu > Border#AcrylicBorder
     styles:
       - Visibility=1
@@ -261,8 +273,6 @@ controlStyles:
       - CornerRadius=$ElementCornerRadius
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
-      - Height=38
-      - Width=360
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
@@ -437,17 +447,21 @@ controlStyles:
   - target: Button#ZoomInButton
     styles:
       - Visibility=1
-  - target: Grid@SearchBoxInputStates > Border#TaskbarSearchBackground
+  - target: Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox > Grid > Border#BorderElement
     styles:
-      - CornerRadius=4
-      - Background@ActiveInput:=$Background
+      - Background=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
-      - Background@SearchBoxHover:=$Background
-      - Background@NoFocus:=$Background
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - Margin=0,8
-      - Width=215
+      - CornerRadius=6
+  - target: Border#TaskbarSearchBackground
+    styles:
+      - CornerRadius=6
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BorderThickness=0
+  - target: Grid#SearchBoxOnTaskbarGleamContainer > Grid#SearchBoxOnTaskbarGleamImageContainer
+    styles:
+      - Visibility=1
 webContentStyles:
   - target: '*'
     styles:
