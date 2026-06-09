@@ -313,42 +313,24 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
-      - Width=38
-      - Height=38
-  - target: Grid#UserTileIcon
-    styles:
-      - Width=26
-      - Height=26
-      - Margin=12,0,0,0
-  - target: TextBlock#UserTileNameText
-    styles:
-      - Text=
   - target: StartDocked.PowerOptionsView > StartDocked.NavigationPaneButton > Grid@CommonStates > Border
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CornerRadius
-      - Width=38
-      - Height=38
   - target: Grid > LogosContainer > ItemsControl > ItemsPresenter > ItemsWrapGrid
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CornerRadius
-      - Width=38
-      - Height=38
   - target: StartDocked.AppListView#NavigationPanePlacesListView > Border
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
-      - Height=38
-  - target: StartDocked.NavigationPaneView#UserControl > Grid#RootPanel > StartDocked.AppListView#NavigationPanePlacesListView > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter
-    styles:
-      - Padding=2,-1
   - target: GridView#AllAppsGrid > ItemsWrapGrid
     styles:
       - Visibility=0
