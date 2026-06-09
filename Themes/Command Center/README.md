@@ -216,9 +216,6 @@ controlStyles:
   - target: Border#AcrylicOverlay
     styles:
       - Visibility=1
-  - target: Grid#RootPanel > Grid#RootGrid > Grid#RootContent
-    styles:
-      - // Margin=-20,-20,-20,0
   - target: StartDocked.StartSizingFrame
     styles:
       - Width=750
@@ -235,15 +232,11 @@ controlStyles:
     styles:
       - Visibility=0
       - Width=650
-      - Margin=0,-130,0,230
       - Canvas.ZIndex=1
       - MaxHeight:=340
   - target: StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid > ContentPresenter#ContentPresenter > TextBlock#PlaceholderText
     styles:
       - Text=Search This Precision
-  - target: Grid#AllListHeading
-    styles:
-      - Margin=0,-10,0,0
   - target: Grid#AllListHeading > TextBlock#AllListHeadingText
     styles:
       - Visibility=1
@@ -268,18 +261,16 @@ controlStyles:
       - CornerRadius=$ElementCornerRadius
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
-      - Height=50
-      - Margin=0,20,0,-20
+      - Height=38
       - Width=360
-  - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton > Grid > Border#BorderElement
-    styles:
-      - Background:=$Background
-      - BorderBrush:=$BorderBrush
-      - BorderThickness=$BorderThickness
-      - CornerRadius=$SearchBoxRadius
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
-      - Margin=-70,40,0,0
+      - Margin=-70,0,0,0
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border
+    styles:
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BorderThickness=0
   - target: TextBlock#PinnedListHeaderText
     styles:
       - Visibility=1
@@ -304,24 +295,42 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
+      - Width=38
+      - Height=38
+  - target: Grid#UserTileIcon
+    styles:
+      - Width=26
+      - Height=26
+      - Margin=12,0,0,0
+  - target: TextBlock#UserTileNameText
+    styles:
+      - Text=
   - target: StartDocked.PowerOptionsView > StartDocked.NavigationPaneButton > Grid@CommonStates > Border
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CornerRadius
+      - Width=38
+      - Height=38
   - target: Grid > LogosContainer > ItemsControl > ItemsPresenter > ItemsWrapGrid
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CornerRadius
+      - Width=38
+      - Height=38
   - target: StartDocked.AppListView#NavigationPanePlacesListView > Border
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
+      - Height=38
+  - target: StartDocked.NavigationPaneView#UserControl > Grid#RootPanel > StartDocked.AppListView#NavigationPanePlacesListView > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter
+    styles:
+      - Padding=2,-1
   - target: GridView#AllAppsGrid > ItemsWrapGrid
     styles:
       - Visibility=0
@@ -424,9 +433,21 @@ controlStyles:
   - target: Button#ZoomInButton
     styles:
       - Visibility=1
+  - target: Grid@SearchBoxInputStates > Border#TaskbarSearchBackground
+    styles:
+      - CornerRadius=4
+      - Background@ActiveInput:=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - Background@SearchBoxHover:=$Background
+      - Background@NoFocus:=$Background
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - Margin=0,8
+      - Width=215
 webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
+webContentCustomJs: ''
 ```
 </details>
