@@ -106,14 +106,14 @@ controlStyles:
       - RenderTransform:=<TranslateTransform X="0" Y="-250" />
       - Margin=0,0,0,0
       - CornerRadius=$CornerRadius
-  - target: FlyoutPresenter
+  - target: FlyoutPresenter > Border
     styles:
-      - // Background:=$Background
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
       - CornerRadius=$FlyoutCornerRadius
       - Padding=-1
-  - target: MenuFlyoutPresenter
+  - target: MenuFlyoutPresenter > Border
     styles:
       - CornerRadius=$FlyoutCornerRadius
   - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Grid#RootGrid
@@ -448,6 +448,6 @@ webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
-webContentCustomJs: ''
+
 ```
 </details>
