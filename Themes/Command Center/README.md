@@ -62,7 +62,7 @@ styleConstants:
   - ClockBG=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="1"/>
   - BorderThickness=0.3,1,0.3,1
   - CornerRadius=35
-  - SearchBoxRadius=25
+  - SearchBoxRadius=20
   - ElementCornerRadius=10
   - FlyoutCornerRadius=6
   - HoverCornerRadius=15
@@ -263,6 +263,10 @@ controlStyles:
     styles:
       - Height=38
       - Width=360
+      - Background:=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=$SearchBoxRadius
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
       - Margin=-70,0,0,0
