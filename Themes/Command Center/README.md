@@ -106,14 +106,14 @@ controlStyles:
       - RenderTransform:=<TranslateTransform X="0" Y="-250" />
       - Margin=0,0,0,0
       - CornerRadius=$CornerRadius
-  - target: FlyoutPresenter > Border
+  - target: FlyoutPresenter > Border#BackgroundElement
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
       - CornerRadius=$FlyoutCornerRadius
       - Padding=-1
-  - target: MenuFlyoutPresenter > Border
+  - target: MenuFlyoutPresenter > Border#BackgroundElement
     styles:
       - CornerRadius=$FlyoutCornerRadius
   - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Grid#RootGrid
