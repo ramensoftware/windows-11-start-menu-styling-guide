@@ -62,7 +62,7 @@ styleConstants:
   - ClockBG=<SolidColorBrush Color="{ThemeResource SystemAccentColor}" Opacity="1"/>
   - BorderThickness=0.3,1,0.3,1
   - CornerRadius=35
-  - SearchBoxRadius=20
+  - SearchBoxRadius=25
   - ElementCornerRadius=10
   - FlyoutCornerRadius=6
   - HoverCornerRadius=15
@@ -272,6 +272,10 @@ controlStyles:
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
+    styles:
+      - Height=50
+      - Width=350
+  - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton > Grid > Border#BorderElement
     styles:
       - Background:=$Background
       - BorderBrush:=$BorderBrush
