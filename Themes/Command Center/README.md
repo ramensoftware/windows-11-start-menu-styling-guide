@@ -106,14 +106,14 @@ controlStyles:
       - RenderTransform:=<TranslateTransform X="0" Y="-250" />
       - Margin=0,0,0,0
       - CornerRadius=$CornerRadius
-  - target: FlyoutPresenter
+  - target: FlyoutPresenter > Border#BackgroundElement
     styles:
-      - // Background:=$Background
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
       - CornerRadius=$FlyoutCornerRadius
       - Padding=-1
-  - target: MenuFlyoutPresenter
+  - target: MenuFlyoutPresenter > Border#BackgroundElement
     styles:
       - CornerRadius=$FlyoutCornerRadius
   - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Grid#RootGrid
@@ -210,15 +210,24 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
+  - target: Border#AccentAppBorder
+    styles:
+      - Visibility=1
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=1
+  - target: Border#AppBorder
+    styles:
+      - Background:=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=$CornerRadius
   - target: Grid#MainMenu > Border#AcrylicBorder
     styles:
       - Visibility=1
   - target: Border#AcrylicOverlay
     styles:
       - Visibility=1
-  - target: Grid#RootPanel > Grid#RootGrid > Grid#RootContent
-    styles:
-      - // Margin=-20,-20,-20,0
   - target: StartDocked.StartSizingFrame
     styles:
       - Width=750
@@ -235,15 +244,11 @@ controlStyles:
     styles:
       - Visibility=0
       - Width=650
-      - Margin=0,-130,0,230
       - Canvas.ZIndex=1
       - MaxHeight:=340
   - target: StartDocked.SearchBoxToggleButton#StartMenuSearchBox > Grid > ContentPresenter#ContentPresenter > TextBlock#PlaceholderText
     styles:
       - Text=Search This Precision
-  - target: Grid#AllListHeading
-    styles:
-      - Margin=0,-10,0,0
   - target: Grid#AllListHeading > TextBlock#AllListHeadingText
     styles:
       - Visibility=1
@@ -269,8 +274,7 @@ controlStyles:
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
       - Height=50
-      - Margin=0,20,0,-20
-      - Width=360
+      - Width=350
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton > Grid > Border#BorderElement
     styles:
       - Background:=$Background
@@ -279,7 +283,12 @@ controlStyles:
       - CornerRadius=$SearchBoxRadius
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
-      - Margin=-70,40,0,0
+      - Margin=-70,0,0,0
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border
+    styles:
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BorderThickness=0
   - target: TextBlock#PinnedListHeaderText
     styles:
       - Visibility=1
@@ -422,6 +431,21 @@ controlStyles:
     styles:
       - Visibility=1
   - target: Button#ZoomInButton
+    styles:
+      - Visibility=1
+  - target: Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox > Grid > Border#BorderElement
+    styles:
+      - Background=$Background
+      - BorderBrush:=$BorderBrush
+      - BorderThickness=$BorderThickness
+      - CornerRadius=6
+  - target: Border#TaskbarSearchBackground
+    styles:
+      - CornerRadius=6
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BorderThickness=0
+  - target: Grid#SearchBoxOnTaskbarGleamContainer > Grid#SearchBoxOnTaskbarGleamImageContainer
     styles:
       - Visibility=1
 webContentStyles:
