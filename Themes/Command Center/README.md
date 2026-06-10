@@ -452,6 +452,5 @@ webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
-
 ```
 </details>
