@@ -115,7 +115,7 @@ controlStyles:
     styles:
       - Height=0
       - Width=0
-  - target: Windows.UI.Xaml.Controls.Grid#TopLevelRoot > Windows.UI.Xaml.Controls.Border
+  - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton
     styles:
       - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
