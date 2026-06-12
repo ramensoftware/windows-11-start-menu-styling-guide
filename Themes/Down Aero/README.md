@@ -1,4 +1,4 @@
-# Down Aero Theme (Windows 11 Start Menu Fix)
+# [Down Aero](http://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Down%20Aero) Theme (Windows 11 Start Menu Fix)
 
 This is a modified version of the Down Aero theme for **Windows 11 Start Menu Styler** (Windhawk). It fixes the layout breaking issues caused by recent Windows 11 updates.
 
