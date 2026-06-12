@@ -23,9 +23,12 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 
 ## Bugs
 * Legacy Windows 10 effects (Reveal, and 3D push) are still present.
-* Items may not align/center correctly on higher DPIs.
+* ![Screenshot](3d_remnant.png)
 * Tiles have a broken background when dragged from applist.
+* ![Screenshot](tiles_broken.png)
 * Right-click menus in textbox are not styled correctly.
+* ![Screenshot](menu_group.png)
+* ![Screenshot](menu_folder.png)
 
 ## Unsupported configurations/settings
 * Windows 10 version **1607** and lower ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
@@ -44,10 +47,10 @@ The theme styles have to be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-theme: ''
 styleConstants:
   - background=<WindhawkBlur TintColor="{ThemeResource AcrylicBG}" TintOpacity="0.5" TintLuminosityOpacity="1" FallbackColor="{ThemeResource AcrylicBG}" BlurAmount="30" />
   - borderBrush=<SolidColorBrush Color="{ThemeResource Border}" />
+  - tooltipBorderBrush=<SolidColorBrush Color="{ThemeResource TooltipBorder}" />
   - accentButtonNormal=<SolidColorBrush Color="{ThemeResource AccentColor}" />
   - accentButtonPointerOver=<SolidColorBrush Color="{ThemeResource AccentColor}" Opacity="0.9" />
   - accentButtonPressed=<SolidColorBrush Color="{ThemeResource AccentColor}" Opacity="0.8" />
@@ -55,7 +58,7 @@ styleConstants:
   - buttonNormal=<SolidColorBrush Color="{ThemeResource ButtonFillNormal}" />
   - buttonPointerOver=<SolidColorBrush Color="{ThemeResource ButtonFillPointerOver}" />
   - buttonPressed=<SolidColorBrush Color="{ThemeResource ButtonFillPressed}" />
-  - buttonBorderBrush=<LinearGradientBrush StartPoint="0.5,0.9" EndPoint="0.5,1"><GradientStop Color="{ThemeResource ButtonBorderBrushTopGradient}" Offset="0.0" /><GradientStop Color="{ThemeResource ButtonBorderBrushBottomGradient}" Offset="1" /></LinearGradientBrush>
+  - buttonBorderBrush=<LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1"><GradientStop Color="{ThemeResource ButtonBorderBrushTopGradient}" Offset="0.0" /><GradientStop Color="{ThemeResource ButtonBorderBrushBottomGradient}" Offset="1" /></LinearGradientBrush>
   - menuPointerOver=<SolidColorBrush Color="{ThemeResource MenuFillPointerOver}" />
   - menuPressed=<SolidColorBrush Color="{ThemeResource MenuFillPressed}" />
   - listPointerOver=<SolidColorBrush Color="{ThemeResource ListFillPointerOver}" />
@@ -63,9 +66,9 @@ styleConstants:
   - tilesNormal=<SolidColorBrush Color="{ThemeResource TilesFillNormal}" />
   - tilesPointerOver=<SolidColorBrush Color="{ThemeResource TilesFillPointerOver}" />
   - tilesPressed=<SolidColorBrush Color="{ThemeResource TilesFillPressed}" />
-  - tilesBorderBrushNormal=<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientNormal}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientNormal}" Offset="1" /></LinearGradientBrush>
-  - tilesBorderBrushPointerOver=<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientPointerOver}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientPointerOver}" Offset="1" /></LinearGradientBrush>
-  - tilesBorderBrushPressed=<LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientPressed}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientPressed}" Offset="1" /></LinearGradientBrush>
+  - tilesBorderBrushNormal=<LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientNormal}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientNormal}" Offset="1" /></LinearGradientBrush>
+  - tilesBorderBrushPointerOver=<LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientPointerOver}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientPointerOver}" Offset="1" /></LinearGradientBrush>
+  - tilesBorderBrushPressed=<LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1"><GradientStop Color="{ThemeResource TilesBorderBrushTopGradientPressed}" Offset="0.0" /><GradientStop Color="{ThemeResource TilesBorderBrushBottomGradientPressed}" Offset="1" /></LinearGradientBrush>
   - textboxBorder=<SolidColorBrush Color="{ThemeResource TextBoxBorderBrush}" />
   - fontFamily=Segoe UI Variable
 controlStyles:
@@ -105,16 +108,12 @@ controlStyles:
       - FontSize=12
       - Margin=0,0,0,5
       - FontFamily=$fontFamily
-  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root@CommonStates
+  - target: StartUI.AllAppsGridListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
     styles:
-      - RevealBackground@PointerOver:=$listPointerOver
-      - RevealBackground@Pressed:=$listPressed
-      - CornerRadius=9
       - PointerOverBackground:=
       - PressedBackground:=
-      - SelectedBackground:=
       - RevealBorderBrush:=
-      - RevealBackground@Normal:=
+      - RevealBackground:=
   - target: StartUI.NavigationPaneGrid
     styles:
       - CornerRadius=8,0,0,8
@@ -201,25 +200,38 @@ controlStyles:
     styles:
       - Background@PointerOver:=$listPointerOver
       - Background@Pressed:=$listPressed
-      - CornerRadius=6
-      - BorderBrush=Transparent
+      - CornerRadius=7
+      - BorderBrush:=Transparent
+      - Background:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
+      - Margin=-1
   - target: StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates
     styles:
       - Background@PointerOver:=$listPointerOver
       - Background@Pressed:=$listPressed
-      - BorderBrush=Transparent
+      - BorderBrush:=Transparent
+      - Background:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
       - CornerRadius=6
       - Margin=-1,0,-1,0
   - target: StartUI.NavigationPaneButton#UserTileButton > ContentPresenter@CommonStates
     styles:
       - Background@PointerOver:=$listPointerOver
       - Background@Pressed:=$listPressed
-      - BorderBrush=Transparent
+      - BorderBrush:=Transparent
+      - Background:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
       - CornerRadius=6
       - Margin=-1,0,-1,0
   - target: Grid#RootPanel@CommonStates > ContentPresenter
     styles:
-      - BorderBrush=Transparent
+      - BorderBrush:=Transparent
+      - Background:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
       - Background@PointerOver:=$listPointerOver
       - Background@Pressed:=$listPressed
       - Background@PressedSelected:=$listPressed
@@ -240,6 +252,10 @@ controlStyles:
       - Background@PointerOver:=$menuPointerOver
       - Background@Pressed:=$menuPressed
       - CornerRadius=0,4,4,0
+      - BorderBrush:=Transparent
+      - Background:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: MenuFlyoutPresenter
     styles:
       - MinWidth=165
@@ -256,6 +272,8 @@ controlStyles:
       - Background@Pressed:=$buttonPressed
       - BorderThickness=1
       - BorderBrush:=$buttonBorderBrush
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: StackPanel > Button#DeleteButton > Grid@CommonStates > ContentPresenter > TextBlock
     styles:
       - FontFamily=$fontFamily
@@ -331,11 +349,12 @@ controlStyles:
   - target: Button#PinButton > Grid > Border
     styles:
       - Background=Transparent
+      - Canvas.ZIndex=2
       - Height=16
+      - Width=44
       - BorderBrush:=$buttonBorderBrush
       - BorderThickness=1,0,0,0
       - CornerRadius=0
-      - ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="0" FromVerticalOffset="37.5" /></TransitionCollection>
   - target: JumpViewUI.JumpListListViewItem
     styles:
       - CornerRadius=4
@@ -350,6 +369,8 @@ controlStyles:
       - BorderBrush@Pressed:=$tilesBorderBrushPressed
       - BorderThickness=0,2,0,2
       - CornerRadius=8
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: TileGridNestedPanel > StartUI.TileListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
     styles:
       - RevealBackground:=
@@ -360,7 +381,9 @@ controlStyles:
     styles:
       - CornerRadius=4
       - Background:=$background
-      - BorderThickness=0
+      - BorderBrush:=$tooltipBorderBrush
+      - BorderThickness=1
+      - Padding=9,7,9,7
   - target: Button#UninstallButton
     styles:
       - Margin=0,15,9,0
@@ -380,15 +403,21 @@ controlStyles:
       - MinHeight=30
       - Background@PointerOver:=$menuPointerOver
       - Background@Pressed:=$menuPressed
-      - BorderBrush=Transparent
       - MinWidth=208
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: ToggleMenuFlyoutItem > Grid@CommonStates
     styles:
       - Padding=12,0,0,0
       - Height=28
       - Background@PointerOver:=$menuPointerOver
       - Background@Pressed:=$menuPressed
-      - BorderBrush=Transparent
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: TextBlock#ShutdownConfirmationTextBlock
     styles:
       - FontFamily=$fontFamily
@@ -405,6 +434,8 @@ controlStyles:
       - Background@Pressed:=$buttonPressed
       - BorderThickness=1
       - BorderBrush@Normal:=$buttonBorderBrush
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: TextBox > Grid > Button#DeleteButton > Grid@CommonStates
     styles:
       - Background@PointerOver:=$listPointerOver
@@ -413,6 +444,10 @@ controlStyles:
       - Width=28
       - Margin=-12,0,0,0
       - Background@Pressed:=$listPressed
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: TextBox
     styles:
       - FontWeight=Semibold
@@ -486,6 +521,10 @@ controlStyles:
       - Background@PointerOver:=$menuPointerOver
       - Padding=12,0,0,0
       - BorderBrush=Transparent
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: Viewbox > Border > TextBlock
     styles:
       - FontWeight=SemiBold
@@ -502,7 +541,10 @@ controlStyles:
     styles:
       - Background@PointerOver:=$menuPointerOver
       - Background@Pressed:=$menuPressed
-      - BorderBrush=Transparent
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: Button#PinButton
     styles:
       - MinWidth=44
@@ -520,9 +562,10 @@ controlStyles:
   - target: MenuFlyoutPresenter > * > Border
     styles:
       - ChildTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="-25" FromVerticalOffset="0" /></TransitionCollection>
-  - target: ToolTip > ContentPresenter#LayoutRoot > TextBlock
+  - target: ToolTip > ContentPresenter > TextBlock
     styles:
       - FontFamily=$fontFamily
+      - Padding=0,0,0,1
   - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=RecentList] > StackPanel > Button > Border > TextBlock
     styles:
       - Margin=7,0,0,2
@@ -538,6 +581,8 @@ controlStyles:
       - Background@Pressed:=$buttonPressed
       - BorderThickness=1
       - BorderBrush:=$buttonBorderBrush
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: ComboBox#ShutdownReasonComboBox
     styles:
       - CornerRadius=4
@@ -551,6 +596,8 @@ controlStyles:
       - CornerRadius=4
       - BorderThickness=1
       - BorderBrush:=$buttonBorderBrush
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: ComboBoxItem
     styles:
       - CornerRadius=4
@@ -562,7 +609,10 @@ controlStyles:
       - Background@Selected:=$menuPointerOver
       - Background@SelectedPressed:=$menuPressed
       - Background@SelectedPointerOver:=$menuPointerOver
-      - BorderBrush=Transparent
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: Border#PopupBorder
     styles:
       - Background:=$background
@@ -733,6 +783,10 @@ controlStyles:
       - Height=28
       - Margin@PointerOver=-1
       - Margin@Focused=0
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: StartUI.TileFolderNameTextBox > Grid@CommonStates
     styles:
       - BorderThickness=0,0,0,2
@@ -751,6 +805,10 @@ controlStyles:
       - Width=28
       - Height=20
       - Margin=-10,1,0,0
+      - Background:=Transparent
+      - BorderBrush:=Transparent
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
   - target: Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement
     styles:
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
@@ -824,6 +882,30 @@ controlStyles:
   - target: JumpViewUI.ControlHostMenuFlyoutPresenter
     styles:
       - Background:=$background
+  - target: StartUI.AllAppsGridListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > Grid
+    styles:
+      - CornerRadius=6
+      - Background@Normal=Transparent
+      - Background@PointerOver:=$listPointerOver
+      - Background@Pressed:=$listPressed
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
+  - target: StartUI.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter
+    styles:
+      - PointerOverBackground:=
+      - PressedBackground:=
+      - RevealBorderBrush:=
+      - RevealBackground:=
+  - target: StartUI.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > Viewbox > Border
+    styles:
+      - CornerRadius=6
+      - Background@Normal=Transparent
+      - Background@PointerOver:=$listPointerOver
+      - Background@Pressed:=$listPressed
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
+      - MinWidth=46
+      - MinHeight=46
 themeResourceVariables:
   - AccentColor@Dark={ThemeResource SystemAccentColorLight2}
   - AccentColor@Light={ThemeResource SystemAccentColorDark1}
@@ -845,6 +927,8 @@ themeResourceVariables:
   - NavPaneBorder@Light=#05000000
   - Border@Dark=#CC424242
   - Border@Light=#FFCCCCCC
+  - TooltipBorder@Dark=#4D000000
+  - TooltipBorder@Light=#FFCCCCCC
   - AcrylicBG@Dark=#1F1F1F
   - AcrylicBG@Light=#F2F2F2
   - ListFillPointerOver@Dark=#15FFFFFF
@@ -861,18 +945,18 @@ themeResourceVariables:
   - TilesFillPointerOver@Light=#FAFFFFFF
   - TilesFillPressed@Dark=#0BFFFFFF
   - TilesFillPressed@Light=#80FFFFFF
-  - TilesBorderBrushBottomGradientNormal@Dark=Transparent
+  - TilesBorderBrushBottomGradientNormal@Dark=#0EFFFFFF
   - TilesBorderBrushBottomGradientNormal@Light=#1A000000
-  - TilesBorderBrushBottomGradientPointerOver@Dark=Transparent
+  - TilesBorderBrushBottomGradientPointerOver@Dark=#25FFFFFF
   - TilesBorderBrushBottomGradientPointerOver@Light=#26000000
-  - TilesBorderBrushBottomGradientPressed@Dark=Transparent
+  - TilesBorderBrushBottomGradientPressed@Dark=#0BFFFFFF
   - TilesBorderBrushBottomGradientPressed@Light=#1A000000
   - TilesBorderBrushTopGradientNormal@Dark=#33FFFFFF
-  - TilesBorderBrushTopGradientNormal@Light=Transparent
+  - TilesBorderBrushTopGradientNormal@Light=#80FFFFFF
   - TilesBorderBrushTopGradientPointerOver@Dark=#4DFFFFFF
-  - TilesBorderBrushTopGradientPointerOver@Light=Transparent
+  - TilesBorderBrushTopGradientPointerOver@Light=#FAFFFFFF
   - TilesBorderBrushTopGradientPressed@Dark=#26FFFFFF
-  - TilesBorderBrushTopGradientPressed@Light=Transparent
+  - TilesBorderBrushTopGradientPressed@Light=#80FFFFFF
   - TextBoxBorderBrush@Dark=#33FFFFFF
   - TextBoxBorderBrush@Light=#1A000000
   - TextBoxBG@Dark={ThemeResource SystemChromeLowColor}
