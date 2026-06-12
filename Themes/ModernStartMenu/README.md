@@ -23,11 +23,15 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 
 ## Bugs
 * Legacy Windows 10 effects (Reveal, and 3D push) are still present.
+
 ![Screenshot](3d_remnant.png)
 * Tiles have a broken background when dragged from applist.
+
 ![Screenshot](tiles_broken.png)
 * Right-click menus in textbox are not styled correctly.
+
 ![Screenshot](menu_group.png)
+
 ![Screenshot](menu_folder.png)
 
 ## Unsupported configurations/settings
