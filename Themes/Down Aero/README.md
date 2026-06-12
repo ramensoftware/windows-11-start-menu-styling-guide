@@ -2,6 +2,9 @@
 
 This is a modified version of the Down Aero theme for **Windows 11 Start Menu Styler** (Windhawk). It fixes the layout breaking issues caused by recent Windows 11 updates.
 
+<img width="1115" height="644" alt="updated" src="https://github.com/user-attachments/assets/26ce2433-ae73-4696-92a9-c9aa9383fc71" />
+
+
 ## Bug Fixes & Improvements
 
 ### Fixed the "Category View" Overflow Bug
