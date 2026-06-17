@@ -121,10 +121,10 @@ controlStyles:
   - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer
     styles:
       - RenderTransform:=<TranslateTransform X="-450" />
-      - Margin=-92,-42,-152,-15
+      - Margin=-92,-64,-152,-15
   - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer#SideBySidePinnedScrollViewer
     styles:
-      - RenderTransform:=<TranslateTransform X="267" Y="20" />
+      - RenderTransform:=<TranslateTransform X="267" Y="67" />
       - Canvas.ZIndex=-1
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > SemanticZoom#TopLevelRoot > Grid > ScrollViewer#ScrollViewer > ScrollContentPresenter#ScrollContentPresenter > Grid > ContentPresenter#ZoomedInPresenter > GridView#AllAppsGrid > Border > Grid#SideBySidePinnedWrapper > ScrollViewer#SideBySidePinnedScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#SideBySidePinnedContent > StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter
     styles:
