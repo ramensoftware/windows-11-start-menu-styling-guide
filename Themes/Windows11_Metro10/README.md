@@ -51,6 +51,7 @@ controlStyles:
   - target: Border#AcrylicOverlay
     styles:
       - Margin=0,-70,0,0
+      - CornerRadius=20,20,0,0
 
 #Collapsed Elements
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
@@ -75,6 +76,9 @@ controlStyles:
   - target: Grid#ShowMorePinnedGrid > Button
     styles:
       - Visibility=Collapsed 
+  - target: TextBlock#PinnedListHeaderText
+    styles:  
+      - Visibility=Collapsed        
 
 #User Tile
   - target: StartDocked.UserTileView
@@ -124,15 +128,18 @@ controlStyles:
   - target: Button
     styles:
       - Style:=<ResourceKey="ButtonRevealStyle" />    
-
+#Header
+  - target: Grid#TopLevelHeader 
+    styles:
+      - Margin=0,0,-1,0
 #Apps list/Pinned List
   - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer
     styles:
       - RenderTransform:=<TranslateTransform X="-480" />
-      - Margin=-92,0,-172,-15
+      - Margin=-92,-12,-172,-15
   - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer#SideBySidePinnedScrollViewer
     styles:
-      - RenderTransform:=<TranslateTransform X="172"  />
+      - RenderTransform:=<TranslateTransform X="172" />
       - Canvas.ZIndex=-1
   - target: Button#Header > Border#Border@CommonStates
     styles:
@@ -149,7 +156,7 @@ controlStyles:
   - target: GridView#PinnedList
     styles:
       - Width=300
-      - RenderTransform:=<TranslateTransform Y="-272"  />       
+      - RenderTransform:=<TranslateTransform Y="-24"  />       
   - target: GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer
     styles:
       - Height=265   
@@ -157,10 +164,7 @@ controlStyles:
     styles:
       - Background:=<RevealBorderBrush Color="#646464" TargetTheme="1" Opacity=".1"/>
       - Margin=2
-      - CornerRadius=5
-  - target: TextBlock#PinnedListHeaderText
-    styles:  
-      - Margin=260,-4,-260,0    
+      - CornerRadius=5   
 
 #Recommended List
   - target: Grid#TopLevelSuggestionsRoot
@@ -168,7 +172,7 @@ controlStyles:
       - MinHeight=132
       - Margin=-65,31,-65,-31
       - Width=400
-      - RenderTransform:=<TranslateTransform Y="-550"/>
+      - RenderTransform:=<TranslateTransform Y="-80"/>
          
   - target: Windows.UI.Xaml.Controls.GridView#RecommendedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem
     styles:
