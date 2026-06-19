@@ -35,6 +35,10 @@ controlStyles:
   - target: Grid#FrameRoot
     styles:
       - MaxHeight=520
+  - target: TextBlock#ZoomedOutHeading
+    styles:
+      - Visibility=Collapsed
+
   - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
     styles:
       - Height=0
