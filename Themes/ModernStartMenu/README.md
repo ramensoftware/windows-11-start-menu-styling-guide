@@ -35,9 +35,10 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 ![Screenshot](menu_folder.png)
 
 ## Unsupported configurations/settings
-* Windows 10 version **1607** and lower ([Segoe Fluent Icons](https://aka.ms/SegoeFluentIcons) required).
+* Windows 10 (all versions) (Partially supported but never be fully supported).
 * *"Show accent color on Start and taskbar"* enabled.
 * Fullscreen Start menu (ExplorerPatcher).
+* High Contrast mode.
 
 ## Manual installation
 
@@ -190,7 +191,7 @@ controlStyles:
       - FontFamily=$fontFamily
       - FontWeight=Normal
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemAltHighColor}" />
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
   - target: TextBlock#StatusMessage
     styles:
       - Margin=20,0,0,0
@@ -205,8 +206,8 @@ controlStyles:
       - Background@PointerOver:=$listPointerOver
       - Background@Pressed:=$listPressed
       - CornerRadius=7
-      - BorderBrush:=Transparent
-      - Background:=Transparent
+      - BorderBrush=Transparent
+      - Background=Transparent
       - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
       - BackgroundSizing=InnerBorderEdge
       - Margin=-1
@@ -214,8 +215,8 @@ controlStyles:
     styles:
       - Background@PointerOver:=$listPointerOver
       - Background@Pressed:=$listPressed
-      - BorderBrush:=Transparent
-      - Background:=Transparent
+      - BorderBrush=Transparent
+      - Background=Transparent
       - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
       - BackgroundSizing=InnerBorderEdge
       - CornerRadius=6
@@ -224,16 +225,16 @@ controlStyles:
     styles:
       - Background@PointerOver:=$listPointerOver
       - Background@Pressed:=$listPressed
-      - BorderBrush:=Transparent
-      - Background:=Transparent
+      - BorderBrush=Transparent
+      - Background=Transparent
       - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
       - BackgroundSizing=InnerBorderEdge
       - CornerRadius=6
       - Margin=-1,0,-1,0
   - target: Grid#RootPanel@CommonStates > ContentPresenter
     styles:
-      - BorderBrush:=Transparent
-      - Background:=Transparent
+      - BorderBrush=Transparent
+      - Background=Transparent
       - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
       - BackgroundSizing=InnerBorderEdge
       - Background@PointerOver:=$listPointerOver
@@ -256,10 +257,6 @@ controlStyles:
       - Background@PointerOver:=$menuPointerOver
       - Background@Pressed:=$menuPressed
       - CornerRadius=0,4,4,0
-      - BorderBrush:=Transparent
-      - Background:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: MenuFlyoutPresenter
     styles:
       - MinWidth=165
@@ -282,7 +279,7 @@ controlStyles:
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
       - Margin=0,-1,0,0
   - target: Button#CancelButton > Grid@CommonStates > ContentPresenter
     styles:
@@ -296,7 +293,7 @@ controlStyles:
       - FontFamily=$fontFamily
       - FontSize=14
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemAltHighColor}" />
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
   - target: MenuFlyoutItem > * > Grid > Ellipse
     styles:
       - Width=32
@@ -408,20 +405,12 @@ controlStyles:
       - Background@PointerOver:=$menuPointerOver
       - Background@Pressed:=$menuPressed
       - MinWidth=208
-      - Background:=Transparent
-      - BorderBrush:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: ToggleMenuFlyoutItem > Grid@CommonStates
     styles:
       - Padding=12,0,0,0
       - Height=28
       - Background@PointerOver:=$menuPointerOver
       - Background@Pressed:=$menuPressed
-      - Background:=Transparent
-      - BorderBrush:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: TextBlock#ShutdownConfirmationTextBlock
     styles:
       - FontFamily=$fontFamily
@@ -448,10 +437,6 @@ controlStyles:
       - Width=28
       - Margin=-12,0,0,0
       - Background@Pressed:=$listPressed
-      - Background:=Transparent
-      - BorderBrush:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: TextBox
     styles:
       - FontWeight=Semibold
@@ -501,15 +486,15 @@ controlStyles:
   - target: StartUI.AppListViewItem > Grid#RootPanel@CommonStates > * > FontIcon
     styles:
       - Margin=-12,0,0,0
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
   - target: StartUI.NavigationPaneButton#PowerButton > ContentPresenter@CommonStates > * > FontIcon
     styles:
       - Margin=-12,0,0,0
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
   - target: StartUI.NavigationPaneButton#UserTileButton > ContentPresenter@CommonStates > StartUI.NavigationPaneItemPanel > Grid
     styles:
       - Margin=-12,0,0,0
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
       - Width=24
       - Height=24
   - target: JumpViewUI.ItemNotFoundFlyoutControl > * > TextBlock
@@ -524,11 +509,6 @@ controlStyles:
       - Background@SubMenuOpened:=$menuPointerOver
       - Background@PointerOver:=$menuPointerOver
       - Padding=12,0,0,0
-      - BorderBrush=Transparent
-      - Background:=Transparent
-      - BorderBrush:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: Viewbox > Border > TextBlock
     styles:
       - FontWeight=SemiBold
@@ -545,17 +525,13 @@ controlStyles:
     styles:
       - Background@PointerOver:=$menuPointerOver
       - Background@Pressed:=$menuPressed
-      - Background:=Transparent
-      - BorderBrush:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: Button#PinButton
     styles:
       - MinWidth=44
   - target: Button#PinButton > Grid@CommonStates > * > TextBlock
     styles:
       - Margin=3,0,0,0
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
   - target: FontIcon#SubItemChevron
     styles:
       - Margin=-30,0,0,0
@@ -613,10 +589,6 @@ controlStyles:
       - Background@Selected:=$menuPointerOver
       - Background@SelectedPressed:=$menuPressed
       - Background@SelectedPointerOver:=$menuPointerOver
-      - Background:=Transparent
-      - BorderBrush:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: Border#PopupBorder
     styles:
       - Background:=$background
@@ -637,25 +609,25 @@ controlStyles:
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: Button#ShutdownReasonButton > ContentPresenter@CommonStates > TextBlock
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: ComboBox > Grid@CommonStates > ContentPresenter > TextBlock
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: ComboBoxItem > Grid@CommonStates > ContentPresenter > TextBlock
     styles:
       - FontFamily=$fontFamily
       - FontSize=14
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
       - Margin=0,1,0,-1
   - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=FrequentList] > StackPanel > Button > Border > TextBlock
@@ -681,7 +653,7 @@ controlStyles:
       - RadiusY=4
   - target: TextBox > Grid > Border#BackgroundElement
     styles:
-      - Background:=<SolidColorBrush Color="{ThemeResource TextBoxBG}" />
+      - Background:=<SolidColorBrush Color="{ThemeResource TextBoxBG}" Opacity="0.75" />
       - CornerRadius=4
       - BorderThickness=0,0,0,2
       - BorderBrush:=$accentButtonNormal
@@ -749,7 +721,7 @@ controlStyles:
   - target: TextBox > Grid > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement
     styles:
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
   - target: ScrollViewer#ContentElement
     styles:
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
@@ -780,17 +752,13 @@ controlStyles:
   - target: StartUI.TileFolderNameTextBox > Grid@CommonStates > Border#BorderElement
     styles:
       - Background@PointerOver:=$tilesNormal
-      - Background@Focused:=<SolidColorBrush Color="{ThemeResource TextBoxBG}" />
+      - Background@Focused:=<SolidColorBrush Color="{ThemeResource TextBoxBG}" Opacity="0.75" />
       - CornerRadius=4
       - BorderThickness=1,1,1,0
       - BorderBrush@Focused:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}" Opacity="0.5" />
       - Height=28
       - Margin@PointerOver=-1
       - Margin@Focused=0
-      - Background:=Transparent
-      - BorderBrush:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: StartUI.TileFolderNameTextBox > Grid@CommonStates
     styles:
       - BorderThickness=0,0,0,2
@@ -803,20 +771,16 @@ controlStyles:
       - Margin=3,-4,0,0
   - target: Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates
     styles:
-      - Background@PointerOver:=$listPointerOver
-      - Background@Pressed:=$listPressed
+      - Background@PointerOver:=$buttonPointerOver
+      - Background@Pressed:=$buttonPressed
       - CornerRadius=4
       - Width=28
       - Height=20
       - Margin=-10,1,0,0
-      - Background:=Transparent
-      - BorderBrush:=Transparent
-      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-      - BackgroundSizing=InnerBorderEdge
   - target: Border#DeleteButtonWrapper > Button#DeleteButton > Grid@CommonStates > Border > TextBlock#GlyphElement
     styles:
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
   - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#VerticalSmallIncrease > Grid
     styles:
       - Background=Transparent
@@ -857,8 +821,8 @@ controlStyles:
   - target: StartUI.ViewSelectionListViewItem > Grid#RootPanel@CommonStates > ContentPresenter > StartUI.NavigationPaneItemPanel > FontIcon
     styles:
       - Margin=-12,0,0,0
-      - Opacity@Pressed=0.8
-      - Opacity@PressedSelected=0.8
+      - Opacity@Pressed=0.75
+      - Opacity@PressedSelected=0.75
   - target: StartUI.TileViewControl > Grid
     styles:
       - CornerRadius=8
@@ -881,7 +845,7 @@ controlStyles:
   - target: ComboBox > Grid@CommonStates > FontIcon#DropDownGlyph
     styles:
       - FontFamily=Segoe Fluent Icons
-      - Opacity@Pressed=0.8
+      - Opacity@Pressed=0.75
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
   - target: JumpViewUI.ControlHostMenuFlyoutPresenter
     styles:
@@ -964,6 +928,6 @@ themeResourceVariables:
   - TextBoxBorderBrush@Dark=#33FFFFFF
   - TextBoxBorderBrush@Light=#1A000000
   - TextBoxBG@Dark={ThemeResource SystemChromeLowColor}
-  - TextBoxBG@Light=White
+  - TextBoxBG@Light={ThemeResource SystemAltHighColor}
 ```
 </details>
