@@ -33,9 +33,12 @@ If you're already using the Windows 10 Start menu, you can skip this step.
 ![Screenshot](menu_group.png)
 
 ![Screenshot](menu_folder.png)
+* Search right-click menu is offset.
+
+![Screenshot](search_offset.png)
 
 ## Unsupported configurations/settings
-* Windows 10 (all versions) (Partially supported but never be fully supported).
+* Windows 10 (all versions) (Partially supported but never fully supported).
 * *"Show accent color on Start and taskbar"* enabled.
 * Fullscreen Start menu (ExplorerPatcher).
 * High Contrast mode.
@@ -426,7 +429,7 @@ controlStyles:
       - Background@PointerOver:=$buttonPointerOver
       - Background@Pressed:=$buttonPressed
       - BorderThickness=1
-      - BorderBrush@Normal:=$buttonBorderBrush
+      - BorderBrush:=$buttonBorderBrush
       - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
       - BackgroundSizing=InnerBorderEdge
   - target: TextBox > Grid > Button#DeleteButton > Grid@CommonStates
