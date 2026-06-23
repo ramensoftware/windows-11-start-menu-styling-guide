@@ -861,6 +861,16 @@ controlStyles:
       - PressedBackground:=
       - RevealBorderBrush:=
       - RevealBackground:=
+  - target: StartUI.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > Border
+    styles:
+      - CornerRadius=6
+      - Background@Normal=Transparent
+      - Background@PointerOver:=$listPointerOver
+      - Background@Pressed:=$listPressed
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
+      - BackgroundSizing=InnerBorderEdge
+      - MinWidth=46
+      - MinHeight=46
   - target: StartUI.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter@CommonStates > Viewbox > Border
     styles:
       - CornerRadius=6
