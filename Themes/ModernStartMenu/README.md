@@ -549,9 +549,6 @@ controlStyles:
     styles:
       - FontFamily=$fontFamily
       - Padding=0,0,0,1
-  - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=RecentList] > StackPanel > Button > Border > TextBlock
-    styles:
-      - Margin=7,0,0,2
   - target: Button#ShutdownReasonButton
     styles:
       - MinWidth=150
@@ -633,9 +630,6 @@ controlStyles:
       - Opacity@Pressed=0.75
       - Foreground:=<SolidColorBrush Color="{ThemeResource SystemBaseHighColor}" />
       - Margin=0,1,0,-1
-  - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=FrequentList] > StackPanel > Button > Border > TextBlock
-    styles:
-      - Margin=7,0,0,2
   - target: TextBlock#FolderGlyph
     styles:
       - FontSize=11
@@ -877,6 +871,12 @@ controlStyles:
       - BackgroundSizing=InnerBorderEdge
       - MinWidth=46
       - MinHeight=46
+  - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=RecentList] > StackPanel > Button > Border
+    styles:
+      - Padding=12,0,0,10
+  - target: StartUI.AllAppsGridListViewItem[AutomationProperties.AutomationId=FrequentList] > StackPanel > Button > Border
+    styles:
+      - Padding=12,0,0,10
 themeResourceVariables:
   - AccentColor@Dark={ThemeResource SystemAccentColorLight2}
   - AccentColor@Light={ThemeResource SystemAccentColorDark1}
