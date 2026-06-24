@@ -38,7 +38,7 @@ controlStyles:
       - Width=600
   - target: Grid#FrameRoot
     styles:
-      - Height=710
+      - MaxHeight=710
   - target: StartMenu.SearchBoxToggleButton
     styles:
       - Height=0
