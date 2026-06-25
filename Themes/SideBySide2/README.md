@@ -51,6 +51,9 @@ controlStyles:
   - target: Grid#AllListHeading > Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton
     styles:
       - Margin=0,0,32,0
+  - target: Grid#TopLevelSuggestionsContainer
+    styles:
+      - Margin=28,0,0,0
   - target: Grid#NavPanePlaceholder
     styles:
       - Margin=32,0,32,0
