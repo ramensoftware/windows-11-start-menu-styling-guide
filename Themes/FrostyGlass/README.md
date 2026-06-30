@@ -389,7 +389,7 @@ controlStyles:
       - MinWidth=666
   - target: Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid
     styles:
-      - MinWidth=666
+      - Width=666
       - Margin=0,153,0,0
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
