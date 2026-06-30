@@ -32,22 +32,22 @@ theme: ''
 disableNewStartMenuLayout: ''
 styleConstants:
   - Background=<AcrylicBrush TintColor="#10000020"/>
-  - BorderBrush2=<LinearGradientBrush EndPoint="0,1" StartPoint="0,0"><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="0.0"/><GradientStop Color="{ThemeResource SystemChromeLowColor}" Offset="0.25"/><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="1"/></LinearGradientBrush>
+  - BorderBrush2=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="0.0" /><GradientStop Color="{ThemeResource SystemChromeLowColor}" Offset="0.25" /><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="1" /></LinearGradientBrush>
   - BorderThickness=1
   - CornerRadius=10
-  - BorderBrush=<LinearGradientBrush EndPoint="0,1" StartPoint="0,0"><GradientStop Color="#50808080" Offset="0.0"/><GradientStop Color="#50404040" Offset="0.25"/><GradientStop Color="#50808080" Offset="1"/></LinearGradientBrush>
-  - Background2=<AcrylicBrush FallbackColor="{ThemeResource SystemChromeAltHighColor}" TintColor="{ThemeResource SystemChromeAltHighColor}" TintOpacity="0.3"/>
+  - BorderBrush=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#50808080" Offset="0.0" /><GradientStop Color="#50404040" Offset="0.25" /><GradientStop Color="#50808080" Offset="1" /></LinearGradientBrush>
+  - Background2=<AcrylicBrush TintColor="{ThemeResource SystemChromeAltHighColor}" TintOpacity="0.3" FallbackColor="{ThemeResource SystemChromeAltHighColor}" />
   - TrayPadding=2
-  - ElementBG=<SolidColorBrush Color="{ThemeResource SystemChromeAltHighColor}" Opacity="0.3"/>
+  - ElementBG=<SolidColorBrush Color="{ThemeResource SystemChromeAltHighColor}" Opacity="0.3" />
   - ElementBorderThickness=1
-  - ElementBorderBrush=<LinearGradientBrush EndPoint="0,1" StartPoint="0,0"><GradientStop Color="#50808080" Offset="1"/><GradientStop Color="#50606060" Offset="0.15"/></LinearGradientBrush>
+  - ElementBorderBrush=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#50808080" Offset="1" /><GradientStop Color="#50606060" Offset="0.15" /></LinearGradientBrush>
   - ElementCornerRadius=10
-  - CommonBgBrush=<WindhawkBlur BlurAmount="25" TintColor="#25323232"/>
+  - CommonBgBrush=<WindhawkBlur BlurAmount=\"25\" TintColor=\"#25323232\"/>
   - ClockBG=<WindhawkBlur BlurAmount="8" TintColor="#FFFFFFFF"/>
   - Translucent=<WindhawkBlur BlurAmount="8" TintColor="#90FFFFFF"/>
-  - Glass=<WindhawkBlur BlurAmount="9" TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0.7"/>
-  - Frosted=<WindhawkBlur BlurAmount="20" TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0.7"/>
-  - Acrylic=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0.8"/>
+  - Glass=<WindhawkBlur BlurAmount="9" TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0.7" />
+  - Frosted=<WindhawkBlur BlurAmount="20" TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0.7" />
+  - Acrylic=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource SystemChromeHighColor}" TintOpacity="0.8" />
 controlStyles:
   - target: StartDocked.SearchBoxToggleButton
     styles:
@@ -73,7 +73,7 @@ controlStyles:
     styles:
       - CornerRadius=7
       - Height=32
-      - RenderTransform:=<TranslateTransform X="5" Y="0"/>
+      - RenderTransform:=<TranslateTransform X="5" Y="0" />
       - Visibility=1
   - target: Border#AcrylicBorder
     styles:
@@ -116,7 +116,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Grid#MediaControlsContainer
     styles:
       - Visibility=1
-      - RenderTransform:=<TranslateTransform X="0" Y="0"/>
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
       - Margin=0,0,0,0
       - CornerRadius=$CornerRadius
   - target: Windows.UI.Xaml.Controls.Grid#CompanionRoot > Windows.UI.Xaml.Controls.Border#AcrylicOverlay
@@ -144,7 +144,7 @@ controlStyles:
       - CornerRadius:=$CornerRadius
       - Height=Auto
       - Width=Auto
-      - RenderTransform:=<TranslateTransform X="0" Y="-14"/>
+      - RenderTransform:=<TranslateTransform X="0" Y="-14" />
       - Margin=20,15,20,15
   - target: Windows.UI.Xaml.Controls.Grid#ContentBorder
     styles:
@@ -177,7 +177,7 @@ controlStyles:
       - Visibility=1
   - target: Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton
     styles:
-      - RenderTransform:=<TranslateTransform X="0" Y="0"/>
+      - RenderTransform:=<TranslateTransform X="0" Y="0" />
       - Visibility=1
   - target: StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root > Windows.UI.Xaml.Controls.GridView#PinnedList > Windows.UI.Xaml.Controls.Border
     styles:
@@ -272,7 +272,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Grid#MediaControlsContainer
     styles:
       - Visibility=0
-      - RenderTransform:=<TranslateTransform X="0" Y="-4"/>
+      - RenderTransform:=<TranslateTransform X="0" Y="-4" />
       - Margin=0,0,0,0
       - CornerRadius=$CornerRadius
       - HorizontalAlignment=Center
@@ -311,16 +311,16 @@ controlStyles:
   - target: StackPanel#TimePanel > TextBlock#Time
     styles:
       - HorizontalAlignment:=Center
-      - RenderTransform:=<TransformGroup><TranslateTransform X="0" Y="0"/><ScaleTransform ScaleX="1" ScaleY="1"/></TransformGroup>
+      - RenderTransform:=<TransformGroup><TranslateTransform X="0" Y="0" /><ScaleTransform ScaleX="1" ScaleY="1" /></TransformGroup>
       - Foreground:=$Translucent
       - FontSize=150
       - FontFamily=Quicksand SemiBold
   - target: StackPanel#TimeAndDatePanel > TextBlock#Date
     styles:
       - HorizontalAlignment=Center
-      - RenderTransform:=<TranslateTransform X="0" Y="-190"/>
+      - RenderTransform:=<TranslateTransform X="0" Y="-190" />
       - Foreground:=$ClockBG
-      - FontFamily=vivo Sans EN VF
+      - FontFamily=Segoe UI
   - target: Windows.UI.Xaml.Controls.FlyoutPresenter
     styles:
       - Background:=$Background
@@ -328,7 +328,7 @@ controlStyles:
       - BorderThickness:=$BorderThickness
       - CornerRadius:=$CornerRadius
       - Margin=-115,-10,0,0
-  - target: Windows.UI.Xaml.Controls.FlyoutPresenter > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Border
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer  > Windows.UI.Xaml.Controls.Border  > Windows.UI.Xaml.Controls.Grid  > Windows.UI.Xaml.Controls.ScrollContentPresenter  > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Border
     styles:
       - Background:=Transparent
       - CornerRadius=$CornerRadius
