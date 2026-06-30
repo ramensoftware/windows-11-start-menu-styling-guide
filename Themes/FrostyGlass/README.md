@@ -386,11 +386,15 @@ controlStyles:
   - target: Grid#FrameRoot
     styles:
       - Height=597
-      - Width=666
+      - MinWidth=666
   - target: Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid
     styles:
-      - Width=666
+      - MinWidth=666
       - Margin=0,153,0,0
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
+    styles:
+      - Margin=-70,0,0,0
+      - CornerRadius:=5
 themeResourceVariables:
   - ''
 webContentStyles:
@@ -409,10 +413,9 @@ resourceVariables:
 ---
 
 ## 🎨 Recommended Setup for Uniformity
-To achieve the exact minimalist "Frosty Glass" look seen in the screenshots, I highly recommend the following setup:
+To achieve the exact minimalist "Frosty Glass" look seen in the screenshots, I recommend the following setup:
 
 * **Minimalist Start Menu Folders:** Use only one folder in the Start Menu (e.g., Settings). This keeps the UI balanced, placing the power button on the right and your folder on the left. Adding more than one folder can disrupt the visual symmetry.
-* **Disable Phone Link:** For a cleaner, clutter-free look, it is recommended to remove the Phone Link integration from your Start Menu.
 
 ---
 
