@@ -12,7 +12,6 @@ This configuration provides a modern **Frosty Glass** aesthetic for your Windows
 
 1. Download and install [Windhawk](https://windhawk.net/).
 2. Inside Windhawk, search for and install the **Windows 11 Start Menu Styler** mod by Ramen Software.
-3. Search for and install the **Start Menu Size** mod by Ramen Software.
 
 ---
 
@@ -380,6 +379,28 @@ controlStyles:
   - target: StartDocked.NavigationPaneView > Windows.UI.Xaml.Controls.Grid#RootPanel
     styles:
       - Margin=-100,0,488,0
+  - target: StartDocked.StartSizingFrame
+    styles:
+      - Height=597
+      - Width=666
+  - target: Grid#FrameRoot
+    styles:
+      - Height=597
+      - Width=666
+  - target: Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid
+    styles:
+      - Width=666
+      - Margin=0,153,0,0
+themeResourceVariables:
+  - ''
+webContentStyles:
+  - target: '#qfPreviewPane'
+    styles:
+      - 'min-width: 350px !important'
+webContentCustomJs: ''
+resourceVariables:
+  - variableKey: ''
+    value: ''
 
 ```
 
@@ -392,20 +413,6 @@ To achieve the exact minimalist "Frosty Glass" look seen in the screenshots, I h
 
 * **Minimalist Start Menu Folders:** Use only one folder in the Start Menu (e.g., Settings). This keeps the UI balanced, placing the power button on the right and your folder on the left. Adding more than one folder can disrupt the visual symmetry.
 * **Disable Phone Link:** For a cleaner, clutter-free look, it is recommended to remove the Phone Link integration from your Start Menu.
-
----
-
-## 📏 Configure Start Menu Size
-To ensure the Start Menu and Search Menu have a uniform, seamless look:
-1. Open the settings for the **Start Menu Size** mod.
-2. Apply these exact values:
-
-| Setting | Value |
-| :--- | :--- |
-| **Start menu width** | `666` |
-| **Start menu height** | `597` |
-| **Search menu width** | `666` |
-| **Search menu height** | `597` |
 
 ---
 
