@@ -387,6 +387,14 @@ controlStyles:
 
 ---
 
+## 🎨 Recommended Setup for Uniformity
+To achieve the exact minimalist "Frosty Glass" look seen in the screenshots, I highly recommend the following setup:
+
+* **Minimalist Start Menu Folders:** Use only one folder in the Start Menu (e.g., Settings). This keeps the UI balanced, placing the power button on the right and your folder on the left. Adding more than one folder can disrupt the visual symmetry.
+* **Disable Phone Link:** For a cleaner, clutter-free look, it is recommended to remove the Phone Link integration from your Start Menu.
+
+---
+
 ## 📏 Configure Start Menu Size
 To ensure the Start Menu and Search Menu have a uniform, seamless look:
 1. Open the settings for the **Start Menu Size** mod.
