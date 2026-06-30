@@ -320,7 +320,7 @@ controlStyles:
       - HorizontalAlignment=Center
       - RenderTransform:=<TranslateTransform X="0" Y="-190" />
       - Foreground:=$ClockBG
-      - FontFamily=Segoe UI
+      - FontFamily=Segoe UI VF
   - target: Windows.UI.Xaml.Controls.FlyoutPresenter
     styles:
       - Background:=$Background
@@ -421,10 +421,10 @@ This theme includes custom styling for the Windows 11 Lock Screen (Clock, Date a
 > **🔤 Important Note on Fonts:** 
 > This theme uses specific fonts to achieve the clean, modern look shown in image_e6d7c2.png. Please install them before applying the mod:
 > * **Clock Font:** [Quicksand](https://fonts.google.com/specimen/Quicksand?preview.script=Latn) 
-> * **Date Font:** Segoe UI (system font)
+> * **Date Font:** Segoe UI VF (system font)
 >
 > **How to apply them:**
-> Open the mod settings in Windhawk, scroll through the styles list to find the Lock Screen targets, and update the `FontFamily` property. You must use the **exact name of the font as it appears installed in your Windows system** (for example, in my setup I use `Quicksand SemiBold` for the clock and `Segoe UI` for the date).
+> Open the mod settings in Windhawk, scroll through the styles list to find the Lock Screen targets, and update the `FontFamily` property. You must use the **exact name of the font as it appears installed in your Windows system** (for example, in my setup I use `Quicksand SemiBold` for the clock and `Segoe UI VF` for the date).
 
 ---
 
