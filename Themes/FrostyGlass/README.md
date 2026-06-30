@@ -68,7 +68,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.TextBlock#DisplayName
     styles:
       - Visibility=1
-  - target: Button
+  - target: Windows.UI.Xaml.Internal.RootScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > SemanticZoom#TopLevelRoot > Grid > ScrollViewer#ScrollViewer > ScrollContentPresenter#ScrollContentPresenter > Grid > ContentPresenter#ZoomedInPresenter > GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ContentControl > ContentPresenter > Grid#TopLevelHeader > Grid#ShowMorePinnedGrid > Button
     styles:
       - CornerRadius=7
       - Height=32
@@ -326,7 +326,6 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness:=$BorderThickness
       - CornerRadius:=$CornerRadius
-      - Margin=-115,-10,0,0
   - target: Windows.UI.Xaml.Controls.FlyoutPresenter > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer  > Windows.UI.Xaml.Controls.Border  > Windows.UI.Xaml.Controls.Grid  > Windows.UI.Xaml.Controls.ScrollContentPresenter  > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Border
     styles:
       - Background:=Transparent
@@ -335,7 +334,6 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.HyperlinkButton
     styles:
       - Height=22
-      - HorizontalAlignment=Center
       - Padding=4,0,4,2
       - Margin=0,2,0,0
       - CornerRadius=5
@@ -379,10 +377,6 @@ controlStyles:
   - target: StartDocked.NavigationPaneView > Windows.UI.Xaml.Controls.Grid#RootPanel
     styles:
       - Margin=-100,0,488,0
-  - target: StartDocked.StartSizingFrame
-    styles:
-      - Height=597
-      - Width=666
   - target: Grid#FrameRoot
     styles:
       - Height=597
