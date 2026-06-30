@@ -396,7 +396,7 @@ themeResourceVariables:
 webContentStyles:
   - target: '#qfPreviewPane'
     styles:
-      - 'min-width: 350px !important'
+      - 'min-width: 325px !important'
 webContentCustomJs: ''
 resourceVariables:
   - variableKey: ''
