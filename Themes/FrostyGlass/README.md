@@ -442,7 +442,7 @@ This theme includes custom styling for the Windows 11 Lock Screen (Clock, Date a
 
 ### ❄️ Start Menu & Search Style
 
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/1a0ed3f8-f85b-49a8-8026-756e9196a5e9" />
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/7d3c7a63-b74e-4021-976a-0c57b6d2723f" />
 <img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/c3e8af26-712d-44bb-856a-17c200b1d983" />
 
 ### 🔒 Lock Screen Style
