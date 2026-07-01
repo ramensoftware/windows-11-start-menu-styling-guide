@@ -140,17 +140,17 @@ controlStyles:
       - Background@PointerOver:=$Background
       - Background@Pressed:=$Background
       - Background@Selected:=$Background
-      - CornerRadius:=$CornerRadius
+      - CornerRadius:=10
       - Height=Auto
       - Width=Auto
       - RenderTransform:=<TranslateTransform X="0" Y="-14" />
       - Margin=20,15,20,15
   - target: Windows.UI.Xaml.Controls.Grid#ContentBorder
     styles:
-      - CornerRadius:=$CornerRadius
+      - CornerRadius:=7
   - target: Windows.UI.Xaml.Controls.Border#BackgroundBorder
     styles:
-      - CornerRadius:=$CornerRadius
+      - CornerRadius:=7
   - target: Windows.UI.Xaml.Controls.Border#LayerBorder
     styles:
       - CornerRadius:=$CornerRadius
@@ -200,7 +200,7 @@ controlStyles:
     styles:
       - BorderBrush:=$BorderBrush
       - Background:=$Background
-      - CornerRadius:=$CornerRadius
+      - CornerRadius:=10
       - BorderThickness:=$BorderThickness
   - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
     styles:
@@ -360,7 +360,7 @@ controlStyles:
       - Background:=Transparent
       - BorderBrush:=Transparent
       - BorderThickness:=Transparent
-      - CornerRadius:=Transparent
+      - CornerRadius:=10
       - Width=Auto
       - Height=40
       - Margin=0,0,2,3
@@ -389,6 +389,15 @@ controlStyles:
     styles:
       - Margin=-70,0,0,0
       - CornerRadius:=5
+  - target: Windows.UI.Xaml.Controls.Border#StartDropShadow
+    styles:
+      - CornerRadius=$CornerRadius
+  - target: Windows.UI.Xaml.Controls.Grid#OuterBorderGrid > Windows.UI.Xaml.Controls.Grid#BorderGrid > Windows.UI.Xaml.Controls.Border#dropshadow
+    styles:
+      - CornerRadius=$CornerRadius
+  - target: Button
+    styles:
+      - CornerRadius=7
 themeResourceVariables:
   - ''
 webContentStyles:
