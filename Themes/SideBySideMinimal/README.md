@@ -1,6 +1,6 @@
 # SideBySideMinimal theme for Windows 11 Start Menu Styler
 
-**Author**: [Olivia](https://github.com/OliviaIsTyping)
+**Author**: [Olivia](https://github.com/OliviaIsTyping) (classic Start menu), [m417z](https://github.com/m417z) (redesigned Start menu)
 
 ![Screenshot](screenshot.png)
 
