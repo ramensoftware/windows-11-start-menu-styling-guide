@@ -345,7 +345,7 @@ controlStyles:
       - Visibility=1
   - target: StartDocked.UserTileView > StartDocked.NavigationPaneButton > Grid@CommonStates > Border
     styles:
-      - CornerRadius=10
+      - CornerRadius=7
       - Width=45
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
@@ -388,7 +388,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
       - Margin=-70,0,0,0
-      - CornerRadius:=5
+      - CornerRadius:=4
   - target: Windows.UI.Xaml.Controls.Border#StartDropShadow
     styles:
       - CornerRadius=$CornerRadius
