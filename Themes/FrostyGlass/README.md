@@ -352,6 +352,7 @@ controlStyles:
       - Width=520
       - Margin=-4,0,0,0
       - Visibility=0
+      - HorizontalAlignment=Center
   - target: StartMenu.SearchBoxToggleButton > Grid@CommonStates > Border#BorderElement
     styles:
       - Background:=$Background
@@ -387,8 +388,8 @@ controlStyles:
       - Margin=0,153,0,0
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
-      - Margin=-70,0,0,0
-      - CornerRadius:=4
+      - Margin=-71,0,0,0
+      - CornerRadius:=3
   - target: Windows.UI.Xaml.Controls.Border#StartDropShadow
     styles:
       - CornerRadius=$CornerRadius
