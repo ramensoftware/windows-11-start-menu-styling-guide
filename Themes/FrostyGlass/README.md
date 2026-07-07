@@ -304,9 +304,10 @@ controlStyles:
     styles:
       - Width=32
       - Height=35
-      - Margin=10,0,10,0
+      - Margin=0,0,10,0
       - Padding=0,0,-1.5,0
       - CornerRadius:=7
+      - HorizontalAlignment=Left
   - target: StackPanel#TimePanel > TextBlock#Time
     styles:
       - HorizontalAlignment:=Center
