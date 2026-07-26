@@ -1,8 +1,13 @@
 # Translucent Settings11 theme for Windows 11 Settings Styler
 
-This theme makes the Windows 11 Start Menu look like MacOS App Launcher! Suggestions, and Contributions are Welcome.
-
 **Author**: [WasiXGamer](https://github.com/wasixgamer)
+
+This theme makes the Windows 11 Start Menu look like MacOS App Launcher! 
+
+> [!NOTE]
+> This theme works for the Windows 11 25h2 Redesigned Start Menu Only. Old Start Menu is not supported. Suggestions, and Contributions are Welcome. It is preferable to give credits if using my theme as a showcase on YouTube.
+
+
 
 ![Screenshot](screenshot.png)
 ![Screenshot-Search](screenshot-search.png)
