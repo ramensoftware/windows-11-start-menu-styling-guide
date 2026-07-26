@@ -5,8 +5,7 @@
 This theme makes the Windows 11 Start Menu look like MacOS App Launcher! 
 
 > [!NOTE]
-> This theme works for the Windows 11 25h2 Redesigned Start Menu Only. Old Start Menu is not supported. Suggestions, and Contributions are Welcome. It is preferable to give credits if using my theme as a showcase on YouTube.
-
+> This theme works only for the Windows 11 25H2 Redesigned Start Menu. Old Start Menu is not supported. Suggestions, and Contributions are Welcome. It is preferable to give credits if using my theme as a showcase on YouTube.
 
 
 ![Screenshot](screenshot.png)
