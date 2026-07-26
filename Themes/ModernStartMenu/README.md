@@ -392,13 +392,12 @@ controlStyles:
       - MinWidth=159
       - Height=32
       - CornerRadius=4
-  - target: StartUI.StartSizingFramePanel
-    styles:
-      - Margin=0,0,0,12
-      - CornerRadius=8
   - target: StartUI.StartSizingFrame
     styles:
-      - Margin=12,0,0,0
+      - Margin=12,-12,0,0
+  - target: StartUI.StartSizingFramePanel
+    styles:
+      - CornerRadius=8
   - target: Border#LogoBackgroundPlate
     styles:
       - Margin=12,6,0,6
@@ -1050,11 +1049,11 @@ themeResourceVariables:
   - TilesFillPressed@Dark=#0BFFFFFF
   - TilesFillPressed@Light=#80FFFFFF
   - TilesBorderBrushBottomGradientNormal@Dark=#0EFFFFFF
-  - TilesBorderBrushBottomGradientNormal@Light=#0D000000
+  - TilesBorderBrushBottomGradientNormal@Light=#0A000000
   - TilesBorderBrushBottomGradientPointerOver@Dark=#25FFFFFF
   - TilesBorderBrushBottomGradientPointerOver@Light=#0D000000
   - TilesBorderBrushBottomGradientPressed@Dark=#0BFFFFFF
-  - TilesBorderBrushBottomGradientPressed@Light=#0D000000
+  - TilesBorderBrushBottomGradientPressed@Light=#0A000000
   - TilesBorderBrushTopGradientNormal@Dark=#1AFFFFFF
   - TilesBorderBrushTopGradientNormal@Light=#80FFFFFF
   - TilesBorderBrushTopGradientPointerOver@Dark=#33FFFFFF
