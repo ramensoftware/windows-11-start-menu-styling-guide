@@ -129,7 +129,7 @@ imported manually. For details, see their respective README files.
 
 | Link | Screenshot
 | ---- | ----------
-| [ModernStartMenu](Themes/ModernStartMenu/README.md) | [![ModernStartMenu](Themes/ModernStartMenu/screenshot_small.png)](Themes/ModernStartMenu/screenshot_demo.png)
+| [ModernStartMenu](Themes/ModernStartMenu/README.md) | [![ModernStartMenu](Themes/ModernStartMenu/screenshot-small.png)](Themes/ModernStartMenu/screenshot.png)
 | [Hybrid](Themes/Hybrid/README.md) | [![Hybrid](Themes/Hybrid/screenshot-small.png)](Themes/Hybrid/screenshot.png)
 
 ## Custom Acrylic background
