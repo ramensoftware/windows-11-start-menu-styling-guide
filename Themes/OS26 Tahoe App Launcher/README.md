@@ -8,7 +8,7 @@ This theme makes the Windows 11 Start Menu look like MacOS App Launcher! It come
 ![Screenshot-Search](screenshot-search.png)
 
 # Additional Requirements
-> **Note**
+> [!NOTE]
 > This Mod does NOT work appropriate for list view in Start Menu. Please use either Grid View or Category View when using it.
 
 ## Compact Start Menu
