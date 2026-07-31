@@ -1,4 +1,4 @@
-# Translucent Settings11 theme for Windows 11 Settings Styler
+# OS26 Tahoe App Launcher Theme for Windows 11 Start Menu Styler
 
 This theme makes the Windows 11 Start Menu look like MacOS App Launcher! It comes in 2 styles(Clear and Dark) and 2 Alignments(Center and Bottom). Suggestions, and Contributions are Welcome.
 
@@ -7,6 +7,12 @@ This theme makes the Windows 11 Start Menu look like MacOS App Launcher! It come
 ![Screenshot](screenshot.png)
 ![Screenshot-Search](screenshot-search.png)
 
+# Additional Requirements
+> **Note**
+> This Mod does NOT work appropriate for list view in Start Menu. Please use either Grid View or Category View when using it.
+
+## Compact Start Menu
+This Mod requires Windhawk mod [Compact Start Menu](https://windhawk.net/mods/compact-start-menu) to get MacOS-Like Layout of App icons.
 
 ## Manual Installation
 
