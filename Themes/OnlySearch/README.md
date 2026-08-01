@@ -69,12 +69,11 @@ controlStyles:
 
 ### Literal OnlySearch
 
+This variant of the theme removes even the bottom navigation section, keeping the start menu down to only a search bar remaining.
+
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
 ![Screenshot](screenshot2.png)
-
->[!NOTE]
-> works for both classic and redesigned Start menu
 
 <details>
 <summary>Content to import (click to expand)</summary>
