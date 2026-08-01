@@ -120,7 +120,6 @@ Start Menu Styler mod. The following themes are available:
 | [Borderless](Themes/Borderless/README.md) | [![Borderless](Themes/Borderless/screenshot-small.png)](Themes/Borderless/screenshot.png)
 | [Command Center](Themes/Command%20Center/README.md) | [![Command Center](Themes/Command%20Center/screenshot-small.png)](Themes/Command%20Center/screenshot.png)
 | [FullScreen](Themes/FullScreen/README.md) | [![FullScreen](Themes/FullScreen/screenshot-small.png)](Themes/FullScreen/screenshot.png)
-| [OnlySearch (Minimal)](Themes/OnlySearch%20(Minimal)/README.md) | [![OnlySearch (Minimal)](Themes/OnlySearch%20(Minimal)/screenshot-small.png)](Themes/OnlySearch%20(Minimal)/screenshot.png)
 ### Windows 10 Start menu themes
 
 The themes below are designed for customizing the Windows 10 Start menu. They
