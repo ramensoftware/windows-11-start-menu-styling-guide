@@ -55,5 +55,8 @@ controlStyles:
   - target: Border#AcrylicOverlay
     styles:
       - Visibility=Collapsed
+  - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
+    styles:
+      - Margin=0,-2,0,2
 ```
 </details>
