@@ -1,4 +1,4 @@
-# LiquidGlass (Legacy) theme for Windows 11 Start Menu Styler
+# DWM Glass theme for Windows 11 Start Menu Styler
 
 **Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
@@ -6,9 +6,6 @@
 
 > [!IMPORTANT]
 > This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
-
-> [!NOTE]
-> This theme will be getting moved to [DWM Glass](../DWMGlass/README.md) in the future due to the new Liquid Glass theme being made by another author. Their theme is going in the direction this one was originally aimed and does a lot better than this one does. So it will be the future of the Liquid Glass theme going forward.
 
 ## Theme selection
 
