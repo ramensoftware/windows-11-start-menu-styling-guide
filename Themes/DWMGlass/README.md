@@ -7,7 +7,8 @@
 > [!IMPORTANT]
 > This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
 
-### Requirements
+## Requirements
+
 * [Windows 11 Start Menu Styler](https://windhawk.net/mods/windows-11-start-menu-styler)
 
 ## Theme selection
