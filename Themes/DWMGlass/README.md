@@ -225,6 +225,9 @@ controlStyles:
     styles:
       - RenderTransform@Pressed:=<ScaleTransform ScaleX="0.8" ScaleY="0.8" />
       - RenderTransformOrigin=0.5,0.5
+  - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar
+    styles:
+      - Visibility=1
 webContentStyles:
   - target: '*'
     styles:
