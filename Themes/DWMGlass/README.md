@@ -32,6 +32,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+theme: DWM Glass
 disableNewStartMenuLayout: forceNewLayout
 styleConstants:
   - BorderThickness=0.3,1,0.3,0.3
