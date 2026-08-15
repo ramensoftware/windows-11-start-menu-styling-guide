@@ -40,13 +40,13 @@ Open the mod settings in Windhawk, scroll through the styles list to find the Lo
 
 ### ❄️ Start Menu & Search Style
 
-<img width="2880" height="1800" alt="Screenshot 2026-07-01 204528" src="https://github.com/user-attachments/assets/4e06792b-e49a-489e-972e-ddf01f693afe" />
-<img width="2880" height="1800" alt="Screenshot 2026-07-01 204557" src="https://github.com/user-attachments/assets/7d6ee21d-92c1-450b-b91f-8d097d467d16" />
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/9aaebdf0-78a9-4273-81e7-c0f01d8bd2f1" />
+![Start menu](screenshot-start-menu.png)
+![Phone companion](screenshot-companion.png)
+![Search](screenshot-search.png)
 
 ### 🔒 Lock Screen Style
 
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/5d85068d-f56e-43a2-9e93-f9c5aa5a02d6" />
+![Lock screen](screenshot-lock-screen.png)
 
 ## 🔗 Related Projects
 
