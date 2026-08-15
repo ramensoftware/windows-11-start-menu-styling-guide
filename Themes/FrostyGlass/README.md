@@ -310,7 +310,7 @@ controlStyles:
       - Height=350
       - Margin=0,-25,0,-400
       - Visibility=0
-      - HorizontalAlignment=Left
+      - //HorizontalAlignment=Left
       - VerticalAlignment=Center
   - target: Grid@SearchBoxInputStates > Border#TaskbarSearchBackground
     styles:
