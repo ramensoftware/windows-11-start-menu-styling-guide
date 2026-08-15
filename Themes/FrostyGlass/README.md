@@ -57,7 +57,7 @@ Complete the look across your entire UI! Check out my other Frosty Glass styling
 ## 🙌 Credits & Inspiration
 
 A huge thank you to [Ramen Software](https://github.com/ramensoftware) for creating Windhawk. This configuration was heavily inspired by the official [Windows 11 Start Menu Styling Guide](https://github.com/ramensoftware/windows-11-start-menu-styling-guide) and the Windhawk modding community.
-<!--
+
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
@@ -70,10 +70,6 @@ settings:
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
--->
-## Manual installation
-
-The theme styles can be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Settings" tab and select "Textual mode".
