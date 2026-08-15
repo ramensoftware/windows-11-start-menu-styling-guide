@@ -436,11 +436,13 @@ controlStyles:
   - target: Grid#FrameRoot
     styles:
       - Height=597
+      - MinWidth=666
   - target: Grid#MainMenu
     styles:
-      - Width=666
+      - Width=642
   - target: Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid
     styles:
+      - Width=666
       - Margin=0,153,0,0
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
