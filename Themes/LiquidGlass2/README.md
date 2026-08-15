@@ -10,7 +10,7 @@
 
 > [!NOTE]
 > This theme is made for Dark mode only.
-> This theme might require atleast 8th/10th gen cpu (if using intel).
+> This theme might require at least an 8th/10th gen CPU (if using Intel).
 
 ## Theme selection
 
@@ -33,7 +33,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-disableNewStartMenuLayout: default
 styleConstants:
   - Glass=<WindhawkBlur BlurAmount="5" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.1" />
   - Frosted=<WindhawkBlur BlurAmount="15" TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.3" />
@@ -586,8 +585,6 @@ controlStyles:
   - target: Border#FolderPlate > > TextBlock
     styles:
       - FontSize=23
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '*'
     styles:
@@ -643,6 +640,5 @@ webContentStyles:
       - 'border-radius: 30px !important'
       - 'padding: 16px 15px 5px 20px !important'
       - 'margin: 0px 10px 15px 5px !important'
-webContentCustomJs: ''
 ```
 </details>
