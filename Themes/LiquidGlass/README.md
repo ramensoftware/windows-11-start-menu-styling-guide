@@ -1,4 +1,4 @@
-# LiquidGlass theme for Windows 11 Start Menu Styler
+# LiquidGlass (Legacy) theme for Windows 11 Start Menu Styler
 
 **Author**: [PhantomNimbi](https://github.com/PhantomNimbi)
 
@@ -8,7 +8,7 @@
 > This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
 
 > [!NOTE]
-> Support for the LiquidGlas themes is being dropped in favor of a new Fluid Glass theme being released by another author. Their theme is going in the direction this one was aimed and does a lot better than this one does. So, there won't be any future updates to the LiquidGlass themes going forward and they will eventually be removed.
+> Support for the LiquidGlass (Legacy) theme is being dropped in favor of [a new Fluid Glass theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob/main/Themes/LiquidGlass2/README.md) by another author. Their theme is going in the direction this one was aimed and does a lot better than this one does. So, there won't be any future updates to the LiquidGlass (Legacy) theme going forward.
 
 ## Theme selection
 
