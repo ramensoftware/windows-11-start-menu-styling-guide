@@ -7,7 +7,7 @@ A refined, translucent "Frosty" experience for the redesigned Windows 11 Start M
 [![Windhawk](https://img.shields.io/badge/Requires-Windhawk-blue?style=flat-square)](https://windhawk.net/)
 [![Style](https://img.shields.io/badge/Style-Frosty_Glass-lightgrey?style=flat-square)](#)
 
-This configuration provides a modern **Frosty Glass** aesthetic for your Windows 11 Start menu and lock screen. It utilizes custom translucent `AcrylicBrush` effects to create a soft, blurred interface that feels perfectly integrated with the desktop environment.
+This configuration provides a modern **Frosty Glass** aesthetic for your Windows 11 Start menu and lock screen. It utilizes custom translucent `WindhawkBlur` effects to create a soft, blurred interface that feels perfectly integrated with the desktop environment.
 
 ## 📋 Prerequisites
 
@@ -79,8 +79,10 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+theme: ''
+disableNewStartMenuLayout: ''
 styleConstants:
-  - Background=<AcrylicBrush TintColor="#1000000F"/>
+  - Background=<WindhawkBlur BlurAmount="20" TintColor="{ThemeResource SystemChromeDarkColor}" TintOpacity="0.15" />
   - BorderBrush2=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="0.0" /><GradientStop Color="{ThemeResource SystemChromeLowColor}" Offset="0.25" /><GradientStop Color="{ThemeResource SystemChromeHighColor}" Offset="1" /></LinearGradientBrush>
   - BorderThickness=1
   - CornerRadius=10
@@ -304,9 +306,8 @@ controlStyles:
   - target: StartMenu.PinnedList
     styles:
       - Height=350
-      - Margin=0,-25,0,-400
+      - Margin=-5,-25,0,-400
       - Visibility=0
-      - //HorizontalAlignment=Left
       - VerticalAlignment=Center
   - target: Grid@SearchBoxInputStates > Border#TaskbarSearchBackground
     styles:
@@ -453,9 +454,12 @@ controlStyles:
   - target: Button
     styles:
       - CornerRadius=7
+themeResourceVariables:
+  - ''
 webContentStyles:
   - target: '#qfPreviewPane'
     styles:
       - 'min-width: 325px !important'
+webContentCustomJs: ''
 ```
 </details>
