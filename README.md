@@ -113,7 +113,7 @@ Start Menu Styler mod. The following themes are available:
 | [WindowGlass](Themes/WindowGlass/README.md) | [![WindowGlass](Themes/WindowGlass/screenshot-small.png)](Themes/WindowGlass/screenshot.png)
 | [Fluid](Themes/Fluid/README.md) | [![Fluid](Themes/Fluid/screenshot-small.png)](Themes/Fluid/screenshot.png)
 | [Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/README.md) | [![Oversimplified&Accentuated](Themes/Oversimplified&Accentuated/screenshot-small.png)](Themes/Oversimplified&Accentuated/screenshot.png)
-| [DWM Glass](Themes/DWMGlass/README.md) | [![DWM Glass](Themes/DWMGlass/screenshot-small.png)](Themes/DWMGlass/screenshot.png)
+| [DWM Glass](Themes/LiquidGlass/README.md) | [![DWM Glass](Themes/LiquidGlass/screenshot-small.png)](Themes/LiquidGlass/screenshot.png)
 | [LiquidGlass](Themes/LiquidGlass2/README.md) | [![LiquidGlass](Themes/LiquidGlass2/screenshot-small.png)](Themes/LiquidGlass2/screenshot.png)
 | [Windows10X](Themes/Windows10X/README.md) | [![Windows10X](Themes/Windows10X/screenshot-small.png)](Themes/Windows10X/screenshot.png)
 | [TintedGlass](Themes/TintedGlass/README.md) | [![TintedGlass](Themes/TintedGlass/screenshot-small.png)](Themes/TintedGlass/screenshot.png)
