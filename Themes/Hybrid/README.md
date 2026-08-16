@@ -148,4 +148,3 @@ controlStyles:
       - Fill:=<SolidColorBrush Color="{ThemeResource SystemListLowColor}" />
 ```
 </details>
-
