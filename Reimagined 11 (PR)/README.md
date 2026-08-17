@@ -7,7 +7,7 @@ Here are some other UI tweaks that is in the theme:
 * Context menu element staggerring animations.
 * Search box restyled to match WinUI3.
 
-**Author**: [Sand216](https://github.com/TheGamer1445891)
+**Author**: [TheGamer1445891](https://github.com/TheGamer1445891)
 
 Dark Mode:
 ![Screenshot1a](Dark-mode1.png) ![Screenshot2a](Dark-mode2.png)
