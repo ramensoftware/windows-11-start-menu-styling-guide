@@ -1,9 +1,8 @@
 # FlyoutStartMenu for Windows 11 Start Menu Styler
 
-This theme is a part of **Reimagined 11 Themes** that redesigns the Start Menu into a flyout style menu or a fullscreen inspired Start Menu,
+This theme is a part of **Reimagined 11 Themes** that redesigns the Start Menu into a Flyout style menu or a Fullscreen inspired Start Menu,
 Here are some other UI tweaks that is in the theme:
-* 3D-like borders on most elements.
-* Background transitions on elements usually lacking them.
+* WinUI3 3D-like borders & Background transitions on elements usually lacking them, Inspired by the [Fluid Theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid).
 * Context menu element staggerring animations.
 * Search box restyled to match WinUI3.
 
@@ -22,23 +21,23 @@ Light Mode:
 ![Screenshot7b](Light-mode7.png)
 
 > [!IMPORTANT]
-> This theme is designed for the [new Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is available on 24h2-25H2+.
+> This theme is designed for the [new Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is available on 24H2-25H2+.
 
 > [!NOTE]
 > If the Start Menu gets cutoff/Search Menu becomes broken after switching dark/light themes, restart the Start Menu/Search Menu process in Task Manager atleast 2-3 times.
 
-## Additional Steps for fullscreen Start Menu style:
+## Additional Steps for Fullscreen Search Menu:
 
 You need a mod called **Start Menu Size** to change the search menu height and width, and these are the configs:
 <details>
-  <summary>Start Menu Size (Click to expand)</summary>
+<summary>Start Menu Size (Click to expand)</summary>
 
-    ```yaml
-    width: 0
-    height: 0
-    searchWidth: 9999
-    searchHeight: 9999
-    ```
+  ```yaml
+  width: 0
+  height: 0
+  searchWidth: 9999
+  searchHeight: 9999
+  ```
 </details>
 
 ## Theme selection
