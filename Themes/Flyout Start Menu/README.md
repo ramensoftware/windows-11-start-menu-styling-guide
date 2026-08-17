@@ -4,17 +4,19 @@ This theme is a part of **Reimagined 11 Themes** that redesigns the Start Menu i
 Here are some other UI tweaks that is in the theme:
 * WinUI3 3D-like borders & Background transitions on elements usually lacking them, Inspired by the [Fluid Theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid).
 * Context menu element staggerring animations.
-* Search box restyled to match WinUI3.
+* Search restyled to match WinUI3.
 
 **Author**: [TheGamer1445891](https://github.com/TheGamer1445891)
 
-Dark Mode:
+**Dark Mode:**
+
 ![Screenshot1a](Dark-mode1.png) ![Screenshot2a](Dark-mode2.png)
 ![Screenshot3a](Dark-mode3.png) ![Screenshot4a](Dark-mode4.png)
 ![Screenshot5a](Dark-mode5.png) ![Screenshot6a](Dark-mode6.png)
 ![Screenshot7a](Dark-mode7.png)
 
-Light Mode:
+**Light Mode:**
+
 ![Screenshot1b](Light-mode1.png) ![Screenshot2b](Light-mode2.png)
 ![Screenshot3b](Light-mode3.png) ![Screenshot4b](Light-mode4.png)
 ![Screenshot5b](Light-mode5.png) ![Screenshot6b](Light-mode6.png)
