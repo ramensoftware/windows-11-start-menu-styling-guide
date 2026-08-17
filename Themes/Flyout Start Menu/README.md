@@ -11,9 +11,9 @@ Here are some other UI tweaks that is in the theme:
 **Dark Mode:**
 
 ![Screenshot1a](Dark-mode1.png) ![Screenshot2a](Dark-mode2.png)
-![Screenshot3a](Dark-mode3.png) ![Screenshot4a](Dark-mode4.png)
-![Screenshot5a](Dark-mode5.png) ![Screenshot6a](Dark-mode6.png)
-![Screenshot7a](Dark-mode7.png)
+![Screenshot3a](Dark-mode3.png) ![Screenshot7a](Dark-mode7.png)
+![Screenshot4a](Dark-mode4.png) ![Screenshot5a](Dark-mode5.png)
+![Screenshot6a](Dark-mode6.png)
 
 **Light Mode:**
 
