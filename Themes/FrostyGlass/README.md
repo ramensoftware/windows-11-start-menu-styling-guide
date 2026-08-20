@@ -452,8 +452,6 @@ controlStyles:
   - target: Button
     styles:
       - CornerRadius=7
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '#qfPreviewPane'
     styles:
