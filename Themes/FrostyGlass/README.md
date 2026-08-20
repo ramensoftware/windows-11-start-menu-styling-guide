@@ -456,6 +456,5 @@ webContentStyles:
   - target: '#qfPreviewPane'
     styles:
       - 'min-width: 325px !important'
-webContentCustomJs: ''
 ```
 </details>
