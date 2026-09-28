@@ -194,7 +194,7 @@ controlStyles:
       - FontFamily=Segoe UI Variable Display
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
-      - Margin=0,-48,0,48
+      - Margin=0,-48,4,48
   - target: StartDocked.SearchBoxToggleButton#StartMenuSearchBox
     styles:
       - Grid.Row=2
