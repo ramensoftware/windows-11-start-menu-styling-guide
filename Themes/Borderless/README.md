@@ -1,11 +1,12 @@
 # Borderless theme for Windows 11 Start Menu Styler
 
-A theme for the Start menu that removes the drop shadow and borders (thus the name), the greyish tint in Dark Mode, and the search bar and suggestions (on the old Start Menu).
-Updated to include Search Popout as well (Search Bar still preserved).
+A theme for the Start menu that removes the drop shadow and borders (thus the name), and the acrylic tint to make the mica backdrop more visible.
+Updated with search popout.
 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
 ![Screenshot](screenshot.png)
+![Classic Start Menu Screenshot](screenshot-old-start-menu.png)
 
 ## Theme selection
 
@@ -47,60 +48,49 @@ controlStyles:
   - target: Border#AcrylicBorder
     styles:
       - BorderThickness=0
-  - target: Windows.UI.Xaml.Shapes.Rectangle
-    styles:
-      - Visibility=Collapsed
-  - target: StartDocked.SearchBoxToggleButton#StartMenuSearchBox
-    styles:
-      - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.TextBlock#ShowAllAppsButtonText
     styles:
-      - Text=All Apps
-  - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
-    styles:
-      - Text=Back
+      - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.TextBlock#UserTileNameText
     styles:
       - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton
     styles:
-      - Height=30
-      - Width=Auto
+      - Height=32
+      - Width=64
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton
     styles:
-      - Height=30
-      - Width=Auto
+      - Height=32
+      - Width=64
   - target: Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText
     styles:
       - Text=Start
       - FontSize=20
   - target: Windows.UI.Xaml.Controls.TextBlock#AllAppsHeading
     styles:
-      - Text=All Apps
+      - Text=Apps
       - FontSize=20
   - target: StartDocked.NavigationPaneButton#UserTileButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ContentPresenter
     styles:
-      - Padding=3,0,3,0
+      - Margin=-7,0,-7,0
   - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon
     styles:
-      - Glyph=
+      - Glyph= 
       - FontSize=16
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.FontIcon
     styles:
-      - Glyph=
-      - FontSize=10
+      - Glyph= 
+      - FontSize=16
   - target: Windows.UI.Xaml.Controls.Border#AcrylicOverlay
     styles:
       - Opacity=0
+      - Margin=0,-48,0,48
   - target: Windows.UI.Xaml.Controls.Border#StartDropShadow
-    styles:
-      - Visibility=Collapsed
-  - target: Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid > StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
       - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.TextBlock#AllListHeadingText
     styles:
-      - Text=All Apps
+      - Text=Apps
       - FontSize=20
   - target: Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Windows.UI.Xaml.Controls.Grid#RootGrid > ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
     styles:
@@ -124,13 +114,10 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter#ContentPresenter > FontIcon > Grid > TextBlock
     styles:
       - FontSize=16
-      - Text=
+      - FontWeight=Light
   - target: Frame#StartFrame
     styles:
-      - Margin=0,-64,0,0
-  - target: Grid#MainMenu > Grid#MainContent > Grid
-    styles:
-      - Grid.Row=3
+      - Margin=0,-24,0,0
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter
     styles:
       - Height=40
@@ -143,8 +130,8 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
       - Height=40
-      - Width=40
-      - Margin=16,0,-16,0
+      - Width=52
+      - Margin=2,-48,-2,48
   - target: Windows.UI.Xaml.Controls.Border#dropshadow
     styles:
       - Opacity=0
@@ -154,5 +141,128 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#AppBorder
     styles:
       - BorderThickness=0
+  - target: Windows.UI.Xaml.Controls.Grid#MainMenu > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid
+    styles:
+      - Grid.Row=4
+  - target: Windows.UI.Xaml.Controls.Grid#NavPanePlaceholder
+    styles:
+      - Margin=32,0,32,0
+  - target: Windows.UI.Xaml.Controls.Frame#StartFrame
+    styles:
+      - Margin=0,-64,0,48
+  - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl
+    styles:
+      - Grid.Row=2
+      - Margin=33,-65,33,65
+      - Height=32
+  - target: Windows.UI.Xaml.Controls.Border#TaskbarSearchBackground
+    styles:
+      - Grid.Row=2
+      - Margin=33,-65,33,65
+  - target: Windows.UI.Xaml.Controls.Grid#OuterBorderGrid
+    styles:
+      - Grid.Row=1
+  - target: Windows.UI.Xaml.Controls.Border#TaskbarMargin
+    styles:
+      - Grid.Row=3
+  - target: Windows.UI.Xaml.Controls.Grid#QueryFormulationRoot
+    styles:
+      - Margin=0,24,0,84
+  - target: Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Button#SearchGlyphContainer
+    styles:
+      - Visibility=Visible
+      - Margin=16,0,12,0
+  - target: Windows.UI.Xaml.Controls.Image#SearchIconOff
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Image#SearchIconOn
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.FontIcon#SearchGlyph
+    styles:
+      - Visibility=Visible
+  - target: StartMenu.SearchBoxToggleButton > Grid > ContentPresenter > Windows.UI.Xaml.Controls.TextBlock#PlaceholderText
+    styles:
+      - Text=Search Everywhere
+      - FontFamily=Segoe UI Variable Display
+  - target: StartDocked.SearchBoxToggleButton > Grid > ContentPresenter > Windows.UI.Xaml.Controls.TextBlock#PlaceholderText
+    styles:
+      - Text=Search Everywhere
+      - FontFamily=Segoe UI Variable Display
+  - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
+    styles:
+      - Margin=0,-48,4,48
+  - target: StartDocked.SearchBoxToggleButton#StartMenuSearchBox
+    styles:
+      - Grid.Row=2
+      - VerticalAlignment=Bottom
+      - Margin=32,0,32,0
+  - target: Windows.UI.Xaml.Controls.Grid#InnerContent > Windows.UI.Xaml.Shapes.Rectangle
+    styles:
+      - Grid.Row=2
+      - VerticalAlignment=Bottom
+      - Margin=76,0,0,8
+  - target: Windows.UI.Xaml.Controls.Grid#InnerContent > Grid
+    styles:
+      - Margin=0,0,0,40
+  - target: StartDocked.NavigationPaneView#NavigationPane
+    styles:
+      - Margin=32,0,32,0
+  - target: Windows.UI.Xaml.Controls.Button#ZoomInButton
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter
+    styles:
+      - BorderThickness=0
+  - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter
+    styles:
+      - BorderThickness=0
+  - target: Windows.UI.Xaml.Controls.TextBlock#ZoomedOutHeading
+    styles:
+      - Text=Apps
+      - FontSize=20
+      - IsHitTestVisible=False
+  - target: Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox > Grid > Windows.UI.Xaml.Controls.TextBlock#PlaceholderTextContentPresenter
+    styles:
+      - Text=Search Everywhere
+      - FontFamily=Segoe UI Variable Display
+  - target: Grid#Root > Border
+    styles:
+      - BorderThickness=0
+webContentStyles:
+  - target: .curatedSettingsGroup
+    styles:
+      - 'display: none !important'
+  - target: .topItemsGroup
+    styles:
+      - 'display: none !important'
+  - target: .scope-tile__button
+    styles:
+      - 'display: none !important'
+  - target: body[dir] .groupTitle
+    styles:
+      - 'font-size: 20px'
+      - 'margin-left: 32px !important'
+      - 'font-family: Segoe UI Variable Display'
+      - line-height=32px
+  - target: .scopesListContainer
+    styles:
+      - 'display: none !important'
+  - target: .groupTitleText
+    styles:
+      - 'font-size: 20px'
+      - 'line-height: 32px'
+  - target: '.zeroInput19H1 #qfContainer #groups>div'
+    styles:
+      - 'display: flex !important'
+  - target: '#qfPreviewPane'
+    styles:
+      - 'min-width: 300px !important'
 ```
 </details>
