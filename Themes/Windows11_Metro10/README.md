@@ -123,8 +123,7 @@ controlStyles:
 #Phone Flyout Toggle Button
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
-      - Visibility=Visible
-      - Margin=12,-8,-12,0
+      - Margin=12,-31,-12,0
   - target: Button
     styles:
       - Style:=<ResourceKey="ButtonRevealStyle" />    
@@ -133,14 +132,17 @@ controlStyles:
     styles:
       - Margin=0,0,-1,0
 #Apps list/Pinned List
-  - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer
+  - target: Grid#SideBySidePinnedWrapper
     styles:
-      - RenderTransform:=<TranslateTransform X="-480" />
-      - Margin=-92,-12,-172,-15
+      - ColumnDefinitions:=<ColumnDefinitionCollection><ColumnDefinition Width="*"/><ColumnDefinition Width="314"/></ColumnDefinitionCollection>
+  - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer
+    styles:
+      - Grid.Column=0
+      - Margin=-32,-12,-6,-15
   - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer#SideBySidePinnedScrollViewer
     styles:
-      - RenderTransform:=<TranslateTransform X="172" />
-      - Canvas.ZIndex=-1
+      - Grid.Column=1
+      - Margin=0,-12,0,-15
   - target: Button#Header > Border#Border@CommonStates
     styles:
       - Background@PointerOver:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="0.3"/>
@@ -153,13 +155,33 @@ controlStyles:
       - BorderThickness=1
 
 #Pinned List
+  - target: StartMenu.PinnedList#StartMenuPinnedList
+    styles:
+      - Grid.Row=0
+      - VerticalAlignment=Top
+      - Margin=0,55,0,0
+      - MinHeight={{recommendedVisibility==1?529:265}}
+      - MaxHeight={{recommendedVisibility==1?529:265}}
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root
+    styles:
+      - Padding=0
+  # Windows only shows as many pins as fit the GridView height, so it's made
+  # tall enough for all of them. The ScrollViewer inside is the visible part.
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList
+    styles:
+      - Grid.ColumnSpan=2
+      - HorizontalAlignment=Left
+      - MinHeight=8400
   - target: GridView#PinnedList
     styles:
       - Width=300
-      - RenderTransform:=<TranslateTransform Y="-24"  />       
   - target: GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer
     styles:
       - Height=265   
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList > Border > ScrollViewer
+    styles:
+      - VerticalAlignment=Top
+      - Height={{recommendedVisibility==1?529:265}}
   - target: Windows.UI.Xaml.Controls.GridView#PinnedList > Border > Windows.UI.Xaml.Controls.ScrollViewer > Border > Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem > Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper 
     styles:
       - Background:=<RevealBorderBrush Color="#646464" TargetTheme="1" Opacity=".1"/>
@@ -169,11 +191,15 @@ controlStyles:
 #Recommended List
   - target: Grid#TopLevelSuggestionsRoot
     styles:
+      - Grid.Row=0
+      - VerticalAlignment=Top
       - MinHeight=132
-      - Margin=-65,31,-65,-31
-      - Width=400
-      - RenderTransform:=<TranslateTransform Y="-80"/>
-         
+      - Margin=-52,336,-34,0
+      - Canvas.ZIndex=1
+  - target: Grid#TopLevelSuggestionsContainerParent
+    styles:
+      - Visibility=>recommendedVisibility
+
   - target: Windows.UI.Xaml.Controls.GridView#RecommendedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem
     styles:
       - MaxWidth=145
