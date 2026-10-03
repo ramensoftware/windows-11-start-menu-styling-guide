@@ -61,6 +61,16 @@ controlStyles:
   - target: StartMenu.PinnedList
     styles:
       - Height=518
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList
+    styles:
+      - MinHeight=8400
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList > Border
+    styles:
+      - VerticalAlignment=Top
+      - Height=518
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList > Border > ScrollViewer
+    styles:
+      - ScrollViewer.VerticalScrollMode=Enabled
   - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions > Windows.UI.Xaml.Controls.Button > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
     styles:
       - Text=Recommended

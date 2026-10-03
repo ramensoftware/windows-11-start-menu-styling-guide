@@ -375,6 +375,13 @@ controlStyles:
       - MinHeight:=100
       - Width=300
       - Margin=0,0,60,0
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root > Windows.UI.Xaml.Controls.GridView#PinnedList
+    styles:
+      - MinHeight=8400
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root > Windows.UI.Xaml.Controls.GridView#PinnedList > Border
+    styles:
+      - VerticalAlignment=Top
+      - Height=450
   - target: // Phone Link Panel Dimensions
     styles:
       - ''
