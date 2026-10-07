@@ -703,111 +703,111 @@ webContentStyles:
   #   div#rootContainer > div#root.wideByDefault.win11.twoColumns... > div.scr
   - target: 'html, body, #rootContainer, #root, .scr'
     styles:
-      - background: transparent !important
-      - background-color: transparent !important
-      - color: $TextPrimary !important
-      - font-family: $WebUIFont !important
-      - overflow-x: hidden !important
-      - letter-spacing: 0 !important
+      - 'background: transparent !important'
+      - 'background-color: transparent !important'
+      - 'color: $TextPrimary !important'
+      - 'font-family: $WebUIFont !important'
+      - 'overflow-x: hidden !important'
+      - 'letter-spacing: 0 !important'
   # The WebView2 paints over the host's rounded corners, so the page has to
   # round its own bottom edge or the panel reads as a square-cornered box.
   - target: 'html, body'
     styles:
-      - border-bottom-left-radius: $WebPaletteRadius !important
-      - border-bottom-right-radius: $WebPaletteRadius !important
-      - overflow: hidden !important
+      - 'border-bottom-left-radius: $WebPaletteRadius !important'
+      - 'border-bottom-right-radius: $WebPaletteRadius !important'
+      - 'overflow: hidden !important'
   - target: '#rootContainer, #root'
     styles:
-      - border-bottom-left-radius: $WebPaletteRadius !important
-      - border-bottom-right-radius: $WebPaletteRadius !important
-      - overflow-x: hidden !important
+      - 'border-bottom-left-radius: $WebPaletteRadius !important'
+      - 'border-bottom-right-radius: $WebPaletteRadius !important'
+      - 'overflow-x: hidden !important'
   # twoColumns is what makes the results read as a different, wider layout
   # than the zero-query view.
   - target: '#root.twoColumns'
     styles:
-      - display: block !important
-      - width: 100% !important
-      - max-width: 100% !important
+      - 'display: block !important'
+      - 'width: 100% !important'
+      - 'max-width: 100% !important'
   - target: '#scopesHeader, #scopesHeader *, #chatButtonRight, #topHitHeader, #qfPreviewPane, #qfPreviewPane *, .previewContainer, .scope-with-background__backButton, .scope-with-background__rightCaret, .scope-with-background__leftCaret, .curatedSettingsGroup, .userProfileMenuIcon, .openPreviewPaneBtn, .scope-tile__button'
     styles:
-      - display: none !important
-      - visibility: hidden !important
+      - 'display: none !important'
+      - 'visibility: hidden !important'
   - target: '.leftPill::before'
     styles:
-      - display: none !important
+      - 'display: none !important'
   - target: '#qfContainer, .leftPane, .leftPaneZIsuggestions, .suggsListContainer, .searchResults, .topResults, .groupContainer'
     styles:
-      - width: 100% !important
-      - max-width: none !important
-      - box-sizing: border-box !important
-      - background: transparent !important
+      - 'width: 100% !important'
+      - 'max-width: none !important'
+      - 'box-sizing: border-box !important'
+      - 'background: transparent !important'
   - target: '.suggsList, .groupContainer'
     styles:
-      - padding-left: $WebEdgePadding !important
-      - padding-right: $WebEdgePadding !important
-      - box-sizing: border-box !important
+      - 'padding-left: $WebEdgePadding !important'
+      - 'padding-right: $WebEdgePadding !important'
+      - 'box-sizing: border-box !important'
   - target: '.groupTitle, .groupHeader'
     styles:
-      - color: $TextMuted !important
-      - font-family: $WebUIFont !important
-      - font-size: $WebCaptionTextSize !important
-      - font-weight: $SectionTextWeight !important
-      - margin: $WebSectionMargin !important
-      - background: transparent !important
+      - 'color: $TextMuted !important'
+      - 'font-family: $WebUIFont !important'
+      - 'font-size: $WebCaptionTextSize !important'
+      - 'font-weight: $SectionTextWeight !important'
+      - 'margin: $WebSectionMargin !important'
+      - 'background: transparent !important'
   - target: '.suggContainer, .suggestion:not(.groupHeader)'
     styles:
-      - min-height: $WebRowHeight !important
-      - height: $WebRowHeight !important
-      - margin: $WebRowMargin !important
-      - padding: 0 $WebEdgePadding !important
-      - border-radius: $WebRowRadius !important
-      - background-color: transparent !important
-      - border: none !important
-      - box-shadow: none !important
-      - box-sizing: border-box !important
-      - display: flex !important
-      - align-items: center !important
-      - transition: background-color 100ms ease !important
+      - 'min-height: $WebRowHeight !important'
+      - 'height: $WebRowHeight !important'
+      - 'margin: $WebRowMargin !important'
+      - 'padding: 0 $WebEdgePadding !important'
+      - 'border-radius: $WebRowRadius !important'
+      - 'background-color: transparent !important'
+      - 'border: none !important'
+      - 'box-shadow: none !important'
+      - 'box-sizing: border-box !important'
+      - 'display: flex !important'
+      - 'align-items: center !important'
+      - 'transition: background-color 100ms ease !important'
   - target: '.suggContainer:hover, .suggestion:not(.groupHeader):hover'
     styles:
-      - background-color: $WebRowHover !important
+      - 'background-color: $WebRowHover !important'
   - target: '.suggContainer:focus-within, .suggContainer[aria-selected="true"], .suggContainer.selected, .suggContainer.active, .suggestion[aria-selected="true"]'
     styles:
-      - background-color: $WebRowSelected !important
+      - 'background-color: $WebRowSelected !important'
   - target: 'h1, h2, h3, h4, .title, .primaryText, .suggContainer, .menu-item_details'
     styles:
-      - color: $TextPrimary !important
-      - font-family: $WebUIFont !important
-      - font-size: $WebBodyTextSize !important
-      - font-weight: 400 !important
-      - white-space: nowrap !important
-      - overflow: hidden !important
-      - text-overflow: ellipsis !important
-      - letter-spacing: 0 !important
+      - 'color: $TextPrimary !important'
+      - 'font-family: $WebUIFont !important'
+      - 'font-size: $WebBodyTextSize !important'
+      - 'font-weight: 400 !important'
+      - 'white-space: nowrap !important'
+      - 'overflow: hidden !important'
+      - 'text-overflow: ellipsis !important'
+      - 'letter-spacing: 0 !important'
   - target: '.secondaryText, .details, .metadata, .caption, .subtitle'
     styles:
-      - color: $TextSecondary !important
-      - font-family: $WebUIFont !important
-      - font-size: $WebCaptionTextSize !important
-      - font-weight: 400 !important
-      - white-space: nowrap !important
-      - overflow: hidden !important
-      - text-overflow: ellipsis !important
+      - 'color: $TextSecondary !important'
+      - 'font-family: $WebUIFont !important'
+      - 'font-size: $WebCaptionTextSize !important'
+      - 'font-weight: 400 !important'
+      - 'white-space: nowrap !important'
+      - 'overflow: hidden !important'
+      - 'text-overflow: ellipsis !important'
   - target: '.cortanaFontIcon, .iconContent, .suggIcon, .iconContainer'
     styles:
-      - width: $WebIconSize !important
-      - height: $WebIconSize !important
-      - font-size: $WebIconTextSize !important
-      - margin-right: $WebIconGap !important
-      - color: $TextIcon !important
+      - 'width: $WebIconSize !important'
+      - 'height: $WebIconSize !important'
+      - 'font-size: $WebIconTextSize !important'
+      - 'margin-right: $WebIconGap !important'
+      - 'color: $TextIcon !important'
   - target: '*'
     styles:
-      - letter-spacing: 0 !important
-      - scrollbar-width: thin !important
-      - scrollbar-color: $WebScrollbar transparent !important
+      - 'letter-spacing: 0 !important'
+      - 'scrollbar-width: thin !important'
+      - 'scrollbar-color: $WebScrollbar transparent !important'
   - target: '[id*="iotd" i], [class*="iotd" i], [id*="imageOfTheDay" i], [class*="imageOfTheDay" i], [class*="image-of-the-day" i], [id*="heroImage" i], [class*="heroImage" i], [class*="dailyImage" i], [class*="bingImage" i], [class*="wallpaperCard" i], div[data-region="TopApps"], div[data-region="News"], div[data-region="Trending"]'
     styles:
-      - display: none !important
+      - 'display: none !important'
 
 webContentCustomJs: "(function(){var KILL=/iotd|imageoftheday|image-of-the-day|heroimage|dailyimage|bingimage|wallpapercard|copilot|chatbutton/i;function sig(el){var c=(typeof el.className==='string')?el.className:'';return (el.id||'')+' '+c+' '+(el.getAttribute('data-region')||'');}function clean(){try{var all=document.querySelectorAll('[id],[class],[data-region]');for(var i=0;i<all.length;i++){if(KILL.test(sig(all[i])))all[i].style.setProperty('display','none','important');}}catch(e){}}clean();try{new MutationObserver(clean).observe(document.documentElement,{childList:true,subtree:true});}catch(e){}})();"
 ```
