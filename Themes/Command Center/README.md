@@ -20,6 +20,10 @@ Command Center theme inspired by the command centers from various mobile operati
 
 - This theme can style your lock screen as well. 
 
+## Additional Extras
+
+- This theme goes great with various other Windhawk Mods. to see some pre-made configurations, check out my [Command Center](https://github.com/HELIX-Origin/Windhawk-Command-Center-Suite) suite repo.
+
 ## Lock Screen
 
 <img width="100%" src="lock-screen.jpg" alt="Lock Screen" />
