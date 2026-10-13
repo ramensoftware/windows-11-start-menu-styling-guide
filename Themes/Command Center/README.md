@@ -331,6 +331,7 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
+      - Margin=0,0,10,0
   - target: GridView#AllAppsGrid > ItemsWrapGrid
     styles:
       - Visibility=0
