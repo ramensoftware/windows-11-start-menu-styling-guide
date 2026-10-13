@@ -89,9 +89,6 @@ controlStyles:
   - target: Border#StartDropShadow, Border#RightCompanionDropShadow, Border#RootGridDropShadow, Border#dropshadow
     styles:
       - Visibility=Collapsed
-  - target: Border#MainMenuHighContrastBorder, Border#RightCompanionHighContrastBorder
-    styles:
-      - Visibility=Collapsed
   - target: Border#LayerBorder, Border#AccentLayerBorder, Border#AccentAppBorder
     styles:
       - Visibility=Collapsed
@@ -112,7 +109,7 @@ controlStyles:
   - target: Grid#MainContent
     styles:
       - Grid.Row=0
-      - MinHeight=Auto
+      - MinHeight=0
   - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar
     styles:
       - Visibility=Collapsed
@@ -594,8 +591,6 @@ controlStyles:
 webContentStyles:
   - target: '*'
     styles:
-      - 'transition: background-color 0.083s ease-in-out !important'
-webContentCustomJs: ''
-
+      - 'transition: background-color 0.083s ease-in-out !important
 ```
 </details>
