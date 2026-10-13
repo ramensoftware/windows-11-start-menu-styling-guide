@@ -588,12 +588,9 @@ controlStyles:
   - target: Border#BackgroundBorder, Grid#LayoutRoot
     styles:
       - BackgroundTransition:=<BrushTransition Duration="0:0:0.083" />
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '*'
     styles:
       - 'transition: background-color 0.083s ease-in-out !important'
-webContentCustomJs: ''
 ```
 </details>
