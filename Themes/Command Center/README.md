@@ -125,7 +125,7 @@ controlStyles:
       - Height=32
   - target: StartDocked.NavigationPaneButton#UserTileButton > Grid > Border#BackgroundBorder
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ChipRadius
@@ -143,7 +143,7 @@ controlStyles:
       - Margin=0,0,8,0
   - target: StartDocked.AppListView#NavigationPanePlacesListView > Border
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=6
@@ -167,7 +167,7 @@ controlStyles:
       - VerticalAlignment=Center
   - target: StartDocked.NavigationPaneButton#PowerButton > Windows.UI.Xaml.Controls.Grid@CommonStates > Windows.UI.Xaml.Controls.Border#BackgroundBorder
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ChipRadius
@@ -187,7 +187,7 @@ controlStyles:
       - BorderThickness=0
   - target: StartMenu.SearchBoxToggleButton > Grid@CommonStates > Border#BorderElement, StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ChipRadius
@@ -219,7 +219,7 @@ controlStyles:
       - BorderThickness=0
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border, ToggleButton#ShowHideCompanion > Border
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ChipRadius
@@ -282,18 +282,18 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Windows.UI.Xaml.Controls.Grid@CommonStates, Button#ShowMoreSuggestionsButton > Grid@CommonStates
     styles:
       - BorderBrush:=$RecommendedBorderBrush
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderThickness=2,2,0,2
       - CornerRadius=15,0,0,15
       - Height=32
       - Margin=0,0,-2,0
       - BorderBrush@PointerOver:=$RecommendedBorderBrush
-      - Background@PointerOver:=$ElementBackground
+      - Background@PointerOver:=$Background
       - BorderBrush@Pressed:=$RecommendedBorderBrush
-      - Background@Pressed:=$ElementBackground
+      - Background@Pressed:=$Background
   - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton@CommonStates, Button#ShowMoreSuggestionsButton@CommonStates
     styles:
-      - Background@PointerOver:=$ElementBackground
+      - Background@PointerOver:=$Background
       - BorderBrush@PointerOver:=$RecommendedBorderBrush
       - Background@Pressed:=$OverlayColor
       - BorderBrush@Pressed:=$RecommendedBorderBrush
@@ -315,7 +315,7 @@ controlStyles:
       - CornerRadius=6
   - target: Button#HideMoreSuggestionsButton > Grid > Border#BackgroundBorder
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=6
@@ -350,12 +350,12 @@ controlStyles:
   - target: Microsoft.UI.Xaml.Controls.DropDownButton > Grid@CommonStates
     styles:
       - BorderBrush:=$ViewBorderBrush
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderThickness={{showMoreSuggestionsVisible*2}},2,2,2
       - CornerRadius={{showMoreSuggestionsVisible*15}},15,15,{{showMoreSuggestionsVisible*15}}
       - Height=32
       - BorderBrush@PointerOver:=$ViewBorderBrush
-      - Background@PointerOver:=$ElementBackground
+      - Background@PointerOver:=$Background
   - target: Microsoft.UI.Xaml.Controls.DropDownButton
     styles:
       - RenderTransform:=<TranslateTransform X="-235" Y="{{-224 - pinnedListHeight}}" />
@@ -369,8 +369,8 @@ controlStyles:
       - VerticalAlignment=Center
   - target: Grid#TopLevelHeader > Grid > Button[AutomationProperties.Name=Show all] > Grid@CommonStates > Border
     styles:
-      - Background@Normal:=$ElementBackground
-      - Background@PointerOver:=$ElementBackground
+      - Background@Normal:=$Background
+      - Background@PointerOver:=$Background
       - Padding=10,7
       - Margin=0,0,-5,0
       - CornerRadius=0,15,15,0
@@ -384,7 +384,7 @@ controlStyles:
       - BorderThickness=0,2,2,2
   - target: Grid#TopLevelHeader > Grid > Button > Grid@CommonStates > Border
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - Background@PointerOver:=$OverlayColor
       - BorderBrush@PointerOver:=$BorderBrush
@@ -408,7 +408,7 @@ controlStyles:
       - ActualHeight=>pinnedListHeight
   - target: StartMenu.PinnedList > Grid#Root > GridView#PinnedList > Border, GridView#PinnedList > Border
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CardRadius
@@ -424,7 +424,7 @@ controlStyles:
       - Margin=15,0,-15,0
   - target: StartMenu.CategoryControl > Grid#RootGrid > Border
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CardRadius
@@ -441,7 +441,7 @@ controlStyles:
       - Visibility=1
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#RightCompanionContainerGrid > StartMenu.StartMenuCompanion#RightCompanion > Grid#CompanionRoot > Grid#MainContent > ContentPresenter#PrimaryCardContainer > Grid > Grid > Grid > ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Grid > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Grid > ListView > Border, StartDocked.StartMenuCompanion#RightCompanion > Grid#CompanionRoot > Grid#MainContent > ContentPresenter#PrimaryCardContainer > Grid > Grid > Grid > ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Grid > Border > AdaptiveCards.Rendering.Uwp.WholeItemsPanel > Grid > ListView > Border
     styles:
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CardRadius
@@ -450,7 +450,7 @@ controlStyles:
       - Height=38
       - VerticalAlignment=Bottom
       - Margin=14,0,14,12
-      - Background:=$ElementBackground
+      - Background:=$Background
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CardRadius
