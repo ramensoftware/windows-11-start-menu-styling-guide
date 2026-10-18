@@ -8,6 +8,11 @@ Updated with search popout, and the ability to re-enable shadows.
 ![Screenshot](screenshot.png)
 ![Classic Start Menu Screenshot](screenshot-old-start-menu.png)
 
+You can use the style constants to
+- edit the header/search bar texts (in case you use another language other than english).
+- re-enable drop shadows.
+- hide the start menu suggestions (if your settings app doesn't allow you to do so already).
+
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
