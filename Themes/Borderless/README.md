@@ -8,10 +8,17 @@ Updated with search popout, and the ability to re-enable shadows.
 ![Screenshot](screenshot.png)
 ![Classic Start Menu Screenshot](screenshot-old-start-menu.png)
 
-You can use the style constants to
-- edit the header/search bar texts (in case you use another language other than english).
-- re-enable drop shadows.
-- hide the start menu suggestions (if your settings app doesn't allow you to do so already).
+
+### To edit the header texts:
+Use the ``StartMenuText`` and ``AllMenuText`` style constants.
+### To edit the search bar text:
+Use the ``SearchBarText`` style constant.
+### To re-enable drop shadows:
+Set the ``Shadows`` style constant to ``Visible``.
+### To show the start menu suggestions:
+(If your settings app doesn't allow you to toggle it already)
+Set the ``StartMenuSuggestions`` style constant to ``Visible``.
+
 
 ## Theme selection
 
