@@ -1,7 +1,7 @@
 # Borderless theme for Windows 11 Start Menu Styler
 
 A theme for the Start menu that removes the drop shadow and borders (thus the name), and the acrylic tint to make the mica backdrop more visible.
-Updated with search popout.
+Updated with search popout, and the ability to re-enable shadows.
 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
@@ -29,22 +29,28 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+styleConstants:
+  - Shadows=Collapsed
+  - SearchBarText=Search Everywhere
+  - StartMenuSuggestions=Collapsed
+  - StartMenuText=Start
+  - AllMenuText=Apps
 controlStyles:
   - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
     styles:
-      - Visibility=Collapsed
+      - Visibility=$StartMenuSuggestions
   - target: Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText
     styles:
-      - Visibility=Collapsed
+      - Visibility=$StartMenuSuggestions
   - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer
     styles:
-      - Visibility=Collapsed
+      - Visibility=$StartMenuSuggestions
   - target: Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions
     styles:
-      - Visibility=Collapsed
+      - Visibility=$StartMenuSuggestions
   - target: Border#DropShadow
     styles:
-      - Opacity=0
+      - Visibility=$Shadows
   - target: Border#AcrylicBorder
     styles:
       - BorderThickness=0
@@ -64,11 +70,11 @@ controlStyles:
       - Width=64
   - target: Windows.UI.Xaml.Controls.TextBlock#PinnedListHeaderText
     styles:
-      - Text=Start
+      - Text=$StartMenuText
       - FontSize=20
   - target: Windows.UI.Xaml.Controls.TextBlock#AllAppsHeading
     styles:
-      - Text=Apps
+      - Text=$AllMenuText
       - FontSize=20
   - target: StartDocked.NavigationPaneButton#UserTileButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ContentPresenter
     styles:
@@ -87,10 +93,10 @@ controlStyles:
       - Margin=0,-48,0,48
   - target: Windows.UI.Xaml.Controls.Border#StartDropShadow
     styles:
-      - Visibility=Collapsed
+      - Visibility=$Shadows
   - target: Windows.UI.Xaml.Controls.TextBlock#AllListHeadingText
     styles:
-      - Text=Apps
+      - Text=$AllMenuText
       - FontSize=20
   - target: Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton > Windows.UI.Xaml.Controls.Grid#RootGrid > ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
     styles:
@@ -104,10 +110,10 @@ controlStyles:
       - FontSize=16
   - target: Windows.UI.Xaml.Controls.Border#RightCompanionDropShadow
     styles:
-      - Visibility=Collapsed
+      - Visibility=$Shadows
   - target: Border#RootGridDropShadow
     styles:
-      - Visibility=Collapsed
+      - Visibility=$Shadows
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter
     styles:
       - CornerRadius=2
@@ -134,7 +140,7 @@ controlStyles:
       - Margin=2,-48,-2,48
   - target: Windows.UI.Xaml.Controls.Border#dropshadow
     styles:
-      - Opacity=0
+      - Visibility=$Shadows
   - target: Windows.UI.Xaml.Controls.Border#LayerBorder
     styles:
       - Opacity=0
@@ -186,11 +192,11 @@ controlStyles:
       - Visibility=Visible
   - target: StartMenu.SearchBoxToggleButton > Grid > ContentPresenter > Windows.UI.Xaml.Controls.TextBlock#PlaceholderText
     styles:
-      - Text=Search Everywhere
+      - Text=$SearchBarText
       - FontFamily=Segoe UI Variable Display
   - target: StartDocked.SearchBoxToggleButton > Grid > ContentPresenter > Windows.UI.Xaml.Controls.TextBlock#PlaceholderText
     styles:
-      - Text=Search Everywhere
+      - Text=$SearchBarText
       - FontFamily=Segoe UI Variable Display
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
@@ -217,10 +223,10 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.StackPanel > Windows.UI.Xaml.Controls.TextBlock
     styles:
       - Visibility=Collapsed
-  - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter
+  - target: Windows.UI.Xaml.Controls.Button#ShowAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter@Normal
     styles:
       - BorderThickness=0
-  - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter
+  - target: Windows.UI.Xaml.Controls.Button#CloseAllAppsButton > Windows.UI.Xaml.Controls.ContentPresenter@PointerOver
     styles:
       - BorderThickness=0
   - target: Windows.UI.Xaml.Controls.TextBlock#ZoomedOutHeading
@@ -235,6 +241,34 @@ controlStyles:
   - target: Grid#Root > Border
     styles:
       - BorderThickness=0
+  - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsRoot
+    styles:
+      - Visibility=$StartMenuSuggestions
+  - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton > Grid > ContentPresenter > StackPanel > TextBlock
+    styles:
+      - FontFamily=Segoe Fluent Icons
+      - Text=
+  - target: Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton
+    styles:
+      - Width=60
+      - Height=30
+  - target: TextBlock#TopLevelSuggestionsListHeaderText
+    styles:
+      - FontSize=20
+  - target: TextBlock#TopLevelSuggestionsListHeaderText
+    styles:
+      - FontSize=20
+  - target: TextBlock#TopLevelSuggestionsListHeaderText
+    styles:
+      - FontSize=20
+  - target: Button#HideMoreSuggestionsButton > Grid > ContentPresenter > StackPanel > TextBlock
+    styles:
+      - FontFamily=Segoe Fluent Icons
+      - Text=
+      - FontSize=16
+  - target: TextBlock#MoreSuggestionsListHeaderText
+    styles:
+      - FontSize=20
 webContentStyles:
   - target: .curatedSettingsGroup
     styles:
