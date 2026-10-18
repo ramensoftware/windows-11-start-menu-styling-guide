@@ -111,24 +111,38 @@ controlStyles:
 #Phone Flyout Toggle Button
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
     styles:
-      - Visibility=Visible
-      - Margin=-642,39,641-39
+      - Margin=-642,39,641,-39
   - target: Button
     styles:
       - Style:=<ResourceKey="ButtonRevealStyle" />    
 
 #Apps list/Pinned List
-  - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer
+  - target: Grid#SideBySidePinnedWrapper
+    styles:
+      - ActualHeight=>pinnedWrapperHeight
+  - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer
     styles:
       - RenderTransform:=<TranslateTransform X="-450" />
-      - Margin=-92,-64,-152,-15
+      - Margin=-92,-23,-152,-15
   - target: Grid#SideBySidePinnedWrapper > Windows.UI.Xaml.Controls.ScrollViewer#SideBySidePinnedScrollViewer
     styles:
       - RenderTransform:=<TranslateTransform X="267" Y="67" />
+      - Margin=-92,-64,-152,-15
       - Canvas.ZIndex=-1
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > SemanticZoom#TopLevelRoot > Grid > ScrollViewer#ScrollViewer > ScrollContentPresenter#ScrollContentPresenter > Grid > ContentPresenter#ZoomedInPresenter > GridView#AllAppsGrid > Border > Grid#SideBySidePinnedWrapper > ScrollViewer#SideBySidePinnedScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Grid#SideBySidePinnedContent > StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter
+  # The list starts 35px below the wrapper and extends to the bottom of the menu.
+  - target: StartMenu.PinnedList#StartMenuPinnedList
     styles:
-      - Margin=0,0,0,-86
+      - MinHeight={{pinnedWrapperHeight - 35}}
+      - MaxHeight={{pinnedWrapperHeight - 35}}
+  # Windows only shows as many pins as fit the GridView height, so it's made
+  # tall enough for all of them. The ScrollViewer inside is the visible part.
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList
+    styles:
+      - MinHeight=8400
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList > Border > ScrollViewer
+    styles:
+      - VerticalAlignment=Top
+      - Height={{pinnedWrapperHeight - 35}}
 
 #Apps List
   - target: Windows.UI.Xaml.Controls.Border#Border@CommonStates
@@ -253,6 +267,9 @@ controlStyles:
       - MaxHeight=686
       - Canvas.ZIndex=99
       - RenderTransform:=<TranslateTransform X="-20" Y="12" />
+  - target: Grid#SideBySidePinnedWrapper > ScrollViewer#ScrollViewer > Border#Root > Grid > Grid > Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar
+    styles:
+      - Margin=0,35,0,43
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > SemanticZoom#TopLevelRoot > Grid > ScrollViewer#ScrollViewer > ScrollContentPresenter#ScrollContentPresenter > Grid > ContentPresenter#ZoomedInPresenter > GridView#AllAppsGrid > Border > Grid#SideBySidePinnedWrapper > ScrollViewer#SideBySidePinnedScrollViewer
     styles:
       - MaxWidth=396
@@ -267,7 +284,7 @@ controlStyles:
   - target: Microsoft.UI.Xaml.Controls.DropDownButton
     styles:
       - Style:=<StaticResource ResourceKey="ButtonRevealStyle"/>
-      - Margin=-375,41,375,-41
+      - Margin=-375,0,375,0
       - Width=24
       - Padding=0,4,0,4
       - Height=24
