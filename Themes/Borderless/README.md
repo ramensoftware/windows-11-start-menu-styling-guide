@@ -22,7 +22,9 @@ Set whatever placeholder text you want in the ``SearchBarText`` style constant.
 
 ### Re-enabling drop shadows
 
-By default, the theme is devoid of drop shadows (except for the case of tooltips and menus), so re-enable them, set the ``Shadows`` style constant to ``Visible``.
+By default, the theme is devoid of drop shadows (except for the case of tooltips and menus).
+
+To re-enable them, set the ``Shadows`` style constant to ``Visible``.
 
 ### Re-enabling the start menu suggestions
 
