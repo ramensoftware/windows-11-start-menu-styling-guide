@@ -8,14 +8,17 @@ Updated with search popout, and the ability to re-enable shadows.
 ![Screenshot](screenshot.png)
 ![Classic Start Menu Screenshot](screenshot-old-start-menu.png)
 
+## Customization
 
-### To edit the header texts:
-Use the ``StartMenuText`` and ``AllMenuText`` style constants.
-### To edit the search bar text:
-Use the ``SearchBarText`` style constant.
-### To re-enable drop shadows:
-Set the ``Shadows`` style constant to ``Visible``.
-### To show the start menu suggestions:
+To apply the customizations below, set the corresponding style constants in the mod settings under "Style constants".
+
+### Editing the header texts:
+Set whatever header text you want in the ``StartMenuText`` and ``AllMenuText`` style constants.
+### Editing the search bar placeholder text:
+Set whatever placeholder text you want in the ``SearchBarText`` style constant.
+### Re-enabling drop shadows:
+By default, the theme is devoid of drop shadows (except for the case of tooltips and menus), so re-enable them, set the ``Shadows`` style constant to ``Visible``.
+### Re-enabling the start menu suggestions:
 (If your settings app doesn't allow you to toggle it already)
 Set the ``StartMenuSuggestions`` style constant to ``Visible``.
 
