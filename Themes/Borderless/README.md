@@ -1,7 +1,7 @@
 # Borderless theme for Windows 11 Start Menu Styler
 
-A theme for the Start menu that removes the drop shadow and borders (thus the name), and the acrylic tint to make the mica backdrop more visible.
-Updated with search popout, and the ability to re-enable shadows.
+A theme for the Start menu that removes the drop shadow and borders (hence the name), as well as the Acrylic tint, making the Mica backdrop more visible.
+It also styles the search popout and offers the option to re-enable shadows.
 
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
@@ -12,7 +12,7 @@ Updated with search popout, and the ability to re-enable shadows.
 
 To apply the customizations below, set the corresponding style constants in the mod settings under "Style constants".
 
-### Editing the header texts
+### Editing the header text
 
 Set whatever header text you want in the ``StartMenuText`` and ``AllMenuText`` style constants.
 
@@ -22,16 +22,15 @@ Set whatever placeholder text you want in the ``SearchBarText`` style constant.
 
 ### Re-enabling drop shadows
 
-By default, the theme is devoid of drop shadows (except for the case of tooltips and menus).
+By default, the theme removes drop shadows (except for tooltips and menus).
 
 To re-enable them, set the ``Shadows`` style constant to ``Visible``.
 
-### Re-enabling the start menu suggestions
+### Re-enabling the Start menu suggestions
 
-If your settings app doesn't allow you to toggle it on/off already, the theme has it hidden by default.
+The theme hides the Start menu suggestions by default, since the Settings app doesn't always allow turning them off.
 
-Set the ``StartMenuSuggestions`` style constant to ``Visible``.
-
+To show them, set the ``StartMenuSuggestions`` style constant to ``Visible``.
 
 ## Theme selection
 
