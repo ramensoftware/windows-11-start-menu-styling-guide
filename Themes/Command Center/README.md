@@ -18,7 +18,8 @@ Command Center theme inspired by the command centers from various mobile operati
 
   In order to switch between these backgrounds, set the value `Background=$Translucent`, `Background=$Glass`, `Background=$Frosted` or `Background=$Acrylic` in the "Style constants" section of the mod's settings.
 
-- This theme can style your lock screen as well. 
+- This theme can style your lock screen as well.
+- This theme works best when set to the new `small` start menu size.
 
 ## Lock Screen
 
@@ -331,6 +332,7 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$ElementCornerRadius
+      - Margin=0,0,10,0
   - target: GridView#AllAppsGrid > ItemsWrapGrid
     styles:
       - Visibility=0
