@@ -122,6 +122,7 @@ Start Menu Styler mod. The following themes are available:
 | [Command Center](Themes/Command%20Center/README.md) | [![Command Center](Themes/Command%20Center/screenshot-small.png)](Themes/Command%20Center/screenshot.png)
 | [FullScreen](Themes/FullScreen/README.md) | [![FullScreen](Themes/FullScreen/screenshot-small.png)](Themes/FullScreen/screenshot.png)
 | [FrostyGlass](Themes/FrostyGlass/README.md) | [![FrostyGlass](Themes/FrostyGlass/screenshot-small.png)](Themes/FrostyGlass/screenshot.png)
+| [FlyoutStartMenu](Themes/FlyoutStartMenu/README.md) | [![FlyoutStartMenu](Themes/FlyoutStartMenu/screenshot-small.png)](Themes/FlyoutStartMenu/screenshot.png)
 
 ### Windows 10 Start menu themes
 
