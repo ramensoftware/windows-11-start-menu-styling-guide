@@ -47,8 +47,8 @@ styleConstants:
   - ElementCornerRadius=20
   - ElementBorderBrush=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#50808080" Offset="1" /><GradientStop Color="#50606060" Offset="0.15" /></LinearGradientBrush>
   - ElementBorderBrush2=<WindhawkBlur BlurAmount="30" TintColor="#909090" TintOpacity="0.3"/>
-  - GlassDark=<WindhawkBlur BlurAmount="5" TintColor="#1A000000" />
-  - GlassDark2=<WindhawkBlur BlurAmount="5" TintColor="#0D000000" />
+  - GlassDark=<WindhawkBlur BlurAmount="5" TintColor="#1A000000" TintSaturation="1.3"  />
+  - GlassDark2=<WindhawkBlur BlurAmount="5" TintColor="#0D000000" TintSaturation="1.3" />
   - GlassDarkTitles=<WindhawkBlur BlurAmount="7" TintColor="#10151515"/>
   - GlassDarkBottomTray=<WindhawkBlur BlurAmount="14" TintColor="#3E4A4A4A"/>
   - fluidBorder=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Offset="0" Color="#2FFFFFFF" /><GradientStop Offset="0.2" Color="#1AFFFFFF" /><GradientStop Offset="0.65" Color="#1AF0F0F0" /><GradientStop Offset="1" Color="#2F707070" /></LinearGradientBrush>
@@ -68,10 +68,11 @@ controlStyles:
       - BorderBrush:=$BorderBrush
   - target: Grid#Root > Border
     styles:
-      - BorderBrush:=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#40B5B5B5" Offset="0.0" /><GradientStop Color="#40B5B5B5" Offset="0.3" /><GradientStop Color="#20050505" Offset="0.45" /><GradientStop Color="#40040404" Offset="0.75" /><GradientStop Color="#20050505" Offset="0.85" /><GradientStop Color="#40ACACAC" Offset="1" /></LinearGradientBrush>
+      - BorderBrush:=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#69B5B5B5" Offset="0.0" /><GradientStop Color="#40B5B5B5" Offset="0.2" /><GradientStop Color="#50303030" Offset="0.3" /><GradientStop Color="#50101010" Offset="0.65" /><GradientStop Color="#50303030" Offset="0.75" /><GradientStop Color="#50ACACAC" Offset="1" /></LinearGradientBrush>
       - Background:=$GlassDark2
-      - BorderThickness=1,1,1,1
-      - CornerRadius=62,62,58,58
+      - BorderThickness=1
+      - CornerRadius=62
+      - // App folder flyout in pinned app list
   - target: StartMenu.StartHome > Grid#PageRoot
     styles:
       - Margin=10,0,10,0
@@ -121,7 +122,7 @@ controlStyles:
   - target: Border#RootGridDropShadow
     styles:
       - CornerRadius=50
-      - Margin=0.4,0,0.3,0
+      - Margin=0.3,0,0.3,0
       - Canvas.ZIndex=-1
   - target: Grid#TopLevelHeader > Grid > Button
     styles:
@@ -168,6 +169,7 @@ controlStyles:
       - BorderBrush:=<LinearGradientBrush StartPoint="0.01,0" EndPoint="0,1"><GradientStop Color="#58AFAFAF" Offset="0" /><GradientStop Color="#50303030" Offset="0.28" /><GradientStop Color="#90040404" Offset="0.5" /><GradientStop Color="#50303030" Offset="0.72" /><GradientStop Color="#58B1B1B1" Offset="1" /></LinearGradientBrush>
       - Background:=<WindhawkBlur BlurAmount="0" TintColor="#50202020"/>
       - Margin=0
+      - // View type change flyout for All Apps
   - target: Button#FolderPlate > Grid@CommonStates
     styles:
       - RenderTransformOrigin=0.5,0.5
@@ -194,6 +196,7 @@ controlStyles:
       - CornerRadius=50
       - BorderThickness=1,0.4,1,0.4
       - Padding:=0
+      - // Bg of pinned app list
   - target: Windows.UI.Xaml.Controls.Grid#PageRoot
     styles:
       - ActualHeight=>MenuHeight
@@ -319,6 +322,10 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CornerRadius
+  - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton > Grid > Image#SearchIconOn
+    styles:
+      - RenderTransformOrigin=0.5,0.5
+      - RenderTransform:=<ScaleTransform ScaleX="1.4" ScaleY="1.4" />
   - target: StartMenu.SearchBoxToggleButton#SearchBoxToggleButton
     styles:
       - Visibility=Visible
@@ -362,9 +369,6 @@ controlStyles:
       - CornerRadius=40
       - BorderThickness=1,1,1,1
       - Padding=8,6,8,7
-  - target: FlyoutPresenter
-    styles:
-      - CornerRadius=40
   - target: MenuFlyoutItem
     styles:
       - CornerRadius=11
@@ -376,7 +380,7 @@ controlStyles:
       - BorderThickness=1
       - Padding={{ max(14, min(18.5, TooltipHeight * 0.25)) }},{{ max(8, min(12, TooltipHeight * 0.2)) }},{{ max(14, min(17, TooltipHeight * 0.25)) }},{{ max(9, min(12, TooltipHeight * 0.22)) }}
       - FontSize=14
-      - CornerRadius={{ max(19, min(65, (TooltipHeight / 2.1) * 1)) }}
+      - CornerRadius={{ max(19, min(67, (TooltipHeight / 2.1) * 1)) }}
       - ActualHeight=>TooltipHeight
   - target: Button#ShowMoreSuggestionsButton > Grid@CommonStates
     styles:
@@ -388,17 +392,23 @@ controlStyles:
       - RenderTransform:=<ScaleTransform ScaleX="1.0" ScaleY="1.0" />
       - RenderTransform@PointerOver:=<ScaleTransform ScaleX="1.05" ScaleY="1.03" />
       - RenderTransform@Pressed:=<ScaleTransform ScaleX="0.95" ScaleY="0.95" />
+      - // "Show All" button in Recommende section
   - target: Grid#TopLevelSuggestionsListHeader
     styles:
       - CornerRadius=21.5
       - Background:=<WindhawkBlur BlurAmount="18" TintColor="#10151515"/>
-      - BorderBrush:=<LinearGradientBrush StartPoint="0.465,0" EndPoint="0.535,1"><GradientStop Color="#5FBFBFBF" Offset="0.0" /><GradientStop Color="#3F050505" Offset="0.28" /><GradientStop Color="#6F040404" Offset="0.5" /><GradientStop Color="#3F050505" Offset="0.72" /><GradientStop Color="#5FBFBFBF" Offset="1" /></LinearGradientBrush>
+      - BorderBrush:=<LinearGradientBrush StartPoint="0.475,0" EndPoint="0.525,1"><GradientStop Color="#5FBFBFBF" Offset="0.0" /><GradientStop Color="#3F050505" Offset="0.28" /><GradientStop Color="#6F040404" Offset="0.5" /><GradientStop Color="#3F050505" Offset="0.72" /><GradientStop Color="#5FBFBFBF" Offset="1" /></LinearGradientBrush>
       - BorderThickness=1
       - Visibility=>RecVis
       - HorizontalAlignment=Left
       - ActualHeight=>RecmHyt
       - Padding={{ -1 * max(44, min(88, RecmHyt * 1)) }},{{ max(0, min(1000, RecmHyt * 0.08)) }},{{ max(0, min(1000, RecmHyt * 0.09)) }},{{ max(0, min(1000, RecmHyt * 0.09)) }}
       - Margin={{ max(52, min(102, RecmHyt * 1.2)) }},{{ max(22, min(44, RecmHyt * 0.5)) }},0,0
+      - // Bg of recommended/recent section header
+  - target: Grid#TopLevelSuggestionsRoot > Grid#TopLevelSuggestionsListHeader > TextBlock#TopLevelSuggestionsListHeaderText
+    styles:
+      - Text=Recent Apps & Files
+      - // Header text of recommended/recent section
   - target: GridView#RecommendedList
     styles:
       - ActualWidth=>RecContainerWidth
@@ -434,6 +444,7 @@ controlStyles:
       - CornerRadius=15
       - Background:=<WindhawkBlur BlurAmount="18" TintColor="#10151515"/>
       - BorderBrush:=<LinearGradientBrush StartPoint="0.45,0" EndPoint="0.55,1"><GradientStop Color="#58BFBFBF" Offset="0.0" /><GradientStop Color="#1F050505" Offset="0.28" /><GradientStop Color="#50040404" Offset="0.5" /><GradientStop Color="#1F050505" Offset="0.72" /><GradientStop Color="#58B5B5B5" Offset="1" /></LinearGradientBrush>
+      - // "Back" button inside expanded recommended section
   - target: TextBlock#AllListHeadingText
     styles:
       - Text=All Apps & Main Programs
@@ -442,10 +453,10 @@ controlStyles:
   - target: Grid#MoreSuggestionsRoot > Grid
     styles:
       - Background=Transparent
-      - Margin=0,{{ -1 * max(80, min(120, MenuHeight * 0.135)) }},0,0
+      - Margin=0,{{ -1 * max(100, min(180, MenuHeight * 0.165)) }},0,0
   - target: ListView#RecommendedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter
     styles:
-      - Margin=0,{{ max(80, min(120, MenuHeight * 0.135)) }},0,0
+      - Margin=0,{{ max(100, min(180, MenuHeight * 0.165)) }},0,{{ max(60, min(100, MenuHeight * 0.1)) }}
   - target: Grid#MoreSuggestionsRoot > Grid[1]
     styles:
       - CornerRadius=21.5
@@ -456,9 +467,11 @@ controlStyles:
       - Padding={{ -1 * max(44, min(88, MenuHeight * 0.06)) }},{{ max(3, min(6, MenuWidth * 0.004)) }},{{ max(4, min(8, MenuWidth * 0.0055)) }},{{ max(4, min(8, MenuWidth * 0.0055)) }}
       - Margin={{ max(52, min(90, MenuWidth * 0.08)) }},{{ max(75, min(120, MenuHeight * 0.101)) }},0,0
       - Canvas.ZIndex=10
+      - // Recomended heading inside expanded Recommended section
   - target: TextBlock#MoreSuggestionsListHeaderText
     styles:
-      - Text=Recommended - Recent Apps & Files
+      - Text=Recent Apps & Files
+      - // Header text inside expanded recommended/recent section
   - target: ScrollViewer#MenuFlyoutPresenterScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > StackPanel
     styles:
       - ChildrenTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="False" FromHorizontalOffset="-40" FromVerticalOffset="0" /></TransitionCollection>
@@ -583,6 +596,47 @@ controlStyles:
   - target: Border#FolderPlate > > TextBlock
     styles:
       - FontSize=23
+  - target: FlyoutPresenter
+    styles:
+      - BorderThickness=0
+      - CornerRadius=40
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter > Windows.UI.Xaml.Controls.Border
+    styles:
+      - Background:=Transparent
+      - BorderThickness=0
+      - CornerRadius=40
+      - Padding=0
+  - target: AccountControl.View.AccountControlFlyout
+    styles:
+      - Background:=Transparent
+  - target: AccountControl.View.AccountControlFlyout > Grid
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="6" TintColor="#353A3A3A"/>
+      - BorderBrush:=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#58BFBFBF" Offset="0.0" /><GradientStop Color="#1F050505" Offset="0.28" /><GradientStop Color="#50040404" Offset="0.5" /><GradientStop Color="#1F050505" Offset="0.72" /><GradientStop Color="#58B5B5B5" Offset="1" /></LinearGradientBrush>
+      - BorderThickness=1
+      - CornerRadius=40
+  - target: AccountControl.View.UserProfileView
+    styles:
+      - Background:=Transparent
+      - CornerRadius=40
+  - target: AccountControl.View.UserProfileView > Grid
+    styles:
+      - Background:=Transparent
+  - target: AccountControl.View.DeviceOpsView > StackPanel@CommonStates > Button
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="18" TintColor="#19292929"/>
+      - Background@PointerOver:=<WindhawkBlur BlurAmount="18" TintColor="#19292929"/>
+      - Background@Pressed:=<WindhawkBlur BlurAmount="18" TintColor="#19292929"/>
+      - BorderBrush:=<LinearGradientBrush StartPoint="0.45,0" EndPoint="0.55,1"><GradientStop Color="#5FBFBFBF" Offset="0.0" /><GradientStop Color="#2F050505" Offset="0.28" /><GradientStop Color="#5F040404" Offset="0.5" /><GradientStop Color="#2F050505" Offset="0.72" /><GradientStop Color="#5FB5B5B5" Offset="1" /></LinearGradientBrush>
+      - BorderThickness=1
+      - CornerRadius=19
+      - RenderTransformOrigin=0.5,0.5
+      - RenderTransform:=<ScaleTransform ScaleX="1.0" ScaleY="1.0" />
+      - RenderTransform@PointerOver:=<ScaleTransform ScaleX="1.03" ScaleY="1.05" />
+      - RenderTransform@Pressed:=<ScaleTransform ScaleX="0.95" ScaleY="0.95" />
+      - Margin=0,2,10,0
+themeResourceVariables:
+  - ''
 webContentStyles:
   - target: '*'
     styles:
