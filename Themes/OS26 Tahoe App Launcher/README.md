@@ -42,21 +42,18 @@ styleConstants:
   - IconBackground=<LinearGradientBrush StartPoint="0.47,-0.29" EndPoint="0.50,1.29"><GradientStop Offset="0.18" Color="#2F2F2F"/><GradientStop Offset="0.3" Color="#292929"/><GradientStop Offset="0.5" Color="#141414"/><GradientStop Offset="0.68" Color="#080808"/><GradientStop Offset="0.81" Color="#000000"/></LinearGradientBrush>
   - IconBorder=<LinearGradientBrush StartPoint="0.04,-0.14" EndPoint="1.22,1.10"><GradientStop Offset="0.18" Color="#4FFFFFFF"/><GradientStop Offset="0.34" Color="#661D1D1D"/><GradientStop Offset="0.63" Color="#00000000"/><GradientStop Offset="0.71" Color="#662D2D2D"/><GradientStop Offset="0.77" Color="#4FFFFFFF"/></LinearGradientBrush>
 controlStyles:
+  - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot
+    styles:
+      - Height=624
+      - VerticalAlignment=Center
+      - Margin=0
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Border#AcrylicBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E" />
-      - Height=600
       - CornerRadius=50
-      - VerticalAlignment=Center
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Border#StartDropShadow
     styles:
-      - Height=600
       - CornerRadius=50
-      - VerticalAlignment=Center
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent
-    styles:
-      - Height=600
-      - VerticalAlignment=Center
   - target: Border#AcrylicOverlay
     styles:
       - CornerRadius=50,50,0,0
@@ -267,21 +264,16 @@ styleConstants:
   - IconBackground=<LinearGradientBrush StartPoint="0.47,-0.29" EndPoint="0.50,1.29"><GradientStop Offset="0.18" Color="#2F2F2F"/><GradientStop Offset="0.3" Color="#292929"/><GradientStop Offset="0.5" Color="#141414"/><GradientStop Offset="0.68" Color="#080808"/><GradientStop Offset="0.81" Color="#000000"/></LinearGradientBrush>
   - IconBorder=<LinearGradientBrush StartPoint="0.04,-0.14" EndPoint="1.22,1.10"><GradientStop Offset="0.18" Color="#4FFFFFFF"/><GradientStop Offset="0.34" Color="#661D1D1D"/><GradientStop Offset="0.63" Color="#00000000"/><GradientStop Offset="0.71" Color="#662D2D2D"/><GradientStop Offset="0.77" Color="#4FFFFFFF"/></LinearGradientBrush>
 controlStyles:
+  - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot
+    styles:
+      - Height=624
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Border#AcrylicBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E" />
-      - Height=600
       - CornerRadius=50
-      - VerticalAlignment=bottom
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Border#StartDropShadow
     styles:
-      - Height=600
       - CornerRadius=50
-      - VerticalAlignment=bottom
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent
-    styles:
-      - Height=600
-      - VerticalAlignment=bottom
   - target: Border#AcrylicOverlay
     styles:
       - CornerRadius=50,50,0,0
@@ -495,21 +487,18 @@ styleConstants:
   - IconBackground=<ImageBrush ImageSource="https://raw.githubusercontent.com/ramensoftware/windows-11-start-menu-styling-guide/refs/heads/main/Themes/OS26%20Tahoe%20App%20Launcher/Assets/tahoeappbg.png" Stretch="UniformtoFill"/>
   - IconBorder=<LinearGradientBrush StartPoint="0.03,-0.15" EndPoint="1.18,1.23"><GradientStop Offset="0.07" Color="#D6D7D7"/><GradientStop Offset="0.3" Color="#05D6D7D7"/><GradientStop Offset="0.62" Color="#00D6D7D7"/><GradientStop Offset="0.84" Color="#D6D7D7"/></LinearGradientBrush>
 controlStyles:
+  - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot
+    styles:
+      - Height=624
+      - VerticalAlignment=Center
+      - Margin=0
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Border#AcrylicBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E" />
-      - Height=600
       - CornerRadius=50
-      - VerticalAlignment=Center
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Border#StartDropShadow
     styles:
-      - Height=600
       - CornerRadius=50
-      - VerticalAlignment=Center
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent
-    styles:
-      - Height=600
-      - VerticalAlignment=Center
   - target: Border#AcrylicOverlay
     styles:
       - CornerRadius=50,50,0,0
@@ -721,21 +710,16 @@ styleConstants:
   - IconBackground=<ImageBrush ImageSource="https://raw.githubusercontent.com/ramensoftware/windows-11-start-menu-styling-guide/refs/heads/main/Themes/OS26%20Tahoe%20App%20Launcher/Assets/tahoeappbg.png" Stretch="UniformtoFill"/>
   - IconBorder=<LinearGradientBrush StartPoint="0.03,-0.15" EndPoint="1.18,1.23"><GradientStop Offset="0.07" Color="#D6D7D7"/><GradientStop Offset="0.3" Color="#05D6D7D7"/><GradientStop Offset="0.62" Color="#00D6D7D7"/><GradientStop Offset="0.84" Color="#D6D7D7"/></LinearGradientBrush>
 controlStyles:
+  - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot
+    styles:
+      - Height=624
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Border#AcrylicBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E" />
-      - Height=600
       - CornerRadius=50
-      - VerticalAlignment=bottom
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Border#StartDropShadow
     styles:
-      - Height=600
       - CornerRadius=50
-      - VerticalAlignment=bottom
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent
-    styles:
-      - Height=600
-      - VerticalAlignment=bottom
   - target: Border#AcrylicOverlay
     styles:
       - CornerRadius=50,50,0,0
