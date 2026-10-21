@@ -1,21 +1,22 @@
-# FlyoutStartMenu for Windows 11 Start Menu Styler
+# FlyoutStartMenu theme for Windows 11 Start Menu Styler
 
-This theme is a part of **Reimagined 11 Themes** that redesigns the Start Menu into a Flyout style menu or a Fullscreen inspired Start Menu,
-Here are some other UI tweaks that is in the theme:
-* WinUI3 3D-like borders & Background transitions on elements usually lacking them, Inspired by the [Fluid Theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid).
-* Context menu element staggerring animations.
-* Search restyled to match WinUI3.
+This theme is part of **Reimagined 11 Themes**. It redesigns the Start menu into a flyout-style menu or a fullscreen-inspired Start menu.
+
+The theme also includes these UI tweaks:
+* 3D-like WinUI 3 borders and background transitions on elements that usually lack them, inspired by the [Fluid theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid).
+* Staggered animations for context menu items.
+* Search restyled to match WinUI 3.
 
 **Author**: [TheGamer1445891](https://github.com/TheGamer1445891)
 
-**Dark Mode:**
+**Dark mode:**
 
 ![Screenshot1a](Dark-mode1.png) ![Screenshot2a](Dark-mode2.png)
 ![Screenshot3a](Dark-mode3.png) ![Screenshot7a](Dark-mode7.png)
 ![Screenshot4a](Dark-mode4.png) ![Screenshot5a](Dark-mode5.png)
 ![Screenshot6a](Dark-mode6.png)
 
-**Light Mode:**
+**Light mode:**
 
 ![Screenshot1b](Light-mode1.png) ![Screenshot2b](Light-mode2.png)
 ![Screenshot3b](Light-mode3.png) ![Screenshot4b](Light-mode4.png)
@@ -23,16 +24,17 @@ Here are some other UI tweaks that is in the theme:
 ![Screenshot7b](Light-mode7.png)
 
 > [!IMPORTANT]
-> This theme is designed for the [new Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is available on 24H2-25H2+.
+> This theme is designed for the [new Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is available on version 24H2 and later.
 
 > [!NOTE]
-> If the Start Menu gets cutoff/Search Menu becomes broken after switching dark/light themes, restart the Start Menu/Search Menu process in Task Manager atleast 2-3 times.
+> If the Start menu gets cut off or the search menu breaks after switching between dark and light mode, restart the Start or Search process in Task Manager. It may take two or three restarts.
 
-## Additional Steps for Fullscreen Search Menu:
+## Additional steps for the fullscreen search menu
 
-You need a mod called **Start Menu Size** to change the search menu height and width, and these are the configs:
+The **Start Menu Size** mod is required to change the width and height of the search menu. Use these settings:
+
 <details>
-<summary>Start Menu Size (Click to expand)</summary>
+<summary>Start Menu Size (click to expand)</summary>
 
   ```yaml
   width: 0
@@ -63,8 +65,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-theme: ''
-disableNewStartMenuLayout: ''
 styleConstants:
   - // Backgrounds
   - NativeAcrylic1=<WindhawkBlur BlurAmount="20" TintColor="{ThemeResource SystemChromeAutoColor}"   TintOpacity="{ThemeResource NativeAcrylicOpacity}"   TintLuminosityOpacity="0.93"/>
@@ -847,8 +847,8 @@ controlStyles:
       - HorizontalContentAlignment=1
       - VerticalContentAlignment=1
       - ToolTipService.ToolTip=Web search is enabled
-      - Visibility=>GleamButtonVisbility
-      - Tag={{18 * ((GleamButtonVisbility - 1) * -1)}}
+      - Visibility=>GleamButtonVisibility
+      - Tag={{18 * ((GleamButtonVisibility - 1) * -1)}}
       - Tag=>WebSearchEnabled
   - target: Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox > Grid > ScrollViewer#ContentElement > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Internal.TextBoxView
     styles:
@@ -2010,6 +2010,5 @@ webContentStyles:
       - '//background-color: #A90000 !important'
       - 'background-color: #FFFFFF07 !important'
       - '//box-shadow: 0 0 0 1px rgba(255,255,255,.07), 0 -1px 0 rgba(255,255,255,.02) !important'
-webContentCustomJs: ''
 ```
 </details>
