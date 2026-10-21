@@ -1,6 +1,6 @@
 # OS26 Tahoe App Launcher Theme for Windows 11 Start Menu Styler
 
-This theme makes the Windows 11 Start Menu look like MacOS App Launcher! It comes in 2 styles(Clear and Dark) and 2 Alignments(Center and Bottom). Suggestions, and Contributions are Welcome.
+This theme makes the Windows 11 Start menu look like the macOS app launcher! It comes in 2 styles (Clear and Dark) and 2 alignments (Center and Bottom). Suggestions and contributions are welcome.
 
 **Author**: [WasiXGamer](https://github.com/wasixgamer)
 
@@ -9,13 +9,10 @@ This theme makes the Windows 11 Start Menu look like MacOS App Launcher! It come
 
 # Additional Requirements
 > [!NOTE]
-> This Mod does NOT work appropriate for list view in Start Menu. Please use either Grid View or Category View when using it.
-
+> This theme does NOT work properly with the list view in the Start menu. Please use either the grid view or the category view with it.
 
 ## Compact Start Menu
-This Mod requires Windhawk mod [Compact Start Menu](https://windhawk.net/mods/compact-start-menu) to get MacOS-Like Layout of App icons.
-
-
+This theme requires the Windhawk mod [Compact Start Menu](https://windhawk.net/mods/compact-start-menu) to get a macOS-like layout of app icons.
 
 ## Manual Installation
 
@@ -25,7 +22,7 @@ To import the theme styles:
 * Go to the "Settings" tab and select "Textual mode".
 * Copy the content below to the text box and click "Save settings".
 
-# Variants:
+# Variants
 
 ## OS26 Tahoe Dark
 
@@ -35,9 +32,6 @@ To import the theme styles:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-
-
-disableNewStartMenuLayout: forceNewLayout
 styleConstants:
   - IconBackground=<LinearGradientBrush StartPoint="0.47,-0.29" EndPoint="0.50,1.29"><GradientStop Offset="0.18" Color="#2F2F2F"/><GradientStop Offset="0.3" Color="#292929"/><GradientStop Offset="0.5" Color="#141414"/><GradientStop Offset="0.68" Color="#080808"/><GradientStop Offset="0.81" Color="#000000"/></LinearGradientBrush>
   - IconBorder=<LinearGradientBrush StartPoint="0.04,-0.14" EndPoint="1.22,1.10"><GradientStop Offset="0.18" Color="#4FFFFFFF"/><GradientStop Offset="0.34" Color="#661D1D1D"/><GradientStop Offset="0.63" Color="#00000000"/><GradientStop Offset="0.71" Color="#662D2D2D"/><GradientStop Offset="0.77" Color="#4FFFFFFF"/></LinearGradientBrush>
@@ -226,8 +220,6 @@ controlStyles:
     styles:
       - VerticalAlignment=bottom
       - Height=25  
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '#qfPreviewPane, .previewContainer, .preview-content-container'
     styles:
@@ -246,8 +238,6 @@ webContentStyles:
     styles:
       - 'width: 100% !important'
       - 'box-sizing: border-box !important'
-webContentCustomJs: ''
-
 ```
 </details>
 
@@ -257,9 +247,6 @@ webContentCustomJs: ''
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-
-
-disableNewStartMenuLayout: forceNewLayout
 styleConstants:
   - IconBackground=<LinearGradientBrush StartPoint="0.47,-0.29" EndPoint="0.50,1.29"><GradientStop Offset="0.18" Color="#2F2F2F"/><GradientStop Offset="0.3" Color="#292929"/><GradientStop Offset="0.5" Color="#141414"/><GradientStop Offset="0.68" Color="#080808"/><GradientStop Offset="0.81" Color="#000000"/></LinearGradientBrush>
   - IconBorder=<LinearGradientBrush StartPoint="0.04,-0.14" EndPoint="1.22,1.10"><GradientStop Offset="0.18" Color="#4FFFFFFF"/><GradientStop Offset="0.34" Color="#661D1D1D"/><GradientStop Offset="0.63" Color="#00000000"/><GradientStop Offset="0.71" Color="#662D2D2D"/><GradientStop Offset="0.77" Color="#4FFFFFFF"/></LinearGradientBrush>
@@ -446,8 +433,6 @@ controlStyles:
     styles:
       - VerticalAlignment=bottom
       - Height=25  
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '#qfPreviewPane, .previewContainer, .preview-content-container'
     styles:
@@ -466,11 +451,8 @@ webContentStyles:
     styles:
       - 'width: 100% !important'
       - 'box-sizing: border-box !important'
-webContentCustomJs: ''
-
 ```
 </details>
-
 
 ## OS26 Tahoe Clear
 
@@ -480,9 +462,6 @@ webContentCustomJs: ''
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-
-
-disableNewStartMenuLayout: forceNewLayout
 styleConstants:
   - IconBackground=<ImageBrush ImageSource="https://raw.githubusercontent.com/ramensoftware/windows-11-start-menu-styling-guide/refs/heads/main/Themes/OS26%20Tahoe%20App%20Launcher/Assets/tahoeappbg.png" Stretch="UniformtoFill"/>
   - IconBorder=<LinearGradientBrush StartPoint="0.03,-0.15" EndPoint="1.18,1.23"><GradientStop Offset="0.07" Color="#D6D7D7"/><GradientStop Offset="0.3" Color="#05D6D7D7"/><GradientStop Offset="0.62" Color="#00D6D7D7"/><GradientStop Offset="0.84" Color="#D6D7D7"/></LinearGradientBrush>
@@ -671,8 +650,6 @@ controlStyles:
     styles:
       - VerticalAlignment=bottom
       - Height=25  
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '#qfPreviewPane, .previewContainer, .preview-content-container'
     styles:
@@ -691,9 +668,6 @@ webContentStyles:
     styles:
       - 'width: 100% !important'
       - 'box-sizing: border-box !important'
-webContentCustomJs: ''
-
-
 ```
 </details>
 
@@ -703,9 +677,6 @@ webContentCustomJs: ''
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-
-
-disableNewStartMenuLayout: forceNewLayout
 styleConstants:
   - IconBackground=<ImageBrush ImageSource="https://raw.githubusercontent.com/ramensoftware/windows-11-start-menu-styling-guide/refs/heads/main/Themes/OS26%20Tahoe%20App%20Launcher/Assets/tahoeappbg.png" Stretch="UniformtoFill"/>
   - IconBorder=<LinearGradientBrush StartPoint="0.03,-0.15" EndPoint="1.18,1.23"><GradientStop Offset="0.07" Color="#D6D7D7"/><GradientStop Offset="0.3" Color="#05D6D7D7"/><GradientStop Offset="0.62" Color="#00D6D7D7"/><GradientStop Offset="0.84" Color="#D6D7D7"/></LinearGradientBrush>
@@ -892,8 +863,6 @@ controlStyles:
     styles:
       - VerticalAlignment=bottom
       - Height=25  
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '#qfPreviewPane, .previewContainer, .preview-content-container'
     styles:
@@ -912,7 +881,5 @@ webContentStyles:
     styles:
       - 'width: 100% !important'
       - 'box-sizing: border-box !important'
-webContentCustomJs: ''
-
 ```
 </details>
