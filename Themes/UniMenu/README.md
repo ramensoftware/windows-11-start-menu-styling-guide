@@ -53,21 +53,26 @@ controlStyles:
       - Margin=-8,10,0,0
   - target: StartMenu.PinnedList
     styles:
-      - Margin=32,25,0,0
+      - Margin=26,40,12,0
   - target: StartMenu.SearchBoxToggleButton
     styles:
-      - Width=430
       - Height=40
-      - Margin=-50,0,0,0
+      - Margin=49,0,{{showMorePinnedVisibility==1?62:112}},0
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
-      - RenderTransform:=<TranslateTransform Y="11" />
+      - RenderTransform:=<TranslateTransform Y="26" />
   - target: StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement
     styles:
       - CornerRadius=5
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
+  - target: Grid#NavPanePlaceholder
+    styles:
+      - Grid.Row=0
+      - Height=Auto
+      - VerticalAlignment=Stretch
   - target: StartDocked.PowerOptionsView
     styles:
-      - Margin=-135,-950,0,0
+      - Margin={{showMorePinnedVisibility==1?-52:-102}},0,0,0
+      - RenderTransform:=<TranslateTransform Y="26" />
       - Canvas.ZIndex=99
   - target: Windows.UI.Xaml.Controls.GridView#PinnedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter > Windows.UI.Xaml.Controls.ItemsWrapGrid > Windows.UI.Xaml.Controls.GridViewItem
     styles:
@@ -76,6 +81,9 @@ controlStyles:
   - target: StartMenu.PinnedList > Grid#Root
     styles:
       - Padding=0
+  - target: StartMenu.PinnedList > Grid#Root > GridView#PinnedList
+    styles:
+      - Grid.ColumnSpan=2
   - target: TextBlock#PinnedListHeaderText
     styles:
       - Height=27
@@ -132,15 +140,24 @@ controlStyles:
   - target: Grid#MainMenu
     styles:
       - MaxWidth=650
+  - target: GridView#AllAppsGrid > Border > ScrollViewer
+    styles:
+      - VerticalOffset=>allAppsScrollOffset
+  - target: Grid#ShowMorePinnedGrid
+    styles:
+      - Visibility=>showMorePinnedVisibility
+      - Canvas.ZIndex=1
   - target: Grid#TopLevelHeader > Grid[2] > Button
     styles:
       - Width=40
       - Height=40
-      - Margin=-73,-6,73,6
+      - Margin=-30,-6,30,6
+      - Padding=0
+      - RenderTransform:=<TranslateTransform Y="{{allAppsScrollOffset==``?15:15+allAppsScrollOffset}}" />
   - target: TextBlock#ShowMorePinnedButtonText
     styles:
       - Visibility=Collapsed
-  - target: Windows.UI.Xaml.Controls.FontIcon[Glyph=]
+  - target: Grid#ShowMorePinnedGrid > Button > Grid > ContentPresenter > StackPanel > FontIcon
     styles:
       - Glyph=
       - FontSize=16
@@ -155,6 +172,10 @@ controlStyles:
     styles:
       - Height=40
       - Width=40
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion
+    styles:
+      - Margin={{showMorePinnedVisibility==1?-52:-102}},0,{{showMorePinnedVisibility==1?62:112}},0
+      - RenderTransform:=<TranslateTransform Y="26" />
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton > Border@CommonStates > ContentPresenter
     styles:
       - Width=40
@@ -164,7 +185,6 @@ controlStyles:
       - BorderThickness=1
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity=".3" TintLuminosityOpacity=".5" Opacity="1"/>
       - CornerRadius=5
-      - RenderTransform:=<TranslateTransform Y="11" X="-4" />
       - Background@CheckedPointerOver:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".2" Opacity="1"/>
   - target: Grid#MainMenu > Grid#MainContent > Grid
     styles:

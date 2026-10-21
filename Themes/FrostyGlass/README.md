@@ -228,6 +228,9 @@ controlStyles:
     styles:
       - RenderTransform:=<TranslateTransform X="0" Y="0" />
       - Visibility=1
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root > Windows.UI.Xaml.Controls.GridView#PinnedList
+    styles:
+      - MinHeight=8400
   - target: StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root > Windows.UI.Xaml.Controls.GridView#PinnedList > Windows.UI.Xaml.Controls.Border
     styles:
       - Background:=Transparent
@@ -236,7 +239,12 @@ controlStyles:
       - BorderThickness:=0
       - Margin:=0,35,0,0
       - HorizontalAlignment=Center
+      - VerticalAlignment=Top
+      - Height=315
+  - target: StartMenu.PinnedList#StartMenuPinnedList > Windows.UI.Xaml.Controls.Grid#Root > Windows.UI.Xaml.Controls.GridView#PinnedList > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer
+    styles:
       - VerticalAlignment=Center
+      - ScrollViewer.VerticalScrollMode=Enabled
   - target: StartMenu.StartMenuCompanion#RightCompanion > Windows.UI.Xaml.Controls.Grid#CompanionRoot > Windows.UI.Xaml.Controls.Border#AcrylicBorder
     styles:
       - Background:=$Background
