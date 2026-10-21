@@ -36,6 +36,7 @@ To import the theme styles:
 
 ```yaml
 
+
 disableNewStartMenuLayout: forceNewLayout
 styleConstants:
   - IconBackground=<LinearGradientBrush StartPoint="0.47,-0.29" EndPoint="0.50,1.29"><GradientStop Offset="0.18" Color="#2F2F2F"/><GradientStop Offset="0.3" Color="#292929"/><GradientStop Offset="0.5" Color="#141414"/><GradientStop Offset="0.68" Color="#080808"/><GradientStop Offset="0.81" Color="#000000"/></LinearGradientBrush>
@@ -210,13 +211,24 @@ controlStyles:
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > StartMenu.FolderModal#StartFolderModal > Grid#Root > ContentControl#ContentControl > ContentPresenter > StartMenu.UniversalTileContainer#UniversalTileContainer > Grid#GridViewContainer > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PipsPager > StackPanel#RootPanel > ScrollViewer#PipsPagerScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter
     styles:
       - Margin=0,-100,0,100
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > SemanticZoom#TopLevelRoot > Grid > ScrollViewer#ScrollViewer > ScrollContentPresenter#ScrollContentPresenter > Grid > ContentPresenter#ZoomedInPresenter > GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper
+  - target: GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper
     styles:
       - Padding=0,0,0,25
   - target: StartDocked.AppListView#NavigationPanePlacesListView
     styles:
       - MaxWidth=120
-      - Margin=-55,0,55,0    
+      - Margin=-55,0,55,0
+  - target: StartMenu.PinnedListTile > Grid#Root > Grid#DisplayNameAndDownloadIconContainer > TextBlock#DisplayName
+    styles:
+      - Height=25
+  - target: GridView#PinnedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid > StartMenu.PinnedListCollapsedFolder > Grid#Root > TextBlock#DisplayName
+    styles:
+      - VerticalAlignment=bottom
+      - Height=25  
+  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > StartMenu.FolderModal#StartFolderModal > Grid#Root > ContentControl#ContentControl > ContentPresenter > StartMenu.UniversalTileContainer#UniversalTileContainer > Grid#GridViewContainer > Grid > GridView#LevelOneGridView > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid > StartMenu.PinnedListTile > Grid#Root > Grid#DisplayNameAndDownloadIconContainer > TextBlock#DisplayName
+    styles:
+      - VerticalAlignment=bottom
+      - Height=25  
 themeResourceVariables:
   - ''
 webContentStyles:
@@ -249,6 +261,7 @@ webContentCustomJs: ''
 
 ```yaml
 
+
 disableNewStartMenuLayout: forceNewLayout
 styleConstants:
   - IconBackground=<LinearGradientBrush StartPoint="0.47,-0.29" EndPoint="0.50,1.29"><GradientStop Offset="0.18" Color="#2F2F2F"/><GradientStop Offset="0.3" Color="#292929"/><GradientStop Offset="0.5" Color="#141414"/><GradientStop Offset="0.68" Color="#080808"/><GradientStop Offset="0.81" Color="#000000"/></LinearGradientBrush>
@@ -259,16 +272,16 @@ controlStyles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E" />
       - Height=600
       - CornerRadius=50
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=bottom
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Border#StartDropShadow
     styles:
       - Height=600
       - CornerRadius=50
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=bottom
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent
     styles:
       - Height=600
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=bottom
   - target: Border#AcrylicOverlay
     styles:
       - CornerRadius=50,50,0,0
@@ -368,7 +381,7 @@ controlStyles:
     styles:
       - Margin=0,-200,0,0
       - CornerRadius=50
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=Center
   - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E"/>
@@ -423,13 +436,24 @@ controlStyles:
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > StartMenu.FolderModal#StartFolderModal > Grid#Root > ContentControl#ContentControl > ContentPresenter > StartMenu.UniversalTileContainer#UniversalTileContainer > Grid#GridViewContainer > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PipsPager > StackPanel#RootPanel > ScrollViewer#PipsPagerScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter
     styles:
       - Margin=0,-100,0,100
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > SemanticZoom#TopLevelRoot > Grid > ScrollViewer#ScrollViewer > ScrollContentPresenter#ScrollContentPresenter > Grid > ContentPresenter#ZoomedInPresenter > GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper
+  - target: GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper
     styles:
       - Padding=0,0,0,25
   - target: StartDocked.AppListView#NavigationPanePlacesListView
     styles:
       - MaxWidth=120
-      - Margin=-55,0,55,0    
+      - Margin=-55,0,55,0
+  - target: StartMenu.PinnedListTile > Grid#Root > Grid#DisplayNameAndDownloadIconContainer > TextBlock#DisplayName
+    styles:
+      - Height=25
+  - target: GridView#PinnedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid > StartMenu.PinnedListCollapsedFolder > Grid#Root > TextBlock#DisplayName
+    styles:
+      - VerticalAlignment=bottom
+      - Height=25  
+  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > StartMenu.FolderModal#StartFolderModal > Grid#Root > ContentControl#ContentControl > ContentPresenter > StartMenu.UniversalTileContainer#UniversalTileContainer > Grid#GridViewContainer > Grid > GridView#LevelOneGridView > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid > StartMenu.PinnedListTile > Grid#Root > Grid#DisplayNameAndDownloadIconContainer > TextBlock#DisplayName
+    styles:
+      - VerticalAlignment=bottom
+      - Height=25  
 themeResourceVariables:
   - ''
 webContentStyles:
@@ -465,6 +489,7 @@ webContentCustomJs: ''
 
 ```yaml
 
+
 disableNewStartMenuLayout: forceNewLayout
 styleConstants:
   - IconBackground=<ImageBrush ImageSource="https://raw.githubusercontent.com/ramensoftware/windows-11-start-menu-styling-guide/refs/heads/main/Themes/OS26%20Tahoe%20App%20Launcher/Assets/tahoeappbg.png" Stretch="UniformtoFill"/>
@@ -639,13 +664,24 @@ controlStyles:
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > StartMenu.FolderModal#StartFolderModal > Grid#Root > ContentControl#ContentControl > ContentPresenter > StartMenu.UniversalTileContainer#UniversalTileContainer > Grid#GridViewContainer > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PipsPager > StackPanel#RootPanel > ScrollViewer#PipsPagerScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter
     styles:
       - Margin=0,-100,0,100
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > SemanticZoom#TopLevelRoot > Grid > ScrollViewer#ScrollViewer > ScrollContentPresenter#ScrollContentPresenter > Grid > ContentPresenter#ZoomedInPresenter > GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper
+  - target: GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper
     styles:
       - Padding=0,0,0,25
   - target: StartDocked.AppListView#NavigationPanePlacesListView
     styles:
       - MaxWidth=120
-      - Margin=-55,0,55,0    
+      - Margin=-55,0,55,0
+  - target: StartMenu.PinnedListTile > Grid#Root > Grid#DisplayNameAndDownloadIconContainer > TextBlock#DisplayName
+    styles:
+      - Height=25
+  - target: GridView#PinnedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid > StartMenu.PinnedListCollapsedFolder > Grid#Root > TextBlock#DisplayName
+    styles:
+      - VerticalAlignment=bottom
+      - Height=25  
+  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > StartMenu.FolderModal#StartFolderModal > Grid#Root > ContentControl#ContentControl > ContentPresenter > StartMenu.UniversalTileContainer#UniversalTileContainer > Grid#GridViewContainer > Grid > GridView#LevelOneGridView > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid > StartMenu.PinnedListTile > Grid#Root > Grid#DisplayNameAndDownloadIconContainer > TextBlock#DisplayName
+    styles:
+      - VerticalAlignment=bottom
+      - Height=25  
 themeResourceVariables:
   - ''
 webContentStyles:
@@ -668,6 +704,7 @@ webContentStyles:
       - 'box-sizing: border-box !important'
 webContentCustomJs: ''
 
+
 ```
 </details>
 
@@ -677,6 +714,7 @@ webContentCustomJs: ''
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
+
 
 disableNewStartMenuLayout: forceNewLayout
 styleConstants:
@@ -688,16 +726,16 @@ controlStyles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E" />
       - Height=600
       - CornerRadius=50
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=bottom
   - target: StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Border#StartDropShadow
     styles:
       - Height=600
       - CornerRadius=50
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=bottom
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent
     styles:
       - Height=600
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=bottom
   - target: Border#AcrylicOverlay
     styles:
       - CornerRadius=50,50,0,0
@@ -797,7 +835,7 @@ controlStyles:
     styles:
       - Margin=0,-200,0,0
       - CornerRadius=50
-      - VerticalAlignment=Bottom
+      - VerticalAlignment=Center
   - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E"/>
@@ -852,13 +890,24 @@ controlStyles:
   - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > StartMenu.FolderModal#StartFolderModal > Grid#Root > ContentControl#ContentControl > ContentPresenter > StartMenu.UniversalTileContainer#UniversalTileContainer > Grid#GridViewContainer > Grid > Microsoft.UI.Xaml.Controls.PipsPager#PipsPager > StackPanel#RootPanel > ScrollViewer#PipsPagerScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter
     styles:
       - Margin=0,-100,0,100
-  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > SemanticZoom#TopLevelRoot > Grid > ScrollViewer#ScrollViewer > ScrollContentPresenter#ScrollContentPresenter > Grid > ContentPresenter#ZoomedInPresenter > GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper
+  - target: GridView#AllAppsGrid > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper
     styles:
       - Padding=0,0,0,25
   - target: StartDocked.AppListView#NavigationPanePlacesListView
     styles:
       - MaxWidth=120
-      - Margin=-55,0,55,0    
+      - Margin=-55,0,55,0
+  - target: StartMenu.PinnedListTile > Grid#Root > Grid#DisplayNameAndDownloadIconContainer > TextBlock#DisplayName
+    styles:
+      - Height=25
+  - target: GridView#PinnedList > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid > StartMenu.PinnedListCollapsedFolder > Grid#Root > TextBlock#DisplayName
+    styles:
+      - VerticalAlignment=bottom
+      - Height=25  
+  - target: ScrollViewer > ScrollContentPresenter > Border > StartMenu.StartBlendedFlexFrame > Grid#FrameRoot > Grid#AnimationRoot > Grid#MainMenu > Grid#MainContent > Frame#StartFrame > ContentPresenter > StartMenu.StartHome > Grid#PageRoot > StartMenu.FolderModal#StartFolderModal > Grid#Root > ContentControl#ContentControl > ContentPresenter > StartMenu.UniversalTileContainer#UniversalTileContainer > Grid#GridViewContainer > Grid > GridView#LevelOneGridView > Border > ScrollViewer#ScrollViewer > Border#Root > Grid > ScrollContentPresenter#ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem > Border#ContentBorder > Grid#DroppedFlickerWorkaroundWrapper > ContentPresenter#ContentPresenter > Grid > StartMenu.PinnedListTile > Grid#Root > Grid#DisplayNameAndDownloadIconContainer > TextBlock#DisplayName
+    styles:
+      - VerticalAlignment=bottom
+      - Height=25  
 themeResourceVariables:
   - ''
 webContentStyles:
