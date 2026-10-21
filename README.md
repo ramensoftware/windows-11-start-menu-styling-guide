@@ -123,6 +123,7 @@ Start Menu Styler mod. The following themes are available:
 | [FullScreen](Themes/FullScreen/README.md) | [![FullScreen](Themes/FullScreen/screenshot-small.png)](Themes/FullScreen/screenshot.png)
 | [FrostyGlass](Themes/FrostyGlass/README.md) | [![FrostyGlass](Themes/FrostyGlass/screenshot-small.png)](Themes/FrostyGlass/screenshot.png)
 | [FlyoutStartMenu](Themes/FlyoutStartMenu/README.md) | [![FlyoutStartMenu](Themes/FlyoutStartMenu/screenshot-small.png)](Themes/FlyoutStartMenu/screenshot.png)
+| [OS26 Tahoe App Launcher](Themes/OS26%20Tahoe%20App%20Launcher/README.md) | [![OS26 Tahoe App Launcher](Themes/OS26%20Tahoe%20App%20Launcher/screenshot-small.png)](Themes/OS26%20Tahoe%20App%20Launcher/screenshot.png)
 
 ### Windows 10 Start menu themes
 
