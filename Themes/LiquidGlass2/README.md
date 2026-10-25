@@ -78,7 +78,7 @@ controlStyles:
       - Margin=10,0,10,0
       - CornerRadius=50
       - Background:=Transparent
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=$GlassDarkSearchPage
       - BorderBrush:=<LinearGradientBrush StartPoint="0,0" EndPoint="0,1"><GradientStop Color="#40B5B5B5" Offset="0.0" /><GradientStop Color="#40B5B5B5" Offset="0.1" /><GradientStop Color="#10050505" Offset="0.3" /><GradientStop Color="#10040404" Offset="0.5" /><GradientStop Color="#10050505" Offset="0.75" /><GradientStop Color="#40ACACAC" Offset="1" /></LinearGradientBrush>
@@ -96,7 +96,7 @@ controlStyles:
   - target: Grid#ContentBorder
     styles:
       - CornerRadius=10
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - CornerRadius=50
   - target: StartMenu.StartBlendedFlexFrame
@@ -467,7 +467,7 @@ controlStyles:
       - Padding={{ -1 * max(44, min(88, MenuHeight * 0.06)) }},{{ max(3, min(6, MenuWidth * 0.004)) }},{{ max(4, min(8, MenuWidth * 0.0055)) }},{{ max(4, min(8, MenuWidth * 0.0055)) }}
       - Margin={{ max(52, min(90, MenuWidth * 0.08)) }},{{ max(75, min(120, MenuHeight * 0.101)) }},0,0
       - Canvas.ZIndex=10
-      - // Recomended heading inside expanded Recommended section
+      - // Recommended heading inside expanded Recommended section
   - target: TextBlock#MoreSuggestionsListHeaderText
     styles:
       - Text=Recent Apps & Files
