@@ -134,7 +134,7 @@ controlStyles:
   - target: Border#StartDropShadow
     styles:
       - Visibility=Collapsed
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=Collapsed
   - target: Grid#MainMenu
@@ -417,7 +417,7 @@ controlStyles:
   - target: Border#dropshadow
     styles:
       - Visibility=Collapsed
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=Collapsed
 ```

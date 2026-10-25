@@ -285,7 +285,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#dropshadow
     styles:
       - Visibility=1
-  - target: Windows.UI.Xaml.Controls.Border#AppBorder
+  - target: Windows.UI.Xaml.Controls.Border#AppBorder, Windows.UI.Xaml.Controls.Border#AccentAppBorder
     styles:
       - Visibility=1
   - target: // ToolTip

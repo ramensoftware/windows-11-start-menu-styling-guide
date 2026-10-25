@@ -278,13 +278,13 @@ controlStyles:
     styles:
       - CornerRadius=12
       - //Target= Start Menu > All Apps Page > Hover-Over Box for Apps & Folders
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=$Alt
       - BorderBrush=Transparent
       - CornerRadius=20
       - //Target= Search Menu's Body
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=Collapsed
       - //Target= Search Menu > Acrylic Overlay Layer for Search Menu

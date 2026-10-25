@@ -111,6 +111,9 @@ controlStyles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeAltHighColor}" TintOpacity="0.4" TintLuminosityOpacity="0.4" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
       - Visibility=Visible
       - BorderThickness=1,1,1,0
+  - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AccentAppBorder
+    styles:
+      - Visibility=Collapsed
   - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#dropshadow
     styles:
       - Opacity=0

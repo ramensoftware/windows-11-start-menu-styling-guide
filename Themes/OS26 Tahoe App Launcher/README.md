@@ -148,7 +148,7 @@ controlStyles:
       - Margin=0,-200,0,0
       - CornerRadius=50
       - VerticalAlignment=Center
-  - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder
+  - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder, ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AccentAppBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E"/>
       - BorderBrush=Gray
@@ -360,7 +360,7 @@ controlStyles:
     styles:
       - CornerRadius=50
       - VerticalAlignment=Bottom
-  - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder
+  - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder, ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AccentAppBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E"/>
       - BorderBrush=Gray
@@ -577,7 +577,7 @@ controlStyles:
       - Margin=0,-200,0,0
       - CornerRadius=50
       - VerticalAlignment=Center
-  - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder
+  - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder, ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AccentAppBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E"/>
       - BorderBrush=Gray
@@ -789,7 +789,7 @@ controlStyles:
     styles:
       - CornerRadius=50
       - VerticalAlignment=Bottom
-  - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder
+  - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AppBorder, ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AccentAppBorder
     styles:
       - Background:=<WindhawkBlur BlurAmount="8" TintColor="#761E1E1E"/>
       - BorderBrush=Gray

@@ -75,7 +75,7 @@ controlStyles:
   - target: Border#TaskbarSearchBackground
     styles:
       - Visibility=1
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.25" TintLuminosityOpacity=".96" Opacity="1"/>
       - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
@@ -176,7 +176,7 @@ controlStyles:
       - FontFamily=Aptos
       - Opacity=.85
       - FontWeight=ExtraBold
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=1
   - target: Windows.UI.Xaml.Controls.FontIcon#SearchBoxOnTaskbarSearchGlyph
@@ -367,7 +367,7 @@ controlStyles:
   - target: Border#TaskbarSearchBackground
     styles:
       - Visibility=1
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.25" TintLuminosityOpacity=".96" Opacity="1"/>
       - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
@@ -494,7 +494,7 @@ controlStyles:
       - FontFamily=Aptos
       - Opacity=.85
       - FontWeight=ExtraBold
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=1
   - target: Windows.UI.Xaml.Controls.FontIcon#SearchBoxOnTaskbarSearchGlyph

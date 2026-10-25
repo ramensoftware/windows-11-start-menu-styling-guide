@@ -165,10 +165,10 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#dropshadow
     styles:
       - Visibility=$Shadows
-  - target: Windows.UI.Xaml.Controls.Border#LayerBorder
+  - target: Windows.UI.Xaml.Controls.Border#LayerBorder, Windows.UI.Xaml.Controls.Border#AccentLayerBorder
     styles:
       - Opacity=0
-  - target: Windows.UI.Xaml.Controls.Border#AppBorder
+  - target: Windows.UI.Xaml.Controls.Border#AppBorder, Windows.UI.Xaml.Controls.Border#AccentAppBorder
     styles:
       - BorderThickness=0
   - target: Windows.UI.Xaml.Controls.Grid#MainMenu > Windows.UI.Xaml.Controls.Grid#MainContent > Windows.UI.Xaml.Controls.Grid

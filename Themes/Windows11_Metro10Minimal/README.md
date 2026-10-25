@@ -65,11 +65,11 @@ controlStyles:
     styles:
       - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
       - BorderThickness=1
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity=".85" Opacity="1"/>
       - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=1
   - target: Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader
@@ -205,11 +205,11 @@ controlStyles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity=".85" Opacity="1"/>
       - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
       - BorderThickness=1
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0" TintLuminosityOpacity=".85" Opacity="1"/>
       - BorderBrush:=<AcrylicBrush TintColor="{ThemeResource SurfaceStrokeColorDefault}" FallbackColor="{ThemeResource SurfaceStrokeColorDefault}" TintOpacity="0" TintLuminosityOpacity=".25" Opacity="1"/>
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=1
 ```

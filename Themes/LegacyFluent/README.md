@@ -216,7 +216,7 @@ controlStyles:
   - target: StartDocked.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Grid#ContentBorder@DisabledStates > Windows.UI.Xaml.Controls.Border
     styles:
       - RenderTransform@Disabled:=<ScaleTransform ScaleX="0" ScaleY="0" CenterX="0.5" CenterY="0.5" />
-  - target: Windows.UI.Xaml.Controls.Border#LayerBorder
+  - target: Windows.UI.Xaml.Controls.Border#LayerBorder, Windows.UI.Xaml.Controls.Border#AccentLayerBorder
     styles:
       - Visibility=Collapsed
   - target: Cortana.UI.Views.TaskbarSearchPage
@@ -225,7 +225,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#TaskbarMargin
     styles:
       - Visibility=Collapsed
-  - target: Windows.UI.Xaml.Controls.Border#AppBorder
+  - target: Windows.UI.Xaml.Controls.Border#AppBorder, Windows.UI.Xaml.Controls.Border#AccentAppBorder
     styles:
       - CornerRadius=0
       - BorderThickness=0
@@ -543,7 +543,7 @@ controlStyles:
   - target: StartDocked.AllAppsZoomListViewItem > Windows.UI.Xaml.Controls.Grid#ContentBorder@DisabledStates > Windows.UI.Xaml.Controls.Border
     styles:
       - RenderTransform@Disabled:=<ScaleTransform ScaleX="0" ScaleY="0" CenterX="0.5" CenterY="0.5" />
-  - target: Windows.UI.Xaml.Controls.Border#LayerBorder
+  - target: Windows.UI.Xaml.Controls.Border#LayerBorder, Windows.UI.Xaml.Controls.Border#AccentLayerBorder
     styles:
       - Visibility=Collapsed
   - target: Cortana.UI.Views.TaskbarSearchPage
@@ -552,7 +552,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#TaskbarMargin
     styles:
       - Visibility=Collapsed
-  - target: Windows.UI.Xaml.Controls.Border#AppBorder
+  - target: Windows.UI.Xaml.Controls.Border#AppBorder, Windows.UI.Xaml.Controls.Border#AccentAppBorder
     styles:
       - CornerRadius=0
       - BorderThickness=0

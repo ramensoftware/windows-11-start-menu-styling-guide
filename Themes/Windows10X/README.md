@@ -94,7 +94,7 @@ controlStyles:
       - BorderThickness=0,0,0,4
       - Height=48
       - BorderBrush:=$fakeShadow
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=$acrylic
       - CornerRadius=4
@@ -114,7 +114,7 @@ controlStyles:
   - target: ItemsWrapGrid > GridViewItem > Border > Grid > ContentPresenter > ContentControl > Grid > TextBlock
     styles:
       - Visibility=1
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=1
   - target: Border#LogoBackgroundPlate
@@ -160,7 +160,7 @@ controlStyles:
   - target: Microsoft.UI.Xaml.Controls.AnimatedIcon#SearchIconPlayer
     styles:
       - Visibility=1
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - CornerRadius=4
   - target: Cortana.UI.Views.TaskbarSearchPage
@@ -501,7 +501,7 @@ controlStyles:
       - BorderThickness=0,0,0,4
       - Height=48
       - BorderBrush:=$fakeShadow
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=$acrylic
       - CornerRadius=4
@@ -521,7 +521,7 @@ controlStyles:
   - target: TextBlock#StatusMessage
     styles:
       - Visibility=1
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=1
   - target: Border#LogoBackgroundPlate
@@ -606,7 +606,7 @@ controlStyles:
       - FontFamily=Segoe MDL2 Assets
       - Text=
       - Foreground:=<SolidColorBrush Color="{ThemeResource FocusStrokeColorOuter}"/>
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - CornerRadius=4
   - target: Cortana.UI.Views.TaskbarSearchPage

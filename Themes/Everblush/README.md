@@ -104,7 +104,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#ContentBorder > Windows.UI.Xaml.Controls.Grid#DroppedFlickerWorkaroundWrapper > Border#BackgroundBorder
     styles:
       - Background=Transparent
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background=#141b1e
   - target: Border#TaskbarSearchBackground
@@ -211,7 +211,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#ContentBorder > Windows.UI.Xaml.Controls.Grid#DroppedFlickerWorkaroundWrapper > Border#BackgroundBorder
     styles:
       - Background=transparent
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background=#141b1e
   - target: Border#TaskbarSearchBackground

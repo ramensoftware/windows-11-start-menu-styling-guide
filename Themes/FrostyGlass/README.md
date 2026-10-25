@@ -130,7 +130,7 @@ controlStyles:
       - CornerRadius=$CornerRadius
       - BorderThickness=$BorderThickness
       - BorderBrush:=$BorderBrush
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background:=$Background
       - CornerRadius:=$CornerRadius
@@ -201,7 +201,7 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#BackgroundBorder
     styles:
       - CornerRadius:=7
-  - target: Windows.UI.Xaml.Controls.Border#LayerBorder
+  - target: Windows.UI.Xaml.Controls.Border#LayerBorder, Windows.UI.Xaml.Controls.Border#AccentLayerBorder
     styles:
       - CornerRadius:=$CornerRadius
       - Background:=Transparent
@@ -290,7 +290,7 @@ controlStyles:
   - target: Border#AcrylicOverlay
     styles:
       - Visibility=1
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=1
       - BorderThickness:=$BorderThickness

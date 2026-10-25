@@ -439,7 +439,7 @@ controlStyles:
       - Width=708
       - Height=886
       - Margin=-60,-10,0,-28
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>     
       - BorderThickness=2
@@ -702,7 +702,7 @@ controlStyles:
       - Width=740
       - Padding=0
       - Height=750
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
   - target: Grid#QueryFormulationRoot
@@ -898,7 +898,7 @@ controlStyles:
       - Width=690
       - Height=886
       - Margin=-20,-10,0,-24
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
   - target: Grid#QueryFormulationRoot
@@ -1305,7 +1305,7 @@ controlStyles:
       - Width=740
       - Padding=0
       - Height=750
-  - target: Border#AppBorder
+  - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1"/>
   - target: Grid#QueryFormulationRoot

@@ -139,7 +139,7 @@ controlStyles:
       - CornerRadius=4
       - VerticalAlignment=0
       - Margin=-8,-35,8,0
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.1" TintLuminosityOpacity="1" Opacity="1"/>
 ```

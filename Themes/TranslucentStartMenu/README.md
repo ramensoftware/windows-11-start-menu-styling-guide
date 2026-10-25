@@ -63,7 +63,7 @@ controlStyles:
       - Background:=$CommonBgBrush
       - BorderThickness=0
       - CornerRadius=15
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=Collapsed
   - target: Border#TaskbarSearchBackground
@@ -206,7 +206,7 @@ controlStyles:
       - Background:=$CommonBgBrush
       - BorderThickness=0
       - CornerRadius=15
-  - target: Border#LayerBorder
+  - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
       - Visibility=Collapsed
   - target: Border#TaskbarSearchBackground

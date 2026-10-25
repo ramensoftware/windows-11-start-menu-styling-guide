@@ -144,6 +144,9 @@ controlStyles:
   - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid@SearchBoxLocationStates > Grid#OuterBorderGrid > Grid#BorderGrid > Border#LayerBorder
     styles:
       - Visibility@SearchBoxOnBottomWithoutQFMargin=1
+  - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AccentLayerBorder
+    styles:
+      - Visibility=1
   - target: Border#dropshadow
     styles:
       - Canvas.ZIndex=-99

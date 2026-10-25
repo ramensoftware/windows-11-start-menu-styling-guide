@@ -132,7 +132,7 @@ controlStyles:
   - target: StartDocked.AppListView#NavigationPanePlacesListView
     styles:
       - Margin=0,0,-38,0
-  - target: Windows.UI.Xaml.Controls.Border#AppBorder
+  - target: Windows.UI.Xaml.Controls.Border#AppBorder, Windows.UI.Xaml.Controls.Border#AccentAppBorder
     styles:
       - Background=#191724
       - BorderThickness=1.5
@@ -305,7 +305,7 @@ controlStyles:
   - target: StartDocked.AppListView#NavigationPanePlacesListView
     styles:
       - Margin=0,0,-38,0
-  - target: Windows.UI.Xaml.Controls.Border#AppBorder
+  - target: Windows.UI.Xaml.Controls.Border#AppBorder, Windows.UI.Xaml.Controls.Border#AccentAppBorder
     styles:
       - Background=#191724
       - BorderThickness=1.5
