@@ -255,12 +255,6 @@ controlStyles:
   - target: ScrollViewer#ContentScrollViewer
     styles:
       - Background=Transparent
-  - target: Windows.UI.Xaml.Controls.ContentDialog Border#BackgroundElement
-    styles:
-      - Background=Transparent
-  - target: Windows.UI.Xaml.Controls.ContentDialog Border#Container
-    styles:
-      - Background=Transparent
   - target: ScrollViewer#ContentScrollViewer > Border
     styles:
       - Background=Transparent
@@ -593,9 +587,6 @@ controlStyles:
       - MinWidth=55
       - Height={{ max(52, min(100, PinAppHyt * 1.22)) }}
       - Width={{ max(55, min(105, PinAppWid * 1.22)) }}
-  - target: Border#FolderPlate > > TextBlock
-    styles:
-      - FontSize=23
   - target: FlyoutPresenter
     styles:
       - BorderThickness=0
