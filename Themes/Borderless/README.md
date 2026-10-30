@@ -279,12 +279,6 @@ controlStyles:
   - target: TextBlock#TopLevelSuggestionsListHeaderText
     styles:
       - FontSize=20
-  - target: TextBlock#TopLevelSuggestionsListHeaderText
-    styles:
-      - FontSize=20
-  - target: TextBlock#TopLevelSuggestionsListHeaderText
-    styles:
-      - FontSize=20
   - target: Button#HideMoreSuggestionsButton > Grid > ContentPresenter > StackPanel > TextBlock
     styles:
       - FontFamily=Segoe Fluent Icons
