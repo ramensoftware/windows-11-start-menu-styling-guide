@@ -809,7 +809,20 @@ webContentStyles:
     styles:
       - 'display: none !important'
 
-webContentCustomJs: "(function(){var KILL=/iotd|imageoftheday|image-of-the-day|heroimage|dailyimage|bingimage|wallpapercard|copilot|chatbutton/i;function sig(el){var c=(typeof el.className==='string')?el.className:'';return (el.id||'')+' '+c+' '+(el.getAttribute('data-region')||'');}function clean(){try{var all=document.querySelectorAll('[id],[class],[data-region]');for(var i=0;i<all.length;i++){if(KILL.test(sig(all[i])))all[i].style.setProperty('display','none','important');}}catch(e){}}clean();try{new MutationObserver(clean).observe(document.documentElement,{childList:true,subtree:true});}catch(e){}})();"
+  # An equivalent to the following JS snippet that was originally part of the theme.
+  # webContentCustomJs: "(function(){var KILL=/iotd|imageoftheday|image-of-the-day|heroimage|dailyimage|bingimage|wallpapercard|copilot|chatbutton/i;function sig(el){var c=(typeof el.className==='string')?el.className:'';return (el.id||'')+' '+c+' '+(el.getAttribute('data-region')||'');}function clean(){try{var all=document.querySelectorAll('[id],[class],[data-region]');for(var i=0;i<all.length;i++){if(KILL.test(sig(all[i])))all[i].style.setProperty('display','none','important');}}catch(e){}}clean();try{new MutationObserver(clean).observe(document.documentElement,{childList:true,subtree:true});}catch(e){}})();"
+  - target: ':is([id*="iotd" i], [class*="iotd" i], [data-region*="iotd" i], [id*="imageOfTheDay" i], [class*="imageOfTheDay" i], [data-region*="imageOfTheDay" i], [id*="image-of-the-day" i], [class*="image-of-the-day" i], [data-region*="image-of-the-day" i]):not(#_)'
+    styles:
+      - 'display: none !important'
+  - target: ':is([id*="heroImage" i], [class*="heroImage" i], [data-region*="heroImage" i], [id*="dailyImage" i], [class*="dailyImage" i], [data-region*="dailyImage" i], [id*="bingImage" i], [class*="bingImage" i], [data-region*="bingImage" i], [id*="wallpaperCard" i], [class*="wallpaperCard" i], [data-region*="wallpaperCard" i]):not(#_)'
+    styles:
+      - 'display: none !important'
+  - target: ':is([id*="copilot" i], [class*="copilot" i], [data-region*="copilot" i], [id*="chatButton" i], [class*="chatButton" i], [data-region*="chatButton" i]):not(#_)'
+    styles:
+      - 'display: none !important'
+  - target: ':is(div[data-region="TopApps"], div[data-region="News"], div[data-region="Trending"]):not(#_)'
+    styles:
+      - 'display: none !important'
 ```
 </details>
 
