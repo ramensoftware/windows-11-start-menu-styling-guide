@@ -626,8 +626,6 @@ controlStyles:
       - RenderTransform@PointerOver:=<ScaleTransform ScaleX="1.03" ScaleY="1.05" />
       - RenderTransform@Pressed:=<ScaleTransform ScaleX="0.95" ScaleY="0.95" />
       - Margin=0,2,10,0
-themeResourceVariables:
-  - ''
 webContentStyles:
   - target: '*'
     styles:
