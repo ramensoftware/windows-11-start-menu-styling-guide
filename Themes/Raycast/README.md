@@ -9,6 +9,24 @@ image-of-the-day and the Copilot card are all removed.
 
 ![Screenshot](screenshot.png)
 
+## Notes
+
+Authored and verified on **Windows 11 build 26200** (25H2, redesigned Start
+menu) at a logical resolution of 1440x960 DIP (2880x1920 at 200% scale).
+
+Sizes are in logical DIP so they travel between scale factors, but
+`PaletteOffsetY` is an absolute lift within the Start host window, and that
+window's own geometry is chosen by Windows based on screen size. On a screen of
+a different logical height the panel will sit too high or too low. Adjust
+`PaletteOffsetY` in `styleConstants` until it looks centred; negative is up, and
+0 to -240 is the useful range on a 960-DIP-tall screen.
+
+The classic (non-redesigned) Start menu is not supported. Its element tree is
+entirely different and this theme has not been built against it.
+
+Requires Windows 11 Start Menu Styler v1.7 or later. The theme uses style
+constants in both native XAML styles and Search WebView styles.
+
 ## Theme selection
 
 The theme is integrated into the mod and can be selected directly from the mod's
@@ -47,7 +65,6 @@ that is rolling out in the 25H2 update.
 # theme is deliberately "" (None). The built-in OnlySearch theme clamps
 # Grid#FrameRoot to MaxHeight=160, which fights every size set below.
 
-theme: ""
 disableNewStartMenuLayout: forceNewLayout
 
 styleConstants:
@@ -825,21 +842,3 @@ webContentStyles:
       - 'display: none !important'
 ```
 </details>
-
-## Notes
-
-Authored and verified on **Windows 11 build 26200** (25H2, redesigned Start
-menu) at a logical resolution of 1440x960 DIP (2880x1920 at 200% scale).
-
-Sizes are in logical DIP so they travel between scale factors, but
-`PaletteOffsetY` is an absolute lift within the Start host window, and that
-window's own geometry is chosen by Windows based on screen size. On a screen of
-a different logical height the panel will sit too high or too low. Adjust
-`PaletteOffsetY` in `styleConstants` until it looks centred; negative is up, and
-0 to -240 is the useful range on a 960-DIP-tall screen.
-
-The classic (non-redesigned) Start menu is not supported. Its element tree is
-entirely different and this theme has not been built against it.
-
-Requires Windows 11 Start Menu Styler v1.7 or later. The theme uses style
-constants in both native XAML styles and Search WebView styles.
