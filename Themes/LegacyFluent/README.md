@@ -240,7 +240,7 @@ controlStyles:
       - BorderBrush:=<SolidColorBrush Color="{ThemeResource SystemListMediumColor}"/>
       - BorderBrush@SearchBoxHover:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}"/>
       - BorderBrush@FindInStartSearchBoxHover:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}"/>
-      - Margin=25,37,21,15
+      - Margin=25,17,21,10
   - target: Windows.UI.Xaml.Controls.Button#SearchGlyphContainer
     styles:
       - Visibility=Visible
@@ -567,7 +567,7 @@ controlStyles:
       - BorderBrush:=<SolidColorBrush Color="{ThemeResource SystemListMediumColor}"/>
       - BorderBrush@SearchBoxHover:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}"/>
       - BorderBrush@FindInStartSearchBoxHover:=<SolidColorBrush Color="{ThemeResource SystemChromeHighColor}"/>
-      - Margin=25,37,21,15
+      - Margin=25,17,21,10
   - target: Windows.UI.Xaml.Controls.Button#SearchGlyphContainer
     styles:
       - Visibility=Visible
