@@ -254,7 +254,7 @@ controlStyles:
       - Margin=0,40,0,0
   - target: Button#HideMoreSuggestionsButton
     styles:
-      - Margin=-67,-14,67,0
+      - Margin=-30,17,30,-31
       - Height=40
   - target: Button#HideMoreSuggestionsButton > Grid@CommonStates > ContentPresenter
     styles:
