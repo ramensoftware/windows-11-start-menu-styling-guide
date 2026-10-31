@@ -114,6 +114,9 @@ controlStyles:
   - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#AccentAppBorder
     styles:
       - Visibility=Collapsed
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Grid#OuterBorderGrid > Grid#BorderGrid > Border#dropshadow
     styles:
       - Opacity=0

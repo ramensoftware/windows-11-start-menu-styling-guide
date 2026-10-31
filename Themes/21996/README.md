@@ -137,6 +137,9 @@ controlStyles:
   - target: Windows.UI.Xaml.Controls.Border#AppBorder, Windows.UI.Xaml.Controls.Border#AccentAppBorder
     styles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0" TintLuminosityOpacity="0.7" FallbackColor="{ThemeResource SystemChromeLowColor}" />
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: Border#FullBleedBackground
     styles:
       - Background:=<AcrylicBrush TintColor="{ThemeResource SystemChromeMediumColor}" TintOpacity="0.76" TintLuminosityOpacity="0.77" FallbackColor="{ThemeResource SystemChromeLowColor}" />

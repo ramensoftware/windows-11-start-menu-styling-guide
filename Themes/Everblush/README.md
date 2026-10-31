@@ -41,6 +41,9 @@ controlStyles:
   - target: Border#AcrylicOverlay
     styles:
       - Background=#141b1e
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: StartMenu.SearchBoxToggleButton > Grid > Border
     styles:
       - Background=#232a2d
@@ -214,6 +217,9 @@ controlStyles:
   - target: Border#AppBorder, Border#AccentAppBorder
     styles:
       - Background=#141b1e
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: Border#TaskbarSearchBackground
     styles:
       - Background=#232a2d

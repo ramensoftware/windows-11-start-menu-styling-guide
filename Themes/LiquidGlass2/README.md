@@ -98,7 +98,7 @@ controlStyles:
       - CornerRadius=10
   - target: Border#LayerBorder, Border#AccentLayerBorder
     styles:
-      - CornerRadius=50
+      - Visibility=Collapsed
   - target: StartMenu.StartBlendedFlexFrame
     styles:
       - Width=Auto

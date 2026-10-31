@@ -469,6 +469,9 @@ controlStyles:
       - Background:=$CommonBgBrush
       - BorderThickness=0
       - CornerRadius=14
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: Border#TaskbarSearchBackground
     styles:
       - Background:=<WindhawkBlur BlurAmount="25" TintColor="#15000000"/>

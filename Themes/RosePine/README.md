@@ -65,6 +65,9 @@ controlStyles:
       - CornerRadius=25
       - BorderBrush=#ebbcba
       - Background=#191724
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: StartMenu.StartBlendedFlexFrame
     styles:
       - CornerRadius=25
@@ -311,6 +314,9 @@ controlStyles:
       - BorderThickness=1.5
       - BorderBrush=#ebbcba
       - CornerRadius=25
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: Windows.UI.Xaml.Controls.Grid#OuterBorderGrid
     styles:
       - CornerRadius=25

@@ -154,6 +154,9 @@ controlStyles:
       - BorderBrush=Gray
       - CornerRadius=50
       - BorderThickness=0
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Border#TaskbarSearchBackground
     styles:
       - Background=transparent
@@ -366,6 +369,9 @@ controlStyles:
       - BorderBrush=Gray
       - CornerRadius=50
       - BorderThickness=0
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Border#TaskbarSearchBackground
     styles:
       - Background=transparent
@@ -583,6 +589,9 @@ controlStyles:
       - BorderBrush=Gray
       - CornerRadius=50
       - BorderThickness=0
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Border#TaskbarSearchBackground
     styles:
       - Background=transparent
@@ -795,6 +804,9 @@ controlStyles:
       - BorderBrush=Gray
       - CornerRadius=50
       - BorderThickness=0
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: ScrollViewer > ScrollContentPresenter > Border > Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid > Border#TaskbarSearchBackground
     styles:
       - Background=transparent

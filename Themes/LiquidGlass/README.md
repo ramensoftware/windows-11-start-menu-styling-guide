@@ -59,6 +59,9 @@ controlStyles:
       - BorderBrush:=$BorderBrush
       - BorderThickness=$BorderThickness
       - CornerRadius=$CornerRadius
+  - target: Border#LayerBorder, Border#AccentLayerBorder
+    styles:
+      - Visibility=Collapsed
   - target: Border#ContentBorder@CommonStates > Grid > Border#BackgroundBorder
     styles:
       - BorderThickness=$ElementBorderThickness
