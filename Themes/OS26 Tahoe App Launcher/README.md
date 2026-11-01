@@ -14,9 +14,18 @@ This theme makes the Windows 11 Start menu look like the macOS app launcher! It 
 ## Compact Start Menu
 This theme requires the Windhawk mod [Compact Start Menu](https://windhawk.net/mods/compact-start-menu) to get a macOS-like layout of app icons.
 
-## Manual Installation
+## Theme selection
 
-To import the theme styles:
+The theme is integrated into the mod and can be selected directly from the mod's
+settings:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Start Menu Styler mod in Windhawk.
 * Go to the "Settings" tab and select "Textual mode".
