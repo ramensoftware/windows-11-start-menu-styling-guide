@@ -395,7 +395,7 @@ Background:=<AcrylicBrush TintColor="{ThemeResource SystemAccentColorDark2}" Tin
 
 ### WindhawkBlur effect as color
 
-An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic in that it has a customizable blur radius and has fewer bugs (e.g. https://github.com/ramensoftware/windhawk-mods/issues/742).
+An alternative to Acrylic is the mod's own blur implementation called `WindhawkBlur`. It differs from Acrylic in that its blur radius, saturation and noise are customizable, and it keeps blurring when battery saver is on or transparency effects are off, unless `FallbackColor` is set.
 
 ```
 Fill:=<WindhawkBlur BlurAmount="10" TintColor="#80ff0000" />
