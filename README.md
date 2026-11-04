@@ -8,20 +8,35 @@
   * [Contributing](#contributing)
 * [Themes](#themes)
   * [Windows 10 Start menu themes](#windows-10-start-menu-themes)
+* [Troubleshooting](#troubleshooting)
+  * [A theme looks broken after an update](#a-theme-looks-broken-after-an-update)
+  * [Styles remain after disabling the mod](#styles-remain-after-disabling-the-mod)
+  * [The mod has no effect](#the-mod-has-no-effect)
 * [Custom Acrylic background](#custom-acrylic-background)
 * [Change the Start menu size](#change-the-start-menu-size)
+* [Move the Start menu](#move-the-start-menu)
+* [Change the corner radius and borders](#change-the-corner-radius-and-borders)
+* [Change the font and text color](#change-the-font-and-text-color)
 * [Remove the drop shadows](#remove-the-drop-shadows)
 * [Remove the search box](#remove-the-search-box)
 * [Style the Start menu search box](#style-the-start-menu-search-box)
 * [Move pinned app lists](#move-pinned-app-lists)
+* [Show more pinned apps](#show-more-pinned-apps)
+* [Change the spacing between apps](#change-the-spacing-between-apps)
+* [Hide the app names](#hide-the-app-names)
+* [Change the app icon size](#change-the-app-icon-size)
+* [Style the folders](#style-the-folders)
 * [Remove the Recommended section](#remove-the-recommended-section)
 * [Hide or rename the section headers](#hide-or-rename-the-section-headers)
-* [Hide the All apps buttons](#hide-the-all-apps-buttons)
+* [Hide the All apps list](#hide-the-all-apps-list)
 * [Remove the user profile button](#remove-the-user-profile-button)
 * [Move the power button](#move-the-power-button)
+* [Swap the user profile and power buttons](#swap-the-user-profile-and-power-buttons)
 * [Hide the Phone Link panel](#hide-the-phone-link-panel)
 * [Context menus and tooltips](#context-menus-and-tooltips)
 * [Force light/dark mode](#force-lightdark-mode)
+* [Semantic zoom (navigation)](#semantic-zoom-navigation)
+* [Change the Start button image](#change-the-start-button-image)
 * [Other common targets](#other-common-targets)
 * [Visual states](#visual-states)
 * [Transforms](#transforms)
@@ -89,6 +104,12 @@ guide](https://github.com/ramensoftware/windows-11-notification-center-styling-g
 ### Finding targets
 
 [How to find targets using UWPSpy](https://github.com/bbmaster123/FWFU/blob/main/Guides/uwpspy.md).
+In UWPSpy, select the `StartMenuExperienceHost.exe` process for the Start menu,
+or `SearchHost.exe` for the search menu.
+
+The full target syntax, such as matching by property or matching any number of
+parents with `*`, is described in the [mod's
+description](https://windhawk.net/mods/windows-11-start-menu-styler).
 
 ### Missing customizations
 
@@ -103,7 +124,9 @@ share, please submit a pull request.
 ## Themes
 
 Themes are collections of styles that can be imported into the Windows 11
-Start Menu Styler mod. The following themes are available:
+Start Menu Styler mod. To customize a theme, import it by following the manual
+installation steps on its page, then edit the styles in the mod's settings. The
+following themes are available:
 
 | Link | Screenshot
 | ---- | ----------
@@ -151,9 +174,29 @@ imported manually. For details, see their respective README files.
 | [ModernStartMenu](Themes/ModernStartMenu/README.md) | [![ModernStartMenu](Themes/ModernStartMenu/screenshot-small.png)](Themes/ModernStartMenu/screenshot.png)
 | [Hybrid](Themes/Hybrid/README.md) | [![Hybrid](Themes/Hybrid/screenshot-small.png)](Themes/Hybrid/screenshot.png)
 
+## Troubleshooting
+
+### A theme looks broken after an update
+
+Windows updates can change the Start menu in ways that break themes and custom styles. Try the following:
+
+* Update the Windows 11 Start Menu Styler mod, as updates often include fixed themes.
+* Import the latest version of the theme by following the manual installation steps on its page, using the variant that matches your Start menu. Replace the whole content of the text box, as adding to the existing settings can keep the old theme selected.
+* Try the **Start menu layout** option in the mod's settings. The classic layouts are only available on older Windows builds: the legacy classic layout was removed in build 26100.8328, and the classic layout in build 26100.8524.
+
+Custom styles that were made for the classic Start menu usually need to be adjusted for the redesigned one, since many of its targets are different.
+
+### Styles remain after disabling the mod
+
+The changes aren't permanent. To reset them, terminate the `StartMenuExperienceHost.exe` process, or `SearchHost.exe` for the search menu. It will be relaunched automatically. Alternatively, log out or restart the computer.
+
+### The mod has no effect
+
+Follow the steps on the [Windhawk troubleshooting page](https://github.com/ramensoftware/windhawk/wiki/Troubleshooting#some-or-all-windhawk-mods-dont-work).
+
 ## Custom Acrylic background
 
-Target `Border#AcrylicBorder` for the Start menu or `Border#AppBorder, Border#AccentAppBorder` for the search menu, then set `Background` to an `AcrylicBrush` object. The search menu uses one of its two borders at a time, so target both.
+Target `Border#AcrylicBorder` for the Start menu or `Border#AppBorder, Border#AccentAppBorder` for the search menu, then set `Background` to an `AcrylicBrush` object. The search menu uses the accent borders when **Show accent color on Start and taskbar** is enabled in the Windows settings, so target both.
 
 For example:
 
@@ -165,6 +208,8 @@ The [AcrylicBrush properties](https://learn.microsoft.com/en-us/uwp/api/windows.
 can be adjusted as needed.
 
 Both menus also have a tint layer on top of the background. To keep it from covering the custom background, target `Border#AcrylicOverlay` for the Start menu or `Border#LayerBorder, Border#AccentLayerBorder` for the search menu with `Visibility=Collapsed`.
+
+To use an image instead, see [Image as color](#image-as-color).
 
 ## Change the Start menu size
 
@@ -193,6 +238,49 @@ MaxWidth=500
 
 Adjust values as needed.
 
+## Move the Start menu
+
+`Margin` values are left, top, right and bottom, in that order. Adjust values as needed:
+
+* For the redesigned Start menu, target `Grid#FrameRoot` with `Margin=-13,0,0,-13`.
+* For the classic Start menu, target `StartDocked.StartSizingFrame` with `Margin=-13,13,0,0`.
+* For the search menu, target `Cortana.UI.Views.TaskbarSearchPage` with `RenderTransform:=<TranslateTransform X="-13" Y="1" />`.
+
+The redesigned Start menu follows the taskbar alignment. To override that, target `StartMenu.StartBlendedFlexFrame` with `IsTaskbarCenteredProperty=False` to align it to the left, or `IsTaskbarCenteredProperty=True` to center it.
+
+## Change the corner radius and borders
+
+Target `Border#AcrylicBorder` for the Start menu or `Border#AppBorder, Border#AccentAppBorder` for the search menu.
+
+Styles:
+```
+CornerRadius=<radius>
+BorderBrush=<color>
+BorderThickness=<thickness>
+```
+
+Use `BorderThickness=0` to remove the border.
+
+To match the layers around them, also set the same `CornerRadius` on these targets:
+
+* For the Start menu: `Border#AcrylicOverlay`, `Border#StartDropShadow`, `Border#RootGridDropShadow`, `Border#DropShadow`
+* For the search menu: `Border#LayerBorder, Border#AccentLayerBorder`, `Border#dropshadow`
+
+## Change the font and text color
+
+To change the font of all text, target `TextBlock` with `FontFamily=<font>`. This also applies to icons that are drawn as text, so add this target after it to keep their font:
+```
+FontIcon > Grid > TextBlock
+```
+Style:
+```
+FontFamily=Segoe Fluent Icons
+```
+
+To change the color of all text, target `TextBlock` with `Foreground=<color>`. If text is hard to read against the background, you can also [force light or dark mode](#force-lightdark-mode).
+
+To change the text in the search box of the search menu, target `Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox` with `Foreground=<color>`, and `TextBlock#PlaceholderTextContentPresenter` for its placeholder text. For the search results, see [Change the text font](#change-the-text-font).
+
 ## Remove the drop shadows
 
 Target:
@@ -217,6 +305,7 @@ To remove only some of the shadows, use the relevant targets:
 For the redesigned Start menu, target `StartMenu.SearchBoxToggleButton` with `Visibility=Collapsed`.
 
 For the classic Start menu, target `StartDocked.SearchBoxToggleButton` with `Height=0`, `Margin=0,0,0,24`.
+Adjust the margin as needed.
 
 ## Style the Start menu search box
 
@@ -243,6 +332,87 @@ To replace the search icon image with a font icon, target `Image#SearchIconOn, I
 Target `StartMenu.PinnedList` with `Margin=0,0,0,0`.
 Adjust values as needed.
 
+## Show more pinned apps
+
+The redesigned Start menu only shows as many pinned apps as fit the list height. To show all of them, make the list taller and limit its visible part:
+
+Target:
+```
+StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList
+```
+Style:
+```
+MinHeight=8400
+```
+Target:
+```
+StartMenu.PinnedList#StartMenuPinnedList > Grid#Root > GridView#PinnedList > Border > ScrollViewer
+```
+Styles:
+```
+VerticalAlignment=Top
+Height=529
+```
+
+Adjust the height as needed. The button that expands the pinned list can then be hidden by targeting `Grid#ShowMorePinnedGrid` with `Visibility=Collapsed`.
+
+To change the number of columns in the redesigned Start menu, target:
+```
+GridView#PinnedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid
+```
+Style:
+```
+MaximumRowsOrColumns=12
+```
+
+The Start menu might need to be wider, see [Change the Start menu size](#change-the-start-menu-size).
+
+In the classic Start menu, target `StartMenu.PinnedList` with `Width=700` for more columns. For more rows, adjust its `Margin` to give it more space. Avoid changing its `Height`, which can break scrolling.
+
+## Change the spacing between apps
+
+Target:
+```
+GridView#PinnedList > Border > ScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > ItemsWrapGrid > GridViewItem
+```
+Styles:
+```
+Margin=5,0,0,0
+Padding=-1,0
+```
+
+Adjust values as needed. To apply this to all app lists, target `GridViewItem` instead.
+
+## Hide the app names
+
+Target `TextBlock#DisplayName` with `Visibility=Collapsed`.
+
+To also remove the space they leave, target `Grid#DroppedFlickerWorkaroundWrapper` with `Height=64`, and `Grid#DroppedFlickerWorkaroundWrapper > Border#BackgroundBorder` with `Height=64`, `Width=64`.
+
+## Change the app icon size
+
+> [!NOTE]
+> Unfortunately, there is no good way to change the size of app icons. They can be stretched, but they look blurry because the larger versions of the icons aren't used.
+
+Font icons, such as the icons of the bottom bar, can be resized with `FontSize`.
+
+## Style the folders
+
+Target:
+```
+StartMenu.ExpandedFolderList > Grid > Border, StartMenu.FolderModal > Grid > Border
+```
+Styles:
+```
+Background=<color>
+Width=350
+```
+
+Use `Margin` to move the folder, for example if the Start menu cuts it off. To change its height, target `StartMenu.ExpandedFolderList > Grid#Root > Border` with `Height=420`, but note that this can break scrolling. To style the folder name, target `TextBox#ExpandedFolderNameTextBox`.
+
+> [!NOTE]
+> There is no known way to show the contents of a folder as a list, or to show more than four icons on a folder's tile.
+
 ## Remove the Recommended section
 
 > [!NOTE]
@@ -264,6 +434,9 @@ In addition, the pinned items can be adjusted to
 occupy the whole height by targeting `StartMenu.PinnedList` and setting
 `Height=504`.
 
+> [!WARNING]
+> A custom `Height` on `StartMenu.PinnedList` can prevent scrolling when there are many pinned apps, and `Height=Auto` can make them disappear. If that happens, remove the style.
+
 ## Hide or rename the section headers
 
 Target the text of the relevant header:
@@ -275,9 +448,11 @@ Target the text of the relevant header:
 
 Use `Visibility=Collapsed` to hide it, or `Text=<text>` to rename it.
 
-## Hide the All apps buttons
+## Hide the All apps list
 
-In the classic Start menu, target `Button#ShowAllAppsButton` and `Button#CloseAllAppsButton` with `Visibility=Collapsed`.
+Use the [Pinned Only on Start Menu](https://windhawk.net/mods/pinned-only-on-start-menu) mod, which hides the All apps list and the Recommended section.
+
+In the classic Start menu, the buttons that open and close the All apps list can be hidden by targeting `Button#ShowAllAppsButton` and `Button#CloseAllAppsButton` with `Visibility=Collapsed`.
 
 ## Remove the user profile button
 
@@ -288,9 +463,19 @@ Target `StartDocked.UserTileView` with `Visibility=Collapsed`.
 Target `StartDocked.PowerOptionsView` with `Margin=-580,-1330,0,0`.
 Adjust values as needed.
 
+## Swap the user profile and power buttons
+
+Target `StartDocked.NavigationPaneView#UserControl > Grid#RootPanel` for the redesigned Start menu or `StartDocked.NavigationPaneView#NavigationPane` for the classic Start menu with `FlowDirection=1`.
+
+To keep the contents of the buttons from being mirrored, target `StartDocked.PowerOptionsView#PowerButton` and `ItemsStackPanel > ListViewItem` with `FlowDirection=0`.
+
+If the account menu opens in the wrong place, adjust the `Margin` of `Windows.UI.Xaml.Controls.FlyoutPresenter`.
+
 ## Hide the Phone Link panel
 
-In the redesigned Start menu, target `Grid#RightCompanionContainerGrid` for the panel and `Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion` for the button that toggles it, both with `Visibility=Collapsed`.
+The panel can be turned off in the Windows settings.
+
+To hide it with styles in the redesigned Start menu, target `Grid#RightCompanionContainerGrid` for the panel and `Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion` for the button that toggles it, both with `Visibility=Collapsed`.
 
 ## Context menus and tooltips
 
@@ -334,6 +519,32 @@ Target `Grid` for both the Start menu and the search menu, or `Cortana.UI.Views.
 
 `2` = Dark mode
 
+## Semantic zoom (navigation)
+
+Semantic zoom lets you jump to a letter or number in the apps list by selecting one of its alphanumeric headers.
+
+In the classic Start menu, this doesn't work for themes that have the apps list visible in the main view. As a workaround, you can enable the hidden zoom button, which opens the same navigation view. The redesigned Start menu doesn't need this workaround.
+
+Target `Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl` with `IsZoomOutButtonEnabled=True`.
+
+Target `Windows.UI.Xaml.Controls.Button#ZoomOutButton` with `Width=40`, `Height=40`.
+
+To set the icon of the button, target:
+```
+Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
+```
+Styles:
+```
+Text=
+FontSize=28
+```
+
+You may replace `Text=` with any other character. Use Character Map to find, copy, and paste the character into the style box.
+
+## Change the Start button image
+
+The Start button is part of the taskbar, so it's customized with the [Windows 11 Taskbar Styler](https://windhawk.net/mods/windows-11-taskbar-styler) mod. See [Start button image](https://github.com/ramensoftware/windows-11-taskbar-styling-guide#start-button-image) in the taskbar styling guide.
+
 ## Other common targets
 
 These elements are also commonly styled by themes:
@@ -344,9 +555,11 @@ These elements are also commonly styled by themes:
 | `Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager` | Page dots of the pinned list
 | `Grid#NavPanePlaceholder` | Bottom bar of the redesigned Start menu
 | `StartDocked.NavigationPaneView#NavigationPane` | Bottom bar of the classic Start menu
-| `StartDocked.AppListView#NavigationPanePlacesListView` | Folder shortcuts next to the power button
+| `StartDocked.AppListView#NavigationPanePlacesListView` | Folder shortcuts next to the power button, which are added in the Windows settings under Personalization > Start > Folders
 | `StartMenu.CategoryControl` | Category items in the All section of the redesigned Start menu
 | `Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton` | View selector of the All section of the redesigned Start menu
+| `Windows.UI.Xaml.Controls.GridViewHeaderItem` | Letter headers of the apps list, use `Visibility=Collapsed` to hide them
+| `Button#Header` | Letters of those headers, use `Visibility=Collapsed` to hide them but keep the space between groups
 
 ## Visual states
 
@@ -524,6 +737,8 @@ Background:=<AcrylicBrush TintColor="Black" TintOpacity="0.8" />
 
 `Opacity` - Defines how transparent the brush effect itself is. If set to less than 1, it blends the AcrylicBrush with clear transparency.
 
+`FallbackColor` - Color used in place of the effect when battery saver is on or when transparency effects are disabled in the system settings. If omitted, the background becomes transparent in those cases. To keep the blur in those cases, use [WindhawkBlur](#windhawkblur-effect-as-color) instead.
+
 You can also set Acrylic to use an accent color for a more dynamic look that fits the current theme.
 
 ```
@@ -605,6 +820,10 @@ Stretch can be set to the following values:
 `Uniform` - Image is resized to fit the element dimensions, while it preserves its native aspect ratio.
 
 `UniformToFill` - Image is resized to fill the destination dimensions while it preserves its native aspect ratio. Crops to fit element.
+
+To use an image as the Start menu background, target `Border#AcrylicBorder` and hide the tint layer as described in [Custom Acrylic background](#custom-acrylic-background). This also applies to the Phone Link panel. To set them separately in the redesigned Start menu, target `Grid#MainMenu > Border#AcrylicBorder` for the Start menu and `Grid#CompanionRoot > Border#AcrylicBorder` for the panel.
+
+To keep the Acrylic background visible behind the image, target `Border#AcrylicOverlay` instead and add a partial opacity to the brush, such as `Opacity="0.5"`.
 
 ### Reveal as color
 
