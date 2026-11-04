@@ -9,13 +9,21 @@
 * [Themes](#themes)
   * [Windows 10 Start menu themes](#windows-10-start-menu-themes)
 * [Custom Acrylic background](#custom-acrylic-background)
+* [Change the Start menu size](#change-the-start-menu-size)
+* [Remove the drop shadows](#remove-the-drop-shadows)
 * [Remove the search box](#remove-the-search-box)
+* [Style the Start menu search box](#style-the-start-menu-search-box)
 * [Move pinned app lists](#move-pinned-app-lists)
 * [Remove the Recommended section](#remove-the-recommended-section)
+* [Hide or rename the section headers](#hide-or-rename-the-section-headers)
+* [Hide the All apps buttons](#hide-the-all-apps-buttons)
 * [Remove the user profile button](#remove-the-user-profile-button)
 * [Move the power button](#move-the-power-button)
+* [Hide the Phone Link panel](#hide-the-phone-link-panel)
+* [Context menus and tooltips](#context-menus-and-tooltips)
 * [Force light/dark mode](#force-lightdark-mode)
-* [Semantic zoom (navigation)](#semantic-zoom-navigation)
+* [Other common targets](#other-common-targets)
+* [Visual states](#visual-states)
 * [Transforms](#transforms)
   * [Translate](#translate)
   * [Rotate](#rotate)
@@ -43,11 +51,12 @@
   * [Hide the quick settings panel](#hide-the-quick-settings-panel)
   * [Hide the top result title](#hide-the-top-result-title)
   * [Change the background color of all search results](#change-the-background-color-of-all-search-results)
-  * [Hide left-side pill of the selected search result](#hide-left-side-pill-of-the-selected-search-result)
+  * [Change the corner radius of search results](#change-the-corner-radius-of-search-results)
+  * [Change the background color of search result groups](#change-the-background-color-of-search-result-groups)
+  * [Change the style of search result group titles](#change-the-style-of-search-result-group-titles)
   * [Change the width of the preview panel](#change-the-width-of-the-preview-panel)
-  * [Change the background color of the preview panel](#change-the-background-color-of-the-preview-panel)
+  * [Hide the preview panel](#hide-the-preview-panel)
   * [Change the text font](#change-the-text-font)
-  * [Change the icons font](#change-the-icons-font)
 
 ## Introduction
 
@@ -66,6 +75,11 @@ to your preferences.
 
 Some customizations are best adjusted with other Windhawk mods. Links to those
 mods are provided where applicable.
+
+Windows 11 has two versions of the Start menu: the classic one, and the
+[redesigned one](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/)
+that is slowly rolling out in the 25H2 update. Some targets differ between the
+two. Customizations that only apply to one of them say so.
 
 **See also**: [The Windows 11 taskbar styling
 guide](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/blob/main/README.md),
@@ -139,7 +153,7 @@ imported manually. For details, see their respective README files.
 
 ## Custom Acrylic background
 
-Target `Border#AcrylicBorder` for the Start menu or `Border#AppBorder` for the search menu, then set `Background` to an `AcrylicBrush` object.
+Target `Border#AcrylicBorder` for the Start menu or `Border#AppBorder, Border#AccentAppBorder` for the search menu, then set `Background` to an `AcrylicBrush` object. The search menu uses one of its two borders at a time, so target both.
 
 For example:
 
@@ -150,9 +164,79 @@ Background:=<AcrylicBrush BackgroundSource="Backdrop" TintColor="Pink" TintOpaci
 The [AcrylicBrush properties](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.acrylicbrush?view=winrt-22621#properties)
 can be adjusted as needed.
 
+Both menus also have a tint layer on top of the background. To keep it from covering the custom background, target `Border#AcrylicOverlay` for the Start menu or `Border#LayerBorder, Border#AccentLayerBorder` for the search menu with `Visibility=Collapsed`.
+
+## Change the Start menu size
+
+Use the [Start Menu Size](https://windhawk.net/mods/start-menu-size) mod, or set the size with the styles below.
+
+For the redesigned Start menu, target `Grid#MainMenu` with `Width=650` and `Grid#FrameRoot` with `Height=750`.
+
+For the classic Start menu, target:
+```
+StartDocked.StartSizingFrame
+```
+Styles:
+```
+MinWidth=500
+MaxHeight=580
+```
+And target:
+```
+StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent, StartDocked.LauncherFrame > Grid#RootPanel > Grid#RootGrid > Grid#RootContent
+```
+Styles:
+```
+MinWidth=500
+MaxWidth=500
+```
+
+Adjust values as needed.
+
+## Remove the drop shadows
+
+Target:
+```
+Border#StartDropShadow, Border#RootGridDropShadow, Border#DropShadow, Border#RightCompanionDropShadow, Border#dropshadow
+```
+Style:
+```
+Visibility=Collapsed
+```
+
+To remove only some of the shadows, use the relevant targets:
+
+| Target | Shadow
+| ------ | ------
+| `Border#StartDropShadow`, `Border#RootGridDropShadow`, `Border#DropShadow` | Start menu, the element depends on the Windows version
+| `Border#RightCompanionDropShadow` | Phone Link panel
+| `Border#dropshadow` | Search menu
+
 ## Remove the search box
 
-Target `StartDocked.SearchBoxToggleButton` with `Height=0`, `Margin=0,0,0,24`.
+For the redesigned Start menu, target `StartMenu.SearchBoxToggleButton` with `Visibility=Collapsed`.
+
+For the classic Start menu, target `StartDocked.SearchBoxToggleButton` with `Height=0`, `Margin=0,0,0,24`.
+
+## Style the Start menu search box
+
+To change the background and the border, target:
+```
+StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement, StartDocked.SearchBoxToggleButton > Grid > Border#BorderElement
+```
+Styles:
+```
+Background=<color>
+BorderBrush=<color>
+BorderThickness=<thickness>
+CornerRadius=<radius>
+```
+
+See the [colors section](#colors) for all color options. To also change the background on hover, see [visual states](#visual-states).
+
+To change the placeholder text, target `TextBlock#PlaceholderText` with `Text=<text>`.
+
+To replace the search icon image with a font icon, target `Image#SearchIconOn, Image#SearchIconOff` with `Visibility=Collapsed` and `FontIcon#SearchGlyph` with `Visibility=Visible`.
 
 ## Move pinned app lists
 
@@ -161,20 +245,39 @@ Adjust values as needed.
 
 ## Remove the Recommended section
 
-Target the following elements:
+> [!NOTE]
+> The redesigned Start menu [provides an
+> option](https://www.windowslatest.com/2025/06/15/remove-turn-off-windows-11-start-menu-recommended-section-version-24h2/)
+> to disable the Recommended section natively.
 
-* `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader`
-* `Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText`
-* `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer`
-* `Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions`
+For the redesigned Start menu, target `Grid#TopLevelSuggestionsRoot` with `Visibility=Collapsed`.
 
-Set the style of each to:
+For the classic Start menu, target the following elements, or use the [NoRecommendedSection](Themes/NoRecommendedSection/README.md) theme:
 
-`Visibility=Collapsed`
+* `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader` with `Visibility=Collapsed`
+* `Windows.UI.Xaml.Controls.Grid#NoTopLevelSuggestionsText` with `Visibility=Collapsed`
+* `Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsContainer` with `Height=0`
+* `Windows.UI.Xaml.Controls.GridView#RecommendedList` with `Visibility=Collapsed`
+* `Windows.UI.Xaml.Controls.Grid#ShowMoreSuggestions` with `Visibility=Collapsed`
 
 In addition, the pinned items can be adjusted to
 occupy the whole height by targeting `StartMenu.PinnedList` and setting
 `Height=504`.
+
+## Hide or rename the section headers
+
+Target the text of the relevant header:
+
+* `TextBlock#PinnedListHeaderText` for "Pinned"
+* `TextBlock#TopLevelSuggestionsListHeaderText` for "Recommended"
+* `TextBlock#AllListHeadingText` for "All" in the redesigned Start menu
+* `TextBlock#AllAppsHeading` for "All" on the All apps page of the classic Start menu
+
+Use `Visibility=Collapsed` to hide it, or `Text=<text>` to rename it.
+
+## Hide the All apps buttons
+
+In the classic Start menu, target `Button#ShowAllAppsButton` and `Button#CloseAllAppsButton` with `Visibility=Collapsed`.
 
 ## Remove the user profile button
 
@@ -185,9 +288,45 @@ Target `StartDocked.UserTileView` with `Visibility=Collapsed`.
 Target `StartDocked.PowerOptionsView` with `Margin=-580,-1330,0,0`.
 Adjust values as needed.
 
+## Hide the Phone Link panel
+
+In the redesigned Start menu, target `Grid#RightCompanionContainerGrid` for the panel and `Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion` for the button that toggles it, both with `Visibility=Collapsed`.
+
+## Context menus and tooltips
+
+To style context menus, target:
+```
+MenuFlyoutPresenter > Border
+```
+Styles:
+```
+Background=<color>
+BorderBrush=<color>
+BorderThickness=<thickness>
+CornerRadius=<radius>
+```
+
+When changing the corner radius, also target `MenuFlyoutPresenter` with the same `CornerRadius`. To round the menu items, target `MenuFlyoutItem` with `CornerRadius=<radius>`.
+
+To style tooltips, target:
+```
+ToolTip > ContentPresenter#LayoutRoot
+```
+Styles:
+```
+Background=<color>
+BorderBrush=<color>
+BorderThickness=<thickness>
+CornerRadius=<radius>
+```
+
+See the [colors section](#colors) for all color options.
+
 ## Force light/dark mode
 
 Sets light/dark mode independently of what is set in Windows.
+
+Target `Grid` for both the Start menu and the search menu, or `Cortana.UI.Views.TaskbarSearchPage > Grid#RootGrid` for the search menu only, with:
 
 `RequestedTheme=1`
 
@@ -195,41 +334,39 @@ Sets light/dark mode independently of what is set in Windows.
 
 `2` = Dark mode
 
-## Semantic zoom (navigation)
+## Other common targets
 
-Semantic zoom is the feature that allows us to navigate the apps list using the alphanumeric headers in the list. This lets you jump to a particular letter or number in the apps list quickly.
-For themes that have the apps list visible in the main Start menu view, this feature does not work. As an optional workaround, you may enable the hidden zoom button. This button allows you to access the alphanumeric navigation view. This is the zoomed-out view, which is why this is called semantic zoom.
+These elements are also commonly styled by themes:
 
-Target:
+| Target | Element
+| ------ | -------
+| `Windows.UI.Xaml.Controls.Primitives.ScrollBar` | Scrollbars, use `Visibility=Collapsed` to hide them
+| `Microsoft.UI.Xaml.Controls.PipsPager#PinnedListPipsPager` | Page dots of the pinned list
+| `Grid#NavPanePlaceholder` | Bottom bar of the redesigned Start menu
+| `StartDocked.NavigationPaneView#NavigationPane` | Bottom bar of the classic Start menu
+| `StartDocked.AppListView#NavigationPanePlacesListView` | Folder shortcuts next to the power button
+| `StartMenu.CategoryControl` | Category items in the All section of the redesigned Start menu
+| `Microsoft.UI.Xaml.Controls.DropDownButton#ViewSelectionButton` | View selector of the All section of the redesigned Start menu
+
+## Visual states
+
+Some elements change their look depending on their state, for example when hovered or pressed. To set a style for a specific state, add the visual state group name to the target with `@`, and the state name to the style. The group name can be added to the target itself or to one of its parents, but only once per target.
+
+For example, to change the look of app items in the Start menu when hovered or pressed, target:
 ```
-Windows.UI.Xaml.Controls.SemanticZoom#ZoomControl
+Border#ContentBorder@CommonStates > Grid > Border#BackgroundBorder
 ```
 Styles:
 ```
-IsZoomOutButtonEnabled=True
+Background@PointerOver=<color>
+BorderBrush@PointerOver=<color>
+Background@Pressed=<color>
+BorderBrush@Pressed=<color>
 ```
 
-Target:
-```
-Windows.UI.Xaml.Controls.Button#ZoomOutButton
-```
-Styles:
-```
-Width=40
-Height=40
-```
+The most common group is `CommonStates`, with the `Normal`, `PointerOver` and `Pressed` states. The Start menu search box also has the `Checked`, `CheckedPointerOver` and `CheckedPressed` states.
 
-Target:
-```
-Windows.UI.Xaml.Controls.Button#ZoomOutButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter > Windows.UI.Xaml.Controls.TextBlock
-```
-Styles:
-```
-Text=
-FontSize=28
-```
-
-You may replace `Text=` with any other character. Use Character Map to find, copy, and paste the character into the style box.
+See [Finding targets](#finding-targets) on how to use UWPSpy to find all of the available visual states for an element.
 
 ## Transforms
 
@@ -491,7 +628,23 @@ BorderBrush:=<RevealBorderBrush Color="Transparent" TargetTheme="1" Opacity="1" 
 
 ## Search menu
 
-The search menu has some of its own unique targets, but does share some targets with the Start menu. This means that some Start menu styles will automatically be inherited and applied to search as well, but some elements may need to specifically targeted.
+The search menu has some of its own unique targets, but does share some targets with the Start menu. This means that some Start menu styles will automatically be inherited and applied to search as well, but some elements may need to be specifically targeted.
+
+To change the size of the search menu, use the [Start Menu Size](https://windhawk.net/mods/start-menu-size) mod.
+
+These are its main targets outside of the [WebView](#search-menu-webview-styles):
+
+| Target | Element
+| ------ | -------
+| `Cortana.UI.Views.TaskbarSearchPage` | The whole search menu
+| `Grid#OuterBorderGrid` | The search menu panel
+| `Border#AppBorder, Border#AccentAppBorder` | Background, see [Custom Acrylic background](#custom-acrylic-background)
+| `Border#LayerBorder, Border#AccentLayerBorder` | Tint layer on top of the background
+| `Border#dropshadow` | Drop shadow
+| `Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl` | Search box
+| `Border#TaskbarSearchBackground` | Search box background
+| `Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox` | Search box text
+| `TextBlock#PlaceholderTextContentPresenter` | Search box placeholder text
 
 ## Search menu remote debugging
 
@@ -532,7 +685,7 @@ display: none !important
 
 Target:
 ```
-.scope-tile > div
+.scope-tile > div, .scope-tile__button
 ```
 Style:
 ```
@@ -594,15 +747,38 @@ Style:
 background-color: Black !important
 ```
 
-### Hide left-side pill of the selected search result
+### Change the corner radius of search results
 
 Target:
 ```
-.leftPill::before
+.suggContainer, .suggestion:not(.groupHeader)
 ```
 Style:
 ```
-display: none !important
+border-radius: 8px !important
+```
+
+### Change the background color of search result groups
+
+Target:
+```
+.suggsList
+```
+Style:
+```
+background-color: Black !important
+```
+
+### Change the style of search result group titles
+
+Target:
+```
+.groupTitle
+```
+Styles:
+```
+text-transform: uppercase !important
+font-weight: bold !important
 ```
 
 ### Change the width of the preview panel
@@ -616,35 +792,24 @@ Style:
 min-width: 300px !important
 ```
 
-### Change the background color of the preview panel
+### Hide the preview panel
 
 Target:
 ```
-.previewContainer
+#qfPreviewPane, .previewContainer, .openPreviewPaneBtn
 ```
 Style:
 ```
-background-color: Black !important
+display: none !important
 ```
 
 ### Change the text font
 
 Target:
 ```
-h4, .suggContainer, .groupTitle, .suggsListContainer, .title, .details, .secondaryText, .scope-tile > div, .menu-item_details
+h1, h2, h3, h4, .title, .primaryText, .secondaryText, .details, .metadata, .caption, .subtitle, .groupTitle, .groupHeader, .suggContainer, .suggsListContainer, .scope-tile > div, .scope-tile__button, .menu-item_details
 ```
 Style:
 ```
 font-family: 'Inter' !important
-```
-
-### Change the icons font
-
-Target:
-```
-.cortanaFontIcon, .iconContent
-```
-Style:
-```
-font-family: 'Segoe MDL2 Assets' !important
 ```
