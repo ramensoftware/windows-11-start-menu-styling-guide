@@ -15,7 +15,7 @@ LayerMicaUI is a theme with adaptive layouts for the new Windows 11 25H2 Start m
 </table>
 
 > [!IMPORTANT]
-> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
+> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is available on version 24H2 and later.
 
 ## Notes
 - Optimized for Windows 11 **25H2** and later with the new Start menu.

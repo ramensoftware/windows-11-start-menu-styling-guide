@@ -7,7 +7,7 @@ A theme that adds a modern, glassy aesthetic with a compact layout to the Window
 ![Screenshot](screenshot.png)
 
 > [!IMPORTANT]
-> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
+> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is available on version 24H2 and later.
 
 ## Notes
 - This theme works best on Windows 11 **25H2** and later.

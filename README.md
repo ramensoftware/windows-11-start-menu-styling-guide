@@ -78,7 +78,7 @@ mods are provided where applicable.
 
 Windows 11 has two versions of the Start menu: the classic one, and the
 [redesigned one](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/)
-that is slowly rolling out in the 25H2 update. Some targets differ between the
+that is available on version 24H2 and later. Some targets differ between the
 two. Customizations that only apply to one of them say so.
 
 **See also**: [The Windows 11 taskbar styling

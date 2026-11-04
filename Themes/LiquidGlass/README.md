@@ -5,7 +5,7 @@
 ![Screenshot](screenshot.png)
 
 > [!IMPORTANT]
-> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update.
+> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is available on version 24H2 and later.
 
 > [!NOTE]
 > Support for the LiquidGlass (Legacy) theme is being dropped in favor of [a new Fluid Glass theme](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/blob/main/Themes/LiquidGlass2/README.md) by another author. Their theme is going in the direction this one was aimed and does a lot better than this one does. So, there won't be any future updates to the LiquidGlass (Legacy) theme going forward.

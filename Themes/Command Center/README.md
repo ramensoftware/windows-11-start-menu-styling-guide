@@ -7,7 +7,7 @@ Command Center theme inspired by the command centers from various mobile operati
 <img width="100%" src="screenshot.png" alt="Preview" />
 
 > [!IMPORTANT]
-> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is gradually rolling out with the 25H2 update. It is meant to use the categories view and is not built for any other view mode.
+> This theme is designed for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) that is available on version 24H2 and later. It is meant to use the categories view and is not built for any other view mode.
 
 ## Notes
 - This theme consists of the following backgrounds:
