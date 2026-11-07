@@ -255,12 +255,12 @@ controlStyles:
       - BorderThickness=0
   - target: Windows.UI.Xaml.Controls.TextBlock#ZoomedOutHeading
     styles:
-      - Text=Apps
+      - Text=$AllMenuText
       - FontSize=20
       - IsHitTestVisible=False
   - target: Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox > Grid > Windows.UI.Xaml.Controls.TextBlock#PlaceholderTextContentPresenter
     styles:
-      - Text=Search Everywhere
+      - Text=$SearchBarText
       - FontFamily=Segoe UI Variable Display
   - target: Grid#Root > Border
     styles:
