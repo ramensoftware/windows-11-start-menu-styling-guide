@@ -145,9 +145,6 @@ controlStyles:
     styles:
       - FontSize=16
       - FontWeight=Light
-  - target: Frame#StartFrame
-    styles:
-      - Margin=0,-24,0,0
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter
     styles:
       - Height=40
@@ -179,7 +176,7 @@ controlStyles:
       - Margin=32,0,32,0
   - target: Windows.UI.Xaml.Controls.Frame#StartFrame
     styles:
-      - Margin=0,-64,0,48
+      - Margin=0,-88,0,48
   - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl
     styles:
       - Grid.Row=2
@@ -302,7 +299,7 @@ webContentStyles:
       - 'font-size: 20px'
       - 'margin-left: 32px !important'
       - 'font-family: Segoe UI Variable Display'
-      - line-height=32px
+      - 'line-height=32px'
   - target: .scopesListContainer
     styles:
       - 'display: none !important'
