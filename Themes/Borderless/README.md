@@ -145,9 +145,6 @@ controlStyles:
     styles:
       - FontSize=16
       - FontWeight=Light
-  - target: Frame#StartFrame
-    styles:
-      - Margin=0,-24,0,0
   - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#ShowHideCompanion > Border > ContentPresenter
     styles:
       - Height=40
@@ -255,12 +252,12 @@ controlStyles:
       - BorderThickness=0
   - target: Windows.UI.Xaml.Controls.TextBlock#ZoomedOutHeading
     styles:
-      - Text=Apps
+      - Text=$AllMenuText
       - FontSize=20
       - IsHitTestVisible=False
   - target: Cortana.UI.Views.CortanaRichSearchBox#SearchTextBox > Grid > Windows.UI.Xaml.Controls.TextBlock#PlaceholderTextContentPresenter
     styles:
-      - Text=Search Everywhere
+      - Text=$SearchBarText
       - FontFamily=Segoe UI Variable Display
   - target: Grid#Root > Border
     styles:
@@ -301,8 +298,9 @@ webContentStyles:
     styles:
       - 'font-size: 20px'
       - 'margin-left: 32px !important'
-      - 'font-family: Segoe UI Variable Display'
-      - line-height=32px
+      - 'font-family: "Segoe UI Variable Display", Segoe UI Semibold'
+      - 'line-height: 32px'
+      - 'margin-right: 32px !important'
   - target: .scopesListContainer
     styles:
       - 'display: none !important'
@@ -315,6 +313,10 @@ webContentStyles:
       - 'display: flex !important'
   - target: '#qfPreviewPane'
     styles:
-      - 'min-width: 300px !important'
+      - 'min-width: 320px !important'
+      - 'margin-left: 12px !important'
+  - target: '#qfPreviewPane *'
+    styles:
+      - 'scrollbar-width: none !important'
 ```
 </details>
