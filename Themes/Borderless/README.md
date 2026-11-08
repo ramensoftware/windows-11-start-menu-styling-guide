@@ -314,5 +314,8 @@ webContentStyles:
     styles:
       - 'min-width: 320px !important'
       - 'margin-left: 12px !important'
+  - target: '#qfPreviewPane *'
+    styles:
+      - 'scrollbar-width: none !important'
 ```
 </details>
