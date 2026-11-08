@@ -176,7 +176,7 @@ controlStyles:
       - Margin=32,0,32,0
   - target: Windows.UI.Xaml.Controls.Frame#StartFrame
     styles:
-      - Margin=0,-88,0,48
+      - Margin=0,-64,0,48
   - target: Cortana.UI.Views.RichSearchBoxControl#SearchBoxControl
     styles:
       - Grid.Row=2
