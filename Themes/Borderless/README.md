@@ -298,8 +298,8 @@ webContentStyles:
     styles:
       - 'font-size: 20px'
       - 'margin-left: 32px !important'
-      - 'font-family: Segoe UI Variable Display'
-      - 'line-height=32px'
+      - 'font-family: "Segoe UI Variable Display", Segoe UI Semibold'
+      - 'line-height: 32px'
   - target: .scopesListContainer
     styles:
       - 'display: none !important'
@@ -312,6 +312,7 @@ webContentStyles:
       - 'display: flex !important'
   - target: '#qfPreviewPane'
     styles:
-      - 'min-width: 300px !important'
+      - 'min-width: 320px !important'
+      - 'margin-left: 12px !important'
 ```
 </details>
