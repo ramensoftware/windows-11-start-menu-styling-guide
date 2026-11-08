@@ -300,6 +300,7 @@ webContentStyles:
       - 'margin-left: 32px !important'
       - 'font-family: "Segoe UI Variable Display", Segoe UI Semibold'
       - 'line-height: 32px'
+      - 'margin-right: 32px !important'
   - target: .scopesListContainer
     styles:
       - 'display: none !important'
