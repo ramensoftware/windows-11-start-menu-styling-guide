@@ -44,6 +44,7 @@ controlStyles:
       - MaxHeight=692      
   - target: Grid#MainMenu
     styles:
+      - MinWidth=650
       - MaxWidth=650
   - target: Grid#MainMenu > Grid#MainContent > Grid
     styles:

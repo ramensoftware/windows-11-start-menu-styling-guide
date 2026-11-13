@@ -139,6 +139,7 @@ controlStyles:
       - Visibility=Collapsed
   - target: Grid#MainMenu
     styles:
+      - MinWidth=650
       - MaxWidth=650
   - target: GridView#AllAppsGrid > Border > ScrollViewer
     styles:

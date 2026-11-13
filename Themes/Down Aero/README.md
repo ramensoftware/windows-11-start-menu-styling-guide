@@ -127,6 +127,7 @@ controlStyles:
       - Margin=0,-65,0,0
   - target: Grid#MainMenu
     styles:
+      - MinWidth=650
       - MaxWidth=650
   - target: TextBlock#AllListHeadingText
     styles:
