@@ -162,6 +162,7 @@ following themes are available:
 | [FlyoutStartMenu](Themes/FlyoutStartMenu/README.md) | [![FlyoutStartMenu](Themes/FlyoutStartMenu/screenshot-small.png)](Themes/FlyoutStartMenu/screenshot.png)
 | [OS26 Tahoe App Launcher](Themes/OS26%20Tahoe%20App%20Launcher/README.md) | [![OS26 Tahoe App Launcher](Themes/OS26%20Tahoe%20App%20Launcher/screenshot-small.png)](Themes/OS26%20Tahoe%20App%20Launcher/screenshot.png)
 | [Raycast](Themes/Raycast/README.md) | [![Raycast](Themes/Raycast/screenshot-small.png)](Themes/Raycast/screenshot.png)
+| [LumiPill](Themes/LumiPill/README.md) | [![LumiPill](Themes/LumiPill/screenshot-small.png)](Themes/LumiPill/screenshot.png)
 
 ### Windows 10 Start menu themes
 
