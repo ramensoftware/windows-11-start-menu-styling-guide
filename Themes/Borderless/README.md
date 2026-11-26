@@ -6,7 +6,6 @@ It also styles the search popout and offers the option to re-enable shadows.
 **Author**: [Ali Cool](https://github.com/AliCool412)
 
 ![Screenshot](screenshot.png)
-![Classic Start Menu Screenshot](screenshot-old-start-menu.png)
 
 ## Customization
 
