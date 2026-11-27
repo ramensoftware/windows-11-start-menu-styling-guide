@@ -25,8 +25,8 @@ The theme changes the following things:
 - Start Menu
 	- Background
 	- Main Page
-	- All Apps layout switch animation
 	- Folders
+  	- All Apps layout switch animation
 	- Uninstall Pop-up
 	- Right Companion / Phone Link
 	- Account Pop-up (basic styling)
@@ -188,7 +188,7 @@ And... edit its value.
 
 I didn't know how to fix these. I couldn't find the correct target names, or I'm not sure if they can even be changed / fixed.
 
-- **Account Pop-up:** Doesn't match the theme.
+- **Account Pop-up:** Buttons doesn't match the theme.
 - **Jump lists:** Jump lists (e.g. Right-click on File Explorer button) don't feature animations.
 - **Search Menu**
 	- All search UI doesn't match the theme.
@@ -220,7 +220,6 @@ The theme styles can also be imported manually. To do that, follow these steps:
 <summary>Content to import (click to expand)</summary>
 
 ```yaml
-theme: Luminosity 1.0
 styleConstants:
 # General Settings
   - MenuAnimation=True
